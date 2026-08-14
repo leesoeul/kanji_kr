@@ -1,0 +1,291 @@
+[
+  {
+    "id": "yama",
+    "literal": "山",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "山",
+    "koreanMeaning": "메 산",
+    "meaningsKo": ["산"],
+    "onYomi": [{ "kana": "サン", "romaji": "san" }],
+    "kunYomi": [{ "kana": "やま", "romaji": "yama" }],
+    "examples": [{ "jp": "山に登る", "kana": "やまにのぼる", "ko": "산에 오르다" }]
+  },
+  {
+    "id": "kawa",
+    "literal": "川",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "川",
+    "koreanMeaning": "내 천",
+    "meaningsKo": ["강", "내"],
+    "onYomi": [{ "kana": "セン", "romaji": "sen" }],
+    "kunYomi": [{ "kana": "かわ", "romaji": "kawa" }],
+    "examples": [{ "jp": "川で泳ぐ", "kana": "かわでおよぐ", "ko": "강에서 수영하다" }]
+  },
+  {
+    "id": "hito",
+    "literal": "人",
+    "jlpt": "N5",
+    "strokeCount": 2,
+    "koreanHanja": "人",
+    "koreanMeaning": "사람 인",
+    "meaningsKo": ["사람"],
+    "onYomi": [
+      { "kana": "ジン", "romaji": "jin" },
+      { "kana": "ニン", "romaji": "nin" }
+    ],
+    "kunYomi": [{ "kana": "ひと", "romaji": "hito" }],
+    "examples": [{ "jp": "あの人は先生です", "kana": "あのひとはせんせいです", "ko": "저 사람은 선생님입니다" }]
+  },
+  {
+    "id": "hi",
+    "literal": "日",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "日",
+    "koreanMeaning": "날 일",
+    "meaningsKo": ["날", "해"],
+    "onYomi": [
+      { "kana": "ニチ", "romaji": "nichi" },
+      { "kana": "ジツ", "romaji": "jitsu" }
+    ],
+    "kunYomi": [
+      { "kana": "ひ", "romaji": "hi" },
+      { "kana": "か", "romaji": "ka" }
+    ],
+    "examples": [{ "jp": "今日は暑い", "kana": "きょうはあつい", "ko": "오늘은 덥다" }]
+  },
+  {
+    "id": "tsuki",
+    "literal": "月",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "月",
+    "koreanMeaning": "달 월",
+    "meaningsKo": ["달", "월"],
+    "onYomi": [
+      { "kana": "ゲツ", "romaji": "getsu" },
+      { "kana": "ガツ", "romaji": "gatsu" }
+    ],
+    "kunYomi": [{ "kana": "つき", "romaji": "tsuki" }],
+    "examples": [{ "jp": "今月は忙しい", "kana": "こんげつはいそがしい", "ko": "이번 달은 바쁘다" }]
+  },
+  {
+    "id": "hi_fire",
+    "literal": "火",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "火",
+    "koreanMeaning": "불 화",
+    "meaningsKo": ["불"],
+    "onYomi": [{ "kana": "カ", "romaji": "ka" }],
+    "kunYomi": [{ "kana": "ひ", "romaji": "hi" }],
+    "examples": [{ "jp": "火曜日", "kana": "かようび", "ko": "화요일" }]
+  },
+  {
+    "id": "mizu",
+    "literal": "水",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "水",
+    "koreanMeaning": "물 수",
+    "meaningsKo": ["물"],
+    "onYomi": [{ "kana": "スイ", "romaji": "sui" }],
+    "kunYomi": [{ "kana": "みず", "romaji": "mizu" }],
+    "examples": [{ "jp": "水を飲む", "kana": "みずをのむ", "ko": "물을 마시다" }]
+  },
+  {
+    "id": "ki",
+    "literal": "木",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "木",
+    "koreanMeaning": "나무 목",
+    "meaningsKo": ["나무"],
+    "onYomi": [
+      { "kana": "モク", "romaji": "moku" },
+      { "kana": "ボク", "romaji": "boku" }
+    ],
+    "kunYomi": [{ "kana": "き", "romaji": "ki" }],
+    "examples": [{ "jp": "木の下で休む", "kana": "きのしたでやすむ", "ko": "나무 아래에서 쉬다" }]
+  },
+  {
+    "id": "kane",
+    "literal": "金",
+    "jlpt": "N5",
+    "strokeCount": 8,
+    "koreanHanja": "金",
+    "koreanMeaning": "쇠 금",
+    "meaningsKo": ["금", "돈", "쇠"],
+    "onYomi": [
+      { "kana": "キン", "romaji": "kin" },
+      { "kana": "コン", "romaji": "kon" }
+    ],
+    "kunYomi": [{ "kana": "かね", "romaji": "kane" }],
+    "examples": [{ "jp": "お金がない", "kana": "おかねがない", "ko": "돈이 없다" }]
+  },
+  {
+    "id": "tsuchi",
+    "literal": "土",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "土",
+    "koreanMeaning": "흙 토",
+    "meaningsKo": ["흙", "땅"],
+    "onYomi": [
+      { "kana": "ド", "romaji": "do" },
+      { "kana": "ト", "romaji": "to" }
+    ],
+    "kunYomi": [{ "kana": "つち", "romaji": "tsuchi" }],
+    "examples": [{ "jp": "土曜日", "kana": "どようび", "ko": "토요일" }]
+  },
+  {
+    "id": "ookii",
+    "literal": "大",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "大",
+    "koreanMeaning": "큰 대",
+    "meaningsKo": ["크다"],
+    "onYomi": [
+      { "kana": "ダイ", "romaji": "dai" },
+      { "kana": "タイ", "romaji": "tai" }
+    ],
+    "kunYomi": [{ "kana": "おお", "romaji": "oo" }],
+    "examples": [{ "jp": "大きい家", "kana": "おおきいいえ", "ko": "큰 집" }]
+  },
+  {
+    "id": "chiisai",
+    "literal": "小",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "小",
+    "koreanMeaning": "작을 소",
+    "meaningsKo": ["작다"],
+    "onYomi": [{ "kana": "ショウ", "romaji": "shou" }],
+    "kunYomi": [
+      { "kana": "ちい", "romaji": "chii" },
+      { "kana": "こ", "romaji": "ko" }
+    ],
+    "examples": [{ "jp": "小さい犬", "kana": "ちいさいいぬ", "ko": "작은 개" }]
+  },
+  {
+    "id": "naka",
+    "literal": "中",
+    "jlpt": "N5",
+    "strokeCount": 4,
+    "koreanHanja": "中",
+    "koreanMeaning": "가운데 중",
+    "meaningsKo": ["가운데", "안"],
+    "onYomi": [{ "kana": "チュウ", "romaji": "chuu" }],
+    "kunYomi": [{ "kana": "なか", "romaji": "naka" }],
+    "examples": [{ "jp": "箱の中", "kana": "はこのなか", "ko": "상자 안" }]
+  },
+  {
+    "id": "ue",
+    "literal": "上",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "上",
+    "koreanMeaning": "위 상",
+    "meaningsKo": ["위", "오르다"],
+    "onYomi": [
+      { "kana": "ジョウ", "romaji": "jou" },
+      { "kana": "ショウ", "romaji": "shou" }
+    ],
+    "kunYomi": [
+      { "kana": "うえ", "romaji": "ue" },
+      { "kana": "あ", "romaji": "a" }
+    ],
+    "examples": [{ "jp": "机の上", "kana": "つくえのうえ", "ko": "책상 위" }]
+  },
+  {
+    "id": "shita",
+    "literal": "下",
+    "jlpt": "N5",
+    "strokeCount": 3,
+    "koreanHanja": "下",
+    "koreanMeaning": "아래 하",
+    "meaningsKo": ["아래", "내리다"],
+    "onYomi": [
+      { "kana": "カ", "romaji": "ka" },
+      { "kana": "ゲ", "romaji": "ge" }
+    ],
+    "kunYomi": [
+      { "kana": "した", "romaji": "shita" },
+      { "kana": "さ", "romaji": "sa" }
+    ],
+    "examples": [{ "jp": "橋の下", "kana": "はしのした", "ko": "다리 아래" }]
+  },
+  {
+    "id": "sei",
+    "literal": "生",
+    "jlpt": "N5",
+    "strokeCount": 5,
+    "koreanHanja": "生",
+    "koreanMeaning": "날 생",
+    "meaningsKo": ["살다", "태어나다"],
+    "onYomi": [
+      { "kana": "セイ", "romaji": "sei" },
+      { "kana": "ショウ", "romaji": "shou" }
+    ],
+    "kunYomi": [
+      { "kana": "い", "romaji": "i" },
+      { "kana": "う", "romaji": "u" },
+      { "kana": "なま", "romaji": "nama" }
+    ],
+    "examples": [{ "jp": "学生です", "kana": "がくせいです", "ko": "학생입니다" }]
+  },
+  {
+    "id": "manabu",
+    "literal": "学",
+    "jlpt": "N5",
+    "strokeCount": 8,
+    "koreanHanja": "學",
+    "koreanMeaning": "배울 학",
+    "meaningsKo": ["배우다"],
+    "onYomi": [{ "kana": "ガク", "romaji": "gaku" }],
+    "kunYomi": [{ "kana": "まな", "romaji": "mana" }],
+    "examples": [{ "jp": "日本語を学ぶ", "kana": "にほんごをまなぶ", "ko": "일본어를 배우다" }]
+  },
+  {
+    "id": "saki",
+    "literal": "先",
+    "jlpt": "N5",
+    "strokeCount": 6,
+    "koreanHanja": "先",
+    "koreanMeaning": "먼저 선",
+    "meaningsKo": ["먼저", "앞"],
+    "onYomi": [{ "kana": "セン", "romaji": "sen" }],
+    "kunYomi": [{ "kana": "さき", "romaji": "saki" }],
+    "examples": [{ "jp": "先生", "kana": "せんせい", "ko": "선생님" }]
+  },
+  {
+    "id": "taberu",
+    "literal": "食",
+    "jlpt": "N5",
+    "strokeCount": 9,
+    "koreanHanja": "食",
+    "koreanMeaning": "밥 식",
+    "meaningsKo": ["먹다"],
+    "onYomi": [
+      { "kana": "ショク", "romaji": "shoku" },
+      { "kana": "ジキ", "romaji": "jiki" }
+    ],
+    "kunYomi": [{ "kana": "た", "romaji": "ta" }],
+    "examples": [{ "jp": "朝ごはんを食べる", "kana": "あさごはんをたべる", "ko": "아침밥을 먹다" }]
+  },
+  {
+    "id": "miru",
+    "literal": "見",
+    "jlpt": "N5",
+    "strokeCount": 7,
+    "koreanHanja": "見",
+    "koreanMeaning": "볼 견",
+    "meaningsKo": ["보다"],
+    "onYomi": [{ "kana": "ケン", "romaji": "ken" }],
+    "kunYomi": [{ "kana": "み", "romaji": "mi" }],
+    "examples": [{ "jp": "映画を見る", "kana": "えいがをみる", "ko": "영화를 보다" }]
+  }
+]
