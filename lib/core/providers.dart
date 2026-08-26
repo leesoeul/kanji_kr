@@ -2,8 +2,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/kanji_detail/kanji_detail_repository.dart';
 import '../../shared/models/kanji.dart';
+import '../../shared/models/study_list.dart';
 import 'database/app_database.dart';
 import 'storage/user_store.dart';
+import 'study_filter.dart';
 
 /// SQLite가 아니라 세션용 인메모리 DB.
 /// SQLite ではなくセッション用インメモリ DB。
@@ -22,16 +24,20 @@ final kanjiRepositoryProvider = Provider<KanjiRepository>((ref) {
   );
 });
 
-/// 화면에 쓰는 한자 목록 + 즐겨찾기 id.
-/// 画面で使う漢字一覧 + お気に入り id。
+/// 화면에 쓰는 한자 목록 + 즐겨찾기 id + 리스트 메타.
+/// 画面で使う漢字一覧 + お気に入り id + リストメタ。
 class CatalogState {
   const CatalogState({
     required this.kanjis,
     required this.favoriteIds,
+    required this.builtinLists,
+    required this.importedLists,
   });
 
   final List<Kanji> kanjis;
   final Set<String> favoriteIds;
+  final List<StudyList> builtinLists;
+  final List<StudyList> importedLists;
 
   Kanji? byId(String id) {
     for (final kanji in kanjis) {
@@ -48,6 +54,48 @@ class CatalogState {
         for (final kanji in kanjis)
           if (favoriteIds.contains(kanji.id)) kanji,
       ];
+
+  List<Kanji> itemsFor(String listId, {EntryKind? kind}) {
+    return itemsForList(
+      all: kanjis,
+      favoriteIds: favoriteIds,
+      listId: listId,
+      kind: kind,
+    );
+  }
+
+  List<StudyList> dropdownLists({
+    required String allTitle,
+    required String userTitle,
+    required String favoritesTitle,
+    EntryKind? kind,
+  }) {
+    if (kind == EntryKind.kanji || kind == EntryKind.word) {
+      return composeListsForKind(
+        kind: kind!,
+        userTitle: userTitle,
+        favoritesTitle: favoritesTitle,
+        builtin: builtinLists,
+        imported: importedLists,
+      );
+    }
+    return composeStudyLists(
+      allTitle: allTitle,
+      userTitle: userTitle,
+      favoritesTitle: favoritesTitle,
+      builtin: builtinLists,
+      imported: importedLists,
+    );
+  }
+
+  StudyList? listById(String id, {required List<StudyList> dropdown}) {
+    for (final list in dropdown) {
+      if (list.id == id) {
+        return list;
+      }
+    }
+    return null;
+  }
 }
 
 /// 시드·사용자 한자·즐겨찾기를 한곳에서 읽고 쓴다.
@@ -60,6 +108,8 @@ class CatalogController extends AsyncNotifier<CatalogState> {
     return CatalogState(
       kanjis: kanjis,
       favoriteIds: repo.favoriteIds,
+      builtinLists: repo.builtinLists,
+      importedLists: repo.importedLists,
     );
   }
 
@@ -69,6 +119,8 @@ class CatalogController extends AsyncNotifier<CatalogState> {
       CatalogState(
         kanjis: await repo.all(),
         favoriteIds: repo.favoriteIds,
+        builtinLists: repo.builtinLists,
+        importedLists: repo.importedLists,
       ),
     );
   }
@@ -97,6 +149,20 @@ class CatalogController extends AsyncNotifier<CatalogState> {
   Future<void> deleteUserKanji(String id) async {
     await ref.read(kanjiRepositoryProvider).deleteUserKanji(id);
     await _reload();
+  }
+
+  Future<int> importJson(String raw) async {
+    final count = await ref.read(kanjiRepositoryProvider).importJson(raw);
+    await _reload();
+    final imported = state.value?.importedLists;
+    if (imported != null && imported.isNotEmpty) {
+      final last = imported.last;
+      final kind =
+          last.kind == EntryKind.word ? EntryKind.word : EntryKind.kanji;
+      await ref.read(studySessionProvider.notifier).selectKind(kind);
+      await ref.read(studySessionProvider.notifier).selectList(last.id);
+    }
+    return count;
   }
 }
 
@@ -148,3 +214,70 @@ class StudyPrefsNotifier extends Notifier<StudyPrefs> {
 final studyPrefsProvider =
     NotifierProvider<StudyPrefsNotifier, StudyPrefs>(StudyPrefsNotifier.new);
 
+/// 홈·목록·퀴즈가 같이 보는 선택 목록과 셔플 시드.
+/// ホーム・一覧・クイズが共有する選択一覧とシャッフルシード。
+class StudySession {
+  const StudySession({
+    this.kind,
+    this.listId = '',
+    this.shuffleNonce = 0,
+  });
+
+  final EntryKind? kind;
+  final String listId;
+  final int shuffleNonce;
+
+  bool get hasKind => kind != null;
+
+  bool get hasDeck => kind != null && listId.isNotEmpty;
+}
+
+class StudySessionNotifier extends Notifier<StudySession> {
+  @override
+  StudySession build() {
+    final data = ref.read(userStoreProvider).load();
+    final listId = data.selectedListId;
+    var kind = parseEntryKind(data.selectedKind);
+    kind ??= inferKindFromListId(listId);
+    return StudySession(kind: kind, listId: listId);
+  }
+
+  Future<void> selectKind(EntryKind kind) async {
+    await ref.read(userStoreProvider).patch(
+          selectedKind: kind.jsonName,
+          selectedListId: '',
+        );
+    state = StudySession(kind: kind);
+  }
+
+  Future<void> selectList(String id) async {
+    await ref.read(userStoreProvider).patch(selectedListId: id);
+    state = StudySession(kind: state.kind, listId: id);
+  }
+
+  Future<void> clearList() async {
+    await ref.read(userStoreProvider).patch(selectedListId: '');
+    state = StudySession(kind: state.kind);
+  }
+
+  Future<void> clearKind() async {
+    await ref.read(userStoreProvider).patch(
+          selectedKind: '',
+          selectedListId: '',
+        );
+    state = const StudySession();
+  }
+
+  void shuffle() {
+    state = StudySession(
+      kind: state.kind,
+      listId: state.listId,
+      shuffleNonce: DateTime.now().millisecondsSinceEpoch,
+    );
+  }
+}
+
+final studySessionProvider =
+    NotifierProvider<StudySessionNotifier, StudySession>(
+  StudySessionNotifier.new,
+);

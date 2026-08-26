@@ -16,9 +16,62 @@
   "koreanMeaning": "한국어 뜻",
   "koreanHanja": "한국 한자",
   "examples": "예문",
-  "kanjiList": "한자 목록",
+  "kanjiList": "목록",
   "settings": "설정",
   "quizComingSoon": "퀴즈는 곧 제공됩니다",
+  "quizTitle": "퀴즈",
+  "listAll": "전체",
+  "listUser": "내가 추가",
+  "shuffle": "랜덤",
+  "shuffled": "순서를 섞었습니다",
+  "kindKanji": "한자",
+  "kindWord": "단어",
+  "kindVerb": "동사",
+  "pickKindTitle": "한자 / 동사",
+  "pickListTitle": "목록을 고르세요",
+  "readingLabel": "읽기",
+  "readingHint": "예: やまのぼり",
+  "surfaceLabel": "표기",
+  "importList": "JSON 가져오기",
+  "importHint": "목록 JSON을 붙여 넣으세요",
+  "importAction": "가져오기",
+  "importSuccess": "{count}개를 가져왔습니다",
+  "@importSuccess": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "importFailed": "JSON을 읽지 못했습니다",
+  "quizStart": "시작",
+  "quizNext": "다음",
+  "quizSeeResult": "결과 보기",
+  "quizResult": "결과",
+  "quizScore": "{correct} / {total}",
+  "@quizScore": {
+    "placeholders": {
+      "correct": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "quizRetry": "다시 풀기",
+  "quizCorrect": "정답",
+  "quizWrong": "오답",
+  "quizEmpty": "이 목록에 퀴즈를 낼 카드가 부족합니다",
+  "quizPickMeaning": "뜻을 고르세요",
+  "quizPickLiteral": "글자를 고르세요",
+  "quizModeMeaning": "뜻",
+  "quizModeLiteral": "글자",
+  "quizProgress": "{current} / {total}",
+  "@quizProgress": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "addItem": "추가",
+  "addWord": "단어 추가",
+  "emptyList": "이 목록이 비어 있습니다",
+  "cardReading": "읽기",
   "jlptLevel": "JLPT {level}",
   "@jlptLevel": {
     "placeholders": {
@@ -53,8 +106,8 @@
   "save": "저장",
   "delete": "삭제",
   "cancel": "취소",
-  "deleteKanjiConfirm": "이 한자를 삭제할까요?",
-  "alreadyExists": "이미 있는 한자입니다",
+  "deleteKanjiConfirm": "이 항목을 삭제할까요?",
+  "alreadyExists": "이미 있는 항목입니다",
   "requiredField": "필수 항목입니다",
   "userKanji": "내 한자",
   "bookmarkAdd": "즐겨찾기",
@@ -67,7 +120,7 @@
   "cardKun": "훈독",
   "cardOn": "음독",
   "searchKanji": "검색",
-  "searchHint": "한자, 뜻, 읽기",
+  "searchHint": "한자, 단어, 뜻, 읽기",
   "noSearchResults": "검색 결과가 없습니다",
   "alwaysShowOn": "이제부터 정답을 보여 줍니다",
   "alwaysShowOff": "이제부터 정답을 숨깁니다"

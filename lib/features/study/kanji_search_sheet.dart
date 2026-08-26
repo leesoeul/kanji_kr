@@ -75,12 +75,14 @@ class _KanjiSearchSheetState extends State<_KanjiSearchSheet> {
                             kanji.literal,
                             style: Theme.of(context).textTheme.headlineMedium,
                           ),
-                          title: Text(
-                            kanji.meaningsKo.isEmpty
-                                ? kanji.koreanMeaning
-                                : kanji.meaningsKo.join(', '),
+                          title: Text(kanji.displayMeaning),
+                          subtitle: Text(
+                            kanji.isWord
+                                ? kanji.displayReading
+                                : (kanji.displayKunOn.isEmpty
+                                    ? kanji.koreanMeaning
+                                    : kanji.displayKunOn),
                           ),
-                          subtitle: Text(kanji.koreanMeaning),
                           onTap: () => Navigator.pop(context, kanji),
                         );
                       },

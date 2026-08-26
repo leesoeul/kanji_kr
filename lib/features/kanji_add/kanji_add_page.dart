@@ -7,6 +7,7 @@ import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
 import '../../shared/models/kanji.dart';
 import '../../shared/models/reading.dart';
+import '../../shared/models/study_list.dart';
 
 /// `/add`와 `/edit/:id`를 같은 폼으로 처리한다.
 /// `/add` と `/edit/:id` を同じフォームで扱う。
@@ -25,14 +26,19 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
   final _meaning = TextEditingController();
   final _onYomi = TextEditingController();
   final _kunYomi = TextEditingController();
+  final _reading = TextEditingController();
   final _koreanHanja = TextEditingController();
   final _exampleJp = TextEditingController();
   final _exampleKo = TextEditingController();
   bool _saving = false;
   bool _prefilled = false;
+  bool _kindInited = false;
+  EntryKind _kind = EntryKind.kanji;
   Kanji? _original;
 
   bool get _isEditing => widget.kanjiId != null;
+
+  bool get _isWord => _kind == EntryKind.word;
 
   @override
   void dispose() {
@@ -40,6 +46,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     _meaning.dispose();
     _onYomi.dispose();
     _kunYomi.dispose();
+    _reading.dispose();
     _koreanHanja.dispose();
     _exampleJp.dispose();
     _exampleKo.dispose();
@@ -48,6 +55,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
 
   void _prefill(Kanji kanji) {
     _original = kanji;
+    _kind = kanji.kind == EntryKind.word ? EntryKind.word : EntryKind.kanji;
     _literal.text = kanji.literal;
     _meaning.text = kanji.koreanMeaning.isNotEmpty
         ? kanji.koreanMeaning
@@ -56,12 +64,25 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         .map((item) => katakanaToHiragana(item.kana))
         .join('、');
     _kunYomi.text = kanji.kunYomi.map((item) => item.kana).join('、');
+    _reading.text = kanji.reading;
     _koreanHanja.text = kanji.koreanHanja;
     if (kanji.examples.isNotEmpty) {
       _exampleJp.text = kanji.examples.first.jp;
       _exampleKo.text = kanji.examples.first.ko;
     }
     _prefilled = true;
+    _kindInited = true;
+  }
+
+  void _initKind() {
+    if (_kindInited || _isEditing) {
+      return;
+    }
+    final session = ref.read(studySessionProvider);
+    if (session.kind == EntryKind.word) {
+      _kind = EntryKind.word;
+    }
+    _kindInited = true;
   }
 
   @override
@@ -79,6 +100,14 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         });
       }
     }
+    if (!_isEditing && !_kindInited && catalog != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted || _kindInited) {
+          return;
+        }
+        setState(_initKind);
+      });
+    }
 
     if (_isEditing && catalog == null) {
       return const Scaffold(
@@ -95,7 +124,11 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_isEditing ? l10n.editKanji : l10n.addKanji),
+        title: Text(
+          _isEditing
+              ? l10n.editKanji
+              : (_isWord ? l10n.addWord : l10n.addKanji),
+        ),
         actions: [
           // 시드 한자는 삭제 불가. 사용자 추가분만 휴지통.
           // シード漢字は削除不可。ユーザー追加分だけゴミ箱。
@@ -112,12 +145,33 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: [
+            if (!_isEditing) ...[
+              SegmentedButton<EntryKind>(
+                segments: [
+                  ButtonSegment(
+                    value: EntryKind.kanji,
+                    label: Text(l10n.kindKanji),
+                  ),
+                  ButtonSegment(
+                    value: EntryKind.word,
+                    label: Text(l10n.kindWord),
+                  ),
+                ],
+                selected: {_kind},
+                onSelectionChanged: (next) {
+                  setState(() => _kind = next.first);
+                },
+              ),
+              const SizedBox(height: 16),
+            ],
             TextFormField(
               controller: _literal,
-              decoration: InputDecoration(labelText: l10n.literalLabel),
+              decoration: InputDecoration(
+                labelText: _isWord ? l10n.surfaceLabel : l10n.literalLabel,
+              ),
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                    fontSize: 56,
+                    fontSize: _isWord ? 40 : 56,
                   ),
               validator: (value) {
                 if (value == null || value.trim().isEmpty) {
@@ -140,30 +194,47 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
                 return null;
               },
             ),
-            const SizedBox(height: 12),
-            TextFormField(
-              controller: _onYomi,
-              decoration: InputDecoration(
-                labelText: l10n.onYomi,
-                hintText: l10n.onYomiHint,
+            if (_isWord) ...[
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _reading,
+                decoration: InputDecoration(
+                  labelText: l10n.readingLabel,
+                  hintText: l10n.readingHint,
+                ),
+                validator: (value) {
+                  if (value == null || value.trim().isEmpty) {
+                    return l10n.requiredField;
+                  }
+                  return null;
+                },
               ),
-            ),
-            const SizedBox(height: 12),
-            TextFormField(
-              controller: _kunYomi,
-              decoration: InputDecoration(
-                labelText: l10n.kunYomi,
-                hintText: l10n.kunYomiHint,
+            ] else ...[
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _onYomi,
+                decoration: InputDecoration(
+                  labelText: l10n.onYomi,
+                  hintText: l10n.onYomiHint,
+                ),
               ),
-            ),
-            const SizedBox(height: 12),
-            TextFormField(
-              controller: _koreanHanja,
-              decoration: InputDecoration(
-                labelText: l10n.koreanHanja,
-                hintText: l10n.koreanHanjaHint,
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _kunYomi,
+                decoration: InputDecoration(
+                  labelText: l10n.kunYomi,
+                  hintText: l10n.kunYomiHint,
+                ),
               ),
-            ),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _koreanHanja,
+                decoration: InputDecoration(
+                  labelText: l10n.koreanHanja,
+                  hintText: l10n.koreanHanjaHint,
+                ),
+              ),
+            ],
             const SizedBox(height: 12),
             TextFormField(
               controller: _exampleJp,
@@ -212,8 +283,10 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
               ko: exampleKo,
             ),
           ];
-    final readingsOn = _parseReadings(_onYomi.text);
-    final readingsKun = _parseReadings(_kunYomi.text);
+    final readingsOn = _isWord ? const <Reading>[] : _parseReadings(_onYomi.text);
+    final readingsKun =
+        _isWord ? const <Reading>[] : _parseReadings(_kunYomi.text);
+    final reading = _isWord ? _reading.text.trim() : '';
     final Kanji kanji;
     if (_isEditing && _original != null) {
       kanji = _original!.copyWith(
@@ -224,10 +297,12 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         onYomi: readingsOn,
         kunYomi: readingsKun,
         examples: examples,
+        kind: _kind,
+        reading: reading,
       );
     } else {
       kanji = Kanji(
-        id: Kanji.userIdFor(literal),
+        id: Kanji.userIdFor(literal, kind: _kind),
         literal: literal,
         jlpt: 'USER',
         strokeCount: 0,
@@ -237,6 +312,9 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         onYomi: readingsOn,
         kunYomi: readingsKun,
         examples: examples,
+        kind: _kind,
+        listId: ListIds.user,
+        reading: reading,
         isUserAdded: true,
       );
     }

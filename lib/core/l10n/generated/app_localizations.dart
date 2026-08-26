@@ -162,7 +162,7 @@ abstract class AppLocalizations {
   /// No description provided for @kanjiList.
   ///
   /// In ko, this message translates to:
-  /// **'한자 목록'**
+  /// **'목록'**
   String get kanjiList;
 
   /// No description provided for @settings.
@@ -176,6 +176,222 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'퀴즈는 곧 제공됩니다'**
   String get quizComingSoon;
+
+  /// No description provided for @quizTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'퀴즈'**
+  String get quizTitle;
+
+  /// No description provided for @listAll.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체'**
+  String get listAll;
+
+  /// No description provided for @listUser.
+  ///
+  /// In ko, this message translates to:
+  /// **'내가 추가'**
+  String get listUser;
+
+  /// No description provided for @shuffle.
+  ///
+  /// In ko, this message translates to:
+  /// **'랜덤'**
+  String get shuffle;
+
+  /// No description provided for @shuffled.
+  ///
+  /// In ko, this message translates to:
+  /// **'순서를 섞었습니다'**
+  String get shuffled;
+
+  /// No description provided for @kindKanji.
+  ///
+  /// In ko, this message translates to:
+  /// **'한자'**
+  String get kindKanji;
+
+  /// No description provided for @kindWord.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어'**
+  String get kindWord;
+
+  /// No description provided for @kindVerb.
+  ///
+  /// In ko, this message translates to:
+  /// **'동사'**
+  String get kindVerb;
+
+  /// No description provided for @pickKindTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'한자 / 동사'**
+  String get pickKindTitle;
+
+  /// No description provided for @pickListTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록을 고르세요'**
+  String get pickListTitle;
+
+  /// No description provided for @readingLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'읽기'**
+  String get readingLabel;
+
+  /// No description provided for @readingHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'예: やまのぼり'**
+  String get readingHint;
+
+  /// No description provided for @surfaceLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'표기'**
+  String get surfaceLabel;
+
+  /// No description provided for @importList.
+  ///
+  /// In ko, this message translates to:
+  /// **'JSON 가져오기'**
+  String get importList;
+
+  /// No description provided for @importHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록 JSON을 붙여 넣으세요'**
+  String get importHint;
+
+  /// No description provided for @importAction.
+  ///
+  /// In ko, this message translates to:
+  /// **'가져오기'**
+  String get importAction;
+
+  /// No description provided for @importSuccess.
+  ///
+  /// In ko, this message translates to:
+  /// **'{count}개를 가져왔습니다'**
+  String importSuccess(int count);
+
+  /// No description provided for @importFailed.
+  ///
+  /// In ko, this message translates to:
+  /// **'JSON을 읽지 못했습니다'**
+  String get importFailed;
+
+  /// No description provided for @quizStart.
+  ///
+  /// In ko, this message translates to:
+  /// **'시작'**
+  String get quizStart;
+
+  /// No description provided for @quizNext.
+  ///
+  /// In ko, this message translates to:
+  /// **'다음'**
+  String get quizNext;
+
+  /// No description provided for @quizSeeResult.
+  ///
+  /// In ko, this message translates to:
+  /// **'결과 보기'**
+  String get quizSeeResult;
+
+  /// No description provided for @quizResult.
+  ///
+  /// In ko, this message translates to:
+  /// **'결과'**
+  String get quizResult;
+
+  /// No description provided for @quizScore.
+  ///
+  /// In ko, this message translates to:
+  /// **'{correct} / {total}'**
+  String quizScore(int correct, int total);
+
+  /// No description provided for @quizRetry.
+  ///
+  /// In ko, this message translates to:
+  /// **'다시 풀기'**
+  String get quizRetry;
+
+  /// No description provided for @quizCorrect.
+  ///
+  /// In ko, this message translates to:
+  /// **'정답'**
+  String get quizCorrect;
+
+  /// No description provided for @quizWrong.
+  ///
+  /// In ko, this message translates to:
+  /// **'오답'**
+  String get quizWrong;
+
+  /// No description provided for @quizEmpty.
+  ///
+  /// In ko, this message translates to:
+  /// **'이 목록에 퀴즈를 낼 카드가 부족합니다'**
+  String get quizEmpty;
+
+  /// No description provided for @quizPickMeaning.
+  ///
+  /// In ko, this message translates to:
+  /// **'뜻을 고르세요'**
+  String get quizPickMeaning;
+
+  /// No description provided for @quizPickLiteral.
+  ///
+  /// In ko, this message translates to:
+  /// **'글자를 고르세요'**
+  String get quizPickLiteral;
+
+  /// No description provided for @quizModeMeaning.
+  ///
+  /// In ko, this message translates to:
+  /// **'뜻'**
+  String get quizModeMeaning;
+
+  /// No description provided for @quizModeLiteral.
+  ///
+  /// In ko, this message translates to:
+  /// **'글자'**
+  String get quizModeLiteral;
+
+  /// No description provided for @quizProgress.
+  ///
+  /// In ko, this message translates to:
+  /// **'{current} / {total}'**
+  String quizProgress(int current, int total);
+
+  /// No description provided for @addItem.
+  ///
+  /// In ko, this message translates to:
+  /// **'추가'**
+  String get addItem;
+
+  /// No description provided for @addWord.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어 추가'**
+  String get addWord;
+
+  /// No description provided for @emptyList.
+  ///
+  /// In ko, this message translates to:
+  /// **'이 목록이 비어 있습니다'**
+  String get emptyList;
+
+  /// No description provided for @cardReading.
+  ///
+  /// In ko, this message translates to:
+  /// **'읽기'**
+  String get cardReading;
 
   /// No description provided for @jlptLevel.
   ///
@@ -294,13 +510,13 @@ abstract class AppLocalizations {
   /// No description provided for @deleteKanjiConfirm.
   ///
   /// In ko, this message translates to:
-  /// **'이 한자를 삭제할까요?'**
+  /// **'이 항목을 삭제할까요?'**
   String get deleteKanjiConfirm;
 
   /// No description provided for @alreadyExists.
   ///
   /// In ko, this message translates to:
-  /// **'이미 있는 한자입니다'**
+  /// **'이미 있는 항목입니다'**
   String get alreadyExists;
 
   /// No description provided for @requiredField.
@@ -378,7 +594,7 @@ abstract class AppLocalizations {
   /// No description provided for @searchHint.
   ///
   /// In ko, this message translates to:
-  /// **'한자, 뜻, 읽기'**
+  /// **'한자, 단어, 뜻, 읽기'**
   String get searchHint;
 
   /// No description provided for @noSearchResults.

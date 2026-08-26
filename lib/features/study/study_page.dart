@@ -5,8 +5,10 @@ import 'package:go_router/go_router.dart';
 import '../../core/kana.dart';
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
+import '../../core/study_filter.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/models/kanji.dart';
+import 'home_pickers.dart';
 import 'kanji_search_sheet.dart';
 
 /// 홈 플래시카드. 정답은 카드가 아니라 아래 버튼으로만 연다.
@@ -57,11 +59,57 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     }
   }
 
+  void _resetDeck() {
+    _index = 0;
+    _revealed.clear();
+    _hinted.clear();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_pageController.hasClients) {
+        _pageController.jumpToPage(0);
+      }
+    });
+  }
+
+  List<Kanji> _deck(CatalogState catalog, StudySession session) {
+    if (widget.initialId != null) {
+      return catalog.kanjis;
+    }
+    final lists = catalog.dropdownLists(
+      allTitle: '',
+      userTitle: '',
+      favoritesTitle: '',
+      kind: session.kind,
+    );
+    final listId = resolveListId(session.listId, lists);
+    return withShuffle(
+      catalog.itemsFor(listId, kind: session.kind),
+      session.shuffleNonce,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final prefs = ref.watch(studyPrefsProvider);
+    final session = ref.watch(studySessionProvider);
     final asyncCatalog = ref.watch(catalogControllerProvider);
+
+    ref.listen<StudySession>(studySessionProvider, (prev, next) {
+      if (widget.initialId != null) {
+        return;
+      }
+      if (prev?.listId == next.listId &&
+          prev?.shuffleNonce == next.shuffleNonce &&
+          prev?.kind == next.kind) {
+        return;
+      }
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) {
+          return;
+        }
+        setState(_resetDeck);
+      });
+    });
 
     return Scaffold(
       body: SafeArea(
@@ -69,9 +117,46 @@ class _StudyPageState extends ConsumerState<StudyPage> {
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (error, _) => Center(child: Text('$error')),
           data: (catalog) {
-            final kanjis = catalog.kanjis;
+            if (widget.initialId == null && !session.hasDeck) {
+              return HomeBrowseBody(
+                catalog: catalog,
+                session: session,
+                isDark: prefs.isDark,
+              );
+            }
+            final kanjis = _deck(catalog, session);
+            final lists = catalog.dropdownLists(
+              allTitle: l10n.listAll,
+              userTitle: l10n.listUser,
+              favoritesTitle: l10n.favorites,
+              kind: session.kind,
+            );
+            final listId = resolveListId(session.listId, lists);
+            final currentList = catalog.listById(listId, dropdown: lists);
+            final language = Localizations.localeOf(context).languageCode;
+            final listTitle = currentList?.titleFor(language) ?? l10n.studyTitle;
+            final onHeaderBack = widget.showBack
+                ? () => context.pop()
+                : () => ref.read(studySessionProvider.notifier).clearList();
             if (kanjis.isEmpty) {
-              return Center(child: Text(l10n.noSearchResults));
+              return Column(
+                children: [
+                  _StudyHeader(
+                    showBack: true,
+                    title: listTitle,
+                    current: 0,
+                    total: 0,
+                    isDark: prefs.isDark,
+                    canShuffle: false,
+                    onBack: onHeaderBack,
+                    onToggleDark: () =>
+                        ref.read(studyPrefsProvider.notifier).toggleDark(),
+                    onSearch: null,
+                    onShuffle: null,
+                  ),
+                  Expanded(child: Center(child: Text(l10n.emptyList))),
+                ],
+              );
             }
             if (!_didJump && widget.initialId != null) {
               // `/kanji/:id`로 들어왔을 때 해당 장으로 점프. 한 번만.
@@ -97,15 +182,25 @@ class _StudyPageState extends ConsumerState<StudyPage> {
             return Column(
               children: [
                 _StudyHeader(
-                  showBack: widget.showBack,
-                  title: l10n.studyTitle,
+                  showBack: true,
+                  title: listTitle,
                   current: safeIndex + 1,
                   total: kanjis.length,
                   isDark: prefs.isDark,
-                  onBack: () => context.pop(),
+                  canShuffle: kanjis.length > 1 && widget.initialId == null,
+                  onBack: onHeaderBack,
                   onToggleDark: () =>
                       ref.read(studyPrefsProvider.notifier).toggleDark(),
                   onSearch: () => _openSearch(kanjis, l10n),
+                  onShuffle: () {
+                    ref.read(studySessionProvider.notifier).shuffle();
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(l10n.shuffled),
+                        duration: const Duration(seconds: 1),
+                      ),
+                    );
+                  },
                 ),
                 Expanded(
                   child: Row(
@@ -175,7 +270,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 88,
+                  height: showAnswer && kanji.hint.isNotEmpty ? 128 : 88,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: showHint
@@ -283,8 +378,8 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   }
 }
 
-/// 제목 · 다크 토글 · `현재 / 전체` · 검색.
-/// タイトル · ダーク切替 · `現在 / 全体` · 検索。
+/// 목록 풀다운 · 랜덤 · 다크 · `현재 / 전체` · 검색.
+/// 一覧プルダウン · ランダム · ダーク · `現在 / 全体` · 検索。
 class _StudyHeader extends StatelessWidget {
   const _StudyHeader({
     required this.showBack,
@@ -292,9 +387,11 @@ class _StudyHeader extends StatelessWidget {
     required this.current,
     required this.total,
     required this.isDark,
+    required this.canShuffle,
     required this.onBack,
     required this.onToggleDark,
     required this.onSearch,
+    required this.onShuffle,
   });
 
   final bool showBack;
@@ -302,9 +399,11 @@ class _StudyHeader extends StatelessWidget {
   final int current;
   final int total;
   final bool isDark;
+  final bool canShuffle;
   final VoidCallback onBack;
   final VoidCallback onToggleDark;
-  final VoidCallback onSearch;
+  final VoidCallback? onSearch;
+  final VoidCallback? onShuffle;
 
   @override
   Widget build(BuildContext context) {
@@ -318,7 +417,7 @@ class _StudyHeader extends StatelessWidget {
               icon: const Icon(Icons.arrow_back),
             )
           else
-            const SizedBox(width: 12),
+            const SizedBox(width: 8),
           Expanded(
             child: Text(
               title,
@@ -328,6 +427,14 @@ class _StudyHeader extends StatelessWidget {
                     color: const Color(0xFFE85A7B),
                     fontWeight: FontWeight.w700,
                   ),
+            ),
+          ),
+          IconButton(
+            tooltip: AppLocalizations.of(context).shuffle,
+            onPressed: canShuffle ? onShuffle : null,
+            icon: const Icon(
+              Icons.shuffle,
+              color: AppTheme.sakura,
             ),
           ),
           IconButton(
@@ -355,7 +462,7 @@ class _StudyHeader extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  tooltip: l10nSearch(context),
+                  tooltip: AppLocalizations.of(context).searchKanji,
                   visualDensity: VisualDensity.compact,
                   onPressed: onSearch,
                   icon: const Icon(Icons.search, color: Color(0xFFE85A7B)),
@@ -367,14 +474,10 @@ class _StudyHeader extends StatelessWidget {
       ),
     );
   }
-
-  String l10nSearch(BuildContext context) {
-    return AppLocalizations.of(context).searchKanji;
-  }
 }
 
-/// 한자만 크게. 뜻·읽기는 카드 밖 `_AnswerBlock`에 둔다.
-/// 漢字だけ大きく。意味・読みはカード外の `_AnswerBlock` に置く。
+/// 한자·단어만 크게. 뜻·읽기는 카드 밖 `_AnswerBlock`에 둔다.
+/// 漢字・単語だけ大きく。意味・読みはカード外の `_AnswerBlock` に置く。
 class _KanjiFlashCard extends StatelessWidget {
   const _KanjiFlashCard({
     required this.kanji,
@@ -407,6 +510,7 @@ class _KanjiFlashCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.displayLarge?.copyWith(
                         color: const Color(0xFF5C3A45),
                         fontWeight: FontWeight.w500,
+                        fontSize: kanji.isWord ? 72 : 96,
                       ),
                 ),
               ),
@@ -429,8 +533,8 @@ class _KanjiFlashCard extends StatelessWidget {
   }
 }
 
-/// 힌트=뜻만, 정답=뜻+훈독+음독(히라가나).
-/// ヒント=意味だけ、答え=意味+訓読み+音読み(ひらがな)。
+/// 힌트=뜻만, 정답=뜻+읽기(단어) 또는 훈독+음독(한자).
+/// ヒント=意味だけ、答え=意味+読み(単語) または訓読み+音読み(漢字)。
 class _AnswerBlock extends StatelessWidget {
   const _AnswerBlock({
     required this.kanji,
@@ -444,13 +548,10 @@ class _AnswerBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meaning = kanji.meaningsKo.isEmpty
-        ? kanji.koreanMeaning
-        : kanji.meaningsKo.join(' ');
-    final kun = kanji.kunYomi.map((item) => item.kana).join('・');
-    final on = kanji.onYomi
-        .map((item) => katakanaToHiragana(item.kana))
-        .join('・');
+    final meaning = kanji.displayMeaning;
+    final readingLine = kanji.isWord
+        ? '${l10n.cardReading}: ${kanji.displayReading.isEmpty ? '—' : kanji.displayReading}'
+        : '${l10n.cardKun}: ${_kun()} / ${l10n.cardOn}: ${_on()}';
 
     return Column(
       children: [
@@ -465,12 +566,39 @@ class _AnswerBlock extends StatelessWidget {
         if (showReadings) ...[
           const SizedBox(height: 6),
           Text(
-            '${l10n.cardKun}: ${kun.isEmpty ? '—' : kun} / ${l10n.cardOn}: ${on.isEmpty ? '—' : on}',
+            readingLine,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
+          if (kanji.hint.trim().isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(
+              kanji.hint,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Theme.of(context)
+                        .colorScheme
+                        .onSurface
+                        .withOpacity(0.7),
+                  ),
+            ),
+          ],
         ],
       ],
     );
+  }
+
+  String _kun() {
+    final kun = kanji.kunYomi.map((item) => item.kana).join('・');
+    return kun.isEmpty ? '—' : kun;
+  }
+
+  String _on() {
+    final on = kanji.onYomi
+        .map((item) => katakanaToHiragana(item.kana))
+        .join('・');
+    return on.isEmpty ? '—' : on;
   }
 }

@@ -40,13 +40,127 @@ class AppLocalizationsJa extends AppLocalizations {
   String get examples => '例文';
 
   @override
-  String get kanjiList => '漢字一覧';
+  String get kanjiList => '一覧';
 
   @override
   String get settings => '設定';
 
   @override
   String get quizComingSoon => 'クイズは近日公開です';
+
+  @override
+  String get quizTitle => 'クイズ';
+
+  @override
+  String get listAll => 'すべて';
+
+  @override
+  String get listUser => '追加したカード';
+
+  @override
+  String get shuffle => 'ランダム';
+
+  @override
+  String get shuffled => '順番を混ぜました';
+
+  @override
+  String get kindKanji => '漢字';
+
+  @override
+  String get kindWord => '単語';
+
+  @override
+  String get kindVerb => '動詞';
+
+  @override
+  String get pickKindTitle => '漢字 / 動詞';
+
+  @override
+  String get pickListTitle => '一覧を選んでください';
+
+  @override
+  String get readingLabel => '読み';
+
+  @override
+  String get readingHint => '例: やまのぼり';
+
+  @override
+  String get surfaceLabel => '表記';
+
+  @override
+  String get importList => 'JSONを取り込む';
+
+  @override
+  String get importHint => '一覧JSONを貼り付けてください';
+
+  @override
+  String get importAction => '取り込む';
+
+  @override
+  String importSuccess(int count) {
+    return '$count件を取り込みました';
+  }
+
+  @override
+  String get importFailed => 'JSONを読めませんでした';
+
+  @override
+  String get quizStart => '開始';
+
+  @override
+  String get quizNext => '次へ';
+
+  @override
+  String get quizSeeResult => '結果を見る';
+
+  @override
+  String get quizResult => '結果';
+
+  @override
+  String quizScore(int correct, int total) {
+    return '$correct / $total';
+  }
+
+  @override
+  String get quizRetry => 'もう一度';
+
+  @override
+  String get quizCorrect => '正解';
+
+  @override
+  String get quizWrong => '不正解';
+
+  @override
+  String get quizEmpty => 'この一覧ではクイズを作れません';
+
+  @override
+  String get quizPickMeaning => '意味を選んでください';
+
+  @override
+  String get quizPickLiteral => '表記を選んでください';
+
+  @override
+  String get quizModeMeaning => '意味';
+
+  @override
+  String get quizModeLiteral => '表記';
+
+  @override
+  String quizProgress(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get addItem => '追加';
+
+  @override
+  String get addWord => '単語を追加';
+
+  @override
+  String get emptyList => 'この一覧は空です';
+
+  @override
+  String get cardReading => '読み';
 
   @override
   String jlptLevel(String level) {
@@ -112,10 +226,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cancel => 'キャンセル';
 
   @override
-  String get deleteKanjiConfirm => 'この漢字を削除しますか？';
+  String get deleteKanjiConfirm => 'この項目を削除しますか？';
 
   @override
-  String get alreadyExists => 'すでに登録されている漢字です';
+  String get alreadyExists => 'すでに登録されている項目です';
 
   @override
   String get requiredField => '必須項目です';
@@ -154,7 +268,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get searchKanji => '検索';
 
   @override
-  String get searchHint => '漢字・意味・読み';
+  String get searchHint => '漢字・単語・意味・読み';
 
   @override
   String get noSearchResults => '検索結果がありません';

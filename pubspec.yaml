@@ -26,4 +26,6 @@ flutter:
   uses-material-design: true
   generate: true
   assets:
+    - assets/data/lists.json
     - assets/data/kanji/
+    - assets/data/word/

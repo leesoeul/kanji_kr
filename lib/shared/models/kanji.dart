@@ -1,5 +1,6 @@
 import '../../core/kana.dart';
 import 'reading.dart';
+import 'study_list.dart';
 
 /// 예문 한 쌍. 폼에서는 지금은 1개만 다룬다.
 /// 例文の1組。フォームでは今は1件だけ扱う。
@@ -29,8 +30,8 @@ class KanjiExample {
       };
 }
 
-/// 학습 카드 한 장. 시드와 사용자 추가가 같은 모델을 쓴다.
-/// 学習カード1枚。シードとユーザー追加が同じモデルを使う。
+/// 학습 카드 한 장. 한자·단어, 시드와 사용자 추가가 같은 모델을 쓴다.
+/// 学習カード1枚。漢字・単語、シードとユーザー追加が同じモデルを使う。
 class Kanji {
   const Kanji({
     required this.id,
@@ -43,6 +44,10 @@ class Kanji {
     required this.onYomi,
     required this.kunYomi,
     required this.examples,
+    this.kind = EntryKind.kanji,
+    this.listId = '',
+    this.reading = '',
+    this.hint = '',
     this.isUserAdded = false,
   });
 
@@ -60,11 +65,75 @@ class Kanji {
   final List<Reading> onYomi;
   final List<Reading> kunYomi;
   final List<KanjiExample> examples;
+  final EntryKind kind;
+  /// 소속 목록. 시드는 n5_kanji 등, 직접 추가는 `user`.
+  /// 所属一覧。シードは n5_kanji など、自分で足す分は `user`。
+  final String listId;
+  /// 단어 전체 읽기. 한자면 훈/음독을 쓴다.
+  /// 単語全体の読み。漢字なら訓/音読みを使う。
+  final String reading;
+  /// 어원·암기 힌트. 비어 있으면 정답에 안 보여 준다.
+  /// 語源・覚えヒント。空なら答えに出さない。
+  final String hint;
   final bool isUserAdded;
+
+  bool get isWord => kind == EntryKind.word;
+
+  /// 한자는 훈음(나란할 병). 단어는 짧은 뜻.
+  /// 漢字は訓音(나란할 병)。単語は短い意味。
+  String get displayMeaning {
+    if (!isWord) {
+      final hunEum = koreanMeaning.trim();
+      if (hunEum.isNotEmpty) {
+        return hunEum.replaceAll('/', ' · ');
+      }
+    }
+    if (meaningsKo.isNotEmpty) {
+      return meaningsKo.join(', ');
+    }
+    return koreanMeaning;
+  }
+
+  /// 목록 부제용. 한자는 훈독·음독, 단어는 읽기.
+  /// 一覧の副題用。漢字は訓読み・音読み、単語は読み。
+  String get displayKunOn {
+    if (isWord) {
+      return displayReading;
+    }
+    final kun = kunYomi.map((item) => item.kana).join('・');
+    final on = onYomi
+        .map((item) => katakanaToHiragana(item.kana))
+        .join('・');
+    if (kun.isEmpty && on.isEmpty) {
+      return '';
+    }
+    if (kun.isEmpty) {
+      return on;
+    }
+    if (on.isEmpty) {
+      return kun;
+    }
+    return '$kun / $on';
+  }
+
+  /// 단어는 `reading`, 한자는 훈독·음독.
+  /// 単語は `reading`、漢字は訓読み・音読み。
+  String get displayReading {
+    if (reading.isNotEmpty) {
+      return reading;
+    }
+    if (isWord) {
+      return kunYomi.map((item) => item.kana).join('・');
+    }
+    return '';
+  }
 
   /// 사용자 추가 한자의 안정 id. 같은 글자를 두 번 넣지 못하게 하는 키로도 쓴다.
   /// ユーザー追加漢字の安定 id。同じ字を二度入れないキーにも使う。
-  static String userIdFor(String literal) => 'user_$literal';
+  static String userIdFor(String literal, {EntryKind kind = EntryKind.kanji}) {
+    final prefix = kind == EntryKind.word ? 'user_word_' : 'user_';
+    return '$prefix$literal';
+  }
 
   factory Kanji.fromJson(Map<String, dynamic> json) {
     List<Reading> readings(String key) {
@@ -74,12 +143,16 @@ class Kanji {
           .toList();
     }
 
+    final literal = json['literal'] as String? ?? '';
+    final kind = EntryKind.fromName(json['kind'] as String?);
+    final id = json['id'] as String? ?? userIdFor(literal, kind: kind);
+
     return Kanji(
-      id: json['id'] as String,
-      literal: json['literal'] as String,
+      id: id,
+      literal: literal,
       jlpt: json['jlpt'] as String? ?? 'USER',
       strokeCount: json['strokeCount'] as int? ?? 0,
-      koreanHanja: json['koreanHanja'] as String? ?? json['literal'] as String,
+      koreanHanja: json['koreanHanja'] as String? ?? literal,
       koreanMeaning: json['koreanMeaning'] as String? ?? '',
       meaningsKo: (json['meaningsKo'] as List<dynamic>? ?? const [])
           .map((item) => item as String)
@@ -89,6 +162,10 @@ class Kanji {
       examples: (json['examples'] as List<dynamic>? ?? const [])
           .map((item) => KanjiExample.fromJson(item as Map<String, dynamic>))
           .toList(),
+      kind: kind,
+      listId: json['listId'] as String? ?? '',
+      reading: json['reading'] as String? ?? '',
+      hint: json['hint'] as String? ?? '',
       isUserAdded: json['isUserAdded'] as bool? ?? false,
     );
   }
@@ -106,6 +183,12 @@ class Kanji {
       return true;
     }
     if (meaningsKo.any((item) => item.toLowerCase().contains(q))) {
+      return true;
+    }
+    if (reading.contains(query.trim()) || reading.toLowerCase().contains(q)) {
+      return true;
+    }
+    if (hint.toLowerCase().contains(q)) {
       return true;
     }
     // 음독은 시드가 가타카나라, 히라가나 검색도 맞춘다.
@@ -128,6 +211,10 @@ class Kanji {
         'onYomi': onYomi.map((item) => item.toJson()).toList(),
         'kunYomi': kunYomi.map((item) => item.toJson()).toList(),
         'examples': examples.map((item) => item.toJson()).toList(),
+        'kind': kind.jsonName,
+        'listId': listId,
+        'reading': reading,
+        'hint': hint,
         'isUserAdded': isUserAdded,
       };
 
@@ -142,6 +229,10 @@ class Kanji {
     List<Reading>? onYomi,
     List<Reading>? kunYomi,
     List<KanjiExample>? examples,
+    EntryKind? kind,
+    String? listId,
+    String? reading,
+    String? hint,
     bool? isUserAdded,
   }) {
     return Kanji(
@@ -155,6 +246,10 @@ class Kanji {
       onYomi: onYomi ?? this.onYomi,
       kunYomi: kunYomi ?? this.kunYomi,
       examples: examples ?? this.examples,
+      kind: kind ?? this.kind,
+      listId: listId ?? this.listId,
+      reading: reading ?? this.reading,
+      hint: hint ?? this.hint,
       isUserAdded: isUserAdded ?? this.isUserAdded,
     );
   }

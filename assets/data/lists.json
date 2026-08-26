@@ -1,0 +1,16 @@
+[
+  {
+    "id": "n5_kanji",
+    "kind": "kanji",
+    "titleKo": "N5 한자",
+    "titleJa": "N5漢字",
+    "asset": "assets/data/kanji/n5.json"
+  },
+  {
+    "id": "n5_word",
+    "kind": "word",
+    "titleKo": "N5 단어",
+    "titleJa": "N5単語",
+    "asset": "assets/data/word/n5.json"
+  }
+]

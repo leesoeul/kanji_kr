@@ -5,12 +5,13 @@ import 'package:go_router/go_router.dart';
 import '../../features/favorites/favorites_page.dart';
 import '../../features/kanji_add/kanji_add_page.dart';
 import '../../features/kanji_list/kanji_list_page.dart';
+import '../../features/quiz/quiz_page.dart';
 import '../../features/settings/settings_page.dart';
 import '../../features/study/study_page.dart';
 import '../l10n/generated/app_localizations.dart';
 
-/// 하단 3탭은 Shell로 상태를 유지하고, 추가/수정/설정은 탭 위에 올린다.
-/// 下部3タブは Shell で状態を保持し、追加/修正/設定はタブの上に載せる。
+/// 하단 4탭은 Shell로 상태를 유지하고, 추가/수정/설정은 탭 위에 올린다.
+/// 下部4タブは Shell で状態を保持し、追加/修正/設定はタブの上に載せる。
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/',
@@ -33,6 +34,14 @@ final routerProvider = Provider<GoRouter>((ref) {
               GoRoute(
                 path: '/list',
                 builder: (context, state) => const KanjiListPage(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/quiz',
+                builder: (context, state) => const QuizPage(),
               ),
             ],
           ),
@@ -79,8 +88,8 @@ final routerProvider = Provider<GoRouter>((ref) {
   );
 });
 
-/// 홈 / 목록 / 즐겨찾기 탭 셸.
-/// ホーム / 一覧 / お気に入りタブシェル。
+/// 홈 / 목록 / 퀴즈 / 즐겨찾기 탭 셸.
+/// ホーム / 一覧 / クイズ / お気に入りタブシェル。
 class AppShell extends StatelessWidget {
   const AppShell({super.key, required this.navigationShell});
 
@@ -105,6 +114,11 @@ class AppShell extends StatelessWidget {
             icon: const Icon(Icons.menu_book_outlined),
             selectedIcon: const Icon(Icons.menu_book),
             label: l10n.kanjiList,
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.quiz_outlined),
+            selectedIcon: const Icon(Icons.quiz),
+            label: l10n.quizTitle,
           ),
           NavigationDestination(
             icon: const Icon(Icons.favorite_border),

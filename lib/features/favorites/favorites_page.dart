@@ -35,12 +35,14 @@ class FavoritesPage extends ConsumerWidget {
                   kanji.literal,
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
-                title: Text(
-                  kanji.meaningsKo.isEmpty
-                      ? kanji.koreanMeaning
-                      : kanji.meaningsKo.join(', '),
-                ),
-                subtitle: Text(kanji.koreanMeaning),
+                            title: Text(kanji.displayMeaning),
+                            subtitle: Text(
+                              kanji.isWord
+                                  ? kanji.displayReading
+                                  : (kanji.displayKunOn.isEmpty
+                                      ? kanji.koreanMeaning
+                                      : kanji.displayKunOn),
+                            ),
                 trailing: IconButton(
                   tooltip: l10n.bookmarkRemove,
                   onPressed: () => ref

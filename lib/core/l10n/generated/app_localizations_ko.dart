@@ -40,13 +40,127 @@ class AppLocalizationsKo extends AppLocalizations {
   String get examples => '예문';
 
   @override
-  String get kanjiList => '한자 목록';
+  String get kanjiList => '목록';
 
   @override
   String get settings => '설정';
 
   @override
   String get quizComingSoon => '퀴즈는 곧 제공됩니다';
+
+  @override
+  String get quizTitle => '퀴즈';
+
+  @override
+  String get listAll => '전체';
+
+  @override
+  String get listUser => '내가 추가';
+
+  @override
+  String get shuffle => '랜덤';
+
+  @override
+  String get shuffled => '순서를 섞었습니다';
+
+  @override
+  String get kindKanji => '한자';
+
+  @override
+  String get kindWord => '단어';
+
+  @override
+  String get kindVerb => '동사';
+
+  @override
+  String get pickKindTitle => '한자 / 동사';
+
+  @override
+  String get pickListTitle => '목록을 고르세요';
+
+  @override
+  String get readingLabel => '읽기';
+
+  @override
+  String get readingHint => '예: やまのぼり';
+
+  @override
+  String get surfaceLabel => '표기';
+
+  @override
+  String get importList => 'JSON 가져오기';
+
+  @override
+  String get importHint => '목록 JSON을 붙여 넣으세요';
+
+  @override
+  String get importAction => '가져오기';
+
+  @override
+  String importSuccess(int count) {
+    return '$count개를 가져왔습니다';
+  }
+
+  @override
+  String get importFailed => 'JSON을 읽지 못했습니다';
+
+  @override
+  String get quizStart => '시작';
+
+  @override
+  String get quizNext => '다음';
+
+  @override
+  String get quizSeeResult => '결과 보기';
+
+  @override
+  String get quizResult => '결과';
+
+  @override
+  String quizScore(int correct, int total) {
+    return '$correct / $total';
+  }
+
+  @override
+  String get quizRetry => '다시 풀기';
+
+  @override
+  String get quizCorrect => '정답';
+
+  @override
+  String get quizWrong => '오답';
+
+  @override
+  String get quizEmpty => '이 목록에 퀴즈를 낼 카드가 부족합니다';
+
+  @override
+  String get quizPickMeaning => '뜻을 고르세요';
+
+  @override
+  String get quizPickLiteral => '글자를 고르세요';
+
+  @override
+  String get quizModeMeaning => '뜻';
+
+  @override
+  String get quizModeLiteral => '글자';
+
+  @override
+  String quizProgress(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get addItem => '추가';
+
+  @override
+  String get addWord => '단어 추가';
+
+  @override
+  String get emptyList => '이 목록이 비어 있습니다';
+
+  @override
+  String get cardReading => '읽기';
 
   @override
   String jlptLevel(String level) {
@@ -112,10 +226,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get cancel => '취소';
 
   @override
-  String get deleteKanjiConfirm => '이 한자를 삭제할까요?';
+  String get deleteKanjiConfirm => '이 항목을 삭제할까요?';
 
   @override
-  String get alreadyExists => '이미 있는 한자입니다';
+  String get alreadyExists => '이미 있는 항목입니다';
 
   @override
   String get requiredField => '필수 항목입니다';
@@ -154,7 +268,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get searchKanji => '검색';
 
   @override
-  String get searchHint => '한자, 뜻, 읽기';
+  String get searchHint => '한자, 단어, 뜻, 읽기';
 
   @override
   String get noSearchResults => '검색 결과가 없습니다';

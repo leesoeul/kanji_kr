@@ -5,6 +5,7 @@ library;
 
 import '../../shared/models/kanji.dart';
 import '../../shared/models/review_card.dart';
+import '../../shared/models/study_list.dart';
 import '../constants/srs.dart';
 
 class AppDatabase {
@@ -56,11 +57,18 @@ class AppDatabase {
     return _favoriteIds.contains(id);
   }
 
-  /// 같은 글자를 두 번 넣지 않기 위한 검사. 수정 중이면 자기 id는 제외.
-  /// 同じ字を二度入れないための検査。修正中なら自分の id は除外。
-  bool containsLiteral(String literal, {String? exceptId}) {
+  /// 같은 종류·글자를 두 번 넣지 않기 위한 검사. 수정 중이면 자기 id는 제외.
+  /// 同じ種類・字を二度入れないための検査。修正中なら自分の id は除外。
+  bool containsLiteral(
+    String literal, {
+    String? exceptId,
+    EntryKind? kind,
+  }) {
     return _kanjis.values.any(
-      (kanji) => kanji.literal == literal && kanji.id != exceptId,
+      (kanji) =>
+          kanji.literal == literal &&
+          kanji.id != exceptId &&
+          (kind == null || kanji.kind == kind),
     );
   }
 
