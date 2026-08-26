@@ -33,7 +33,18 @@ void main() {
     expect(kanji.matchesQuery('水'), isFalse);
   });
 
-  test('한자 뜻은 훈음으로 보여 준다', () {
+  test('초급 한자 시드에 山이 있다', () {
+    final raw = File('assets/data/kanji/beg.json').readAsStringSync();
+    final list = jsonDecode(raw) as List<dynamic>;
+    expect(list, hasLength(300));
+    final kanji = Kanji.fromJson(list.first as Map<String, dynamic>);
+    expect(kanji.literal, '山');
+    expect(kanji.id, 'kanji_1');
+    expect(kanji.listId, 'kanji_beg');
+    expect(kanji.kind, EntryKind.kanji);
+    expect(kanji.koreanMeaning, '산 산');
+    expect(kanji.meaningsKo, contains('산'));
+    expect(kanji.displayMeaning, '산 산');
     expect(
       Kanji.fromJson({
         'literal': '苦',
@@ -41,13 +52,35 @@ void main() {
       }).displayMeaning,
       '쓸 고 · 괴로울 고',
     );
-    expect(
-      Kanji.fromJson({
-        'literal': '並',
-        'koreanMeaning': '나란할 병',
-      }).displayMeaning,
-      '나란할 병',
-    );
+    expect(kanji.onYomi.single.kana, 'さん');
+    expect(kanji.kunYomi.single.kana, 'やま');
+  });
+
+  test('중급 한자·동사 시드 개수가 맞다', () {
+    final midKanji = jsonDecode(
+      File('assets/data/kanji/mid.json').readAsStringSync(),
+    ) as List<dynamic>;
+    final begVerb = jsonDecode(
+      File('assets/data/word/verb_beg.json').readAsStringSync(),
+    ) as List<dynamic>;
+    final midVerb = jsonDecode(
+      File('assets/data/word/verb_mid.json').readAsStringSync(),
+    ) as List<dynamic>;
+    final advVerb = jsonDecode(
+      File('assets/data/word/verb_adv.json').readAsStringSync(),
+    ) as List<dynamic>;
+    expect(midKanji, hasLength(300));
+    expect(begVerb, hasLength(200));
+    expect(midVerb, hasLength(200));
+    expect(advVerb, hasLength(200));
+    final verb = Kanji.fromJson(begVerb.first as Map<String, dynamic>);
+    expect(verb.literal, 'いる');
+    expect(verb.kind, EntryKind.word);
+    expect(verb.reading, 'いる');
+    expect(verb.displayMeaning, contains('있다'));
+    final last = Kanji.fromJson(advVerb.last as Map<String, dynamic>);
+    expect(last.literal, '申し込む');
+    expect(last.listId, 'verb_adv');
   });
 
   test('N5 단어 시드에 山登り가 있다', () {

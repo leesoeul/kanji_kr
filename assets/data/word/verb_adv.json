@@ -1,0 +1,2701 @@
+[
+  {
+    "id": "verb_401",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "慌てる",
+    "reading": "あわてる",
+    "jlpt": "ADV",
+    "koreanMeaning": "당황하다, 허둥대다",
+    "meaningsKo": [
+      "당황하다",
+      "허둥대다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_402",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "焦る",
+    "reading": "あせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "초조해하다, 안달하다",
+    "meaningsKo": [
+      "초조해하다",
+      "안달하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_403",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "落ち込む",
+    "reading": "おちこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "우울해지다, 낙담하다",
+    "meaningsKo": [
+      "우울해지다",
+      "낙담하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_404",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "呆れる",
+    "reading": "あきれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "어이없다, 기가 막히다",
+    "meaningsKo": [
+      "어이없다",
+      "기가 막히다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_405",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "憧れる",
+    "reading": "あこがれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "동경하다",
+    "meaningsKo": [
+      "동경하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_406",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "羨む",
+    "reading": "うらやむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "부러워하다",
+    "meaningsKo": [
+      "부러워하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_407",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "憎む",
+    "reading": "にくむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "미워하다",
+    "meaningsKo": [
+      "미워하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_408",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "恨む",
+    "reading": "うらむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "원망하다",
+    "meaningsKo": [
+      "원망하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_409",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "悔やむ",
+    "reading": "くやむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "후회하다, 애석해하다",
+    "meaningsKo": [
+      "후회하다",
+      "애석해하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_410",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "悩む",
+    "reading": "なやむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "고민하다, 괴로워하다",
+    "meaningsKo": [
+      "고민하다",
+      "괴로워하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_411",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "迷う",
+    "reading": "まよう",
+    "jlpt": "ADV",
+    "koreanMeaning": "망설이다, 헤매다",
+    "meaningsKo": [
+      "망설이다",
+      "헤매다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_412",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "躊躇う",
+    "reading": "ためらう",
+    "jlpt": "ADV",
+    "koreanMeaning": "주저하다, 망설이다",
+    "meaningsKo": [
+      "주저하다",
+      "망설이다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_413",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "恐れる",
+    "reading": "おそれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "두려워하다",
+    "meaningsKo": [
+      "두려워하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_414",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "怯える",
+    "reading": "おびえる",
+    "jlpt": "ADV",
+    "koreanMeaning": "무서워하다, 겁먹다",
+    "meaningsKo": [
+      "무서워하다",
+      "겁먹다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_415",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "怒る",
+    "reading": "いかる",
+    "jlpt": "ADV",
+    "koreanMeaning": "분노하다 (격식)",
+    "meaningsKo": [
+      "분노하다 (격식)"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_416",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "慰める",
+    "reading": "なぐさめる",
+    "jlpt": "ADV",
+    "koreanMeaning": "위로하다",
+    "meaningsKo": [
+      "위로하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_417",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "励ます",
+    "reading": "はげます",
+    "jlpt": "ADV",
+    "koreanMeaning": "격려하다",
+    "meaningsKo": [
+      "격려하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_418",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "張り切る",
+    "reading": "はりきる",
+    "jlpt": "ADV",
+    "koreanMeaning": "의욕이 넘치다, 분발하다",
+    "meaningsKo": [
+      "의욕이 넘치다",
+      "분발하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_419",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "威張る",
+    "reading": "いばる",
+    "jlpt": "ADV",
+    "koreanMeaning": "뽐내다, 잘난 체하다",
+    "meaningsKo": [
+      "뽐내다",
+      "잘난 체하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_420",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "怠ける",
+    "reading": "なまける",
+    "jlpt": "ADV",
+    "koreanMeaning": "게름 피우다",
+    "meaningsKo": [
+      "게름 피우다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_421",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "怠る",
+    "reading": "おこたる",
+    "jlpt": "ADV",
+    "koreanMeaning": "방심하다, 소홀히 하다",
+    "meaningsKo": [
+      "방심하다",
+      "소홀히 하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_422",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "劣る",
+    "reading": "おとる",
+    "jlpt": "ADV",
+    "koreanMeaning": "뒤떨어지다",
+    "meaningsKo": [
+      "뒤떨어지다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_423",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "優れる",
+    "reading": "すぐれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "뛰어나다, 우수하다",
+    "meaningsKo": [
+      "뛰어나다",
+      "우수하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_424",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "目立つ",
+    "reading": "めだつ",
+    "jlpt": "ADV",
+    "koreanMeaning": "눈에 띄다",
+    "meaningsKo": [
+      "눈에 띄다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_425",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "甘える",
+    "reading": "あまえる",
+    "jlpt": "ADV",
+    "koreanMeaning": "어리광 부리다",
+    "meaningsKo": [
+      "어리광 부리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_426",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "甘やかす",
+    "reading": "あまやかす",
+    "jlpt": "ADV",
+    "koreanMeaning": "오냐오냐하다",
+    "meaningsKo": [
+      "오냐오냐하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_427",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "疑う",
+    "reading": "うたがう",
+    "jlpt": "ADV",
+    "koreanMeaning": "의심하다",
+    "meaningsKo": [
+      "의심하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_428",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "信じ込む",
+    "reading": "しんじこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "굳게 믿다",
+    "meaningsKo": [
+      "굳게 믿다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_429",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "思い込む",
+    "reading": "おもいこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "착각하다, 굳게 결심하다",
+    "meaningsKo": [
+      "착각하다",
+      "굳게 결심하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_430",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "思い付く",
+    "reading": "おもいつく",
+    "jlpt": "ADV",
+    "koreanMeaning": "문득 생각이 떠오르다",
+    "meaningsKo": [
+      "문득 생각이 떠오르다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_431",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "思いやる",
+    "reading": "おもいやる",
+    "jlpt": "ADV",
+    "koreanMeaning": "배려하다",
+    "meaningsKo": [
+      "배려하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_432",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "気を遣う",
+    "reading": "きをつかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "신경을 쓰다",
+    "meaningsKo": [
+      "신경을 쓰다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_433",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "気にする",
+    "reading": "きにする",
+    "jlpt": "ADV",
+    "koreanMeaning": "마음에 두다, 신경 쓰다",
+    "meaningsKo": [
+      "마음에 두다",
+      "신경 쓰다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_434",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "割り切る",
+    "reading": "わりきる",
+    "jlpt": "ADV",
+    "koreanMeaning": "딱 잘라 생각하다",
+    "meaningsKo": [
+      "딱 잘라 생각하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_435",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見なす",
+    "reading": "みなす",
+    "jlpt": "ADV",
+    "koreanMeaning": "간주하다",
+    "meaningsKo": [
+      "간주하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_436",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見下す",
+    "reading": "みくだす",
+    "jlpt": "ADV",
+    "koreanMeaning": "깔보다, 얕보다",
+    "meaningsKo": [
+      "깔보다",
+      "얕보다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_437",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見直す",
+    "reading": "みなおす",
+    "jlpt": "ADV",
+    "koreanMeaning": "다시 보다, 재검토하다",
+    "meaningsKo": [
+      "다시 보다",
+      "재검토하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_438",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見慣れる",
+    "reading": "みなれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "눈에 익다",
+    "meaningsKo": [
+      "눈에 익다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_439",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見逃す",
+    "reading": "みのがす",
+    "jlpt": "ADV",
+    "koreanMeaning": "놓치다, 못 본 체하다",
+    "meaningsKo": [
+      "놓치다",
+      "못 본 체하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_440",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見守る",
+    "reading": "みまもる",
+    "jlpt": "ADV",
+    "koreanMeaning": "지켜보다",
+    "meaningsKo": [
+      "지켜보다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_441",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "頷く",
+    "reading": "うなずく",
+    "jlpt": "ADV",
+    "koreanMeaning": "고개를 끄덕이다",
+    "meaningsKo": [
+      "고개를 끄덕이다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_442",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "呟く",
+    "reading": "つぶやく",
+    "jlpt": "ADV",
+    "koreanMeaning": "중얼거리다",
+    "meaningsKo": [
+      "중얼거리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_443",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "囁く",
+    "reading": "ささやく",
+    "jlpt": "ADV",
+    "koreanMeaning": "속삭이다",
+    "meaningsKo": [
+      "속삭이다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_444",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "怒鳴る",
+    "reading": "どなる",
+    "jlpt": "ADV",
+    "koreanMeaning": "고함치다",
+    "meaningsKo": [
+      "고함치다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_445",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "喚く",
+    "reading": "わめく",
+    "jlpt": "ADV",
+    "koreanMeaning": "아우성치다, 빽빽 소리지르다",
+    "meaningsKo": [
+      "아우성치다",
+      "빽빽 소리지르다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_446",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "黙る",
+    "reading": "だまる",
+    "jlpt": "ADV",
+    "koreanMeaning": "입을 다물다",
+    "meaningsKo": [
+      "입을 다물다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_447",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "打ち明ける",
+    "reading": "うちあける",
+    "jlpt": "ADV",
+    "koreanMeaning": "털어놓다, 고백하다",
+    "meaningsKo": [
+      "털어놓다",
+      "고백하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_448",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "打ち解ける",
+    "reading": "うちとける",
+    "jlpt": "ADV",
+    "koreanMeaning": "마음을 터놓다",
+    "meaningsKo": [
+      "마음을 터놓다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_449",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "詫びる",
+    "reading": "わびる",
+    "jlpt": "ADV",
+    "koreanMeaning": "사죄하다",
+    "meaningsKo": [
+      "사죄하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_450",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "誓う",
+    "reading": "ちかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "맹세하다",
+    "meaningsKo": [
+      "맹세하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_451",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "促す",
+    "reading": "うながす",
+    "jlpt": "ADV",
+    "koreanMeaning": "재촉하다, 촉구하다",
+    "meaningsKo": [
+      "재촉하다",
+      "촉구하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_452",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "騙す",
+    "reading": "だます",
+    "jlpt": "ADV",
+    "koreanMeaning": "속이다",
+    "meaningsKo": [
+      "속이다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_453",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "揶揄う",
+    "reading": "からかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "놀리다, 조롱하다",
+    "meaningsKo": [
+      "놀리다",
+      "조롱하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_454",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "脅かす",
+    "reading": "おどかす",
+    "jlpt": "ADV",
+    "koreanMeaning": "위협하다, 깜짝 놀라게 하다",
+    "meaningsKo": [
+      "위협하다",
+      "깜짝 놀라게 하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_455",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "貶す",
+    "reading": "けなす",
+    "jlpt": "ADV",
+    "koreanMeaning": "헐뜯다, 깎아내리다",
+    "meaningsKo": [
+      "헐뜯다",
+      "깎아내리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_456",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "褒める",
+    "reading": "ほめる",
+    "jlpt": "ADV",
+    "koreanMeaning": "칭찬하다",
+    "meaningsKo": [
+      "칭찬하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_457",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "庇う",
+    "reading": "かばう",
+    "jlpt": "ADV",
+    "koreanMeaning": "감싸다, 보호하다",
+    "meaningsKo": [
+      "감싸다",
+      "보호하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_458",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "逆らう",
+    "reading": "さからう",
+    "jlpt": "ADV",
+    "koreanMeaning": "거스르다, 반항하다",
+    "meaningsKo": [
+      "거스르다",
+      "반항하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_459",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "従う",
+    "reading": "したがう",
+    "jlpt": "ADV",
+    "koreanMeaning": "따르다, 순종하다",
+    "meaningsKo": [
+      "따르다",
+      "순종하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_460",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "刃向かう",
+    "reading": "はむかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "맞서다, 대들다",
+    "meaningsKo": [
+      "맞서다",
+      "대들다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_461",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "逆上せる",
+    "reading": "のぼせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "흥분하다, 우쭐해지다",
+    "meaningsKo": [
+      "흥분하다",
+      "우쭐해지다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_462",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "話し合う",
+    "reading": "はなしあう",
+    "jlpt": "ADV",
+    "koreanMeaning": "의논하다",
+    "meaningsKo": [
+      "의논하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_463",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "言い合う",
+    "reading": "いいあう",
+    "jlpt": "ADV",
+    "koreanMeaning": "서로 말하다, 말다툼하다",
+    "meaningsKo": [
+      "서로 말하다",
+      "말다툼하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_464",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "語り合う",
+    "reading": "かたりあう",
+    "jlpt": "ADV",
+    "koreanMeaning": "서로 이야기하다",
+    "meaningsKo": [
+      "서로 이야기하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_465",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見つめ合う",
+    "reading": "みつめあう",
+    "jlpt": "ADV",
+    "koreanMeaning": "서로 마주 보다",
+    "meaningsKo": [
+      "서로 마주 보다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_466",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "付き合う",
+    "reading": "つきあう",
+    "jlpt": "ADV",
+    "koreanMeaning": "사귀다, 교제하다",
+    "meaningsKo": [
+      "사귀다",
+      "교제하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_467",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "すれ違う",
+    "reading": "すれちがう",
+    "jlpt": "ADV",
+    "koreanMeaning": "스쳐 지나가다, 엇갈리다",
+    "meaningsKo": [
+      "스쳐 지나가다",
+      "엇갈리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_468",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "待ち合わせる",
+    "reading": "まちあわせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "만나기로 약속하다",
+    "meaningsKo": [
+      "만나기로 약속하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_469",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "問い合わせる",
+    "reading": "といあわせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "문의하다",
+    "meaningsKo": [
+      "문의하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_470",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "言い訳する",
+    "reading": "いいわけする",
+    "jlpt": "ADV",
+    "koreanMeaning": "변명하다",
+    "meaningsKo": [
+      "변명하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_471",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "文句を言う",
+    "reading": "もんくをいう",
+    "jlpt": "ADV",
+    "koreanMeaning": "불평하다",
+    "meaningsKo": [
+      "불평하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_472",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "八つ当たりする",
+    "reading": "やつあたりする",
+    "jlpt": "ADV",
+    "koreanMeaning": "화풀이하다",
+    "meaningsKo": [
+      "화풀이하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_473",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "皮肉る",
+    "reading": "ひにくる",
+    "jlpt": "ADV",
+    "koreanMeaning": "빈정대다, 비꼬다",
+    "meaningsKo": [
+      "빈정대다",
+      "비꼬다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_474",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "譲る",
+    "reading": "ゆずる",
+    "jlpt": "ADV",
+    "koreanMeaning": "양보하다",
+    "meaningsKo": [
+      "양보하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_475",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "頼る",
+    "reading": "たよる",
+    "jlpt": "ADV",
+    "koreanMeaning": "의지하다",
+    "meaningsKo": [
+      "의지하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_476",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "恵まれる",
+    "reading": "めぐまれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "축복받다, 혜택받다",
+    "meaningsKo": [
+      "축복받다",
+      "혜택받다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_477",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "名付ける",
+    "reading": "なづける",
+    "jlpt": "ADV",
+    "koreanMeaning": "이름 짓다",
+    "meaningsKo": [
+      "이름 짓다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_478",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "もてなす",
+    "reading": "もてなす",
+    "jlpt": "ADV",
+    "koreanMeaning": "대접하다, 환대하다",
+    "meaningsKo": [
+      "대접하다",
+      "환대하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_479",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "励む",
+    "reading": "はげむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "힘쓰다, 노력하다",
+    "meaningsKo": [
+      "힘쓰다",
+      "노력하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_480",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "振る舞う",
+    "reading": "ふるまう",
+    "jlpt": "ADV",
+    "koreanMeaning": "행동하다, 대접하다",
+    "meaningsKo": [
+      "행동하다",
+      "대접하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_481",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "扱う",
+    "reading": "あつかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "다루다, 취급하다",
+    "meaningsKo": [
+      "다루다",
+      "취급하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_482",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "伴う",
+    "reading": "ともなう",
+    "jlpt": "ADV",
+    "koreanMeaning": "동반하다",
+    "meaningsKo": [
+      "동반하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_483",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "補う",
+    "reading": "おぎなう",
+    "jlpt": "ADV",
+    "koreanMeaning": "보충하다",
+    "meaningsKo": [
+      "보충하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_484",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "賄う",
+    "reading": "まかなう",
+    "jlpt": "ADV",
+    "koreanMeaning": "조달하다, 유지하다",
+    "meaningsKo": [
+      "조달하다",
+      "유지하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_485",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "養う",
+    "reading": "やしなう",
+    "jlpt": "ADV",
+    "koreanMeaning": "기르다, 부양하다",
+    "meaningsKo": [
+      "기르다",
+      "부양하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_486",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "雇う",
+    "reading": "やとう",
+    "jlpt": "ADV",
+    "koreanMeaning": "고용하다",
+    "meaningsKo": [
+      "고용하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_487",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "築く",
+    "reading": "きずく",
+    "jlpt": "ADV",
+    "koreanMeaning": "구축하다, 쌓다",
+    "meaningsKo": [
+      "구축하다",
+      "쌓다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_488",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "描く",
+    "reading": "えがく",
+    "jlpt": "ADV",
+    "koreanMeaning": "그리다, 묘사하다",
+    "meaningsKo": [
+      "그리다",
+      "묘사하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_489",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "稼ぐ",
+    "reading": "かせぐ",
+    "jlpt": "ADV",
+    "koreanMeaning": "돈을 벌다",
+    "meaningsKo": [
+      "돈을 벌다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_490",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "招く",
+    "reading": "まねく",
+    "jlpt": "ADV",
+    "koreanMeaning": "초대하다, 초래하다",
+    "meaningsKo": [
+      "초대하다",
+      "초래하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_491",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "導く",
+    "reading": "みちびく",
+    "jlpt": "ADV",
+    "koreanMeaning": "이끌다, 인도하다",
+    "meaningsKo": [
+      "이끌다",
+      "인도하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_492",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "輝く",
+    "reading": "かがやく",
+    "jlpt": "ADV",
+    "koreanMeaning": "빛나다",
+    "meaningsKo": [
+      "빛나다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_493",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "弾む",
+    "reading": "はずむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "튀다, (숨이) 차다",
+    "meaningsKo": [
+      "튀다",
+      "(숨이) 차다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_494",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "縮む",
+    "reading": "ちぢむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "줄어들다, 오그라들다",
+    "meaningsKo": [
+      "줄어들다",
+      "오그라들다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_495",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "伸びる",
+    "reading": "のびる",
+    "jlpt": "ADV",
+    "koreanMeaning": "자라다, 늘어나다",
+    "meaningsKo": [
+      "자라다",
+      "늘어나다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_496",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "伸ばす",
+    "reading": "のばす",
+    "jlpt": "ADV",
+    "koreanMeaning": "펴다, 기르다",
+    "meaningsKo": [
+      "펴다",
+      "기르다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_497",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "延びる",
+    "reading": "のびる",
+    "jlpt": "ADV",
+    "koreanMeaning": "연장되다, 연기되다",
+    "meaningsKo": [
+      "연장되다",
+      "연기되다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_498",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "延ばす",
+    "reading": "のばす",
+    "jlpt": "ADV",
+    "koreanMeaning": "연기하다, 미루다",
+    "meaningsKo": [
+      "연기하다",
+      "미루다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_499",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "削る",
+    "reading": "けずる",
+    "jlpt": "ADV",
+    "koreanMeaning": "깎다, 삭감하다",
+    "meaningsKo": [
+      "깎다",
+      "삭감하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_500",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "刻む",
+    "reading": "きざむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "잘게 썰다, 새기다",
+    "meaningsKo": [
+      "잘게 썰다",
+      "새기다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_501",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "縛る",
+    "reading": "しばる",
+    "jlpt": "ADV",
+    "koreanMeaning": "묶다, 속박하다",
+    "meaningsKo": [
+      "묶다",
+      "속박하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_502",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "結ぶ",
+    "reading": "むすぶ",
+    "jlpt": "ADV",
+    "koreanMeaning": "맺다, 묶다",
+    "meaningsKo": [
+      "맺다",
+      "묶다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_503",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "繋ぐ",
+    "reading": "つなぐ",
+    "jlpt": "ADV",
+    "koreanMeaning": "연결하다, 매다",
+    "meaningsKo": [
+      "연결하다",
+      "매다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_504",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "繋がる",
+    "reading": "つながる",
+    "jlpt": "ADV",
+    "koreanMeaning": "이어지다, 연결되다",
+    "meaningsKo": [
+      "이어지다",
+      "연결되다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_505",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "縫う",
+    "reading": "ぬう",
+    "jlpt": "ADV",
+    "koreanMeaning": "꿰매다",
+    "meaningsKo": [
+      "꿰매다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_506",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "編む",
+    "reading": "あむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "뜨다, 엮다",
+    "meaningsKo": [
+      "뜨다",
+      "엮다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_507",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "織る",
+    "reading": "おる",
+    "jlpt": "ADV",
+    "koreanMeaning": "짜다 (천을)",
+    "meaningsKo": [
+      "짜다 (천을)"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_508",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "染める",
+    "reading": "そめる",
+    "jlpt": "ADV",
+    "koreanMeaning": "물들이다, 염색하다",
+    "meaningsKo": [
+      "물들이다",
+      "염색하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_509",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "塗る",
+    "reading": "ぬる",
+    "jlpt": "ADV",
+    "koreanMeaning": "바르다, 칠하다",
+    "meaningsKo": [
+      "바르다",
+      "칠하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_510",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "拭く",
+    "reading": "ふく",
+    "jlpt": "ADV",
+    "koreanMeaning": "닦다",
+    "meaningsKo": [
+      "닦다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_511",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "掃く",
+    "reading": "はく",
+    "jlpt": "ADV",
+    "koreanMeaning": "쓸다",
+    "meaningsKo": [
+      "쓸다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_512",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "挟む",
+    "reading": "はさむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "끼우다, 사이에 두다",
+    "meaningsKo": [
+      "끼우다",
+      "사이에 두다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_513",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "挟まる",
+    "reading": "はさまる",
+    "jlpt": "ADV",
+    "koreanMeaning": "끼이다",
+    "meaningsKo": [
+      "끼이다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_514",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "畳む",
+    "reading": "たたむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "개다, 접다",
+    "meaningsKo": [
+      "개다",
+      "접다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_515",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "濡らす",
+    "reading": "ぬらす",
+    "jlpt": "ADV",
+    "koreanMeaning": "적시다",
+    "meaningsKo": [
+      "적시다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_516",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "隠す",
+    "reading": "かくす",
+    "jlpt": "ADV",
+    "koreanMeaning": "숨기다",
+    "meaningsKo": [
+      "숨기다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_517",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "隠れる",
+    "reading": "かくれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "숨다",
+    "meaningsKo": [
+      "숨다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_518",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "逃がす",
+    "reading": "にがす",
+    "jlpt": "ADV",
+    "koreanMeaning": "놓아주다, 놓치다",
+    "meaningsKo": [
+      "놓아주다",
+      "놓치다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_519",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "逃れる",
+    "reading": "のがれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "벗어나다, 면하다",
+    "meaningsKo": [
+      "벗어나다",
+      "면하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_520",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "逃す",
+    "reading": "のがす",
+    "jlpt": "ADV",
+    "koreanMeaning": "놓치다",
+    "meaningsKo": [
+      "놓치다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_521",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "編集する",
+    "reading": "へんしゅうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "편집하다",
+    "meaningsKo": [
+      "편집하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_522",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "撮影する",
+    "reading": "さつえいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "촬영하다",
+    "meaningsKo": [
+      "촬영하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_523",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "投稿する",
+    "reading": "とうこうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "게시하다, 업로드하다",
+    "meaningsKo": [
+      "게시하다",
+      "업로드하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_524",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "配信する",
+    "reading": "はいしんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "전송하다, 스트리밍하다",
+    "meaningsKo": [
+      "전송하다",
+      "스트리밍하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_525",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "共有する",
+    "reading": "きょうゆうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "공유하다",
+    "meaningsKo": [
+      "공유하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_526",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "保存する",
+    "reading": "ほぞんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "저장하다",
+    "meaningsKo": [
+      "저장하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_527",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "削除する",
+    "reading": "さくじょする",
+    "jlpt": "ADV",
+    "koreanMeaning": "삭제하다",
+    "meaningsKo": [
+      "삭제하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_528",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "実装する",
+    "reading": "じっそうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "구현하다 (기능 등을)",
+    "meaningsKo": [
+      "구현하다 (기능 등을)"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_529",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "構築する",
+    "reading": "こうちくする",
+    "jlpt": "ADV",
+    "koreanMeaning": "구축하다",
+    "meaningsKo": [
+      "구축하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_530",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "開発する",
+    "reading": "かいはつする",
+    "jlpt": "ADV",
+    "koreanMeaning": "개발하다",
+    "meaningsKo": [
+      "개발하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_531",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "移行する",
+    "reading": "いこうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "이전하다, 마이그레이션하다",
+    "meaningsKo": [
+      "이전하다",
+      "마이그레이션하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_532",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "稼働する",
+    "reading": "かどうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "가동하다, 작동하다",
+    "meaningsKo": [
+      "가동하다",
+      "작동하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_533",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "更新する",
+    "reading": "こうしんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "업데이트하다, 갱신하다",
+    "meaningsKo": [
+      "업데이트하다",
+      "갱신하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_534",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "修正する",
+    "reading": "しゅうせいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "수정하다",
+    "meaningsKo": [
+      "수정하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_535",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "改善する",
+    "reading": "かいぜんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "개선하다",
+    "meaningsKo": [
+      "개선하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_536",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "保守する",
+    "reading": "ほしゅする",
+    "jlpt": "ADV",
+    "koreanMeaning": "유지보수하다",
+    "meaningsKo": [
+      "유지보수하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_537",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "連携する",
+    "reading": "れんけいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "연동하다, 제휴하다",
+    "meaningsKo": [
+      "연동하다",
+      "제휴하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_538",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "企画する",
+    "reading": "きかくする",
+    "jlpt": "ADV",
+    "koreanMeaning": "기획하다",
+    "meaningsKo": [
+      "기획하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_539",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "提供する",
+    "reading": "ていきょうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "제공하다",
+    "meaningsKo": [
+      "제공하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_540",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "対応する",
+    "reading": "たいおうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "대응하다, 지원하다",
+    "meaningsKo": [
+      "대응하다",
+      "지원하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_541",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "処理する",
+    "reading": "しょりする",
+    "jlpt": "ADV",
+    "koreanMeaning": "처리하다",
+    "meaningsKo": [
+      "처리하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_542",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "設定する",
+    "reading": "せっていする",
+    "jlpt": "ADV",
+    "koreanMeaning": "설정하다",
+    "meaningsKo": [
+      "설정하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_543",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "追加する",
+    "reading": "ついかする",
+    "jlpt": "ADV",
+    "koreanMeaning": "추가하다",
+    "meaningsKo": [
+      "추가하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_544",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "反映する",
+    "reading": "はんえいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "반영하다",
+    "meaningsKo": [
+      "반영하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_545",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "確認する",
+    "reading": "かくにんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "확인하다",
+    "meaningsKo": [
+      "확인하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_546",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "指定する",
+    "reading": "していする",
+    "jlpt": "ADV",
+    "koreanMeaning": "지정하다",
+    "meaningsKo": [
+      "지정하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_547",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "比較する",
+    "reading": "ひかくする",
+    "jlpt": "ADV",
+    "koreanMeaning": "비교하다",
+    "meaningsKo": [
+      "비교하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_548",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "分析する",
+    "reading": "ぶんんせきする",
+    "jlpt": "ADV",
+    "koreanMeaning": "분석하다",
+    "meaningsKo": [
+      "분석하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_549",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "発生する",
+    "reading": "はっせいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "발생하다",
+    "meaningsKo": [
+      "발생하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_550",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "解決する",
+    "reading": "かいけつする",
+    "jlpt": "ADV",
+    "koreanMeaning": "해결하다",
+    "meaningsKo": [
+      "해결하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_551",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "管理する",
+    "reading": "かんりする",
+    "jlpt": "ADV",
+    "koreanMeaning": "관리하다",
+    "meaningsKo": [
+      "관리하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_552",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "登録する",
+    "reading": "とうろくする",
+    "jlpt": "ADV",
+    "koreanMeaning": "등록하다",
+    "meaningsKo": [
+      "등록하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_553",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "承認する",
+    "reading": "しょうにんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "승인하다",
+    "meaningsKo": [
+      "승인하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_554",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "検索する",
+    "reading": "けんさくする",
+    "jlpt": "ADV",
+    "koreanMeaning": "검색하다",
+    "meaningsKo": [
+      "검색하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_555",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "表示する",
+    "reading": "ひょうじする",
+    "jlpt": "ADV",
+    "koreanMeaning": "표시하다",
+    "meaningsKo": [
+      "표시하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_556",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "隠蔽する",
+    "reading": "いんぺいする",
+    "jlpt": "ADV",
+    "koreanMeaning": "은폐하다, 숨기다",
+    "meaningsKo": [
+      "은폐하다",
+      "숨기다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_557",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "復元する",
+    "reading": "ふくげんする",
+    "jlpt": "ADV",
+    "koreanMeaning": "복원하다",
+    "meaningsKo": [
+      "복원하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_558",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "通知する",
+    "reading": "つうちする",
+    "jlpt": "ADV",
+    "koreanMeaning": "알림을 보내다",
+    "meaningsKo": [
+      "알림을 보내다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_559",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "検討する",
+    "reading": "けんとうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "검토하다",
+    "meaningsKo": [
+      "검토하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_560",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "担当する",
+    "reading": "たんとうする",
+    "jlpt": "ADV",
+    "koreanMeaning": "담당하다",
+    "meaningsKo": [
+      "담당하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_561",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "引き受ける",
+    "reading": "ひきうける",
+    "jlpt": "ADV",
+    "koreanMeaning": "맡다, 떠맡다",
+    "meaningsKo": [
+      "맡다",
+      "떠맡다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_562",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "引き返す",
+    "reading": "ひきかえす",
+    "jlpt": "ADV",
+    "koreanMeaning": "되돌아가다",
+    "meaningsKo": [
+      "되돌아가다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_563",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "引き出す",
+    "reading": "ひきだす",
+    "jlpt": "ADV",
+    "koreanMeaning": "끌어내다, 인출하다",
+    "meaningsKo": [
+      "끌어내다",
+      "인출하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_564",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "引き止める",
+    "reading": "ひきとめる",
+    "jlpt": "ADV",
+    "koreanMeaning": "만류하다, 말리다",
+    "meaningsKo": [
+      "만류하다",
+      "말리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_565",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "引き下がる",
+    "reading": "ひきさがる",
+    "jlpt": "ADV",
+    "koreanMeaning": "물러나다, 철회하다",
+    "meaningsKo": [
+      "물러나다",
+      "철회하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_566",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "受け取る",
+    "reading": "うけとる",
+    "jlpt": "ADV",
+    "koreanMeaning": "수취하다, 받다",
+    "meaningsKo": [
+      "수취하다",
+      "받다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_567",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "受け入れる",
+    "reading": "うけいれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "받아들이다, 수용하다",
+    "meaningsKo": [
+      "받아들이다",
+      "수용하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_568",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "受け継ぐ",
+    "reading": "うけつぐ",
+    "jlpt": "ADV",
+    "koreanMeaning": "계승하다, 이어받다",
+    "meaningsKo": [
+      "계승하다",
+      "이어받다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_569",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "受け持つ",
+    "reading": "うけもつ",
+    "jlpt": "ADV",
+    "koreanMeaning": "담당하다, 맡다",
+    "meaningsKo": [
+      "담당하다",
+      "맡다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_570",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "打ち消す",
+    "reading": "うちけす",
+    "jlpt": "ADV",
+    "koreanMeaning": "부정하다, 취소하다",
+    "meaningsKo": [
+      "부정하다",
+      "취소하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_571",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "打ち合わせる",
+    "reading": "うちあわせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "미리 상의하다, 미팅하다",
+    "meaningsKo": [
+      "미리 상의하다",
+      "미팅하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_572",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "追いかける",
+    "reading": "おいかける",
+    "jlpt": "ADV",
+    "koreanMeaning": "뒤쫓다",
+    "meaningsKo": [
+      "뒤쫓다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_573",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "追い越す",
+    "reading": "おいこす",
+    "jlpt": "ADV",
+    "koreanMeaning": "앞지르다, 추월하다",
+    "meaningsKo": [
+      "앞지르다",
+      "추월하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_574",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "追い付く",
+    "reading": "おいつく",
+    "jlpt": "ADV",
+    "koreanMeaning": "따라잡다",
+    "meaningsKo": [
+      "따라잡다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_575",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "追い出す",
+    "reading": "おいだす",
+    "jlpt": "ADV",
+    "koreanMeaning": "내쫓다",
+    "meaningsKo": [
+      "내쫓다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_576",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "取り上げる",
+    "reading": "とりあげる",
+    "jlpt": "ADV",
+    "koreanMeaning": "집어 들다, 채택하다",
+    "meaningsKo": [
+      "집어 들다",
+      "채택하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_577",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "取り入れる",
+    "reading": "とりいれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "거두어들이다, 도입하다",
+    "meaningsKo": [
+      "거두어들이다",
+      "도입하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_578",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "取り組む",
+    "reading": "とりくむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "몰두하다, 착수하다",
+    "meaningsKo": [
+      "몰두하다",
+      "착수하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_579",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "取り扱う",
+    "reading": "とりあつかう",
+    "jlpt": "ADV",
+    "koreanMeaning": "다루다, 취급하다",
+    "meaningsKo": [
+      "다루다",
+      "취급하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_580",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "取り消す",
+    "reading": "とりけす",
+    "jlpt": "ADV",
+    "koreanMeaning": "취소하다",
+    "meaningsKo": [
+      "취소하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_581",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "立て替える",
+    "reading": "たてかえる",
+    "jlpt": "ADV",
+    "koreanMeaning": "대신 지불하다",
+    "meaningsKo": [
+      "대신 지불하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_582",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "立て直す",
+    "reading": "たてなおす",
+    "jlpt": "ADV",
+    "koreanMeaning": "다시 세우다, 재건하다",
+    "meaningsKo": [
+      "다시 세우다",
+      "재건하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_583",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "立て込む",
+    "reading": "たてこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "바쁘다, 밀리다",
+    "meaningsKo": [
+      "바쁘다",
+      "밀리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_584",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "振り向く",
+    "reading": "ふりむく",
+    "jlpt": "ADV",
+    "koreanMeaning": "뒤돌아보다",
+    "meaningsKo": [
+      "뒤돌아보다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_585",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "振り返る",
+    "reading": "ふりかえる",
+    "jlpt": "ADV",
+    "koreanMeaning": "돌아보다, 회고하다",
+    "meaningsKo": [
+      "돌아보다",
+      "회고하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_586",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "割り当てる",
+    "reading": "わりあてる",
+    "jlpt": "ADV",
+    "koreanMeaning": "할당하다",
+    "meaningsKo": [
+      "할당하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_587",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "割り込む",
+    "reading": "わりこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "끼어들다, 새치기하다",
+    "meaningsKo": [
+      "끼어들다",
+      "새치기하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_588",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "当てはまる",
+    "reading": "あてはまる",
+    "jlpt": "ADV",
+    "koreanMeaning": "들어맞다, 적합하다",
+    "meaningsKo": [
+      "들어맞다",
+      "적합하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_589",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "乗り越える",
+    "reading": "のりこえる",
+    "jlpt": "ADV",
+    "koreanMeaning": "극복하다, 뛰어넘다",
+    "meaningsKo": [
+      "극복하다",
+      "뛰어넘다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_590",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "乗り遅れる",
+    "reading": "のりおくれる",
+    "jlpt": "ADV",
+    "koreanMeaning": "놓치다, 타지 못하다",
+    "meaningsKo": [
+      "놓치다",
+      "타지 못하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_591",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見合わせる",
+    "reading": "みあわせる",
+    "jlpt": "ADV",
+    "koreanMeaning": "마주 보다, 보류하다",
+    "meaningsKo": [
+      "마주 보다",
+      "보류하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_592",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "見落とす",
+    "reading": "みおとす",
+    "jlpt": "ADV",
+    "koreanMeaning": "간과하다, 못 보고 넘기다",
+    "meaningsKo": [
+      "간과하다",
+      "못 보고 넘기다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_593",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "行き違う",
+    "reading": "いきちがう",
+    "jlpt": "ADV",
+    "koreanMeaning": "엇갈리다",
+    "meaningsKo": [
+      "엇갈리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_594",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "思い当たる",
+    "reading": "おもいあたる",
+    "jlpt": "ADV",
+    "koreanMeaning": "짐작이 가다, 짚이는 데가 있다",
+    "meaningsKo": [
+      "짐작이 가다",
+      "짚이는 데가 있다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_595",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "落ち着く",
+    "reading": "おちつく",
+    "jlpt": "ADV",
+    "koreanMeaning": "차분해지다, 안정되다",
+    "meaningsKo": [
+      "차분해지다",
+      "안정되다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_596",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "仕上がる",
+    "reading": "しあがる",
+    "jlpt": "ADV",
+    "koreanMeaning": "완성되다, 다 되다",
+    "meaningsKo": [
+      "완성되다",
+      "다 되다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_597",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "立ち上がる",
+    "reading": "たちあがる",
+    "jlpt": "ADV",
+    "koreanMeaning": "일어서다, 기운을 차리다",
+    "meaningsKo": [
+      "일어서다",
+      "기운을 차리다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_598",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "立ち寄る",
+    "reading": "たちよる",
+    "jlpt": "ADV",
+    "koreanMeaning": "들르다",
+    "meaningsKo": [
+      "들르다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_599",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "通りかかる",
+    "reading": "とおりかかる",
+    "jlpt": "ADV",
+    "koreanMeaning": "마침 지나가다",
+    "meaningsKo": [
+      "마침 지나가다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_600",
+    "kind": "word",
+    "listId": "verb_adv",
+    "literal": "申し込む",
+    "reading": "もうしこむ",
+    "jlpt": "ADV",
+    "koreanMeaning": "신청하다",
+    "meaningsKo": [
+      "신청하다"
+    ],
+    "examples": []
+  }
+]

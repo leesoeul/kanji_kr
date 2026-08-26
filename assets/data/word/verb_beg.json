@@ -1,0 +1,2880 @@
+[
+  {
+    "id": "verb_1",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "いる",
+    "reading": "いる",
+    "jlpt": "BEG",
+    "koreanMeaning": "있다 (사람/동물)",
+    "meaningsKo": [
+      "있다 (사람/동물)"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_2",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "ある",
+    "reading": "ある",
+    "jlpt": "BEG",
+    "koreanMeaning": "있다 (사물)",
+    "meaningsKo": [
+      "있다 (사물)"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_3",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "行く",
+    "reading": "いく",
+    "jlpt": "BEG",
+    "koreanMeaning": "가다",
+    "meaningsKo": [
+      "가다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_4",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "来る",
+    "reading": "くる",
+    "jlpt": "BEG",
+    "koreanMeaning": "오다",
+    "meaningsKo": [
+      "오다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_5",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "する",
+    "reading": "する",
+    "jlpt": "BEG",
+    "koreanMeaning": "하다",
+    "meaningsKo": [
+      "하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_6",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "食べる",
+    "reading": "たべる",
+    "jlpt": "BEG",
+    "koreanMeaning": "먹다",
+    "meaningsKo": [
+      "먹다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_7",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "飲む",
+    "reading": "のむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "마시다",
+    "meaningsKo": [
+      "마시다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_8",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "見る",
+    "reading": "みる",
+    "jlpt": "BEG",
+    "koreanMeaning": "보다",
+    "meaningsKo": [
+      "보다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_9",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "聞く",
+    "reading": "きく",
+    "jlpt": "BEG",
+    "koreanMeaning": "듣다, 묻다",
+    "meaningsKo": [
+      "듣다",
+      "묻다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_10",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "話す",
+    "reading": "はなす",
+    "jlpt": "BEG",
+    "koreanMeaning": "이야기하다",
+    "meaningsKo": [
+      "이야기하다"
+    ],
+    "examples": []
+  },
+  {
+    "id": "verb_11",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "会う",
+    "reading": "あう",
+    "jlpt": "BEG",
+    "koreanMeaning": "만나다",
+    "meaningsKo": [
+      "만나다"
+    ],
+    "examples": [],
+    "hint": "사람을 만나다할 때 쓰는 필수 동사"
+  },
+  {
+    "id": "verb_12",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "買う",
+    "reading": "かう",
+    "jlpt": "BEG",
+    "koreanMeaning": "사다",
+    "meaningsKo": [
+      "사다"
+    ],
+    "examples": [],
+    "hint": "물건을 사다"
+  },
+  {
+    "id": "verb_13",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "売る",
+    "reading": "うる",
+    "jlpt": "BEG",
+    "koreanMeaning": "팔다",
+    "meaningsKo": [
+      "팔다"
+    ],
+    "examples": [],
+    "hint": "물건을 팔다"
+  },
+  {
+    "id": "verb_14",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "持つ",
+    "reading": "もつ",
+    "jlpt": "BEG",
+    "koreanMeaning": "가지다, 들다",
+    "meaningsKo": [
+      "가지다",
+      "들다"
+    ],
+    "examples": [],
+    "hint": "물건을 손에 들거나 소유하다"
+  },
+  {
+    "id": "verb_15",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "待つ",
+    "reading": "まつ",
+    "jlpt": "BEG",
+    "koreanMeaning": "기다리다",
+    "meaningsKo": [
+      "기다리다"
+    ],
+    "examples": [],
+    "hint": "친구를 기다리다"
+  },
+  {
+    "id": "verb_16",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "書く",
+    "reading": "かく",
+    "jlpt": "BEG",
+    "koreanMeaning": "쓰다, 그리다",
+    "meaningsKo": [
+      "쓰다",
+      "그리다"
+    ],
+    "examples": [],
+    "hint": "글씨를 쓰다"
+  },
+  {
+    "id": "verb_17",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "読む",
+    "reading": "よむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "읽다",
+    "meaningsKo": [
+      "읽다"
+    ],
+    "examples": [],
+    "hint": "책을 읽다"
+  },
+  {
+    "id": "verb_18",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "歩く",
+    "reading": "あるく",
+    "jlpt": "BEG",
+    "koreanMeaning": "걷다",
+    "meaningsKo": [
+      "걷다"
+    ],
+    "examples": [],
+    "hint": "길을 걸어가다"
+  },
+  {
+    "id": "verb_19",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "走る",
+    "reading": "はしる",
+    "jlpt": "BEG",
+    "koreanMeaning": "달리기하다",
+    "meaningsKo": [
+      "달리기하다"
+    ],
+    "examples": [],
+    "hint": "⚠️ 예외 1그룹 동사! 모양은 2그룹 같으니 주의!"
+  },
+  {
+    "id": "verb_20",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "泳ぐ",
+    "reading": "およぐ",
+    "jlpt": "BEG",
+    "koreanMeaning": "헤엄치다, 수영하다",
+    "meaningsKo": [
+      "헤엄치다",
+      "수영하다"
+    ],
+    "examples": [],
+    "hint": "물에서 수영하다"
+  },
+  {
+    "id": "verb_21",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "洗う",
+    "reading": "아라우",
+    "jlpt": "BEG",
+    "koreanMeaning": "씻다, 빨다",
+    "meaningsKo": [
+      "씻다",
+      "빨다"
+    ],
+    "examples": [],
+    "hint": "손을 씻다, 빨래하다"
+  },
+  {
+    "id": "verb_22",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "作る",
+    "reading": "つくる",
+    "jlpt": "BEG",
+    "koreanMeaning": "만들다",
+    "meaningsKo": [
+      "만들다"
+    ],
+    "examples": [],
+    "hint": "음식이나 요리를 만들다"
+  },
+  {
+    "id": "verb_23",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "使う",
+    "reading": "つかう",
+    "jlpt": "BEG",
+    "koreanMeaning": "사용하다, 쓰다",
+    "meaningsKo": [
+      "사용하다",
+      "쓰다"
+    ],
+    "examples": [],
+    "hint": "도구를 사용하다"
+  },
+  {
+    "id": "verb_24",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "開ける",
+    "reading": "あける",
+    "jlpt": "BEG",
+    "koreanMeaning": "열다",
+    "meaningsKo": [
+      "열다"
+    ],
+    "examples": [],
+    "hint": "문을 열다 (타동사)"
+  },
+  {
+    "id": "verb_25",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "閉める",
+    "reading": "しめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "닫다",
+    "meaningsKo": [
+      "닫다"
+    ],
+    "examples": [],
+    "hint": "문을 닫다 (타동사)"
+  },
+  {
+    "id": "verb_26",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "入る",
+    "reading": "はいる",
+    "jlpt": "BEG",
+    "koreanMeaning": "들어가다, 들어오다",
+    "meaningsKo": [
+      "들어가다",
+      "들어오다"
+    ],
+    "examples": [],
+    "hint": "⚠️ 예외 1그룹 동사! 방에 들어가다"
+  },
+  {
+    "id": "verb_27",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "出る",
+    "reading": "でる",
+    "jlpt": "BEG",
+    "koreanMeaning": "나가다, 나오다",
+    "meaningsKo": [
+      "나가다",
+      "나오다"
+    ],
+    "examples": [],
+    "hint": "밖으로 나가다"
+  },
+  {
+    "id": "verb_28",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "立つ",
+    "reading": "たつ",
+    "jlpt": "BEG",
+    "koreanMeaning": "서다, 일어서다",
+    "meaningsKo": [
+      "서다",
+      "일어서다"
+    ],
+    "examples": [],
+    "hint": "땅에 서다"
+  },
+  {
+    "id": "verb_29",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "座る",
+    "reading": "すわる",
+    "jlpt": "BEG",
+    "koreanMeaning": "앉다",
+    "meaningsKo": [
+      "앉다"
+    ],
+    "examples": [],
+    "hint": "의자에 앉다"
+  },
+  {
+    "id": "verb_30",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "寝る",
+    "reading": "ねる",
+    "jlpt": "BEG",
+    "koreanMeaning": "자다",
+    "meaningsKo": [
+      "자다"
+    ],
+    "examples": [],
+    "hint": "침대에서 자다"
+  },
+  {
+    "id": "verb_31",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "起きる",
+    "reading": "おきる",
+    "jlpt": "BEG",
+    "koreanMeaning": "일어나다",
+    "meaningsKo": [
+      "일어나다"
+    ],
+    "examples": [],
+    "hint": "아침에 눈을 뜨고 일어나다"
+  },
+  {
+    "id": "verb_32",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "言う",
+    "reading": "いう",
+    "jlpt": "BEG",
+    "koreanMeaning": "말하다",
+    "meaningsKo": [
+      "말하다"
+    ],
+    "examples": [],
+    "hint": "단어 등을 소리 내어 말하다"
+  },
+  {
+    "id": "verb_33",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "歌う",
+    "reading": "うたう",
+    "jlpt": "BEG",
+    "koreanMeaning": "노래하다",
+    "meaningsKo": [
+      "노래하다"
+    ],
+    "examples": [],
+    "hint": "노래를 부르다"
+  },
+  {
+    "id": "verb_34",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "呼ぶ",
+    "reading": "よぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "부르다",
+    "meaningsKo": [
+      "부르다"
+    ],
+    "examples": [],
+    "hint": "택시나 친구 이름을 부르다"
+  },
+  {
+    "id": "verb_35",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "遊ぶ",
+    "reading": "あそぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "놀다",
+    "meaningsKo": [
+      "놀다"
+    ],
+    "examples": [],
+    "hint": "친구와 재밌게 놀다"
+  },
+  {
+    "id": "verb_36",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "休む",
+    "reading": "やすむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "쉬다, 결석하다",
+    "meaningsKo": [
+      "쉬다",
+      "결석하다"
+    ],
+    "examples": [],
+    "hint": "회사나 학교를 쉬다"
+  },
+  {
+    "id": "verb_37",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "働く",
+    "reading": "はたらく",
+    "jlpt": "BEG",
+    "koreanMeaning": "일하다",
+    "meaningsKo": [
+      "일하다"
+    ],
+    "examples": [],
+    "hint": "직장에서 돈을 벌기 위해 일하다"
+  },
+  {
+    "id": "verb_38",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "住む",
+    "reading": "すむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "살다, 거주하다",
+    "meaningsKo": [
+      "살다",
+      "거주하다"
+    ],
+    "examples": [],
+    "hint": "도쿄에 살고 있다 할 때의 살다"
+  },
+  {
+    "id": "verb_39",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "知る",
+    "reading": "しる",
+    "jlpt": "BEG",
+    "koreanMeaning": "알다",
+    "meaningsKo": [
+      "알다"
+    ],
+    "examples": [],
+    "hint": "⚠️ 예외 1그룹 동사! 사실을 알다"
+  },
+  {
+    "id": "verb_40",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "分かる",
+    "reading": "わかる",
+    "jlpt": "BEG",
+    "koreanMeaning": "알다, 이해하다",
+    "meaningsKo": [
+      "알다",
+      "이해하다"
+    ],
+    "examples": [],
+    "hint": "말귀나 이치를 이해하다"
+  },
+  {
+    "id": "verb_41",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "思う",
+    "reading": "おもう",
+    "jlpt": "BEG",
+    "koreanMeaning": "생각하다",
+    "meaningsKo": [
+      "생각하다"
+    ],
+    "examples": [],
+    "hint": "내 주관적인 의견을 생각하다"
+  },
+  {
+    "id": "verb_42",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "考える",
+    "reading": "かん가える",
+    "jlpt": "BEG",
+    "koreanMeaning": "생각하다, 고려하다",
+    "meaningsKo": [
+      "생각하다",
+      "고려하다"
+    ],
+    "examples": [],
+    "hint": "논리적으로 짱구를 굴려 생각하다"
+  },
+  {
+    "id": "verb_43",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "覚える",
+    "reading": "おぼえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "외우다, 기억하다",
+    "meaningsKo": [
+      "외우다",
+      "기억하다"
+    ],
+    "examples": [],
+    "hint": "단어를 머릿속에 외우다"
+  },
+  {
+    "id": "verb_44",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "忘れる",
+    "reading": "わすれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "잊다, 두고 오다",
+    "meaningsKo": [
+      "잊다",
+      "두고 오다"
+    ],
+    "examples": [],
+    "hint": "물건을 깜빡 잊고 오다"
+  },
+  {
+    "id": "verb_45",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "決める",
+    "reading": "きめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "정하다, 결정하다",
+    "meaningsKo": [
+      "정하다",
+      "결정하다"
+    ],
+    "examples": [],
+    "hint": "메뉴를 정하다"
+  },
+  {
+    "id": "verb_46",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "変える",
+    "reading": "かえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "바꾸다, 변경하다",
+    "meaningsKo": [
+      "바꾸다",
+      "변경하다"
+    ],
+    "examples": [],
+    "hint": "계획을 바꾸다"
+  },
+  {
+    "id": "verb_47",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "始める",
+    "reading": "はじめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "시작하다",
+    "meaningsKo": [
+      "시작하다"
+    ],
+    "examples": [],
+    "hint": "공부를 시작하다 (타동사)"
+  },
+  {
+    "id": "verb_48",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "終わる",
+    "reading": "おわる",
+    "jlpt": "BEG",
+    "koreanMeaning": "끝나다",
+    "meaningsKo": [
+      "끝나다"
+    ],
+    "examples": [],
+    "hint": "수업이 끝나다 (자동사)"
+  },
+  {
+    "id": "verb_49",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "帰る",
+    "reading": "かえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "돌아가다, 돌아오다",
+    "meaningsKo": [
+      "돌아가다",
+      "돌아오다"
+    ],
+    "examples": [],
+    "hint": "⚠️ 예외 1그룹 동사! 집으로 돌아가다"
+  },
+  {
+    "id": "verb_50",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "返す",
+    "reading": "かえす",
+    "jlpt": "BEG",
+    "koreanMeaning": "돌려주다, 반납하다",
+    "meaningsKo": [
+      "돌려주다",
+      "반납하다"
+    ],
+    "examples": [],
+    "hint": "빌린 돈이나 책을 돌려주다"
+  },
+  {
+    "id": "verb_51",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "貸す",
+    "reading": "かす",
+    "jlpt": "BEG",
+    "koreanMeaning": "빌려주다",
+    "meaningsKo": [
+      "빌려주다"
+    ],
+    "examples": [],
+    "hint": "남에게 물건을 빌려주다"
+  },
+  {
+    "id": "verb_52",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "借りる",
+    "reading": "かりる",
+    "jlpt": "BEG",
+    "koreanMeaning": "빌리다",
+    "meaningsKo": [
+      "빌리다"
+    ],
+    "examples": [],
+    "hint": "남에게 물건을 빌려오다"
+  },
+  {
+    "id": "verb_53",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "送る",
+    "reading": "おくる",
+    "jlpt": "BEG",
+    "koreanMeaning": "보내다, 배웅하다",
+    "meaningsKo": [
+      "보내다",
+      "배웅하다"
+    ],
+    "examples": [],
+    "hint": "택배를 보내다, 친구를 역까지 배웅하다"
+  },
+  {
+    "id": "verb_54",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "貰う",
+    "reading": "もらう",
+    "jlpt": "BEG",
+    "koreanMeaning": "받다",
+    "meaningsKo": [
+      "받다"
+    ],
+    "examples": [],
+    "hint": "선물을 받아오다"
+  },
+  {
+    "id": "verb_55",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "上げる",
+    "reading": "あげる",
+    "jlpt": "BEG",
+    "koreanMeaning": "주다, 올리다",
+    "meaningsKo": [
+      "주다",
+      "올리다"
+    ],
+    "examples": [],
+    "hint": "남에게 물건을 주다, 값을 올리다"
+  },
+  {
+    "id": "verb_56",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "くれる",
+    "reading": "くれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "주다",
+    "meaningsKo": [
+      "주다"
+    ],
+    "examples": [],
+    "hint": "남이 나(혹은 내 가족)에게 물건을 주다"
+  },
+  {
+    "id": "verb_57",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "教える",
+    "reading": "おしえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "가르치다, 알려주다",
+    "meaningsKo": [
+      "가르치다",
+      "알려주다"
+    ],
+    "examples": [],
+    "hint": "전화번호를 알려주다, 수학을 가르치다"
+  },
+  {
+    "id": "verb_58",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "習う",
+    "reading": "ならう",
+    "jlpt": "BEG",
+    "koreanMeaning": "배우다",
+    "meaningsKo": [
+      "배우다"
+    ],
+    "examples": [],
+    "hint": "선생님 등 타인에게 지식을 배우다"
+  },
+  {
+    "id": "verb_59",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": " 공부하는 것",
+    "reading": "べんきょうする",
+    "jlpt": "BEG",
+    "koreanMeaning": "공부하다",
+    "meaningsKo": [
+      "공부하다"
+    ],
+    "examples": [],
+    "hint": "3그룹 (する) 동사"
+  },
+  {
+    "id": "verb_60",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "練習する",
+    "reading": "れんしゅうする",
+    "jlpt": "BEG",
+    "koreanMeaning": "연습하다",
+    "meaningsKo": [
+      "연습하다"
+    ],
+    "examples": [],
+    "hint": "피아노나 춤을 연습하다"
+  },
+  {
+    "id": "verb_61",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "運ぶ",
+    "reading": "はこぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "옮기다, 나르다",
+    "meaningsKo": [
+      "옮기다",
+      "나르다"
+    ],
+    "examples": [],
+    "hint": "짐을 다른 곳으로 옮기다"
+  },
+  {
+    "id": "verb_62",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "運転する",
+    "reading": "うんてんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "운전하다",
+    "meaningsKo": [
+      "운전하다"
+    ],
+    "examples": [],
+    "hint": "자동차를 운전하다"
+  },
+  {
+    "id": "verb_63",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "乗る",
+    "reading": "のる",
+    "jlpt": "BEG",
+    "koreanMeaning": "타다",
+    "meaningsKo": [
+      "타다"
+    ],
+    "examples": [],
+    "hint": "전철이나 자전거에 타다 (조사 に 사용!)"
+  },
+  {
+    "id": "verb_64",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "降りる",
+    "reading": "おりる",
+    "jlpt": "BEG",
+    "koreanMeaning": "내리다",
+    "meaningsKo": [
+      "내리다"
+    ],
+    "examples": [],
+    "hint": "버스나 기차에서 내리다"
+  },
+  {
+    "id": "verb_65",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "渡る",
+    "reading": "わたる",
+    "jlpt": "BEG",
+    "koreanMeaning": "건너다",
+    "meaningsKo": [
+      "건너다"
+    ],
+    "examples": [],
+    "hint": "횡단보도나 다리를 건너다"
+  },
+  {
+    "id": "verb_66",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "止まる",
+    "reading": "とまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "멈추다, 서다",
+    "meaningsKo": [
+      "멈추다",
+      "서다"
+    ],
+    "examples": [],
+    "hint": "자동차가 멈추어 서다 (자동사)"
+  },
+  {
+    "id": "verb_67",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "消す",
+    "reading": "けす",
+    "jlpt": "BEG",
+    "koreanMeaning": "끄다, 지우다",
+    "meaningsKo": [
+      "끄다",
+      "지우다"
+    ],
+    "examples": [],
+    "hint": "불을 끄다, 연필 글씨를 지우다"
+  },
+  {
+    "id": "verb_68",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "つける",
+    "reading": "つける",
+    "jlpt": "BEG",
+    "koreanMeaning": "켜다, 붙이다",
+    "meaningsKo": [
+      "켜다",
+      "붙이다"
+    ],
+    "examples": [],
+    "hint": "전등 불을 켜다"
+  },
+  {
+    "id": "verb_69",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "閉じる",
+    "reading": "とじる",
+    "jlpt": "BEG",
+    "koreanMeaning": "닫다",
+    "meaningsKo": [
+      "닫다"
+    ],
+    "examples": [],
+    "hint": "책이나 눈을 창조적으로 닫다"
+  },
+  {
+    "id": "verb_70",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "死ぬ",
+    "reading": "しぬ",
+    "jlpt": "BEG",
+    "koreanMeaning": "죽다",
+    "meaningsKo": [
+      "죽다"
+    ],
+    "examples": [],
+    "hint": "⚠️ 일본어 동사 중 유일하게 ぬ로 끝나는 녀석!"
+  },
+  {
+    "id": "verb_71",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "生まれる",
+    "reading": "うまれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "태어나다",
+    "meaningsKo": [
+      "태어나다"
+    ],
+    "examples": [],
+    "hint": "아기가 세상에 태어나다"
+  },
+  {
+    "id": "verb_72",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "生きる",
+    "reading": "いきる",
+    "jlpt": "BEG",
+    "koreanMeaning": "살다, 생존하다",
+    "meaningsKo": [
+      "살다",
+      "생존하다"
+    ],
+    "examples": [],
+    "hint": "목숨을 유지하며 살아가다"
+  },
+  {
+    "id": "verb_73",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "助ける",
+    "reading": "たすける",
+    "jlpt": "BEG",
+    "koreanMeaning": "돕다, 구하다",
+    "meaningsKo": [
+      "돕다",
+      "구하다"
+    ],
+    "examples": [],
+    "hint": "위험에 처한 사람을 구해주다"
+  },
+  {
+    "id": "verb_74",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "手伝う",
+    "reading": "てつだう",
+    "jlpt": "BEG",
+    "koreanMeaning": "돕다, 거들다",
+    "meaningsKo": [
+      "돕다",
+      "거들다"
+    ],
+    "examples": [],
+    "hint": "남이 하는 집안일이나 업무를 거들어주다"
+  },
+  {
+    "id": "verb_75",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "頼む",
+    "reading": "たのむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "부탁하다",
+    "meaningsKo": [
+      "부탁하다"
+    ],
+    "examples": [],
+    "hint": "상대방에게 일을 부탁하다"
+  },
+  {
+    "id": "verb_76",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "願う",
+    "reading": "ねがう",
+    "jlpt": "BEG",
+    "koreanMeaning": "바라다, 원하다",
+    "meaningsKo": [
+      "바라다",
+      "원하다"
+    ],
+    "examples": [],
+    "hint": "부디 잘 부탁바라다 할 때의 원함"
+  },
+  {
+    "id": "verb_77",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "祈る",
+    "reading": "いのる",
+    "jlpt": "BEG",
+    "koreanMeaning": "기도하다, 빌다",
+    "meaningsKo": [
+      "기도하다",
+      "빌다"
+    ],
+    "examples": [],
+    "hint": "신에게 행복을 기도하다"
+  },
+  {
+    "id": "verb_78",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "祝う",
+    "reading": "いわう",
+    "jlpt": "BEG",
+    "koreanMeaning": "축하하다",
+    "meaningsKo": [
+      "축하하다"
+    ],
+    "examples": [],
+    "hint": "생일을 축하하다"
+  },
+  {
+    "id": "verb_79",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "笑う",
+    "reading": "わらう",
+    "jlpt": "BEG",
+    "koreanMeaning": "웃다",
+    "meaningsKo": [
+      "웃다"
+    ],
+    "examples": [],
+    "hint": "소리 내어 하하하 웃다"
+  },
+  {
+    "id": "verb_80",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "泣く",
+    "reading": "なく",
+    "jlpt": "BEG",
+    "koreanMeaning": "울다",
+    "meaningsKo": [
+      "울다"
+    ],
+    "examples": [],
+    "hint": "눈물을 흘리며 울다"
+  },
+  {
+    "id": "verb_81",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "怒る",
+    "reading": "おこる",
+    "jlpt": "BEG",
+    "koreanMeaning": "화내다",
+    "meaningsKo": [
+      "화내다"
+    ],
+    "examples": [],
+    "hint": "상대방에게 화를 내다"
+  },
+  {
+    "id": "verb_82",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "困る",
+    "reading": "こまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "곤란하다, 처치 곤란하다",
+    "meaningsKo": [
+      "곤란하다",
+      "처치 곤란하다"
+    ],
+    "examples": [],
+    "hint": "어찌할 바를 몰라 곤란에 빠지다"
+  },
+  {
+    "id": "verb_83",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "즐기다",
+    "reading": "たのしむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "즐기다",
+    "meaningsKo": [
+      "즐기다"
+    ],
+    "examples": [],
+    "hint": "게임이나 파티를 재미있게 즐기다"
+  },
+  {
+    "id": "verb_84",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "喜ぶ",
+    "reading": "よろこぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "기뻐하다",
+    "meaningsKo": [
+      "기뻐하다"
+    ],
+    "examples": [],
+    "hint": "선물을 받고 신나서 기뻐하다"
+  },
+  {
+    "id": "verb_85",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "驚く",
+    "reading": "おどろく",
+    "jlpt": "BEG",
+    "koreanMeaning": "놀라다",
+    "meaningsKo": [
+      "놀라다"
+    ],
+    "examples": [],
+    "hint": "깜짝 뉴스에 놀라다"
+  },
+  {
+    "id": "verb_86",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "가다",
+    "reading": "つかれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "지치다, 피곤하다",
+    "meaningsKo": [
+      "지치다",
+      "피곤하다"
+    ],
+    "examples": [],
+    "hint": "일을 많이 해서 몸이 지치다"
+  },
+  {
+    "id": "verb_87",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "治る",
+    "reading": "なおる",
+    "jlpt": "BEG",
+    "koreanMeaning": "낫다, 치유되다",
+    "meaningsKo": [
+      "낫다",
+      "치유되다"
+    ],
+    "examples": [],
+    "hint": "감기나 병이 깨끗하게 낫다"
+  },
+  {
+    "id": "verb_88",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "かかる",
+    "reading": "걸리다",
+    "jlpt": "BEG",
+    "koreanMeaning": "시간/돈이 걸리다, 병에 걸리다",
+    "meaningsKo": [
+      "시간/돈이 걸리다",
+      "병에 걸리다"
+    ],
+    "examples": [],
+    "hint": "1시간 걸리다 할 때 무조건 나오는 단어"
+  },
+  {
+    "id": "verb_89",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "始まる",
+    "reading": "はじまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "시작되다",
+    "meaningsKo": [
+      "시작되다"
+    ],
+    "examples": [],
+    "hint": "영화가 시작되다 (자동사)"
+  },
+  {
+    "id": "verb_90",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "電話する",
+    "reading": "でんわする",
+    "jlpt": "BEG",
+    "koreanMeaning": "전화하다",
+    "meaningsKo": [
+      "전화하다"
+    ],
+    "examples": [],
+    "hint": "친구에게 전화를 걸다"
+  },
+  {
+    "id": "verb_91",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "洗탁する",
+    "reading": "せんたくする",
+    "jlpt": "BEG",
+    "koreanMeaning": "세탁하다, 빨래하다",
+    "meaningsKo": [
+      "세탁하다",
+      "빨래하다"
+    ],
+    "examples": [],
+    "hint": "세탁기로 옷을 빨다"
+  },
+  {
+    "id": "verb_92",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "掃除する",
+    "reading": "そうじする",
+    "jlpt": "BEG",
+    "koreanMeaning": "청소하다",
+    "meaningsKo": [
+      "청소하다"
+    ],
+    "examples": [],
+    "hint": "방을 깨끗이 청소하다"
+  },
+  {
+    "id": "verb_93",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "料理する",
+    "reading": "りょうりする",
+    "jlpt": "BEG",
+    "koreanMeaning": "요리하다",
+    "meaningsKo": [
+      "요리하다"
+    ],
+    "examples": [],
+    "hint": "맛있는 음식을 요리하다"
+  },
+  {
+    "id": "verb_94",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "買い物する",
+    "reading": "かいものする",
+    "jlpt": "BEG",
+    "koreanMeaning": "쇼핑하다, 장보다",
+    "meaningsKo": [
+      "쇼핑하다",
+      "장보다"
+    ],
+    "examples": [],
+    "hint": "마트에서 물건을 사다"
+  },
+  {
+    "id": "verb_95",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "旅行する",
+    "reading": "りょこうする",
+    "jlpt": "BEG",
+    "koreanMeaning": "여행하다",
+    "meaningsKo": [
+      "여행하다"
+    ],
+    "examples": [],
+    "hint": "해외나 온천으로 여행을 가다"
+  },
+  {
+    "id": "verb_96",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "散歩する",
+    "reading": "さんぽする",
+    "jlpt": "BEG",
+    "koreanMeaning": "산책하다",
+    "meaningsKo": [
+      "산책하다"
+    ],
+    "examples": [],
+    "hint": "공원을 유유히 산책하다"
+  },
+  {
+    "id": "verb_97",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "結婚する",
+    "reading": "けっこんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "결혼하다",
+    "meaningsKo": [
+      "결혼하다"
+    ],
+    "examples": [],
+    "hint": "사랑하는 사람과 결혼하다"
+  },
+  {
+    "id": "verb_98",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "コピーする",
+    "reading": "こぴーする",
+    "jlpt": "BEG",
+    "koreanMeaning": "복사하다",
+    "meaningsKo": [
+      "복사하다"
+    ],
+    "examples": [],
+    "hint": "프린터기로 서류를 복사하다"
+  },
+  {
+    "id": "verb_99",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "準備する",
+    "reading": "じゅんびする",
+    "jlpt": "BEG",
+    "koreanMeaning": "준비하다",
+    "meaningsKo": [
+      "준비하다"
+    ],
+    "examples": [],
+    "hint": "시험이나 이사 준비를 하다"
+  },
+  {
+    "id": "verb_100",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "注文する",
+    "reading": "ちゅうもんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "주문하다",
+    "meaningsKo": [
+      "주문하다"
+    ],
+    "examples": [],
+    "hint": "식당에서 음식을 주문하다"
+  },
+  {
+    "id": "verb_101",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "脱ぐ",
+    "reading": "ぬぐ",
+    "jlpt": "BEG",
+    "koreanMeaning": "벗다",
+    "meaningsKo": [
+      "벗다"
+    ],
+    "examples": [],
+    "hint": "옷이나 신발을 벗다"
+  },
+  {
+    "id": "verb_102",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "着る",
+    "reading": "きる",
+    "jlpt": "BEG",
+    "koreanMeaning": "입다",
+    "meaningsKo": [
+      "입다"
+    ],
+    "examples": [],
+    "hint": "상의(셔츠, 코트 등)를 입다"
+  },
+  {
+    "id": "verb_103",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "履く",
+    "reading": "はく",
+    "jlpt": "BEG",
+    "koreanMeaning": "신다, 입다",
+    "meaningsKo": [
+      "신다",
+      "입다"
+    ],
+    "examples": [],
+    "hint": "하의(바지, 치마)나 신발을 신다/입다"
+  },
+  {
+    "id": "verb_104",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "被る",
+    "reading": "かぶる",
+    "jlpt": "BEG",
+    "koreanMeaning": "쓰다",
+    "meaningsKo": [
+      "쓰다"
+    ],
+    "examples": [],
+    "hint": "모자를 쓰다, 뒤집어쓰다"
+  },
+  {
+    "id": "verb_105",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "かける",
+    "reading": "かける",
+    "jlpt": "BEG",
+    "koreanMeaning": "쓰다, 걸다",
+    "meaningsKo": [
+      "쓰다",
+      "걸다"
+    ],
+    "examples": [],
+    "hint": "안경을 쓰다, 벽에 그림을 걸다"
+  },
+  {
+    "id": "verb_106",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "勤める",
+    "reading": "つとめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "근무하다, 종사하다",
+    "meaningsKo": [
+      "근무하다",
+      "종사하다"
+    ],
+    "examples": [],
+    "hint": "회사에 다니다 (조사 に 사용)"
+  },
+  {
+    "id": "verb_107",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "慣れる",
+    "reading": "なれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "익숙해지다",
+    "meaningsKo": [
+      "익숙해지다"
+    ],
+    "examples": [],
+    "hint": "일본 생활에 익숙해지다"
+  },
+  {
+    "id": "verb_108",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "晴れる",
+    "reading": "はれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "맑다, 개다",
+    "meaningsKo": [
+      "맑다",
+      "개다"
+    ],
+    "examples": [],
+    "hint": "비가 그치고 날씨가 맑게 개다"
+  },
+  {
+    "id": "verb_109",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "曇る",
+    "reading": "くもる",
+    "jlpt": "BEG",
+    "koreanMeaning": "흐리다",
+    "meaningsKo": [
+      "흐리다"
+    ],
+    "examples": [],
+    "hint": "구름이 끼어 날씨가 흐려지다"
+  },
+  {
+    "id": "verb_110",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "降る",
+    "reading": "ふる",
+    "jlpt": "BEG",
+    "koreanMeaning": "내리다",
+    "meaningsKo": [
+      "내리다"
+    ],
+    "examples": [],
+    "hint": "비나 눈이 하늘에서 내리다"
+  },
+  {
+    "id": "verb_111",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "吹く",
+    "reading": "ふく",
+    "jlpt": "BEG",
+    "koreanMeaning": "불다",
+    "meaningsKo": [
+      "불다"
+    ],
+    "examples": [],
+    "hint": "바람이 불다, 악기를 불다"
+  },
+  {
+    "id": "verb_112",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "咲く",
+    "reading": "さく",
+    "jlpt": "BEG",
+    "koreanMeaning": "피다",
+    "meaningsKo": [
+      "피다"
+    ],
+    "examples": [],
+    "hint": "예쁜 꽃이 피다"
+  },
+  {
+    "id": "verb_113",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "鳴く",
+    "reading": "なく",
+    "jlpt": "BEG",
+    "koreanMeaning": "울다 (동물)",
+    "meaningsKo": [
+      "울다 (동물)"
+    ],
+    "examples": [],
+    "hint": "새나 벌레, 짐승이 울다"
+  },
+  {
+    "id": "verb_114",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "飛ぶ",
+    "reading": "とぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "날다",
+    "meaningsKo": [
+      "날다"
+    ],
+    "examples": [],
+    "hint": "새나 비행기가 하늘을 날다"
+  },
+  {
+    "id": "verb_115",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "登る",
+    "reading": "のぼる",
+    "jlpt": "BEG",
+    "koreanMeaning": "오르다",
+    "meaningsKo": [
+      "오르다"
+    ],
+    "examples": [],
+    "hint": "산이나 계단을 오르다"
+  },
+  {
+    "id": "verb_116",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "下りる",
+    "reading": "おりる",
+    "jlpt": "BEG",
+    "koreanMeaning": "내려가다",
+    "meaningsKo": [
+      "내려가다"
+    ],
+    "examples": [],
+    "hint": "계단이나 산에서 아래로 내려가다"
+  },
+  {
+    "id": "verb_117",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "曲がる",
+    "reading": "まがる",
+    "jlpt": "BEG",
+    "koreanMeaning": "돌다, 구부러지다",
+    "meaningsKo": [
+      "돌다",
+      "구부러지다"
+    ],
+    "examples": [],
+    "hint": "교차로에서 오른쪽으로 돌다"
+  },
+  {
+    "id": "verb_118",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "違う",
+    "reading": "ちがう",
+    "jlpt": "BEG",
+    "koreanMeaning": "다르다, 틀리다",
+    "meaningsKo": [
+      "다르다",
+      "틀리다"
+    ],
+    "examples": [],
+    "hint": "사실과 다르다, 전화번호가 틀리다"
+  },
+  {
+    "id": "verb_119",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "捨てる",
+    "reading": "すてる",
+    "jlpt": "BEG",
+    "koreanMeaning": "버리다",
+    "meaningsKo": [
+      "버리다"
+    ],
+    "examples": [],
+    "hint": "쓰레기를 버리다"
+  },
+  {
+    "id": "verb_120",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "拾う",
+    "reading": "ひろう",
+    "jlpt": "BEG",
+    "koreanMeaning": "줍다",
+    "meaningsKo": [
+      "줍다"
+    ],
+    "examples": [],
+    "hint": "떨어진 지갑을 줍다"
+  },
+  {
+    "id": "verb_121",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "引く",
+    "reading": "ひく",
+    "jlpt": "BEG",
+    "koreanMeaning": "당기다, 끌다",
+    "meaningsKo": [
+      "당기다",
+      "끌다"
+    ],
+    "examples": [],
+    "hint": "문을 당기다, 감기에 걸리다(風邪をひく)"
+  },
+  {
+    "id": "verb_122",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "押す",
+    "reading": "おす",
+    "jlpt": "BEG",
+    "koreanMeaning": "누르다, 밀다",
+    "meaningsKo": [
+      "누르다",
+      "밀다"
+    ],
+    "examples": [],
+    "hint": "버튼을 누르다, 문을 밀다"
+  },
+  {
+    "id": "verb_123",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "触る",
+    "reading": "さわる",
+    "jlpt": "BEG",
+    "koreanMeaning": "만지다",
+    "meaningsKo": [
+      "만지다"
+    ],
+    "examples": [],
+    "hint": "손으로 물건을 만지다"
+  },
+  {
+    "id": "verb_124",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "払う",
+    "reading": "はらう",
+    "jlpt": "BEG",
+    "koreanMeaning": "지불하다",
+    "meaningsKo": [
+      "지불하다"
+    ],
+    "examples": [],
+    "hint": "돈을 내다, 결제하다"
+  },
+  {
+    "id": "verb_125",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "渡す",
+    "reading": "わたす",
+    "jlpt": "BEG",
+    "koreanMeaning": "건네다",
+    "meaningsKo": [
+      "건네다"
+    ],
+    "examples": [],
+    "hint": "상대방에게 물건을 건네주다"
+  },
+  {
+    "id": "verb_126",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "受け取る",
+    "reading": "うけとる",
+    "jlpt": "BEG",
+    "koreanMeaning": "받다, 수취하다",
+    "meaningsKo": [
+      "받다",
+      "수취하다"
+    ],
+    "examples": [],
+    "hint": "택배나 서류를 건네받다"
+  },
+  {
+    "id": "verb_127",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "並ぶ",
+    "reading": "ならぶ",
+    "jlpt": "BEG",
+    "koreanMeaning": "늘어서다, 줄 서다",
+    "meaningsKo": [
+      "늘어서다",
+      "줄 서다"
+    ],
+    "examples": [],
+    "hint": "사람들이 일렬로 줄 서다 (자동사)"
+  },
+  {
+    "id": "verb_128",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "並べる",
+    "reading": "ならべる",
+    "jlpt": "BEG",
+    "koreanMeaning": "늘어놓다, 나열하다",
+    "meaningsKo": [
+      "늘어놓다",
+      "나열하다"
+    ],
+    "examples": [],
+    "hint": "책상 위에 책을 나란히 놓다 (타동사)"
+  },
+  {
+    "id": "verb_129",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "片付ける",
+    "reading": "かたづける",
+    "jlpt": "BEG",
+    "koreanMeaning": "정리하다, 치우다",
+    "meaningsKo": [
+      "정리하다",
+      "치우다"
+    ],
+    "examples": [],
+    "hint": "어질러진 방을 깨끗이 치우다"
+  },
+  {
+    "id": "verb_130",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "調べる",
+    "reading": "しらべる",
+    "jlpt": "BEG",
+    "koreanMeaning": "조사하다, 알아보다",
+    "meaningsKo": [
+      "조사하다",
+      "알아보다"
+    ],
+    "examples": [],
+    "hint": "모르는 단어를 사전에서 찾다"
+  },
+  {
+    "id": "verb_131",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "探す",
+    "reading": "さがす",
+    "jlpt": "BEG",
+    "koreanMeaning": "찾다",
+    "meaningsKo": [
+      "찾다"
+    ],
+    "examples": [],
+    "hint": "잃어버린 물건이나 사람을 찾다"
+  },
+  {
+    "id": "verb_132",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "見つける",
+    "reading": "みつける",
+    "jlpt": "BEG",
+    "koreanMeaning": "찾아내다, 발견하다",
+    "meaningsKo": [
+      "찾아내다",
+      "발견하다"
+    ],
+    "examples": [],
+    "hint": "찾고 있던 물건을 마침내 발견하다"
+  },
+  {
+    "id": "verb_133",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "遅れる",
+    "reading": "おくれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "늦다, 지각하다",
+    "meaningsKo": [
+      "늦다",
+      "지각하다"
+    ],
+    "examples": [],
+    "hint": "약속 시간이나 수업에 늦다"
+  },
+  {
+    "id": "verb_134",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "間に合う",
+    "reading": "まにあう",
+    "jlpt": "BEG",
+    "koreanMeaning": "시간에 대다, 늦지 않다",
+    "meaningsKo": [
+      "시간에 대다",
+      "늦지 않다"
+    ],
+    "examples": [],
+    "hint": "기차 시간에 아슬아슬하게 맞추다"
+  },
+  {
+    "id": "verb_135",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "込む",
+    "reading": "こむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "붐비다",
+    "meaningsKo": [
+      "붐비다"
+    ],
+    "examples": [],
+    "hint": "전철이나 길이 사람으로 붐비다"
+  },
+  {
+    "id": "verb_136",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "すく",
+    "reading": "すく",
+    "jlpt": "BEG",
+    "koreanMeaning": "비다",
+    "meaningsKo": [
+      "비다"
+    ],
+    "examples": [],
+    "hint": "배가 고프다(お腹がすく), 전철이 비어있다"
+  },
+  {
+    "id": "verb_137",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "減る",
+    "reading": "へる",
+    "jlpt": "BEG",
+    "koreanMeaning": "줄다, 감소하다",
+    "meaningsKo": [
+      "줄다",
+      "감소하다"
+    ],
+    "examples": [],
+    "hint": "체중이나 인구가 줄어들다 (자동사)"
+  },
+  {
+    "id": "verb_138",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "増える",
+    "reading": "ふえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "늘다, 증가하다",
+    "meaningsKo": [
+      "늘다",
+      "증가하다"
+    ],
+    "examples": [],
+    "hint": "숫자나 양이 늘어나다 (자동사)"
+  },
+  {
+    "id": "verb_139",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "太る",
+    "reading": "ふとる",
+    "jlpt": "BEG",
+    "koreanMeaning": "살찌다",
+    "meaningsKo": [
+      "살찌다"
+    ],
+    "examples": [],
+    "hint": "밥을 많이 먹어서 뚱뚱해지다"
+  },
+  {
+    "id": "verb_140",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "痩せる",
+    "reading": "やせる",
+    "jlpt": "BEG",
+    "koreanMeaning": "마르다, 살이 빠지다",
+    "meaningsKo": [
+      "마르다",
+      "살이 빠지다"
+    ],
+    "examples": [],
+    "hint": "다이어트해서 살이 빠지다"
+  },
+  {
+    "id": "verb_141",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "落ちる",
+    "reading": "おちる",
+    "jlpt": "BEG",
+    "koreanMeaning": "떨어지다",
+    "meaningsKo": [
+      "떨어지다"
+    ],
+    "examples": [],
+    "hint": "나뭇잎이나 시험에서 떨어지다 (자동사)"
+  },
+  {
+    "id": "verb_142",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "落とす",
+    "reading": "おとす",
+    "jlpt": "BEG",
+    "koreanMeaning": "떨어뜨리다",
+    "meaningsKo": [
+      "떨어뜨리다"
+    ],
+    "examples": [],
+    "hint": "실수로 지갑을 바닥에 떨어뜨리다 (타동사)"
+  },
+  {
+    "id": "verb_143",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "壊れる",
+    "reading": "こわれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "부서지다, 고장 나다",
+    "meaningsKo": [
+      "부서지다",
+      "고장 나다"
+    ],
+    "examples": [],
+    "hint": "핸드폰이 고장 나다 (자동사)"
+  },
+  {
+    "id": "verb_144",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "壊す",
+    "reading": "こわす",
+    "jlpt": "BEG",
+    "koreanMeaning": "부수다, 망가뜨리다",
+    "meaningsKo": [
+      "부수다",
+      "망가뜨리다"
+    ],
+    "examples": [],
+    "hint": "장난감을 부수다, 배탈이 나다 (타동사)"
+  },
+  {
+    "id": "verb_145",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "割れる",
+    "reading": "われる",
+    "jlpt": "BEG",
+    "koreanMeaning": "깨지다, 갈라지다",
+    "meaningsKo": [
+      "깨지다",
+      "갈라지다"
+    ],
+    "examples": [],
+    "hint": "유리창이나 접시가 깨지다 (자동사)"
+  },
+  {
+    "id": "verb_146",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "割る",
+    "reading": "わる",
+    "jlpt": "BEG",
+    "koreanMeaning": "깨다, 나누다",
+    "meaningsKo": [
+      "깨다",
+      "나누다"
+    ],
+    "examples": [],
+    "hint": "컵을 깨다, 숫자를 나누다 (타동사)"
+  },
+  {
+    "id": "verb_147",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "折れる",
+    "reading": "おれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "꺾이다, 부러지다",
+    "meaningsKo": [
+      "꺾이다",
+      "부러지다"
+    ],
+    "examples": [],
+    "hint": "나무가 바람에 부러지다 (자동사)"
+  },
+  {
+    "id": "verb_148",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "折る",
+    "reading": "おる",
+    "jlpt": "BEG",
+    "koreanMeaning": "꺾다, 접다",
+    "meaningsKo": [
+      "꺾다",
+      "접다"
+    ],
+    "examples": [],
+    "hint": "종이접기(오리가미)를 하다, 나뭇가지를 꺾다 (타동사)"
+  },
+  {
+    "id": "verb_149",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "破れる",
+    "reading": "やぶれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "찢어지다, 터지다",
+    "meaningsKo": [
+      "찢어지다",
+      "터지다"
+    ],
+    "examples": [],
+    "hint": "종이나 옷이 찢어지다 (자동사)"
+  },
+  {
+    "id": "verb_150",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "破る",
+    "reading": "やぶる",
+    "jlpt": "BEG",
+    "koreanMeaning": "찢다, 어기다",
+    "meaningsKo": [
+      "찢다",
+      "어기다"
+    ],
+    "examples": [],
+    "hint": "종이를 찢다, 약속을 어기다 (타동사)"
+  },
+  {
+    "id": "verb_151",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "切れる",
+    "reading": "きれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "끊어지다, 베이다",
+    "meaningsKo": [
+      "끊어지다",
+      "베이다"
+    ],
+    "examples": [],
+    "hint": "실이 끊어지다, 손이 베이다 (자동사)"
+  },
+  {
+    "id": "verb_152",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "切る",
+    "reading": "きる",
+    "jlpt": "BEG",
+    "koreanMeaning": "자르다, 끊다",
+    "meaningsKo": [
+      "자르다",
+      "끊다"
+    ],
+    "examples": [],
+    "hint": "가위로 종이를 자르다 (타동사)"
+  },
+  {
+    "id": "verb_153",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "外れる",
+    "reading": "はずれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "빠지다, 벗겨지다",
+    "meaningsKo": [
+      "빠지다",
+      "벗겨지다"
+    ],
+    "examples": [],
+    "hint": "단추가 떨어지다, 예상이 빗나가다 (자동사)"
+  },
+  {
+    "id": "verb_154",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "外す",
+    "reading": "はずす",
+    "jlpt": "BEG",
+    "koreanMeaning": "떼다, 빼다",
+    "meaningsKo": [
+      "떼다",
+      "빼다"
+    ],
+    "examples": [],
+    "hint": "안경을 벗다, 자리를 비우다 (타동사)"
+  },
+  {
+    "id": "verb_155",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "続く",
+    "reading": "つづく",
+    "jlpt": "BEG",
+    "koreanMeaning": "계속되다, 이어지다",
+    "meaningsKo": [
+      "계속되다",
+      "이어지다"
+    ],
+    "examples": [],
+    "hint": "비가 계속해서 내리다 (자동사)"
+  },
+  {
+    "id": "verb_156",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "続ける",
+    "reading": "つづける",
+    "jlpt": "BEG",
+    "koreanMeaning": "계속하다",
+    "meaningsKo": [
+      "계속하다"
+    ],
+    "examples": [],
+    "hint": "공부를 계속 이어나가다 (타동사)"
+  },
+  {
+    "id": "verb_157",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "決まる",
+    "reading": "きまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "정해지다",
+    "meaningsKo": [
+      "정해지다"
+    ],
+    "examples": [],
+    "hint": "여행 날짜가 정해지다 (자동사)"
+  },
+  {
+    "id": "verb_158",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "集まる",
+    "reading": "あつまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "모이다",
+    "meaningsKo": [
+      "모이다"
+    ],
+    "examples": [],
+    "hint": "광장에 사람들이 모이다 (자동사)"
+  },
+  {
+    "id": "verb_159",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "集める",
+    "reading": "あつめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "모으다",
+    "meaningsKo": [
+      "모으다"
+    ],
+    "examples": [],
+    "hint": "우표나 돈을 모으다 (타동사)"
+  },
+  {
+    "id": "verb_160",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "直る",
+    "reading": "なおる",
+    "jlpt": "BEG",
+    "koreanMeaning": "고쳐지다",
+    "meaningsKo": [
+      "고쳐지다"
+    ],
+    "examples": [],
+    "hint": "고장 난 시계가 다시 작동하다 (자동사)"
+  },
+  {
+    "id": "verb_161",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "直す",
+    "reading": "なおす",
+    "jlpt": "BEG",
+    "koreanMeaning": "고치다, 수리하다",
+    "meaningsKo": [
+      "고치다",
+      "수리하다"
+    ],
+    "examples": [],
+    "hint": "컴퓨터를 수리하다 (타동사)"
+  },
+  {
+    "id": "verb_162",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "治す",
+    "reading": "なおす",
+    "jlpt": "BEG",
+    "koreanMeaning": "치료하다",
+    "meaningsKo": [
+      "치료하다"
+    ],
+    "examples": [],
+    "hint": "병이나 감기를 고치다"
+  },
+  {
+    "id": "verb_163",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "知らせる",
+    "reading": "しらせる",
+    "jlpt": "BEG",
+    "koreanMeaning": "알리다, 통지하다",
+    "meaningsKo": [
+      "알리다",
+      "통지하다"
+    ],
+    "examples": [],
+    "hint": "친구에게 합격 소식을 알리다"
+  },
+  {
+    "id": "verb_164",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "逃げる",
+    "reading": "にげる",
+    "jlpt": "BEG",
+    "koreanMeaning": "도망치다, 달아나다",
+    "meaningsKo": [
+      "도망치다",
+      "달아나다"
+    ],
+    "examples": [],
+    "hint": "범인이 경찰을 피해 도망치다"
+  },
+  {
+    "id": "verb_165",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "負ける",
+    "reading": "まける",
+    "jlpt": "BEG",
+    "koreanMeaning": "지다, 패하다",
+    "meaningsKo": [
+      "지다",
+      "패하다"
+    ],
+    "examples": [],
+    "hint": "시합이나 게임에서 지다"
+  },
+  {
+    "id": "verb_166",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "勝つ",
+    "reading": "かつ",
+    "jlpt": "BEG",
+    "koreanMeaning": "이기다",
+    "meaningsKo": [
+      "이기다"
+    ],
+    "examples": [],
+    "hint": "경기에서 승리하다"
+  },
+  {
+    "id": "verb_167",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "戻る",
+    "reading": "もどる",
+    "jlpt": "BEG",
+    "koreanMeaning": "되돌아가다, 돌아오다",
+    "meaningsKo": [
+      "되돌아가다",
+      "돌아오다"
+    ],
+    "examples": [],
+    "hint": "원래 있던 자리로 돌아오다"
+  },
+  {
+    "id": "verb_168",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "戻す",
+    "reading": "もどす",
+    "jlpt": "BEG",
+    "koreanMeaning": "되돌리다",
+    "meaningsKo": [
+      "되돌리다"
+    ],
+    "examples": [],
+    "hint": "물건을 제자리에 갖다 놓다"
+  },
+  {
+    "id": "verb_169",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "答える",
+    "reading": "こたえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "대답하다",
+    "meaningsKo": [
+      "대답하다"
+    ],
+    "examples": [],
+    "hint": "질문에 대답하다"
+  },
+  {
+    "id": "verb_170",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "質問する",
+    "reading": "しつもんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "질문하다",
+    "meaningsKo": [
+      "질문하다"
+    ],
+    "examples": [],
+    "hint": "모르는 것을 선생님께 질문하다"
+  },
+  {
+    "id": "verb_171",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "相談する",
+    "reading": "そうだんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "상담하다, 의논하다",
+    "meaningsKo": [
+      "상담하다",
+      "의논하다"
+    ],
+    "examples": [],
+    "hint": "친구와 고민을 상담하다"
+  },
+  {
+    "id": "verb_172",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "約束する",
+    "reading": "やくそくする",
+    "jlpt": "BEG",
+    "koreanMeaning": "약속하다",
+    "meaningsKo": [
+      "약속하다"
+    ],
+    "examples": [],
+    "hint": "주말에 만나기로 약속하다"
+  },
+  {
+    "id": "verb_173",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "安心する",
+    "reading": "あんしんする",
+    "jlpt": "BEG",
+    "koreanMeaning": "안심하다",
+    "meaningsKo": [
+      "안심하다"
+    ],
+    "examples": [],
+    "hint": "합격 소식을 듣고 안심하다"
+  },
+  {
+    "id": "verb_174",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "びっくりする",
+    "reading": "びっくりする",
+    "jlpt": "BEG",
+    "koreanMeaning": "깜짝 놀라다",
+    "meaningsKo": [
+      "깜짝 놀라다"
+    ],
+    "examples": [],
+    "hint": "갑작스러운 소리에 깜짝 놀라다"
+  },
+  {
+    "id": "verb_175",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "がっかりする",
+    "reading": "がっかりする",
+    "jlpt": "BEG",
+    "koreanMeaning": "실망하다",
+    "meaningsKo": [
+      "실망하다"
+    ],
+    "examples": [],
+    "hint": "시험에 떨어져서 실망하다"
+  },
+  {
+    "id": "verb_176",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "褒める",
+    "reading": "ほめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "칭찬하다",
+    "meaningsKo": [
+      "칭찬하다"
+    ],
+    "examples": [],
+    "hint": "아이를 착하다고 칭찬하다"
+  },
+  {
+    "id": "verb_177",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "叱る",
+    "reading": "しかる",
+    "jlpt": "BEG",
+    "koreanMeaning": "혼내다, 야단치다",
+    "meaningsKo": [
+      "혼내다",
+      "야단치다"
+    ],
+    "examples": [],
+    "hint": "숙제를 안 해서 선생님께 혼나다"
+  },
+  {
+    "id": "verb_178",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "誘う",
+    "reading": "さそう",
+    "jlpt": "BEG",
+    "koreanMeaning": "권유하다, 꾀다",
+    "meaningsKo": [
+      "권유하다",
+      "꾀다"
+    ],
+    "examples": [],
+    "hint": "친구를 영화관에 가자고 꼬시다"
+  },
+  {
+    "id": "verb_179",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "起こす",
+    "reading": "おこす",
+    "jlpt": "BEG",
+    "koreanMeaning": "깨우다, 일으키다",
+    "meaningsKo": [
+      "깨우다",
+      "일으키다"
+    ],
+    "examples": [],
+    "hint": "자고 있는 사람을 깨우다"
+  },
+  {
+    "id": "verb_180",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "盗む",
+    "reading": "ぬすむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "훔치다",
+    "meaningsKo": [
+      "훔치다"
+    ],
+    "examples": [],
+    "hint": "남의 지갑이나 자전거를 훔치다"
+  },
+  {
+    "id": "verb_181",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "踏む",
+    "reading": "ふむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "밟다",
+    "meaningsKo": [
+      "밟다"
+    ],
+    "examples": [],
+    "hint": "지하철에서 남의 발을 밟다"
+  },
+  {
+    "id": "verb_182",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "噛む",
+    "reading": "かむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "씹다, 물다",
+    "meaningsKo": [
+      "씹다",
+      "물다"
+    ],
+    "examples": [],
+    "hint": "음식을 씹다, 모기에게 물리다"
+  },
+  {
+    "id": "verb_183",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "謝る",
+    "reading": "あやまる",
+    "jlpt": "BEG",
+    "koreanMeaning": "사과하다",
+    "meaningsKo": [
+      "사과하다"
+    ],
+    "examples": [],
+    "hint": "잘못을 인정하고 사과하다"
+  },
+  {
+    "id": "verb_184",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "迎える",
+    "reading": "むかえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "맞이하다, 마중 나가다",
+    "meaningsKo": [
+      "맞이하다",
+      "마중 나가다"
+    ],
+    "examples": [],
+    "hint": "공항으로 손님을 마중 나가다"
+  },
+  {
+    "id": "verb_185",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "案内する",
+    "reading": "あんないする",
+    "jlpt": "BEG",
+    "koreanMeaning": "안내하다",
+    "meaningsKo": [
+      "안내하다"
+    ],
+    "examples": [],
+    "hint": "길을 모르는 사람을 안내하다"
+  },
+  {
+    "id": "verb_186",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "育てる",
+    "reading": "そだてる",
+    "jlpt": "BEG",
+    "koreanMeaning": "키우다, 기르다",
+    "meaningsKo": [
+      "키우다",
+      "기르다"
+    ],
+    "examples": [],
+    "hint": "아이를 키우거나 식물을 기르다"
+  },
+  {
+    "id": "verb_187",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "亡くなる",
+    "reading": "なくなる",
+    "jlpt": "BEG",
+    "koreanMeaning": "돌아가시다",
+    "meaningsKo": [
+      "돌아가시다"
+    ],
+    "examples": [],
+    "hint": "死ぬ(죽다)의 높임말 표현"
+  },
+  {
+    "id": "verb_188",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "悲しむ",
+    "reading": "かなしむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "슬퍼하다",
+    "meaningsKo": [
+      "슬퍼하다"
+    ],
+    "examples": [],
+    "hint": "이별이나 나쁜 소식에 슬퍼하다"
+  },
+  {
+    "id": "verb_189",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "苦しむ",
+    "reading": "くるしむ",
+    "jlpt": "BEG",
+    "koreanMeaning": "괴로워하다",
+    "meaningsKo": [
+      "괴로워하다"
+    ],
+    "examples": [],
+    "hint": "병이나 아픔 때문에 고통스러워하다"
+  },
+  {
+    "id": "verb_190",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "建てる",
+    "reading": "たてる",
+    "jlpt": "BEG",
+    "koreanMeaning": "세우다, 짓다",
+    "meaningsKo": [
+      "세우다",
+      "짓다"
+    ],
+    "examples": [],
+    "hint": "집이나 건물을 건축하다"
+  },
+  {
+    "id": "verb_191",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "焼く",
+    "reading": "やく",
+    "jlpt": "BEG",
+    "koreanMeaning": "굽다, 태우다",
+    "meaningsKo": [
+      "굽다",
+      "태우다"
+    ],
+    "examples": [],
+    "hint": "고기나 빵을 불에 굽다"
+  },
+  {
+    "id": "verb_192",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "沸かす",
+    "reading": "わかす",
+    "jlpt": "BEG",
+    "koreanMeaning": "끓이다",
+    "meaningsKo": [
+      "끓이다"
+    ],
+    "examples": [],
+    "hint": "주전자에 물을 끓이다"
+  },
+  {
+    "id": "verb_193",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "冷やす",
+    "reading": "ひやす",
+    "jlpt": "BEG",
+    "koreanMeaning": "식히다, 차게 하다",
+    "meaningsKo": [
+      "식히다",
+      "차게 하다"
+    ],
+    "examples": [],
+    "hint": "맥주를 냉장고에 넣어 차갑게 하다"
+  },
+  {
+    "id": "verb_194",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "飾る",
+    "reading": "かざる",
+    "jlpt": "BEG",
+    "koreanMeaning": "장식하다, 꾸미다",
+    "meaningsKo": [
+      "장식하다",
+      "꾸미다"
+    ],
+    "examples": [],
+    "hint": "방에 예쁜 그림이나 꽃을 장식하다"
+  },
+  {
+    "id": "verb_195",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "植える",
+    "reading": "うえる",
+    "jlpt": "BEG",
+    "koreanMeaning": "심다",
+    "meaningsKo": [
+      "심다"
+    ],
+    "examples": [],
+    "hint": "정원에 나무나 꽃씨를 심다"
+  },
+  {
+    "id": "verb_196",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "諦める",
+    "reading": "あきらめる",
+    "jlpt": "BEG",
+    "koreanMeaning": "포기하다",
+    "meaningsKo": [
+      "포기하다"
+    ],
+    "examples": [],
+    "hint": "어려워서 중간에 포기하다"
+  },
+  {
+    "id": "verb_197",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "足りる",
+    "reading": "たりる",
+    "jlpt": "BEG",
+    "koreanMeaning": "족하다, 충분하다",
+    "meaningsKo": [
+      "족하다",
+      "충분하다"
+    ],
+    "examples": [],
+    "hint": "돈이 부족하지 않고 충분하다"
+  },
+  {
+    "id": "verb_198",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "頑張る",
+    "reading": "がんばる",
+    "jlpt": "BEG",
+    "koreanMeaning": "분발하다, 열심히 하다",
+    "meaningsKo": [
+      "분발하다",
+      "열심히 하다"
+    ],
+    "examples": [],
+    "hint": "간바테! 포기하지 않고 힘내다"
+  },
+  {
+    "id": "verb_199",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "濡れる",
+    "reading": "ぬれる",
+    "jlpt": "BEG",
+    "koreanMeaning": "젖다",
+    "meaningsKo": [
+      "젖다"
+    ],
+    "examples": [],
+    "hint": "비나 물에 옷이 축축하게 젖다"
+  },
+  {
+    "id": "verb_200",
+    "kind": "word",
+    "listId": "verb_beg",
+    "literal": "乾く",
+    "reading": "かわく",
+    "jlpt": "BEG",
+    "koreanMeaning": "마르다, 건조해지다",
+    "meaningsKo": [
+      "마르다",
+      "건조해지다"
+    ],
+    "examples": [],
+    "hint": "빨래가 바짝 마르거나 목이 마르다"
+  }
+]

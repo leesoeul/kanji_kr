@@ -1,5 +1,40 @@
 [
   {
+    "id": "kanji_beg",
+    "kind": "kanji",
+    "titleKo": "초급 한자",
+    "titleJa": "初級漢字",
+    "asset": "assets/data/kanji/beg.json"
+  },
+  {
+    "id": "kanji_mid",
+    "kind": "kanji",
+    "titleKo": "중급 한자",
+    "titleJa": "中級漢字",
+    "asset": "assets/data/kanji/mid.json"
+  },
+  {
+    "id": "verb_beg",
+    "kind": "word",
+    "titleKo": "초급 동사",
+    "titleJa": "初級動詞",
+    "asset": "assets/data/word/verb_beg.json"
+  },
+  {
+    "id": "verb_mid",
+    "kind": "word",
+    "titleKo": "중급 동사",
+    "titleJa": "中級動詞",
+    "asset": "assets/data/word/verb_mid.json"
+  },
+  {
+    "id": "verb_adv",
+    "kind": "word",
+    "titleKo": "고급 동사",
+    "titleJa": "上級動詞",
+    "asset": "assets/data/word/verb_adv.json"
+  },
+  {
     "id": "n5_kanji",
     "kind": "kanji",
     "titleKo": "N5 한자",
