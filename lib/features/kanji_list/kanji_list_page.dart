@@ -6,10 +6,12 @@ import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
 import '../../core/study_filter.dart';
 import '../../features/study/home_pickers.dart';
-import '../../shared/widgets/list_picker.dart';
 
-/// 시드+사용자 카드 전체. 선택한 목록만 보여 준다.
-/// シード+ユーザーカードの全体。選んだ一覧だけ見せる。
+/// 시드+사용자 카드 목록 탭.
+///
+/// 덱이 없으면 홈과 같은 2단 피커. 있으면 타일 리스트.
+/// 뒤로가기는 목록 고르기로 돌아간다. 타일을 누르면 `/kanji/:id`.
+/// FAB는 `/add`, 업로드 아이콘은 JSON import.
 class KanjiListPage extends ConsumerWidget {
   const KanjiListPage({super.key});
 
@@ -19,10 +21,50 @@ class KanjiListPage extends ConsumerWidget {
     final session = ref.watch(studySessionProvider);
     final asyncCatalog = ref.watch(catalogControllerProvider);
 
-    return Scaffold(
-      appBar: session.hasDeck
-          ? AppBar(
-              title: Text(l10n.kanjiList),
+    return asyncCatalog.when(
+      loading: () => const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      ),
+      error: (error, _) => Scaffold(
+        body: Center(child: Text('$error')),
+      ),
+      data: (catalog) {
+        if (!session.hasDeck) {
+          return Scaffold(
+            body: HomeBrowseBody(
+              catalog: catalog,
+              session: session,
+              isDark: ref.watch(studyPrefsProvider).isDark,
+            ),
+          );
+        }
+        final lists = catalog.dropdownLists(
+          userTitle: l10n.listUser,
+          favoritesTitle: l10n.favorites,
+          kind: session.kind,
+        );
+        final listId = resolveListId(session.listId, lists);
+        final currentList = catalog.listById(listId, dropdown: lists);
+        final language = Localizations.localeOf(context).languageCode;
+        final listTitle = currentList?.titleFor(language) ?? l10n.kanjiList;
+        final items = catalog.itemsFor(listId, kind: session.kind);
+
+        return PopScope(
+          canPop: false,
+          onPopInvoked: (didPop) {
+            if (didPop) {
+              return;
+            }
+            ref.read(studySessionProvider.notifier).clearList();
+          },
+          child: Scaffold(
+            appBar: AppBar(
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () =>
+                    ref.read(studySessionProvider.notifier).clearList(),
+              ),
+              title: Text(listTitle),
               actions: [
                 IconButton(
                   tooltip: l10n.importList,
@@ -30,96 +72,66 @@ class KanjiListPage extends ConsumerWidget {
                   icon: const Icon(Icons.file_upload_outlined),
                 ),
               ],
-            )
-          : null,
-      floatingActionButton: session.hasDeck
-          ? FloatingActionButton.extended(
+            ),
+            floatingActionButton: FloatingActionButton.extended(
               onPressed: () => context.push('/add'),
               icon: const Icon(Icons.add),
               label: Text(l10n.addItem),
-            )
-          : null,
-      body: asyncCatalog.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, _) => Center(child: Text('$error')),
-        data: (catalog) {
-          if (!session.hasDeck) {
-            return HomeBrowseBody(
-              catalog: catalog,
-              session: session,
-              isDark: ref.watch(studyPrefsProvider).isDark,
-            );
-          }
-          final lists = catalog.dropdownLists(
-            allTitle: l10n.listAll,
-            userTitle: l10n.listUser,
-            favoritesTitle: l10n.favorites,
-            kind: session.kind,
-          );
-          final listId = resolveListId(session.listId, lists);
-          final items = catalog.itemsFor(listId, kind: session.kind);
-          return Column(
-            children: [
-              const Padding(
-                padding: EdgeInsets.fromLTRB(16, 0, 16, 8),
-                child: ListPicker(),
-              ),
-              Expanded(
-                child: items.isEmpty
-                    ? Center(child: Text(l10n.emptyList))
-                    : ListView.separated(
-                        padding: const EdgeInsets.only(bottom: 88),
-                        itemCount: items.length,
-                        separatorBuilder: (context, index) =>
-                            const Divider(height: 1),
-                        itemBuilder: (context, index) {
-                          final kanji = items[index];
-                          return ListTile(
-                            leading: Text(
-                              kanji.literal,
-                              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            body: items.isEmpty
+                ? Center(child: Text(l10n.emptyList))
+                : ListView.separated(
+                    padding: const EdgeInsets.only(bottom: 88),
+                    itemCount: items.length,
+                    separatorBuilder: (context, index) =>
+                        const Divider(height: 1),
+                    itemBuilder: (context, index) {
+                      final kanji = items[index];
+                      return ListTile(
+                        leading: Text(
+                          kanji.literal,
+                          style: Theme.of(context).textTheme.headlineMedium,
+                        ),
+                        title: Text(kanji.displayMeaning),
+                        subtitle: Text(
+                          kanji.isWord
+                              ? kanji.displayReading
+                              : (kanji.displayKunOn.isEmpty
+                                  ? kanji.koreanMeaning
+                                  : kanji.displayKunOn),
+                        ),
+                        trailing: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            IconButton(
+                              tooltip: l10n.editKanji,
+                              onPressed: () =>
+                                  context.push('/edit/${kanji.id}'),
+                              icon: const Icon(Icons.edit_outlined),
                             ),
-                            title: Text(kanji.displayMeaning),
-                            subtitle: Text(
-                              kanji.isWord
-                                  ? kanji.displayReading
-                                  : (kanji.displayKunOn.isEmpty
-                                      ? kanji.koreanMeaning
-                                      : kanji.displayKunOn),
+                            IconButton(
+                              onPressed: () => ref
+                                  .read(catalogControllerProvider.notifier)
+                                  .toggleFavorite(kanji.id),
+                              icon: Icon(
+                                catalog.isFavorite(kanji.id)
+                                    ? Icons.favorite
+                                    : Icons.favorite_border,
+                              ),
                             ),
-                            trailing: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                IconButton(
-                                  tooltip: l10n.editKanji,
-                                  onPressed: () =>
-                                      context.push('/edit/${kanji.id}'),
-                                  icon: const Icon(Icons.edit_outlined),
-                                ),
-                                IconButton(
-                                  onPressed: () => ref
-                                      .read(catalogControllerProvider.notifier)
-                                      .toggleFavorite(kanji.id),
-                                  icon: Icon(
-                                    catalog.isFavorite(kanji.id)
-                                        ? Icons.favorite
-                                        : Icons.favorite_border,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            onTap: () => context.push('/kanji/${kanji.id}'),
-                          );
-                        },
-                      ),
-              ),
-            ],
-          );
-        },
-      ),
+                          ],
+                        ),
+                        onTap: () => context.push('/kanji/${kanji.id}'),
+                      );
+                    },
+                  ),
+          ),
+        );
+      },
     );
   }
 
+  /// JSON 텍스트를 붙여 넣어 새 목록을 만든다. 성공하면 홈 세션이 그 목록으로 바뀐다.
   Future<void> _openImport(
     BuildContext context,
     WidgetRef ref,
@@ -152,6 +164,7 @@ class KanjiListPage extends ConsumerWidget {
   }
 }
 
+/// JSON 텍스트를 붙여 넣는 대화상자. 확인하면 raw 문자열을 돌려준다.
 class _ImportDialog extends StatefulWidget {
   const _ImportDialog({required this.l10n});
 
