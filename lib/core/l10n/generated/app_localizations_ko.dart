@@ -52,9 +52,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizTitle => '퀴즈';
 
   @override
-  String get listAll => '전체';
-
-  @override
   String get listUser => '내가 추가';
 
   @override

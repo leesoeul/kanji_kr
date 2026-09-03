@@ -1,8 +1,10 @@
 import '../../shared/models/kanji.dart';
 import '../../shared/models/study_list.dart';
 
-/// 기기 로컬에 남는 사용자 상태. 시드 JSON과는 별개.
-/// 端末ローカルに残るユーザー状態。シードJSONとは別。
+/// 기기에 남는 사용자 상태. 시드 JSON과는 별개다.
+///
+/// [userKanjis]에는 직접 추가한 카드뿐 아니라, 시드를 고친 사본도 들어간다.
+/// import한 목록 메타는 [importedLists], 카드 본문은 역시 [userKanjis]에 둔다.
 class UserData {
   const UserData({
     required this.favoriteIds,
@@ -16,16 +18,20 @@ class UserData {
 
   final Set<String> favoriteIds;
 
-  /// 직접 추가한 한자 + 시드를 고친 사본.
-  /// 自分で足した漢字 + シードを直したコピー。
+  /// 직접 추가한 카드 + 시드를 고친 사본 + import한 카드.
   final List<Kanji> userKanjis;
+
+  /// 정답 버튼을 더블탭하면 켜진다. 모든 카드에 답을 항상 보여 준다.
   final bool alwaysShowAnswer;
   final bool isDark;
+
+  /// 홈에서 마지막에 고른 목록 id. 비어 있으면 목록 고르기 화면.
   final String selectedListId;
+
+  /// `kanji` 또는 `word`. 비어 있으면 한자/동사 고르기 화면.
   final String selectedKind;
 
-  /// JSON으로 가져온 목록 메타. 카드는 userKanjis에 같이 둔다.
-  /// JSONで入れた一覧メタ。カードは userKanjis に一緒に置く。
+  /// JSON으로 가져온 목록 메타. 카드는 [userKanjis]에 같이 둔다.
   final List<StudyList> importedLists;
 
   factory UserData.empty() => const UserData(
@@ -87,8 +93,9 @@ class UserData {
   }
 }
 
+/// 비어 있으면 홈이 카드가 아니라 선택 화면을 연다.
 String _normalizeListId(String? raw) {
-  if (raw == null || raw.isEmpty || raw == ListIds.all) {
+  if (raw == null || raw.isEmpty) {
     return '';
   }
   return raw;

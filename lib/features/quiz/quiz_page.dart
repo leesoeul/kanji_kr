@@ -8,11 +8,9 @@ import '../../core/study_filter.dart';
 import '../../core/theme/app_theme.dart';
 import '../../features/study/home_pickers.dart';
 import '../../shared/models/kanji.dart';
-import '../../shared/widgets/list_picker.dart';
 import 'quiz_builder.dart';
 
-/// 선택한 목록으로 객관식 복습. 뜻 고르기 / 글자 고르기.
-/// 選んだ一覧で選択式復習。意味選び / 表記選び。
+/// 목록을 고르면 카드가 2장 이상일 때 자동으로 [_begin]한다.
 class QuizPage extends ConsumerStatefulWidget {
   const QuizPage({super.key});
 
@@ -28,15 +26,22 @@ class _QuizPageState extends ConsumerState<QuizPage> {
   int _correctCount = 0;
   bool _playing = false;
 
+  void _resetLocal() {
+    _playing = false;
+    _questions = const [];
+    _picked = null;
+    _index = 0;
+    _correctCount = 0;
+  }
+
   void _begin() {
     final catalog = ref.read(catalogControllerProvider).valueOrNull;
     if (catalog == null) {
       return;
     }
     final l10n = AppLocalizations.of(context);
-    final session = ref.read(studySessionProvider);
+    final session = ref.read(quizSessionProvider);
     final lists = catalog.dropdownLists(
-      allTitle: l10n.listAll,
       userTitle: l10n.listUser,
       favoritesTitle: l10n.favorites,
       kind: session.kind,
@@ -55,6 +60,12 @@ class _QuizPageState extends ConsumerState<QuizPage> {
     });
   }
 
+  void _leaveQuiz() {
+    setState(_resetLocal);
+    ref.read(quizSessionProvider.notifier).clearList();
+  }
+
+  /// 보기 하나를 고른다. 이미 골랐으면 무시. 맞으면 [_correctCount]를 올린다.
   void _pick(int choice) {
     if (_picked != null) {
       return;
@@ -82,82 +93,102 @@ class _QuizPageState extends ConsumerState<QuizPage> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final session = ref.watch(studySessionProvider);
+    final session = ref.watch(quizSessionProvider);
     final asyncCatalog = ref.watch(catalogControllerProvider);
 
-    ref.listen<StudySession>(studySessionProvider, (prev, next) {
-      if (prev?.listId == next.listId && prev?.kind == next.kind) {
+    // 목록을 비우면 (뒤로가기) 로컬 퀴즈 상태도 리셋.
+    ref.listen<StudySession>(quizSessionProvider, (prev, next) {
+      if (next.hasDeck) {
         return;
       }
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted) {
           return;
         }
-        setState(() {
-          _playing = false;
-          _questions = const [];
-          _picked = null;
-          _index = 0;
-          _correctCount = 0;
-        });
+        setState(_resetLocal);
       });
     });
 
-    return Scaffold(
-      appBar: session.hasDeck ? AppBar(title: Text(l10n.quizTitle)) : null,
-      body: asyncCatalog.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, _) => Center(child: Text('$error')),
-        data: (catalog) {
-          if (!session.hasDeck) {
-            return HomeBrowseBody(
-              catalog: catalog,
-              session: session,
-              isDark: ref.watch(studyPrefsProvider).isDark,
-            );
-          }
-          final lists = catalog.dropdownLists(
-            allTitle: l10n.listAll,
-            userTitle: l10n.listUser,
-            favoritesTitle: l10n.favorites,
-            kind: session.kind,
-          );
-          final listId = resolveListId(session.listId, lists);
-          final items = catalog.itemsFor(listId, kind: session.kind);
-          return Column(
-            children: [
-              const Padding(
-                padding: EdgeInsets.fromLTRB(16, 0, 16, 8),
-                child: ListPicker(),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: SegmentedButton<QuizMode>(
-                  segments: [
-                    ButtonSegment(
-                      value: QuizMode.meaning,
-                      label: Text(l10n.quizModeMeaning),
-                    ),
-                    ButtonSegment(
-                      value: QuizMode.literal,
-                      label: Text(l10n.quizModeLiteral),
-                    ),
-                  ],
-                  selected: {_mode},
-                  onSelectionChanged: (next) {
-                    setState(() {
-                      _mode = next.first;
-                      _playing = false;
-                      _questions = const [];
-                    });
-                  },
+    return PopScope(
+      canPop: !session.hasKind,
+      onPopInvoked: (didPop) {
+        if (didPop) {
+          return;
+        }
+        if (session.hasDeck) {
+          _leaveQuiz();
+        } else if (session.hasKind) {
+          ref.read(studySessionProvider.notifier).clearKind();
+        }
+      },
+      child: Scaffold(
+        appBar: session.hasDeck
+            ? AppBar(
+                leading: IconButton(
+                  icon: const Icon(Icons.arrow_back),
+                  onPressed: _leaveQuiz,
                 ),
-              ),
-              const SizedBox(height: 12),
-              Expanded(child: _body(context, l10n, items)),
-            ],
-          );
-        },
+                title: Text(l10n.quizTitle),
+              )
+            : null,
+        body: asyncCatalog.when(
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (error, _) => Center(child: Text('$error')),
+          data: (catalog) {
+            if (!session.hasDeck) {
+              return HomeBrowseBody(
+                catalog: catalog,
+                session: session,
+                isDark: ref.watch(studyPrefsProvider).isDark,
+                forQuiz: true,
+              );
+            }
+            final lists = catalog.dropdownLists(
+              userTitle: l10n.listUser,
+              favoritesTitle: l10n.favorites,
+              kind: session.kind,
+            );
+            final listId = resolveListId(session.listId, lists);
+            final items = catalog.itemsFor(listId, kind: session.kind);
+            if (!_playing && _questions.isEmpty && items.length >= 2) {
+              // 목록을 고르자마자 퀴즈를 시작한다. 카드가 2장 미만이면 시작 화면.
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (!mounted || _playing || _questions.isNotEmpty) {
+                  return;
+                }
+                _begin();
+              });
+            }
+            return Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: SegmentedButton<QuizMode>(
+                    segments: [
+                      ButtonSegment(
+                        value: QuizMode.meaning,
+                        label: Text(l10n.quizModeMeaning),
+                      ),
+                      ButtonSegment(
+                        value: QuizMode.literal,
+                        label: Text(l10n.quizModeLiteral),
+                      ),
+                    ],
+                    selected: {_mode},
+                    onSelectionChanged: (next) {
+                      setState(() {
+                        _mode = next.first;
+                        _resetLocal();
+                      });
+                    },
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Expanded(child: _body(context, l10n, items)),
+              ],
+            );
+          },
+        ),
       ),
     );
   }
@@ -168,6 +199,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
     List<Kanji> items,
   ) {
     if (_questions.isNotEmpty && !_playing) {
+      //결과 화면
       return _ResultView(
         l10n: l10n,
         correct: _correctCount,
@@ -176,6 +208,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
       );
     }
     if (!_playing) {
+      //퀴즈 시작 화면
       final canStart = items.length >= 2;
       return Center(
         child: Padding(
@@ -277,8 +310,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
   }
 }
 
-/// 문제 칸. 뜻 고르기·글자 고르기 모두 훈독·음독을 같이 보여 준다.
-/// 問題欄。意味選び・表記選びどちらも訓読み・音読みを一緒に見せる。
+/// 문제 칸. 뜻 고르기·글자 고르기 모두 훈독·음독(또는 단어 읽기)을 같이 보여 준다.
 class _QuizPrompt extends StatelessWidget {
   const _QuizPrompt({
     required this.kanji,
@@ -292,9 +324,8 @@ class _QuizPrompt extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final main = mode == QuizMode.meaning
-        ? kanji.literal
-        : kanji.displayMeaning;
+    final main =
+        mode == QuizMode.meaning ? kanji.literal : kanji.displayMeaning;
     final readings = _readingLine();
 
     return Column(
@@ -333,13 +364,13 @@ class _QuizPrompt extends StatelessWidget {
       return '${l10n.cardReading}: $reading';
     }
     final kun = kanji.kunYomi.map((item) => item.kana).join('・');
-    final on = kanji.onYomi
-        .map((item) => katakanaToHiragana(item.kana))
-        .join('・');
+    final on =
+        kanji.onYomi.map((item) => katakanaToHiragana(item.kana)).join('・');
     return '${l10n.cardKun}: ${kun.isEmpty ? '—' : kun} / ${l10n.cardOn}: ${on.isEmpty ? '—' : on}';
   }
 }
 
+/// 객관식 보기. 채점 후 정답은 초록, 오답은 분홍.
 class _ChoiceTile extends StatelessWidget {
   const _ChoiceTile({
     required this.label,
@@ -389,6 +420,7 @@ class _ChoiceTile extends StatelessWidget {
   }
 }
 
+/// 마지막 문항 다음. 점수와 다시 풀기.
 class _ResultView extends StatelessWidget {
   const _ResultView({
     required this.l10n,

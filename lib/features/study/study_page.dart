@@ -11,8 +11,14 @@ import '../../shared/models/kanji.dart';
 import 'home_pickers.dart';
 import 'kanji_search_sheet.dart';
 
-/// 홈 플래시카드. 정답은 카드가 아니라 아래 버튼으로만 연다.
-/// ホームのフラッシュカード。答えはカードではなく下のボタンだけで開く。
+/// 홈 플래시카드.
+///
+/// [StudySession]이 비어 있으면 [HomeBrowseBody] (한자/동사 → 목록).
+/// 덱이 있으면 PageView로 카드를 넘긴다.
+/// 정답은 카드를 탭하는 게 아니라 아래 분홍 버튼으로만 연다.
+/// 더블탭은 "정답 항상 표시" 전역 설정.
+///
+/// [initialId]가 있으면 `/kanji/:id`로 들어온 것. 해당 장으로 점프하고 뒤로가기가 pop이다.
 class StudyPage extends ConsumerStatefulWidget {
   const StudyPage({
     super.key,
@@ -30,12 +36,9 @@ class StudyPage extends ConsumerStatefulWidget {
 class _StudyPageState extends ConsumerState<StudyPage> {
   final _pageController = PageController();
   int _index = 0;
+
   /// 이 세션에서 정답을 연 카드 인덱스. 항상표시 ON이면 쓰지 않는다.
-  /// このセッションで答えを開いたカードindex。常時表示ONなら使わない。
   final Set<int> _revealed = {};
-  /// 힌트(뜻만)를 연 카드. 정답보다 약한 공개.
-  /// ヒント(意味だけ)を開いたカード。答えより弱い公開。
-  final Set<int> _hinted = {};
   bool _didJump = false;
 
   @override
@@ -59,10 +62,10 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     }
   }
 
+  /// 덱을 바꾸면 첫 장으로. PageController는 프레임 뒤에 jump.
   void _resetDeck() {
     _index = 0;
     _revealed.clear();
-    _hinted.clear();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_pageController.hasClients) {
         _pageController.jumpToPage(0);
@@ -70,12 +73,12 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     });
   }
 
+  /// 학습에 쓸 카드 배열. `/kanji/:id`면 카탈로그 전체에서 해당 id를 찾는다.
   List<Kanji> _deck(CatalogState catalog, StudySession session) {
     if (widget.initialId != null) {
       return catalog.kanjis;
     }
     final lists = catalog.dropdownLists(
-      allTitle: '',
       userTitle: '',
       favoritesTitle: '',
       kind: session.kind,
@@ -94,6 +97,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     final session = ref.watch(studySessionProvider);
     final asyncCatalog = ref.watch(catalogControllerProvider);
 
+    // 목록·셔플·종류가 바뀌면 덱을 처음부터 다시 본다.
     ref.listen<StudySession>(studySessionProvider, (prev, next) {
       if (widget.initialId != null) {
         return;
@@ -111,193 +115,177 @@ class _StudyPageState extends ConsumerState<StudyPage> {
       });
     });
 
-    return Scaffold(
-      body: SafeArea(
-        child: asyncCatalog.when(
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (error, _) => Center(child: Text('$error')),
-          data: (catalog) {
-            if (widget.initialId == null && !session.hasDeck) {
-              return HomeBrowseBody(
-                catalog: catalog,
-                session: session,
-                isDark: prefs.isDark,
+    // 시스템 뒤로가기: 카드 → 목록 고르기 → 종류 고르기. `/kanji/:id`만 진짜 pop.
+    return PopScope(
+      canPop: widget.showBack || (!session.hasKind && widget.initialId == null),
+      onPopInvoked: (didPop) {
+        if (didPop) {
+          return;
+        }
+        if (session.hasDeck) {
+          ref.read(studySessionProvider.notifier).clearList();
+        } else if (session.hasKind) {
+          ref.read(studySessionProvider.notifier).clearKind();
+        }
+      },
+      child: Scaffold(
+        body: SafeArea(
+          child: asyncCatalog.when(
+            loading: () => const Center(child: CircularProgressIndicator()),
+            error: (error, _) => Center(child: Text('$error')),
+            data: (catalog) {
+              if (widget.initialId == null && !session.hasDeck) {
+                return HomeBrowseBody(
+                  catalog: catalog,
+                  session: session,
+                  isDark: prefs.isDark,
+                );
+              }
+              final kanjis = _deck(catalog, session);
+              final lists = catalog.dropdownLists(
+                userTitle: l10n.listUser,
+                favoritesTitle: l10n.favorites,
+                kind: session.kind,
               );
-            }
-            final kanjis = _deck(catalog, session);
-            final lists = catalog.dropdownLists(
-              allTitle: l10n.listAll,
-              userTitle: l10n.listUser,
-              favoritesTitle: l10n.favorites,
-              kind: session.kind,
-            );
-            final listId = resolveListId(session.listId, lists);
-            final currentList = catalog.listById(listId, dropdown: lists);
-            final language = Localizations.localeOf(context).languageCode;
-            final listTitle = currentList?.titleFor(language) ?? l10n.studyTitle;
-            final onHeaderBack = widget.showBack
-                ? () => context.pop()
-                : () => ref.read(studySessionProvider.notifier).clearList();
-            if (kanjis.isEmpty) {
+              final listId = resolveListId(session.listId, lists);
+              final currentList = catalog.listById(listId, dropdown: lists);
+              final language = Localizations.localeOf(context).languageCode;
+              final listTitle =
+                  currentList?.titleFor(language) ?? l10n.studyTitle;
+              final onHeaderBack = widget.showBack
+                  ? () => context.pop()
+                  : () => ref.read(studySessionProvider.notifier).clearList();
+              if (kanjis.isEmpty) {
+                //단어장이 비어있다
+                return Column(
+                  children: [
+                    _StudyHeader(
+                      showBack: true,
+                      title: listTitle,
+                      current: 0,
+                      total: 0,
+                      isDark: prefs.isDark,
+                      canShuffle: false,
+                      onBack: onHeaderBack,
+                      onToggleDark: () =>
+                          ref.read(studyPrefsProvider.notifier).toggleDark(),
+                      onSearch: null,
+                      onShuffle: null,
+                    ),
+                    Expanded(child: Center(child: Text(l10n.emptyList))),
+                  ],
+                );
+              }
+              if (!_didJump && widget.initialId != null) {
+                // `/kanji/:id`로 들어왔을 때 해당 장으로 점프. 한 번만.
+                final found =
+                    kanjis.indexWhere((item) => item.id == widget.initialId);
+                if (found >= 0) {
+                  _index = found;
+                  _didJump = true;
+                  WidgetsBinding.instance.addPostFrameCallback((_) {
+                    if (_pageController.hasClients) {
+                      _pageController.jumpToPage(found);
+                    }
+                  });
+                }
+              }
+              final safeIndex = _index.clamp(0, kanjis.length - 1);
+              final kanji = kanjis[safeIndex];
+              final showAnswer =
+                  prefs.alwaysShowAnswer || _revealed.contains(_index);
+
               return Column(
                 children: [
                   _StudyHeader(
                     showBack: true,
                     title: listTitle,
-                    current: 0,
-                    total: 0,
+                    current: safeIndex + 1,
+                    total: kanjis.length,
                     isDark: prefs.isDark,
-                    canShuffle: false,
+                    canShuffle: kanjis.length > 1 && widget.initialId == null,
                     onBack: onHeaderBack,
                     onToggleDark: () =>
                         ref.read(studyPrefsProvider.notifier).toggleDark(),
-                    onSearch: null,
-                    onShuffle: null,
+                    onSearch: () => _openSearch(kanjis, l10n),
+                    onShuffle: () {
+                      ref.read(studySessionProvider.notifier).shuffle();
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(l10n.shuffled),
+                          duration: const Duration(seconds: 1),
+                        ),
+                      );
+                    },
                   ),
-                  Expanded(child: Center(child: Text(l10n.emptyList))),
-                ],
-              );
-            }
-            if (!_didJump && widget.initialId != null) {
-              // `/kanji/:id`로 들어왔을 때 해당 장으로 점프. 한 번만.
-              // `/kanji/:id` で入ったとき該当ページへジャンプ。一度だけ。
-              final found =
-                  kanjis.indexWhere((item) => item.id == widget.initialId);
-              if (found >= 0) {
-                _index = found;
-                _didJump = true;
-                WidgetsBinding.instance.addPostFrameCallback((_) {
-                  if (_pageController.hasClients) {
-                    _pageController.jumpToPage(found);
-                  }
-                });
-              }
-            }
-            final safeIndex = _index.clamp(0, kanjis.length - 1);
-            final kanji = kanjis[safeIndex];
-            final showAnswer =
-                prefs.alwaysShowAnswer || _revealed.contains(_index);
-            final showHint = showAnswer || _hinted.contains(_index);
-
-            return Column(
-              children: [
-                _StudyHeader(
-                  showBack: true,
-                  title: listTitle,
-                  current: safeIndex + 1,
-                  total: kanjis.length,
-                  isDark: prefs.isDark,
-                  canShuffle: kanjis.length > 1 && widget.initialId == null,
-                  onBack: onHeaderBack,
-                  onToggleDark: () =>
-                      ref.read(studyPrefsProvider.notifier).toggleDark(),
-                  onSearch: () => _openSearch(kanjis, l10n),
-                  onShuffle: () {
-                    ref.read(studySessionProvider.notifier).shuffle();
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(l10n.shuffled),
-                        duration: const Duration(seconds: 1),
-                      ),
-                    );
-                  },
-                ),
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: safeIndex == 0
-                            ? null
-                            : () => _jumpTo(safeIndex - 1, kanjis.length),
-                        icon: const Icon(
-                          Icons.chevron_left,
-                          size: 40,
-                          color: AppTheme.sakura,
+                  Expanded(
+                    flex: 5,
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: safeIndex == 0
+                              ? null
+                              : () => _jumpTo(safeIndex - 1, kanjis.length),
+                          icon: const Icon(
+                            Icons.chevron_left,
+                            size: 40,
+                            color: AppTheme.sakura,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: PageView.builder(
-                          controller: _pageController,
-                          itemCount: kanjis.length,
-                          onPageChanged: (value) {
-                            setState(() => _index = value);
-                          },
-                          itemBuilder: (context, index) {
-                            return LayoutBuilder(
-                              builder: (context, constraints) {
-                                final maxH = constraints.maxHeight * 0.95;
-                                final maxW = constraints.maxWidth * 0.95;
-                                // 세로 카드 비율. 높이가 넘치면 너비를 줄인다.
-                                // 縦カード比。高さが溢れたら幅を減らす。
-                                var width = maxW;
-                                var height = width / 0.78;
-                                if (height > maxH) {
-                                  height = maxH;
-                                  width = height * 0.78;
-                                }
-                                return Center(
-                                  child: SizedBox(
-                                    width: width,
-                                    height: height,
-                                    child: _KanjiFlashCard(
-                                      kanji: kanjis[index],
-                                      starred: catalog
-                                          .isFavorite(kanjis[index].id),
-                                      onStar: () => ref
-                                          .read(
-                                            catalogControllerProvider.notifier,
-                                          )
-                                          .toggleFavorite(kanjis[index].id),
-                                    ),
-                                  ),
-                                );
-                              },
-                            );
-                          },
+                        Expanded(
+                          child: PageView.builder(
+                            controller: _pageController,
+                            itemCount: kanjis.length,
+                            onPageChanged: (value) {
+                              setState(() => _index = value);
+                            },
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.fromLTRB(4, 24, 4, 8),
+                                child: _KanjiFlashCard(
+                                  kanji: kanjis[index],
+                                  starred: catalog.isFavorite(kanjis[index].id),
+                                  onStar: () => ref
+                                      .read(
+                                        catalogControllerProvider.notifier,
+                                      )
+                                      .toggleFavorite(kanjis[index].id),
+                                ),
+                              );
+                            },
+                          ),
                         ),
-                      ),
-                      IconButton(
-                        onPressed: safeIndex >= kanjis.length - 1
-                            ? null
-                            : () => _jumpTo(safeIndex + 1, kanjis.length),
-                        icon: const Icon(
-                          Icons.chevron_right,
-                          size: 40,
-                          color: AppTheme.sakura,
+                        IconButton(
+                          onPressed: safeIndex >= kanjis.length - 1
+                              ? null
+                              : () => _jumpTo(safeIndex + 1, kanjis.length),
+                          icon: const Icon(
+                            Icons.chevron_right,
+                            size: 40,
+                            color: AppTheme.sakura,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: showAnswer && kanji.hint.isNotEmpty ? 128 : 88,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 24),
-                    child: showHint
-                        ? _AnswerBlock(
-                            kanji: kanji,
-                            showReadings: showAnswer,
-                            l10n: l10n,
-                          )
-                        : const SizedBox.shrink(),
+                  SizedBox(
+                    height: 148,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(24, 20, 24, 0),
+                      child: showAnswer
+                          ? SingleChildScrollView(
+                              child: _AnswerBlock(
+                                kanji: kanji,
+                                l10n: l10n,
+                              ),
+                            )
+                          : const SizedBox.shrink(),
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      IconButton(
-                        tooltip: l10n.hint,
-                        onPressed: () => setState(() => _hinted.add(_index)),
-                        icon: const Icon(
-                          Icons.lightbulb_outline,
-                          size: 28,
-                          color: AppTheme.meaningPink,
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      GestureDetector(
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                    child: Center(
+                      child: GestureDetector(
                         behavior: HitTestBehavior.opaque,
                         onTap: () {
                           setState(() {
@@ -308,13 +296,13 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                             }
                           });
                         },
-                        // 더블탭은 전역 설정. 카드가 아니라 이 버튼만 받는다.
-                        // ダブルタップは全体設定。カードではなくこのボタンだけ受ける。
+                        // 더블탭은 전역 "항상 표시".
                         onDoubleTap: () => _toggleAlwaysShow(l10n),
                         child: Container(
+                          constraints: const BoxConstraints(minWidth: 200),
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 32,
-                            vertical: 12,
+                            horizontal: 48,
+                            vertical: 14,
                           ),
                           decoration: BoxDecoration(
                             color: AppTheme.answerPill,
@@ -322,20 +310,22 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                           ),
                           child: Text(
                             l10n.showAnswer,
+                            textAlign: TextAlign.center,
                             style: const TextStyle(
                               color: Color(0xFF7A3048),
                               fontWeight: FontWeight.w700,
-                              fontSize: 16,
+                              fontSize: 20,
                             ),
                           ),
                         ),
                       ),
-                    ],
+                    ),
                   ),
-                ),
-              ],
-            );
-          },
+                  const Spacer(flex: 2),
+                ],
+              );
+            },
+          ),
         ),
       ),
     );
@@ -350,7 +340,6 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     setState(() {
       if (on) {
         // 항상 표시로 바뀌면 카드별 공개 상태는 의미가 없어진다.
-        // 常時表示に変わるとカード別公開状態は意味がなくなる。
         _revealed.clear();
       }
     });
@@ -378,8 +367,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   }
 }
 
-/// 목록 풀다운 · 랜덤 · 다크 · `현재 / 전체` · 검색.
-/// 一覧プルダウン · ランダム · ダーク · `現在 / 全体` · 検索。
+/// 제목은 가운데 큰 글씨. 아래줄은 왼쪽 셔플·다크, 오른쪽 장수·검색.
 class _StudyHeader extends StatelessWidget {
   const _StudyHeader({
     required this.showBack,
@@ -408,67 +396,80 @@ class _StudyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(4, 4, 12, 8),
-      child: Row(
+      padding: const EdgeInsets.fromLTRB(4, 4, 12, 4),
+      child: Column(
         children: [
-          if (showBack)
-            IconButton(
-              onPressed: onBack,
-              icon: const Icon(Icons.arrow_back),
-            )
-          else
-            const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              title,
-              textAlign: TextAlign.center,
-              overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: const Color(0xFFE85A7B),
-                    fontWeight: FontWeight.w700,
-                  ),
-            ),
-          ),
-          IconButton(
-            tooltip: AppLocalizations.of(context).shuffle,
-            onPressed: canShuffle ? onShuffle : null,
-            icon: const Icon(
-              Icons.shuffle,
-              color: AppTheme.sakura,
-            ),
-          ),
-          IconButton(
-            onPressed: onToggleDark,
-            icon: Icon(
-              isDark ? Icons.dark_mode_outlined : Icons.wb_sunny_outlined,
-              color: AppTheme.sakura,
-            ),
-          ),
-          Material(
-            color: Theme.of(context).brightness == Brightness.dark
-                ? Theme.of(context).colorScheme.surfaceContainerHighest
-                : AppTheme.progressPill,
-            borderRadius: BorderRadius.circular(24),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
+          SizedBox(
+            height: 52,
+            child: Stack(
+              alignment: Alignment.center,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 12),
-                  child: Text(
-                    '$current / $total',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          fontWeight: FontWeight.w600,
-                        ),
+                Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        color: const Color(0xFFE85A7B),
+                        fontWeight: FontWeight.w700,
+                        fontSize: 26,
+                      ),
+                ),
+                if (showBack)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: IconButton(
+                      onPressed: onBack,
+                      icon: const Icon(Icons.arrow_back),
+                    ),
                   ),
-                ),
-                IconButton(
-                  tooltip: AppLocalizations.of(context).searchKanji,
-                  visualDensity: VisualDensity.compact,
-                  onPressed: onSearch,
-                  icon: const Icon(Icons.search, color: Color(0xFFE85A7B)),
-                ),
               ],
             ),
+          ),
+          Row(
+            children: [
+              IconButton(
+                tooltip: AppLocalizations.of(context).shuffle,
+                onPressed: canShuffle ? onShuffle : null,
+                icon: const Icon(
+                  Icons.shuffle,
+                  color: AppTheme.sakura,
+                ),
+              ),
+              IconButton(
+                onPressed: onToggleDark,
+                icon: Icon(
+                  isDark ? Icons.dark_mode_outlined : Icons.wb_sunny_outlined,
+                  color: AppTheme.sakura,
+                ),
+              ),
+              const Spacer(),
+              Material(
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? Theme.of(context).colorScheme.surfaceContainerHighest
+                    : AppTheme.progressPill,
+                borderRadius: BorderRadius.circular(24),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12),
+                      child: Text(
+                        '$current / $total',
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              fontWeight: FontWeight.w600,
+                            ),
+                      ),
+                    ),
+                    IconButton(
+                      tooltip: AppLocalizations.of(context).searchKanji,
+                      visualDensity: VisualDensity.compact,
+                      onPressed: onSearch,
+                      icon: const Icon(Icons.search, color: Color(0xFFE85A7B)),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -476,8 +477,7 @@ class _StudyHeader extends StatelessWidget {
   }
 }
 
-/// 한자·단어만 크게. 뜻·읽기는 카드 밖 `_AnswerBlock`에 둔다.
-/// 漢字・単語だけ大きく。意味・読みはカード外の `_AnswerBlock` に置く。
+/// 한자·단어만 크게. 뜻·읽기는 카드 밖 [_AnswerBlock]에 둔다.
 class _KanjiFlashCard extends StatelessWidget {
   const _KanjiFlashCard({
     required this.kanji,
@@ -533,17 +533,15 @@ class _KanjiFlashCard extends StatelessWidget {
   }
 }
 
-/// 힌트=뜻만, 정답=뜻+읽기(단어) 또는 훈독+음독(한자).
-/// ヒント=意味だけ、答え=意味+読み(単語) または訓読み+音読み(漢字)。
+/// 정답: 뜻 + 읽기(단어) 또는 훈독 + 음독(한자). 힌트가 있으면 그 아래.
+/// 슬롯 높이는 바깥 SizedBox(148)에서 고정하고, 길면 스크롤한다.
 class _AnswerBlock extends StatelessWidget {
   const _AnswerBlock({
     required this.kanji,
-    required this.showReadings,
     required this.l10n,
   });
 
   final Kanji kanji;
-  final bool showReadings;
   final AppLocalizations l10n;
 
   @override
@@ -552,39 +550,45 @@ class _AnswerBlock extends StatelessWidget {
     final readingLine = kanji.isWord
         ? '${l10n.cardReading}: ${kanji.displayReading.isEmpty ? '—' : kanji.displayReading}'
         : '${l10n.cardKun}: ${_kun()} / ${l10n.cardOn}: ${_on()}';
+    final memo = kanji.hint.trim();
 
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Text(
           meaning,
           textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: AppTheme.meaningPink,
-                fontWeight: FontWeight.w700,
-              ),
+          style: const TextStyle(
+            color: AppTheme.meaningPink,
+            fontWeight: FontWeight.w700,
+            fontSize: 28,
+            height: 1.25,
+          ),
         ),
-        if (showReadings) ...[
+        const SizedBox(height: 6),
+        Text(
+          readingLine,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 20,
+            height: 1.3,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? Theme.of(context).colorScheme.onSurface
+                : const Color(0xFF5C3A45),
+          ),
+        ),
+        if (memo.isNotEmpty) ...[
           const SizedBox(height: 6),
           Text(
-            readingLine,
+            memo,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyLarge,
-          ),
-          if (kanji.hint.trim().isNotEmpty) ...[
-            const SizedBox(height: 4),
-            Text(
-              kanji.hint,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Theme.of(context)
-                        .colorScheme
-                        .onSurface
-                        .withOpacity(0.7),
-                  ),
+            style: TextStyle(
+              fontSize: 16,
+              height: 1.35,
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
             ),
-          ],
+          ),
         ],
       ],
     );
@@ -596,9 +600,8 @@ class _AnswerBlock extends StatelessWidget {
   }
 
   String _on() {
-    final on = kanji.onYomi
-        .map((item) => katakanaToHiragana(item.kana))
-        .join('・');
+    final on =
+        kanji.onYomi.map((item) => katakanaToHiragana(item.kana)).join('・');
     return on.isEmpty ? '—' : on;
   }
 }

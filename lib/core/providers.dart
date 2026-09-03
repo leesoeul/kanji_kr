@@ -7,12 +7,20 @@ import 'database/app_database.dart';
 import 'storage/user_store.dart';
 import 'study_filter.dart';
 
+/// 앱 전역 상태.
+///
+/// - [appDatabaseProvider]: 세션용 인메모리 DB
+/// - [userStoreProvider]: persist. [main.dart]에서 override
+/// - [catalogControllerProvider]: 화면에 주는 카드·목록
+/// - [studyPrefsProvider]: 다크모드·정답 항상 표시
+/// - [studySessionProvider]: 홈에서 고른 한자/동사·목록
+/// - [quizSessionProvider]: 퀴즈 탭 전용. 홈과 목록을 섞지 않음
+
 /// SQLite가 아니라 세션용 인메모리 DB.
-/// SQLite ではなくセッション用インメモリ DB。
 final appDatabaseProvider = Provider<AppDatabase>((ref) => AppDatabase());
 
-/// `main.dart`에서 실제 UserStore로 override한다.
-/// `main.dart` で実 UserStore に override する。
+/// [main.dart]에서 실제 [UserStore]로 override한다.
+/// override 없이 읽으면 앱이 잘못된 순서로 뜬 것이므로 바로 실패시킨다.
 final userStoreProvider = Provider<UserStore>((ref) {
   throw StateError('userStoreProvider must be overridden in main');
 });
@@ -24,8 +32,9 @@ final kanjiRepositoryProvider = Provider<KanjiRepository>((ref) {
   );
 });
 
-/// 화면에 쓰는 한자 목록 + 즐겨찾기 id + 리스트 메타.
-/// 画面で使う漢字一覧 + お気に入り id + リストメタ。
+/// 화면에 쓰는 스냅샷: 카드 전체 + 즐겨찾기 id + 목록 메타.
+///
+/// Repository를 직접 구독하지 않고, 이 객체를 통해 필터·드롭다운을 만든다.
 class CatalogState {
   const CatalogState({
     required this.kanjis,
@@ -55,6 +64,7 @@ class CatalogState {
           if (favoriteIds.contains(kanji.id)) kanji,
       ];
 
+  /// [itemsForList] 래퍼. [kind]를 넘기면 한자/단어만 남긴다.
   List<Kanji> itemsFor(String listId, {EntryKind? kind}) {
     return itemsForList(
       all: kanjis,
@@ -64,8 +74,8 @@ class CatalogState {
     );
   }
 
+  /// 홈·목록·퀴즈에 보여 줄 목록 줄. 한자/동사를 고른 뒤 [composeListsForKind].
   List<StudyList> dropdownLists({
-    required String allTitle,
     required String userTitle,
     required String favoritesTitle,
     EntryKind? kind,
@@ -79,13 +89,7 @@ class CatalogState {
         imported: importedLists,
       );
     }
-    return composeStudyLists(
-      allTitle: allTitle,
-      userTitle: userTitle,
-      favoritesTitle: favoritesTitle,
-      builtin: builtinLists,
-      imported: importedLists,
-    );
+    return const [];
   }
 
   StudyList? listById(String id, {required List<StudyList> dropdown}) {
@@ -98,8 +102,10 @@ class CatalogState {
   }
 }
 
-/// 시드·사용자 한자·즐겨찾기를 한곳에서 읽고 쓴다.
-/// シード・ユーザー漢字・お気に入りを一箇所で読み書きする。
+/// 시드·사용자 카드·즐겨찾기를 한곳에서 읽고 쓴다.
+///
+/// 쓰기 뒤에는 항상 [_reload]로 스냅샷을 다시 만든다.
+/// JSON import가 끝나면 홈 세션을 방금 가져온 목록으로 맞춘다.
 class CatalogController extends AsyncNotifier<CatalogState> {
   @override
   Future<CatalogState> build() async {
@@ -172,7 +178,6 @@ final catalogControllerProvider =
 );
 
 /// 정답 항상 표시 / 다크 모드. 둘 다 로컬 JSON에 남긴다.
-/// 答え常時表示 / ダークモード。どちらもローカルJSONに残す。
 class StudyPrefs {
   const StudyPrefs({
     required this.alwaysShowAnswer,
@@ -183,8 +188,7 @@ class StudyPrefs {
   final bool isDark;
 }
 
-/// 학습 표시 설정을 UserStore와 동기화한다.
-/// 学習表示設定を UserStore と同期する。
+/// 학습 표시 설정을 [UserStore]와 동기화한다.
 class StudyPrefsNotifier extends Notifier<StudyPrefs> {
   @override
   StudyPrefs build() {
@@ -214,8 +218,8 @@ class StudyPrefsNotifier extends Notifier<StudyPrefs> {
 final studyPrefsProvider =
     NotifierProvider<StudyPrefsNotifier, StudyPrefs>(StudyPrefsNotifier.new);
 
-/// 홈·목록·퀴즈가 같이 보는 선택 목록과 셔플 시드.
-/// ホーム・一覧・クイズが共有する選択一覧とシャッフルシード。
+/// 홈에서 고른 종류·목록·셔플 시드.
+
 class StudySession {
   const StudySession({
     this.kind,
@@ -225,6 +229,8 @@ class StudySession {
 
   final EntryKind? kind;
   final String listId;
+
+  /// 0이면 원래 순서. 셔플 버튼을 누르면 시각(ms)으로 바뀌고 같은 시드로 섞는다.
   final int shuffleNonce;
 
   bool get hasKind => kind != null;
@@ -242,12 +248,14 @@ class StudySessionNotifier extends Notifier<StudySession> {
     return StudySession(kind: kind, listId: listId);
   }
 
+  /// 1단계 화면
   Future<void> selectKind(EntryKind kind) async {
     await ref.read(userStoreProvider).patch(
           selectedKind: kind.jsonName,
           selectedListId: '',
         );
     state = StudySession(kind: kind);
+    ref.read(quizSessionProvider.notifier).selectKind(kind);
   }
 
   Future<void> selectList(String id) async {
@@ -266,6 +274,7 @@ class StudySessionNotifier extends Notifier<StudySession> {
           selectedListId: '',
         );
     state = const StudySession();
+    ref.read(quizSessionProvider.notifier).clearKind();
   }
 
   void shuffle() {
@@ -280,4 +289,34 @@ class StudySessionNotifier extends Notifier<StudySession> {
 final studySessionProvider =
     NotifierProvider<StudySessionNotifier, StudySession>(
   StudySessionNotifier.new,
+);
+
+/// 퀴즈 탭 전용 세션. persist하지 않고, 홈 카드 선택과 목록을 섞지 않는다.
+/// 처음 열 때는 홈의 kind만 빌려 온다 ([AppShell]에서 복사).
+class QuizSessionNotifier extends Notifier<StudySession> {
+  @override
+  StudySession build() {
+    final study = ref.read(studySessionProvider);
+    return StudySession(kind: study.kind);
+  }
+
+  void selectKind(EntryKind kind) {
+    state = StudySession(kind: kind);
+  }
+
+  void selectList(String id) {
+    state = StudySession(kind: state.kind, listId: id);
+  }
+
+  void clearList() {
+    state = StudySession(kind: state.kind);
+  }
+
+  void clearKind() {
+    state = const StudySession();
+  }
+}
+
+final quizSessionProvider = NotifierProvider<QuizSessionNotifier, StudySession>(
+  QuizSessionNotifier.new,
 );

@@ -1,5 +1,8 @@
-/// 카드 종류. 한자 한 글자와 단어(熟語)를 같은 카탈로그에 둔다.
-/// カード種類。漢字1字と単語(熟語)を同じカタログに置く。
+/// 카드 종류. 한자 한 글자와 단어(숙어·동사)를 같은 카탈로그에 둔다.
+///
+/// - [kanji]: 한 글자 한자
+/// - [word]: 단어·동사
+/// - [mixed]: import 목록 등, 한자·단어가 섞인 경우
 enum EntryKind {
   kanji,
   word,
@@ -28,16 +31,15 @@ enum EntryKind {
   }
 }
 
-/// 가상 목록 id. 에셋 JSON이 아니라 필터로 만든다.
-/// 仮想一覧 id。アセットJSONではなくフィルタで作る。
+/// 가상 목록 id. 에셋 JSON이 아니라 [itemsForList] 필터로 만든다.
 class ListIds {
-  static const all = 'all';
   static const favorites = 'favorites';
   static const user = 'user';
 }
 
 /// 학습 목록 한 줄. 시드·가져오기·가상 필터가 같은 모델을 쓴다.
-/// 学習一覧の1行。シード・インポート・仮想フィルタが同じモデルを使う。
+///
+/// [asset]이 있으면 번들 JSON 경로. 가상·가져오기 목록은 null.
 class StudyList {
   const StudyList({
     required this.id,
@@ -55,7 +57,6 @@ class StudyList {
   final String titleJa;
 
   /// 번들 JSON 경로. 가상·가져오기 목록은 null.
-  /// バンドルJSONパス。仮想・インポート一覧は null。
   final String? asset;
   final bool isVirtual;
   final bool isImported;

@@ -183,12 +183,6 @@ abstract class AppLocalizations {
   /// **'퀴즈'**
   String get quizTitle;
 
-  /// No description provided for @listAll.
-  ///
-  /// In ko, this message translates to:
-  /// **'전체'**
-  String get listAll;
-
   /// No description provided for @listUser.
   ///
   /// In ko, this message translates to:

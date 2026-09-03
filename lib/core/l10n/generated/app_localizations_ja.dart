@@ -52,9 +52,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizTitle => 'クイズ';
 
   @override
-  String get listAll => 'すべて';
-
-  @override
   String get listUser => '追加したカード';
 
   @override

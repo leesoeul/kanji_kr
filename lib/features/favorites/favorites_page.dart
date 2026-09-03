@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
 
-/// 하트를 단 한자만. 데이터는 목록·학습 카드와 같은 favoriteIds.
-/// ハートを付けた漢字だけ。データは一覧・学習カードと同じ favoriteIds。
+/// 하트를 단 카드만. 데이터는 목록·학습 카드와 같은 [favoriteIds].
+/// 타일을 누르면 `/kanji/:id`.
 class FavoritesPage extends ConsumerWidget {
   const FavoritesPage({super.key});
 
@@ -35,14 +35,14 @@ class FavoritesPage extends ConsumerWidget {
                   kanji.literal,
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
-                            title: Text(kanji.displayMeaning),
-                            subtitle: Text(
-                              kanji.isWord
-                                  ? kanji.displayReading
-                                  : (kanji.displayKunOn.isEmpty
-                                      ? kanji.koreanMeaning
-                                      : kanji.displayKunOn),
-                            ),
+                title: Text(kanji.displayMeaning),
+                subtitle: Text(
+                  kanji.isWord
+                      ? kanji.displayReading
+                      : (kanji.displayKunOn.isEmpty
+                          ? kanji.koreanMeaning
+                          : kanji.displayKunOn),
+                ),
                 trailing: IconButton(
                   tooltip: l10n.bookmarkRemove,
                   onPressed: () => ref

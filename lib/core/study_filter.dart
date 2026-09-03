@@ -4,7 +4,12 @@ import '../../shared/models/kanji.dart';
 import '../../shared/models/study_list.dart';
 
 /// 선택한 목록 id로 카드를 걸러 낸다.
-/// 選んだ一覧 id でカードを絞り込む。
+///
+/// - [ListIds.favorites]: 하트 친 카드
+/// - [ListIds.user]: `isUserAdded`인 카드 (직접 추가)
+/// - 그 외: `item.listId == listId` (시드·import 목록)
+///
+/// [kind]가 있으면 한자/단어로 한 번 더 거른다. 홈 2단 선택에서 쓴다.
 List<Kanji> itemsForList({
   required List<Kanji> all,
   required Set<String> favoriteIds,
@@ -16,9 +21,6 @@ List<Kanji> itemsForList({
   }
   List<Kanji> items;
   switch (listId) {
-    case ListIds.all:
-      items = all;
-      break;
     case ListIds.favorites:
       items = [
         for (final item in all)
@@ -52,10 +54,10 @@ List<Kanji> itemsForList({
   return items;
 }
 
-/// 저장된 목록이 없거나 지워졌으면 빈 값. 홈에서는 카드 대신 선택 화면을 연다.
-/// 保存した一覧が無い、または消えていたら空。ホームではカードの代わりに選択画面を開く。
+/// 저장된 목록이 없거나 지워졌으면 빈 값.
+/// 홈에서는 카드 대신 목록 선택 화면을 연다.
 String resolveListId(String selected, List<StudyList> lists) {
-  if (selected.isEmpty || selected == ListIds.all) {
+  if (selected.isEmpty) {
     return '';
   }
   for (final list in lists) {
@@ -66,6 +68,8 @@ String resolveListId(String selected, List<StudyList> lists) {
   return '';
 }
 
+/// UserStore의 `selectedKind` 문자열을 enum으로.
+/// `mixed`나 빈 값은 "아직 고르지 않음"으로 본다.
 EntryKind? parseEntryKind(String? raw) {
   if (raw == null || raw.isEmpty || raw == 'mixed') {
     return null;
@@ -73,6 +77,7 @@ EntryKind? parseEntryKind(String? raw) {
   return EntryKind.fromName(raw);
 }
 
+/// 예전 데이터에 kind가 없을 때 listId로 추측한다.
 EntryKind? inferKindFromListId(String listId) {
   if (listId.contains('verb') || listId.contains('word')) {
     return EntryKind.word;
@@ -83,8 +88,8 @@ EntryKind? inferKindFromListId(String listId) {
   return null;
 }
 
-/// nonce가 0이면 원래 순서. 아니면 같은 시드로 섞어서 화면이 다시 그려져도 유지한다.
-/// nonce が 0 なら元の順。でなければ同じシードで混ぜ、再描画しても維持する。
+/// [nonce]가 0이면 원래 순서.
+/// 아니면 같은 시드로 섞어서, 화면이 다시 그려져도 순서가 유지된다.
 List<Kanji> withShuffle(List<Kanji> items, int nonce) {
   if (nonce == 0 || items.length < 2) {
     return items;
@@ -92,44 +97,7 @@ List<Kanji> withShuffle(List<Kanji> items, int nonce) {
   return [...items]..shuffle(Random(nonce));
 }
 
-/// 홈·목록·퀴즈 풀다운에 넣을 목록. 가상 필터를 앞에 둔다.
-/// ホーム・一覧・クイズのプルダウン用。仮想フィルタを前に置く。
-List<StudyList> composeStudyLists({
-  required String allTitle,
-  required String userTitle,
-  required String favoritesTitle,
-  required List<StudyList> builtin,
-  required List<StudyList> imported,
-}) {
-  return [
-    StudyList(
-      id: ListIds.all,
-      kind: EntryKind.mixed,
-      titleKo: allTitle,
-      titleJa: allTitle,
-      isVirtual: true,
-    ),
-    ...builtin,
-    StudyList(
-      id: ListIds.user,
-      kind: EntryKind.mixed,
-      titleKo: userTitle,
-      titleJa: userTitle,
-      isVirtual: true,
-    ),
-    StudyList(
-      id: ListIds.favorites,
-      kind: EntryKind.mixed,
-      titleKo: favoritesTitle,
-      titleJa: favoritesTitle,
-      isVirtual: true,
-    ),
-    ...imported,
-  ];
-}
-
-/// 한자 또는 동사만. `전체`는 넣지 않는다.
-/// 漢字または動詞だけ。`すべて`は入れない。
+/// 한자 또는 동사만. 2단 선택에서 종류를 이미 골랐기 때문.
 List<StudyList> composeListsForKind({
   required EntryKind kind,
   required String userTitle,

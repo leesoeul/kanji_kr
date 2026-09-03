@@ -4,7 +4,6 @@ import '../../shared/models/kanji.dart';
 import '../../shared/models/study_list.dart';
 
 /// JSON 가져오기 결과. 목록 메타 + 카드.
-/// JSONインポート結果。一覧メタ + カード。
 class ParsedImport {
   const ParsedImport({required this.list, required this.items});
 
@@ -12,8 +11,13 @@ class ParsedImport {
   final List<Kanji> items;
 }
 
-/// 배열만 있거나 `{ titleKo, items }` 둘 다 받는다.
-/// 配列だけ、または `{ titleKo, items }` の両方を受ける。
+/// 사용자가 붙여 넣은 JSON을 목록으로 만든다.
+///
+/// 두 형태를 받는다.
+/// 1. 카드 배열만: `[{ "literal": "...", ... }]`
+/// 2. 목록 객체: `{ "titleKo": "...", "items": [ ... ] }`
+///
+/// 카드는 모두 `isUserAdded`로 표시하고, 목록 id는 `import_<시각>`이 기본이다.
 ParsedImport parseImportJson(
   String raw, {
   int? nowMs,
@@ -54,8 +58,8 @@ ParsedImport parseImportJson(
 ParsedImport _fromMap(Map<String, dynamic> json, int stamp) {
   final rawItems = json['items'] as List<dynamic>? ?? const [];
   final requestedId = json['id'] as String?;
+  // 가상 목록 id와 겹치면 새 import id를 쓴다.
   final listId = (requestedId == null ||
-          requestedId == ListIds.all ||
           requestedId == ListIds.user ||
           requestedId == ListIds.favorites)
       ? 'import_$stamp'
