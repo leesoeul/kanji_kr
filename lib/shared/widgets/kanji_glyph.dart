@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-/// 큰 한자 글리프. 학습 카드와 목록 leading에서 쓴다.
-/// 大きな漢字グリフ。学習カードと一覧 leading で使う。
+/// 큰 한자(또는 단어) 글리프.
+/// 학습 카드는 지금은 Text를 직접 쓰고, 이 위젯은 목록 leading 등에 쓸 수 있다.
 class KanjiGlyph extends StatelessWidget {
   const KanjiGlyph({
     super.key,

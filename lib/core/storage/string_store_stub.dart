@@ -1,7 +1,6 @@
 import 'string_store.dart';
 
-/// 테스트·미지원 플랫폼용. 프로세스 메모리에만 둔다.
-/// テスト・未対応プラットフォーム用。プロセスメモリにだけ置く。
+/// 테스트·미지원 플랫폼용. 프로세스가 끝나면 사라진다.
 class MemoryStringStore implements StringStore {
   final Map<String, String> _values = {};
 

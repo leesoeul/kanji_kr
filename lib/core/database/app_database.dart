@@ -1,6 +1,8 @@
-/// kanjis / reviews / favorites.
-/// 사용자 한자와 즐겨찾기는 UserStore JSON에 저장한다. 시드 n5.json은 덮어쓰지 않는다.
-/// ユーザー漢字とお気に入りは UserStore JSON に保存する。シード n5.json は上書きしない。
+/// 세션용 인메모리 DB. SQLite가 아니다.
+///
+/// 앱이 켜져 있는 동안 카드·즐겨찾기·SRS 필드를 Map으로 들고 있다.
+/// 사용자 한자와 즐겨찾기는 [UserStore] JSON에 저장한다.
+/// 시드 에셋은 덮어쓰지 않고, 켤 때마다 JSON에서 다시 읽는다.
 library;
 
 import '../../shared/models/kanji.dart';
@@ -19,8 +21,7 @@ class AppDatabase {
 
   void upsertKanji(Kanji kanji) {
     _kanjis[kanji.id] = kanji;
-    // 복습 UI는 아직 없지만, 한자를 넣을 때 리뷰 카드도 만들어 둔다.
-    // 復習UIはまだないが、漢字を入れるときにレビューカードも作っておく。
+    // 복습 UI는 아직 없지만, 카드를 넣을 때 리뷰 레코드도 만들어 둔다.
     _reviews.putIfAbsent(
       kanji.id,
       () => ReviewCard(
@@ -58,7 +59,6 @@ class AppDatabase {
   }
 
   /// 같은 종류·글자를 두 번 넣지 않기 위한 검사. 수정 중이면 자기 id는 제외.
-  /// 同じ種類・字を二度入れないための検査。修正中なら自分の id は除外。
   bool containsLiteral(
     String literal, {
     String? exceptId,

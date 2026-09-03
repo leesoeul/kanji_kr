@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../core/constants/jlpt.dart';
 import '../../core/l10n/generated/app_localizations.dart';
 
-/// 하단 탭에 아직 안 붙인 설정. 언어·레벨은 표시만.
-/// 下部タブにまだ付けていない設定。言語・レベルは表示のみ。
+/// 하단 탭에 아직 안 붙인 설정 화면. `/settings`로만 들어온다.
+/// 언어·레벨은 표시만 하고, 실제 전환은 없다 (UI는 한국어 고정).
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
 

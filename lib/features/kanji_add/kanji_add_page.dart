@@ -10,7 +10,9 @@ import '../../shared/models/reading.dart';
 import '../../shared/models/study_list.dart';
 
 /// `/add`와 `/edit/:id`를 같은 폼으로 처리한다.
-/// `/add` と `/edit/:id` を同じフォームで扱う。
+///
+/// 추가는 한자/단어 세그먼트를 고를 수 있고, 홈에서 동사를 보고 있었으면 단어로 시작한다.
+/// 시드 카드는 수정만 되고 삭제(휴지통)는 사용자 추가분만.
 class KanjiAddPage extends ConsumerStatefulWidget {
   const KanjiAddPage({super.key, this.kanjiId});
 
@@ -53,6 +55,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     super.dispose();
   }
 
+  /// 수정 진입 시 기존 카드를 폼에 채운다. 음독은 히라가나로 보여 준다.
   void _prefill(Kanji kanji) {
     _original = kanji;
     _kind = kanji.kind == EntryKind.word ? EntryKind.word : EntryKind.kanji;
@@ -74,6 +77,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     _kindInited = true;
   }
 
+  /// 추가 화면에서 홈이 동사면 단어 폼으로 시작한다.
   void _initKind() {
     if (_kindInited || _isEditing) {
       return;
@@ -131,7 +135,6 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         ),
         actions: [
           // 시드 한자는 삭제 불가. 사용자 추가분만 휴지통.
-          // シード漢字は削除不可。ユーザー追加分だけゴミ箱。
           if (_isEditing && _original?.isUserAdded == true)
             IconButton(
               tooltip: l10n.delete,
@@ -264,7 +267,6 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     final literal = _literal.text.trim();
     final meaning = _meaning.text.trim();
     // 한국 한자를 비우면 일본 한자와 같다고 본다.
-    // 韓国漢字を空にすると日本漢字と同じとみなす。
     final hanja = _koreanHanja.text.trim().isEmpty
         ? literal
         : _koreanHanja.text.trim();
@@ -276,7 +278,6 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
             KanjiExample(
               jp: exampleJp,
               // 폼에 kana 칸이 없어서, 수정 시 기존 값을 유지한다.
-              // フォームに kana 欄がないので、修正時は既存値を維持する。
               kana: _original?.examples.isNotEmpty == true
                   ? _original!.examples.first.kana
                   : '',
@@ -372,7 +373,6 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
   }
 
   /// `,` `、` `/` 공백으로 여러 읽기를 받는다.
-  /// `,` `、` `/` 空白で複数の読みを受ける。
   List<Reading> _parseReadings(String raw) {
     return raw
         .split(RegExp(r'[,、/\s]+'))

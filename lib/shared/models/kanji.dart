@@ -2,8 +2,8 @@ import '../../core/kana.dart';
 import 'reading.dart';
 import 'study_list.dart';
 
-/// 예문 한 쌍. 폼에서는 지금은 1개만 다룬다.
-/// 例文の1組。フォームでは今は1件だけ扱う。
+/// 예문 한 쌍 (일본어 / 가나 / 한국어).
+/// 추가·수정 폼에서는 지금은 1개만 다룬다.
 class KanjiExample {
   const KanjiExample({
     required this.jp,
@@ -30,8 +30,10 @@ class KanjiExample {
       };
 }
 
-/// 학습 카드 한 장. 한자·단어, 시드와 사용자 추가가 같은 모델을 쓴다.
-/// 学習カード1枚。漢字・単語、シードとユーザー追加が同じモデルを使う。
+/// 학습 카드 한 장.
+///
+/// 한자·단어, 시드와 사용자 추가가 같은 모델을 쓴다.
+/// [kind]로 한자/단어를 가른다. 클래스 이름은 한자이지만 동사 JSON도 이 타입이다.
 class Kanji {
   const Kanji({
     required this.id,
@@ -52,35 +54,36 @@ class Kanji {
   });
 
   final String id;
+
+  /// 화면에 크게 보여 주는 글자. 한자면 `山`, 단어면 `食べる`.
   final String literal;
   final String jlpt;
   final int strokeCount;
   final String koreanHanja;
-  /// 훈음 표기 (예: 메 산). 카드 부제에도 쓴다.
-  /// 訓音表記 (例: 메 산)。カード副題にも使う。
+
+  /// 훈음 표기 (예: 메 산). 카드 부제·정답에도 쓴다.
   final String koreanMeaning;
-  /// 학습에 보여주는 짧은 뜻 (예: 산).
-  /// 学習で見せる短い意味 (例: 산)。
+
+  /// 학습에 보여주는 짧은 뜻 (예: 산). 단어는 여기가 주 뜻.
   final List<String> meaningsKo;
   final List<Reading> onYomi;
   final List<Reading> kunYomi;
   final List<KanjiExample> examples;
   final EntryKind kind;
-  /// 소속 목록. 시드는 n5_kanji 등, 직접 추가는 `user`.
-  /// 所属一覧。シードは n5_kanji など、自分で足す分は `user`。
+
+  /// 소속 목록. 시드는 `kanji_beg` 등, 직접 추가는 `user`.
   final String listId;
-  /// 단어 전체 읽기. 한자면 훈/음독을 쓴다.
-  /// 単語全体の読み。漢字なら訓/音読みを使う。
+
+  /// 단어 전체 읽기. 한자면 비우고 훈/음독을 쓴다.
   final String reading;
+
   /// 어원·암기 힌트. 비어 있으면 정답에 안 보여 준다.
-  /// 語源・覚えヒント。空なら答えに出さない。
   final String hint;
   final bool isUserAdded;
 
   bool get isWord => kind == EntryKind.word;
 
-  /// 한자는 훈음(나란할 병). 단어는 짧은 뜻.
-  /// 漢字は訓音(나란할 병)。単語は短い意味。
+  /// 한자는 훈음(나란할 병). `/`는 ` · `로 바꾼다. 단어는 짧은 뜻.
   String get displayMeaning {
     if (!isWord) {
       final hunEum = koreanMeaning.trim();
@@ -95,7 +98,6 @@ class Kanji {
   }
 
   /// 목록 부제용. 한자는 훈독·음독, 단어는 읽기.
-  /// 一覧の副題用。漢字は訓読み・音読み、単語は読み。
   String get displayKunOn {
     if (isWord) {
       return displayReading;
@@ -116,8 +118,7 @@ class Kanji {
     return '$kun / $on';
   }
 
-  /// 단어는 `reading`, 한자는 훈독·음독.
-  /// 単語は `reading`、漢字は訓読み・音読み。
+  /// 단어는 [reading], 없으면 훈독. 한자는 빈 문자열 (훈/음독은 [displayKunOn]).
   String get displayReading {
     if (reading.isNotEmpty) {
       return reading;
@@ -128,8 +129,7 @@ class Kanji {
     return '';
   }
 
-  /// 사용자 추가 한자의 안정 id. 같은 글자를 두 번 넣지 못하게 하는 키로도 쓴다.
-  /// ユーザー追加漢字の安定 id。同じ字を二度入れないキーにも使う。
+  /// 사용자 추가 카드의 안정 id. 같은 글자를 두 번 넣지 못하게 하는 키로도 쓴다.
   static String userIdFor(String literal, {EntryKind kind = EntryKind.kanji}) {
     final prefix = kind == EntryKind.word ? 'user_word_' : 'user_';
     return '$prefix$literal';
@@ -170,6 +170,7 @@ class Kanji {
     );
   }
 
+  /// 검색: 글자·id·훈음·뜻·읽기·힌트. 음독은 가타카나 시드를 히라가나로도 맞춘다.
   bool matchesQuery(String query) {
     final q = query.trim().toLowerCase();
     if (q.isEmpty) {
@@ -191,8 +192,6 @@ class Kanji {
     if (hint.toLowerCase().contains(q)) {
       return true;
     }
-    // 음독은 시드가 가타카나라, 히라가나 검색도 맞춘다.
-    // 音読みはシードがカタカナなので、ひらがな検索も合わせる。
     return onYomi.any((item) {
           final hira = katakanaToHiragana(item.kana);
           return item.kana.contains(query.trim()) || hira.contains(q);

@@ -2,10 +2,10 @@ import 'dart:math';
 
 import '../../shared/models/kanji.dart';
 
+/// 뜻 맞히기 / 글자 맞히기.
 enum QuizMode { meaning, literal }
 
-/// 객관식 한 문항. 보기 수는 2–4.
-/// 選択式の1問。選択肢は 2–4。
+/// 객관식 한 문항. 보기 수는 정답 1 + 오답 최대 3 (2–4).
 class QuizQuestion {
   const QuizQuestion({
     required this.prompt,
@@ -23,7 +23,8 @@ class QuizQuestion {
 }
 
 /// 선택한 목록의 카드를 섞어 복습 퀴즈를 만든다.
-/// 選んだ一覧のカードを混ぜて復習クイズを作る。
+///
+/// 카드가 2장 미만이면 빈 배열. 오답 보기가 하나도 안 나오면 그 문항은 건너뛴다.
 List<QuizQuestion> buildQuiz({
   required List<Kanji> items,
   required QuizMode mode,
@@ -71,6 +72,7 @@ List<QuizQuestion> buildQuiz({
   return questions;
 }
 
+/// 모드에 따라 보기 문자열. 뜻 맞히기는 displayMeaning, 글자 맞히기는 literal.
 String _label(Kanji item, QuizMode mode) {
   switch (mode) {
     case QuizMode.meaning:

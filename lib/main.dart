@@ -5,16 +5,17 @@ import 'app.dart';
 import 'core/providers.dart';
 import 'core/storage/user_store.dart';
 
-/// 로컬 저장소를 연 뒤에야 Provider를 주입할 수 있다.
-/// 로컬ストアを開いてから Provider を注入する。
+/// 앱 진입점.
+///
+/// [UserStore]는 비동기로 열어야 해서, [ProviderScope]를 만들기 전에
+/// 먼저 연 다음 [userStoreProvider]에 주입한다.
+/// 기본 Provider는 override 없이 쓰면 예외를 던지도록 막아 두었다.
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final store = await UserStore.create();
   runApp(
     ProviderScope(
       overrides: [
-        // 기본 Provider는 예외를 던지므로, 여기서 실제 UserStore를 넣는다.
-        // 既定 Provider は例外を投げるので、ここで実 UserStore を入れる。
         userStoreProvider.overrideWithValue(store),
       ],
       child: const KanjiKrApp(),

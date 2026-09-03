@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// 카와이 핑크(사쿠라) 테마. 네이비/라벤더 야간풍은 쓰지 않는다.
-/// かわいいピンク(桜)テーマ。ネイビー/ラベンダーの夜風は使わない。
+/// 사쿠라 핑크 테마. 라이트는 블러시 배경, 다크는 seed에서 만든 ColorScheme.
+///
+/// 카드 테두리·정답 버튼·진행 pill 색은 학습 화면에서 상수로 직접 참조한다.
 class AppTheme {
   static const Color blushBg = Color(0xFFFFF4F7);
   static const Color meaningPink = Color(0xFFE85A7B);

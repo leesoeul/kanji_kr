@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../shared/models/kanji.dart';
 
-/// 한자·뜻·읽기로 카드를 찾아 학습 인덱스로 점프한다.
-/// 漢字・意味・読みでカードを探し、学習indexへジャンプする。
+/// 한자·뜻·읽기로 현재 덱 안 카드를 찾아, 학습 인덱스로 점프한다.
 Future<Kanji?> showKanjiSearchSheet({
   required BuildContext context,
   required List<Kanji> kanjis,
@@ -20,6 +19,7 @@ Future<Kanji?> showKanjiSearchSheet({
   );
 }
 
+/// 현재 덱을 쿼리로 거른다. 빈 검색은 전체. 탭하면 시트를 pop하며 그 카드를 돌려준다.
 class _KanjiSearchSheet extends StatefulWidget {
   const _KanjiSearchSheet({
     required this.kanjis,

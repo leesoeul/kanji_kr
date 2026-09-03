@@ -6,8 +6,10 @@ import 'core/providers.dart';
 import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
 
-/// 루트 앱. 테마는 학습 화면의 다크 토글과 연동한다.
-/// ルートアプリ。テーマは学習画面のダーク切替と連動する。
+/// 루트 위젯. 라우터·테마·로케일을 여기서 묶는다.
+///
+/// 다크 모드는 [studyPrefsProvider]와 연동한다 (학습 화면 해 아이콘).
+/// ja ARB는 있지만 UI locale은 한국어로 고정한다.
 class KanjiKrApp extends ConsumerWidget {
   const KanjiKrApp({super.key});
 
@@ -22,8 +24,6 @@ class KanjiKrApp extends ConsumerWidget {
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       themeMode: prefs.isDark ? ThemeMode.dark : ThemeMode.light,
-      // ja ARB는 있지만, 현재 UI 언어는 한국어로 고정.
-      // ja ARB はあるが、現在の UI 言語は韓国語固定。
       locale: const Locale('ko'),
       supportedLocales: AppLocalizations.supportedLocales,
       localizationsDelegates: AppLocalizations.localizationsDelegates,

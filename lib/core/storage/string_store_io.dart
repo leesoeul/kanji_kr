@@ -5,8 +5,9 @@ import 'package:path_provider/path_provider.dart';
 
 import 'string_store.dart';
 
-/// iOS/Android: 앱 지원 폴더의 `kanji_kr_user.json`.
-/// iOS/Android: アプリ支援フォルダの `kanji_kr_user.json`。
+/// iOS/Android 파일 저장. 앱 지원 폴더의 `kanji_kr_user.json` 하나.
+///
+/// 파일 내용은 `{ "kanji_kr_user_v1": "<UserData JSON 문자열>" }` 형태다.
 class FileStringStore implements StringStore {
   FileStringStore(this._file, this._values);
 

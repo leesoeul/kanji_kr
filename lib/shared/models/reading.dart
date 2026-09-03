@@ -1,5 +1,6 @@
-/// 음독·훈독 한 줄. romaji는 시드에만 있고 UI에서는 잘 안 쓴다.
-/// 音読み・訓読みの1行。romaji はシードにだけあり、UIではあまり使わない。
+/// 음독·훈독 한 줄.
+///
+/// [kana]가 화면에 쓰는 값. [romaji]는 시드에만 있고 UI에서는 거의 안 쓴다.
 class Reading {
   const Reading({
     required this.kana,

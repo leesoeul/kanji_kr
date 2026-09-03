@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// JLPT / 내 한자 칩.
-/// JLPT / 自分の漢字チップ。
+/// JLPT / 내 한자 칩. 목록 화면에 붙일 수 있지만 지금은 거의 안 쓴다.
 class LevelChip extends StatelessWidget {
   const LevelChip({super.key, required this.label});
 
@@ -17,8 +16,7 @@ class LevelChip extends StatelessWidget {
   }
 }
 
-/// 시드면 JLPT, 사용자 한자면 "내 한자" 라벨.
-/// シードなら JLPT、ユーザー漢字なら「내 한자」ラベル。
+/// 시드면 JLPT 라벨, 사용자 카드면 "내 한자".
 String kanjiLevelLabel({
   required bool isUserAdded,
   required String jlpt,
