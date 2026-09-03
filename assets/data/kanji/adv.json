@@ -1,0 +1,8268 @@
+[
+  {
+    "id": "kanji_601",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "強",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "強",
+    "koreanMeaning": "강할 강",
+    "meaningsKo": [
+      "강할"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      },
+      {
+        "kana": "ごう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つよい"
+      },
+      {
+        "kana": "つよまる"
+      },
+      {
+        "kana": "つよめる"
+      },
+      {
+        "kana": "しいる"
+      },
+      {
+        "kana": "こわい"
+      }
+    ],
+    "examples": [],
+    "hint": "벌레(虫)가 활(弓)처럼 힘을 쓰는 모양, 세다"
+  },
+  {
+    "id": "kanji_602",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弱",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弱",
+    "koreanMeaning": "약할 약",
+    "meaningsKo": [
+      "약할"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゃく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "よわい"
+      },
+      {
+        "kana": "よわる"
+      },
+      {
+        "kana": "よわまる"
+      },
+      {
+        "kana": "よわめる"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)이 얼음(冫)처럼 힘이 빠져 약함"
+  },
+  {
+    "id": "kanji_603",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弾",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弾",
+    "koreanMeaning": "탄알 탄",
+    "meaningsKo": [
+      "탄알"
+    ],
+    "onYomi": [
+      {
+        "kana": "だん"
+      },
+      {
+        "kana": "たん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひく"
+      },
+      {
+        "kana": "ひき"
+      },
+      {
+        "kana": "はずむ"
+      },
+      {
+        "kana": "たま"
+      },
+      {
+        "kana": "はじく"
+      },
+      {
+        "kana": "はじける"
+      },
+      {
+        "kana": "ただす"
+      },
+      {
+        "kana": "はじきゆみ"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)로 단(単)한 것을 튕김, 탄알"
+  },
+  {
+    "id": "kanji_604",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弦",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弦",
+    "koreanMeaning": "활시위 현",
+    "meaningsKo": [
+      "활시위"
+    ],
+    "onYomi": [
+      {
+        "kana": "げん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つる"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)에 맨 검푸른(玄) 시위"
+  },
+  {
+    "id": "kanji_605",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弧",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弧",
+    "koreanMeaning": "활 호",
+    "meaningsKo": [
+      "활"
+    ],
+    "onYomi": [
+      {
+        "kana": "こ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "활(弓)처럼 굽은 오이(瓜) 모양"
+  },
+  {
+    "id": "kanji_606",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弔",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弔",
+    "koreanMeaning": "조상할 조",
+    "meaningsKo": [
+      "조상할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とむらう"
+      },
+      {
+        "kana": "とぶらう"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)에 막대를 걸어 조문함"
+  },
+  {
+    "id": "kanji_607",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弥",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弥",
+    "koreanMeaning": "두루 미",
+    "meaningsKo": [
+      "두루"
+    ],
+    "onYomi": [
+      {
+        "kana": "み"
+      },
+      {
+        "kana": "び"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "や"
+      },
+      {
+        "kana": "いや"
+      },
+      {
+        "kana": "いよいよ"
+      },
+      {
+        "kana": "わたる"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)이 점점 더 넓어짐"
+  },
+  {
+    "id": "kanji_608",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "弟",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "弟",
+    "koreanMeaning": "아우 제",
+    "meaningsKo": [
+      "아우"
+    ],
+    "onYomi": [
+      {
+        "kana": "てい"
+      },
+      {
+        "kana": "だい"
+      },
+      {
+        "kana": "で"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おとうと"
+      }
+    ],
+    "examples": [],
+    "hint": "활(弓)을 메고 질서를 지키는 아우"
+  },
+  {
+    "id": "kanji_609",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "第",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "第",
+    "koreanMeaning": "차례 제",
+    "meaningsKo": [
+      "차례"
+    ],
+    "onYomi": [
+      {
+        "kana": "だい"
+      },
+      {
+        "kana": "てい"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "대나무(竹)로 아우(弟)의 차례를 매김"
+  },
+  {
+    "id": "kanji_610",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "矢",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "矢",
+    "koreanMeaning": "화살 시",
+    "meaningsKo": [
+      "화살"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "や"
+      }
+    ],
+    "examples": [],
+    "hint": "화살의 모양을 본뜬 글자"
+  },
+  {
+    "id": "kanji_611",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "知",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "知",
+    "koreanMeaning": "알 지",
+    "meaningsKo": [
+      "알"
+    ],
+    "onYomi": [
+      {
+        "kana": "ち"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しる"
+      },
+      {
+        "kana": "しらせる"
+      }
+    ],
+    "examples": [],
+    "hint": "입(口)이 화살(矢)처럼 빠르게 앎"
+  },
+  {
+    "id": "kanji_612",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "医",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "医",
+    "koreanMeaning": "의원 의",
+    "meaningsKo": [
+      "의원"
+    ],
+    "onYomi": [
+      {
+        "kana": "い"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いやす"
+      },
+      {
+        "kana": "いする"
+      },
+      {
+        "kana": "くすし"
+      }
+    ],
+    "examples": [],
+    "hint": "상자(匚) 안에 화살(矢)을 넣어 치료하던 모양"
+  },
+  {
+    "id": "kanji_613",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "疑",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "疑",
+    "koreanMeaning": "의심할 의",
+    "meaningsKo": [
+      "의심할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぎ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うたがう"
+      }
+    ],
+    "examples": [],
+    "hint": "화살(矢)을 어디로 쏠지 몰라 의심함"
+  },
+  {
+    "id": "kanji_614",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "触",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "触",
+    "koreanMeaning": "닿을 촉",
+    "meaningsKo": [
+      "닿을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふれる"
+      },
+      {
+        "kana": "さわる"
+      },
+      {
+        "kana": "さわ"
+      }
+    ],
+    "examples": [],
+    "hint": "Angle·벌레(虫)이 모여 ‘닿을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_615",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "兵",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "兵",
+    "koreanMeaning": "병사 병",
+    "meaningsKo": [
+      "병사"
+    ],
+    "onYomi": [
+      {
+        "kana": "へい"
+      },
+      {
+        "kana": "ひょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つわもの"
+      }
+    ],
+    "examples": [],
+    "hint": "도끼(斤)·Ground·Fins이 모여 ‘병사’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_616",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "管",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "管",
+    "koreanMeaning": "대롱 관/주관할 관",
+    "meaningsKo": [
+      "대롱",
+      "주관할"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くだ"
+      }
+    ],
+    "examples": [],
+    "hint": "대나무(竹)·집(宀)·Bear이 모여 ‘대롱’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_617",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "築",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "築",
+    "koreanMeaning": "쌓을 축",
+    "meaningsKo": [
+      "쌓을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "きずく"
+      }
+    ],
+    "examples": [],
+    "hint": "대나무(竹)·Saw·나무(木)이 모여 ‘쌓을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_618",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "籍",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "籍",
+    "koreanMeaning": "문서 적",
+    "meaningsKo": [
+      "문서"
+    ],
+    "onYomi": [
+      {
+        "kana": "せき"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "대나무(竹)·Plow·Long Ago이 모여 ‘문서’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_619",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "筆",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "筆",
+    "koreanMeaning": "붓 필",
+    "meaningsKo": [
+      "붓"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふで"
+      }
+    ],
+    "examples": [],
+    "hint": "대나무(竹)·Brush이 모여 ‘붓’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_620",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "筒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "筒",
+    "koreanMeaning": "대통 통",
+    "meaningsKo": [
+      "대통"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つつ"
+      }
+    ],
+    "examples": [],
+    "hint": "대나무(竹)·Same이 모여 ‘대통’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_621",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "符",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "符",
+    "koreanMeaning": "부호 부",
+    "meaningsKo": [
+      "부호"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "대나무(竹)·Attach이 모여 ‘부호’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_622",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "血",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "血",
+    "koreanMeaning": "피 혈",
+    "meaningsKo": [
+      "피"
+    ],
+    "onYomi": [
+      {
+        "kana": "けつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ち"
+      }
+    ],
+    "examples": [],
+    "hint": "Blood의 뜻·모양에서 ‘피’을 나타냄"
+  },
+  {
+    "id": "kanji_623",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "般",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "般",
+    "koreanMeaning": "일반 반/돌 반",
+    "meaningsKo": [
+      "일반",
+      "돌"
+    ],
+    "onYomi": [
+      {
+        "kana": "はん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "배(舟)·Weapon이 모여 ‘일반’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_624",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "舟",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "舟",
+    "koreanMeaning": "배 주",
+    "meaningsKo": [
+      "배"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふね"
+      },
+      {
+        "kana": "ふな"
+      },
+      {
+        "kana": "ぶね"
+      }
+    ],
+    "examples": [],
+    "hint": "배(舟)의 뜻·모양에서 ‘배’을 나타냄"
+  },
+  {
+    "id": "kanji_625",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "群",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "群",
+    "koreanMeaning": "무리 군",
+    "meaningsKo": [
+      "무리"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぐん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "むれる"
+      },
+      {
+        "kana": "むれ"
+      },
+      {
+        "kana": "むら"
+      },
+      {
+        "kana": "むらがる"
+      }
+    ],
+    "examples": [],
+    "hint": "Buddy·양(羊)이 모여 ‘무리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_626",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "階",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "階",
+    "koreanMeaning": "섬돌 계",
+    "meaningsKo": [
+      "섬돌"
+    ],
+    "onYomi": [
+      {
+        "kana": "かい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "きざはし"
+      }
+    ],
+    "examples": [],
+    "hint": "마을(阝)·Compare·흰(白)이 모여 ‘섬돌’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_627",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "陸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "陸",
+    "koreanMeaning": "뭍 륙",
+    "meaningsKo": [
+      "뭍"
+    ],
+    "onYomi": [
+      {
+        "kana": "りく"
+      },
+      {
+        "kana": "ろく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おか"
+      }
+    ],
+    "examples": [],
+    "hint": "마을(阝)·Womb이 모여 ‘뭍’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_628",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "隅",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "隅",
+    "koreanMeaning": "모퉁이 우",
+    "meaningsKo": [
+      "모퉁이"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぐう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すみ"
+      }
+    ],
+    "examples": [],
+    "hint": "마을(阝)·Splinter이 모여 ‘모퉁이’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_629",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "匹",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "匹",
+    "koreanMeaning": "짝 필",
+    "meaningsKo": [
+      "짝"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひき"
+      }
+    ],
+    "examples": [],
+    "hint": "상자(匚)·Legs이 모여 ‘짝’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_630",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "召",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "召",
+    "koreanMeaning": "부를 소",
+    "meaningsKo": [
+      "부를"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "めす"
+      }
+    ],
+    "examples": [],
+    "hint": "Call의 뜻·모양에서 ‘부를’을 나타냄"
+  },
+  {
+    "id": "kanji_631",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "缶",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "缶",
+    "koreanMeaning": "장군 부",
+    "meaningsKo": [
+      "장군"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かま"
+      }
+    ],
+    "examples": [],
+    "hint": "Can의 뜻·모양에서 ‘장군’을 나타냄"
+  },
+  {
+    "id": "kanji_632",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "庁",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "庁",
+    "koreanMeaning": "관청 청",
+    "meaningsKo": [
+      "관청"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちょう"
+      },
+      {
+        "kana": "てい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "やくしょ"
+      }
+    ],
+    "examples": [],
+    "hint": "Canopy·Street이 모여 ‘관청’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_633",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "庫",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "庫",
+    "koreanMeaning": "곳집 고",
+    "meaningsKo": [
+      "곳집"
+    ],
+    "onYomi": [
+      {
+        "kana": "こ"
+      },
+      {
+        "kana": "く"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くら"
+      }
+    ],
+    "examples": [],
+    "hint": "Canopy·수레(車)이 모여 ‘곳집’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_634",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "底",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "底",
+    "koreanMeaning": "밑 저",
+    "meaningsKo": [
+      "밑"
+    ],
+    "onYomi": [
+      {
+        "kana": "てい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "そこ"
+      }
+    ],
+    "examples": [],
+    "hint": "Canopy·Clan·Ground이 모여 ‘밑’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_635",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "床",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "床",
+    "koreanMeaning": "평상 상",
+    "meaningsKo": [
+      "평상"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とこ"
+      },
+      {
+        "kana": "ゆか"
+      }
+    ],
+    "examples": [],
+    "hint": "Canopy·나무(木)이 모여 ‘평상’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_636",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "磨",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "磨",
+    "koreanMeaning": "갈 마",
+    "meaningsKo": [
+      "갈"
+    ],
+    "onYomi": [
+      {
+        "kana": "ま"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みがく"
+      },
+      {
+        "kana": "する"
+      }
+    ],
+    "examples": [],
+    "hint": "Canopy·나무(木)·돌(石)이 모여 ‘갈’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_637",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "輸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "輸",
+    "koreanMeaning": "보낼 수",
+    "meaningsKo": [
+      "보낼"
+    ],
+    "onYomi": [
+      {
+        "kana": "ゆ"
+      },
+      {
+        "kana": "しゅ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "수레(車)·Death Star이 모여 ‘보낼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_638",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "軟",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "軟",
+    "koreanMeaning": "연할 연",
+    "meaningsKo": [
+      "연할"
+    ],
+    "onYomi": [
+      {
+        "kana": "なん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "やわらか"
+      },
+      {
+        "kana": "やわらかい"
+      }
+    ],
+    "examples": [],
+    "hint": "수레(車)·하품(欠)이 모여 ‘연할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_639",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "軒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "軒",
+    "koreanMeaning": "집 헌",
+    "meaningsKo": [
+      "집"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のき"
+      }
+    ],
+    "examples": [],
+    "hint": "수레(車)·Dry이 모여 ‘집’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_640",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "貨",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "貨",
+    "koreanMeaning": "재물 화",
+    "meaningsKo": [
+      "재물"
+    ],
+    "onYomi": [
+      {
+        "kana": "か"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たから"
+      }
+    ],
+    "examples": [],
+    "hint": "Change·조개(貝)이 모여 ‘재물’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_641",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "傾",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "傾",
+    "koreanMeaning": "기울 경/잠깐 경",
+    "meaningsKo": [
+      "기울",
+      "잠깐"
+    ],
+    "onYomi": [
+      {
+        "kana": "けい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かたむく"
+      },
+      {
+        "kana": "かたむける"
+      },
+      {
+        "kana": "かたぶく"
+      },
+      {
+        "kana": "かたげる"
+      },
+      {
+        "kana": "かしげる"
+      }
+    ],
+    "examples": [],
+    "hint": "Change·Geoduck이 모여 ‘기울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_642",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "孫",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "孫",
+    "koreanMeaning": "손자 손",
+    "meaningsKo": [
+      "손자"
+    ],
+    "onYomi": [
+      {
+        "kana": "そん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まご"
+      }
+    ],
+    "examples": [],
+    "hint": "아이(子)·Lineage이 모여 ‘손자’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_643",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "周",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "周",
+    "koreanMeaning": "두루 주",
+    "meaningsKo": [
+      "두루"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まわり"
+      }
+    ],
+    "examples": [],
+    "hint": "Circumference의 뜻·모양에서 ‘두루’을 나타냄"
+  },
+  {
+    "id": "kanji_644",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "乳",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "乳",
+    "koreanMeaning": "젖 유",
+    "meaningsKo": [
+      "젖"
+    ],
+    "onYomi": [
+      {
+        "kana": "にゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ちち"
+      },
+      {
+        "kana": "ち"
+      }
+    ],
+    "examples": [],
+    "hint": "Cleat·아이(子)·Umbrella이 모여 ‘젖’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_645",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "灰",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "灰",
+    "koreanMeaning": "재 회",
+    "meaningsKo": [
+      "재"
+    ],
+    "onYomi": [
+      {
+        "kana": "かい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はい"
+      }
+    ],
+    "examples": [],
+    "hint": "언덕(厂)·불(火)이 모여 ‘재’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_646",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "印",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "印",
+    "koreanMeaning": "도장 인",
+    "meaningsKo": [
+      "도장"
+    ],
+    "onYomi": [
+      {
+        "kana": "いん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しるし"
+      },
+      {
+        "kana": "じるし"
+      },
+      {
+        "kana": "しるす"
+      }
+    ],
+    "examples": [],
+    "hint": "Comb·Stamp이 모여 ‘도장’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_647",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "将",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "将",
+    "koreanMeaning": "장수 장",
+    "meaningsKo": [
+      "장수"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      },
+      {
+        "kana": "そう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まさに"
+      },
+      {
+        "kana": "はた"
+      },
+      {
+        "kana": "まさ"
+      },
+      {
+        "kana": "ひきいる"
+      },
+      {
+        "kana": "もって"
+      }
+    ],
+    "examples": [],
+    "hint": "Commander의 뜻·모양에서 ‘장수’을 나타냄"
+  },
+  {
+    "id": "kanji_648",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "比",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "比",
+    "koreanMeaning": "견줄 비",
+    "meaningsKo": [
+      "견줄"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くらべる"
+      }
+    ],
+    "examples": [],
+    "hint": "Compare의 뜻·모양에서 ‘견줄’을 나타냄"
+  },
+  {
+    "id": "kanji_649",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "専",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "専",
+    "koreanMeaning": "오로지 전",
+    "meaningsKo": [
+      "오로지"
+    ],
+    "onYomi": [
+      {
+        "kana": "せん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "もっぱら"
+      }
+    ],
+    "examples": [],
+    "hint": "Cross·논(田)·Measurement이 모여 ‘오로지’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_650",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "域",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "域",
+    "koreanMeaning": "지경 역",
+    "meaningsKo": [
+      "지경"
+    ],
+    "onYomi": [
+      {
+        "kana": "いき"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Dirt·Drunkard·입(口)이 모여 ‘지경’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_651",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "均",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "均",
+    "koreanMeaning": "고를 균",
+    "meaningsKo": [
+      "고를"
+    ],
+    "onYomi": [
+      {
+        "kana": "きん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ならす"
+      }
+    ],
+    "examples": [],
+    "hint": "Dirt·Pool·Drop이 모여 ‘고를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_652",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "城",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "城",
+    "koreanMeaning": "재 성",
+    "meaningsKo": [
+      "재"
+    ],
+    "onYomi": [
+      {
+        "kana": "じょう"
+      },
+      {
+        "kana": "せい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しろ"
+      }
+    ],
+    "examples": [],
+    "hint": "Dirt·Become이 모여 ‘재’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_653",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "埋",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "埋",
+    "koreanMeaning": "묻을 매",
+    "meaningsKo": [
+      "묻을"
+    ],
+    "onYomi": [
+      {
+        "kana": "まい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うめる"
+      },
+      {
+        "kana": "うまる"
+      },
+      {
+        "kana": "うもれる"
+      },
+      {
+        "kana": "うずめる"
+      },
+      {
+        "kana": "うずまる"
+      },
+      {
+        "kana": "いける"
+      }
+    ],
+    "examples": [],
+    "hint": "Dirt·고을(阝)이 모여 ‘묻을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_654",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "封",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "封",
+    "koreanMeaning": "봉할 봉",
+    "meaningsKo": [
+      "봉할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふう"
+      },
+      {
+        "kana": "ほう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Dirt·Measurement이 모여 ‘봉할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_655",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "塩",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "塩",
+    "koreanMeaning": "소금 염",
+    "meaningsKo": [
+      "소금"
+    ],
+    "onYomi": [
+      {
+        "kana": "えん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しお"
+      }
+    ],
+    "examples": [],
+    "hint": "Dirt·창·입(口)이 모여 ‘소금’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_656",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "塔",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "塔",
+    "koreanMeaning": "탑 탑",
+    "meaningsKo": [
+      "탑"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Dirt·Flowers·Suit이 모여 ‘탑’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_657",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "欧",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "欧",
+    "koreanMeaning": "구라파 구",
+    "meaningsKo": [
+      "구라파"
+    ],
+    "onYomi": [
+      {
+        "kana": "おう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うたう"
+      },
+      {
+        "kana": "はく"
+      }
+    ],
+    "examples": [],
+    "hint": "District·하품(欠)이 모여 ‘토할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_658",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "戸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "戸",
+    "koreanMeaning": "집 호",
+    "meaningsKo": [
+      "집"
+    ],
+    "onYomi": [
+      {
+        "kana": "こ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "と"
+      }
+    ],
+    "examples": [],
+    "hint": "Door의 뜻·모양에서 ‘집’을 나타냄"
+  },
+  {
+    "id": "kanji_659",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "肩",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "肩",
+    "koreanMeaning": "어깨 견",
+    "meaningsKo": [
+      "어깨"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かた"
+      }
+    ],
+    "examples": [],
+    "hint": "Door·달(月)이 모여 ‘어깨’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_660",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "州",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "州",
+    "koreanMeaning": "고을 주",
+    "meaningsKo": [
+      "고을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゅう"
+      },
+      {
+        "kana": "す"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "す"
+      }
+    ],
+    "examples": [],
+    "hint": "Drop·River이 모여 ‘고을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_661",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "奥",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "奥",
+    "koreanMeaning": "깊을 오",
+    "meaningsKo": [
+      "깊을"
+    ],
+    "onYomi": [
+      {
+        "kana": "おう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おく"
+      },
+      {
+        "kana": "おくまる"
+      },
+      {
+        "kana": "くま"
+      }
+    ],
+    "examples": [],
+    "hint": "Drop·Head·벼(禾)이 모여 ‘깊을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_662",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "象",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "象",
+    "koreanMeaning": "코끼리 상",
+    "meaningsKo": [
+      "코끼리"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      },
+      {
+        "kana": "ぞう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かたどる"
+      }
+    ],
+    "examples": [],
+    "hint": "Elephant의 뜻·모양에서 ‘코끼리’을 나타냄"
+  },
+  {
+    "id": "kanji_663",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "県",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "県",
+    "koreanMeaning": "고을 현",
+    "meaningsKo": [
+      "고을"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かける"
+      }
+    ],
+    "examples": [],
+    "hint": "눈(目)·Lion·작을(小)이 모여 ‘매달’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_664",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "省",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "省",
+    "koreanMeaning": "살필 성/덜 생",
+    "meaningsKo": [
+      "살필",
+      "덜"
+    ],
+    "onYomi": [
+      {
+        "kana": "せい"
+      },
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かえりみる"
+      },
+      {
+        "kana": "はぶく"
+      }
+    ],
+    "examples": [],
+    "hint": "Few·눈(目)이 모여 ‘살필’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_665",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "技",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "技",
+    "koreanMeaning": "재주 기",
+    "meaningsKo": [
+      "재주"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぎ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わざ"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Branch이 모여 ‘재주’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_666",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "捜",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "捜",
+    "koreanMeaning": "찾을 수",
+    "meaningsKo": [
+      "찾을"
+    ],
+    "onYomi": [
+      {
+        "kana": "そう"
+      },
+      {
+        "kana": "しゅ"
+      },
+      {
+        "kana": "しゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さがす"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Humble·Stool이 모여 ‘찾을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_667",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "採",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "採",
+    "koreanMeaning": "캘 채",
+    "meaningsKo": [
+      "캘"
+    ],
+    "onYomi": [
+      {
+        "kana": "さい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Cleat·나무(木)이 모여 ‘캘’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_668",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "換",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "換",
+    "koreanMeaning": "바꿀 환",
+    "meaningsKo": [
+      "바꿀"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かえる"
+      },
+      {
+        "kana": "かわる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Prison·입(口)이 모여 ‘바꿀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_669",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "損",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "損",
+    "koreanMeaning": "덜 손",
+    "meaningsKo": [
+      "덜"
+    ],
+    "onYomi": [
+      {
+        "kana": "そん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "そこなう"
+      },
+      {
+        "kana": "そこねる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Member이 모여 ‘덜’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_670",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "掃",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "掃",
+    "koreanMeaning": "쓸 소",
+    "meaningsKo": [
+      "쓸"
+    ],
+    "onYomi": [
+      {
+        "kana": "そう"
+      },
+      {
+        "kana": "しゅ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はく"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Wolverine·Forehead이 모여 ‘쓸’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_671",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "掘",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "掘",
+    "koreanMeaning": "팔 굴",
+    "meaningsKo": [
+      "팔"
+    ],
+    "onYomi": [
+      {
+        "kana": "くつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ほる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·깃발(方)·Exit이 모여 ‘팔’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_672",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "捨",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "捨",
+    "koreanMeaning": "버릴 사",
+    "meaningsKo": [
+      "버릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゃ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すてる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Cottage이 모여 ‘버릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_673",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "挟",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "挟",
+    "koreanMeaning": "낄 협",
+    "meaningsKo": [
+      "낄"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      },
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はさむ"
+      },
+      {
+        "kana": "はさまる"
+      },
+      {
+        "kana": "わきばさむ"
+      },
+      {
+        "kana": "さしはさむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Husband·뿔이 모여 ‘낄’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_674",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "爆",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "爆",
+    "koreanMeaning": "터질 폭",
+    "meaningsKo": [
+      "터질"
+    ],
+    "onYomi": [
+      {
+        "kana": "ばく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はぜる"
+      }
+    ],
+    "examples": [],
+    "hint": "불(火)·Violence이 모여 ‘터질’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_675",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "燃",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "燃",
+    "koreanMeaning": "불탈 연",
+    "meaningsKo": [
+      "불탈"
+    ],
+    "onYomi": [
+      {
+        "kana": "ねん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "もえる"
+      },
+      {
+        "kana": "もやす"
+      },
+      {
+        "kana": "もす"
+      }
+    ],
+    "examples": [],
+    "hint": "불(火)·Nature이 모여 ‘불탈’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_676",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "燥",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "燥",
+    "koreanMeaning": "마를 조",
+    "meaningsKo": [
+      "마를"
+    ],
+    "onYomi": [
+      {
+        "kana": "そう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はしゃぐ"
+      }
+    ],
+    "examples": [],
+    "hint": "불(火)·Syrup이 모여 ‘마를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_677",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "届",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "届",
+    "koreanMeaning": "이를 계",
+    "meaningsKo": [
+      "이를"
+    ],
+    "onYomi": [
+      {
+        "kana": "かい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とどける"
+      },
+      {
+        "kana": "とどけ"
+      },
+      {
+        "kana": "とどく"
+      }
+    ],
+    "examples": [],
+    "hint": "깃발(方)·Reason이 모여 ‘이를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_678",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "殿",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "殿",
+    "koreanMeaning": "전각 전",
+    "meaningsKo": [
+      "전각"
+    ],
+    "onYomi": [
+      {
+        "kana": "でん"
+      },
+      {
+        "kana": "てん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "との"
+      },
+      {
+        "kana": "どの"
+      }
+    ],
+    "examples": [],
+    "hint": "깃발(方)·Together·Weapon이 모여 ‘전각’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_679",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "刷",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "刷",
+    "koreanMeaning": "인쇄할 쇄",
+    "meaningsKo": [
+      "인쇄할"
+    ],
+    "onYomi": [
+      {
+        "kana": "さつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "する"
+      },
+      {
+        "kana": "ずり"
+      },
+      {
+        "kana": "はく"
+      }
+    ],
+    "examples": [],
+    "hint": "깃발(方)·수건(巾)·칼(刀)이 모여 ‘인쇄할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_680",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "芸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "芸",
+    "koreanMeaning": "재주 예",
+    "meaningsKo": [
+      "재주"
+    ],
+    "onYomi": [
+      {
+        "kana": "げい"
+      },
+      {
+        "kana": "うん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うえる"
+      },
+      {
+        "kana": "のり"
+      },
+      {
+        "kana": "わざ"
+      }
+    ],
+    "examples": [],
+    "hint": "Flowers·Cloud이 모여 ‘평지’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_681",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "薄",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "薄",
+    "koreanMeaning": "엷을 박",
+    "meaningsKo": [
+      "엷을"
+    ],
+    "onYomi": [
+      {
+        "kana": "はく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うすい"
+      },
+      {
+        "kana": "うす"
+      },
+      {
+        "kana": "うすめる"
+      },
+      {
+        "kana": "うすまる"
+      },
+      {
+        "kana": "うすらぐ"
+      },
+      {
+        "kana": "うすら"
+      },
+      {
+        "kana": "うすれる"
+      },
+      {
+        "kana": "すすき"
+      }
+    ],
+    "examples": [],
+    "hint": "Flowers·물(氵)·Specialty이 모여 ‘엷을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_682",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "荒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "荒",
+    "koreanMeaning": "거칠 황",
+    "meaningsKo": [
+      "거칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あらい"
+      },
+      {
+        "kana": "あら"
+      },
+      {
+        "kana": "あれる"
+      },
+      {
+        "kana": "あらす"
+      },
+      {
+        "kana": "あらし"
+      },
+      {
+        "kana": "すさむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Flowers·Death·River이 모여 ‘거칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_683",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "菜",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "菜",
+    "koreanMeaning": "나물 채",
+    "meaningsKo": [
+      "나물"
+    ],
+    "onYomi": [
+      {
+        "kana": "さい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "な"
+      }
+    ],
+    "examples": [],
+    "hint": "Flowers·Cleat·나무(木)이 모여 ‘나물’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_684",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "菓",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "菓",
+    "koreanMeaning": "실과 과",
+    "meaningsKo": [
+      "실과"
+    ],
+    "onYomi": [
+      {
+        "kana": "か"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Flowers·Fruit이 모여 ‘실과’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_685",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "跡",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "跡",
+    "koreanMeaning": "발자취 적",
+    "meaningsKo": [
+      "발자취"
+    ],
+    "onYomi": [
+      {
+        "kana": "せき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あと"
+      }
+    ],
+    "examples": [],
+    "hint": "발(足)·붉을(赤)이 모여 ‘발자취’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_686",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "踊",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "踊",
+    "koreanMeaning": "뛸 용",
+    "meaningsKo": [
+      "뛸"
+    ],
+    "onYomi": [
+      {
+        "kana": "よう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おどる"
+      }
+    ],
+    "examples": [],
+    "hint": "발(足)·Mama·Task이 모여 ‘뛸’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_687",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "軍",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "軍",
+    "koreanMeaning": "군사 군",
+    "meaningsKo": [
+      "군사"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぐん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いくさ"
+      }
+    ],
+    "examples": [],
+    "hint": "Forehead·수레(車)이 모여 ‘군사’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_688",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "占",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "占",
+    "koreanMeaning": "점령할 점/점칠 점",
+    "meaningsKo": [
+      "점령할",
+      "점칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "せん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しめる"
+      },
+      {
+        "kana": "うらなう"
+      }
+    ],
+    "examples": [],
+    "hint": "Fortune의 뜻·모양에서 ‘점령할’을 나타냄"
+  },
+  {
+    "id": "kanji_689",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "巨",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "巨",
+    "koreanMeaning": "클 거/어찌 거",
+    "meaningsKo": [
+      "클",
+      "어찌"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Giant의 뜻·모양에서 ‘클’을 나타냄"
+  },
+  {
+    "id": "kanji_690",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "録",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "録",
+    "koreanMeaning": "기록할 록",
+    "meaningsKo": [
+      "기록할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ろく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しるす"
+      },
+      {
+        "kana": "とる"
+      }
+    ],
+    "examples": [],
+    "hint": "쇠(金)·Wolverine·물(水)이 모여 ‘기록할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_691",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鉄",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鉄",
+    "koreanMeaning": "쇠 철",
+    "meaningsKo": [
+      "쇠"
+    ],
+    "onYomi": [
+      {
+        "kana": "てつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くろがね"
+      }
+    ],
+    "examples": [],
+    "hint": "쇠(金)·Fault이 모여 ‘쇠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_692",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鉱",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鉱",
+    "koreanMeaning": "쇳돌 광",
+    "meaningsKo": [
+      "쇳돌"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あらがね"
+      }
+    ],
+    "examples": [],
+    "hint": "쇠(金)·Wide이 모여 ‘쇳돌’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_693",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鋭",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鋭",
+    "koreanMeaning": "날카로울 예",
+    "meaningsKo": [
+      "날카로울"
+    ],
+    "onYomi": [
+      {
+        "kana": "えい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "するどい"
+      }
+    ],
+    "examples": [],
+    "hint": "쇠(金)·Guard이 모여 ‘날카로울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_694",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鈍",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鈍",
+    "koreanMeaning": "둔할 둔",
+    "meaningsKo": [
+      "둔할"
+    ],
+    "onYomi": [
+      {
+        "kana": "どん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "にぶい"
+      },
+      {
+        "kana": "にぶる"
+      },
+      {
+        "kana": "にぶ"
+      },
+      {
+        "kana": "なまる"
+      },
+      {
+        "kana": "なまくら"
+      }
+    ],
+    "examples": [],
+    "hint": "쇠(金)·Barracks이 모여 ‘둔할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_695",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "秒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "秒",
+    "koreanMeaning": "분초 초",
+    "meaningsKo": [
+      "분초"
+    ],
+    "onYomi": [
+      {
+        "kana": "びょう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Grain·Few이 모여 ‘분초’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_696",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "募",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "募",
+    "koreanMeaning": "모을 모",
+    "meaningsKo": [
+      "모을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぼ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つのる"
+      }
+    ],
+    "examples": [],
+    "hint": "Greenhouse·힘(力)이 모여 ‘모을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_697",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "額",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "額",
+    "koreanMeaning": "이마 액",
+    "meaningsKo": [
+      "이마"
+    ],
+    "onYomi": [
+      {
+        "kana": "がく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひたい"
+      }
+    ],
+    "examples": [],
+    "hint": "Guest·Geoduck이 모여 ‘이마’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_698",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "尊",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "尊",
+    "koreanMeaning": "높을 존",
+    "meaningsKo": [
+      "높을"
+    ],
+    "onYomi": [
+      {
+        "kana": "そん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たっとい"
+      },
+      {
+        "kana": "とうとい"
+      },
+      {
+        "kana": "たっとぶ"
+      },
+      {
+        "kana": "とうとぶ"
+      }
+    ],
+    "examples": [],
+    "hint": "뿔·Alcohol·Measurement이 모여 ‘높을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_699",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "瓶",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "瓶",
+    "koreanMeaning": "병 병",
+    "meaningsKo": [
+      "병"
+    ],
+    "onYomi": [
+      {
+        "kana": "びん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かめ"
+      }
+    ],
+    "examples": [],
+    "hint": "뿔·Lantern·Ten Thousand이 모여 ‘병’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_700",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "駐",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "駐",
+    "koreanMeaning": "머무를 주",
+    "meaningsKo": [
+      "머무를"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちゅう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "말(馬)·Master이 모여 ‘머무를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_701",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "替",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "替",
+    "koreanMeaning": "바꿀 체",
+    "meaningsKo": [
+      "바꿀"
+    ],
+    "onYomi": [
+      {
+        "kana": "たい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かえる"
+      },
+      {
+        "kana": "かえ"
+      },
+      {
+        "kana": "かわる"
+      }
+    ],
+    "examples": [],
+    "hint": "Husband·날(日)이 모여 ‘바꿀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_702",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "凍",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "凍",
+    "koreanMeaning": "얼 동",
+    "meaningsKo": [
+      "얼"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こおる"
+      },
+      {
+        "kana": "こごえる"
+      },
+      {
+        "kana": "こごる"
+      },
+      {
+        "kana": "いてる"
+      },
+      {
+        "kana": "しみる"
+      }
+    ],
+    "examples": [],
+    "hint": "얼음(冫)·East이 모여 ‘얼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_703",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "装",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "装",
+    "koreanMeaning": "꾸밀 장",
+    "meaningsKo": [
+      "꾸밀"
+    ],
+    "onYomi": [
+      {
+        "kana": "そう"
+      },
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "よそおう"
+      },
+      {
+        "kana": "よそおい"
+      }
+    ],
+    "examples": [],
+    "hint": "Icicle·Samurai·옷(衣)이 모여 ‘꾸밀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_704",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "虫",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "虫",
+    "koreanMeaning": "벌레 충",
+    "meaningsKo": [
+      "벌레"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちゅう"
+      },
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "むし"
+      }
+    ],
+    "examples": [],
+    "hint": "벌레(虫)의 뜻·모양에서 ‘벌레’을 나타냄"
+  },
+  {
+    "id": "kanji_705",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "介",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "介",
+    "koreanMeaning": "낄 개/낱 개",
+    "meaningsKo": [
+      "낄",
+      "낱"
+    ],
+    "onYomi": [
+      {
+        "kana": "かい"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Jammed In의 뜻·모양에서 ‘낄’을 나타냄"
+  },
+  {
+    "id": "kanji_706",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "珍",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "珍",
+    "koreanMeaning": "보배 진",
+    "meaningsKo": [
+      "보배"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "めずらしい"
+      },
+      {
+        "kana": "たから"
+      }
+    ],
+    "examples": [],
+    "hint": "임금(王)·Hat·Hair이 모여 ‘보배’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_707",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "低",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "低",
+    "koreanMeaning": "낮을 저",
+    "meaningsKo": [
+      "낮을"
+    ],
+    "onYomi": [
+      {
+        "kana": "てい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひくい"
+      },
+      {
+        "kana": "ひくめる"
+      },
+      {
+        "kana": "ひくまる"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·Clan·Ground이 모여 ‘낮을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_708",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "仏",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "仏",
+    "koreanMeaning": "부처 불",
+    "meaningsKo": [
+      "부처"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぶつ"
+      },
+      {
+        "kana": "ふつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ほとけ"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·사사로울(ム)이 모여 ‘부처’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_709",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "像",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "像",
+    "koreanMeaning": "모양 상",
+    "meaningsKo": [
+      "모양"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぞう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "사람(亻)·Elephant이 모여 ‘모양’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_710",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "依",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "依",
+    "koreanMeaning": "의지할 의",
+    "meaningsKo": [
+      "의지할"
+    ],
+    "onYomi": [
+      {
+        "kana": "い"
+      },
+      {
+        "kana": "え"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "よる"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·옷(衣)이 모여 ‘의지할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_711",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "伺",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "伺",
+    "koreanMeaning": "엿볼 사",
+    "meaningsKo": [
+      "엿볼"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うかがう"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·Director이 모여 ‘엿볼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_712",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "革",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "革",
+    "koreanMeaning": "가죽 혁",
+    "meaningsKo": [
+      "가죽"
+    ],
+    "onYomi": [
+      {
+        "kana": "かく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かわ"
+      }
+    ],
+    "examples": [],
+    "hint": "Leather의 뜻·모양에서 ‘가죽’을 나타냄"
+  },
+  {
+    "id": "kanji_713",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "麦",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "麦",
+    "koreanMeaning": "보리 맥",
+    "meaningsKo": [
+      "보리"
+    ],
+    "onYomi": [
+      {
+        "kana": "ばく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "むぎ"
+      }
+    ],
+    "examples": [],
+    "hint": "Life·Winter이 모여 ‘보리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_714",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "普",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "普",
+    "koreanMeaning": "넓을 보",
+    "meaningsKo": [
+      "넓을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あまねく"
+      },
+      {
+        "kana": "あまねし"
+      }
+    ],
+    "examples": [],
+    "hint": "Line Up·날(日)이 모여 ‘넓을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_715",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "復",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "復",
+    "koreanMeaning": "회복할 복/다시 부",
+    "meaningsKo": [
+      "회복할",
+      "다시"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "また"
+      }
+    ],
+    "examples": [],
+    "hint": "Loiter·Black Hole이 모여 ‘회복할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_716",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "律",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "律",
+    "koreanMeaning": "법칙 률",
+    "meaningsKo": [
+      "법칙"
+    ],
+    "onYomi": [
+      {
+        "kana": "りつ"
+      },
+      {
+        "kana": "りち"
+      },
+      {
+        "kana": "れつ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Loiter·Brush이 모여 ‘법칙’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_717",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "勇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "勇",
+    "koreanMeaning": "날랠 용",
+    "meaningsKo": [
+      "날랠"
+    ],
+    "onYomi": [
+      {
+        "kana": "ゆう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いさむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Mama·Man이 모여 ‘날랠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_718",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "効",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "効",
+    "koreanMeaning": "본받을 효",
+    "meaningsKo": [
+      "본받을"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "きく"
+      },
+      {
+        "kana": "ききめ"
+      },
+      {
+        "kana": "ならう"
+      }
+    ],
+    "examples": [],
+    "hint": "Mix·힘(力)이 모여 ‘본받을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_719",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "郊",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "郊",
+    "koreanMeaning": "들 교",
+    "meaningsKo": [
+      "들"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Mix·마을(阝)이 모여 ‘들’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_720",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "脳",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "脳",
+    "koreanMeaning": "골 뇌",
+    "meaningsKo": [
+      "골"
+    ],
+    "onYomi": [
+      {
+        "kana": "のう"
+      },
+      {
+        "kana": "どう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のうずる"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·풀(艹)·Treasure Chest이 모여 ‘골’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_721",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "臓",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "臓",
+    "koreanMeaning": "오장 장",
+    "meaningsKo": [
+      "오장"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぞう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はらわた"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·Storehouse이 모여 ‘오장’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_722",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "胸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "胸",
+    "koreanMeaning": "가슴 흉",
+    "meaningsKo": [
+      "가슴"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "むね"
+      },
+      {
+        "kana": "むな"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·Prison·Treasure Chest이 모여 ‘가슴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_723",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "腕",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "腕",
+    "koreanMeaning": "팔뚝 완",
+    "meaningsKo": [
+      "팔뚝"
+    ],
+    "onYomi": [
+      {
+        "kana": "わん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うで"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·집(宀)·Evening이 모여 ‘팔뚝’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_724",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "腰",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "腰",
+    "koreanMeaning": "허리 요",
+    "meaningsKo": [
+      "허리"
+    ],
+    "onYomi": [
+      {
+        "kana": "よう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こし"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·Helicopter·여자(女)이 모여 ‘허리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_725",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "脂",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "脂",
+    "koreanMeaning": "기름 지",
+    "meaningsKo": [
+      "기름"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あぶら"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·숟가락(匕)·날(日)이 모여 ‘기름’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_726",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "肌",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "肌",
+    "koreanMeaning": "살가죽 기",
+    "meaningsKo": [
+      "살가죽"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はだ"
+      }
+    ],
+    "examples": [],
+    "hint": "달(月)·Table이 모여 ‘살가죽’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_727",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "乾",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "乾",
+    "koreanMeaning": "하늘 건/마를 건",
+    "meaningsKo": [
+      "하늘",
+      "마를"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      },
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かわく"
+      },
+      {
+        "kana": "かわかす"
+      },
+      {
+        "kana": "ほす"
+      },
+      {
+        "kana": "ひる"
+      },
+      {
+        "kana": "いぬい"
+      }
+    ],
+    "examples": [],
+    "hint": "Morning·창·Nose이 모여 ‘하늘’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_728",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "帯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "帯",
+    "koreanMeaning": "띠 대",
+    "meaningsKo": [
+      "띠"
+    ],
+    "onYomi": [
+      {
+        "kana": "たい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おびる"
+      },
+      {
+        "kana": "おび"
+      }
+    ],
+    "examples": [],
+    "hint": "산(山)·Ground·Forehead이 모여 ‘띠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_729",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "炭",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "炭",
+    "koreanMeaning": "숯 탄",
+    "meaningsKo": [
+      "숯"
+    ],
+    "onYomi": [
+      {
+        "kana": "たん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すみ"
+      }
+    ],
+    "examples": [],
+    "hint": "산(山)·언덕(厂)·불(火)이 모여 ‘숯’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_730",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "団",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "団",
+    "koreanMeaning": "둥글 단/경단 단",
+    "meaningsKo": [
+      "둥글",
+      "경단"
+    ],
+    "onYomi": [
+      {
+        "kana": "だん"
+      },
+      {
+        "kana": "とん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かたまり"
+      },
+      {
+        "kana": "まるい"
+      }
+    ],
+    "examples": [],
+    "hint": "입(口)·Measurement이 모여 ‘둥글’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_731",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "喫",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "喫",
+    "koreanMeaning": "먹을 끽",
+    "meaningsKo": [
+      "먹을"
+    ],
+    "onYomi": [
+      {
+        "kana": "きつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のむ"
+      }
+    ],
+    "examples": [],
+    "hint": "입(口)·Life·칼(刂)이 모여 ‘먹을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_732",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "叫",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "叫",
+    "koreanMeaning": "부르짖을 규",
+    "meaningsKo": [
+      "부르짖을"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さけぶ"
+      }
+    ],
+    "examples": [],
+    "hint": "입(口)·Vines이 모여 ‘부르짖을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_733",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "咲",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "咲",
+    "koreanMeaning": "웃음 소",
+    "meaningsKo": [
+      "웃음"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さく"
+      },
+      {
+        "kana": "ざき"
+      }
+    ],
+    "examples": [],
+    "hint": "입(口)·뿔·하늘(天)이 모여 ‘웃음’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_734",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "畜",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "畜",
+    "koreanMeaning": "짐승 축/쌓을 축",
+    "meaningsKo": [
+      "짐승",
+      "쌓을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちく"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "검을(玄)·논(田)이 모여 ‘짐승’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_735",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "署",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "署",
+    "koreanMeaning": "마을 서",
+    "meaningsKo": [
+      "마을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "그물(罒)·Someone이 모여 ‘마을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_736",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "含",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "含",
+    "koreanMeaning": "머금을 함",
+    "meaningsKo": [
+      "머금을"
+    ],
+    "onYomi": [
+      {
+        "kana": "がん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふくむ"
+      },
+      {
+        "kana": "ふくめる"
+      }
+    ],
+    "examples": [],
+    "hint": "Now·입(口)이 모여 ‘머금을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_737",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "兆",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "兆",
+    "koreanMeaning": "조 조",
+    "meaningsKo": [
+      "조"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "きざす"
+      },
+      {
+        "kana": "きざし"
+      }
+    ],
+    "examples": [],
+    "hint": "Omen의 뜻·모양에서 ‘조’을 나타냄"
+  },
+  {
+    "id": "kanji_738",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "片",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "片",
+    "koreanMeaning": "조각 편",
+    "meaningsKo": [
+      "조각"
+    ],
+    "onYomi": [
+      {
+        "kana": "へん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かた"
+      }
+    ],
+    "examples": [],
+    "hint": "One Sided의 뜻·모양에서 ‘조각’을 나타냄"
+  },
+  {
+    "id": "kanji_739",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "皿",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "皿",
+    "koreanMeaning": "그릇 명",
+    "meaningsKo": [
+      "그릇"
+    ],
+    "onYomi": [
+      {
+        "kana": "べい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さら"
+      }
+    ],
+    "examples": [],
+    "hint": "Plate의 뜻·모양에서 ‘그릇’을 나타냄"
+  },
+  {
+    "id": "kanji_740",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "敬",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "敬",
+    "koreanMeaning": "공경 경",
+    "meaningsKo": [
+      "공경"
+    ],
+    "onYomi": [
+      {
+        "kana": "けい"
+      },
+      {
+        "kana": "きょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うやまう"
+      }
+    ],
+    "examples": [],
+    "hint": "Poem·Winter이 모여 ‘공경’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_741",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "卵",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "卵",
+    "koreanMeaning": "알 란",
+    "meaningsKo": [
+      "알"
+    ],
+    "onYomi": [
+      {
+        "kana": "らん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たまご"
+      }
+    ],
+    "examples": [],
+    "hint": "Pool의 뜻·모양에서 ‘알’을 나타냄"
+  },
+  {
+    "id": "kanji_742",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "幼",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "幼",
+    "koreanMeaning": "어릴 유",
+    "meaningsKo": [
+      "어릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "よう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おさない"
+      }
+    ],
+    "examples": [],
+    "hint": "Poop·힘(力)이 모여 ‘어릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_743",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "角",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "角",
+    "koreanMeaning": "뿔 각",
+    "meaningsKo": [
+      "뿔"
+    ],
+    "onYomi": [
+      {
+        "kana": "かく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かど"
+      },
+      {
+        "kana": "つの"
+      }
+    ],
+    "examples": [],
+    "hint": "Prison·Task이 모여 ‘뿔’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_744",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "貿",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "貿",
+    "koreanMeaning": "무역할 무",
+    "meaningsKo": [
+      "무역할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぼう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "사사로울(ム)·칼(刂)·조개(貝)이 모여 ‘무역할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_745",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "震",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "震",
+    "koreanMeaning": "우레 진",
+    "meaningsKo": [
+      "우레"
+    ],
+    "onYomi": [
+      {
+        "kana": "しん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふるう"
+      },
+      {
+        "kana": "ふるえる"
+      }
+    ],
+    "examples": [],
+    "hint": "비(雨)·Landslide이 모여 ‘우레’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_746",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "零",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "零",
+    "koreanMeaning": "떨어질 령/영 령",
+    "meaningsKo": [
+      "떨어질",
+      "영"
+    ],
+    "onYomi": [
+      {
+        "kana": "れい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ぜろ"
+      },
+      {
+        "kana": "こぼす"
+      },
+      {
+        "kana": "こぼれる"
+      }
+    ],
+    "examples": [],
+    "hint": "비(雨)·Orders이 모여 ‘떨어질’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_747",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "雲",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "雲",
+    "koreanMeaning": "구름 운",
+    "meaningsKo": [
+      "구름"
+    ],
+    "onYomi": [
+      {
+        "kana": "うん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くも"
+      },
+      {
+        "kana": "ぐも"
+      }
+    ],
+    "examples": [],
+    "hint": "비(雨)·Cloud이 모여 ‘구름’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_748",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "粒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "粒",
+    "koreanMeaning": "낟알 립",
+    "meaningsKo": [
+      "낟알"
+    ],
+    "onYomi": [
+      {
+        "kana": "りゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つぶ"
+      }
+    ],
+    "examples": [],
+    "hint": "벼(禾)·설(立)이 모여 ‘낟알’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_749",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "畳",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "畳",
+    "koreanMeaning": "겹쳐질 첩",
+    "meaningsKo": [
+      "겹쳐질"
+    ],
+    "onYomi": [
+      {
+        "kana": "じょう"
+      },
+      {
+        "kana": "ちょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たたむ"
+      },
+      {
+        "kana": "たたみ"
+      },
+      {
+        "kana": "かさなる"
+      }
+    ],
+    "examples": [],
+    "hint": "논(田)·Forehead·Top Hat이 모여 ‘겹쳐질’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_750",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "順",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "順",
+    "koreanMeaning": "순할 순",
+    "meaningsKo": [
+      "순할"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゅん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "River·Geoduck이 모여 ‘순할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_751",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "導",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "導",
+    "koreanMeaning": "인도할 도",
+    "meaningsKo": [
+      "인도할"
+    ],
+    "onYomi": [
+      {
+        "kana": "どう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みちびく"
+      }
+    ],
+    "examples": [],
+    "hint": "길(辶)·Measurement이 모여 ‘인도할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_752",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "宇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "宇",
+    "koreanMeaning": "집 우",
+    "meaningsKo": [
+      "집"
+    ],
+    "onYomi": [
+      {
+        "kana": "う"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "집(宀)·Dry이 모여 ‘집’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_753",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "超",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "超",
+    "koreanMeaning": "뛰어넘을 초",
+    "meaningsKo": [
+      "뛰어넘을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こえる"
+      },
+      {
+        "kana": "こす"
+      }
+    ],
+    "examples": [],
+    "hint": "Run·Call이 모여 ‘뛰어넘을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_754",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "設",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "設",
+    "koreanMeaning": "베풀 설",
+    "meaningsKo": [
+      "베풀"
+    ],
+    "onYomi": [
+      {
+        "kana": "せつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "もうける"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·Weapon이 모여 ‘베풀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_755",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "詰",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "詰",
+    "koreanMeaning": "물을 힐",
+    "meaningsKo": [
+      "물을"
+    ],
+    "onYomi": [
+      {
+        "kana": "きつ"
+      },
+      {
+        "kana": "きち"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つめる"
+      },
+      {
+        "kana": "つめ"
+      },
+      {
+        "kana": "づめ"
+      },
+      {
+        "kana": "つまる"
+      },
+      {
+        "kana": "つむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·Good Luck이 모여 ‘물을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_756",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "訓",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "訓",
+    "koreanMeaning": "가르칠 훈",
+    "meaningsKo": [
+      "가르칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "くん"
+      },
+      {
+        "kana": "きん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おしえる"
+      },
+      {
+        "kana": "よむ"
+      },
+      {
+        "kana": "くんずる"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·River이 모여 ‘가르칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_757",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "述",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "述",
+    "koreanMeaning": "펼 술",
+    "meaningsKo": [
+      "펼"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゅつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のべる"
+      }
+    ],
+    "examples": [],
+    "hint": "Scooter·Angel·Drop이 모여 ‘펼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_758",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "辺",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "辺",
+    "koreanMeaning": "가 변",
+    "meaningsKo": [
+      "가"
+    ],
+    "onYomi": [
+      {
+        "kana": "へん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あたり"
+      },
+      {
+        "kana": "ほとり"
+      },
+      {
+        "kana": "べ"
+      }
+    ],
+    "examples": [],
+    "hint": "Scooter·칼(刂)이 모여 ‘가’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_759",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鼻",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鼻",
+    "koreanMeaning": "코 비",
+    "meaningsKo": [
+      "코"
+    ],
+    "onYomi": [
+      {
+        "kana": "び"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はな"
+      }
+    ],
+    "examples": [],
+    "hint": "Self·논(田)·Twenty이 모여 ‘코’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_760",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "賢",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "賢",
+    "koreanMeaning": "어질 현",
+    "meaningsKo": [
+      "어질"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かしこい"
+      }
+    ],
+    "examples": [],
+    "hint": "Servant·Stool·조개(貝)이 모여 ‘어질’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_761",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "臣",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "臣",
+    "koreanMeaning": "신하 신",
+    "meaningsKo": [
+      "신하"
+    ],
+    "onYomi": [
+      {
+        "kana": "しん"
+      },
+      {
+        "kana": "じん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Servant의 뜻·모양에서 ‘신하’을 나타냄"
+  },
+  {
+    "id": "kanji_762",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "販",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "販",
+    "koreanMeaning": "팔 판",
+    "meaningsKo": [
+      "팔"
+    ],
+    "onYomi": [
+      {
+        "kana": "はん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "조개(貝)·Anti이 모여 ‘팔’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_763",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "則",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "則",
+    "koreanMeaning": "곧 즉/법칙 칙",
+    "meaningsKo": [
+      "곧",
+      "법칙"
+    ],
+    "onYomi": [
+      {
+        "kana": "そく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のっとる"
+      }
+    ],
+    "examples": [],
+    "hint": "조개(貝)·칼(刀)이 모여 ‘곧’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_764",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "贈",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "贈",
+    "koreanMeaning": "줄 증",
+    "meaningsKo": [
+      "줄"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぞう"
+      },
+      {
+        "kana": "そう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おくる"
+      }
+    ],
+    "examples": [],
+    "hint": "조개(貝)·Mask이 모여 ‘줄’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_765",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "貯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "貯",
+    "koreanMeaning": "쌓을 저",
+    "meaningsKo": [
+      "쌓을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちょ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ためる"
+      },
+      {
+        "kana": "たくわえる"
+      }
+    ],
+    "examples": [],
+    "hint": "조개(貝)·집(宀)·Street이 모여 ‘쌓을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_766",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "貝",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "貝",
+    "koreanMeaning": "조개 패",
+    "meaningsKo": [
+      "조개"
+    ],
+    "onYomi": [
+      {
+        "kana": "ばい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かい"
+      }
+    ],
+    "examples": [],
+    "hint": "조개(貝)의 뜻·모양에서 ‘조개’을 나타냄"
+  },
+  {
+    "id": "kanji_767",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "療",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "療",
+    "koreanMeaning": "고칠 료",
+    "meaningsKo": [
+      "고칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "りょう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "병(疒)·Charcoal이 모여 ‘고칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_768",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "患",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "患",
+    "koreanMeaning": "근심 환",
+    "meaningsKo": [
+      "근심"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わずらう"
+      }
+    ],
+    "examples": [],
+    "hint": "Skewer·마음(心)이 모여 ‘근심’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_769",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "悩",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "悩",
+    "koreanMeaning": "번뇌할 뇌",
+    "meaningsKo": [
+      "번뇌할"
+    ],
+    "onYomi": [
+      {
+        "kana": "のう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "なやむ"
+      },
+      {
+        "kana": "なやます"
+      },
+      {
+        "kana": "なやましい"
+      },
+      {
+        "kana": "なやみ"
+      }
+    ],
+    "examples": [],
+    "hint": "Soul·풀(艹)·Treasure Chest이 모여 ‘번뇌할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_770",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "柔",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "柔",
+    "koreanMeaning": "부드러울 유",
+    "meaningsKo": [
+      "부드러울"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゅう"
+      },
+      {
+        "kana": "にゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "やわらか"
+      },
+      {
+        "kana": "やわらかい"
+      },
+      {
+        "kana": "やわ"
+      },
+      {
+        "kana": "やわら"
+      }
+    ],
+    "examples": [],
+    "hint": "Spear·나무(木)이 모여 ‘부드러울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_771",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "補",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "補",
+    "koreanMeaning": "기울 보",
+    "meaningsKo": [
+      "기울"
+    ],
+    "onYomi": [
+      {
+        "kana": "ほ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おぎなう"
+      }
+    ],
+    "examples": [],
+    "hint": "Spirit·Wedding이 모여 ‘기울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_772",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "被",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "被",
+    "koreanMeaning": "입을 피",
+    "meaningsKo": [
+      "입을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こうむる"
+      },
+      {
+        "kana": "おおう"
+      },
+      {
+        "kana": "かぶる"
+      },
+      {
+        "kana": "かぶせる"
+      }
+    ],
+    "examples": [],
+    "hint": "Spirit·Skin이 모여 ‘입을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_773",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "複",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "複",
+    "koreanMeaning": "겹옷 복",
+    "meaningsKo": [
+      "겹옷"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふく"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Spirit·Black Hole이 모여 ‘겹옷’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_774",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "祈",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "祈",
+    "koreanMeaning": "빌 기",
+    "meaningsKo": [
+      "빌"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いのる"
+      }
+    ],
+    "examples": [],
+    "hint": "Spirit·도끼(斤)이 모여 ‘빌’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_775",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "旧",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "旧",
+    "koreanMeaning": "옛 구",
+    "meaningsKo": [
+      "옛"
+    ],
+    "onYomi": [
+      {
+        "kana": "きゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふるい"
+      },
+      {
+        "kana": "もと"
+      }
+    ],
+    "examples": [],
+    "hint": "막대(丨)·날(日)이 모여 ‘옛’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_776",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "硬",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "硬",
+    "koreanMeaning": "단단할 경",
+    "meaningsKo": [
+      "단단할"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かたい"
+      }
+    ],
+    "examples": [],
+    "hint": "돌(石)·Again이 모여 ‘단단할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_777",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "砂",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "砂",
+    "koreanMeaning": "모래 사",
+    "meaningsKo": [
+      "모래"
+    ],
+    "onYomi": [
+      {
+        "kana": "さ"
+      },
+      {
+        "kana": "しゃ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すな"
+      }
+    ],
+    "examples": [],
+    "hint": "돌(石)·Few이 모여 ‘모래’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_778",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "双",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "双",
+    "koreanMeaning": "두 쌍/쌍 쌍",
+    "meaningsKo": [
+      "두",
+      "쌍"
+    ],
+    "onYomi": [
+      {
+        "kana": "そう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふた"
+      },
+      {
+        "kana": "たぐい"
+      },
+      {
+        "kana": "ならぶ"
+      },
+      {
+        "kana": "ふたつ"
+      }
+    ],
+    "examples": [],
+    "hint": "Stool의 뜻·모양에서 ‘두’을 나타냄"
+  },
+  {
+    "id": "kanji_779",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "肯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "肯",
+    "koreanMeaning": "즐길 긍",
+    "meaningsKo": [
+      "즐길"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "がえんじる"
+      }
+    ],
+    "examples": [],
+    "hint": "그칠(止)·달(月)이 모여 ‘즐길’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_780",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "蔵",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "蔵",
+    "koreanMeaning": "감출 장",
+    "meaningsKo": [
+      "감출"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぞう"
+      },
+      {
+        "kana": "そう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くら"
+      },
+      {
+        "kana": "おさめる"
+      },
+      {
+        "kana": "かくれる"
+      }
+    ],
+    "examples": [],
+    "hint": "Storehouse의 뜻·모양에서 ‘감출’을 나타냄"
+  },
+  {
+    "id": "kanji_781",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "袋",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "袋",
+    "koreanMeaning": "자루 대",
+    "meaningsKo": [
+      "자루"
+    ],
+    "onYomi": [
+      {
+        "kana": "たい"
+      },
+      {
+        "kana": "だい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふくろ"
+      }
+    ],
+    "examples": [],
+    "hint": "Substitute·옷(衣)이 모여 ‘자루’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_782",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "昇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "昇",
+    "koreanMeaning": "오를 승",
+    "meaningsKo": [
+      "오를"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のぼる"
+      }
+    ],
+    "examples": [],
+    "hint": "날(日)·삐침·Twenty이 모여 ‘오를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_783",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "照",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "照",
+    "koreanMeaning": "비칠 조",
+    "meaningsKo": [
+      "비칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "てる"
+      },
+      {
+        "kana": "てらす"
+      },
+      {
+        "kana": "てれる"
+      }
+    ],
+    "examples": [],
+    "hint": "날(日)·Call·Boil이 모여 ‘비칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_784",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "曇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "曇",
+    "koreanMeaning": "흐릴 담",
+    "meaningsKo": [
+      "흐릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "どん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くもる"
+      }
+    ],
+    "examples": [],
+    "hint": "날(日)·비(雨)·Cloud이 모여 ‘흐릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_785",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "甘",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "甘",
+    "koreanMeaning": "달 감",
+    "meaningsKo": [
+      "달"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あまい"
+      },
+      {
+        "kana": "あまえる"
+      },
+      {
+        "kana": "あまやかす"
+      },
+      {
+        "kana": "うまい"
+      }
+    ],
+    "examples": [],
+    "hint": "Sweet의 뜻·모양에서 ‘달’을 나타냄"
+  },
+  {
+    "id": "kanji_786",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "祭",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "祭",
+    "koreanMeaning": "제사 제",
+    "meaningsKo": [
+      "제사"
+    ],
+    "onYomi": [
+      {
+        "kana": "さい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まつる"
+      },
+      {
+        "kana": "まつり"
+      }
+    ],
+    "examples": [],
+    "hint": "Tent·Jackhammer이 모여 ‘제사’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_787",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "編",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "編",
+    "koreanMeaning": "엮을 편",
+    "meaningsKo": [
+      "엮을"
+    ],
+    "onYomi": [
+      {
+        "kana": "へん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あむ"
+      },
+      {
+        "kana": "あみ"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·Library이 모여 ‘엮을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_788",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "練",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "練",
+    "koreanMeaning": "누일 련",
+    "meaningsKo": [
+      "누일"
+    ],
+    "onYomi": [
+      {
+        "kana": "れん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ねる"
+      },
+      {
+        "kana": "ねり"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·East이 모여 ‘누일’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_789",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "絡",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "絡",
+    "koreanMeaning": "이을 락",
+    "meaningsKo": [
+      "이을"
+    ],
+    "onYomi": [
+      {
+        "kana": "らく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "からむ"
+      },
+      {
+        "kana": "からまる"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·Kiss이 모여 ‘이을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_790",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "紹",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "紹",
+    "koreanMeaning": "이을 소",
+    "meaningsKo": [
+      "이을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "실(糸)·Call이 모여 ‘이을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_791",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "緑",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "緑",
+    "koreanMeaning": "푸를 록",
+    "meaningsKo": [
+      "푸를"
+    ],
+    "onYomi": [
+      {
+        "kana": "りょく"
+      },
+      {
+        "kana": "ろく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みどり"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·Wolverine·물(水)이 모여 ‘푸를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_792",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "糸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "糸",
+    "koreanMeaning": "실 사",
+    "meaningsKo": [
+      "실"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いと"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)의 뜻·모양에서 ‘실’을 나타냄"
+  },
+  {
+    "id": "kanji_793",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "劇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "劇",
+    "koreanMeaning": "심할 극",
+    "meaningsKo": [
+      "심할"
+    ],
+    "onYomi": [
+      {
+        "kana": "げき"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "호랑이(虎)·Pig·칼(刀)이 모여 ‘심할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_794",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "膚",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "膚",
+    "koreanMeaning": "살갗 부",
+    "meaningsKo": [
+      "살갗"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はだ"
+      }
+    ],
+    "examples": [],
+    "hint": "호랑이(虎)·Stomach이 모여 ‘살갗’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_795",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "齢",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "齢",
+    "koreanMeaning": "나이 령",
+    "meaningsKo": [
+      "나이"
+    ],
+    "onYomi": [
+      {
+        "kana": "れい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "よわい"
+      },
+      {
+        "kana": "とし"
+      }
+    ],
+    "examples": [],
+    "hint": "Tooth·Orders이 모여 ‘나이’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_796",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "幅",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "幅",
+    "koreanMeaning": "폭 폭",
+    "meaningsKo": [
+      "폭"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はば"
+      }
+    ],
+    "examples": [],
+    "hint": "수건(巾)·Scarecrow이 모여 ‘폭’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_797",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "帽",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "帽",
+    "koreanMeaning": "모자 모",
+    "meaningsKo": [
+      "모자"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぼう"
+      },
+      {
+        "kana": "もう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ずきん"
+      },
+      {
+        "kana": "おおう"
+      }
+    ],
+    "examples": [],
+    "hint": "수건(巾)·날(日)·눈(目)이 모여 ‘모자’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_798",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "査",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "査",
+    "koreanMeaning": "조사할 사/찌꺼기 사",
+    "meaningsKo": [
+      "조사할",
+      "찌꺼기"
+    ],
+    "onYomi": [
+      {
+        "kana": "さ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "나무(木)·Top Hat이 모여 ‘조사할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_799",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "極",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "極",
+    "koreanMeaning": "극진할 극/다할 극",
+    "meaningsKo": [
+      "극진할",
+      "다할"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょく"
+      },
+      {
+        "kana": "ごく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "きわめる"
+      },
+      {
+        "kana": "きわまる"
+      },
+      {
+        "kana": "きわまり"
+      },
+      {
+        "kana": "きわみ"
+      },
+      {
+        "kana": "きめる"
+      },
+      {
+        "kana": "ぎめ"
+      },
+      {
+        "kana": "きまる"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Beggar·입(口)이 모여 ‘극진할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_800",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "根",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "根",
+    "koreanMeaning": "뿌리 근",
+    "meaningsKo": [
+      "뿌리"
+    ],
+    "onYomi": [
+      {
+        "kana": "こん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ね"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Root이 모여 ‘뿌리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_801",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "植",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "植",
+    "koreanMeaning": "심을 식",
+    "meaningsKo": [
+      "심을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うえる"
+      },
+      {
+        "kana": "うわる"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Fix이 모여 ‘심을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_802",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "枚",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "枚",
+    "koreanMeaning": "낱 매",
+    "meaningsKo": [
+      "낱"
+    ],
+    "onYomi": [
+      {
+        "kana": "まい"
+      },
+      {
+        "kana": "ばい"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "나무(木)·Winter이 모여 ‘낱’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_803",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "刺",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "刺",
+    "koreanMeaning": "찌를 자",
+    "meaningsKo": [
+      "찌를"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さす"
+      },
+      {
+        "kana": "ささる"
+      },
+      {
+        "kana": "さし"
+      },
+      {
+        "kana": "とげ"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Head·칼(刀)이 모여 ‘찌를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_804",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "棒",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "棒",
+    "koreanMeaning": "막대 봉",
+    "meaningsKo": [
+      "막대"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぼう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "나무(木)·Spring·Dry이 모여 ‘막대’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_805",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "机",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "机",
+    "koreanMeaning": "책상 궤",
+    "meaningsKo": [
+      "책상"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つくえ"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Table이 모여 ‘책상’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_806",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "枯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "枯",
+    "koreanMeaning": "마를 고",
+    "meaningsKo": [
+      "마를"
+    ],
+    "onYomi": [
+      {
+        "kana": "こ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かれる"
+      },
+      {
+        "kana": "からす"
+      }
+    ],
+    "examples": [],
+    "hint": "나무(木)·Old이 모여 ‘마를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_807",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "減",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "減",
+    "koreanMeaning": "덜 감",
+    "meaningsKo": [
+      "덜"
+    ],
+    "onYomi": [
+      {
+        "kana": "げん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "へる"
+      },
+      {
+        "kana": "へらす"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Feeling이 모여 ‘덜’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_808",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "況",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "況",
+    "koreanMeaning": "상황 황/하물며 황",
+    "meaningsKo": [
+      "상황",
+      "하물며"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まして"
+      },
+      {
+        "kana": "いわんや"
+      },
+      {
+        "kana": "おもむき"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Older Brother이 모여 ‘상황’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_809",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "湾",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "湾",
+    "koreanMeaning": "물굽이 만",
+    "meaningsKo": [
+      "물굽이"
+    ],
+    "onYomi": [
+      {
+        "kana": "わん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いりえ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·붉을(赤)·활(弓)이 모여 ‘물굽이’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_810",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "測",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "測",
+    "koreanMeaning": "헤아릴 측",
+    "meaningsKo": [
+      "헤아릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "そく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はかる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·조개(貝)·칼(刀)이 모여 ‘헤아릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_811",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "混",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "混",
+    "koreanMeaning": "섞을 혼",
+    "meaningsKo": [
+      "섞을"
+    ],
+    "onYomi": [
+      {
+        "kana": "こん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まじる"
+      },
+      {
+        "kana": "まじり"
+      },
+      {
+        "kana": "まざる"
+      },
+      {
+        "kana": "まぜる"
+      },
+      {
+        "kana": "こむ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·날(日)·Compare이 모여 ‘섞을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_812",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "温",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "温",
+    "koreanMeaning": "따뜻할 온",
+    "meaningsKo": [
+      "따뜻할"
+    ],
+    "onYomi": [
+      {
+        "kana": "おん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あたたか"
+      },
+      {
+        "kana": "あたたかい"
+      },
+      {
+        "kana": "あたたまる"
+      },
+      {
+        "kana": "あたためる"
+      },
+      {
+        "kana": "ぬく"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·날(日)·Plate이 모여 ‘따뜻할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_813",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "汚",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "汚",
+    "koreanMeaning": "더러울 오",
+    "meaningsKo": [
+      "더러울"
+    ],
+    "onYomi": [
+      {
+        "kana": "お"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "けがす"
+      },
+      {
+        "kana": "けがれる"
+      },
+      {
+        "kana": "けがらわしい"
+      },
+      {
+        "kana": "よごす"
+      },
+      {
+        "kana": "よごれる"
+      },
+      {
+        "kana": "きたない"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Ground·Beggar이 모여 ‘더러울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_814",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "漁",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "漁",
+    "koreanMeaning": "고기 잡을 어",
+    "meaningsKo": [
+      "고기 잡을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぎょ"
+      },
+      {
+        "kana": "りょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あさる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·물고기(魚)이 모여 ‘고기 잡을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_815",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "濃",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "濃",
+    "koreanMeaning": "짙을 농",
+    "meaningsKo": [
+      "짙을"
+    ],
+    "onYomi": [
+      {
+        "kana": "のう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こい"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Farming이 모여 ‘짙을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_816",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "泊",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "泊",
+    "koreanMeaning": "머무를 박/배 댈 박",
+    "meaningsKo": [
+      "머무를",
+      "배 댈"
+    ],
+    "onYomi": [
+      {
+        "kana": "はく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とまる"
+      },
+      {
+        "kana": "とめる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·흰(白)이 모여 ‘머무를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_817",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "浅",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "浅",
+    "koreanMeaning": "얕을 천",
+    "meaningsKo": [
+      "얕을"
+    ],
+    "onYomi": [
+      {
+        "kana": "せん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あさい"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Bar이 모여 ‘얕을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_818",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "沈",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "沈",
+    "koreanMeaning": "잠길 침",
+    "meaningsKo": [
+      "잠길"
+    ],
+    "onYomi": [
+      {
+        "kana": "ちん"
+      },
+      {
+        "kana": "じん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しずむ"
+      },
+      {
+        "kana": "しずめる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Pirate이 모여 ‘잠길’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_819",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "湯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "湯",
+    "koreanMeaning": "끓일 탕",
+    "meaningsKo": [
+      "끓일"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ゆ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Easy이 모여 ‘끓일’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_820",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "溶",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "溶",
+    "koreanMeaning": "녹을 용",
+    "meaningsKo": [
+      "녹을"
+    ],
+    "onYomi": [
+      {
+        "kana": "よう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とける"
+      },
+      {
+        "kana": "とかす"
+      },
+      {
+        "kana": "とく"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Form이 모여 ‘녹을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_821",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "涙",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "涙",
+    "koreanMeaning": "눈물 루",
+    "meaningsKo": [
+      "눈물"
+    ],
+    "onYomi": [
+      {
+        "kana": "るい"
+      },
+      {
+        "kana": "れい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "なみだ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Door·Big이 모여 ‘눈물’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_822",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "塗",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "塗",
+    "koreanMeaning": "칠할 도",
+    "meaningsKo": [
+      "칠할"
+    ],
+    "onYomi": [
+      {
+        "kana": "と"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ぬる"
+      },
+      {
+        "kana": "ぬり"
+      },
+      {
+        "kana": "まみれる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Surplus·Dirt이 모여 ‘칠할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_823",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "汗",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "汗",
+    "koreanMeaning": "땀 한",
+    "meaningsKo": [
+      "땀"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あせ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Dry이 모여 ‘땀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_824",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "湿",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "湿",
+    "koreanMeaning": "젖을 습",
+    "meaningsKo": [
+      "젖을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しつ"
+      },
+      {
+        "kana": "しゅう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しめる"
+      },
+      {
+        "kana": "しめす"
+      },
+      {
+        "kana": "うるおう"
+      },
+      {
+        "kana": "うるおす"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·날(日)·Spikes이 모여 ‘젖을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_825",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "泥",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "泥",
+    "koreanMeaning": "진흙 니/거리낄 니",
+    "meaningsKo": [
+      "진흙",
+      "거리낄"
+    ],
+    "onYomi": [
+      {
+        "kana": "でい"
+      },
+      {
+        "kana": "ない"
+      },
+      {
+        "kana": "で"
+      },
+      {
+        "kana": "に"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "どろ"
+      },
+      {
+        "kana": "なずむ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·깃발(方)·숟가락(匕)이 모여 ‘진흙’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_826",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "濯",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "濯",
+    "koreanMeaning": "씻을 탁",
+    "meaningsKo": [
+      "씻을"
+    ],
+    "onYomi": [
+      {
+        "kana": "たく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すすぐ"
+      },
+      {
+        "kana": "ゆすぐ"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Wolverine·새(隹)이 모여 ‘씻을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_827",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "沸",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "沸",
+    "koreanMeaning": "끓을 비",
+    "meaningsKo": [
+      "끓을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ふつ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わく"
+      },
+      {
+        "kana": "わかす"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Dollar이 모여 ‘끓을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_828",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "涼",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "涼",
+    "koreanMeaning": "서늘할 량",
+    "meaningsKo": [
+      "서늘할"
+    ],
+    "onYomi": [
+      {
+        "kana": "りょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すずしい"
+      },
+      {
+        "kana": "すずむ"
+      },
+      {
+        "kana": "すずやか"
+      },
+      {
+        "kana": "うすい"
+      },
+      {
+        "kana": "ひやす"
+      },
+      {
+        "kana": "まことに"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Capital이 모여 ‘서늘할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_829",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "滴",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "滴",
+    "koreanMeaning": "물방울 적",
+    "meaningsKo": [
+      "물방울"
+    ],
+    "onYomi": [
+      {
+        "kana": "てき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "しずく"
+      },
+      {
+        "kana": "したたる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Mohawk이 모여 ‘물방울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_830",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "雇",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "雇",
+    "koreanMeaning": "품 팔 고",
+    "meaningsKo": [
+      "품 팔"
+    ],
+    "onYomi": [
+      {
+        "kana": "こ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "やとう"
+      }
+    ],
+    "examples": [],
+    "hint": "새(隹)·Door이 모여 ‘품 팔’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_831",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "隻",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "隻",
+    "koreanMeaning": "외짝 척",
+    "meaningsKo": [
+      "외짝"
+    ],
+    "onYomi": [
+      {
+        "kana": "せき"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "새(隹)·Stool이 모여 ‘외짝’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_832",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "営",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "営",
+    "koreanMeaning": "경영할 영",
+    "meaningsKo": [
+      "경영할"
+    ],
+    "onYomi": [
+      {
+        "kana": "えい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いとなむ"
+      },
+      {
+        "kana": "いとなみ"
+      }
+    ],
+    "examples": [],
+    "hint": "Viking·Bathtub이 모여 ‘경영할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_833",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "栄",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "栄",
+    "koreanMeaning": "영화 영",
+    "meaningsKo": [
+      "영화"
+    ],
+    "onYomi": [
+      {
+        "kana": "えい"
+      },
+      {
+        "kana": "よう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さかえる"
+      },
+      {
+        "kana": "はえ"
+      },
+      {
+        "kana": "ばえ"
+      },
+      {
+        "kana": "はえる"
+      },
+      {
+        "kana": "え"
+      }
+    ],
+    "examples": [],
+    "hint": "Viking·나무(木)이 모여 ‘영화’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_834",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "勢",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "勢",
+    "koreanMeaning": "형세 세",
+    "meaningsKo": [
+      "형세"
+    ],
+    "onYomi": [
+      {
+        "kana": "せい"
+      },
+      {
+        "kana": "ぜい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "いきおい"
+      },
+      {
+        "kana": "はずみ"
+      }
+    ],
+    "examples": [],
+    "hint": "Womb·Circle·힘(力)이 모여 ‘형세’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_835",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "包",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "包",
+    "koreanMeaning": "쌀 포",
+    "meaningsKo": [
+      "쌀"
+    ],
+    "onYomi": [
+      {
+        "kana": "ほう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つつむ"
+      },
+      {
+        "kana": "くるむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Wrap의 뜻·모양에서 ‘쌀’을 나타냄"
+  },
+  {
+    "id": "kanji_836",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "氏",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "氏",
+    "koreanMeaning": "성씨 씨",
+    "meaningsKo": [
+      "성씨"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うじ"
+      }
+    ],
+    "examples": [],
+    "hint": "Clan의 뜻·모양에서 ‘성씨’을 나타냄"
+  },
+  {
+    "id": "kanji_837",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "統",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "統",
+    "koreanMeaning": "거느릴 통",
+    "meaningsKo": [
+      "거느릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すべる"
+      },
+      {
+        "kana": "ほびる"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·Allocate이 모여 ‘거느릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_838",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "派",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "派",
+    "koreanMeaning": "갈래 파",
+    "meaningsKo": [
+      "갈래"
+    ],
+    "onYomi": [
+      {
+        "kana": "は"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "물(氵)·언덕(厂)·Tofu이 모여 ‘갈래’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_839",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "案",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "案",
+    "koreanMeaning": "책상 안",
+    "meaningsKo": [
+      "책상"
+    ],
+    "onYomi": [
+      {
+        "kana": "あん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つくえ"
+      }
+    ],
+    "examples": [],
+    "hint": "Cheap·나무(木)이 모여 ‘책상’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_840",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "策",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "策",
+    "koreanMeaning": "대쪽 책",
+    "meaningsKo": [
+      "대쪽"
+    ],
+    "onYomi": [
+      {
+        "kana": "さく"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "대나무(竹)·나무(木)·Head이 모여 ‘대쪽’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_841",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "基",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "基",
+    "koreanMeaning": "터 기",
+    "meaningsKo": [
+      "터"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "もと"
+      },
+      {
+        "kana": "もとい"
+      }
+    ],
+    "examples": [],
+    "hint": "Crab·Dirt이 모여 ‘터’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_842",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "価",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "価",
+    "koreanMeaning": "값 가",
+    "meaningsKo": [
+      "값"
+    ],
+    "onYomi": [
+      {
+        "kana": "か"
+      },
+      {
+        "kana": "け"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あたい"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·Helicopter이 모여 ‘값’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_843",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "企",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "企",
+    "koreanMeaning": "꾀할 기",
+    "meaningsKo": [
+      "꾀할"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くわだてる"
+      },
+      {
+        "kana": "たくらむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Hat·그칠(止)이 모여 ‘꾀할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_844",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "藤",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "藤",
+    "koreanMeaning": "등나무 등",
+    "meaningsKo": [
+      "등나무"
+    ],
+    "onYomi": [
+      {
+        "kana": "とう"
+      },
+      {
+        "kana": "どう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふじ"
+      }
+    ],
+    "examples": [],
+    "hint": "Flowers·달(月)·Gladiator이 모여 ‘등나무’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_845",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "沢",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "沢",
+    "koreanMeaning": "못 택",
+    "meaningsKo": [
+      "못"
+    ],
+    "onYomi": [
+      {
+        "kana": "たく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さわ"
+      },
+      {
+        "kana": "うるおい"
+      },
+      {
+        "kana": "うるおす"
+      },
+      {
+        "kana": "つや"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·Shrimp이 모여 ‘못’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_846",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "裁",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "裁",
+    "koreanMeaning": "마를 재",
+    "meaningsKo": [
+      "마를"
+    ],
+    "onYomi": [
+      {
+        "kana": "さい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たつ"
+      },
+      {
+        "kana": "さばく"
+      }
+    ],
+    "examples": [],
+    "hint": "Cross·Drunkard·옷(衣)이 모여 ‘마를’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_847",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "援",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "援",
+    "koreanMeaning": "도울 원",
+    "meaningsKo": [
+      "도울"
+    ],
+    "onYomi": [
+      {
+        "kana": "えん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Fingers·Football이 모여 ‘도울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_848",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "施",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "施",
+    "koreanMeaning": "베풀 시/옮길 이",
+    "meaningsKo": [
+      "베풀",
+      "옮길"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      },
+      {
+        "kana": "せ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ほどこす"
+      }
+    ],
+    "examples": [],
+    "hint": "방향(方)·창·Alligator이 모여 ‘베풀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_849",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "護",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "護",
+    "koreanMeaning": "도울 호",
+    "meaningsKo": [
+      "도울"
+    ],
+    "onYomi": [
+      {
+        "kana": "ご"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "まもる"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·Flowers·새(隹)이 모여 ‘도울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_850",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "展",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "展",
+    "koreanMeaning": "펼 전",
+    "meaningsKo": [
+      "펼"
+    ],
+    "onYomi": [
+      {
+        "kana": "てん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "깃발(方)·Blackjack·Kick이 모여 ‘펼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_851",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "態",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "態",
+    "koreanMeaning": "모습 태",
+    "meaningsKo": [
+      "모습"
+    ],
+    "onYomi": [
+      {
+        "kana": "たい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わざと"
+      }
+    ],
+    "examples": [],
+    "hint": "Ability·마음(心)이 모여 ‘모습’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_852",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "鮮",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "鮮",
+    "koreanMeaning": "고울 선/적을 선",
+    "meaningsKo": [
+      "고울",
+      "적을"
+    ],
+    "onYomi": [
+      {
+        "kana": "せん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あざやか"
+      }
+    ],
+    "examples": [],
+    "hint": "양(羊)·물고기(魚)이 모여 ‘고울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_853",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "視",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "視",
+    "koreanMeaning": "볼 시",
+    "meaningsKo": [
+      "볼"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みる"
+      }
+    ],
+    "examples": [],
+    "hint": "Spirit·볼(見)이 모여 ‘볼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_854",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "条",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "条",
+    "koreanMeaning": "가지 조",
+    "meaningsKo": [
+      "가지"
+    ],
+    "onYomi": [
+      {
+        "kana": "じょう"
+      },
+      {
+        "kana": "ちょう"
+      },
+      {
+        "kana": "でき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "えだ"
+      },
+      {
+        "kana": "すじ"
+      }
+    ],
+    "examples": [],
+    "hint": "Winter·나무(木)이 모여 ‘가지’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_855",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "幹",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "幹",
+    "koreanMeaning": "줄기 간",
+    "meaningsKo": [
+      "줄기"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みき"
+      }
+    ],
+    "examples": [],
+    "hint": "Morning·Hat·Dry이 모여 ‘줄기’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_856",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "独",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "独",
+    "koreanMeaning": "홀로 독",
+    "meaningsKo": [
+      "홀로"
+    ],
+    "onYomi": [
+      {
+        "kana": "どく"
+      },
+      {
+        "kana": "とく"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひとり"
+      }
+    ],
+    "examples": [],
+    "hint": "Animal·벌레(虫)이 모여 ‘홀로’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_857",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "宮",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "宮",
+    "koreanMeaning": "집 궁",
+    "meaningsKo": [
+      "집"
+    ],
+    "onYomi": [
+      {
+        "kana": "きゅう"
+      },
+      {
+        "kana": "ぐう"
+      },
+      {
+        "kana": "く"
+      },
+      {
+        "kana": "くう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "みや"
+      }
+    ],
+    "examples": [],
+    "hint": "집(宀)·Bathtub이 모여 ‘집’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_858",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "衛",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "衛",
+    "koreanMeaning": "지킬 위",
+    "meaningsKo": [
+      "지킬"
+    ],
+    "onYomi": [
+      {
+        "kana": "えい"
+      },
+      {
+        "kana": "え"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "갈(行)·Korea이 모여 ‘지킬’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_859",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "監",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "監",
+    "koreanMeaning": "볼 감",
+    "meaningsKo": [
+      "볼"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Servant·창·Ground이 모여 ‘볼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_860",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "環",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "環",
+    "koreanMeaning": "고리 환",
+    "meaningsKo": [
+      "고리"
+    ],
+    "onYomi": [
+      {
+        "kana": "かん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わ"
+      }
+    ],
+    "examples": [],
+    "hint": "임금(王)·그물(罒)·Zombie이 모여 ‘고리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_861",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "審",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "審",
+    "koreanMeaning": "살필 심",
+    "meaningsKo": [
+      "살필"
+    ],
+    "onYomi": [
+      {
+        "kana": "しん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つまびらか"
+      },
+      {
+        "kana": "つぶさに"
+      }
+    ],
+    "examples": [],
+    "hint": "집(宀)·Number이 모여 ‘살필’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_862",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "義",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "義",
+    "koreanMeaning": "옳을 의",
+    "meaningsKo": [
+      "옳을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ぎ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Righteousness의 뜻·모양에서 ‘옳을’을 나타냄"
+  },
+  {
+    "id": "kanji_863",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "訴",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "訴",
+    "koreanMeaning": "호소할 소",
+    "meaningsKo": [
+      "호소할"
+    ],
+    "onYomi": [
+      {
+        "kana": "そ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うったえる"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·도끼(斤)·Drop이 모여 ‘호소할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_864",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "姿",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "姿",
+    "koreanMeaning": "모양 자",
+    "meaningsKo": [
+      "모양"
+    ],
+    "onYomi": [
+      {
+        "kana": "し"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すがた"
+      }
+    ],
+    "examples": [],
+    "hint": "Next·여자(女)이 모여 ‘모양’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_865",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "衆",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "衆",
+    "koreanMeaning": "무리 중",
+    "meaningsKo": [
+      "무리"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゅう"
+      },
+      {
+        "kana": "しゅ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おおい"
+      }
+    ],
+    "examples": [],
+    "hint": "Blood·Hair·Tofu이 모여 ‘무리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_866",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "影",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "影",
+    "koreanMeaning": "그림자 영",
+    "meaningsKo": [
+      "그림자"
+    ],
+    "onYomi": [
+      {
+        "kana": "えい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "かげ"
+      }
+    ],
+    "examples": [],
+    "hint": "날(日)·Capital·Hair이 모여 ‘그림자’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_867",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "撃",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "撃",
+    "koreanMeaning": "칠 격",
+    "meaningsKo": [
+      "칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "げき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "うつ"
+      }
+    ],
+    "examples": [],
+    "hint": "수레(車)·Weapon·손(手)이 모여 ‘칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_868",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "佐",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "佐",
+    "koreanMeaning": "도울 좌",
+    "meaningsKo": [
+      "도울"
+    ],
+    "onYomi": [
+      {
+        "kana": "さ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "사람(亻)·Narwhal·Construction이 모여 ‘도울’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_869",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "核",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "核",
+    "koreanMeaning": "씨 핵",
+    "meaningsKo": [
+      "씨"
+    ],
+    "onYomi": [
+      {
+        "kana": "かく"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "나무(木)·Slice이 모여 ‘씨’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_870",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "融",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "融",
+    "koreanMeaning": "녹을 융",
+    "meaningsKo": [
+      "녹을"
+    ],
+    "onYomi": [
+      {
+        "kana": "ゆう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とける"
+      },
+      {
+        "kana": "とかす"
+      }
+    ],
+    "examples": [],
+    "hint": "Bully·벌레(虫)이 모여 ‘녹을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_871",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "票",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "票",
+    "koreanMeaning": "표 표",
+    "meaningsKo": [
+      "표"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひょう"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Helicopter·Jackhammer이 모여 ‘표’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_872",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "渉",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "渉",
+    "koreanMeaning": "건널 섭",
+    "meaningsKo": [
+      "건널"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "わたる"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·걸을(辶)이 모여 ‘건널’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_873",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "響",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "響",
+    "koreanMeaning": "울릴 향",
+    "meaningsKo": [
+      "울릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "きょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひびく"
+      }
+    ],
+    "examples": [],
+    "hint": "Poop·Root·마을(阝)이 모여 ‘울릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_874",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "請",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "請",
+    "koreanMeaning": "청할 청",
+    "meaningsKo": [
+      "청할"
+    ],
+    "onYomi": [
+      {
+        "kana": "せい"
+      },
+      {
+        "kana": "しん"
+      },
+      {
+        "kana": "しょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "こう"
+      },
+      {
+        "kana": "うける"
+      }
+    ],
+    "examples": [],
+    "hint": "Say·Blue이 모여 ‘청할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_875",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "攻",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "攻",
+    "koreanMeaning": "칠 공",
+    "meaningsKo": [
+      "칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "せめる"
+      }
+    ],
+    "examples": [],
+    "hint": "Construction·Winter이 모여 ‘칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_876",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "崎",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "崎",
+    "koreanMeaning": "험할 기",
+    "meaningsKo": [
+      "험할"
+    ],
+    "onYomi": [
+      {
+        "kana": "き"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さき"
+      },
+      {
+        "kana": "さい"
+      },
+      {
+        "kana": "みさき"
+      }
+    ],
+    "examples": [],
+    "hint": "산(山)·Big·Lip Ring이 모여 ‘험할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_877",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "督",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "督",
+    "koreanMeaning": "감독할 독",
+    "meaningsKo": [
+      "감독할"
+    ],
+    "onYomi": [
+      {
+        "kana": "とく"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Above·작을(小)·Stool이 모여 ‘감독할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_878",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "授",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "授",
+    "koreanMeaning": "줄 수",
+    "meaningsKo": [
+      "줄"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゅ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "さずける"
+      },
+      {
+        "kana": "さずかる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Accept이 모여 ‘줄’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_879",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "催",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "催",
+    "koreanMeaning": "재촉할 최",
+    "meaningsKo": [
+      "재촉할"
+    ],
+    "onYomi": [
+      {
+        "kana": "さい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "もようす"
+      },
+      {
+        "kana": "もよおす"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·산(山)·새(隹)이 모여 ‘재촉할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_880",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "憲",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "憲",
+    "koreanMeaning": "법 헌",
+    "meaningsKo": [
+      "법"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "집(宀)·Life·그물(罒)이 모여 ‘법’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_881",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "離",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "離",
+    "koreanMeaning": "떠날 리",
+    "meaningsKo": [
+      "떠날"
+    ],
+    "onYomi": [
+      {
+        "kana": "り"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はなれる"
+      },
+      {
+        "kana": "はなす"
+      }
+    ],
+    "examples": [],
+    "hint": "Rocket·새(隹)이 모여 ‘떠날’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_882",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "摘",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "摘",
+    "koreanMeaning": "딸 적",
+    "meaningsKo": [
+      "딸"
+    ],
+    "onYomi": [
+      {
+        "kana": "てき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つむ"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Mohawk이 모여 ‘딸’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_883",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "系",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "系",
+    "koreanMeaning": "맬 계",
+    "meaningsKo": [
+      "맬"
+    ],
+    "onYomi": [
+      {
+        "kana": "けい"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Lineage의 뜻·모양에서 ‘맬’을 나타냄"
+  },
+  {
+    "id": "kanji_884",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "批",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "批",
+    "koreanMeaning": "비평할 비",
+    "meaningsKo": [
+      "비평할"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひ"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "Fingers·Compare이 모여 ‘비평할’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_885",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "郎",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "郎",
+    "koreanMeaning": "사내 랑",
+    "meaningsKo": [
+      "사내"
+    ],
+    "onYomi": [
+      {
+        "kana": "ろう"
+      },
+      {
+        "kana": "りょう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おとこ"
+      }
+    ],
+    "examples": [],
+    "hint": "Good·마을(阝)이 모여 ‘사내’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_886",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "健",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "健",
+    "koreanMeaning": "굳셀 건",
+    "meaningsKo": [
+      "굳셀"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "すこやか"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·Yoga·Brush이 모여 ‘굳셀’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_887",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "従",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "従",
+    "koreanMeaning": "좇을 종",
+    "meaningsKo": [
+      "좇을"
+    ],
+    "onYomi": [
+      {
+        "kana": "じゅう"
+      },
+      {
+        "kana": "しょう"
+      },
+      {
+        "kana": "じゅ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "したがう"
+      },
+      {
+        "kana": "したがえる"
+      },
+      {
+        "kana": "より"
+      }
+    ],
+    "examples": [],
+    "hint": "Loiter·뿔·Correct이 모여 ‘좇을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_888",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "修",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "修",
+    "koreanMeaning": "닦을 수",
+    "meaningsKo": [
+      "닦을"
+    ],
+    "onYomi": [
+      {
+        "kana": "しゅう"
+      },
+      {
+        "kana": "しゅ"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おさめる"
+      },
+      {
+        "kana": "おさまる"
+      }
+    ],
+    "examples": [],
+    "hint": "사람(亻)·막대(丨)·Winter이 모여 ‘닦을’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_889",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "隊",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "隊",
+    "koreanMeaning": "무리 대",
+    "meaningsKo": [
+      "무리"
+    ],
+    "onYomi": [
+      {
+        "kana": "たい"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "마을(阝)·뿔·Pig이 모여 ‘무리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_890",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "織",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "織",
+    "koreanMeaning": "짤 직",
+    "meaningsKo": [
+      "짤"
+    ],
+    "onYomi": [
+      {
+        "kana": "しょく"
+      },
+      {
+        "kana": "しき"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "おる"
+      },
+      {
+        "kana": "おり"
+      }
+    ],
+    "examples": [],
+    "hint": "실(糸)·Sound·Drunkard이 모여 ‘짤’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_891",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "拡",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "拡",
+    "koreanMeaning": "넓힐 확",
+    "meaningsKo": [
+      "넓힐"
+    ],
+    "onYomi": [
+      {
+        "kana": "かく"
+      },
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ひろがる"
+      },
+      {
+        "kana": "ひろげる"
+      },
+      {
+        "kana": "ひろめる"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Wide이 모여 ‘넓힐’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_892",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "振",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "振",
+    "koreanMeaning": "떨칠 진",
+    "meaningsKo": [
+      "떨칠"
+    ],
+    "onYomi": [
+      {
+        "kana": "しん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "ふる"
+      },
+      {
+        "kana": "ぶる"
+      },
+      {
+        "kana": "ふり"
+      },
+      {
+        "kana": "ぶり"
+      },
+      {
+        "kana": "ふるう"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·Landslide이 모여 ‘떨칠’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_893",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "献",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "献",
+    "koreanMeaning": "드릴 헌",
+    "meaningsKo": [
+      "드릴"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      },
+      {
+        "kana": "こん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "たてまつる"
+      }
+    ],
+    "examples": [],
+    "hint": "South·개(犭)이 모여 ‘드릴’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_894",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "維",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "維",
+    "koreanMeaning": "벼리 유/오직 유",
+    "meaningsKo": [
+      "벼리",
+      "오직"
+    ],
+    "onYomi": [
+      {
+        "kana": "い"
+      }
+    ],
+    "kunYomi": [],
+    "examples": [],
+    "hint": "실(糸)·새(隹)이 모여 ‘벼리’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_895",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "浜",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "浜",
+    "koreanMeaning": "물가 빈",
+    "meaningsKo": [
+      "물가"
+    ],
+    "onYomi": [
+      {
+        "kana": "ひん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "はま"
+      }
+    ],
+    "examples": [],
+    "hint": "물(氵)·도끼(斤)·Ground이 모여 ‘물가’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_896",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "遺",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "遺",
+    "koreanMeaning": "남길 유",
+    "meaningsKo": [
+      "남길"
+    ],
+    "onYomi": [
+      {
+        "kana": "い"
+      },
+      {
+        "kana": "ゆい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "のこす"
+      }
+    ],
+    "examples": [],
+    "hint": "Scooter·Valuable이 모여 ‘남길’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_897",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "塁",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "塁",
+    "koreanMeaning": "보루 루",
+    "meaningsKo": [
+      "보루"
+    ],
+    "onYomi": [
+      {
+        "kana": "るい"
+      },
+      {
+        "kana": "らい"
+      },
+      {
+        "kana": "すい"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "とりで"
+      }
+    ],
+    "examples": [],
+    "hint": "논(田)·Explosion·Dirt이 모여 ‘보루’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_898",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "邦",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "邦",
+    "koreanMeaning": "나라 방",
+    "meaningsKo": [
+      "나라"
+    ],
+    "onYomi": [
+      {
+        "kana": "ほう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "くに"
+      }
+    ],
+    "examples": [],
+    "hint": "Three·삐침·마을(阝)이 모여 ‘나라’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_899",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "遣",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "遣",
+    "koreanMeaning": "보낼 견",
+    "meaningsKo": [
+      "보낼"
+    ],
+    "onYomi": [
+      {
+        "kana": "けん"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "つかう"
+      },
+      {
+        "kana": "つかい"
+      },
+      {
+        "kana": "づかい"
+      },
+      {
+        "kana": "つかわす"
+      },
+      {
+        "kana": "やる"
+      }
+    ],
+    "examples": [],
+    "hint": "Scooter·벌레(虫)·Bear이 모여 ‘보낼’의 뜻을 이룸"
+  },
+  {
+    "id": "kanji_900",
+    "kind": "kanji",
+    "listId": "kanji_adv",
+    "literal": "抗",
+    "jlpt": "ADV",
+    "strokeCount": 0,
+    "koreanHanja": "抗",
+    "koreanMeaning": "겨룰 항",
+    "meaningsKo": [
+      "겨룰"
+    ],
+    "onYomi": [
+      {
+        "kana": "こう"
+      }
+    ],
+    "kunYomi": [
+      {
+        "kana": "あらがう"
+      }
+    ],
+    "examples": [],
+    "hint": "Fingers·덮개(亠)·Table이 모여 ‘겨룰’의 뜻을 이룸"
+  }
+]

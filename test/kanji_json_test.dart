@@ -11,28 +11,8 @@ import 'package:kanji_kr/shared/models/kanji.dart';
 import 'package:kanji_kr/shared/models/study_list.dart';
 import 'package:test/test.dart';
 
-/// 시드 JSON 파싱·검색·사용자 데이터 직렬화.
-/// シードJSONパース・検索・ユーザーデータ直列化。
+/// 시드 JSON 파싱·검색·사용자 데이터 직렬화·목록 필터·퀴즈 생성.
 void main() {
-  test('N5 시드에 山이 있다', () {
-    final raw = File('assets/data/kanji/n5.json').readAsStringSync();
-    final list = jsonDecode(raw) as List<dynamic>;
-    expect(list, hasLength(20));
-    final kanji = Kanji.fromJson(list.first as Map<String, dynamic>);
-    expect(kanji.literal, '山');
-    expect(kanji.id, 'yama');
-    expect(kanji.jlpt, 'N5');
-    expect(kanji.strokeCount, 3);
-    expect(kanji.meaningsKo, contains('산'));
-    expect(kanji.isUserAdded, isFalse);
-    expect(kanji.kind, EntryKind.kanji);
-    expect(kanji.matchesQuery('山'), isTrue);
-    expect(kanji.matchesQuery('산'), isTrue);
-    expect(kanji.matchesQuery('やま'), isTrue);
-    expect(kanji.matchesQuery('さん'), isTrue);
-    expect(kanji.matchesQuery('水'), isFalse);
-  });
-
   test('초급 한자 시드에 山이 있다', () {
     final raw = File('assets/data/kanji/beg.json').readAsStringSync();
     final list = jsonDecode(raw) as List<dynamic>;
@@ -54,11 +34,38 @@ void main() {
     );
     expect(kanji.onYomi.single.kana, 'さん');
     expect(kanji.kunYomi.single.kana, 'やま');
+    expect(kanji.matchesQuery('山'), isTrue);
+    expect(kanji.matchesQuery('산'), isTrue);
+    expect(kanji.matchesQuery('やま'), isTrue);
+    expect(kanji.matchesQuery('さん'), isTrue);
+    expect(kanji.matchesQuery('水'), isFalse);
+  });
+
+  test('고급 한자 시드에 強이 있다', () {
+    final raw = File('assets/data/kanji/adv.json').readAsStringSync();
+    final list = jsonDecode(raw) as List<dynamic>;
+    expect(list, hasLength(300));
+    final kanji = Kanji.fromJson(list.first as Map<String, dynamic>);
+    expect(kanji.literal, '強');
+    expect(kanji.id, 'kanji_601');
+    expect(kanji.listId, 'kanji_adv');
+    expect(kanji.kind, EntryKind.kanji);
+    expect(kanji.koreanMeaning, '강할 강');
+    expect(kanji.meaningsKo, contains('강할'));
+    expect(kanji.displayMeaning, '강할 강');
+    expect(kanji.onYomi.map((item) => item.kana), contains('きょう'));
+    expect(kanji.kunYomi.map((item) => item.kana), contains('つよい'));
+    final last = Kanji.fromJson(list.last as Map<String, dynamic>);
+    expect(last.id, 'kanji_900');
+    expect(last.listId, 'kanji_adv');
   });
 
   test('중급 한자·동사 시드 개수가 맞다', () {
     final midKanji = jsonDecode(
       File('assets/data/kanji/mid.json').readAsStringSync(),
+    ) as List<dynamic>;
+    final advKanji = jsonDecode(
+      File('assets/data/kanji/adv.json').readAsStringSync(),
     ) as List<dynamic>;
     final begVerb = jsonDecode(
       File('assets/data/word/verb_beg.json').readAsStringSync(),
@@ -70,31 +77,36 @@ void main() {
       File('assets/data/word/verb_adv.json').readAsStringSync(),
     ) as List<dynamic>;
     expect(midKanji, hasLength(300));
+    expect(advKanji, hasLength(300));
     expect(begVerb, hasLength(200));
     expect(midVerb, hasLength(200));
     expect(advVerb, hasLength(200));
+    final begLiterals = {
+      for (final item in jsonDecode(
+            File('assets/data/kanji/beg.json').readAsStringSync(),
+          ) as List<dynamic>)
+        (item as Map<String, dynamic>)['literal'] as String,
+    };
+    final midLiterals = {
+      for (final item in midKanji)
+        (item as Map<String, dynamic>)['literal'] as String,
+    };
+    final advLiterals = {
+      for (final item in advKanji)
+        (item as Map<String, dynamic>)['literal'] as String,
+    };
+    expect(advLiterals.intersection(begLiterals), isEmpty);
+    expect(advLiterals.intersection(midLiterals), isEmpty);
     final verb = Kanji.fromJson(begVerb.first as Map<String, dynamic>);
     expect(verb.literal, 'いる');
     expect(verb.kind, EntryKind.word);
     expect(verb.reading, 'いる');
     expect(verb.displayMeaning, contains('있다'));
+    expect(verb.matchesQuery('いる'), isTrue);
+    expect(verb.matchesQuery('있다'), isTrue);
     final last = Kanji.fromJson(advVerb.last as Map<String, dynamic>);
     expect(last.literal, '申し込む');
     expect(last.listId, 'verb_adv');
-  });
-
-  test('N5 단어 시드에 山登り가 있다', () {
-    final raw = File('assets/data/word/n5.json').readAsStringSync();
-    final list = jsonDecode(raw) as List<dynamic>;
-    expect(list, hasLength(18));
-    final word = Kanji.fromJson(list.first as Map<String, dynamic>);
-    expect(word.literal, '山登り');
-    expect(word.kind, EntryKind.word);
-    expect(word.listId, 'n5_word');
-    expect(word.reading, 'やまのぼり');
-    expect(word.displayMeaning, '등산');
-    expect(word.matchesQuery('やまのぼり'), isTrue);
-    expect(word.matchesQuery('등산'), isTrue);
   });
 
   test('사용자 한자와 즐겨찾기를 JSON으로 저장할 수 있다', () {
@@ -115,7 +127,7 @@ void main() {
     final data = UserData(
       favoriteIds: {kanji.id, 'yama'},
       userKanjis: [kanji],
-      selectedListId: 'n5_word',
+      selectedListId: 'verb_beg',
     );
     final restored = UserData.fromJson(data.toJson());
     expect(restored.favoriteIds, containsAll(['user_川', 'yama']));
@@ -123,7 +135,7 @@ void main() {
     expect(restored.userKanjis.single.isUserAdded, isTrue);
     expect(restored.userKanjis.single.listId, ListIds.user);
     expect(restored.alwaysShowAnswer, isFalse);
-    expect(restored.selectedListId, 'n5_word');
+    expect(restored.selectedListId, 'verb_beg');
   });
 
   test('음독 가타카나를 히라가나로 바꾼다', () {
@@ -136,13 +148,13 @@ void main() {
     final yama = Kanji.fromJson({
       'id': 'yama',
       'literal': '山',
-      'listId': 'n5_kanji',
+      'listId': 'kanji_beg',
       'meaningsKo': ['산'],
     });
     final word = Kanji.fromJson({
       'id': 'sensei',
       'kind': 'word',
-      'listId': 'n5_word',
+      'listId': 'verb_beg',
       'literal': '先生',
       'reading': 'せんせい',
       'meaningsKo': ['선생님'],
@@ -158,12 +170,12 @@ void main() {
     });
     final all = [yama, word, mine];
     expect(
-      itemsForList(all: all, favoriteIds: {'yama'}, listId: 'n5_kanji')
+      itemsForList(all: all, favoriteIds: {'yama'}, listId: 'kanji_beg')
           .map((item) => item.id),
       ['yama'],
     );
     expect(
-      itemsForList(all: all, favoriteIds: {'yama'}, listId: 'n5_word')
+      itemsForList(all: all, favoriteIds: {'yama'}, listId: 'verb_beg')
           .single
           .literal,
       '先生',
@@ -184,7 +196,7 @@ void main() {
       itemsForList(
         all: all,
         favoriteIds: {},
-        listId: ListIds.all,
+        listId: 'kanji_beg',
         kind: EntryKind.kanji,
       ).map((item) => item.id),
       ['yama'],
@@ -195,7 +207,7 @@ void main() {
     );
   });
 
-  test('한자 종류 목록에는 전체가 없고 초급 한자가 있다', () {
+  test('한자 종류 목록에는 초급 한자만 있고 동사는 없다', () {
     final lists = composeListsForKind(
       kind: EntryKind.kanji,
       userTitle: '내가 추가',
@@ -216,7 +228,6 @@ void main() {
       ],
       imported: const [],
     );
-    expect(lists.map((item) => item.id), isNot(contains(ListIds.all)));
     expect(lists.map((item) => item.id), contains('kanji_beg'));
     expect(lists.map((item) => item.id), isNot(contains('verb_beg')));
   });

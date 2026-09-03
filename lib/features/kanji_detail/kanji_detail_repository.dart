@@ -10,15 +10,26 @@ import '../../shared/models/review_card.dart';
 import '../../shared/models/study_list.dart';
 
 /// 시드 JSON + 로컬 수정을 합쳐 카탈로그를 만든다.
-/// シードJSON + ローカル修正を合わせてカタログを作る。
+///
+/// 폴더 이름은 kanji_detail이지만, 실제로는 앱 전체 카탈로그 repository다.
+///
+/// 로드 순서: 1) 번들 시드 2) 사용자 JSON upsert.
+/// 순서를 바꾸면 수정분이 시드에 덮인다.
+///
+/// [_ready]가 true면 같은 프로세스에서 다시 읽지 않는다.
+/// 에셋 JSON을 바꿨으면 핫 리로드가 아니라 핫 리스타트가 필요하다.
+
+/// 예전 샘플 목록. 번들에 남아 있어도 목록에 넣지 않는다.
+const _removedListIds = {'n5_word', 'n5_kanji'};
+
 class KanjiRepository {
   KanjiRepository(this._db, this._store);
 
   final AppDatabase _db;
   final UserStore _store;
   bool _ready = false;
+
   /// 시드를 수정한 id도 persist 대상에 넣기 위한 집합.
-  /// シードを直した id も persist 対象に入れるための集合。
   final Set<String> _persistedIds = {};
   List<StudyList> _builtinLists = const [];
   List<StudyList> _importedLists = const [];
@@ -31,13 +42,11 @@ class KanjiRepository {
     if (_ready) {
       return;
     }
-    // 1) 번들 시드 → 2) 사용자 JSON upsert. 순서를 바꾸면 수정분이 덮인다.
-    // 1) バンドルシード → 2) ユーザーJSON upsert。順を変えると修正分が上書きされる。
     final listsRaw = await rootBundle.loadString('assets/data/lists.json');
     _builtinLists = [
       for (final item in jsonDecode(listsRaw) as List<dynamic>)
         StudyList.fromJson(item as Map<String, dynamic>),
-    ];
+    ].where((list) => !_removedListIds.contains(list.id)).toList();
     for (final list in _builtinLists) {
       final asset = list.asset;
       if (asset == null) {
@@ -58,7 +67,10 @@ class KanjiRepository {
       }
     }
     final user = _store.load();
-    _importedLists = [...user.importedLists];
+    _importedLists = [
+      for (final list in user.importedLists)
+        if (!_removedListIds.contains(list.id)) list,
+    ];
     for (final kanji in user.userKanjis) {
       _db.upsertKanji(kanji);
       _persistedIds.add(kanji.id);
@@ -69,7 +81,6 @@ class KanjiRepository {
 
   Future<void> _persist() {
     // 시드 원본은 저장하지 않고, 추가분·수정분만 UserStore에 남긴다.
-    // シード原本は保存せず、追加分・修正分だけ UserStore に残す。
     final remaining = {
       for (final item in _db.allKanjis())
         if (item.isUserAdded || _persistedIds.contains(item.id)) item.listId,
@@ -116,7 +127,6 @@ class KanjiRepository {
     await ensureReady();
     if (_db.containsLiteral(kanji.literal, kind: kanji.kind)) {
       // UI에서 l10n.alreadyExists로 바꿔 보여 준다.
-      // UI では l10n.alreadyExists に変えて見せる。
       return 'alreadyExists';
     }
     _db.upsertKanji(kanji);
@@ -144,7 +154,6 @@ class KanjiRepository {
     await ensureReady();
     final kanji = _db.kanjiById(id);
     // 시드 한자는 삭제하지 않는다. 수정만 persist.
-    // シード漢字は削除しない。修正だけ persist。
     if (kanji == null || !kanji.isUserAdded) {
       return;
     }
@@ -153,8 +162,9 @@ class KanjiRepository {
     await _persist();
   }
 
-  /// JSON 목록을 가져와 새 리스트로 붙인다. 개수를 돌려준다.
-  /// JSON一覧を入れて新しいリストにする。件数を返す。
+  /// JSON 목록을 가져와 새 리스트로 붙인다. 넣은 카드 개수를 돌려준다.
+  ///
+  /// id가 이미 있으면 뒤에 시각을 붙여 충돌을 피한다.
   Future<int> importJson(String raw) async {
     await ensureReady();
     final parsed = parseImportJson(raw);
@@ -162,7 +172,6 @@ class KanjiRepository {
     final taken = {
       for (final item in _builtinLists) item.id,
       for (final item in _importedLists) item.id,
-      ListIds.all,
       ListIds.user,
       ListIds.favorites,
     };

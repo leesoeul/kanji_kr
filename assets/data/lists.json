@@ -14,6 +14,13 @@
     "asset": "assets/data/kanji/mid.json"
   },
   {
+    "id": "kanji_adv",
+    "kind": "kanji",
+    "titleKo": "고급 한자",
+    "titleJa": "上級漢字",
+    "asset": "assets/data/kanji/adv.json"
+  },
+  {
     "id": "verb_beg",
     "kind": "word",
     "titleKo": "초급 동사",
@@ -33,19 +40,5 @@
     "titleKo": "고급 동사",
     "titleJa": "上級動詞",
     "asset": "assets/data/word/verb_adv.json"
-  },
-  {
-    "id": "n5_kanji",
-    "kind": "kanji",
-    "titleKo": "N5 한자",
-    "titleJa": "N5漢字",
-    "asset": "assets/data/kanji/n5.json"
-  },
-  {
-    "id": "n5_word",
-    "kind": "word",
-    "titleKo": "N5 단어",
-    "titleJa": "N5単語",
-    "asset": "assets/data/word/n5.json"
   }
 ]
