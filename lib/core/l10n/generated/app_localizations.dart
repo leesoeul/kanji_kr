@@ -147,12 +147,6 @@ abstract class AppLocalizations {
   /// **'한국어 뜻'**
   String get koreanMeaning;
 
-  /// No description provided for @koreanHanja.
-  ///
-  /// In ko, this message translates to:
-  /// **'한국 한자'**
-  String get koreanHanja;
-
   /// No description provided for @examples.
   ///
   /// In ko, this message translates to:
@@ -435,12 +429,6 @@ abstract class AppLocalizations {
   /// **'예: やま'**
   String get kunYomiHint;
 
-  /// No description provided for @koreanHanjaHint.
-  ///
-  /// In ko, this message translates to:
-  /// **'비워 두면 한자와 같음'**
-  String get koreanHanjaHint;
-
   /// No description provided for @exampleJp.
   ///
   /// In ko, this message translates to:
@@ -531,12 +519,6 @@ abstract class AppLocalizations {
   /// **'정답'**
   String get showAnswer;
 
-  /// No description provided for @hint.
-  ///
-  /// In ko, this message translates to:
-  /// **'힌트'**
-  String get hint;
-
   /// No description provided for @cardKun.
   ///
   /// In ko, this message translates to:
@@ -578,6 +560,48 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'이제부터 정답을 숨깁니다'**
   String get alwaysShowOff;
+
+  /// No description provided for @aiAutocomplete.
+  ///
+  /// In ko, this message translates to:
+  /// **'AI 자동완성'**
+  String get aiAutocomplete;
+
+  /// No description provided for @aiSuggestions.
+  ///
+  /// In ko, this message translates to:
+  /// **'AI 추천'**
+  String get aiSuggestions;
+
+  /// No description provided for @aiLoadingSuggestions.
+  ///
+  /// In ko, this message translates to:
+  /// **'AI가 추천 중...'**
+  String get aiLoadingSuggestions;
+
+  /// No description provided for @fillWithThis.
+  ///
+  /// In ko, this message translates to:
+  /// **'이 내용으로 채우기'**
+  String get fillWithThis;
+
+  /// No description provided for @requiredFieldMark.
+  ///
+  /// In ko, this message translates to:
+  /// **'*'**
+  String get requiredFieldMark;
+
+  /// No description provided for @resetForm.
+  ///
+  /// In ko, this message translates to:
+  /// **'초기화'**
+  String get resetForm;
+
+  /// No description provided for @resetFormConfirm.
+  ///
+  /// In ko, this message translates to:
+  /// **'입력한 내용을 모두 지울까요?'**
+  String get resetFormConfirm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

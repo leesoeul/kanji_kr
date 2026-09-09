@@ -34,9 +34,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get koreanMeaning => '한국어 뜻';
 
   @override
-  String get koreanHanja => '한국 한자';
-
-  @override
   String get examples => '예문';
 
   @override
@@ -188,9 +185,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get kunYomiHint => '예: やま';
 
   @override
-  String get koreanHanjaHint => '비워 두면 한자와 같음';
-
-  @override
   String get exampleJp => '예문 (일본어)';
 
   @override
@@ -236,9 +230,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get showAnswer => '정답';
 
   @override
-  String get hint => '힌트';
-
-  @override
   String get cardKun => '훈독';
 
   @override
@@ -258,4 +249,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get alwaysShowOff => '이제부터 정답을 숨깁니다';
+
+  @override
+  String get aiAutocomplete => 'AI 자동완성';
+
+  @override
+  String get aiSuggestions => 'AI 추천';
+
+  @override
+  String get aiLoadingSuggestions => 'AI가 추천 중...';
+
+  @override
+  String get fillWithThis => '이 내용으로 채우기';
+
+  @override
+  String get requiredFieldMark => '*';
+
+  @override
+  String get resetForm => '초기화';
+
+  @override
+  String get resetFormConfirm => '입력한 내용을 모두 지울까요?';
 }
