@@ -40,7 +40,6 @@ class Kanji {
     required this.literal,
     required this.jlpt,
     required this.strokeCount,
-    required this.koreanHanja,
     required this.koreanMeaning,
     required this.meaningsKo,
     required this.onYomi,
@@ -49,7 +48,6 @@ class Kanji {
     this.kind = EntryKind.kanji,
     this.listId = '',
     this.reading = '',
-    this.hint = '',
     this.isUserAdded = false,
   });
 
@@ -59,7 +57,6 @@ class Kanji {
   final String literal;
   final String jlpt;
   final int strokeCount;
-  final String koreanHanja;
 
   /// 훈음 표기 (예: 메 산). 카드 부제·정답에도 쓴다.
   final String koreanMeaning;
@@ -77,8 +74,6 @@ class Kanji {
   /// 단어 전체 읽기. 한자면 비우고 훈/음독을 쓴다.
   final String reading;
 
-  /// 어원·암기 힌트. 비어 있으면 정답에 안 보여 준다.
-  final String hint;
   final bool isUserAdded;
 
   bool get isWord => kind == EntryKind.word;
@@ -103,9 +98,7 @@ class Kanji {
       return displayReading;
     }
     final kun = kunYomi.map((item) => item.kana).join('・');
-    final on = onYomi
-        .map((item) => katakanaToHiragana(item.kana))
-        .join('・');
+    final on = onYomi.map((item) => katakanaToHiragana(item.kana)).join('・');
     if (kun.isEmpty && on.isEmpty) {
       return '';
     }
@@ -152,7 +145,6 @@ class Kanji {
       literal: literal,
       jlpt: json['jlpt'] as String? ?? 'USER',
       strokeCount: json['strokeCount'] as int? ?? 0,
-      koreanHanja: json['koreanHanja'] as String? ?? literal,
       koreanMeaning: json['koreanMeaning'] as String? ?? '',
       meaningsKo: (json['meaningsKo'] as List<dynamic>? ?? const [])
           .map((item) => item as String)
@@ -165,12 +157,11 @@ class Kanji {
       kind: kind,
       listId: json['listId'] as String? ?? '',
       reading: json['reading'] as String? ?? '',
-      hint: json['hint'] as String? ?? '',
       isUserAdded: json['isUserAdded'] as bool? ?? false,
     );
   }
 
-  /// 검색: 글자·id·훈음·뜻·읽기·힌트. 음독은 가타카나 시드를 히라가나로도 맞춘다.
+  /// 검색: 글자·id·훈음·뜻·읽기. 음독은 가타카나 시드를 히라가나로도 맞춘다.
   bool matchesQuery(String query) {
     final q = query.trim().toLowerCase();
     if (q.isEmpty) {
@@ -179,17 +170,13 @@ class Kanji {
     if (literal.contains(query.trim()) || id.toLowerCase().contains(q)) {
       return true;
     }
-    if (koreanMeaning.toLowerCase().contains(q) ||
-        koreanHanja.contains(query.trim())) {
+    if (koreanMeaning.toLowerCase().contains(q)) {
       return true;
     }
     if (meaningsKo.any((item) => item.toLowerCase().contains(q))) {
       return true;
     }
     if (reading.contains(query.trim()) || reading.toLowerCase().contains(q)) {
-      return true;
-    }
-    if (hint.toLowerCase().contains(q)) {
       return true;
     }
     return onYomi.any((item) {
@@ -204,7 +191,6 @@ class Kanji {
         'literal': literal,
         'jlpt': jlpt,
         'strokeCount': strokeCount,
-        'koreanHanja': koreanHanja,
         'koreanMeaning': koreanMeaning,
         'meaningsKo': meaningsKo,
         'onYomi': onYomi.map((item) => item.toJson()).toList(),
@@ -213,7 +199,6 @@ class Kanji {
         'kind': kind.jsonName,
         'listId': listId,
         'reading': reading,
-        'hint': hint,
         'isUserAdded': isUserAdded,
       };
 
@@ -222,7 +207,6 @@ class Kanji {
     String? literal,
     String? jlpt,
     int? strokeCount,
-    String? koreanHanja,
     String? koreanMeaning,
     List<String>? meaningsKo,
     List<Reading>? onYomi,
@@ -231,7 +215,6 @@ class Kanji {
     EntryKind? kind,
     String? listId,
     String? reading,
-    String? hint,
     bool? isUserAdded,
   }) {
     return Kanji(
@@ -239,7 +222,6 @@ class Kanji {
       literal: literal ?? this.literal,
       jlpt: jlpt ?? this.jlpt,
       strokeCount: strokeCount ?? this.strokeCount,
-      koreanHanja: koreanHanja ?? this.koreanHanja,
       koreanMeaning: koreanMeaning ?? this.koreanMeaning,
       meaningsKo: meaningsKo ?? this.meaningsKo,
       onYomi: onYomi ?? this.onYomi,
@@ -248,7 +230,6 @@ class Kanji {
       kind: kind ?? this.kind,
       listId: listId ?? this.listId,
       reading: reading ?? this.reading,
-      hint: hint ?? this.hint,
       isUserAdded: isUserAdded ?? this.isUserAdded,
     );
   }

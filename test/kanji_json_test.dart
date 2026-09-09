@@ -82,8 +82,8 @@ void main() {
     expect(advVerb, hasLength(200));
     final begLiterals = {
       for (final item in jsonDecode(
-            File('assets/data/kanji/beg.json').readAsStringSync(),
-          ) as List<dynamic>)
+        File('assets/data/kanji/beg.json').readAsStringSync(),
+      ) as List<dynamic>)
         (item as Map<String, dynamic>)['literal'] as String,
     };
     final midLiterals = {
@@ -114,7 +114,6 @@ void main() {
       literal: '川',
       jlpt: 'USER',
       strokeCount: 0,
-      koreanHanja: '川',
       koreanMeaning: '내 천',
       meaningsKo: const ['강'],
       onYomi: const [],
