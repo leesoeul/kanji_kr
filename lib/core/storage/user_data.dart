@@ -1,10 +1,8 @@
 import '../../shared/models/kanji.dart';
-import '../../shared/models/study_list.dart';
 
 /// 기기에 남는 사용자 상태. 시드 JSON과는 별개다.
 ///
 /// [userKanjis]에는 직접 추가한 카드뿐 아니라, 시드를 고친 사본도 들어간다.
-/// import한 목록 메타는 [importedLists], 카드 본문은 역시 [userKanjis]에 둔다.
 class UserData {
   const UserData({
     required this.favoriteIds,
@@ -13,12 +11,11 @@ class UserData {
     this.isDark = false,
     this.selectedListId = '',
     this.selectedKind = '',
-    this.importedLists = const [],
   });
 
   final Set<String> favoriteIds;
 
-  /// 직접 추가한 카드 + 시드를 고친 사본 + import한 카드.
+  /// 직접 추가한 카드 + 시드를 고친 사본.
   final List<Kanji> userKanjis;
 
   /// 정답 버튼을 더블탭하면 켜진다. 모든 카드에 답을 항상 보여 준다.
@@ -30,9 +27,6 @@ class UserData {
 
   /// `kanji` 또는 `word`. 비어 있으면 한자/동사 고르기 화면.
   final String selectedKind;
-
-  /// JSON으로 가져온 목록 메타. 카드는 [userKanjis]에 같이 둔다.
-  final List<StudyList> importedLists;
 
   factory UserData.empty() => const UserData(
         favoriteIds: {},
@@ -53,12 +47,6 @@ class UserData {
       isDark: json['isDark'] as bool? ?? false,
       selectedListId: _normalizeListId(json['selectedListId'] as String?),
       selectedKind: json['selectedKind'] as String? ?? '',
-      importedLists: [
-        for (final item in json['importedLists'] as List<dynamic>? ?? const [])
-          StudyList.fromJson(item as Map<String, dynamic>).copyWith(
-            isImported: true,
-          ),
-      ],
     );
   }
 
@@ -69,7 +57,6 @@ class UserData {
         'isDark': isDark,
         'selectedListId': selectedListId,
         'selectedKind': selectedKind,
-        'importedLists': importedLists.map((item) => item.toJson()).toList(),
       };
 
   UserData copyWith({
@@ -79,7 +66,6 @@ class UserData {
     bool? isDark,
     String? selectedListId,
     String? selectedKind,
-    List<StudyList>? importedLists,
   }) {
     return UserData(
       favoriteIds: favoriteIds ?? this.favoriteIds,
@@ -88,7 +74,6 @@ class UserData {
       isDark: isDark ?? this.isDark,
       selectedListId: selectedListId ?? this.selectedListId,
       selectedKind: selectedKind ?? this.selectedKind,
-      importedLists: importedLists ?? this.importedLists,
     );
   }
 }

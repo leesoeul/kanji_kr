@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 import '../../core/database/app_database.dart';
-import '../../core/import/list_import.dart';
 import '../../core/storage/user_store.dart';
 import '../../shared/models/kanji.dart';
 import '../../shared/models/review_card.dart';
@@ -32,11 +31,8 @@ class KanjiRepository {
   /// 시드를 수정한 id도 persist 대상에 넣기 위한 집합.
   final Set<String> _persistedIds = {};
   List<StudyList> _builtinLists = const [];
-  List<StudyList> _importedLists = const [];
 
   List<StudyList> get builtinLists => List.unmodifiable(_builtinLists);
-
-  List<StudyList> get importedLists => List.unmodifiable(_importedLists);
 
   Future<void> ensureReady() async {
     if (_ready) {
@@ -67,10 +63,6 @@ class KanjiRepository {
       }
     }
     final user = _store.load();
-    _importedLists = [
-      for (final list in user.importedLists)
-        if (!_removedListIds.contains(list.id)) list,
-    ];
     for (final kanji in user.userKanjis) {
       _db.upsertKanji(kanji);
       _persistedIds.add(kanji.id);
@@ -81,21 +73,12 @@ class KanjiRepository {
 
   Future<void> _persist() {
     // 시드 원본은 저장하지 않고, 추가분·수정분만 UserStore에 남긴다.
-    final remaining = {
-      for (final item in _db.allKanjis())
-        if (item.isUserAdded || _persistedIds.contains(item.id)) item.listId,
-    };
-    _importedLists = [
-      for (final list in _importedLists)
-        if (remaining.contains(list.id)) list,
-    ];
     return _store.patch(
       favoriteIds: _db.favoriteIds,
       userKanjis: _db
           .allKanjis()
           .where((item) => item.isUserAdded || _persistedIds.contains(item.id))
           .toList(),
-      importedLists: _importedLists,
     );
   }
 
@@ -160,39 +143,6 @@ class KanjiRepository {
     _db.deleteKanji(id);
     _persistedIds.remove(id);
     await _persist();
-  }
-
-  /// JSON 목록을 가져와 새 리스트로 붙인다. 넣은 카드 개수를 돌려준다.
-  ///
-  /// id가 이미 있으면 뒤에 시각을 붙여 충돌을 피한다.
-  Future<int> importJson(String raw) async {
-    await ensureReady();
-    final parsed = parseImportJson(raw);
-    var list = parsed.list;
-    final taken = {
-      for (final item in _builtinLists) item.id,
-      for (final item in _importedLists) item.id,
-      ListIds.user,
-      ListIds.favorites,
-    };
-    if (taken.contains(list.id)) {
-      final nextId = '${list.id}_${DateTime.now().millisecondsSinceEpoch}';
-      list = list.copyWith(id: nextId);
-    }
-    for (final item in parsed.items) {
-      var kanji = item.copyWith(listId: list.id, isUserAdded: true);
-      if (_db.kanjiById(kanji.id) != null ||
-          _db.containsLiteral(kanji.literal, kind: kanji.kind)) {
-        kanji = kanji.copyWith(
-          id: '${kanji.id}_${DateTime.now().microsecondsSinceEpoch}',
-        );
-      }
-      _db.upsertKanji(kanji);
-      _persistedIds.add(kanji.id);
-    }
-    _importedLists = [..._importedLists, list];
-    await _persist();
-    return parsed.items.length;
   }
 
   Future<List<ReviewCard>> dueToday() async {

@@ -40,13 +40,11 @@ class CatalogState {
     required this.kanjis,
     required this.favoriteIds,
     required this.builtinLists,
-    required this.importedLists,
   });
 
   final List<Kanji> kanjis;
   final Set<String> favoriteIds;
   final List<StudyList> builtinLists;
-  final List<StudyList> importedLists;
 
   Kanji? byId(String id) {
     for (final kanji in kanjis) {
@@ -86,7 +84,6 @@ class CatalogState {
         userTitle: userTitle,
         favoritesTitle: favoritesTitle,
         builtin: builtinLists,
-        imported: importedLists,
       );
     }
     return const [];
@@ -105,7 +102,6 @@ class CatalogState {
 /// 시드·사용자 카드·즐겨찾기를 한곳에서 읽고 쓴다.
 ///
 /// 쓰기 뒤에는 항상 [_reload]로 스냅샷을 다시 만든다.
-/// JSON import가 끝나면 홈 세션을 방금 가져온 목록으로 맞춘다.
 class CatalogController extends AsyncNotifier<CatalogState> {
   @override
   Future<CatalogState> build() async {
@@ -115,7 +111,6 @@ class CatalogController extends AsyncNotifier<CatalogState> {
       kanjis: kanjis,
       favoriteIds: repo.favoriteIds,
       builtinLists: repo.builtinLists,
-      importedLists: repo.importedLists,
     );
   }
 
@@ -126,7 +121,6 @@ class CatalogController extends AsyncNotifier<CatalogState> {
         kanjis: await repo.all(),
         favoriteIds: repo.favoriteIds,
         builtinLists: repo.builtinLists,
-        importedLists: repo.importedLists,
       ),
     );
   }
@@ -155,20 +149,6 @@ class CatalogController extends AsyncNotifier<CatalogState> {
   Future<void> deleteUserKanji(String id) async {
     await ref.read(kanjiRepositoryProvider).deleteUserKanji(id);
     await _reload();
-  }
-
-  Future<int> importJson(String raw) async {
-    final count = await ref.read(kanjiRepositoryProvider).importJson(raw);
-    await _reload();
-    final imported = state.value?.importedLists;
-    if (imported != null && imported.isNotEmpty) {
-      final last = imported.last;
-      final kind =
-          last.kind == EntryKind.word ? EntryKind.word : EntryKind.kanji;
-      await ref.read(studySessionProvider.notifier).selectKind(kind);
-      await ref.read(studySessionProvider.notifier).selectList(last.id);
-    }
-    return count;
   }
 }
 

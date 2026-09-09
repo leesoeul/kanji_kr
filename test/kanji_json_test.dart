@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
-import 'package:kanji_kr/core/import/list_import.dart';
 import 'package:kanji_kr/core/kana.dart';
 import 'package:kanji_kr/core/storage/user_data.dart';
 import 'package:kanji_kr/core/study_filter.dart';
@@ -226,29 +225,9 @@ void main() {
           titleJa: '初級動詞',
         ),
       ],
-      imported: const [],
     );
     expect(lists.map((item) => item.id), contains('kanji_beg'));
     expect(lists.map((item) => item.id), isNot(contains('verb_beg')));
-  });
-
-  test('JSON 배열을 가져와 새 목록으로 만든다', () {
-    final parsed = parseImportJson(
-      jsonEncode([
-        {
-          'literal': '切符',
-          'kind': 'word',
-          'reading': 'きっぷ',
-          'meaningsKo': ['표'],
-        },
-      ]),
-      nowMs: 123,
-    );
-    expect(parsed.list.id, 'import_123');
-    expect(parsed.list.kind, EntryKind.word);
-    expect(parsed.items.single.literal, '切符');
-    expect(parsed.items.single.isUserAdded, isTrue);
-    expect(parsed.items.single.listId, 'import_123');
   });
 
   test('퀴즈는 정답이 보기 안에 있다', () {

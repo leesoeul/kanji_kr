@@ -90,7 +90,7 @@ class _KindStep extends ConsumerWidget {
   }
 }
 
-/// 선택한 kind의 시드·내가 추가·즐겨찾기·import 목록. 장 수를 같이 보여 준다.
+/// 선택한 kind의 시드·내가 추가·즐겨찾기 목록. 장 수를 같이 보여 준다.
 class _ListStep extends ConsumerWidget {
   const _ListStep({
     required this.catalog,

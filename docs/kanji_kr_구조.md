@@ -51,7 +51,6 @@ lib/
     database/app_database.dart   SQLite 아님. 세션용 Map
     storage/             UserStore — 즐겨찾기·직접추가·설정 persist
     study_filter.dart    목록 id로 카드 걸러 내기
-    import/list_import.dart
     l10n/  theme/  kana.dart
   features/
     study/               홈 피커 + 플래시카드
@@ -127,7 +126,6 @@ assets/data/
 
 - 즐겨찾기 id
 - 직접 추가한 카드, 시드를 고친 카드
-- JSON으로 import한 목록
 - 선택한 kind / listId
 - 다크모드, 정답 항상 표시
 
@@ -160,7 +158,7 @@ assets/data/
 - `favorites` — 즐겨찾기
 - `user` — 내가 추가
 
-`composeListsForKind`가 builtin + imported + 가상(내가 추가, 즐겨찾기)을 한 줄 목록으로 만든다.
+`composeListsForKind`가 builtin + 가상(내가 추가, 즐겨찾기)을 한 줄 목록으로 만든다.
 
 ---
 
@@ -207,7 +205,6 @@ assets/data/
 - 목록 탭: 현재 카탈로그를 리스트로
 - 즐겨찾기 탭: 하트 친 카드
 - `/add` `/edit/:id`: 직접 추가·수정 폼
-- JSON import: `CatalogController.importJson` → 마지막 import 목록을 홈에서 연다
 
 ---
 
@@ -255,7 +252,7 @@ Flutter와 플래시카드 UX는 이미 있다. 처음부터 다시 배울 양�
 |------|------|
 | 화면만 고치기 (`study_page`, `home_pickers`, `quiz_page`) | 30분–1시간 |
 | 목록이 왜 나오는지 (`lists.json` → repo → filter → session) | 1–2시간 |
-| 추가 / 즐겨찾기 / import까지 (`UserStore` + `CatalogController`) | 반나절 |
+| 추가 / 즐겨찾기까지 (`UserStore` + `CatalogController`) | 반나절 |
 | 전체 분석·리팩터 판단 | 하루 |
 | 숙련 | 2–3일 만지면서 |
 

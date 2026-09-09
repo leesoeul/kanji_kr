@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../shared/models/kanji.dart';
-import '../../shared/models/study_list.dart';
 import 'string_store.dart';
 import 'string_store_stub.dart'
     if (dart.library.html) 'string_store_web.dart'
@@ -53,7 +52,6 @@ class UserStore {
     bool? isDark,
     String? selectedListId,
     String? selectedKind,
-    List<StudyList>? importedLists,
   }) {
     return save(
       load().copyWith(
@@ -63,7 +61,6 @@ class UserStore {
         isDark: isDark,
         selectedListId: selectedListId,
         selectedKind: selectedKind,
-        importedLists: importedLists,
       ),
     );
   }

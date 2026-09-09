@@ -31,16 +31,6 @@
   "readingLabel": "읽기",
   "readingHint": "예: やまのぼり",
   "surfaceLabel": "표기",
-  "importList": "JSON 가져오기",
-  "importHint": "목록 JSON을 붙여 넣으세요",
-  "importAction": "가져오기",
-  "importSuccess": "{count}개를 가져왔습니다",
-  "@importSuccess": {
-    "placeholders": {
-      "count": { "type": "int" }
-    }
-  },
-  "importFailed": "JSON을 읽지 못했습니다",
   "quizStart": "시작",
   "quizNext": "다음",
   "quizSeeResult": "결과 보기",

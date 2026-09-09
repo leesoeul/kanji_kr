@@ -11,7 +11,7 @@ import '../../features/study/home_pickers.dart';
 ///
 /// 덱이 없으면 홈과 같은 2단 피커. 있으면 타일 리스트.
 /// 뒤로가기는 목록 고르기로 돌아간다. 타일을 누르면 `/kanji/:id`.
-/// FAB는 `/add`, 업로드 아이콘은 JSON import.
+/// FAB는 `/add`.
 class KanjiListPage extends ConsumerWidget {
   const KanjiListPage({super.key});
 
@@ -65,13 +65,6 @@ class KanjiListPage extends ConsumerWidget {
                     ref.read(studySessionProvider.notifier).clearList(),
               ),
               title: Text(listTitle),
-              actions: [
-                IconButton(
-                  tooltip: l10n.importList,
-                  onPressed: () => _openImport(context, ref, l10n),
-                  icon: const Icon(Icons.file_upload_outlined),
-                ),
-              ],
             ),
             floatingActionButton: FloatingActionButton.extended(
               onPressed: () => context.push('/add'),
@@ -128,87 +121,6 @@ class KanjiListPage extends ConsumerWidget {
           ),
         );
       },
-    );
-  }
-
-  /// JSON 텍스트를 붙여 넣어 새 목록을 만든다. 성공하면 홈 세션이 그 목록으로 바뀐다.
-  Future<void> _openImport(
-    BuildContext context,
-    WidgetRef ref,
-    AppLocalizations l10n,
-  ) async {
-    final raw = await showDialog<String>(
-      context: context,
-      builder: (context) => _ImportDialog(l10n: l10n),
-    );
-    if (raw == null || raw.trim().isEmpty) {
-      return;
-    }
-    try {
-      final count =
-          await ref.read(catalogControllerProvider.notifier).importJson(raw);
-      if (!context.mounted) {
-        return;
-      }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.importSuccess(count))),
-      );
-    } catch (_) {
-      if (!context.mounted) {
-        return;
-      }
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.importFailed)),
-      );
-    }
-  }
-}
-
-/// JSON 텍스트를 붙여 넣는 대화상자. 확인하면 raw 문자열을 돌려준다.
-class _ImportDialog extends StatefulWidget {
-  const _ImportDialog({required this.l10n});
-
-  final AppLocalizations l10n;
-
-  @override
-  State<_ImportDialog> createState() => _ImportDialogState();
-}
-
-class _ImportDialogState extends State<_ImportDialog> {
-  final _controller = TextEditingController();
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return AlertDialog(
-      title: Text(widget.l10n.importList),
-      content: SizedBox(
-        width: 420,
-        child: TextField(
-          controller: _controller,
-          maxLines: 12,
-          decoration: InputDecoration(
-            hintText: widget.l10n.importHint,
-            border: const OutlineInputBorder(),
-            alignLabelWithHint: true,
-          ),
-        ),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: Text(widget.l10n.cancel),
-        ),
-        FilledButton(
-          onPressed: () => Navigator.pop(context, _controller.text),
-          child: Text(widget.l10n.importAction),
-        ),
-      ],
     );
   }
 }

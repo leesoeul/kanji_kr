@@ -85,23 +85,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get surfaceLabel => '表記';
 
   @override
-  String get importList => 'JSONを取り込む';
-
-  @override
-  String get importHint => '一覧JSONを貼り付けてください';
-
-  @override
-  String get importAction => '取り込む';
-
-  @override
-  String importSuccess(int count) {
-    return '$count件を取り込みました';
-  }
-
-  @override
-  String get importFailed => 'JSONを読めませんでした';
-
-  @override
   String get quizStart => '開始';
 
   @override

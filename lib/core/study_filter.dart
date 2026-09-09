@@ -7,7 +7,7 @@ import '../../shared/models/study_list.dart';
 ///
 /// - [ListIds.favorites]: 하트 친 카드
 /// - [ListIds.user]: `isUserAdded`인 카드 (직접 추가)
-/// - 그 외: `item.listId == listId` (시드·import 목록)
+/// - 그 외: `item.listId == listId` (시드 목록)
 ///
 /// [kind]가 있으면 한자/단어로 한 번 더 거른다. 홈 2단 선택에서 쓴다.
 List<Kanji> itemsForList({
@@ -103,7 +103,6 @@ List<StudyList> composeListsForKind({
   required String userTitle,
   required String favoritesTitle,
   required List<StudyList> builtin,
-  required List<StudyList> imported,
 }) {
   return [
     for (final list in builtin)
@@ -122,7 +121,5 @@ List<StudyList> composeListsForKind({
       titleJa: favoritesTitle,
       isVirtual: true,
     ),
-    for (final list in imported)
-      if (list.kind == kind || list.kind == EntryKind.mixed) list,
   ];
 }

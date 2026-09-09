@@ -85,23 +85,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get surfaceLabel => '표기';
 
   @override
-  String get importList => 'JSON 가져오기';
-
-  @override
-  String get importHint => '목록 JSON을 붙여 넣으세요';
-
-  @override
-  String get importAction => '가져오기';
-
-  @override
-  String importSuccess(int count) {
-    return '$count개를 가져왔습니다';
-  }
-
-  @override
-  String get importFailed => 'JSON을 읽지 못했습니다';
-
-  @override
   String get quizStart => '시작';
 
   @override

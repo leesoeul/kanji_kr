@@ -2,7 +2,7 @@
 ///
 /// - [kanji]: 한 글자 한자
 /// - [word]: 단어·동사
-/// - [mixed]: import 목록 등, 한자·단어가 섞인 경우
+/// - [mixed]: 한자·단어가 섞인 경우 (예전 데이터)
 enum EntryKind {
   kanji,
   word,
@@ -37,9 +37,9 @@ class ListIds {
   static const user = 'user';
 }
 
-/// 학습 목록 한 줄. 시드·가져오기·가상 필터가 같은 모델을 쓴다.
+/// 학습 목록 한 줄. 시드·가상 필터가 같은 모델을 쓴다.
 ///
-/// [asset]이 있으면 번들 JSON 경로. 가상·가져오기 목록은 null.
+/// [asset]이 있으면 번들 JSON 경로. 가상 목록은 null.
 class StudyList {
   const StudyList({
     required this.id,
@@ -48,7 +48,6 @@ class StudyList {
     required this.titleJa,
     this.asset,
     this.isVirtual = false,
-    this.isImported = false,
   });
 
   final String id;
@@ -56,10 +55,9 @@ class StudyList {
   final String titleKo;
   final String titleJa;
 
-  /// 번들 JSON 경로. 가상·가져오기 목록은 null.
+  /// 번들 JSON 경로. 가상 목록은 null.
   final String? asset;
   final bool isVirtual;
-  final bool isImported;
 
   String titleFor(String languageCode) {
     return languageCode == 'ja' ? titleJa : titleKo;
@@ -73,7 +71,6 @@ class StudyList {
       titleJa: json['titleJa'] as String? ?? json['titleKo'] as String? ?? '',
       asset: json['asset'] as String?,
       isVirtual: json['isVirtual'] as bool? ?? false,
-      isImported: json['isImported'] as bool? ?? json['id']?.toString().startsWith('import_') == true,
     );
   }
 
@@ -82,7 +79,6 @@ class StudyList {
         'kind': kind.jsonName,
         'titleKo': titleKo,
         'titleJa': titleJa,
-        'isImported': isImported,
       };
 
   StudyList copyWith({
@@ -92,7 +88,6 @@ class StudyList {
     String? titleJa,
     String? asset,
     bool? isVirtual,
-    bool? isImported,
   }) {
     return StudyList(
       id: id ?? this.id,
@@ -101,7 +96,6 @@ class StudyList {
       titleJa: titleJa ?? this.titleJa,
       asset: asset ?? this.asset,
       isVirtual: isVirtual ?? this.isVirtual,
-      isImported: isImported ?? this.isImported,
     );
   }
 }

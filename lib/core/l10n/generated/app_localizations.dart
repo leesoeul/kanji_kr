@@ -249,36 +249,6 @@ abstract class AppLocalizations {
   /// **'표기'**
   String get surfaceLabel;
 
-  /// No description provided for @importList.
-  ///
-  /// In ko, this message translates to:
-  /// **'JSON 가져오기'**
-  String get importList;
-
-  /// No description provided for @importHint.
-  ///
-  /// In ko, this message translates to:
-  /// **'목록 JSON을 붙여 넣으세요'**
-  String get importHint;
-
-  /// No description provided for @importAction.
-  ///
-  /// In ko, this message translates to:
-  /// **'가져오기'**
-  String get importAction;
-
-  /// No description provided for @importSuccess.
-  ///
-  /// In ko, this message translates to:
-  /// **'{count}개를 가져왔습니다'**
-  String importSuccess(int count);
-
-  /// No description provided for @importFailed.
-  ///
-  /// In ko, this message translates to:
-  /// **'JSON을 읽지 못했습니다'**
-  String get importFailed;
-
   /// No description provided for @quizStart.
   ///
   /// In ko, this message translates to:
