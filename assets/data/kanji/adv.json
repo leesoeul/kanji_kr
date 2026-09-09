@@ -6,7 +6,6 @@
     "literal": "強",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "強",
     "koreanMeaning": "강할 강",
     "meaningsKo": [
       "강할"
@@ -36,8 +35,13 @@
         "kana": "こわい"
       }
     ],
-    "examples": [],
-    "hint": "벌레(虫)가 활(弓)처럼 힘을 쓰는 모양, 세다"
+    "examples": [
+      {
+        "jp": "彼は強いチームを作った。",
+        "kana": "",
+        "ko": "그는 강한 팀을 만들었다."
+      }
+    ]
   },
   {
     "id": "kanji_602",
@@ -46,7 +50,6 @@
     "literal": "弱",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弱",
     "koreanMeaning": "약할 약",
     "meaningsKo": [
       "약할"
@@ -70,8 +73,13 @@
         "kana": "よわめる"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)이 얼음(冫)처럼 힘이 빠져 약함"
+    "examples": [
+      {
+        "jp": "彼女は弱い犬を助けた。",
+        "kana": "",
+        "ko": "그녀는 약한 개를 도와주었다."
+      }
+    ]
   },
   {
     "id": "kanji_603",
@@ -80,7 +88,6 @@
     "literal": "弾",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弾",
     "koreanMeaning": "탄알 탄",
     "meaningsKo": [
       "탄알"
@@ -119,8 +126,13 @@
         "kana": "はじきゆみ"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)로 단(単)한 것을 튕김, 탄알"
+    "examples": [
+      {
+        "jp": "音楽の授業で弾き語りをした。",
+        "kana": "",
+        "ko": "음악 수업에서 악기를 연주하며 노래를 불렀다."
+      }
+    ]
   },
   {
     "id": "kanji_604",
@@ -129,7 +141,6 @@
     "literal": "弦",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弦",
     "koreanMeaning": "활시위 현",
     "meaningsKo": [
       "활시위"
@@ -144,8 +155,13 @@
         "kana": "つる"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)에 맨 검푸른(玄) 시위"
+    "examples": [
+      {
+        "jp": "ギターの弦を交換した。",
+        "kana": "",
+        "ko": "기타의 현을 교체했다."
+      }
+    ]
   },
   {
     "id": "kanji_605",
@@ -154,7 +170,6 @@
     "literal": "弧",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弧",
     "koreanMeaning": "활 호",
     "meaningsKo": [
       "활"
@@ -165,8 +180,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "활(弓)처럼 굽은 오이(瓜) 모양"
+    "examples": [
+      {
+        "jp": "弧を描くように走る車。",
+        "kana": "",
+        "ko": "호를 그리며 달리는 차."
+      }
+    ]
   },
   {
     "id": "kanji_606",
@@ -175,7 +195,6 @@
     "literal": "弔",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弔",
     "koreanMeaning": "조상할 조",
     "meaningsKo": [
       "조상할"
@@ -193,8 +212,13 @@
         "kana": "とぶらう"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)에 막대를 걸어 조문함"
+    "examples": [
+      {
+        "jp": "友人の葬儀に弔いに行った。",
+        "kana": "",
+        "ko": "친구의 장례식에 조문하러 갔다."
+      }
+    ]
   },
   {
     "id": "kanji_607",
@@ -203,7 +227,6 @@
     "literal": "弥",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弥",
     "koreanMeaning": "두루 미",
     "meaningsKo": [
       "두루"
@@ -230,8 +253,13 @@
         "kana": "わたる"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)이 점점 더 넓어짐"
+    "examples": [
+      {
+        "jp": "彼は弥生時代の遺物を研究している。",
+        "kana": "",
+        "ko": "그는 야요이 시대의 유물을 연구하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_608",
@@ -240,7 +268,6 @@
     "literal": "弟",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "弟",
     "koreanMeaning": "아우 제",
     "meaningsKo": [
       "아우"
@@ -261,8 +288,13 @@
         "kana": "おとうと"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)을 메고 질서를 지키는 아우"
+    "examples": [
+      {
+        "jp": "弟はゲームが得意だ。",
+        "kana": "",
+        "ko": "내 동생은 게임을 잘한다."
+      }
+    ]
   },
   {
     "id": "kanji_609",
@@ -271,7 +303,6 @@
     "literal": "第",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "第",
     "koreanMeaning": "차례 제",
     "meaningsKo": [
       "차례"
@@ -285,8 +316,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "대나무(竹)로 아우(弟)의 차례를 매김"
+    "examples": [
+      {
+        "jp": "第1章を読み終えた。",
+        "kana": "",
+        "ko": "1장의 독서를 끝냈다."
+      }
+    ]
   },
   {
     "id": "kanji_610",
@@ -295,7 +331,6 @@
     "literal": "矢",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "矢",
     "koreanMeaning": "화살 시",
     "meaningsKo": [
       "화살"
@@ -310,8 +345,13 @@
         "kana": "や"
       }
     ],
-    "examples": [],
-    "hint": "화살의 모양을 본뜬 글자"
+    "examples": [
+      {
+        "jp": "矢は的に当たった。",
+        "kana": "",
+        "ko": "화살이 과녁에 맞았다."
+      }
+    ]
   },
   {
     "id": "kanji_611",
@@ -320,7 +360,6 @@
     "literal": "知",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "知",
     "koreanMeaning": "알 지",
     "meaningsKo": [
       "알"
@@ -338,8 +377,13 @@
         "kana": "しらせる"
       }
     ],
-    "examples": [],
-    "hint": "입(口)이 화살(矢)처럼 빠르게 앎"
+    "examples": [
+      {
+        "jp": "彼はその事実を知っていた。",
+        "kana": "",
+        "ko": "그는 그 사실을 알고 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_612",
@@ -348,7 +392,6 @@
     "literal": "医",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "医",
     "koreanMeaning": "의원 의",
     "meaningsKo": [
       "의원"
@@ -369,8 +412,13 @@
         "kana": "くすし"
       }
     ],
-    "examples": [],
-    "hint": "상자(匚) 안에 화살(矢)을 넣어 치료하던 모양"
+    "examples": [
+      {
+        "jp": "医者が症状を診察した。",
+        "kana": "",
+        "ko": "의사가 증상을 진찰했다."
+      }
+    ]
   },
   {
     "id": "kanji_613",
@@ -379,7 +427,6 @@
     "literal": "疑",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "疑",
     "koreanMeaning": "의심할 의",
     "meaningsKo": [
       "의심할"
@@ -394,8 +441,13 @@
         "kana": "うたがう"
       }
     ],
-    "examples": [],
-    "hint": "화살(矢)을 어디로 쏠지 몰라 의심함"
+    "examples": [
+      {
+        "jp": "彼はその話を疑った。",
+        "kana": "",
+        "ko": "그는 그 이야기를 의심했다."
+      }
+    ]
   },
   {
     "id": "kanji_614",
@@ -404,7 +456,6 @@
     "literal": "触",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "触",
     "koreanMeaning": "닿을 촉",
     "meaningsKo": [
       "닿을"
@@ -425,8 +476,13 @@
         "kana": "さわ"
       }
     ],
-    "examples": [],
-    "hint": "Angle·벌레(虫)이 모여 ‘닿을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "花に触れないでください。",
+        "kana": "",
+        "ko": "꽃에 손대지 마세요."
+      }
+    ]
   },
   {
     "id": "kanji_615",
@@ -435,7 +491,6 @@
     "literal": "兵",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "兵",
     "koreanMeaning": "병사 병",
     "meaningsKo": [
       "병사"
@@ -453,8 +508,13 @@
         "kana": "つわもの"
       }
     ],
-    "examples": [],
-    "hint": "도끼(斤)·Ground·Fins이 모여 ‘병사’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "兵士たちは訓練を受けている。",
+        "kana": "",
+        "ko": "병사들은 훈련을 받고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_616",
@@ -463,7 +523,6 @@
     "literal": "管",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "管",
     "koreanMeaning": "대롱 관/주관할 관",
     "meaningsKo": [
       "대롱",
@@ -479,8 +538,13 @@
         "kana": "くだ"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)·집(宀)·Bear이 모여 ‘대롱’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この管を使って水を流す。",
+        "kana": "",
+        "ko": "이 대롱을 사용해서 물을 흐르게 한다."
+      }
+    ]
   },
   {
     "id": "kanji_617",
@@ -489,7 +553,6 @@
     "literal": "築",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "築",
     "koreanMeaning": "쌓을 축",
     "meaningsKo": [
       "쌓을"
@@ -504,8 +567,13 @@
         "kana": "きずく"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)·Saw·나무(木)이 모여 ‘쌓을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい家を築くためにお金を貯めている。",
+        "kana": "",
+        "ko": "새 집을 짓기 위해 돈을 모으고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_618",
@@ -514,7 +582,6 @@
     "literal": "籍",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "籍",
     "koreanMeaning": "문서 적",
     "meaningsKo": [
       "문서"
@@ -525,8 +592,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "대나무(竹)·Plow·Long Ago이 모여 ‘문서’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の籍は東京にある。",
+        "kana": "",
+        "ko": "그의 등록지는 도쿄에 있다."
+      }
+    ]
   },
   {
     "id": "kanji_619",
@@ -535,7 +607,6 @@
     "literal": "筆",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "筆",
     "koreanMeaning": "붓 필",
     "meaningsKo": [
       "붓"
@@ -550,8 +621,13 @@
         "kana": "ふで"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)·Brush이 모여 ‘붓’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この筆で絵を描くのが好きだ。",
+        "kana": "",
+        "ko": "이 붓으로 그림을 그리는 것이 좋다."
+      }
+    ]
   },
   {
     "id": "kanji_620",
@@ -560,7 +636,6 @@
     "literal": "筒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "筒",
     "koreanMeaning": "대통 통",
     "meaningsKo": [
       "대통"
@@ -575,8 +650,13 @@
         "kana": "つつ"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)·Same이 모여 ‘대통’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "筒の中に秘密の手紙が入っていた。",
+        "kana": "",
+        "ko": "대통 안에 비밀 편지가 들어 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_621",
@@ -585,7 +665,6 @@
     "literal": "符",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "符",
     "koreanMeaning": "부호 부",
     "meaningsKo": [
       "부호"
@@ -596,8 +675,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "대나무(竹)·Attach이 모여 ‘부호’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この符は特別な意味を持っている。",
+        "kana": "",
+        "ko": "이 부호는 특별한 의미를 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_622",
@@ -606,7 +690,6 @@
     "literal": "血",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "血",
     "koreanMeaning": "피 혈",
     "meaningsKo": [
       "피"
@@ -621,8 +704,13 @@
         "kana": "ち"
       }
     ],
-    "examples": [],
-    "hint": "Blood의 뜻·모양에서 ‘피’을 나타냄"
+    "examples": [
+      {
+        "jp": "動物の血液は体に重要だ。",
+        "kana": "",
+        "ko": "동물의 혈액은 몸에 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_623",
@@ -631,7 +719,6 @@
     "literal": "般",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "般",
     "koreanMeaning": "일반 반/돌 반",
     "meaningsKo": [
       "일반",
@@ -643,8 +730,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "배(舟)·Weapon이 모여 ‘일반’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "一般の人々はこのニュースを知らない。",
+        "kana": "",
+        "ko": "일반 사람들은 이 뉴스를 모른다."
+      }
+    ]
   },
   {
     "id": "kanji_624",
@@ -653,7 +745,6 @@
     "literal": "舟",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "舟",
     "koreanMeaning": "배 주",
     "meaningsKo": [
       "배"
@@ -674,8 +765,13 @@
         "kana": "ぶね"
       }
     ],
-    "examples": [],
-    "hint": "배(舟)의 뜻·모양에서 ‘배’을 나타냄"
+    "examples": [
+      {
+        "jp": "舟が静かに川を進んでいる。",
+        "kana": "",
+        "ko": "배가 조용히 강을 따라 가고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_625",
@@ -684,7 +780,6 @@
     "literal": "群",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "群",
     "koreanMeaning": "무리 군",
     "meaningsKo": [
       "무리"
@@ -708,8 +803,13 @@
         "kana": "むらがる"
       }
     ],
-    "examples": [],
-    "hint": "Buddy·양(羊)이 모여 ‘무리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "群れを作って移動する動物もいる。",
+        "kana": "",
+        "ko": "무리를 지어 이동하는 동물도 있다."
+      }
+    ]
   },
   {
     "id": "kanji_626",
@@ -718,7 +818,6 @@
     "literal": "階",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "階",
     "koreanMeaning": "섬돌 계",
     "meaningsKo": [
       "섬돌"
@@ -733,8 +832,13 @@
         "kana": "きざはし"
       }
     ],
-    "examples": [],
-    "hint": "마을(阝)·Compare·흰(白)이 모여 ‘섬돌’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "階段を登るのは良い運動だ。",
+        "kana": "",
+        "ko": "계단을 오르는 것은 좋은 운동이다."
+      }
+    ]
   },
   {
     "id": "kanji_627",
@@ -743,7 +847,6 @@
     "literal": "陸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "陸",
     "koreanMeaning": "뭍 륙",
     "meaningsKo": [
       "뭍"
@@ -761,8 +864,13 @@
         "kana": "おか"
       }
     ],
-    "examples": [],
-    "hint": "마을(阝)·Womb이 모여 ‘뭍’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "陸に上がると風が強くなった。",
+        "kana": "",
+        "ko": "뭍에 올라가니 바람이 세졌다."
+      }
+    ]
   },
   {
     "id": "kanji_628",
@@ -771,7 +879,6 @@
     "literal": "隅",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "隅",
     "koreanMeaning": "모퉁이 우",
     "meaningsKo": [
       "모퉁이"
@@ -786,8 +893,13 @@
         "kana": "すみ"
       }
     ],
-    "examples": [],
-    "hint": "마을(阝)·Splinter이 모여 ‘모퉁이’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "部屋の隅に猫がいる。",
+        "kana": "",
+        "ko": "방 모퉁이에 고양이가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_629",
@@ -796,7 +908,6 @@
     "literal": "匹",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "匹",
     "koreanMeaning": "짝 필",
     "meaningsKo": [
       "짝"
@@ -811,8 +922,13 @@
         "kana": "ひき"
       }
     ],
-    "examples": [],
-    "hint": "상자(匚)·Legs이 모여 ‘짝’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この犬は二匹いる。",
+        "kana": "",
+        "ko": "이 개는 두 마리 있다."
+      }
+    ]
   },
   {
     "id": "kanji_630",
@@ -821,7 +937,6 @@
     "literal": "召",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "召",
     "koreanMeaning": "부를 소",
     "meaningsKo": [
       "부를"
@@ -836,8 +951,13 @@
         "kana": "めす"
       }
     ],
-    "examples": [],
-    "hint": "Call의 뜻·모양에서 ‘부를’을 나타냄"
+    "examples": [
+      {
+        "jp": "先生が生徒を召した。",
+        "kana": "",
+        "ko": "선생님이 학생을 불렀다."
+      }
+    ]
   },
   {
     "id": "kanji_631",
@@ -846,7 +966,6 @@
     "literal": "缶",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "缶",
     "koreanMeaning": "장군 부",
     "meaningsKo": [
       "장군"
@@ -861,8 +980,13 @@
         "kana": "かま"
       }
     ],
-    "examples": [],
-    "hint": "Can의 뜻·모양에서 ‘장군’을 나타냄"
+    "examples": [
+      {
+        "jp": "ビール缶を開けると、泡が出た。",
+        "kana": "",
+        "ko": "맥주 캔을 열자 거품이 나왔다."
+      }
+    ]
   },
   {
     "id": "kanji_632",
@@ -871,7 +995,6 @@
     "literal": "庁",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "庁",
     "koreanMeaning": "관청 청",
     "meaningsKo": [
       "관청"
@@ -889,8 +1012,13 @@
         "kana": "やくしょ"
       }
     ],
-    "examples": [],
-    "hint": "Canopy·Street이 모여 ‘관청’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "市庁には多くの人が集まった。",
+        "kana": "",
+        "ko": "시청에는 많은 사람들이 모였다."
+      }
+    ]
   },
   {
     "id": "kanji_633",
@@ -899,7 +1027,6 @@
     "literal": "庫",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "庫",
     "koreanMeaning": "곳집 고",
     "meaningsKo": [
       "곳집"
@@ -917,8 +1044,13 @@
         "kana": "くら"
       }
     ],
-    "examples": [],
-    "hint": "Canopy·수레(車)이 모여 ‘곳집’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "倉庫の中には古い家具がある。",
+        "kana": "",
+        "ko": "창고 안에는 오래된 가구가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_634",
@@ -927,7 +1059,6 @@
     "literal": "底",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "底",
     "koreanMeaning": "밑 저",
     "meaningsKo": [
       "밑"
@@ -942,8 +1073,13 @@
         "kana": "そこ"
       }
     ],
-    "examples": [],
-    "hint": "Canopy·Clan·Ground이 모여 ‘밑’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "川の底には魚がたくさんいる。",
+        "kana": "",
+        "ko": "강 바닥에는 물고기가 많이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_635",
@@ -952,7 +1088,6 @@
     "literal": "床",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "床",
     "koreanMeaning": "평상 상",
     "meaningsKo": [
       "평상"
@@ -970,8 +1105,13 @@
         "kana": "ゆか"
       }
     ],
-    "examples": [],
-    "hint": "Canopy·나무(木)이 모여 ‘평상’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "床に落ちたおもちゃを拾った。",
+        "kana": "",
+        "ko": "바닥에 떨어진 장난감을 주웠다."
+      }
+    ]
   },
   {
     "id": "kanji_636",
@@ -980,7 +1120,6 @@
     "literal": "磨",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "磨",
     "koreanMeaning": "갈 마",
     "meaningsKo": [
       "갈"
@@ -998,8 +1137,13 @@
         "kana": "する"
       }
     ],
-    "examples": [],
-    "hint": "Canopy·나무(木)·돌(石)이 모여 ‘갈’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このナイフはとてもよく磨かれている。",
+        "kana": "",
+        "ko": "이 칼은 매우 잘 갈려 있다."
+      }
+    ]
   },
   {
     "id": "kanji_637",
@@ -1008,7 +1152,6 @@
     "literal": "輸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "輸",
     "koreanMeaning": "보낼 수",
     "meaningsKo": [
       "보낼"
@@ -1022,8 +1165,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "수레(車)·Death Star이 모여 ‘보낼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい製品を輸出することに決めた。",
+        "kana": "",
+        "ko": "새로운 제품을 수출하기로 결정했다."
+      }
+    ]
   },
   {
     "id": "kanji_638",
@@ -1032,7 +1180,6 @@
     "literal": "軟",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "軟",
     "koreanMeaning": "연할 연",
     "meaningsKo": [
       "연할"
@@ -1050,8 +1197,13 @@
         "kana": "やわらかい"
       }
     ],
-    "examples": [],
-    "hint": "수레(車)·하품(欠)이 모여 ‘연할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このパンはとても軟らかい。",
+        "kana": "",
+        "ko": "이 빵은 매우 부드럽다."
+      }
+    ]
   },
   {
     "id": "kanji_639",
@@ -1060,7 +1212,6 @@
     "literal": "軒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "軒",
     "koreanMeaning": "집 헌",
     "meaningsKo": [
       "집"
@@ -1075,8 +1226,13 @@
         "kana": "のき"
       }
     ],
-    "examples": [],
-    "hint": "수레(車)·Dry이 모여 ‘집’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "古い軒が家の前に残っている。",
+        "kana": "",
+        "ko": "오래된 처마가 집 앞에 남아 있다."
+      }
+    ]
   },
   {
     "id": "kanji_640",
@@ -1085,7 +1241,6 @@
     "literal": "貨",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "貨",
     "koreanMeaning": "재물 화",
     "meaningsKo": [
       "재물"
@@ -1100,8 +1255,13 @@
         "kana": "たから"
       }
     ],
-    "examples": [],
-    "hint": "Change·조개(貝)이 모여 ‘재물’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "お金や貨物を運ぶ仕事をしています。",
+        "kana": "",
+        "ko": "돈이나 화물을 운반하는 일을 하고 있습니다."
+      }
+    ]
   },
   {
     "id": "kanji_641",
@@ -1110,7 +1270,6 @@
     "literal": "傾",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "傾",
     "koreanMeaning": "기울 경/잠깐 경",
     "meaningsKo": [
       "기울",
@@ -1138,8 +1297,13 @@
         "kana": "かしげる"
       }
     ],
-    "examples": [],
-    "hint": "Change·Geoduck이 모여 ‘기울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "風に傾いている木を見た。",
+        "kana": "",
+        "ko": "바람에 기울어져 있는 나무를 보았다."
+      }
+    ]
   },
   {
     "id": "kanji_642",
@@ -1148,7 +1312,6 @@
     "literal": "孫",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "孫",
     "koreanMeaning": "손자 손",
     "meaningsKo": [
       "손자"
@@ -1163,8 +1326,13 @@
         "kana": "まご"
       }
     ],
-    "examples": [],
-    "hint": "아이(子)·Lineage이 모여 ‘손자’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の孫はとてもかわいい。",
+        "kana": "",
+        "ko": "그의 손자는 매우 귀엽다."
+      }
+    ]
   },
   {
     "id": "kanji_643",
@@ -1173,7 +1341,6 @@
     "literal": "周",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "周",
     "koreanMeaning": "두루 주",
     "meaningsKo": [
       "두루"
@@ -1188,8 +1355,13 @@
         "kana": "まわり"
       }
     ],
-    "examples": [],
-    "hint": "Circumference의 뜻·모양에서 ‘두루’을 나타냄"
+    "examples": [
+      {
+        "jp": "公園の周りを散歩した。",
+        "kana": "",
+        "ko": "공원 주위를 산책했다."
+      }
+    ]
   },
   {
     "id": "kanji_644",
@@ -1198,7 +1370,6 @@
     "literal": "乳",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "乳",
     "koreanMeaning": "젖 유",
     "meaningsKo": [
       "젖"
@@ -1216,8 +1387,13 @@
         "kana": "ち"
       }
     ],
-    "examples": [],
-    "hint": "Cleat·아이(子)·Umbrella이 모여 ‘젖’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "母乳は赤ちゃんにとって大切だ。",
+        "kana": "",
+        "ko": "모유는 아기에게 매우 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_645",
@@ -1226,7 +1402,6 @@
     "literal": "灰",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "灰",
     "koreanMeaning": "재 회",
     "meaningsKo": [
       "재"
@@ -1241,8 +1416,13 @@
         "kana": "はい"
       }
     ],
-    "examples": [],
-    "hint": "언덕(厂)·불(火)이 모여 ‘재’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "灰を捨てる場所を探している。",
+        "kana": "",
+        "ko": "재를 버릴 장소를 찾고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_646",
@@ -1251,7 +1431,6 @@
     "literal": "印",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "印",
     "koreanMeaning": "도장 인",
     "meaningsKo": [
       "도장"
@@ -1272,8 +1451,13 @@
         "kana": "しるす"
       }
     ],
-    "examples": [],
-    "hint": "Comb·Stamp이 모여 ‘도장’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この書類に印を押してください。",
+        "kana": "",
+        "ko": "이 서류에 도장을 찍어주세요."
+      }
+    ]
   },
   {
     "id": "kanji_647",
@@ -1282,7 +1466,6 @@
     "literal": "将",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "将",
     "koreanMeaning": "장수 장",
     "meaningsKo": [
       "장수"
@@ -1312,8 +1495,13 @@
         "kana": "もって"
       }
     ],
-    "examples": [],
-    "hint": "Commander의 뜻·모양에서 ‘장수’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼は将軍のように勇敢だ。",
+        "kana": "",
+        "ko": "그는 장군처럼 용감하다."
+      }
+    ]
   },
   {
     "id": "kanji_648",
@@ -1322,7 +1510,6 @@
     "literal": "比",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "比",
     "koreanMeaning": "견줄 비",
     "meaningsKo": [
       "견줄"
@@ -1337,8 +1524,13 @@
         "kana": "くらべる"
       }
     ],
-    "examples": [],
-    "hint": "Compare의 뜻·모양에서 ‘견줄’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼女は他の人と比べても優れている。",
+        "kana": "",
+        "ko": "그녀는 다른 사람들과 비교해도 뛰어나다."
+      }
+    ]
   },
   {
     "id": "kanji_649",
@@ -1347,7 +1539,6 @@
     "literal": "専",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "専",
     "koreanMeaning": "오로지 전",
     "meaningsKo": [
       "오로지"
@@ -1362,8 +1553,13 @@
         "kana": "もっぱら"
       }
     ],
-    "examples": [],
-    "hint": "Cross·논(田)·Measurement이 모여 ‘오로지’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は専ら趣味に時間を使っている。",
+        "kana": "",
+        "ko": "그는 오로지 취미에 시간을 쓰고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_650",
@@ -1372,7 +1568,6 @@
     "literal": "域",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "域",
     "koreanMeaning": "지경 역",
     "meaningsKo": [
       "지경"
@@ -1383,8 +1578,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Dirt·Drunkard·입(口)이 모여 ‘지경’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この地域は観光地として有名だ。",
+        "kana": "",
+        "ko": "이 지역은 관광지로 유명하다."
+      }
+    ]
   },
   {
     "id": "kanji_651",
@@ -1393,7 +1593,6 @@
     "literal": "均",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "均",
     "koreanMeaning": "고를 균",
     "meaningsKo": [
       "고를"
@@ -1408,8 +1607,13 @@
         "kana": "ならす"
       }
     ],
-    "examples": [],
-    "hint": "Dirt·Pool·Drop이 모여 ‘고를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "すべてのメンバーは均等に分けられた。",
+        "kana": "",
+        "ko": "모든 멤버는 고르게 나누어졌다."
+      }
+    ]
   },
   {
     "id": "kanji_652",
@@ -1418,7 +1622,6 @@
     "literal": "城",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "城",
     "koreanMeaning": "재 성",
     "meaningsKo": [
       "재"
@@ -1436,8 +1639,13 @@
         "kana": "しろ"
       }
     ],
-    "examples": [],
-    "hint": "Dirt·Become이 모여 ‘재’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "日本には多くの城がある。",
+        "kana": "",
+        "ko": "일본에는 많은 성이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_653",
@@ -1446,7 +1654,6 @@
     "literal": "埋",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "埋",
     "koreanMeaning": "묻을 매",
     "meaningsKo": [
       "묻을"
@@ -1476,8 +1683,13 @@
         "kana": "いける"
       }
     ],
-    "examples": [],
-    "hint": "Dirt·고을(阝)이 모여 ‘묻을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は庭に木を埋めた。",
+        "kana": "",
+        "ko": "그는 정원에 나무를 묻었다."
+      }
+    ]
   },
   {
     "id": "kanji_654",
@@ -1486,7 +1698,6 @@
     "literal": "封",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "封",
     "koreanMeaning": "봉할 봉",
     "meaningsKo": [
       "봉할"
@@ -1500,8 +1711,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Dirt·Measurement이 모여 ‘봉할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この手紙は封をされている。",
+        "kana": "",
+        "ko": "이 편지는 봉해져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_655",
@@ -1510,7 +1726,6 @@
     "literal": "塩",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "塩",
     "koreanMeaning": "소금 염",
     "meaningsKo": [
       "소금"
@@ -1525,8 +1740,13 @@
         "kana": "しお"
       }
     ],
-    "examples": [],
-    "hint": "Dirt·창·입(口)이 모여 ‘소금’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "料理には塩が必要だ。",
+        "kana": "",
+        "ko": "요리에는 소금이 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_656",
@@ -1535,7 +1755,6 @@
     "literal": "塔",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "塔",
     "koreanMeaning": "탑 탑",
     "meaningsKo": [
       "탑"
@@ -1546,8 +1765,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Dirt·Flowers·Suit이 모여 ‘탑’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "その塔はとても高い。",
+        "kana": "",
+        "ko": "그 탑은 매우 높다."
+      }
+    ]
   },
   {
     "id": "kanji_657",
@@ -1556,7 +1780,6 @@
     "literal": "欧",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "欧",
     "koreanMeaning": "구라파 구",
     "meaningsKo": [
       "구라파"
@@ -1574,8 +1797,13 @@
         "kana": "はく"
       }
     ],
-    "examples": [],
-    "hint": "District·하품(欠)이 모여 ‘토할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は欧米の文化に興味がある。",
+        "kana": "",
+        "ko": "그는 유럽과 미국의 문화에 관심이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_658",
@@ -1584,7 +1812,6 @@
     "literal": "戸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "戸",
     "koreanMeaning": "집 호",
     "meaningsKo": [
       "집"
@@ -1599,8 +1826,13 @@
         "kana": "と"
       }
     ],
-    "examples": [],
-    "hint": "Door의 뜻·모양에서 ‘집’을 나타냄"
+    "examples": [
+      {
+        "jp": "戸が開いているので、気をつけてください。",
+        "kana": "",
+        "ko": "문이 열려 있으니 조심하세요."
+      }
+    ]
   },
   {
     "id": "kanji_659",
@@ -1609,7 +1841,6 @@
     "literal": "肩",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "肩",
     "koreanMeaning": "어깨 견",
     "meaningsKo": [
       "어깨"
@@ -1624,8 +1855,13 @@
         "kana": "かた"
       }
     ],
-    "examples": [],
-    "hint": "Door·달(月)이 모여 ‘어깨’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "肩が痛いので、マッサージを受けたい。",
+        "kana": "",
+        "ko": "어깨가 아파서 마사지 받고 싶다."
+      }
+    ]
   },
   {
     "id": "kanji_660",
@@ -1634,7 +1870,6 @@
     "literal": "州",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "州",
     "koreanMeaning": "고을 주",
     "meaningsKo": [
       "고을"
@@ -1652,8 +1887,13 @@
         "kana": "す"
       }
     ],
-    "examples": [],
-    "hint": "Drop·River이 모여 ‘고을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は州の議員として働いている。",
+        "kana": "",
+        "ko": "그는 주의원으로 일하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_661",
@@ -1662,7 +1902,6 @@
     "literal": "奥",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "奥",
     "koreanMeaning": "깊을 오",
     "meaningsKo": [
       "깊을"
@@ -1683,8 +1922,13 @@
         "kana": "くま"
       }
     ],
-    "examples": [],
-    "hint": "Drop·Head·벼(禾)이 모여 ‘깊을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この川の奥には美しい景色が広がっている。",
+        "kana": "",
+        "ko": "이 강의 깊은 곳에는 아름다운 풍경이 펼쳐져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_662",
@@ -1693,7 +1937,6 @@
     "literal": "象",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "象",
     "koreanMeaning": "코끼리 상",
     "meaningsKo": [
       "코끼리"
@@ -1711,8 +1954,13 @@
         "kana": "かたどる"
       }
     ],
-    "examples": [],
-    "hint": "Elephant의 뜻·모양에서 ‘코끼리’을 나타냄"
+    "examples": [
+      {
+        "jp": "公園の像はとても大きいコンクリートの象だ。",
+        "kana": "",
+        "ko": "공원의 조각상은 아주 큰 콘크리트 코끼리이다."
+      }
+    ]
   },
   {
     "id": "kanji_663",
@@ -1721,7 +1969,6 @@
     "literal": "県",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "県",
     "koreanMeaning": "고을 현",
     "meaningsKo": [
       "고을"
@@ -1736,8 +1983,13 @@
         "kana": "かける"
       }
     ],
-    "examples": [],
-    "hint": "눈(目)·Lion·작을(小)이 모여 ‘매달’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "私の住んでいる県は海に面している。",
+        "kana": "",
+        "ko": "내가 살고 있는 고을은 바다에 면해 있다."
+      }
+    ]
   },
   {
     "id": "kanji_664",
@@ -1746,7 +1998,6 @@
     "literal": "省",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "省",
     "koreanMeaning": "살필 성/덜 생",
     "meaningsKo": [
       "살필",
@@ -1768,8 +2019,13 @@
         "kana": "はぶく"
       }
     ],
-    "examples": [],
-    "hint": "Few·눈(目)이 모여 ‘살필’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "過去を省みることは大切だ。",
+        "kana": "",
+        "ko": "과거를 살펴보는 것은 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_665",
@@ -1778,7 +2034,6 @@
     "literal": "技",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "技",
     "koreanMeaning": "재주 기",
     "meaningsKo": [
       "재주"
@@ -1793,8 +2048,13 @@
         "kana": "わざ"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Branch이 모여 ‘재주’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は優れた技を持っている。",
+        "kana": "",
+        "ko": "그는 뛰어난 재주를 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_666",
@@ -1803,7 +2063,6 @@
     "literal": "捜",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "捜",
     "koreanMeaning": "찾을 수",
     "meaningsKo": [
       "찾을"
@@ -1824,8 +2083,13 @@
         "kana": "さがす"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Humble·Stool이 모여 ‘찾을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "迷子になった犬を捜している。",
+        "kana": "",
+        "ko": "길 잃은 개를 찾고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_667",
@@ -1834,7 +2098,6 @@
     "literal": "採",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "採",
     "koreanMeaning": "캘 채",
     "meaningsKo": [
       "캘"
@@ -1849,8 +2112,13 @@
         "kana": "とる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Cleat·나무(木)이 모여 ‘캘’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい職を採用する予定です。",
+        "kana": "",
+        "ko": "새로운 직원을 채용할 예정입니다."
+      }
+    ]
   },
   {
     "id": "kanji_668",
@@ -1859,7 +2127,6 @@
     "literal": "換",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "換",
     "koreanMeaning": "바꿀 환",
     "meaningsKo": [
       "바꿀"
@@ -1877,8 +2144,13 @@
         "kana": "かわる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Prison·입(口)이 모여 ‘바꿀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "古い家具と換えるつもりです。",
+        "kana": "",
+        "ko": "오래된 가구와 바꿀 생각입니다."
+      }
+    ]
   },
   {
     "id": "kanji_669",
@@ -1887,7 +2159,6 @@
     "literal": "損",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "損",
     "koreanMeaning": "덜 손",
     "meaningsKo": [
       "덜"
@@ -1905,8 +2176,13 @@
         "kana": "そこねる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Member이 모여 ‘덜’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "無駄な時間を損したくない。",
+        "kana": "",
+        "ko": "헛된 시간을 낭비하고 싶지 않다."
+      }
+    ]
   },
   {
     "id": "kanji_670",
@@ -1915,7 +2191,6 @@
     "literal": "掃",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "掃",
     "koreanMeaning": "쓸 소",
     "meaningsKo": [
       "쓸"
@@ -1933,8 +2208,13 @@
         "kana": "はく"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Wolverine·Forehead이 모여 ‘쓸’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "部屋を掃除するのは面倒だ。",
+        "kana": "",
+        "ko": "방 청소하는 것은 귀찮다."
+      }
+    ]
   },
   {
     "id": "kanji_671",
@@ -1943,7 +2223,6 @@
     "literal": "掘",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "掘",
     "koreanMeaning": "팔 굴",
     "meaningsKo": [
       "팔"
@@ -1958,8 +2237,13 @@
         "kana": "ほる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·깃발(方)·Exit이 모여 ‘팔’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "庭で穴を掘っている。",
+        "kana": "",
+        "ko": "정원에서 구멍을 팔고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_672",
@@ -1968,7 +2252,6 @@
     "literal": "捨",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "捨",
     "koreanMeaning": "버릴 사",
     "meaningsKo": [
       "버릴"
@@ -1983,8 +2266,13 @@
         "kana": "すてる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Cottage이 모여 ‘버릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "使わないものを捨ててしまった。",
+        "kana": "",
+        "ko": "사용하지 않는 것을 버렸다."
+      }
+    ]
   },
   {
     "id": "kanji_673",
@@ -1993,7 +2281,6 @@
     "literal": "挟",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "挟",
     "koreanMeaning": "낄 협",
     "meaningsKo": [
       "낄"
@@ -2020,8 +2307,13 @@
         "kana": "さしはさむ"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Husband·뿔이 모여 ‘낄’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "本を挟んでいると、ページがめくれない。",
+        "kana": "",
+        "ko": "책을 끼고 있으면 페이지가 넘어가지 않는다."
+      }
+    ]
   },
   {
     "id": "kanji_674",
@@ -2030,7 +2322,6 @@
     "literal": "爆",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "爆",
     "koreanMeaning": "터질 폭",
     "meaningsKo": [
       "터질"
@@ -2045,8 +2336,13 @@
         "kana": "はぜる"
       }
     ],
-    "examples": [],
-    "hint": "불(火)·Violence이 모여 ‘터질’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "花火が空で爆発した。",
+        "kana": "",
+        "ko": "불꽃놀이가 하늘에서 터졌다."
+      }
+    ]
   },
   {
     "id": "kanji_675",
@@ -2055,7 +2351,6 @@
     "literal": "燃",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "燃",
     "koreanMeaning": "불탈 연",
     "meaningsKo": [
       "불탈"
@@ -2076,8 +2371,13 @@
         "kana": "もす"
       }
     ],
-    "examples": [],
-    "hint": "불(火)·Nature이 모여 ‘불탈’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "火が燃え盛っている。",
+        "kana": "",
+        "ko": "불이 활활 타오르고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_676",
@@ -2086,7 +2386,6 @@
     "literal": "燥",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "燥",
     "koreanMeaning": "마를 조",
     "meaningsKo": [
       "마를"
@@ -2101,8 +2400,13 @@
         "kana": "はしゃぐ"
       }
     ],
-    "examples": [],
-    "hint": "불(火)·Syrup이 모여 ‘마를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "夏になると、空が燥ぎ始める。",
+        "kana": "",
+        "ko": "여름이 되면 하늘이 마르기 시작한다."
+      }
+    ]
   },
   {
     "id": "kanji_677",
@@ -2111,7 +2415,6 @@
     "literal": "届",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "届",
     "koreanMeaning": "이를 계",
     "meaningsKo": [
       "이를"
@@ -2132,8 +2435,13 @@
         "kana": "とどく"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方)·Reason이 모여 ‘이를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "手紙は明日届く予定です。",
+        "kana": "",
+        "ko": "편지는 내일 도착할 예정입니다."
+      }
+    ]
   },
   {
     "id": "kanji_678",
@@ -2142,7 +2450,6 @@
     "literal": "殿",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "殿",
     "koreanMeaning": "전각 전",
     "meaningsKo": [
       "전각"
@@ -2163,8 +2470,13 @@
         "kana": "どの"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方)·Together·Weapon이 모여 ‘전각’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この殿は昔の城の一部です。",
+        "kana": "",
+        "ko": "이 전각은 옛 성의 일부입니다."
+      }
+    ]
   },
   {
     "id": "kanji_679",
@@ -2173,7 +2485,6 @@
     "literal": "刷",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "刷",
     "koreanMeaning": "인쇄할 쇄",
     "meaningsKo": [
       "인쇄할"
@@ -2194,8 +2505,13 @@
         "kana": "はく"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方)·수건(巾)·칼(刀)이 모여 ‘인쇄할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい本が刷り上がった。",
+        "kana": "",
+        "ko": "새로운 책이 인쇄되었다."
+      }
+    ]
   },
   {
     "id": "kanji_680",
@@ -2204,7 +2520,6 @@
     "literal": "芸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "芸",
     "koreanMeaning": "재주 예",
     "meaningsKo": [
       "재주"
@@ -2228,8 +2543,13 @@
         "kana": "わざ"
       }
     ],
-    "examples": [],
-    "hint": "Flowers·Cloud이 모여 ‘평지’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は芸を磨くために毎日練習する。",
+        "kana": "",
+        "ko": "그는 재주를 다듬기 위해 매일 연습한다."
+      }
+    ]
   },
   {
     "id": "kanji_681",
@@ -2238,7 +2558,6 @@
     "literal": "薄",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "薄",
     "koreanMeaning": "엷을 박",
     "meaningsKo": [
       "엷을"
@@ -2274,8 +2593,13 @@
         "kana": "すすき"
       }
     ],
-    "examples": [],
-    "hint": "Flowers·물(氵)·Specialty이 모여 ‘엷을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このシャツは薄い生地でできている。",
+        "kana": "",
+        "ko": "이 셔츠는 얇은 원단으로 만들어져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_682",
@@ -2284,7 +2608,6 @@
     "literal": "荒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "荒",
     "koreanMeaning": "거칠 황",
     "meaningsKo": [
       "거칠"
@@ -2314,8 +2637,13 @@
         "kana": "すさむ"
       }
     ],
-    "examples": [],
-    "hint": "Flowers·Death·River이 모여 ‘거칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "荒れた海で船が揺れている。",
+        "kana": "",
+        "ko": "거친 바다에서 배가 흔들리고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_683",
@@ -2324,7 +2652,6 @@
     "literal": "菜",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "菜",
     "koreanMeaning": "나물 채",
     "meaningsKo": [
       "나물"
@@ -2339,8 +2666,13 @@
         "kana": "な"
       }
     ],
-    "examples": [],
-    "hint": "Flowers·Cleat·나무(木)이 모여 ‘나물’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "菜を使った健康的な料理を作ります。",
+        "kana": "",
+        "ko": "나물을 사용한 건강한 요리를 만들겠습니다."
+      }
+    ]
   },
   {
     "id": "kanji_684",
@@ -2349,7 +2681,6 @@
     "literal": "菓",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "菓",
     "koreanMeaning": "실과 과",
     "meaningsKo": [
       "실과"
@@ -2360,8 +2691,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Flowers·Fruit이 모여 ‘실과’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は甘い菓子を作るのが得意だ。",
+        "kana": "",
+        "ko": "그녀는 달콤한 과자를 만드는 데 능숙하다."
+      }
+    ]
   },
   {
     "id": "kanji_685",
@@ -2370,7 +2706,6 @@
     "literal": "跡",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "跡",
     "koreanMeaning": "발자취 적",
     "meaningsKo": [
       "발자취"
@@ -2385,8 +2720,13 @@
         "kana": "あと"
       }
     ],
-    "examples": [],
-    "hint": "발(足)·붉을(赤)이 모여 ‘발자취’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "公園には子供たちの跡が残っていた。",
+        "kana": "",
+        "ko": "공원에는 아이들의 발자취가 남아 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_686",
@@ -2395,7 +2735,6 @@
     "literal": "踊",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "踊",
     "koreanMeaning": "뛸 용",
     "meaningsKo": [
       "뛸"
@@ -2410,8 +2749,13 @@
         "kana": "おどる"
       }
     ],
-    "examples": [],
-    "hint": "발(足)·Mama·Task이 모여 ‘뛸’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は音楽に合わせて踊り始めた。",
+        "kana": "",
+        "ko": "그는 음악에 맞춰 춤추기 시작했다."
+      }
+    ]
   },
   {
     "id": "kanji_687",
@@ -2420,7 +2764,6 @@
     "literal": "軍",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "軍",
     "koreanMeaning": "군사 군",
     "meaningsKo": [
       "군사"
@@ -2435,8 +2778,13 @@
         "kana": "いくさ"
       }
     ],
-    "examples": [],
-    "hint": "Forehead·수레(車)이 모여 ‘군사’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "軍は新しい戦略を考えている。",
+        "kana": "",
+        "ko": "군은 새로운 전략을 구상하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_688",
@@ -2445,7 +2793,6 @@
     "literal": "占",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "占",
     "koreanMeaning": "점령할 점/점칠 점",
     "meaningsKo": [
       "점령할",
@@ -2464,8 +2811,13 @@
         "kana": "うらなう"
       }
     ],
-    "examples": [],
-    "hint": "Fortune의 뜻·모양에서 ‘점령할’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼は占いで未来を知りたがっている。",
+        "kana": "",
+        "ko": "그는 점술로 미래를 알고 싶어한다."
+      }
+    ]
   },
   {
     "id": "kanji_689",
@@ -2474,7 +2826,6 @@
     "literal": "巨",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "巨",
     "koreanMeaning": "클 거/어찌 거",
     "meaningsKo": [
       "클",
@@ -2486,8 +2837,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Giant의 뜻·모양에서 ‘클’을 나타냄"
+    "examples": [
+      {
+        "jp": "巨人のような体格の選手がいる。",
+        "kana": "",
+        "ko": "거대한 체격의 선수가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_690",
@@ -2496,7 +2852,6 @@
     "literal": "録",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "録",
     "koreanMeaning": "기록할 록",
     "meaningsKo": [
       "기록할"
@@ -2514,8 +2869,13 @@
         "kana": "とる"
       }
     ],
-    "examples": [],
-    "hint": "쇠(金)·Wolverine·물(水)이 모여 ‘기록할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このデータを録音するのを忘れた。",
+        "kana": "",
+        "ko": "이 데이터를 기록하는 것을 잊었다."
+      }
+    ]
   },
   {
     "id": "kanji_691",
@@ -2524,7 +2884,6 @@
     "literal": "鉄",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鉄",
     "koreanMeaning": "쇠 철",
     "meaningsKo": [
       "쇠"
@@ -2539,8 +2898,13 @@
         "kana": "くろがね"
       }
     ],
-    "examples": [],
-    "hint": "쇠(金)·Fault이 모여 ‘쇠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "鉄は建物の強度を高めるために使われる。",
+        "kana": "",
+        "ko": "철은 건물의 강도를 높이기 위해 사용된다."
+      }
+    ]
   },
   {
     "id": "kanji_692",
@@ -2549,7 +2913,6 @@
     "literal": "鉱",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鉱",
     "koreanMeaning": "쇳돌 광",
     "meaningsKo": [
       "쇳돌"
@@ -2564,8 +2927,13 @@
         "kana": "あらがね"
       }
     ],
-    "examples": [],
-    "hint": "쇠(金)·Wide이 모여 ‘쇳돌’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "鉱山では多くの鉱石が採掘される。",
+        "kana": "",
+        "ko": "광산에서는 많은 광석이 채굴된다."
+      }
+    ]
   },
   {
     "id": "kanji_693",
@@ -2574,7 +2942,6 @@
     "literal": "鋭",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鋭",
     "koreanMeaning": "날카로울 예",
     "meaningsKo": [
       "날카로울"
@@ -2589,8 +2956,13 @@
         "kana": "するどい"
       }
     ],
-    "examples": [],
-    "hint": "쇠(金)·Guard이 모여 ‘날카로울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "鋭いナイフで野菜を切ると、きれいに切れる。",
+        "kana": "",
+        "ko": "날카로운 칼로 채소를 자르면 깨끗하게 잘린다."
+      }
+    ]
   },
   {
     "id": "kanji_694",
@@ -2599,7 +2971,6 @@
     "literal": "鈍",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鈍",
     "koreanMeaning": "둔할 둔",
     "meaningsKo": [
       "둔할"
@@ -2626,8 +2997,13 @@
         "kana": "なまくら"
       }
     ],
-    "examples": [],
-    "hint": "쇠(金)·Barracks이 모여 ‘둔할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "鈍い刃物は使うのが難しい。",
+        "kana": "",
+        "ko": "둔한 칼은 사용하기 어렵다."
+      }
+    ]
   },
   {
     "id": "kanji_695",
@@ -2636,7 +3012,6 @@
     "literal": "秒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "秒",
     "koreanMeaning": "분초 초",
     "meaningsKo": [
       "분초"
@@ -2647,8 +3022,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Grain·Few이 모여 ‘분초’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "待っている間に、二秒が過ぎた。",
+        "kana": "",
+        "ko": "기다리는 동안 두 초가 지나갔다."
+      }
+    ]
   },
   {
     "id": "kanji_696",
@@ -2657,7 +3037,6 @@
     "literal": "募",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "募",
     "koreanMeaning": "모을 모",
     "meaningsKo": [
       "모을"
@@ -2672,8 +3051,13 @@
         "kana": "つのる"
       }
     ],
-    "examples": [],
-    "hint": "Greenhouse·힘(力)이 모여 ‘모을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このイベントでは多くのボランティアを募集中だ。",
+        "kana": "",
+        "ko": "이 이벤트에서는 많은 자원봉사자를 모집 중이다."
+      }
+    ]
   },
   {
     "id": "kanji_697",
@@ -2682,7 +3066,6 @@
     "literal": "額",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "額",
     "koreanMeaning": "이마 액",
     "meaningsKo": [
       "이마"
@@ -2697,8 +3080,13 @@
         "kana": "ひたい"
       }
     ],
-    "examples": [],
-    "hint": "Guest·Geoduck이 모여 ‘이마’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の額には汗が流れていた。",
+        "kana": "",
+        "ko": "그의 이마에는 땀이 흐르고 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_698",
@@ -2707,7 +3095,6 @@
     "literal": "尊",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "尊",
     "koreanMeaning": "높을 존",
     "meaningsKo": [
       "높을"
@@ -2731,8 +3118,13 @@
         "kana": "とうとぶ"
       }
     ],
-    "examples": [],
-    "hint": "뿔·Alcohol·Measurement이 모여 ‘높을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "尊敬する人からのアドバイスは貴重だ。",
+        "kana": "",
+        "ko": "존경하는 사람의 조언은 귀중하다."
+      }
+    ]
   },
   {
     "id": "kanji_699",
@@ -2741,7 +3133,6 @@
     "literal": "瓶",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "瓶",
     "koreanMeaning": "병 병",
     "meaningsKo": [
       "병"
@@ -2756,8 +3147,13 @@
         "kana": "かめ"
       }
     ],
-    "examples": [],
-    "hint": "뿔·Lantern·Ten Thousand이 모여 ‘병’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "ワインは瓶に入れて保存する。",
+        "kana": "",
+        "ko": "와인은 병에 담아 보관한다."
+      }
+    ]
   },
   {
     "id": "kanji_700",
@@ -2766,7 +3162,6 @@
     "literal": "駐",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "駐",
     "koreanMeaning": "머무를 주",
     "meaningsKo": [
       "머무를"
@@ -2777,8 +3172,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "말(馬)·Master이 모여 ‘머무를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "駐車場には多くの車が止まっていた。",
+        "kana": "",
+        "ko": "주차장에는 많은 차가 주차되어 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_701",
@@ -2787,7 +3187,6 @@
     "literal": "替",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "替",
     "koreanMeaning": "바꿀 체",
     "meaningsKo": [
       "바꿀"
@@ -2808,8 +3207,13 @@
         "kana": "かわる"
       }
     ],
-    "examples": [],
-    "hint": "Husband·날(日)이 모여 ‘바꿀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "古いお金を新しいものに替える必要がある。",
+        "kana": "",
+        "ko": "낡은 돈을 새 것으로 바꿀 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_702",
@@ -2818,7 +3222,6 @@
     "literal": "凍",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "凍",
     "koreanMeaning": "얼 동",
     "meaningsKo": [
       "얼"
@@ -2845,8 +3248,13 @@
         "kana": "しみる"
       }
     ],
-    "examples": [],
-    "hint": "얼음(冫)·East이 모여 ‘얼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "冬になると水は凍ることがある。",
+        "kana": "",
+        "ko": "겨울이 되면 물이 얼 수 있다."
+      }
+    ]
   },
   {
     "id": "kanji_703",
@@ -2855,7 +3263,6 @@
     "literal": "装",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "装",
     "koreanMeaning": "꾸밀 장",
     "meaningsKo": [
       "꾸밀"
@@ -2876,8 +3283,13 @@
         "kana": "よそおい"
       }
     ],
-    "examples": [],
-    "hint": "Icicle·Samurai·옷(衣)이 모여 ‘꾸밀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "パーティーのために服装を装う。",
+        "kana": "",
+        "ko": "파티를 위해 옷차림을 꾸민다."
+      }
+    ]
   },
   {
     "id": "kanji_704",
@@ -2886,7 +3298,6 @@
     "literal": "虫",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "虫",
     "koreanMeaning": "벌레 충",
     "meaningsKo": [
       "벌레"
@@ -2904,8 +3315,13 @@
         "kana": "むし"
       }
     ],
-    "examples": [],
-    "hint": "벌레(虫)의 뜻·모양에서 ‘벌레’을 나타냄"
+    "examples": [
+      {
+        "jp": "夏になると虫がたくさん出てくる。",
+        "kana": "",
+        "ko": "여름이 되면 벌레가 많이 나온다."
+      }
+    ]
   },
   {
     "id": "kanji_705",
@@ -2914,7 +3330,6 @@
     "literal": "介",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "介",
     "koreanMeaning": "낄 개/낱 개",
     "meaningsKo": [
       "낄",
@@ -2926,8 +3341,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Jammed In의 뜻·모양에서 ‘낄’을 나타냄"
+    "examples": [
+      {
+        "jp": "介護の仕事はやりがいがある。",
+        "kana": "",
+        "ko": "간호 일은 보람이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_706",
@@ -2936,7 +3356,6 @@
     "literal": "珍",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "珍",
     "koreanMeaning": "보배 진",
     "meaningsKo": [
       "보배"
@@ -2954,8 +3373,13 @@
         "kana": "たから"
       }
     ],
-    "examples": [],
-    "hint": "임금(王)·Hat·Hair이 모여 ‘보배’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この珍しい宝石はとても高価だ。",
+        "kana": "",
+        "ko": "이 희귀한 보석은 매우 비쌉니다."
+      }
+    ]
   },
   {
     "id": "kanji_707",
@@ -2964,7 +3388,6 @@
     "literal": "低",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "低",
     "koreanMeaning": "낮을 저",
     "meaningsKo": [
       "낮을"
@@ -2985,8 +3408,13 @@
         "kana": "ひくまる"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·Clan·Ground이 모여 ‘낮을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この山は低くて登りやすい。",
+        "kana": "",
+        "ko": "이 산은 낮아서 오르기 쉽다."
+      }
+    ]
   },
   {
     "id": "kanji_708",
@@ -2995,7 +3423,6 @@
     "literal": "仏",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "仏",
     "koreanMeaning": "부처 불",
     "meaningsKo": [
       "부처"
@@ -3013,8 +3440,13 @@
         "kana": "ほとけ"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·사사로울(ム)이 모여 ‘부처’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "仏教の教えは多くの人に影響を与えている。",
+        "kana": "",
+        "ko": "불교의 가르침은 많은 사람들에게 영향을 미친다."
+      }
+    ]
   },
   {
     "id": "kanji_709",
@@ -3023,7 +3455,6 @@
     "literal": "像",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "像",
     "koreanMeaning": "모양 상",
     "meaningsKo": [
       "모양"
@@ -3034,8 +3465,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사람(亻)·Elephant이 모여 ‘모양’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "公園に大きな像が立っている。",
+        "kana": "",
+        "ko": "공원에 큰 동상이 세워져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_710",
@@ -3044,7 +3480,6 @@
     "literal": "依",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "依",
     "koreanMeaning": "의지할 의",
     "meaningsKo": [
       "의지할"
@@ -3062,8 +3497,13 @@
         "kana": "よる"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·옷(衣)이 모여 ‘의지할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "天気予報は雨に依ると予測している。",
+        "kana": "",
+        "ko": "기상예보는 비에 의존한다고 예측하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_711",
@@ -3072,7 +3512,6 @@
     "literal": "伺",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "伺",
     "koreanMeaning": "엿볼 사",
     "meaningsKo": [
       "엿볼"
@@ -3087,8 +3526,13 @@
         "kana": "うかがう"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·Director이 모여 ‘엿볼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の様子を伺ってみる。",
+        "kana": "",
+        "ko": "그의 모습을 엿보아 보겠다."
+      }
+    ]
   },
   {
     "id": "kanji_712",
@@ -3097,7 +3541,6 @@
     "literal": "革",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "革",
     "koreanMeaning": "가죽 혁",
     "meaningsKo": [
       "가죽"
@@ -3112,8 +3555,13 @@
         "kana": "かわ"
       }
     ],
-    "examples": [],
-    "hint": "Leather의 뜻·모양에서 ‘가죽’을 나타냄"
+    "examples": [
+      {
+        "jp": "この革の財布は長持ちする。",
+        "kana": "",
+        "ko": "이 가죽 지갑은 오래간다."
+      }
+    ]
   },
   {
     "id": "kanji_713",
@@ -3122,7 +3570,6 @@
     "literal": "麦",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "麦",
     "koreanMeaning": "보리 맥",
     "meaningsKo": [
       "보리"
@@ -3137,8 +3584,13 @@
         "kana": "むぎ"
       }
     ],
-    "examples": [],
-    "hint": "Life·Winter이 모여 ‘보리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "麦を使ったパンは栄養が豊富だ。",
+        "kana": "",
+        "ko": "보리를 사용한 빵은 영양이 풍부하다."
+      }
+    ]
   },
   {
     "id": "kanji_714",
@@ -3147,7 +3599,6 @@
     "literal": "普",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "普",
     "koreanMeaning": "넓을 보",
     "meaningsKo": [
       "넓을"
@@ -3165,8 +3616,13 @@
         "kana": "あまねし"
       }
     ],
-    "examples": [],
-    "hint": "Line Up·날(日)이 모여 ‘넓을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "普段はこの道を使っている。",
+        "kana": "",
+        "ko": "평소에는 이 길을 이용하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_715",
@@ -3175,7 +3631,6 @@
     "literal": "復",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "復",
     "koreanMeaning": "회복할 복/다시 부",
     "meaningsKo": [
       "회복할",
@@ -3191,8 +3646,13 @@
         "kana": "また"
       }
     ],
-    "examples": [],
-    "hint": "Loiter·Black Hole이 모여 ‘회복할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は健康を復たせるために運動している。",
+        "kana": "",
+        "ko": "그는 건강을 회복하기 위해 운동하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_716",
@@ -3201,7 +3661,6 @@
     "literal": "律",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "律",
     "koreanMeaning": "법칙 률",
     "meaningsKo": [
       "법칙"
@@ -3218,8 +3677,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Loiter·Brush이 모여 ‘법칙’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "音楽の律は心を落ち着かせる。",
+        "kana": "",
+        "ko": "음악의 리듬은 마음을 안정시킨다."
+      }
+    ]
   },
   {
     "id": "kanji_717",
@@ -3228,7 +3692,6 @@
     "literal": "勇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "勇",
     "koreanMeaning": "날랠 용",
     "meaningsKo": [
       "날랠"
@@ -3243,8 +3706,13 @@
         "kana": "いさむ"
       }
     ],
-    "examples": [],
-    "hint": "Mama·Man이 모여 ‘날랠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "勇気を出して話しかけることが大切だ。",
+        "kana": "",
+        "ko": "용기를 내서 말을 거는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_718",
@@ -3253,7 +3721,6 @@
     "literal": "効",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "効",
     "koreanMeaning": "본받을 효",
     "meaningsKo": [
       "본받을"
@@ -3274,8 +3741,13 @@
         "kana": "ならう"
       }
     ],
-    "examples": [],
-    "hint": "Mix·힘(力)이 모여 ‘본받을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この薬は病気に効くと言われている。",
+        "kana": "",
+        "ko": "이 약은 병에 효과가 있다고 알려져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_719",
@@ -3284,7 +3756,6 @@
     "literal": "郊",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "郊",
     "koreanMeaning": "들 교",
     "meaningsKo": [
       "들"
@@ -3295,8 +3766,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Mix·마을(阝)이 모여 ‘들’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "郊外には美しい自然が広がっている。",
+        "kana": "",
+        "ko": "교외에는 아름다운 자연이 펼쳐져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_720",
@@ -3305,7 +3781,6 @@
     "literal": "脳",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "脳",
     "koreanMeaning": "골 뇌",
     "meaningsKo": [
       "골"
@@ -3323,8 +3798,13 @@
         "kana": "のうずる"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·풀(艹)·Treasure Chest이 모여 ‘골’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "脳の働きはとても複雑だ。",
+        "kana": "",
+        "ko": "뇌의 작용은 매우 복잡하다."
+      }
+    ]
   },
   {
     "id": "kanji_721",
@@ -3333,7 +3813,6 @@
     "literal": "臓",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "臓",
     "koreanMeaning": "오장 장",
     "meaningsKo": [
       "오장"
@@ -3348,8 +3827,13 @@
         "kana": "はらわた"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·Storehouse이 모여 ‘오장’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "臓器移植は非常に難しい手術だ。",
+        "kana": "",
+        "ko": "장기 이식은 매우 어려운 수술이다."
+      }
+    ]
   },
   {
     "id": "kanji_722",
@@ -3358,7 +3842,6 @@
     "literal": "胸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "胸",
     "koreanMeaning": "가슴 흉",
     "meaningsKo": [
       "가슴"
@@ -3376,8 +3859,13 @@
         "kana": "むな"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·Prison·Treasure Chest이 모여 ‘가슴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は胸がいっぱいになった。",
+        "kana": "",
+        "ko": "그는 가슴이 벅차올랐다."
+      }
+    ]
   },
   {
     "id": "kanji_723",
@@ -3386,7 +3874,6 @@
     "literal": "腕",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "腕",
     "koreanMeaning": "팔뚝 완",
     "meaningsKo": [
       "팔뚝"
@@ -3401,8 +3888,13 @@
         "kana": "うで"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·집(宀)·Evening이 모여 ‘팔뚝’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "重い荷物を持つと腕が疲れる。",
+        "kana": "",
+        "ko": "무거운 짐을 들면 팔이 피곤해진다."
+      }
+    ]
   },
   {
     "id": "kanji_724",
@@ -3411,7 +3903,6 @@
     "literal": "腰",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "腰",
     "koreanMeaning": "허리 요",
     "meaningsKo": [
       "허리"
@@ -3426,8 +3917,13 @@
         "kana": "こし"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·Helicopter·여자(女)이 모여 ‘허리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "腰が痛いので、ゆっくり歩く。",
+        "kana": "",
+        "ko": "허리가 아파서 천천히 걷는다."
+      }
+    ]
   },
   {
     "id": "kanji_725",
@@ -3436,7 +3932,6 @@
     "literal": "脂",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "脂",
     "koreanMeaning": "기름 지",
     "meaningsKo": [
       "기름"
@@ -3451,8 +3946,13 @@
         "kana": "あぶら"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·숟가락(匕)·날(日)이 모여 ‘기름’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "料理に脂を使うと、味が豊かになる。",
+        "kana": "",
+        "ko": "요리에 기름을 사용하면 맛이 풍부해진다."
+      }
+    ]
   },
   {
     "id": "kanji_726",
@@ -3461,7 +3961,6 @@
     "literal": "肌",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "肌",
     "koreanMeaning": "살가죽 기",
     "meaningsKo": [
       "살가죽"
@@ -3476,8 +3975,13 @@
         "kana": "はだ"
       }
     ],
-    "examples": [],
-    "hint": "달(月)·Table이 모여 ‘살가죽’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "肌が乾燥しているから、クリームを塗る。",
+        "kana": "",
+        "ko": "피부가 건조해서 크림을 바른다."
+      }
+    ]
   },
   {
     "id": "kanji_727",
@@ -3486,7 +3990,6 @@
     "literal": "乾",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "乾",
     "koreanMeaning": "하늘 건/마를 건",
     "meaningsKo": [
       "하늘",
@@ -3517,8 +4020,13 @@
         "kana": "いぬい"
       }
     ],
-    "examples": [],
-    "hint": "Morning·창·Nose이 모여 ‘하늘’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "洗濯物が乾くのを待っている。",
+        "kana": "",
+        "ko": "세탁물이 마르기를 기다리고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_728",
@@ -3527,7 +4035,6 @@
     "literal": "帯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "帯",
     "koreanMeaning": "띠 대",
     "meaningsKo": [
       "띠"
@@ -3545,8 +4052,13 @@
         "kana": "おび"
       }
     ],
-    "examples": [],
-    "hint": "산(山)·Ground·Forehead이 모여 ‘띠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この帯はとても高価だった。",
+        "kana": "",
+        "ko": "이 띠는 매우 비쌌다."
+      }
+    ]
   },
   {
     "id": "kanji_729",
@@ -3555,7 +4067,6 @@
     "literal": "炭",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "炭",
     "koreanMeaning": "숯 탄",
     "meaningsKo": [
       "숯"
@@ -3570,8 +4081,13 @@
         "kana": "すみ"
       }
     ],
-    "examples": [],
-    "hint": "산(山)·언덕(厂)·불(火)이 모여 ‘숯’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "バーベキューで炭を使った。",
+        "kana": "",
+        "ko": "바비큐에서 숯을 사용했다."
+      }
+    ]
   },
   {
     "id": "kanji_730",
@@ -3580,7 +4096,6 @@
     "literal": "団",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "団",
     "koreanMeaning": "둥글 단/경단 단",
     "meaningsKo": [
       "둥글",
@@ -3602,8 +4117,13 @@
         "kana": "まるい"
       }
     ],
-    "examples": [],
-    "hint": "입(口)·Measurement이 모여 ‘둥글’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "団体旅行のプランを考えている。",
+        "kana": "",
+        "ko": "단체 여행 계획을 구상하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_731",
@@ -3612,7 +4132,6 @@
     "literal": "喫",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "喫",
     "koreanMeaning": "먹을 끽",
     "meaningsKo": [
       "먹을"
@@ -3627,8 +4146,13 @@
         "kana": "のむ"
       }
     ],
-    "examples": [],
-    "hint": "입(口)·Life·칼(刂)이 모여 ‘먹을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "友達と一緒に喫茶店に行く。",
+        "kana": "",
+        "ko": "친구와 함께 카페에 간다."
+      }
+    ]
   },
   {
     "id": "kanji_732",
@@ -3637,7 +4161,6 @@
     "literal": "叫",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "叫",
     "koreanMeaning": "부르짖을 규",
     "meaningsKo": [
       "부르짖을"
@@ -3652,8 +4175,13 @@
         "kana": "さけぶ"
       }
     ],
-    "examples": [],
-    "hint": "입(口)·Vines이 모여 ‘부르짖을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は大声で叫んだ。",
+        "kana": "",
+        "ko": "그는 큰 소리로 외쳤다."
+      }
+    ]
   },
   {
     "id": "kanji_733",
@@ -3662,7 +4190,6 @@
     "literal": "咲",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "咲",
     "koreanMeaning": "웃음 소",
     "meaningsKo": [
       "웃음"
@@ -3680,8 +4207,13 @@
         "kana": "ざき"
       }
     ],
-    "examples": [],
-    "hint": "입(口)·뿔·하늘(天)이 모여 ‘웃음’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "桜が咲くのが待ち遠しい。",
+        "kana": "",
+        "ko": "벚꽃이 피기를 기다리고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_734",
@@ -3690,7 +4222,6 @@
     "literal": "畜",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "畜",
     "koreanMeaning": "짐승 축/쌓을 축",
     "meaningsKo": [
       "짐승",
@@ -3702,8 +4233,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "검을(玄)·논(田)이 모여 ‘짐승’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は畜産業に従事している。",
+        "kana": "",
+        "ko": "그는 축산업에 종사하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_735",
@@ -3712,7 +4248,6 @@
     "literal": "署",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "署",
     "koreanMeaning": "마을 서",
     "meaningsKo": [
       "마을"
@@ -3723,8 +4258,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "그물(罒)·Someone이 모여 ‘마을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この署は村の中心にある。",
+        "kana": "",
+        "ko": "이 서는 마을의 중심에 있다."
+      }
+    ]
   },
   {
     "id": "kanji_736",
@@ -3733,7 +4273,6 @@
     "literal": "含",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "含",
     "koreanMeaning": "머금을 함",
     "meaningsKo": [
       "머금을"
@@ -3751,8 +4290,13 @@
         "kana": "ふくめる"
       }
     ],
-    "examples": [],
-    "hint": "Now·입(口)이 모여 ‘머금을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この料理は栄養を含む。",
+        "kana": "",
+        "ko": "이 요리는 영양을 머금을 수 있다."
+      }
+    ]
   },
   {
     "id": "kanji_737",
@@ -3761,7 +4305,6 @@
     "literal": "兆",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "兆",
     "koreanMeaning": "조 조",
     "meaningsKo": [
       "조"
@@ -3779,8 +4322,13 @@
         "kana": "きざし"
       }
     ],
-    "examples": [],
-    "hint": "Omen의 뜻·모양에서 ‘조’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼は新しい兆しを見た。",
+        "kana": "",
+        "ko": "그는 새로운 조짐을 보았다."
+      }
+    ]
   },
   {
     "id": "kanji_738",
@@ -3789,7 +4337,6 @@
     "literal": "片",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "片",
     "koreanMeaning": "조각 편",
     "meaningsKo": [
       "조각"
@@ -3804,8 +4351,13 @@
         "kana": "かた"
       }
     ],
-    "examples": [],
-    "hint": "One Sided의 뜻·모양에서 ‘조각’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼女は美しい片を集めている。",
+        "kana": "",
+        "ko": "그녀는 아름다운 조각을 모으고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_739",
@@ -3814,7 +4366,6 @@
     "literal": "皿",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "皿",
     "koreanMeaning": "그릇 명",
     "meaningsKo": [
       "그릇"
@@ -3829,8 +4380,13 @@
         "kana": "さら"
       }
     ],
-    "examples": [],
-    "hint": "Plate의 뜻·모양에서 ‘그릇’을 나타냄"
+    "examples": [
+      {
+        "jp": "テーブルの上にきれいな皿が並んでいる。",
+        "kana": "",
+        "ko": "식탁 위에 예쁜 그릇들이 놓여 있다."
+      }
+    ]
   },
   {
     "id": "kanji_740",
@@ -3839,7 +4395,6 @@
     "literal": "敬",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "敬",
     "koreanMeaning": "공경 경",
     "meaningsKo": [
       "공경"
@@ -3857,8 +4412,13 @@
         "kana": "うやまう"
       }
     ],
-    "examples": [],
-    "hint": "Poem·Winter이 모여 ‘공경’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は敬意を表して挨拶した。",
+        "kana": "",
+        "ko": "그는 경의를 표하며 인사했다."
+      }
+    ]
   },
   {
     "id": "kanji_741",
@@ -3867,7 +4427,6 @@
     "literal": "卵",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "卵",
     "koreanMeaning": "알 란",
     "meaningsKo": [
       "알"
@@ -3882,8 +4441,13 @@
         "kana": "たまご"
       }
     ],
-    "examples": [],
-    "hint": "Pool의 뜻·모양에서 ‘알’을 나타냄"
+    "examples": [
+      {
+        "jp": "新鮮な卵を買った。",
+        "kana": "",
+        "ko": "신선한 알을 샀다."
+      }
+    ]
   },
   {
     "id": "kanji_742",
@@ -3892,7 +4456,6 @@
     "literal": "幼",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "幼",
     "koreanMeaning": "어릴 유",
     "meaningsKo": [
       "어릴"
@@ -3907,8 +4470,13 @@
         "kana": "おさない"
       }
     ],
-    "examples": [],
-    "hint": "Poop·힘(力)이 모여 ‘어릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "幼い子供が遊んでいる。",
+        "kana": "",
+        "ko": "어린 아이가 놀고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_743",
@@ -3917,7 +4485,6 @@
     "literal": "角",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "角",
     "koreanMeaning": "뿔 각",
     "meaningsKo": [
       "뿔"
@@ -3935,8 +4502,13 @@
         "kana": "つの"
       }
     ],
-    "examples": [],
-    "hint": "Prison·Task이 모여 ‘뿔’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "角を曲がると公園がある。",
+        "kana": "",
+        "ko": "모퉁이를 돌면 공원이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_744",
@@ -3945,7 +4517,6 @@
     "literal": "貿",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "貿",
     "koreanMeaning": "무역할 무",
     "meaningsKo": [
       "무역할"
@@ -3956,8 +4527,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사사로울(ム)·칼(刂)·조개(貝)이 모여 ‘무역할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この会社は貿易を行っている。",
+        "kana": "",
+        "ko": "이 회사는 무역을 하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_745",
@@ -3966,7 +4542,6 @@
     "literal": "震",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "震",
     "koreanMeaning": "우레 진",
     "meaningsKo": [
       "우레"
@@ -3984,8 +4559,13 @@
         "kana": "ふるえる"
       }
     ],
-    "examples": [],
-    "hint": "비(雨)·Landslide이 모여 ‘우레’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "地震が震えた。",
+        "kana": "",
+        "ko": "지진이 흔들렸다."
+      }
+    ]
   },
   {
     "id": "kanji_746",
@@ -3994,7 +4574,6 @@
     "literal": "零",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "零",
     "koreanMeaning": "떨어질 령/영 령",
     "meaningsKo": [
       "떨어질",
@@ -4016,8 +4595,13 @@
         "kana": "こぼれる"
       }
     ],
-    "examples": [],
-    "hint": "비(雨)·Orders이 모여 ‘떨어질’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "気温は零度に下がった。",
+        "kana": "",
+        "ko": "기온이 영하로 떨어졌다."
+      }
+    ]
   },
   {
     "id": "kanji_747",
@@ -4026,7 +4610,6 @@
     "literal": "雲",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "雲",
     "koreanMeaning": "구름 운",
     "meaningsKo": [
       "구름"
@@ -4044,8 +4627,13 @@
         "kana": "ぐも"
       }
     ],
-    "examples": [],
-    "hint": "비(雨)·Cloud이 모여 ‘구름’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "空に雲が多い。",
+        "kana": "",
+        "ko": "하늘에 구름이 많다."
+      }
+    ]
   },
   {
     "id": "kanji_748",
@@ -4054,7 +4642,6 @@
     "literal": "粒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "粒",
     "koreanMeaning": "낟알 립",
     "meaningsKo": [
       "낟알"
@@ -4069,8 +4656,13 @@
         "kana": "つぶ"
       }
     ],
-    "examples": [],
-    "hint": "벼(禾)·설(立)이 모여 ‘낟알’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "米粒がテーブルに落ちた。",
+        "kana": "",
+        "ko": "쌀 알이 테이블에 떨어졌다."
+      }
+    ]
   },
   {
     "id": "kanji_749",
@@ -4079,7 +4671,6 @@
     "literal": "畳",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "畳",
     "koreanMeaning": "겹쳐질 첩",
     "meaningsKo": [
       "겹쳐질"
@@ -4103,8 +4694,13 @@
         "kana": "かさなる"
       }
     ],
-    "examples": [],
-    "hint": "논(田)·Forehead·Top Hat이 모여 ‘겹쳐질’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "布団を畳むのは面倒だ。",
+        "kana": "",
+        "ko": "이불을 개는 것은 귀찮다."
+      }
+    ]
   },
   {
     "id": "kanji_750",
@@ -4113,7 +4709,6 @@
     "literal": "順",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "順",
     "koreanMeaning": "순할 순",
     "meaningsKo": [
       "순할"
@@ -4124,8 +4719,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "River·Geoduck이 모여 ‘순할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "順番を守って並んでください。",
+        "kana": "",
+        "ko": "순서를 지켜서 줄 서 주세요."
+      }
+    ]
   },
   {
     "id": "kanji_751",
@@ -4134,7 +4734,6 @@
     "literal": "導",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "導",
     "koreanMeaning": "인도할 도",
     "meaningsKo": [
       "인도할"
@@ -4149,8 +4748,13 @@
         "kana": "みちびく"
       }
     ],
-    "examples": [],
-    "hint": "길(辶)·Measurement이 모여 ‘인도할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "先生が私たちを導いてくれた。",
+        "kana": "",
+        "ko": "선생님이 우리를 인도해 주셨다."
+      }
+    ]
   },
   {
     "id": "kanji_752",
@@ -4159,7 +4763,6 @@
     "literal": "宇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "宇",
     "koreanMeaning": "집 우",
     "meaningsKo": [
       "집"
@@ -4170,8 +4773,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "집(宀)·Dry이 모여 ‘집’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "宇宙はとても広い。",
+        "kana": "",
+        "ko": "우주는 매우 넓다."
+      }
+    ]
   },
   {
     "id": "kanji_753",
@@ -4180,7 +4788,6 @@
     "literal": "超",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "超",
     "koreanMeaning": "뛰어넘을 초",
     "meaningsKo": [
       "뛰어넘을"
@@ -4198,8 +4805,13 @@
         "kana": "こす"
       }
     ],
-    "examples": [],
-    "hint": "Run·Call이 모여 ‘뛰어넘을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は山を超えることができた。",
+        "kana": "",
+        "ko": "그는 산을 뛰어넘을 수 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_754",
@@ -4208,7 +4820,6 @@
     "literal": "設",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "設",
     "koreanMeaning": "베풀 설",
     "meaningsKo": [
       "베풀"
@@ -4223,8 +4834,13 @@
         "kana": "もうける"
       }
     ],
-    "examples": [],
-    "hint": "Say·Weapon이 모여 ‘베풀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい学校を設立する予定だ。",
+        "kana": "",
+        "ko": "새로운 학교를 설립할 예정이다."
+      }
+    ]
   },
   {
     "id": "kanji_755",
@@ -4233,7 +4849,6 @@
     "literal": "詰",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "詰",
     "koreanMeaning": "물을 힐",
     "meaningsKo": [
       "물을"
@@ -4263,8 +4878,13 @@
         "kana": "つむ"
       }
     ],
-    "examples": [],
-    "hint": "Say·Good Luck이 모여 ‘물을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "箱に本を詰めた。",
+        "kana": "",
+        "ko": "상자에 책을 넣었다."
+      }
+    ]
   },
   {
     "id": "kanji_756",
@@ -4273,7 +4893,6 @@
     "literal": "訓",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "訓",
     "koreanMeaning": "가르칠 훈",
     "meaningsKo": [
       "가르칠"
@@ -4297,8 +4916,13 @@
         "kana": "くんずる"
       }
     ],
-    "examples": [],
-    "hint": "Say·River이 모여 ‘가르칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この学校では日本語を訓練する。",
+        "kana": "",
+        "ko": "이 학교에서는 일본어를 훈련한다."
+      }
+    ]
   },
   {
     "id": "kanji_757",
@@ -4307,7 +4931,6 @@
     "literal": "述",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "述",
     "koreanMeaning": "펼 술",
     "meaningsKo": [
       "펼"
@@ -4322,8 +4945,13 @@
         "kana": "のべる"
       }
     ],
-    "examples": [],
-    "hint": "Scooter·Angel·Drop이 모여 ‘펼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の意見を述べる時間が必要だ。",
+        "kana": "",
+        "ko": "그의 의견을 펼칠 시간이 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_758",
@@ -4332,7 +4960,6 @@
     "literal": "辺",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "辺",
     "koreanMeaning": "가 변",
     "meaningsKo": [
       "가"
@@ -4353,8 +4980,13 @@
         "kana": "べ"
       }
     ],
-    "examples": [],
-    "hint": "Scooter·칼(刂)이 모여 ‘가’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "公園の辺にカフェがある。",
+        "kana": "",
+        "ko": "공원의 근처에 카페가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_759",
@@ -4363,7 +4995,6 @@
     "literal": "鼻",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鼻",
     "koreanMeaning": "코 비",
     "meaningsKo": [
       "코"
@@ -4378,8 +5009,13 @@
         "kana": "はな"
       }
     ],
-    "examples": [],
-    "hint": "Self·논(田)·Twenty이 모여 ‘코’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は鼻が高い。",
+        "kana": "",
+        "ko": "그녀는 코가 높다."
+      }
+    ]
   },
   {
     "id": "kanji_760",
@@ -4388,7 +5024,6 @@
     "literal": "賢",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "賢",
     "koreanMeaning": "어질 현",
     "meaningsKo": [
       "어질"
@@ -4403,8 +5038,13 @@
         "kana": "かしこい"
       }
     ],
-    "examples": [],
-    "hint": "Servant·Stool·조개(貝)이 모여 ‘어질’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "賢い選択をすることが大切だ。",
+        "kana": "",
+        "ko": "어질한 선택을 하는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_761",
@@ -4413,7 +5053,6 @@
     "literal": "臣",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "臣",
     "koreanMeaning": "신하 신",
     "meaningsKo": [
       "신하"
@@ -4427,8 +5066,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Servant의 뜻·모양에서 ‘신하’을 나타냄"
+    "examples": [
+      {
+        "jp": "王様の臣は忠実だった。",
+        "kana": "",
+        "ko": "왕의 신하는 충실했다."
+      }
+    ]
   },
   {
     "id": "kanji_762",
@@ -4437,7 +5081,6 @@
     "literal": "販",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "販",
     "koreanMeaning": "팔 판",
     "meaningsKo": [
       "팔"
@@ -4448,8 +5091,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "조개(貝)·Anti이 모여 ‘팔’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この商品はネットで販促されている。",
+        "kana": "",
+        "ko": "이 상품은 인터넷에서 판매되고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_763",
@@ -4458,7 +5106,6 @@
     "literal": "則",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "則",
     "koreanMeaning": "곧 즉/법칙 칙",
     "meaningsKo": [
       "곧",
@@ -4474,8 +5121,13 @@
         "kana": "のっとる"
       }
     ],
-    "examples": [],
-    "hint": "조개(貝)·칼(刀)이 모여 ‘곧’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "法律は国によって則がある。",
+        "kana": "",
+        "ko": "법률은 국가마다 법칙이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_764",
@@ -4484,7 +5136,6 @@
     "literal": "贈",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "贈",
     "koreanMeaning": "줄 증",
     "meaningsKo": [
       "줄"
@@ -4502,8 +5153,13 @@
         "kana": "おくる"
       }
     ],
-    "examples": [],
-    "hint": "조개(貝)·Mask이 모여 ‘줄’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "友達に贈り物をした。",
+        "kana": "",
+        "ko": "친구에게 선물을 했다."
+      }
+    ]
   },
   {
     "id": "kanji_765",
@@ -4512,7 +5168,6 @@
     "literal": "貯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "貯",
     "koreanMeaning": "쌓을 저",
     "meaningsKo": [
       "쌓을"
@@ -4530,8 +5185,13 @@
         "kana": "たくわえる"
       }
     ],
-    "examples": [],
-    "hint": "조개(貝)·집(宀)·Street이 모여 ‘쌓을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "お金を貯めるのが好きだ。",
+        "kana": "",
+        "ko": "돈을 모으는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_766",
@@ -4540,7 +5200,6 @@
     "literal": "貝",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "貝",
     "koreanMeaning": "조개 패",
     "meaningsKo": [
       "조개"
@@ -4555,8 +5214,13 @@
         "kana": "かい"
       }
     ],
-    "examples": [],
-    "hint": "조개(貝)의 뜻·모양에서 ‘조개’을 나타냄"
+    "examples": [
+      {
+        "jp": "海辺で貝を見つけた。",
+        "kana": "",
+        "ko": "해변에서 조개를 발견했다."
+      }
+    ]
   },
   {
     "id": "kanji_767",
@@ -4565,7 +5229,6 @@
     "literal": "療",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "療",
     "koreanMeaning": "고칠 료",
     "meaningsKo": [
       "고칠"
@@ -4576,8 +5239,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "병(疒)·Charcoal이 모여 ‘고칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい療法が開発された。",
+        "kana": "",
+        "ko": "새로운 치료법이 개발되었다."
+      }
+    ]
   },
   {
     "id": "kanji_768",
@@ -4586,7 +5254,6 @@
     "literal": "患",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "患",
     "koreanMeaning": "근심 환",
     "meaningsKo": [
       "근심"
@@ -4601,8 +5268,13 @@
         "kana": "わずらう"
       }
     ],
-    "examples": [],
-    "hint": "Skewer·마음(心)이 모여 ‘근심’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は病気に患っている。",
+        "kana": "",
+        "ko": "그는 병으로 고통받고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_769",
@@ -4611,7 +5283,6 @@
     "literal": "悩",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "悩",
     "koreanMeaning": "번뇌할 뇌",
     "meaningsKo": [
       "번뇌할"
@@ -4635,8 +5306,13 @@
         "kana": "なやみ"
       }
     ],
-    "examples": [],
-    "hint": "Soul·풀(艹)·Treasure Chest이 모여 ‘번뇌할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "勉強のことで悩むことが多い。",
+        "kana": "",
+        "ko": "공부 때문에 고민하는 일이 많다."
+      }
+    ]
   },
   {
     "id": "kanji_770",
@@ -4645,7 +5321,6 @@
     "literal": "柔",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "柔",
     "koreanMeaning": "부드러울 유",
     "meaningsKo": [
       "부드러울"
@@ -4672,8 +5347,13 @@
         "kana": "やわら"
       }
     ],
-    "examples": [],
-    "hint": "Spear·나무(木)이 모여 ‘부드러울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この布は柔らかい。",
+        "kana": "",
+        "ko": "이 천은 부드럽다."
+      }
+    ]
   },
   {
     "id": "kanji_771",
@@ -4682,7 +5362,6 @@
     "literal": "補",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "補",
     "koreanMeaning": "기울 보",
     "meaningsKo": [
       "기울"
@@ -4697,8 +5376,13 @@
         "kana": "おぎなう"
       }
     ],
-    "examples": [],
-    "hint": "Spirit·Wedding이 모여 ‘기울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は予算を補うために働いている。",
+        "kana": "",
+        "ko": "그는 예산을 보충하기 위해 일하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_772",
@@ -4707,7 +5391,6 @@
     "literal": "被",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "被",
     "koreanMeaning": "입을 피",
     "meaningsKo": [
       "입을"
@@ -4731,8 +5414,13 @@
         "kana": "かぶせる"
       }
     ],
-    "examples": [],
-    "hint": "Spirit·Skin이 모여 ‘입을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "事故に被害者が出た。",
+        "kana": "",
+        "ko": "사고로 피해자가 발생했다."
+      }
+    ]
   },
   {
     "id": "kanji_773",
@@ -4741,7 +5429,6 @@
     "literal": "複",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "複",
     "koreanMeaning": "겹옷 복",
     "meaningsKo": [
       "겹옷"
@@ -4752,8 +5439,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Spirit·Black Hole이 모여 ‘겹옷’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "複雑な問題を解決する必要がある。",
+        "kana": "",
+        "ko": "복잡한 문제를 해결할 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_774",
@@ -4762,7 +5454,6 @@
     "literal": "祈",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "祈",
     "koreanMeaning": "빌 기",
     "meaningsKo": [
       "빌"
@@ -4777,8 +5468,13 @@
         "kana": "いのる"
       }
     ],
-    "examples": [],
-    "hint": "Spirit·도끼(斤)이 모여 ‘빌’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は成功を祈った。",
+        "kana": "",
+        "ko": "그녀는 성공을 기원했다."
+      }
+    ]
   },
   {
     "id": "kanji_775",
@@ -4787,7 +5483,6 @@
     "literal": "旧",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "旧",
     "koreanMeaning": "옛 구",
     "meaningsKo": [
       "옛"
@@ -4805,8 +5500,13 @@
         "kana": "もと"
       }
     ],
-    "examples": [],
-    "hint": "막대(丨)·날(日)이 모여 ‘옛’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この旧い本はとても面白い。",
+        "kana": "",
+        "ko": "이 오래된 책은 매우 재미있다."
+      }
+    ]
   },
   {
     "id": "kanji_776",
@@ -4815,7 +5515,6 @@
     "literal": "硬",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "硬",
     "koreanMeaning": "단단할 경",
     "meaningsKo": [
       "단단할"
@@ -4830,8 +5529,13 @@
         "kana": "かたい"
       }
     ],
-    "examples": [],
-    "hint": "돌(石)·Again이 모여 ‘단단할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この石は硬いと思う。",
+        "kana": "",
+        "ko": "이 돌은 단단하다고 생각한다."
+      }
+    ]
   },
   {
     "id": "kanji_777",
@@ -4840,7 +5544,6 @@
     "literal": "砂",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "砂",
     "koreanMeaning": "모래 사",
     "meaningsKo": [
       "모래"
@@ -4858,8 +5561,13 @@
         "kana": "すな"
       }
     ],
-    "examples": [],
-    "hint": "돌(石)·Few이 모여 ‘모래’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "砂が目に入った。",
+        "kana": "",
+        "ko": "모래가 눈에 들어갔다."
+      }
+    ]
   },
   {
     "id": "kanji_778",
@@ -4868,7 +5576,6 @@
     "literal": "双",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "双",
     "koreanMeaning": "두 쌍/쌍 쌍",
     "meaningsKo": [
       "두",
@@ -4893,8 +5600,13 @@
         "kana": "ふたつ"
       }
     ],
-    "examples": [],
-    "hint": "Stool의 뜻·모양에서 ‘두’을 나타냄"
+    "examples": [
+      {
+        "jp": "双子の兄弟がいる。",
+        "kana": "",
+        "ko": "쌍둥이 형제가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_779",
@@ -4903,7 +5615,6 @@
     "literal": "肯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "肯",
     "koreanMeaning": "즐길 긍",
     "meaningsKo": [
       "즐길"
@@ -4918,8 +5629,13 @@
         "kana": "がえんじる"
       }
     ],
-    "examples": [],
-    "hint": "그칠(止)·달(月)이 모여 ‘즐길’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼はその提案を肯定した。",
+        "kana": "",
+        "ko": "그는 그 제안을 긍정했다."
+      }
+    ]
   },
   {
     "id": "kanji_780",
@@ -4928,7 +5644,6 @@
     "literal": "蔵",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "蔵",
     "koreanMeaning": "감출 장",
     "meaningsKo": [
       "감출"
@@ -4952,8 +5667,13 @@
         "kana": "かくれる"
       }
     ],
-    "examples": [],
-    "hint": "Storehouse의 뜻·모양에서 ‘감출’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼は知識を蔵にしている。",
+        "kana": "",
+        "ko": "그는 지식을 쌓아두고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_781",
@@ -4962,7 +5682,6 @@
     "literal": "袋",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "袋",
     "koreanMeaning": "자루 대",
     "meaningsKo": [
       "자루"
@@ -4980,8 +5699,13 @@
         "kana": "ふくろ"
       }
     ],
-    "examples": [],
-    "hint": "Substitute·옷(衣)이 모여 ‘자루’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この袋にはお菓子が入っています。",
+        "kana": "",
+        "ko": "이 자루에는 과자가 들어 있습니다."
+      }
+    ]
   },
   {
     "id": "kanji_782",
@@ -4990,7 +5714,6 @@
     "literal": "昇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "昇",
     "koreanMeaning": "오를 승",
     "meaningsKo": [
       "오를"
@@ -5005,8 +5728,13 @@
         "kana": "のぼる"
       }
     ],
-    "examples": [],
-    "hint": "날(日)·삐침·Twenty이 모여 ‘오를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "太陽が昇ると、空が明るくなる。",
+        "kana": "",
+        "ko": "태양이 오르면 하늘이 밝아진다."
+      }
+    ]
   },
   {
     "id": "kanji_783",
@@ -5015,7 +5743,6 @@
     "literal": "照",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "照",
     "koreanMeaning": "비칠 조",
     "meaningsKo": [
       "비칠"
@@ -5036,8 +5763,13 @@
         "kana": "てれる"
       }
     ],
-    "examples": [],
-    "hint": "날(日)·Call·Boil이 모여 ‘비칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "太陽が照っているから、外は暑い。",
+        "kana": "",
+        "ko": "태양이 비치고 있어서 밖은 덥다."
+      }
+    ]
   },
   {
     "id": "kanji_784",
@@ -5046,7 +5778,6 @@
     "literal": "曇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "曇",
     "koreanMeaning": "흐릴 담",
     "meaningsKo": [
       "흐릴"
@@ -5061,8 +5792,13 @@
         "kana": "くもる"
       }
     ],
-    "examples": [],
-    "hint": "날(日)·비(雨)·Cloud이 모여 ‘흐릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "昨日は曇りだったが、今日は晴れている。",
+        "kana": "",
+        "ko": "어제는 흐렸지만, 오늘은 맑다."
+      }
+    ]
   },
   {
     "id": "kanji_785",
@@ -5071,7 +5807,6 @@
     "literal": "甘",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "甘",
     "koreanMeaning": "달 감",
     "meaningsKo": [
       "달"
@@ -5095,8 +5830,13 @@
         "kana": "うまい"
       }
     ],
-    "examples": [],
-    "hint": "Sweet의 뜻·모양에서 ‘달’을 나타냄"
+    "examples": [
+      {
+        "jp": "このケーキはとても甘い。",
+        "kana": "",
+        "ko": "이 케이크는 매우 달다."
+      }
+    ]
   },
   {
     "id": "kanji_786",
@@ -5105,7 +5845,6 @@
     "literal": "祭",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "祭",
     "koreanMeaning": "제사 제",
     "meaningsKo": [
       "제사"
@@ -5123,8 +5862,13 @@
         "kana": "まつり"
       }
     ],
-    "examples": [],
-    "hint": "Tent·Jackhammer이 모여 ‘제사’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "祭りの準備が進んでいる。",
+        "kana": "",
+        "ko": "축제 준비가 진행되고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_787",
@@ -5133,7 +5877,6 @@
     "literal": "編",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "編",
     "koreanMeaning": "엮을 편",
     "meaningsKo": [
       "엮을"
@@ -5151,8 +5894,13 @@
         "kana": "あみ"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·Library이 모여 ‘엮을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は毛糸を編むのが得意だ。",
+        "kana": "",
+        "ko": "그녀는 실을 엮는 것을 잘한다."
+      }
+    ]
   },
   {
     "id": "kanji_788",
@@ -5161,7 +5909,6 @@
     "literal": "練",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "練",
     "koreanMeaning": "누일 련",
     "meaningsKo": [
       "누일"
@@ -5179,8 +5926,13 @@
         "kana": "ねり"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·East이 모여 ‘누일’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "毎日練習すれば、上手になる。",
+        "kana": "",
+        "ko": "매일 연습하면 잘하게 된다."
+      }
+    ]
   },
   {
     "id": "kanji_789",
@@ -5189,7 +5941,6 @@
     "literal": "絡",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "絡",
     "koreanMeaning": "이을 락",
     "meaningsKo": [
       "이을"
@@ -5207,8 +5958,13 @@
         "kana": "からまる"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·Kiss이 모여 ‘이을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "二つの糸が絡まってしまった。",
+        "kana": "",
+        "ko": "두 개의 실이 엉켜버렸다."
+      }
+    ]
   },
   {
     "id": "kanji_790",
@@ -5217,7 +5973,6 @@
     "literal": "紹",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "紹",
     "koreanMeaning": "이을 소",
     "meaningsKo": [
       "이을"
@@ -5228,8 +5983,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "실(糸)·Call이 모여 ‘이을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい友達を紹介する。",
+        "kana": "",
+        "ko": "새로운 친구를 소개한다."
+      }
+    ]
   },
   {
     "id": "kanji_791",
@@ -5238,7 +5998,6 @@
     "literal": "緑",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "緑",
     "koreanMeaning": "푸를 록",
     "meaningsKo": [
       "푸를"
@@ -5256,8 +6015,13 @@
         "kana": "みどり"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·Wolverine·물(水)이 모여 ‘푸를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "公園には緑がいっぱいだ。",
+        "kana": "",
+        "ko": "공원에는 초록이 가득하다."
+      }
+    ]
   },
   {
     "id": "kanji_792",
@@ -5266,7 +6030,6 @@
     "literal": "糸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "糸",
     "koreanMeaning": "실 사",
     "meaningsKo": [
       "실"
@@ -5281,8 +6044,13 @@
         "kana": "いと"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)의 뜻·모양에서 ‘실’을 나타냄"
+    "examples": [
+      {
+        "jp": "この糸はとても強い。",
+        "kana": "",
+        "ko": "이 실은 매우 강하다."
+      }
+    ]
   },
   {
     "id": "kanji_793",
@@ -5291,7 +6059,6 @@
     "literal": "劇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "劇",
     "koreanMeaning": "심할 극",
     "meaningsKo": [
       "심할"
@@ -5302,8 +6069,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "호랑이(虎)·Pig·칼(刀)이 모여 ‘심할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "劇が始まる前に席に座っておこう。",
+        "kana": "",
+        "ko": "연극이 시작되기 전에 자리에 앉아 두자."
+      }
+    ]
   },
   {
     "id": "kanji_794",
@@ -5312,7 +6084,6 @@
     "literal": "膚",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "膚",
     "koreanMeaning": "살갗 부",
     "meaningsKo": [
       "살갗"
@@ -5327,8 +6098,7 @@
         "kana": "はだ"
       }
     ],
-    "examples": [],
-    "hint": "호랑이(虎)·Stomach이 모여 ‘살갗’의 뜻을 이룸"
+    "examples": []
   },
   {
     "id": "kanji_795",
@@ -5337,7 +6107,6 @@
     "literal": "齢",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "齢",
     "koreanMeaning": "나이 령",
     "meaningsKo": [
       "나이"
@@ -5355,8 +6124,13 @@
         "kana": "とし"
       }
     ],
-    "examples": [],
-    "hint": "Tooth·Orders이 모여 ‘나이’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は年齢よりも若く見える。",
+        "kana": "",
+        "ko": "그는 나이보다 젊어 보인다."
+      }
+    ]
   },
   {
     "id": "kanji_796",
@@ -5365,7 +6139,6 @@
     "literal": "幅",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "幅",
     "koreanMeaning": "폭 폭",
     "meaningsKo": [
       "폭"
@@ -5380,8 +6153,13 @@
         "kana": "はば"
       }
     ],
-    "examples": [],
-    "hint": "수건(巾)·Scarecrow이 모여 ‘폭’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このテーブルの幅は1メートルです。",
+        "kana": "",
+        "ko": "이 테이블의 폭은 1미터입니다."
+      }
+    ]
   },
   {
     "id": "kanji_797",
@@ -5390,7 +6168,6 @@
     "literal": "帽",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "帽",
     "koreanMeaning": "모자 모",
     "meaningsKo": [
       "모자"
@@ -5411,8 +6188,13 @@
         "kana": "おおう"
       }
     ],
-    "examples": [],
-    "hint": "수건(巾)·날(日)·눈(目)이 모여 ‘모자’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は新しい帽をかぶっていた。",
+        "kana": "",
+        "ko": "그는 새로운 모자를 쓰고 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_798",
@@ -5421,7 +6203,6 @@
     "literal": "査",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "査",
     "koreanMeaning": "조사할 사/찌꺼기 사",
     "meaningsKo": [
       "조사할",
@@ -5433,8 +6214,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "나무(木)·Top Hat이 모여 ‘조사할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このデータを査して、結果を報告します。",
+        "kana": "",
+        "ko": "이 데이터를 조사해서 결과를 보고하겠습니다."
+      }
+    ]
   },
   {
     "id": "kanji_799",
@@ -5443,7 +6229,6 @@
     "literal": "極",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "極",
     "koreanMeaning": "극진할 극/다할 극",
     "meaningsKo": [
       "극진할",
@@ -5480,8 +6265,13 @@
         "kana": "きまる"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Beggar·입(口)이 모여 ‘극진할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "極めて重要な会議に参加します。",
+        "kana": "",
+        "ko": "매우 중요한 회의에 참석합니다."
+      }
+    ]
   },
   {
     "id": "kanji_800",
@@ -5490,7 +6280,6 @@
     "literal": "根",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "根",
     "koreanMeaning": "뿌리 근",
     "meaningsKo": [
       "뿌리"
@@ -5505,8 +6294,13 @@
         "kana": "ね"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Root이 모여 ‘뿌리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "木の根が土の中に広がっている。",
+        "kana": "",
+        "ko": "나무의 뿌리가 흙 속에 퍼져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_801",
@@ -5515,7 +6309,6 @@
     "literal": "植",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "植",
     "koreanMeaning": "심을 식",
     "meaningsKo": [
       "심을"
@@ -5533,8 +6326,13 @@
         "kana": "うわる"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Fix이 모여 ‘심을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "庭に花を植えた。",
+        "kana": "",
+        "ko": "정원에 꽃을 심었다."
+      }
+    ]
   },
   {
     "id": "kanji_802",
@@ -5543,7 +6341,6 @@
     "literal": "枚",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "枚",
     "koreanMeaning": "낱 매",
     "meaningsKo": [
       "낱"
@@ -5557,8 +6354,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "나무(木)·Winter이 모여 ‘낱’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は一枚の絵を描いた。",
+        "kana": "",
+        "ko": "그는 한 점의 그림을 그렸다."
+      }
+    ]
   },
   {
     "id": "kanji_803",
@@ -5567,7 +6369,6 @@
     "literal": "刺",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "刺",
     "koreanMeaning": "찌를 자",
     "meaningsKo": [
       "찌를"
@@ -5591,8 +6392,13 @@
         "kana": "とげ"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Head·칼(刀)이 모여 ‘찌를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この針で布を刺すと、縫えます。",
+        "kana": "",
+        "ko": "이 바늘로 천을 찌르면, 바느질할 수 있다."
+      }
+    ]
   },
   {
     "id": "kanji_804",
@@ -5601,7 +6407,6 @@
     "literal": "棒",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "棒",
     "koreanMeaning": "막대 봉",
     "meaningsKo": [
       "막대"
@@ -5612,8 +6417,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "나무(木)·Spring·Dry이 모여 ‘막대’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "公園で長い棒を見つけた。",
+        "kana": "",
+        "ko": "공원에서 긴 막대를 발견했다."
+      }
+    ]
   },
   {
     "id": "kanji_805",
@@ -5622,7 +6432,6 @@
     "literal": "机",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "机",
     "koreanMeaning": "책상 궤",
     "meaningsKo": [
       "책상"
@@ -5637,8 +6446,13 @@
         "kana": "つくえ"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Table이 모여 ‘책상’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この机はとても重い。",
+        "kana": "",
+        "ko": "이 책상은 매우 무겁다."
+      }
+    ]
   },
   {
     "id": "kanji_806",
@@ -5647,7 +6461,6 @@
     "literal": "枯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "枯",
     "koreanMeaning": "마를 고",
     "meaningsKo": [
       "마를"
@@ -5665,8 +6478,13 @@
         "kana": "からす"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)·Old이 모여 ‘마를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "夏になると花が枯れることがある。",
+        "kana": "",
+        "ko": "여름이 되면 꽃이 마를 때가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_807",
@@ -5675,7 +6493,6 @@
     "literal": "減",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "減",
     "koreanMeaning": "덜 감",
     "meaningsKo": [
       "덜"
@@ -5693,8 +6510,13 @@
         "kana": "へらす"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Feeling이 모여 ‘덜’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "体重が減って、健康になった。",
+        "kana": "",
+        "ko": "체중이 줄어 건강해졌다."
+      }
+    ]
   },
   {
     "id": "kanji_808",
@@ -5703,7 +6525,6 @@
     "literal": "況",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "況",
     "koreanMeaning": "상황 황/하물며 황",
     "meaningsKo": [
       "상황",
@@ -5725,8 +6546,13 @@
         "kana": "おもむき"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Older Brother이 모여 ‘상황’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この状況では、あなたの助けが必要です。",
+        "kana": "",
+        "ko": "이 상황에서는 당신의 도움이 필요합니다."
+      }
+    ]
   },
   {
     "id": "kanji_809",
@@ -5735,7 +6561,6 @@
     "literal": "湾",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "湾",
     "koreanMeaning": "물굽이 만",
     "meaningsKo": [
       "물굽이"
@@ -5750,8 +6575,13 @@
         "kana": "いりえ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·붉을(赤)·활(弓)이 모여 ‘물굽이’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "湾の近くで釣りをした。",
+        "kana": "",
+        "ko": "만 근처에서 낚시를 했다."
+      }
+    ]
   },
   {
     "id": "kanji_810",
@@ -5760,7 +6590,6 @@
     "literal": "測",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "測",
     "koreanMeaning": "헤아릴 측",
     "meaningsKo": [
       "헤아릴"
@@ -5775,8 +6604,13 @@
         "kana": "はかる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·조개(貝)·칼(刀)이 모여 ‘헤아릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この道の長さを測る必要があります。",
+        "kana": "",
+        "ko": "이 길의 길이를 측정할 필요가 있습니다."
+      }
+    ]
   },
   {
     "id": "kanji_811",
@@ -5785,7 +6619,6 @@
     "literal": "混",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "混",
     "koreanMeaning": "섞을 혼",
     "meaningsKo": [
       "섞을"
@@ -5812,8 +6645,13 @@
         "kana": "こむ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·날(日)·Compare이 모여 ‘섞을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "色々な材料を混ぜて料理を作る。",
+        "kana": "",
+        "ko": "여러 가지 재료를 섞어서 요리를 만든다."
+      }
+    ]
   },
   {
     "id": "kanji_812",
@@ -5822,7 +6660,6 @@
     "literal": "温",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "温",
     "koreanMeaning": "따뜻할 온",
     "meaningsKo": [
       "따뜻할"
@@ -5849,8 +6686,13 @@
         "kana": "ぬく"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·날(日)·Plate이 모여 ‘따뜻할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この部屋は冬でも温かい。",
+        "kana": "",
+        "ko": "이 방은 겨울에도 따뜻하다."
+      }
+    ]
   },
   {
     "id": "kanji_813",
@@ -5859,7 +6701,6 @@
     "literal": "汚",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "汚",
     "koreanMeaning": "더러울 오",
     "meaningsKo": [
       "더러울"
@@ -5889,8 +6730,13 @@
         "kana": "きたない"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Ground·Beggar이 모여 ‘더러울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "川の水が汚れている。",
+        "kana": "",
+        "ko": "강물이 더럽혀져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_814",
@@ -5899,7 +6745,6 @@
     "literal": "漁",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "漁",
     "koreanMeaning": "고기 잡을 어",
     "meaningsKo": [
       "고기 잡을"
@@ -5917,8 +6762,13 @@
         "kana": "あさる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·물고기(魚)이 모여 ‘고기 잡을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "毎朝、海で漁をする。",
+        "kana": "",
+        "ko": "매일 아침 바다에서 고기를 잡는다."
+      }
+    ]
   },
   {
     "id": "kanji_815",
@@ -5927,7 +6777,6 @@
     "literal": "濃",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "濃",
     "koreanMeaning": "짙을 농",
     "meaningsKo": [
       "짙을"
@@ -5942,8 +6791,13 @@
         "kana": "こい"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Farming이 모여 ‘짙을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このスープは濃い味がする。",
+        "kana": "",
+        "ko": "이 수프는 짙은 맛이 난다."
+      }
+    ]
   },
   {
     "id": "kanji_816",
@@ -5952,7 +6806,6 @@
     "literal": "泊",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "泊",
     "koreanMeaning": "머무를 박/배 댈 박",
     "meaningsKo": [
       "머무를",
@@ -5971,8 +6824,13 @@
         "kana": "とめる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·흰(白)이 모여 ‘머무를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "今夜は友達の家に泊まる。",
+        "kana": "",
+        "ko": "오늘 밤 친구 집에 머무를 것이다."
+      }
+    ]
   },
   {
     "id": "kanji_817",
@@ -5981,7 +6839,6 @@
     "literal": "浅",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "浅",
     "koreanMeaning": "얕을 천",
     "meaningsKo": [
       "얕을"
@@ -5996,8 +6853,13 @@
         "kana": "あさい"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Bar이 모여 ‘얕을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この川は浅いから気をつけて。",
+        "kana": "",
+        "ko": "이 강은 얕으니까 조심해."
+      }
+    ]
   },
   {
     "id": "kanji_818",
@@ -6006,7 +6868,6 @@
     "literal": "沈",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "沈",
     "koreanMeaning": "잠길 침",
     "meaningsKo": [
       "잠길"
@@ -6027,8 +6888,13 @@
         "kana": "しずめる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Pirate이 모여 ‘잠길’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "船が沈んだ場所を調べる。",
+        "kana": "",
+        "ko": "배가 잠긴 장소를 조사한다."
+      }
+    ]
   },
   {
     "id": "kanji_819",
@@ -6037,7 +6903,6 @@
     "literal": "湯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "湯",
     "koreanMeaning": "끓일 탕",
     "meaningsKo": [
       "끓일"
@@ -6052,8 +6917,13 @@
         "kana": "ゆ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Easy이 모여 ‘끓일’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "お風呂のお湯は熱すぎる。",
+        "kana": "",
+        "ko": "욕실의 물이 너무 뜨겁다."
+      }
+    ]
   },
   {
     "id": "kanji_820",
@@ -6062,7 +6932,6 @@
     "literal": "溶",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "溶",
     "koreanMeaning": "녹을 용",
     "meaningsKo": [
       "녹을"
@@ -6083,8 +6952,13 @@
         "kana": "とく"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Form이 모여 ‘녹을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "砂糖が溶けるまでかき混ぜる。",
+        "kana": "",
+        "ko": "설탕이 녹을 때까지 저어준다."
+      }
+    ]
   },
   {
     "id": "kanji_821",
@@ -6093,7 +6967,6 @@
     "literal": "涙",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "涙",
     "koreanMeaning": "눈물 루",
     "meaningsKo": [
       "눈물"
@@ -6111,8 +6984,13 @@
         "kana": "なみだ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Door·Big이 모여 ‘눈물’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "映画を見て涙が出た。",
+        "kana": "",
+        "ko": "영화를 보고 눈물이 흘렀다."
+      }
+    ]
   },
   {
     "id": "kanji_822",
@@ -6121,7 +6999,6 @@
     "literal": "塗",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "塗",
     "koreanMeaning": "칠할 도",
     "meaningsKo": [
       "칠할"
@@ -6142,8 +7019,13 @@
         "kana": "まみれる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Surplus·Dirt이 모여 ‘칠할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "絵を塗るために筆を使う。",
+        "kana": "",
+        "ko": "그림을 칠하기 위해 붓을 사용한다."
+      }
+    ]
   },
   {
     "id": "kanji_823",
@@ -6152,7 +7034,6 @@
     "literal": "汗",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "汗",
     "koreanMeaning": "땀 한",
     "meaningsKo": [
       "땀"
@@ -6167,8 +7048,13 @@
         "kana": "あせ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Dry이 모여 ‘땀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "運動したら汗が出る。",
+        "kana": "",
+        "ko": "운동을 하면 땀이 난다."
+      }
+    ]
   },
   {
     "id": "kanji_824",
@@ -6177,7 +7063,6 @@
     "literal": "湿",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "湿",
     "koreanMeaning": "젖을 습",
     "meaningsKo": [
       "젖을"
@@ -6204,8 +7089,13 @@
         "kana": "うるおす"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·날(日)·Spikes이 모여 ‘젖을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "湿気が多い日には注意が必要だ。",
+        "kana": "",
+        "ko": "습기가 많은 날에는 주의가 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_825",
@@ -6214,7 +7104,6 @@
     "literal": "泥",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "泥",
     "koreanMeaning": "진흙 니/거리낄 니",
     "meaningsKo": [
       "진흙",
@@ -6242,8 +7131,13 @@
         "kana": "なずむ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·깃발(方)·숟가락(匕)이 모여 ‘진흙’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "雨が降って泥ができた。",
+        "kana": "",
+        "ko": "비가 와서 진흙이 생겼다."
+      }
+    ]
   },
   {
     "id": "kanji_826",
@@ -6252,7 +7146,6 @@
     "literal": "濯",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "濯",
     "koreanMeaning": "씻을 탁",
     "meaningsKo": [
       "씻을"
@@ -6270,8 +7163,13 @@
         "kana": "ゆすぐ"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Wolverine·새(隹)이 모여 ‘씻을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "服を濯ぐのは面倒だ。",
+        "kana": "",
+        "ko": "옷을 씻는 것은 귀찮다."
+      }
+    ]
   },
   {
     "id": "kanji_827",
@@ -6280,7 +7178,6 @@
     "literal": "沸",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "沸",
     "koreanMeaning": "끓을 비",
     "meaningsKo": [
       "끓을"
@@ -6298,8 +7195,13 @@
         "kana": "わかす"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Dollar이 모여 ‘끓을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "お湯が沸いてきたので、そろそろ料理を始める。",
+        "kana": "",
+        "ko": "물이 끓어오르기 시작해서, 이제 요리를 시작할 때다."
+      }
+    ]
   },
   {
     "id": "kanji_828",
@@ -6308,7 +7210,6 @@
     "literal": "涼",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "涼",
     "koreanMeaning": "서늘할 량",
     "meaningsKo": [
       "서늘할"
@@ -6338,8 +7239,13 @@
         "kana": "まことに"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Capital이 모여 ‘서늘할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この風が涼しいと、夏が来たと感じる。",
+        "kana": "",
+        "ko": "이 바람이 서늘하면 여름이 온 것을 느낀다."
+      }
+    ]
   },
   {
     "id": "kanji_829",
@@ -6348,7 +7254,6 @@
     "literal": "滴",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "滴",
     "koreanMeaning": "물방울 적",
     "meaningsKo": [
       "물방울"
@@ -6366,8 +7271,13 @@
         "kana": "したたる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Mohawk이 모여 ‘물방울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "雨の滴が葉っぱに落ちている。",
+        "kana": "",
+        "ko": "비 물방울이 나뭇잎에 떨어지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_830",
@@ -6376,7 +7286,6 @@
     "literal": "雇",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "雇",
     "koreanMeaning": "품 팔 고",
     "meaningsKo": [
       "품 팔"
@@ -6391,8 +7300,13 @@
         "kana": "やとう"
       }
     ],
-    "examples": [],
-    "hint": "새(隹)·Door이 모여 ‘품 팔’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい社員を雇うことに決めた。",
+        "kana": "",
+        "ko": "새로운 직원을 고용하기로 결정했다."
+      }
+    ]
   },
   {
     "id": "kanji_831",
@@ -6401,7 +7315,6 @@
     "literal": "隻",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "隻",
     "koreanMeaning": "외짝 척",
     "meaningsKo": [
       "외짝"
@@ -6412,8 +7325,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "새(隹)·Stool이 모여 ‘외짝’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "船は一隻だけ港に停まっていた。",
+        "kana": "",
+        "ko": "배는 한 척만 항구에 정박해 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_832",
@@ -6422,7 +7340,6 @@
     "literal": "営",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "営",
     "koreanMeaning": "경영할 영",
     "meaningsKo": [
       "경영할"
@@ -6440,8 +7357,13 @@
         "kana": "いとなみ"
       }
     ],
-    "examples": [],
-    "hint": "Viking·Bathtub이 모여 ‘경영할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は小さな会社を営んでいる。",
+        "kana": "",
+        "ko": "그는 작은 회사를 운영하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_833",
@@ -6450,7 +7372,6 @@
     "literal": "栄",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "栄",
     "koreanMeaning": "영화 영",
     "meaningsKo": [
       "영화"
@@ -6480,8 +7401,13 @@
         "kana": "え"
       }
     ],
-    "examples": [],
-    "hint": "Viking·나무(木)이 모여 ‘영화’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この町は栄えている商業地区がある。",
+        "kana": "",
+        "ko": "이 도시는 번창하는 상업 지역이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_834",
@@ -6490,7 +7416,6 @@
     "literal": "勢",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "勢",
     "koreanMeaning": "형세 세",
     "meaningsKo": [
       "형세"
@@ -6511,8 +7436,13 @@
         "kana": "はずみ"
       }
     ],
-    "examples": [],
-    "hint": "Womb·Circle·힘(力)이 모여 ‘형세’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の勢いに圧倒されてしまった。",
+        "kana": "",
+        "ko": "그의 기세에 압도당하고 말았다."
+      }
+    ]
   },
   {
     "id": "kanji_835",
@@ -6521,7 +7451,6 @@
     "literal": "包",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "包",
     "koreanMeaning": "쌀 포",
     "meaningsKo": [
       "쌀"
@@ -6539,8 +7468,13 @@
         "kana": "くるむ"
       }
     ],
-    "examples": [],
-    "hint": "Wrap의 뜻·모양에서 ‘쌀’을 나타냄"
+    "examples": [
+      {
+        "jp": "プレゼントを包むための紙を用意した。",
+        "kana": "",
+        "ko": "선물을 포장하기 위한 종이를 준비했다."
+      }
+    ]
   },
   {
     "id": "kanji_836",
@@ -6549,7 +7483,6 @@
     "literal": "氏",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "氏",
     "koreanMeaning": "성씨 씨",
     "meaningsKo": [
       "성씨"
@@ -6564,8 +7497,13 @@
         "kana": "うじ"
       }
     ],
-    "examples": [],
-    "hint": "Clan의 뜻·모양에서 ‘성씨’을 나타냄"
+    "examples": [
+      {
+        "jp": "氏名を記入する必要があります。",
+        "kana": "",
+        "ko": "이름을 기입해야 합니다."
+      }
+    ]
   },
   {
     "id": "kanji_837",
@@ -6574,7 +7512,6 @@
     "literal": "統",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "統",
     "koreanMeaning": "거느릴 통",
     "meaningsKo": [
       "거느릴"
@@ -6592,8 +7529,13 @@
         "kana": "ほびる"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·Allocate이 모여 ‘거느릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "問題を統括するのは難しい。",
+        "kana": "",
+        "ko": "문제를 통괄하는 것은 어렵다."
+      }
+    ]
   },
   {
     "id": "kanji_838",
@@ -6602,7 +7544,6 @@
     "literal": "派",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "派",
     "koreanMeaning": "갈래 파",
     "meaningsKo": [
       "갈래"
@@ -6613,8 +7554,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "물(氵)·언덕(厂)·Tofu이 모여 ‘갈래’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は異なる派に属している。",
+        "kana": "",
+        "ko": "그는 다른 파에 속해 있다."
+      }
+    ]
   },
   {
     "id": "kanji_839",
@@ -6623,7 +7569,6 @@
     "literal": "案",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "案",
     "koreanMeaning": "책상 안",
     "meaningsKo": [
       "책상"
@@ -6638,8 +7583,13 @@
         "kana": "つくえ"
       }
     ],
-    "examples": [],
-    "hint": "Cheap·나무(木)이 모여 ‘책상’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の机の上に案が置いてある。",
+        "kana": "",
+        "ko": "그의 책상 위에 안이 놓여 있다."
+      }
+    ]
   },
   {
     "id": "kanji_840",
@@ -6648,7 +7598,6 @@
     "literal": "策",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "策",
     "koreanMeaning": "대쪽 책",
     "meaningsKo": [
       "대쪽"
@@ -6659,8 +7608,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "대나무(竹)·나무(木)·Head이 모여 ‘대쪽’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい策を練る必要がある。",
+        "kana": "",
+        "ko": "새로운 대책을 세울 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_841",
@@ -6669,7 +7623,6 @@
     "literal": "基",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "基",
     "koreanMeaning": "터 기",
     "meaningsKo": [
       "터"
@@ -6687,8 +7640,13 @@
         "kana": "もとい"
       }
     ],
-    "examples": [],
-    "hint": "Crab·Dirt이 모여 ‘터’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この建物の基はとても頑丈だ。",
+        "kana": "",
+        "ko": "이 건물의 기초는 매우 튼튼하다."
+      }
+    ]
   },
   {
     "id": "kanji_842",
@@ -6697,7 +7655,6 @@
     "literal": "価",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "価",
     "koreanMeaning": "값 가",
     "meaningsKo": [
       "값"
@@ -6715,8 +7672,13 @@
         "kana": "あたい"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·Helicopter이 모여 ‘값’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この商品の価は少し高い。",
+        "kana": "",
+        "ko": "이 상품의 가격은 조금 비싸다."
+      }
+    ]
   },
   {
     "id": "kanji_843",
@@ -6725,7 +7687,6 @@
     "literal": "企",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "企",
     "koreanMeaning": "꾀할 기",
     "meaningsKo": [
       "꾀할"
@@ -6743,8 +7704,13 @@
         "kana": "たくらむ"
       }
     ],
-    "examples": [],
-    "hint": "Hat·그칠(止)이 모여 ‘꾀할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい企を考えています。",
+        "kana": "",
+        "ko": "새로운 계획을 구상하고 있습니다."
+      }
+    ]
   },
   {
     "id": "kanji_844",
@@ -6753,7 +7719,6 @@
     "literal": "藤",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "藤",
     "koreanMeaning": "등나무 등",
     "meaningsKo": [
       "등나무"
@@ -6771,8 +7736,13 @@
         "kana": "ふじ"
       }
     ],
-    "examples": [],
-    "hint": "Flowers·달(月)·Gladiator이 모여 ‘등나무’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "春になると藤の花が咲く。",
+        "kana": "",
+        "ko": "봄이 되면 등나무 꽃이 핀다."
+      }
+    ]
   },
   {
     "id": "kanji_845",
@@ -6781,7 +7751,6 @@
     "literal": "沢",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "沢",
     "koreanMeaning": "못 택",
     "meaningsKo": [
       "못"
@@ -6805,8 +7774,13 @@
         "kana": "つや"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·Shrimp이 모여 ‘못’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "沢で魚を釣るのが好きだ。",
+        "kana": "",
+        "ko": "못에서 낚시하는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_846",
@@ -6815,7 +7789,6 @@
     "literal": "裁",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "裁",
     "koreanMeaning": "마를 재",
     "meaningsKo": [
       "마를"
@@ -6833,8 +7806,13 @@
         "kana": "さばく"
       }
     ],
-    "examples": [],
-    "hint": "Cross·Drunkard·옷(衣)이 모여 ‘마를’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "服を裁つのが得意だ。",
+        "kana": "",
+        "ko": "옷을 재단하는 것을 잘한다."
+      }
+    ]
   },
   {
     "id": "kanji_847",
@@ -6843,7 +7821,6 @@
     "literal": "援",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "援",
     "koreanMeaning": "도울 원",
     "meaningsKo": [
       "도울"
@@ -6854,8 +7831,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Fingers·Football이 모여 ‘도울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "このプロジェクトには多くの援が必要だ。",
+        "kana": "",
+        "ko": "이 프로젝트에는 많은 도움이 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_848",
@@ -6864,7 +7846,6 @@
     "literal": "施",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "施",
     "koreanMeaning": "베풀 시/옮길 이",
     "meaningsKo": [
       "베풀",
@@ -6883,8 +7864,13 @@
         "kana": "ほどこす"
       }
     ],
-    "examples": [],
-    "hint": "방향(方)·창·Alligator이 모여 ‘베풀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は地域に施をしている。",
+        "kana": "",
+        "ko": "그는 지역에 기부를 하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_849",
@@ -6893,7 +7879,6 @@
     "literal": "護",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "護",
     "koreanMeaning": "도울 호",
     "meaningsKo": [
       "도울"
@@ -6908,8 +7893,13 @@
         "kana": "まもる"
       }
     ],
-    "examples": [],
-    "hint": "Say·Flowers·새(隹)이 모여 ‘도울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は子供たちを護るために働いている。",
+        "kana": "",
+        "ko": "그녀는 아이들을 보호하기 위해 일하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_850",
@@ -6918,7 +7908,6 @@
     "literal": "展",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "展",
     "koreanMeaning": "펼 전",
     "meaningsKo": [
       "펼"
@@ -6929,8 +7918,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "깃발(方)·Blackjack·Kick이 모여 ‘펼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "美術展が来月開かれる。",
+        "kana": "",
+        "ko": "미술 전시회가 다음 달에 열린다."
+      }
+    ]
   },
   {
     "id": "kanji_851",
@@ -6939,7 +7933,6 @@
     "literal": "態",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "態",
     "koreanMeaning": "모습 태",
     "meaningsKo": [
       "모습"
@@ -6954,8 +7947,13 @@
         "kana": "わざと"
       }
     ],
-    "examples": [],
-    "hint": "Ability·마음(心)이 모여 ‘모습’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "態度を改める必要がある。",
+        "kana": "",
+        "ko": "태도를 바꿀 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_852",
@@ -6964,7 +7962,6 @@
     "literal": "鮮",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "鮮",
     "koreanMeaning": "고울 선/적을 선",
     "meaningsKo": [
       "고울",
@@ -6980,8 +7977,13 @@
         "kana": "あざやか"
       }
     ],
-    "examples": [],
-    "hint": "양(羊)·물고기(魚)이 모여 ‘고울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この絵は鮮やかな色が使われている。",
+        "kana": "",
+        "ko": "이 그림은 선명한 색이 사용되었다."
+      }
+    ]
   },
   {
     "id": "kanji_853",
@@ -6990,7 +7992,6 @@
     "literal": "視",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "視",
     "koreanMeaning": "볼 시",
     "meaningsKo": [
       "볼"
@@ -7005,8 +8006,13 @@
         "kana": "みる"
       }
     ],
-    "examples": [],
-    "hint": "Spirit·볼(見)이 모여 ‘볼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "遠くの山を視ることができる。",
+        "kana": "",
+        "ko": "먼 산을 볼 수 있다."
+      }
+    ]
   },
   {
     "id": "kanji_854",
@@ -7015,7 +8021,6 @@
     "literal": "条",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "条",
     "koreanMeaning": "가지 조",
     "meaningsKo": [
       "가지"
@@ -7039,8 +8044,13 @@
         "kana": "すじ"
       }
     ],
-    "examples": [],
-    "hint": "Winter·나무(木)이 모여 ‘가지’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この条は法律の重要な部分だ。",
+        "kana": "",
+        "ko": "이 조항은 법의 중요한 부분이다."
+      }
+    ]
   },
   {
     "id": "kanji_855",
@@ -7049,7 +8059,6 @@
     "literal": "幹",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "幹",
     "koreanMeaning": "줄기 간",
     "meaningsKo": [
       "줄기"
@@ -7064,8 +8073,13 @@
         "kana": "みき"
       }
     ],
-    "examples": [],
-    "hint": "Morning·Hat·Dry이 모여 ‘줄기’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "木の幹が太くなってきた。",
+        "kana": "",
+        "ko": "나무의 줄기가 굵어지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_856",
@@ -7074,7 +8088,6 @@
     "literal": "独",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "独",
     "koreanMeaning": "홀로 독",
     "meaningsKo": [
       "홀로"
@@ -7092,8 +8105,13 @@
         "kana": "ひとり"
       }
     ],
-    "examples": [],
-    "hint": "Animal·벌레(虫)이 모여 ‘홀로’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は独りで旅行をした。",
+        "kana": "",
+        "ko": "그는 혼자서 여행을 했다."
+      }
+    ]
   },
   {
     "id": "kanji_857",
@@ -7102,7 +8120,6 @@
     "literal": "宮",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "宮",
     "koreanMeaning": "집 궁",
     "meaningsKo": [
       "집"
@@ -7126,8 +8143,13 @@
         "kana": "みや"
       }
     ],
-    "examples": [],
-    "hint": "집(宀)·Bathtub이 모여 ‘집’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "京都には美しい宮がたくさんある。",
+        "kana": "",
+        "ko": "교토에는 아름다운 궁이 많이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_858",
@@ -7136,7 +8158,6 @@
     "literal": "衛",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "衛",
     "koreanMeaning": "지킬 위",
     "meaningsKo": [
       "지킬"
@@ -7150,8 +8171,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "갈(行)·Korea이 모여 ‘지킬’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "衛生のために手を洗いましょう。",
+        "kana": "",
+        "ko": "위생을 위해 손을 씻읍시다."
+      }
+    ]
   },
   {
     "id": "kanji_859",
@@ -7160,7 +8186,6 @@
     "literal": "監",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "監",
     "koreanMeaning": "볼 감",
     "meaningsKo": [
       "볼"
@@ -7171,8 +8196,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Servant·창·Ground이 모여 ‘볼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "監督が試合を見守っている。",
+        "kana": "",
+        "ko": "감독이 경기를 지켜보고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_860",
@@ -7181,7 +8211,6 @@
     "literal": "環",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "環",
     "koreanMeaning": "고리 환",
     "meaningsKo": [
       "고리"
@@ -7196,8 +8225,13 @@
         "kana": "わ"
       }
     ],
-    "examples": [],
-    "hint": "임금(王)·그물(罒)·Zombie이 모여 ‘고리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この環はとても大きい。",
+        "kana": "",
+        "ko": "이 고리는 매우 크다."
+      }
+    ]
   },
   {
     "id": "kanji_861",
@@ -7206,7 +8240,6 @@
     "literal": "審",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "審",
     "koreanMeaning": "살필 심",
     "meaningsKo": [
       "살필"
@@ -7224,8 +8257,13 @@
         "kana": "つぶさに"
       }
     ],
-    "examples": [],
-    "hint": "집(宀)·Number이 모여 ‘살필’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "試験の結果を審査する。",
+        "kana": "",
+        "ko": "시험 결과를 심사하다."
+      }
+    ]
   },
   {
     "id": "kanji_862",
@@ -7234,7 +8272,6 @@
     "literal": "義",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "義",
     "koreanMeaning": "옳을 의",
     "meaningsKo": [
       "옳을"
@@ -7245,8 +8282,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Righteousness의 뜻·모양에서 ‘옳을’을 나타냄"
+    "examples": [
+      {
+        "jp": "彼は義務を果たすことが重要だと言った。",
+        "kana": "",
+        "ko": "그는 의무를 다하는 것이 중요하다고 말했다."
+      }
+    ]
   },
   {
     "id": "kanji_863",
@@ -7255,7 +8297,6 @@
     "literal": "訴",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "訴",
     "koreanMeaning": "호소할 소",
     "meaningsKo": [
       "호소할"
@@ -7270,8 +8311,13 @@
         "kana": "うったえる"
       }
     ],
-    "examples": [],
-    "hint": "Say·도끼(斤)·Drop이 모여 ‘호소할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は自分の意見を訴えた。",
+        "kana": "",
+        "ko": "그녀는 자신의 의견을 호소했다."
+      }
+    ]
   },
   {
     "id": "kanji_864",
@@ -7280,7 +8326,6 @@
     "literal": "姿",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "姿",
     "koreanMeaning": "모양 자",
     "meaningsKo": [
       "모양"
@@ -7295,8 +8340,13 @@
         "kana": "すがた"
       }
     ],
-    "examples": [],
-    "hint": "Next·여자(女)이 모여 ‘모양’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の姿はとても印象的だった。",
+        "kana": "",
+        "ko": "그의 모습은 매우 인상적이었다."
+      }
+    ]
   },
   {
     "id": "kanji_865",
@@ -7305,7 +8355,6 @@
     "literal": "衆",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "衆",
     "koreanMeaning": "무리 중",
     "meaningsKo": [
       "무리"
@@ -7323,8 +8372,13 @@
         "kana": "おおい"
       }
     ],
-    "examples": [],
-    "hint": "Blood·Hair·Tofu이 모여 ‘무리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "衆が集まるイベントに参加した。",
+        "kana": "",
+        "ko": "많은 사람들이 모이는 행사에 참여했다."
+      }
+    ]
   },
   {
     "id": "kanji_866",
@@ -7333,7 +8387,6 @@
     "literal": "影",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "影",
     "koreanMeaning": "그림자 영",
     "meaningsKo": [
       "그림자"
@@ -7348,8 +8401,13 @@
         "kana": "かげ"
       }
     ],
-    "examples": [],
-    "hint": "날(日)·Capital·Hair이 모여 ‘그림자’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "夕日が影を作っている。",
+        "kana": "",
+        "ko": "해질녘에 그림자가 생기고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_867",
@@ -7358,7 +8416,6 @@
     "literal": "撃",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "撃",
     "koreanMeaning": "칠 격",
     "meaningsKo": [
       "칠"
@@ -7373,8 +8430,13 @@
         "kana": "うつ"
       }
     ],
-    "examples": [],
-    "hint": "수레(車)·Weapon·손(手)이 모여 ‘칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼はボールを撃った。",
+        "kana": "",
+        "ko": "그는 공을 쳤다."
+      }
+    ]
   },
   {
     "id": "kanji_868",
@@ -7383,7 +8445,6 @@
     "literal": "佐",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "佐",
     "koreanMeaning": "도울 좌",
     "meaningsKo": [
       "도울"
@@ -7394,8 +8455,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사람(亻)·Narwhal·Construction이 모여 ‘도울’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は私を佐助けしてくれた。",
+        "kana": "",
+        "ko": "그는 나를 도와주었다."
+      }
+    ]
   },
   {
     "id": "kanji_869",
@@ -7404,7 +8470,6 @@
     "literal": "核",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "核",
     "koreanMeaning": "씨 핵",
     "meaningsKo": [
       "씨"
@@ -7415,8 +8480,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "나무(木)·Slice이 모여 ‘씨’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "原子核について学ぶことは面白い。",
+        "kana": "",
+        "ko": "원자핵에 대해 배우는 것은 흥미롭다."
+      }
+    ]
   },
   {
     "id": "kanji_870",
@@ -7425,7 +8495,6 @@
     "literal": "融",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "融",
     "koreanMeaning": "녹을 융",
     "meaningsKo": [
       "녹을"
@@ -7443,8 +8512,13 @@
         "kana": "とかす"
       }
     ],
-    "examples": [],
-    "hint": "Bully·벌레(虫)이 모여 ‘녹을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "氷が徐々に融けていく。",
+        "kana": "",
+        "ko": "얼음이 점점 녹아가고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_871",
@@ -7453,7 +8527,6 @@
     "literal": "票",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "票",
     "koreanMeaning": "표 표",
     "meaningsKo": [
       "표"
@@ -7464,8 +8537,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Helicopter·Jackhammer이 모여 ‘표’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この表は入場券の票です。",
+        "kana": "",
+        "ko": "이 표는 입장권입니다."
+      }
+    ]
   },
   {
     "id": "kanji_872",
@@ -7474,7 +8552,6 @@
     "literal": "渉",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "渉",
     "koreanMeaning": "건널 섭",
     "meaningsKo": [
       "건널"
@@ -7489,8 +8566,13 @@
         "kana": "わたる"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·걸을(辶)이 모여 ‘건널’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は橋を渉って学校に行った。",
+        "kana": "",
+        "ko": "그는 다리를 건너서 학교에 갔다."
+      }
+    ]
   },
   {
     "id": "kanji_873",
@@ -7499,7 +8581,6 @@
     "literal": "響",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "響",
     "koreanMeaning": "울릴 향",
     "meaningsKo": [
       "울릴"
@@ -7514,8 +8595,13 @@
         "kana": "ひびく"
       }
     ],
-    "examples": [],
-    "hint": "Poop·Root·마을(阝)이 모여 ‘울릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "音楽が遠くまで響いている。",
+        "kana": "",
+        "ko": "음악이 멀리까지 울려 퍼지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_874",
@@ -7524,7 +8610,6 @@
     "literal": "請",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "請",
     "koreanMeaning": "청할 청",
     "meaningsKo": [
       "청할"
@@ -7548,8 +8633,13 @@
         "kana": "うける"
       }
     ],
-    "examples": [],
-    "hint": "Say·Blue이 모여 ‘청할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼はプロジェクトの進行を請け負った。",
+        "kana": "",
+        "ko": "그는 프로젝트 진행을 맡았다."
+      }
+    ]
   },
   {
     "id": "kanji_875",
@@ -7558,7 +8648,6 @@
     "literal": "攻",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "攻",
     "koreanMeaning": "칠 공",
     "meaningsKo": [
       "칠"
@@ -7573,8 +8662,13 @@
         "kana": "せめる"
       }
     ],
-    "examples": [],
-    "hint": "Construction·Winter이 모여 ‘칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "敵を攻撃する準備ができた。",
+        "kana": "",
+        "ko": "적을 공격할 준비가 되었다."
+      }
+    ]
   },
   {
     "id": "kanji_876",
@@ -7583,7 +8677,6 @@
     "literal": "崎",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "崎",
     "koreanMeaning": "험할 기",
     "meaningsKo": [
       "험할"
@@ -7604,8 +8697,13 @@
         "kana": "みさき"
       }
     ],
-    "examples": [],
-    "hint": "산(山)·Big·Lip Ring이 모여 ‘험할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この崎は非常に険しい。",
+        "kana": "",
+        "ko": "이 곶은 매우 험하다."
+      }
+    ]
   },
   {
     "id": "kanji_877",
@@ -7614,7 +8712,6 @@
     "literal": "督",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "督",
     "koreanMeaning": "감독할 독",
     "meaningsKo": [
       "감독할"
@@ -7625,8 +8722,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Above·작을(小)·Stool이 모여 ‘감독할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "新しい監督がチームを指導する。",
+        "kana": "",
+        "ko": "새로운 감독이 팀을 지도한다."
+      }
+    ]
   },
   {
     "id": "kanji_878",
@@ -7635,7 +8737,6 @@
     "literal": "授",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "授",
     "koreanMeaning": "줄 수",
     "meaningsKo": [
       "줄"
@@ -7653,8 +8754,13 @@
         "kana": "さずかる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Accept이 모여 ‘줄’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "教授が学生に賞を授けた。",
+        "kana": "",
+        "ko": "교수가 학생에게 상을 주었다."
+      }
+    ]
   },
   {
     "id": "kanji_879",
@@ -7663,7 +8769,6 @@
     "literal": "催",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "催",
     "koreanMeaning": "재촉할 최",
     "meaningsKo": [
       "재촉할"
@@ -7681,8 +8786,13 @@
         "kana": "もよおす"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·산(山)·새(隹)이 모여 ‘재촉할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "イベントの開始を催促された。",
+        "kana": "",
+        "ko": "행사 시작을 재촉받았다."
+      }
+    ]
   },
   {
     "id": "kanji_880",
@@ -7691,7 +8801,6 @@
     "literal": "憲",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "憲",
     "koreanMeaning": "법 헌",
     "meaningsKo": [
       "법"
@@ -7702,8 +8811,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "집(宀)·Life·그물(罒)이 모여 ‘법’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "憲法は国の基本的な法律である。",
+        "kana": "",
+        "ko": "헌법은 국가의 기본 법률이다."
+      }
+    ]
   },
   {
     "id": "kanji_881",
@@ -7712,7 +8826,6 @@
     "literal": "離",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "離",
     "koreanMeaning": "떠날 리",
     "meaningsKo": [
       "떠날"
@@ -7730,8 +8843,13 @@
         "kana": "はなす"
       }
     ],
-    "examples": [],
-    "hint": "Rocket·새(隹)이 모여 ‘떠날’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "友達と離れてしまった。",
+        "kana": "",
+        "ko": "친구와 떨어져 버렸다."
+      }
+    ]
   },
   {
     "id": "kanji_882",
@@ -7740,7 +8858,6 @@
     "literal": "摘",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "摘",
     "koreanMeaning": "딸 적",
     "meaningsKo": [
       "딸"
@@ -7755,8 +8872,13 @@
         "kana": "つむ"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Mohawk이 모여 ‘딸’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "果物を摘むのが楽しい。",
+        "kana": "",
+        "ko": "과일을 따는 것이 즐겁다."
+      }
+    ]
   },
   {
     "id": "kanji_883",
@@ -7765,7 +8887,6 @@
     "literal": "系",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "系",
     "koreanMeaning": "맬 계",
     "meaningsKo": [
       "맬"
@@ -7776,8 +8897,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Lineage의 뜻·모양에서 ‘맬’을 나타냄"
+    "examples": [
+      {
+        "jp": "この系は非常に重要だ。",
+        "kana": "",
+        "ko": "이 계통은 매우 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_884",
@@ -7786,7 +8912,6 @@
     "literal": "批",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "批",
     "koreanMeaning": "비평할 비",
     "meaningsKo": [
       "비평할"
@@ -7797,8 +8922,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "Fingers·Compare이 모여 ‘비평할’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼の批評はいつも鋭い。",
+        "kana": "",
+        "ko": "그의 비평은 항상 날카롭다."
+      }
+    ]
   },
   {
     "id": "kanji_885",
@@ -7807,7 +8937,6 @@
     "literal": "郎",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "郎",
     "koreanMeaning": "사내 랑",
     "meaningsKo": [
       "사내"
@@ -7825,8 +8954,13 @@
         "kana": "おとこ"
       }
     ],
-    "examples": [],
-    "hint": "Good·마을(阝)이 모여 ‘사내’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は若い郎のように見える。",
+        "kana": "",
+        "ko": "그는 젊은 남자처럼 보인다."
+      }
+    ]
   },
   {
     "id": "kanji_886",
@@ -7835,7 +8969,6 @@
     "literal": "健",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "健",
     "koreanMeaning": "굳셀 건",
     "meaningsKo": [
       "굳셀"
@@ -7850,8 +8983,13 @@
         "kana": "すこやか"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·Yoga·Brush이 모여 ‘굳셀’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "健康な生活を送ることが大切だ。",
+        "kana": "",
+        "ko": "건강한 생활을 하는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_887",
@@ -7860,7 +8998,6 @@
     "literal": "従",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "従",
     "koreanMeaning": "좇을 종",
     "meaningsKo": [
       "좇을"
@@ -7887,8 +9024,13 @@
         "kana": "より"
       }
     ],
-    "examples": [],
-    "hint": "Loiter·뿔·Correct이 모여 ‘좇을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼はいつも父に従っている。",
+        "kana": "",
+        "ko": "그는 항상 아버지를 좇는다."
+      }
+    ]
   },
   {
     "id": "kanji_888",
@@ -7897,7 +9039,6 @@
     "literal": "修",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "修",
     "koreanMeaning": "닦을 수",
     "meaningsKo": [
       "닦을"
@@ -7918,8 +9059,13 @@
         "kana": "おさまる"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)·막대(丨)·Winter이 모여 ‘닦을’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は技術を修めるために努力している。",
+        "kana": "",
+        "ko": "그녀는 기술을 닦기 위해 노력하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_889",
@@ -7928,7 +9074,6 @@
     "literal": "隊",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "隊",
     "koreanMeaning": "무리 대",
     "meaningsKo": [
       "무리"
@@ -7939,8 +9084,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "마을(阝)·뿔·Pig이 모여 ‘무리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "消防隊が火事を消し止めた。",
+        "kana": "",
+        "ko": "소방대가 화재를 진압했다."
+      }
+    ]
   },
   {
     "id": "kanji_890",
@@ -7949,7 +9099,6 @@
     "literal": "織",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "織",
     "koreanMeaning": "짤 직",
     "meaningsKo": [
       "짤"
@@ -7970,8 +9119,13 @@
         "kana": "おり"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)·Sound·Drunkard이 모여 ‘짤’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼女は美しい布を織っている。",
+        "kana": "",
+        "ko": "그녀는 아름다운 천을 짜고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_891",
@@ -7980,7 +9134,6 @@
     "literal": "拡",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "拡",
     "koreanMeaning": "넓힐 확",
     "meaningsKo": [
       "넓힐"
@@ -8004,8 +9157,13 @@
         "kana": "ひろめる"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Wide이 모여 ‘넓힐’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この地域は急速に拡大している。",
+        "kana": "",
+        "ko": "이 지역은 급속도로 넓어지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_892",
@@ -8014,7 +9172,6 @@
     "literal": "振",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "振",
     "koreanMeaning": "떨칠 진",
     "meaningsKo": [
       "떨칠"
@@ -8041,8 +9198,13 @@
         "kana": "ふるう"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·Landslide이 모여 ‘떨칠’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "風に振り回されて帽子が飛んでいった。",
+        "kana": "",
+        "ko": "바람에 휘말려 모자가 날아갔다."
+      }
+    ]
   },
   {
     "id": "kanji_893",
@@ -8051,7 +9213,6 @@
     "literal": "献",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "献",
     "koreanMeaning": "드릴 헌",
     "meaningsKo": [
       "드릴"
@@ -8069,8 +9230,13 @@
         "kana": "たてまつる"
       }
     ],
-    "examples": [],
-    "hint": "South·개(犭)이 모여 ‘드릴’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼は国に献身している。",
+        "kana": "",
+        "ko": "그는 나라에 헌신하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_894",
@@ -8079,7 +9245,6 @@
     "literal": "維",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "維",
     "koreanMeaning": "벼리 유/오직 유",
     "meaningsKo": [
       "벼리",
@@ -8091,8 +9256,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "실(糸)·새(隹)이 모여 ‘벼리’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この問題を維持するのは難しい。",
+        "kana": "",
+        "ko": "이 문제를 유지하는 것은 어렵다."
+      }
+    ]
   },
   {
     "id": "kanji_895",
@@ -8101,7 +9271,6 @@
     "literal": "浜",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "浜",
     "koreanMeaning": "물가 빈",
     "meaningsKo": [
       "물가"
@@ -8116,8 +9285,13 @@
         "kana": "はま"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)·도끼(斤)·Ground이 모여 ‘물가’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この浜でピクニックをする予定だ。",
+        "kana": "",
+        "ko": "이 해변에서 소풍을 할 계획이다."
+      }
+    ]
   },
   {
     "id": "kanji_896",
@@ -8126,7 +9300,6 @@
     "literal": "遺",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "遺",
     "koreanMeaning": "남길 유",
     "meaningsKo": [
       "남길"
@@ -8144,8 +9317,13 @@
         "kana": "のこす"
       }
     ],
-    "examples": [],
-    "hint": "Scooter·Valuable이 모여 ‘남길’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "祖母が遺した手紙を見つけた。",
+        "kana": "",
+        "ko": "할머니가 남긴 편지를 찾았다."
+      }
+    ]
   },
   {
     "id": "kanji_897",
@@ -8154,7 +9332,6 @@
     "literal": "塁",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "塁",
     "koreanMeaning": "보루 루",
     "meaningsKo": [
       "보루"
@@ -8175,8 +9352,13 @@
         "kana": "とりで"
       }
     ],
-    "examples": [],
-    "hint": "논(田)·Explosion·Dirt이 모여 ‘보루’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "この塁は敵から守られている。",
+        "kana": "",
+        "ko": "이 보루는 적으로부터 보호받고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_898",
@@ -8185,7 +9367,6 @@
     "literal": "邦",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "邦",
     "koreanMeaning": "나라 방",
     "meaningsKo": [
       "나라"
@@ -8200,8 +9381,13 @@
         "kana": "くに"
       }
     ],
-    "examples": [],
-    "hint": "Three·삐침·마을(阝)이 모여 ‘나라’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "日本は文化が豊かな邦だ。",
+        "kana": "",
+        "ko": "일본은 문화가 풍부한 나라이다."
+      }
+    ]
   },
   {
     "id": "kanji_899",
@@ -8210,7 +9396,6 @@
     "literal": "遣",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "遣",
     "koreanMeaning": "보낼 견",
     "meaningsKo": [
       "보낼"
@@ -8237,8 +9422,13 @@
         "kana": "やる"
       }
     ],
-    "examples": [],
-    "hint": "Scooter·벌레(虫)·Bear이 모여 ‘보낼’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "友達に手紙を遣った。",
+        "kana": "",
+        "ko": "친구에게 편지를 보냈다."
+      }
+    ]
   },
   {
     "id": "kanji_900",
@@ -8247,7 +9437,6 @@
     "literal": "抗",
     "jlpt": "ADV",
     "strokeCount": 0,
-    "koreanHanja": "抗",
     "koreanMeaning": "겨룰 항",
     "meaningsKo": [
       "겨룰"
@@ -8262,7 +9451,12 @@
         "kana": "あらがう"
       }
     ],
-    "examples": [],
-    "hint": "Fingers·덮개(亠)·Table이 모여 ‘겨룰’의 뜻을 이룸"
+    "examples": [
+      {
+        "jp": "彼はその問題に抗っている。",
+        "kana": "",
+        "ko": "그는 그 문제에 맞서 싸우고 있다."
+      }
+    ]
   }
 ]

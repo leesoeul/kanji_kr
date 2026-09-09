@@ -6,7 +6,6 @@
     "literal": "幸",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "幸",
     "koreanMeaning": "행복할 행",
     "meaningsKo": [
       "행복할"
@@ -24,8 +23,13 @@
         "kana": "しあわせ"
       }
     ],
-    "examples": [],
-    "hint": "죄수에게 채우는 큰 수갑(幸)을 벗어나는 다행스러움"
+    "examples": [
+      {
+        "jp": "幸せな瞬間を大切にする。",
+        "kana": "",
+        "ko": "행복한 순간을 소중히 여긴다."
+      }
+    ]
   },
   {
     "id": "kanji_302",
@@ -34,7 +38,6 @@
     "literal": "報",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "報",
     "koreanMeaning": "알릴 보/갚을 보",
     "meaningsKo": [
       "알릴",
@@ -50,8 +53,13 @@
         "kana": "むくいる"
       }
     ],
-    "examples": [],
-    "hint": "수갑(幸)을 찬 죄인을 회초리(卩)로 다스려 죗값을 치르게 함"
+    "examples": [
+      {
+        "jp": "友達に感謝の報を伝えた。",
+        "kana": "",
+        "ko": "친구에게 감사의 마음을 전했다."
+      }
+    ]
   },
   {
     "id": "kanji_303",
@@ -60,7 +68,6 @@
     "literal": "服",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "服",
     "koreanMeaning": "옷 복",
     "meaningsKo": [
       "옷"
@@ -71,8 +78,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "배(舟) 옆에서 사람이 무릎 꿇고(卩) 항복하는 모습, 몸에 맞는 옷"
+    "examples": [
+      {
+        "jp": "この服はとても好きだ。",
+        "kana": "",
+        "ko": "이 옷이 매우 마음에 든다."
+      }
+    ]
   },
   {
     "id": "kanji_304",
@@ -81,7 +93,6 @@
     "literal": "業",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "業",
     "koreanMeaning": "업 업",
     "meaningsKo": [
       "업"
@@ -99,8 +110,13 @@
         "kana": "わざ"
       }
     ],
-    "examples": [],
-    "hint": "악기를 연주하는 모습에서 '일'이라는 의미로 발전"
+    "examples": [
+      {
+        "jp": "彼は優れた業を持っている。",
+        "kana": "",
+        "ko": "그는 뛰어난 기술을 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_305",
@@ -109,7 +125,6 @@
     "literal": "対",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "対",
     "koreanMeaning": "상대할 대/대답할 대",
     "meaningsKo": [
       "상대할",
@@ -128,8 +143,13 @@
         "kana": "こたえる"
       }
     ],
-    "examples": [],
-    "hint": "두 사람이 마주 보고 있는 모양"
+    "examples": [
+      {
+        "jp": "質問に対してすぐに答えた。",
+        "kana": "",
+        "ko": "질문에 바로 대답했다."
+      }
+    ]
   },
   {
     "id": "kanji_306",
@@ -138,7 +158,6 @@
     "literal": "上",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "上",
     "koreanMeaning": "위 상/오를 상",
     "meaningsKo": [
       "위",
@@ -163,8 +182,13 @@
         "kana": "あがる"
       }
     ],
-    "examples": [],
-    "hint": "기준선(一) 위에 점(丶)이 있는 모양"
+    "examples": [
+      {
+        "jp": "棚の上に本が置いてある。",
+        "kana": "",
+        "ko": "선반 위에 책이 놓여 있다."
+      }
+    ]
   },
   {
     "id": "kanji_307",
@@ -173,7 +197,6 @@
     "literal": "下",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "下",
     "koreanMeaning": "아래 하/내릴 하",
     "meaningsKo": [
       "아래",
@@ -198,8 +221,13 @@
         "kana": "さがる"
       }
     ],
-    "examples": [],
-    "hint": "기준선(一) 아래에 점(丶)이 있는 모양"
+    "examples": [
+      {
+        "jp": "猫が下に隠れている。",
+        "kana": "",
+        "ko": "고양이가 아래에 숨어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_308",
@@ -208,7 +236,6 @@
     "literal": "足",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "足",
     "koreanMeaning": "발 족/넉넉할 족",
     "meaningsKo": [
       "발",
@@ -227,8 +254,13 @@
         "kana": "たりる"
       }
     ],
-    "examples": [],
-    "hint": "무릎(口)과 발(止)의 모양을 본뜬 글자"
+    "examples": [
+      {
+        "jp": "足が疲れたので休みたい。",
+        "kana": "",
+        "ko": "발이 피곤해서 쉬고 싶다."
+      }
+    ]
   },
   {
     "id": "kanji_309",
@@ -237,7 +269,6 @@
     "literal": "着",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "着",
     "koreanMeaning": "잡을 착",
     "meaningsKo": [
       "잡을"
@@ -258,8 +289,13 @@
         "kana": "つく"
       }
     ],
-    "examples": [],
-    "hint": "옷을 입거나 어딘가에 도착함을 의미"
+    "examples": [
+      {
+        "jp": "新しい服を着るのが楽しみだ。",
+        "kana": "",
+        "ko": "새 옷을 입는 것이 기대된다."
+      }
+    ]
   },
   {
     "id": "kanji_310",
@@ -268,7 +304,6 @@
     "literal": "止",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "止",
     "koreanMeaning": "그칠 지",
     "meaningsKo": [
       "그칠"
@@ -286,8 +321,13 @@
         "kana": "やめる"
       }
     ],
-    "examples": [],
-    "hint": "발바닥의 모양에서 유래, 멈추다"
+    "examples": [
+      {
+        "jp": "雨が止むまで待ちましょう。",
+        "kana": "",
+        "ko": "비가 그칠 때까지 기다립시다."
+      }
+    ]
   },
   {
     "id": "kanji_311",
@@ -296,7 +336,6 @@
     "literal": "武",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "武",
     "koreanMeaning": "군사 무/무기 무",
     "meaningsKo": [
       "군사",
@@ -315,8 +354,13 @@
         "kana": "たけし"
       }
     ],
-    "examples": [],
-    "hint": "창(戈)을 들고 걸음(止)을 멈추고 지키는 군사"
+    "examples": [
+      {
+        "jp": "武士の精神を尊重する。",
+        "kana": "",
+        "ko": "무사의 정신을 존중한다."
+      }
+    ]
   },
   {
     "id": "kanji_312",
@@ -325,7 +369,6 @@
     "literal": "歩",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "歩",
     "koreanMeaning": "걸음 보",
     "meaningsKo": [
       "걸음"
@@ -349,8 +392,13 @@
         "kana": "あゆむ"
       }
     ],
-    "examples": [],
-    "hint": "멈추었다(止)가 조금(少)씩 나아가는 걸음"
+    "examples": [
+      {
+        "jp": "毎日公園を歩く。",
+        "kana": "",
+        "ko": "매일 공원을 걷는다."
+      }
+    ]
   },
   {
     "id": "kanji_313",
@@ -359,7 +407,6 @@
     "literal": "歯",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "歯",
     "koreanMeaning": "이 치",
     "meaningsKo": [
       "이"
@@ -374,8 +421,13 @@
         "kana": "は"
       }
     ],
-    "examples": [],
-    "hint": "멈추어(止)서서 음식을 끊는 역할을 하는 뼈"
+    "examples": [
+      {
+        "jp": "歯が痛くなったので歯医者に行った。",
+        "kana": "",
+        "ko": "이가 아파서 치과에 갔다."
+      }
+    ]
   },
   {
     "id": "kanji_314",
@@ -384,7 +436,6 @@
     "literal": "廷",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "廷",
     "koreanMeaning": "조정 정/관청 정",
     "meaningsKo": [
       "조정",
@@ -396,8 +447,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "임금 앞에서 신하들이 길게(壬) 늘어서서(廴) 일을 보는 곳"
+    "examples": [
+      {
+        "jp": "廷で重要な会議が行われる。",
+        "kana": "",
+        "ko": "조정에서 중요한 회의가 열린다."
+      }
+    ]
   },
   {
     "id": "kanji_315",
@@ -406,7 +462,6 @@
     "literal": "庭",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "庭",
     "koreanMeaning": "뜰 정",
     "meaningsKo": [
       "뜰"
@@ -421,8 +476,13 @@
         "kana": "にわ"
       }
     ],
-    "examples": [],
-    "hint": "집(广) 안에서 조정(廷)처럼 가꾸어 놓은 마당"
+    "examples": [
+      {
+        "jp": "庭に花がたくさん咲いている。",
+        "kana": "",
+        "ko": "뜰에 꽃이 많이 피어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_316",
@@ -431,7 +491,6 @@
     "literal": "延",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "延",
     "koreanMeaning": "끌 연/늘일 연",
     "meaningsKo": [
       "끌",
@@ -450,8 +509,13 @@
         "kana": "のばす"
       }
     ],
-    "examples": [],
-    "hint": "걸음(止)을 길게(丿) 끌며 나아감(廴)"
+    "examples": [
+      {
+        "jp": "夏休みが延びると、旅行に行ける。",
+        "kana": "",
+        "ko": "여름 방학이 늘어나면 여행을 갈 수 있다."
+      }
+    ]
   },
   {
     "id": "kanji_317",
@@ -460,7 +524,6 @@
     "literal": "誕",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "誕",
     "koreanMeaning": "태어날 탄",
     "meaningsKo": [
       "태어날"
@@ -471,8 +534,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "말씀(言)으로 길게(延) 이어져 내려오는 생일"
+    "examples": [
+      {
+        "jp": "彼の誕生日は三月の十日だ。",
+        "kana": "",
+        "ko": "그의 생일은 3월 10일이다."
+      }
+    ]
   },
   {
     "id": "kanji_318",
@@ -481,7 +549,6 @@
     "literal": "正",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "正",
     "koreanMeaning": "바를 정",
     "meaningsKo": [
       "바를"
@@ -502,8 +569,13 @@
         "kana": "まさ"
       }
     ],
-    "examples": [],
-    "hint": "성(一)을 향해 걸음(止)을 멈추고 바르게 섬"
+    "examples": [
+      {
+        "jp": "この問題の正しい答えは何ですか？",
+        "kana": "",
+        "ko": "이 문제의 올바른 답은 무엇인가요?"
+      }
+    ]
   },
   {
     "id": "kanji_319",
@@ -512,7 +584,6 @@
     "literal": "政",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "政",
     "koreanMeaning": "다스릴 정",
     "meaningsKo": [
       "다스릴"
@@ -530,8 +601,13 @@
         "kana": "まつりごと"
       }
     ],
-    "examples": [],
-    "hint": "바르게(正) 회초리(攵)로 백성을 다스림"
+    "examples": [
+      {
+        "jp": "新しい政権が発足した。",
+        "kana": "",
+        "ko": "새로운 정부가 출범했다."
+      }
+    ]
   },
   {
     "id": "kanji_320",
@@ -540,7 +616,6 @@
     "literal": "定",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "定",
     "koreanMeaning": "정할 정",
     "meaningsKo": [
       "정할"
@@ -561,8 +636,13 @@
         "kana": "さだまる"
       }
     ],
-    "examples": [],
-    "hint": "집(宀) 안에서 바르게(疋) 자리를 잡음"
+    "examples": [
+      {
+        "jp": "会議の日程を定める必要がある。",
+        "kana": "",
+        "ko": "회의 일정을 정할 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_321",
@@ -571,7 +651,6 @@
     "literal": "整",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "整",
     "koreanMeaning": "가지런할 정",
     "meaningsKo": [
       "가지런할"
@@ -586,8 +665,13 @@
         "kana": "ととのえる"
       }
     ],
-    "examples": [],
-    "hint": "묶음(束)을 바르게(正) 회초리(攵)로 쳐서 가지런히 함"
+    "examples": [
+      {
+        "jp": "部屋を整えてから、友達を呼んだ。",
+        "kana": "",
+        "ko": "방을 정리한 후에 친구를 불렀다."
+      }
+    ]
   },
   {
     "id": "kanji_322",
@@ -596,7 +680,6 @@
     "literal": "是",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "是",
     "koreanMeaning": "옳을 시",
     "meaningsKo": [
       "옳을"
@@ -611,8 +694,13 @@
         "kana": "これ"
       }
     ],
-    "examples": [],
-    "hint": "해(日) 아래에서는 모든 것이 바르다(正)"
+    "examples": [
+      {
+        "jp": "この考えは是だと思う。",
+        "kana": "",
+        "ko": "이 생각은 옳다고 생각한다."
+      }
+    ]
   },
   {
     "id": "kanji_323",
@@ -621,7 +709,6 @@
     "literal": "提",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "提",
     "koreanMeaning": "끌 제/내놓을 제",
     "meaningsKo": [
       "끌",
@@ -640,8 +727,13 @@
         "kana": "さげる"
       }
     ],
-    "examples": [],
-    "hint": "손(扌)으로 이것(是)이 옳다고 내세움"
+    "examples": [
+      {
+        "jp": "彼女は新しいアイデアを提案した。",
+        "kana": "",
+        "ko": "그녀는 새로운 아이디어를 제안했다."
+      }
+    ]
   },
   {
     "id": "kanji_324",
@@ -650,7 +742,6 @@
     "literal": "題",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "題",
     "koreanMeaning": "제목 제/문제 제",
     "meaningsKo": [
       "제목",
@@ -662,8 +753,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "이것(是)이 옳다고 머리(頁)로 생각하여 내놓은 글의 주제"
+    "examples": [
+      {
+        "jp": "この本の題名はとても面白い。",
+        "kana": "",
+        "ko": "이 책의 제목은 매우 흥미롭다."
+      }
+    ]
   },
   {
     "id": "kanji_325",
@@ -672,7 +768,6 @@
     "literal": "手",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "手",
     "koreanMeaning": "손 수",
     "meaningsKo": [
       "손"
@@ -687,8 +782,13 @@
         "kana": "て"
       }
     ],
-    "examples": [],
-    "hint": "손가락 다섯 개가 있는 손의 모양"
+    "examples": [
+      {
+        "jp": "手を洗ってから食事をする。",
+        "kana": "",
+        "ko": "손을 씻고 나서 식사를 한다."
+      }
+    ]
   },
   {
     "id": "kanji_326",
@@ -697,7 +797,6 @@
     "literal": "拝",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "拝",
     "koreanMeaning": "절 배",
     "meaningsKo": [
       "절"
@@ -712,8 +811,13 @@
         "kana": "おがむ"
       }
     ],
-    "examples": [],
-    "hint": "손(手)을 모으고 절하는 모양"
+    "examples": [
+      {
+        "jp": "神社で拝むのが好きだ。",
+        "kana": "",
+        "ko": "신사에서 절하는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_327",
@@ -722,7 +826,6 @@
     "literal": "毛",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "毛",
     "koreanMeaning": "털 모",
     "meaningsKo": [
       "털"
@@ -737,8 +840,13 @@
         "kana": "け"
       }
     ],
-    "examples": [],
-    "hint": "풀처럼 자라나는 털의 모양"
+    "examples": [
+      {
+        "jp": "犬の毛が抜ける季節だ。",
+        "kana": "",
+        "ko": "개 털이 빠지는 계절이다."
+      }
+    ]
   },
   {
     "id": "kanji_328",
@@ -747,7 +855,6 @@
     "literal": "女",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "女",
     "koreanMeaning": "여자 녀",
     "meaningsKo": [
       "여자"
@@ -768,8 +875,13 @@
         "kana": "め"
       }
     ],
-    "examples": [],
-    "hint": "두 손을 모으고 무릎 꿇고 앉아있는 여자의 모양"
+    "examples": [
+      {
+        "jp": "女の子たちが遊んでいる。",
+        "kana": "",
+        "ko": "여자아이들이 놀고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_329",
@@ -778,7 +890,6 @@
     "literal": "好",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "好",
     "koreanMeaning": "좋을 호",
     "meaningsKo": [
       "좋을"
@@ -796,8 +907,13 @@
         "kana": "すく"
       }
     ],
-    "examples": [],
-    "hint": "여자(女)와 아들(子)이 함께 있으니 좋음"
+    "examples": [
+      {
+        "jp": "彼は音楽を好んで聞く。",
+        "kana": "",
+        "ko": "그는 음악을 좋아해서 자주 듣는다."
+      }
+    ]
   },
   {
     "id": "kanji_330",
@@ -806,7 +922,6 @@
     "literal": "妻",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "妻",
     "koreanMeaning": "아내 처",
     "meaningsKo": [
       "아내"
@@ -821,8 +936,13 @@
         "kana": "つま"
       }
     ],
-    "examples": [],
-    "hint": "머리에 비녀를 꽂고(十) 손(⺕)으로 집안일을 하는 여자(女)"
+    "examples": [
+      {
+        "jp": "彼女は私の妻だ。",
+        "kana": "",
+        "ko": "그녀는 내 아내다."
+      }
+    ]
   },
   {
     "id": "kanji_331",
@@ -831,7 +951,6 @@
     "literal": "妾",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "妾",
     "koreanMeaning": "첩 첩",
     "meaningsKo": [
       "첩"
@@ -846,8 +965,13 @@
         "kana": "めかけ"
       }
     ],
-    "examples": [],
-    "hint": "죄를 지어(辛) 신분이 낮아진 여자(女)"
+    "examples": [
+      {
+        "jp": "彼は妾を持っています。",
+        "kana": "",
+        "ko": "그는 첩이 있습니다."
+      }
+    ]
   },
   {
     "id": "kanji_332",
@@ -856,7 +980,6 @@
     "literal": "接",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "接",
     "koreanMeaning": "이을 접",
     "meaningsKo": [
       "이을"
@@ -871,8 +994,13 @@
         "kana": "つぐ"
       }
     ],
-    "examples": [],
-    "hint": "손(扌)으로 첩(妾)을 가까이 맞이함"
+    "examples": [
+      {
+        "jp": "新しい部品が接続できました。",
+        "kana": "",
+        "ko": "새로운 부품을 이을 수 있었습니다."
+      }
+    ]
   },
   {
     "id": "kanji_333",
@@ -881,7 +1009,6 @@
     "literal": "母",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "母",
     "koreanMeaning": "어미 모",
     "meaningsKo": [
       "어미"
@@ -896,8 +1023,13 @@
         "kana": "はは"
       }
     ],
-    "examples": [],
-    "hint": "아기에게 젖을 물린 어머니의 모습"
+    "examples": [
+      {
+        "jp": "母が手作りのケーキを作った。",
+        "kana": "",
+        "ko": "어머니가 수제 케이크를 만드셨다."
+      }
+    ]
   },
   {
     "id": "kanji_334",
@@ -906,7 +1038,6 @@
     "literal": "毎",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "毎",
     "koreanMeaning": "항상 매",
     "meaningsKo": [
       "항상"
@@ -921,8 +1052,13 @@
         "kana": "ごと"
       }
     ],
-    "examples": [],
-    "hint": "어머니(母)가 항상 아이를 돌보는 모습"
+    "examples": [
+      {
+        "jp": "毎朝、ジョギングをしています。",
+        "kana": "",
+        "ko": "매일 아침 조깅을 하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_335",
@@ -931,7 +1067,6 @@
     "literal": "梅",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "梅",
     "koreanMeaning": "매화나무 매",
     "meaningsKo": [
       "매화나무"
@@ -946,8 +1081,13 @@
         "kana": "うめ"
       }
     ],
-    "examples": [],
-    "hint": "매일(毎) 꽃을 피우는 나무(木)"
+    "examples": [
+      {
+        "jp": "梅の花が春に咲く。",
+        "kana": "",
+        "ko": "매화꽃이 봄에 핀다."
+      }
+    ]
   },
   {
     "id": "kanji_336",
@@ -956,7 +1096,6 @@
     "literal": "海",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "海",
     "koreanMeaning": "바다 해",
     "meaningsKo": [
       "바다"
@@ -971,8 +1110,13 @@
         "kana": "うみ"
       }
     ],
-    "examples": [],
-    "hint": "매일(毎) 물(氵)이 드나드는 곳"
+    "examples": [
+      {
+        "jp": "海で泳ぐのが楽しい。",
+        "kana": "",
+        "ko": "바다에서 수영하는 것이 즐겁다."
+      }
+    ]
   },
   {
     "id": "kanji_337",
@@ -981,7 +1125,6 @@
     "literal": "了",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "了",
     "koreanMeaning": "마칠 료",
     "meaningsKo": [
       "마칠"
@@ -996,8 +1139,13 @@
         "kana": "おわる"
       }
     ],
-    "examples": [],
-    "hint": "팔 없는 아이의 모양, ‘끝나다’는 의미로 사용"
+    "examples": [
+      {
+        "jp": "仕事が了したら、帰るつもりだ。",
+        "kana": "",
+        "ko": "일이 끝나면 돌아갈 계획이다."
+      }
+    ]
   },
   {
     "id": "kanji_338",
@@ -1006,7 +1154,6 @@
     "literal": "子",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "子",
     "koreanMeaning": "아들 자",
     "meaningsKo": [
       "아들"
@@ -1024,8 +1171,13 @@
         "kana": "こ"
       }
     ],
-    "examples": [],
-    "hint": "팔을 벌리고 있는 아기의 모양"
+    "examples": [
+      {
+        "jp": "子どもたちが遊んでいる。",
+        "kana": "",
+        "ko": "아이들이 놀고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_339",
@@ -1034,7 +1186,6 @@
     "literal": "矛",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "矛",
     "koreanMeaning": "창 모",
     "meaningsKo": [
       "창"
@@ -1049,8 +1200,13 @@
         "kana": "ほこ"
       }
     ],
-    "examples": [],
-    "hint": "긴 자루 끝에 날이 달린 창의 모양"
+    "examples": [
+      {
+        "jp": "矛を持った戦士が立っている。",
+        "kana": "",
+        "ko": "창을 든 전사가 서 있다."
+      }
+    ]
   },
   {
     "id": "kanji_340",
@@ -1059,7 +1215,6 @@
     "literal": "務",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "務",
     "koreanMeaning": "힘쓸 무",
     "meaningsKo": [
       "힘쓸"
@@ -1074,8 +1229,13 @@
         "kana": "つとめる"
       }
     ],
-    "examples": [],
-    "hint": "창(矛)을 들고 회초리(攵)를 맞으며 힘써 일함"
+    "examples": [
+      {
+        "jp": "彼は会社のために務めている。",
+        "kana": "",
+        "ko": "그는 회사를 위해 힘쓰고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_341",
@@ -1084,7 +1244,6 @@
     "literal": "予",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "予",
     "koreanMeaning": "줄 여/나 여",
     "meaningsKo": [
       "줄",
@@ -1100,8 +1259,13 @@
         "kana": "かねて"
       }
     ],
-    "examples": [],
-    "hint": "베틀의 북이 서로 실을 주고받는 모양"
+    "examples": [
+      {
+        "jp": "予想外の結果が出た。",
+        "kana": "",
+        "ko": "예상치 못한 결과가 나왔다."
+      }
+    ]
   },
   {
     "id": "kanji_342",
@@ -1110,7 +1274,6 @@
     "literal": "野",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "野",
     "koreanMeaning": "들 야",
     "meaningsKo": [
       "들"
@@ -1125,8 +1288,13 @@
         "kana": "の"
       }
     ],
-    "examples": [],
-    "hint": "마을(里)에서 미리(予) 정해놓은 경작지"
+    "examples": [
+      {
+        "jp": "野原でピクニックをしました。",
+        "kana": "",
+        "ko": "들판에서 소풍을 했다."
+      }
+    ]
   },
   {
     "id": "kanji_343",
@@ -1135,7 +1303,6 @@
     "literal": "預",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "預",
     "koreanMeaning": "미리 예/맡길 예",
     "meaningsKo": [
       "미리",
@@ -1154,8 +1321,13 @@
         "kana": "あずかる"
       }
     ],
-    "examples": [],
-    "hint": "미리(予) 머리(頁)로 생각하여 맡김"
+    "examples": [
+      {
+        "jp": "お金を預ける場所を探している。",
+        "kana": "",
+        "ko": "돈을 맡길 장소를 찾고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_344",
@@ -1164,7 +1336,6 @@
     "literal": "序",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "序",
     "koreanMeaning": "먼저 서/차례 서",
     "meaningsKo": [
       "먼저",
@@ -1180,8 +1351,13 @@
         "kana": "ついで"
       }
     ],
-    "examples": [],
-    "hint": "집(广)에서 미리(予) 정해놓은 순서"
+    "examples": [
+      {
+        "jp": "序でに買い物もしてきた。",
+        "kana": "",
+        "ko": "가는 길에 쇼핑도 하고 왔다."
+      }
+    ]
   },
   {
     "id": "kanji_345",
@@ -1190,7 +1366,6 @@
     "literal": "承",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "承",
     "koreanMeaning": "이을 승",
     "meaningsKo": [
       "이을"
@@ -1205,8 +1380,13 @@
         "kana": "うけたまわる"
       }
     ],
-    "examples": [],
-    "hint": "두 손으로 사람을 받들어 이어받는 모양"
+    "examples": [
+      {
+        "jp": "承知いたしました。",
+        "kana": "",
+        "ko": "알겠습니다."
+      }
+    ]
   },
   {
     "id": "kanji_346",
@@ -1215,7 +1395,6 @@
     "literal": "丞",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "丞",
     "koreanMeaning": "도울 승",
     "meaningsKo": [
       "도울"
@@ -1233,8 +1412,13 @@
         "kana": "たすける"
       }
     ],
-    "examples": [],
-    "hint": "산(山) 아래에서 손(二手)으로 도와줌"
+    "examples": [
+      {
+        "jp": "彼は友達を丞けるために手を差し伸べた。",
+        "kana": "",
+        "ko": "그는 친구를 돕기 위해 손을 내밀었다."
+      }
+    ]
   },
   {
     "id": "kanji_347",
@@ -1243,7 +1427,6 @@
     "literal": "蒸",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "蒸",
     "koreanMeaning": "찔 증",
     "meaningsKo": [
       "찔"
@@ -1264,8 +1447,13 @@
         "kana": "むれる"
       }
     ],
-    "examples": [],
-    "hint": "풀(艹)을 불(灬) 위에 올려 물기를 도와(丞) 찌는 모습"
+    "examples": [
+      {
+        "jp": "野菜を蒸して、健康的な料理を作った。",
+        "kana": "",
+        "ko": "야채를 찌고 건강한 요리를 만들었다."
+      }
+    ]
   },
   {
     "id": "kanji_348",
@@ -1274,7 +1462,6 @@
     "literal": "力",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "力",
     "koreanMeaning": "힘 력",
     "meaningsKo": [
       "힘"
@@ -1292,8 +1479,13 @@
         "kana": "ちから"
       }
     ],
-    "examples": [],
-    "hint": "팔에 근육이 불거진 모양, 쟁기의 모양"
+    "examples": [
+      {
+        "jp": "彼の力で問題が解決できた。",
+        "kana": "",
+        "ko": "그의 힘으로 문제가 해결될 수 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_349",
@@ -1302,7 +1494,6 @@
     "literal": "助",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "助",
     "koreanMeaning": "도울 조",
     "meaningsKo": [
       "도울"
@@ -1317,8 +1508,13 @@
         "kana": "たすける"
       }
     ],
-    "examples": [],
-    "hint": "또(又) 힘(力)을 보태어 도와줌"
+    "examples": [
+      {
+        "jp": "猫を助けるために、道に飛び出した。",
+        "kana": "",
+        "ko": "고양이를 돕기 위해 도로로 뛰어들었다."
+      }
+    ]
   },
   {
     "id": "kanji_350",
@@ -1327,7 +1523,6 @@
     "literal": "奴",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "奴",
     "koreanMeaning": "종 노",
     "meaningsKo": [
       "종"
@@ -1342,8 +1537,13 @@
         "kana": "やっこ"
       }
     ],
-    "examples": [],
-    "hint": "여자(女)가 손(又)으로 일하는 하인"
+    "examples": [
+      {
+        "jp": "あの奴はいつも遅れてくる。",
+        "kana": "",
+        "ko": "저 놈은 항상 늦게 온다."
+      }
+    ]
   },
   {
     "id": "kanji_351",
@@ -1352,7 +1552,6 @@
     "literal": "努",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "努",
     "koreanMeaning": "힘쓸 노",
     "meaningsKo": [
       "힘쓸"
@@ -1367,8 +1566,13 @@
         "kana": "つとめる"
       }
     ],
-    "examples": [],
-    "hint": "종(奴)이 힘(力)을 다해 일함"
+    "examples": [
+      {
+        "jp": "新しい仕事に努めることが大切だ。",
+        "kana": "",
+        "ko": "새로운 일에 힘쓰는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_352",
@@ -1377,7 +1581,6 @@
     "literal": "加",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "加",
     "koreanMeaning": "더할 가",
     "meaningsKo": [
       "더할"
@@ -1395,8 +1598,13 @@
         "kana": "くわわる"
       }
     ],
-    "examples": [],
-    "hint": "힘(力)을 써서 입(口)에 음식을 더함"
+    "examples": [
+      {
+        "jp": "この料理にはスパイスを加えると美味しい。",
+        "kana": "",
+        "ko": "이 요리에는 향신료를 더하면 맛있다."
+      }
+    ]
   },
   {
     "id": "kanji_353",
@@ -1405,7 +1613,6 @@
     "literal": "賀",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "賀",
     "koreanMeaning": "축하할 하",
     "meaningsKo": [
       "축하할"
@@ -1416,8 +1623,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "돈(貝)을 더해서(加) 축하함"
+    "examples": [
+      {
+        "jp": "誕生日を祝うために、友達が賀状を送ってくれた。",
+        "kana": "",
+        "ko": "생일을 축하하기 위해 친구가 카드 보내주었다."
+      }
+    ]
   },
   {
     "id": "kanji_354",
@@ -1426,7 +1638,6 @@
     "literal": "協",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "協",
     "koreanMeaning": "도울 협",
     "meaningsKo": [
       "도울"
@@ -1437,8 +1648,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "여러(十) 사람의 힘(力)을 합쳐 도움"
+    "examples": [
+      {
+        "jp": "共同でプロジェクトを進めるために協力した。",
+        "kana": "",
+        "ko": "프로젝트를 진행하기 위해 협력했다."
+      }
+    ]
   },
   {
     "id": "kanji_355",
@@ -1447,7 +1663,6 @@
     "literal": "地",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "地",
     "koreanMeaning": "땅 지",
     "meaningsKo": [
       "땅"
@@ -1461,8 +1676,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "흙(土)과 물(也)이 있는 땅"
+    "examples": [
+      {
+        "jp": "地元の祭りに参加するのが楽しみだ。",
+        "kana": "",
+        "ko": "지역 축제에 참여하는 것이 기대된다."
+      }
+    ]
   },
   {
     "id": "kanji_356",
@@ -1471,7 +1691,6 @@
     "literal": "池",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "池",
     "koreanMeaning": "연못 지",
     "meaningsKo": [
       "연못"
@@ -1486,8 +1705,13 @@
         "kana": "いけ"
       }
     ],
-    "examples": [],
-    "hint": "땅(也)에 있는 물(氵) 웅덩이"
+    "examples": [
+      {
+        "jp": "公園の池でカモを見かけた。",
+        "kana": "",
+        "ko": "공원의 연못에서 오리를 보았다."
+      }
+    ]
   },
   {
     "id": "kanji_357",
@@ -1496,7 +1720,6 @@
     "literal": "他",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "他",
     "koreanMeaning": "다를 타/남 타",
     "meaningsKo": [
       "다를",
@@ -1512,8 +1735,13 @@
         "kana": "ほか"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)은 땅(也)에 따라 저마다 다름"
+    "examples": [
+      {
+        "jp": "他の人と協力して成功を目指す。",
+        "kana": "",
+        "ko": "다른 사람과 협력하여 성공을 목표로 한다."
+      }
+    ]
   },
   {
     "id": "kanji_358",
@@ -1522,7 +1750,6 @@
     "literal": "工",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "工",
     "koreanMeaning": "장인 공/만들 공",
     "meaningsKo": [
       "장인",
@@ -1541,8 +1768,13 @@
         "kana": "たくみ"
       }
     ],
-    "examples": [],
-    "hint": "물건을 만드는 도구의 모양"
+    "examples": [
+      {
+        "jp": "この工場では新しい製品が作られている。",
+        "kana": "",
+        "ko": "이 공장에서 새로운 제품이 만들어지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_359",
@@ -1551,7 +1783,6 @@
     "literal": "紅",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "紅",
     "koreanMeaning": "붉을 홍",
     "meaningsKo": [
       "붉을"
@@ -1572,8 +1803,13 @@
         "kana": "くれない"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)을 만드는(工) 붉은 꽃"
+    "examples": [
+      {
+        "jp": "彼女は紅茶が好きで、毎日飲む。",
+        "kana": "",
+        "ko": "그녀는 홍차를 좋아해서 매일 마신다."
+      }
+    ]
   },
   {
     "id": "kanji_360",
@@ -1582,7 +1818,6 @@
     "literal": "功",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "功",
     "koreanMeaning": "공 공/공로 공",
     "meaningsKo": [
       "공",
@@ -1601,8 +1836,13 @@
         "kana": "いさお"
       }
     ],
-    "examples": [],
-    "hint": "만드는(工) 데 힘(力)을 보탠 공로"
+    "examples": [
+      {
+        "jp": "彼の功績は多くの人に知られている。",
+        "kana": "",
+        "ko": "그의 공로는 많은 사람에게 알려져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_361",
@@ -1611,7 +1851,6 @@
     "literal": "敢",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "敢",
     "koreanMeaning": "감히 감/용감할 감",
     "meaningsKo": [
       "감히",
@@ -1627,8 +1866,13 @@
         "kana": "あえて"
       }
     ],
-    "examples": [],
-    "hint": "귀(耳)를 잡고(甘) 회초리(攵)를 쳐도 굴하지 않음"
+    "examples": [
+      {
+        "jp": "彼は敢えて危険な道を選んだ。",
+        "kana": "",
+        "ko": "그는 감히 위험한 길을 선택했다."
+      }
+    ]
   },
   {
     "id": "kanji_362",
@@ -1637,7 +1881,6 @@
     "literal": "厳",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "厳",
     "koreanMeaning": "엄할 엄",
     "meaningsKo": [
       "엄할"
@@ -1658,8 +1901,13 @@
         "kana": "きびしい"
       }
     ],
-    "examples": [],
-    "hint": "험한(厂) 산기슭에서 감히(敢) 나아가는 엄격함"
+    "examples": [
+      {
+        "jp": "厳しい先生の授業はとても役に立つ。",
+        "kana": "",
+        "ko": "엄한 선생님의 수업은 매우 유익하다."
+      }
+    ]
   },
   {
     "id": "kanji_363",
@@ -1668,7 +1916,6 @@
     "literal": "岩",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "岩",
     "koreanMeaning": "바위 암",
     "meaningsKo": [
       "바위"
@@ -1683,8 +1930,13 @@
         "kana": "いわ"
       }
     ],
-    "examples": [],
-    "hint": "산(山)에 있는 돌(石)"
+    "examples": [
+      {
+        "jp": "山の頂上には大きな岩がある。",
+        "kana": "",
+        "ko": "산 정상에는 큰 바위가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_364",
@@ -1693,7 +1945,6 @@
     "literal": "竹",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "竹",
     "koreanMeaning": "대 죽",
     "meaningsKo": [
       "대"
@@ -1708,8 +1959,13 @@
         "kana": "たけ"
       }
     ],
-    "examples": [],
-    "hint": "대나무 잎사귀가 달린 모양"
+    "examples": [
+      {
+        "jp": "竹の森を歩くのは楽しい。",
+        "kana": "",
+        "ko": "대나무 숲을 걷는 것은 즐겁다."
+      }
+    ]
   },
   {
     "id": "kanji_365",
@@ -1718,7 +1974,6 @@
     "literal": "笑",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "笑",
     "koreanMeaning": "웃을 소",
     "meaningsKo": [
       "웃을"
@@ -1736,8 +1991,13 @@
         "kana": "えむ"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹) 숲에서 하늘(天)을 보며 웃음"
+    "examples": [
+      {
+        "jp": "彼女の笑顔は人々を幸せにする。",
+        "kana": "",
+        "ko": "그녀의 웃는 얼굴은 사람들을 행복하게 만든다."
+      }
+    ]
   },
   {
     "id": "kanji_366",
@@ -1746,7 +2006,6 @@
     "literal": "筋",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "筋",
     "koreanMeaning": "힘줄 근",
     "meaningsKo": [
       "힘줄"
@@ -1761,8 +2020,13 @@
         "kana": "すじ"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)처럼 질긴 몸(月)의 힘(力)"
+    "examples": [
+      {
+        "jp": "筋肉を鍛えるために毎日運動する。",
+        "kana": "",
+        "ko": "근육을 단련하기 위해 매일 운동한다."
+      }
+    ]
   },
   {
     "id": "kanji_367",
@@ -1771,7 +2035,6 @@
     "literal": "才",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "才",
     "koreanMeaning": "재주 재/바탕 재",
     "meaningsKo": [
       "재주",
@@ -1787,8 +2050,13 @@
         "kana": "わずかに"
       }
     ],
-    "examples": [],
-    "hint": "땅(一)에서 싹(亅)이 돋아나는 모양, 타고난 재능"
+    "examples": [
+      {
+        "jp": "彼は才能がある音楽家だ。",
+        "kana": "",
+        "ko": "그는 재주가 있는 음악가이다."
+      }
+    ]
   },
   {
     "id": "kanji_368",
@@ -1797,7 +2065,6 @@
     "literal": "材",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "材",
     "koreanMeaning": "재목 재/재료 재",
     "meaningsKo": [
       "재목",
@@ -1813,8 +2080,13 @@
         "kana": "まるた"
       }
     ],
-    "examples": [],
-    "hint": "나무(木) 중에서 재주(才)있게 쓸만한 재목"
+    "examples": [
+      {
+        "jp": "この材は家具を作るのに適している。",
+        "kana": "",
+        "ko": "이 재료는 가구를 만드는 데 적합하다."
+      }
+    ]
   },
   {
     "id": "kanji_369",
@@ -1823,7 +2095,6 @@
     "literal": "財",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "財",
     "koreanMeaning": "재물 재",
     "meaningsKo": [
       "재물"
@@ -1841,8 +2112,13 @@
         "kana": "たから"
       }
     ],
-    "examples": [],
-    "hint": "재주(才)있게 모은 돈(貝)"
+    "examples": [
+      {
+        "jp": "彼は財を築いた成功者だ。",
+        "kana": "",
+        "ko": "그는 재물을 쌓은 성공한 사람이다."
+      }
+    ]
   },
   {
     "id": "kanji_370",
@@ -1851,7 +2127,6 @@
     "literal": "寸",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "寸",
     "koreanMeaning": "마디 촌/법도 촌",
     "meaningsKo": [
       "마디",
@@ -1863,8 +2138,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "손목(一)에서 맥박(丶)이 뛰는 곳까지의 길이"
+    "examples": [
+      {
+        "jp": "この寸法で家具を作ってください。",
+        "kana": "",
+        "ko": "이 치수로 가구를 만들어 주세요."
+      }
+    ]
   },
   {
     "id": "kanji_371",
@@ -1873,7 +2153,6 @@
     "literal": "村",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "村",
     "koreanMeaning": "마음 촌",
     "meaningsKo": [
       "마음"
@@ -1888,8 +2167,13 @@
         "kana": "むら"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)와 한 마디(寸) 땅이 있는 작은 마을"
+    "examples": [
+      {
+        "jp": "村の祭りは毎年とても賑やかだ。",
+        "kana": "",
+        "ko": "마을 축제는 매년 매우 시끌벅적하다."
+      }
+    ]
   },
   {
     "id": "kanji_372",
@@ -1898,7 +2182,6 @@
     "literal": "討",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "討",
     "koreanMeaning": "칠 토/토론할 토",
     "meaningsKo": [
       "칠",
@@ -1914,8 +2197,13 @@
         "kana": "うつ"
       }
     ],
-    "examples": [],
-    "hint": "말(言)로 상대방의 잘못을 마디마디(寸) 따짐"
+    "examples": [
+      {
+        "jp": "討論会では様々な意見が出た。",
+        "kana": "",
+        "ko": "토론회에서는 다양한 의견이 나왔다."
+      }
+    ]
   },
   {
     "id": "kanji_373",
@@ -1924,7 +2212,6 @@
     "literal": "守",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "守",
     "koreanMeaning": "지킬 수",
     "meaningsKo": [
       "지킬"
@@ -1942,8 +2229,13 @@
         "kana": "まもる"
       }
     ],
-    "examples": [],
-    "hint": "집(宀)을 한 마디(寸)도 떠나지 않고 지킴"
+    "examples": [
+      {
+        "jp": "彼は家族を守るために働いている。",
+        "kana": "",
+        "ko": "그는 가족을 지키기 위해 일하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_374",
@@ -1952,7 +2244,6 @@
     "literal": "付",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "付",
     "koreanMeaning": "줄 부/부탁할 부",
     "meaningsKo": [
       "줄",
@@ -1971,8 +2262,13 @@
         "kana": "つく"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)에게 손(寸)으로 물건을 건네줌"
+    "examples": [
+      {
+        "jp": "本を付けて、分からない単語を調べる。",
+        "kana": "",
+        "ko": "책을 붙여서 모르는 단어를 찾아본다."
+      }
+    ]
   },
   {
     "id": "kanji_375",
@@ -1981,7 +2277,6 @@
     "literal": "府",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "府",
     "koreanMeaning": "관청 부/마을 부",
     "meaningsKo": [
       "관청",
@@ -1993,8 +2288,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "집(广)에서 문서를 건네주며(付) 일을 처리하는 곳"
+    "examples": [
+      {
+        "jp": "府の政策が地域に影響を与える。",
+        "kana": "",
+        "ko": "관청의 정책이 지역에 영향을 미친다."
+      }
+    ]
   },
   {
     "id": "kanji_376",
@@ -2003,7 +2303,6 @@
     "literal": "身",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "身",
     "koreanMeaning": "몸 신",
     "meaningsKo": [
       "몸"
@@ -2018,8 +2317,13 @@
         "kana": "み"
       }
     ],
-    "examples": [],
-    "hint": "아이를 밴 임산부의 옆모습"
+    "examples": [
+      {
+        "jp": "彼は身を守るために運動をしている。",
+        "kana": "",
+        "ko": "그는 몸을 보호하기 위해 운동하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_377",
@@ -2028,7 +2332,6 @@
     "literal": "射",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "射",
     "koreanMeaning": "쏠 사",
     "meaningsKo": [
       "쏠"
@@ -2043,8 +2346,13 @@
         "kana": "いる"
       }
     ],
-    "examples": [],
-    "hint": "몸(身)을 구부려 한 마디(寸) 화살을 쏨"
+    "examples": [
+      {
+        "jp": "弓で的を射る練習を始めた。",
+        "kana": "",
+        "ko": "활로 과녁을 쏘는 연습을 시작했다."
+      }
+    ]
   },
   {
     "id": "kanji_378",
@@ -2053,7 +2361,6 @@
     "literal": "謝",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "謝",
     "koreanMeaning": "사례할 사/빌 사",
     "meaningsKo": [
       "사례할",
@@ -2069,8 +2376,13 @@
         "kana": "あやまる"
       }
     ],
-    "examples": [],
-    "hint": "말(言)로 화살(射)을 쏘듯 감사를 표현하거나 사과함"
+    "examples": [
+      {
+        "jp": "友達に謝ることが大切だ。",
+        "kana": "",
+        "ko": "친구에게 사과하는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_379",
@@ -2079,7 +2391,6 @@
     "literal": "寺",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "寺",
     "koreanMeaning": "절 사",
     "meaningsKo": [
       "절"
@@ -2094,8 +2405,13 @@
         "kana": "てら"
       }
     ],
-    "examples": [],
-    "hint": "흙(土) 위에 손(寸)으로 지은 신성한 건물"
+    "examples": [
+      {
+        "jp": "この寺は歴史的な場所として有名です。",
+        "kana": "",
+        "ko": "이 절은 역사적인 장소로 유명하다."
+      }
+    ]
   },
   {
     "id": "kanji_380",
@@ -2104,7 +2420,6 @@
     "literal": "詩",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "詩",
     "koreanMeaning": "시 시",
     "meaningsKo": [
       "시"
@@ -2119,8 +2434,13 @@
         "kana": "うた"
       }
     ],
-    "examples": [],
-    "hint": "절(寺)에서 읊는 것 같은 말(言)"
+    "examples": [
+      {
+        "jp": "彼女は美しい詩を書くのが得意だ。",
+        "kana": "",
+        "ko": "그녀는 아름다운 시를 쓰는 데 능숙하다."
+      }
+    ]
   },
   {
     "id": "kanji_381",
@@ -2129,7 +2449,6 @@
     "literal": "時",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "時",
     "koreanMeaning": "때 시",
     "meaningsKo": [
       "때"
@@ -2144,8 +2463,13 @@
         "kana": "とき"
       }
     ],
-    "examples": [],
-    "hint": "해(日)가 절(寺)의 위치에 따라 시간을 알림"
+    "examples": [
+      {
+        "jp": "子供の時、よく遊んだ公園を思い出す。",
+        "kana": "",
+        "ko": "어렸을 때 자주 놀던 공원을 기억한다."
+      }
+    ]
   },
   {
     "id": "kanji_382",
@@ -2154,7 +2478,6 @@
     "literal": "持",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "持",
     "koreanMeaning": "가질 지",
     "meaningsKo": [
       "가질"
@@ -2169,8 +2492,13 @@
         "kana": "もつ"
       }
     ],
-    "examples": [],
-    "hint": "손(扌)으로 절(寺)의 물건을 소중히 가짐"
+    "examples": [
+      {
+        "jp": "大切なものを持って帰るのを忘れないで。",
+        "kana": "",
+        "ko": "소중한 것을 가져가는 것을 잊지 마세요."
+      }
+    ]
   },
   {
     "id": "kanji_383",
@@ -2179,7 +2507,6 @@
     "literal": "待",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "待",
     "koreanMeaning": "기다릴 대",
     "meaningsKo": [
       "기다릴"
@@ -2194,8 +2521,13 @@
         "kana": "まつ"
       }
     ],
-    "examples": [],
-    "hint": "조금(彳) 걸어가 절(寺) 앞에서 기다림"
+    "examples": [
+      {
+        "jp": "駅で友達を待っている間に本を読んだ。",
+        "kana": "",
+        "ko": "역에서 친구를 기다리는 동안 책을 읽었다."
+      }
+    ]
   },
   {
     "id": "kanji_384",
@@ -2204,7 +2536,6 @@
     "literal": "特",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "特",
     "koreanMeaning": "특별할 특",
     "meaningsKo": [
       "특별할"
@@ -2215,8 +2546,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "소(牛) 중에서도 절(寺)에 바치는 특별한 소"
+    "examples": [
+      {
+        "jp": "特別なイベントがこの週末にある。",
+        "kana": "",
+        "ko": "특별한 이벤트가 이번 주말에 열린다."
+      }
+    ]
   },
   {
     "id": "kanji_385",
@@ -2225,7 +2561,6 @@
     "literal": "等",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "等",
     "koreanMeaning": "같을 등/무리 등",
     "meaningsKo": [
       "같을",
@@ -2241,8 +2576,13 @@
         "kana": "ひとしい"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹) 서간을 절(寺)의 법도에 맞춰 같게 만듦"
+    "examples": [
+      {
+        "jp": "彼と私の考えは等しい。",
+        "kana": "",
+        "ko": "그와 내 생각은 같다."
+      }
+    ]
   },
   {
     "id": "kanji_386",
@@ -2251,7 +2591,6 @@
     "literal": "旦",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "旦",
     "koreanMeaning": "아침 단",
     "meaningsKo": [
       "아침"
@@ -2269,8 +2608,13 @@
         "kana": "あきらか"
       }
     ],
-    "examples": [],
-    "hint": "지평선(一) 위로 해(日)가 떠오르는 모습"
+    "examples": [
+      {
+        "jp": "旦那さんは朝早く出かけた。",
+        "kana": "",
+        "ko": "남편은 아침 일찍 나갔다."
+      }
+    ]
   },
   {
     "id": "kanji_387",
@@ -2279,7 +2623,6 @@
     "literal": "担",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "担",
     "koreanMeaning": "멜 담",
     "meaningsKo": [
       "멜"
@@ -2297,8 +2640,13 @@
         "kana": "かつぐ"
       }
     ],
-    "examples": [],
-    "hint": "손(扌)으로 아침(旦) 일찍 짐을 멤"
+    "examples": [
+      {
+        "jp": "彼は重い荷物を担いで歩いている。",
+        "kana": "",
+        "ko": "그는 무거운 짐을 멘 채 걷고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_388",
@@ -2307,7 +2655,6 @@
     "literal": "得",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "得",
     "koreanMeaning": "얻을 득",
     "meaningsKo": [
       "얻을"
@@ -2325,8 +2672,13 @@
         "kana": "うる"
       }
     ],
-    "examples": [],
-    "hint": "조개(貝), 즉 돈을 얻어(得) 길(彳)을 감"
+    "examples": [
+      {
+        "jp": "新しい仕事で得た経験は大切だ。",
+        "kana": "",
+        "ko": "새로운 일에서 얻은 경험은 소중하다."
+      }
+    ]
   },
   {
     "id": "kanji_389",
@@ -2335,7 +2687,6 @@
     "literal": "宣",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "宣",
     "koreanMeaning": "펼 선/베풀 선",
     "meaningsKo": [
       "펼",
@@ -2351,8 +2702,13 @@
         "kana": "のたまう"
       }
     ],
-    "examples": [],
-    "hint": "집(宀) 안에서 아침(旦) 해처럼 널리 퍼지는 말"
+    "examples": [
+      {
+        "jp": "彼は真実を宣べる勇気がある。",
+        "kana": "",
+        "ko": "그는 진실을 말할 용기가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_390",
@@ -2361,7 +2717,6 @@
     "literal": "同",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "同",
     "koreanMeaning": "같을 동",
     "meaningsKo": [
       "같을"
@@ -2376,8 +2731,13 @@
         "kana": "おなじ"
       }
     ],
-    "examples": [],
-    "hint": "여러 사람이 한 입(口)으로 똑같이 말하는 모습"
+    "examples": [
+      {
+        "jp": "私たちは同じ夢を持っている。",
+        "kana": "",
+        "ko": "우리는 같은 꿈을 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_391",
@@ -2386,7 +2746,6 @@
     "literal": "銅",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "銅",
     "koreanMeaning": "구리 동",
     "meaningsKo": [
       "구리"
@@ -2401,8 +2760,13 @@
         "kana": "あかがね"
       }
     ],
-    "examples": [],
-    "hint": "금속(金) 중에서 같은(同) 빛깔을 내는 것"
+    "examples": [
+      {
+        "jp": "古い銅のコインが見つかった。",
+        "kana": "",
+        "ko": "오래된 구리 동전이 발견되었다."
+      }
+    ]
   },
   {
     "id": "kanji_392",
@@ -2411,7 +2775,6 @@
     "literal": "内",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "内",
     "koreanMeaning": "안 내",
     "meaningsKo": [
       "안"
@@ -2429,8 +2792,13 @@
         "kana": "うち"
       }
     ],
-    "examples": [],
-    "hint": "들(入)판 너머에 있는 사람(人)이 사는 집 안"
+    "examples": [
+      {
+        "jp": "内装を新しくする予定です。",
+        "kana": "",
+        "ko": "내부 장식을 새롭게 할 예정입니다."
+      }
+    ]
   },
   {
     "id": "kanji_393",
@@ -2439,7 +2807,6 @@
     "literal": "納",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "納",
     "koreanMeaning": "들일 납/바칠 납",
     "meaningsKo": [
       "들일",
@@ -2461,8 +2828,13 @@
         "kana": "おさめる"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)로 짠 옷감을 안(内)으로 들여 세금으로 바침"
+    "examples": [
+      {
+        "jp": "税金を納める期限が迫っている。",
+        "kana": "",
+        "ko": "세금을 납부할 기한이 다가오고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_394",
@@ -2471,7 +2843,6 @@
     "literal": "肉",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "肉",
     "koreanMeaning": "고기 육",
     "meaningsKo": [
       "고기"
@@ -2482,8 +2853,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "칼로 잘라낸 살코기 한 점의 모양"
+    "examples": [
+      {
+        "jp": "肉を焼くと、香ばしい匂いがする。",
+        "kana": "",
+        "ko": "고기를 굽기 시작하면 고소한 향이 난다."
+      }
+    ]
   },
   {
     "id": "kanji_395",
@@ -2492,7 +2868,6 @@
     "literal": "両",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "両",
     "koreanMeaning": "두 량/짝 량",
     "meaningsKo": [
       "두",
@@ -2508,8 +2883,13 @@
         "kana": "ふたつ"
       }
     ],
-    "examples": [],
-    "hint": "저울의 양쪽에 같은 무게의 추가 있는 모양"
+    "examples": [
+      {
+        "jp": "両手で持てる荷物は軽い。",
+        "kana": "",
+        "ko": "두 손으로 들 수 있는 짐은 가볍다."
+      }
+    ]
   },
   {
     "id": "kanji_396",
@@ -2518,7 +2898,6 @@
     "literal": "満",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "満",
     "koreanMeaning": "찰 만",
     "meaningsKo": [
       "찰"
@@ -2536,8 +2915,13 @@
         "kana": "みたす"
       }
     ],
-    "examples": [],
-    "hint": "물(氵)이 양(両)쪽으로 흩날리며(艹) 가득 참"
+    "examples": [
+      {
+        "jp": "花が満開の季節になった。",
+        "kana": "",
+        "ko": "꽃이 만개하는 계절이 되었다."
+      }
+    ]
   },
   {
     "id": "kanji_397",
@@ -2546,7 +2930,6 @@
     "literal": "央",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "央",
     "koreanMeaning": "가운데 앙",
     "meaningsKo": [
       "가운데"
@@ -2557,8 +2940,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "큰(大) 사람의 목에 칼(冂)을 씌운 모양, 중심"
+    "examples": [
+      {
+        "jp": "中央には大きな時計がある。",
+        "kana": "",
+        "ko": "가운데에는 큰 시계가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_398",
@@ -2567,7 +2955,6 @@
     "literal": "映",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "映",
     "koreanMeaning": "비칠 영",
     "meaningsKo": [
       "비칠"
@@ -2585,8 +2972,13 @@
         "kana": "うつす"
       }
     ],
-    "examples": [],
-    "hint": "해(日)가 가운데(央)에서 빛을 비춤"
+    "examples": [
+      {
+        "jp": "映像がテレビに映る。",
+        "kana": "",
+        "ko": "영상이 텔레비전에 비친다."
+      }
+    ]
   },
   {
     "id": "kanji_399",
@@ -2595,7 +2987,6 @@
     "literal": "英",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "英",
     "koreanMeaning": "꽃부리 영",
     "meaningsKo": [
       "꽃부리"
@@ -2610,8 +3001,13 @@
         "kana": "はなぶさ"
       }
     ],
-    "examples": [],
-    "hint": "풀(艹)의 가운데(央)에서 피어나는 아름다운 꽃"
+    "examples": [
+      {
+        "jp": "庭には美しい英語の花が咲いている。",
+        "kana": "",
+        "ko": "정원에는 아름다운 영국 꽃이 피어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_400",
@@ -2620,7 +3016,6 @@
     "literal": "快",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "快",
     "koreanMeaning": "상쾌할 쾌",
     "meaningsKo": [
       "상쾌할"
@@ -2635,8 +3030,13 @@
         "kana": "こころよい"
       }
     ],
-    "examples": [],
-    "hint": "마음(忄)속 응어리가 터져(夬) 상쾌함"
+    "examples": [
+      {
+        "jp": "快適な空間を作りたい。",
+        "kana": "",
+        "ko": "쾌적한 공간을 만들고 싶다."
+      }
+    ]
   },
   {
     "id": "kanji_401",
@@ -2645,7 +3045,6 @@
     "literal": "決",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "決",
     "koreanMeaning": "터질 결/정할 결",
     "meaningsKo": [
       "터질",
@@ -2664,8 +3063,13 @@
         "kana": "きまる"
       }
     ],
-    "examples": [],
-    "hint": "막혔던 물(氵)길이 터져(夬) 흐를 길이 정해짐"
+    "examples": [
+      {
+        "jp": "勝敗を決める試合が行われる。",
+        "kana": "",
+        "ko": "승패를 결정짓는 경기가 열린다."
+      }
+    ]
   },
   {
     "id": "kanji_402",
@@ -2674,7 +3078,6 @@
     "literal": "向",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "向",
     "koreanMeaning": "향할 향/나아갈 향",
     "meaningsKo": [
       "향할",
@@ -2693,8 +3096,13 @@
         "kana": "むかう"
       }
     ],
-    "examples": [],
-    "hint": "집(冂)의 창문(口)이 나 있는 방향"
+    "examples": [
+      {
+        "jp": "彼は北向きの部屋に住んでいる。",
+        "kana": "",
+        "ko": "그는 북향의 방에 살고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_403",
@@ -2703,7 +3111,6 @@
     "literal": "尚",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "尚",
     "koreanMeaning": "오히려 상/높을 상",
     "meaningsKo": [
       "오히려",
@@ -2719,8 +3126,13 @@
         "kana": "なお"
       }
     ],
-    "examples": [],
-    "hint": "창문(向) 위로 장식을 더해(八) 높이다"
+    "examples": [
+      {
+        "jp": "彼女は尚、努力を続けている。",
+        "kana": "",
+        "ko": "그녀는 오히려 노력을 계속하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_404",
@@ -2729,7 +3141,6 @@
     "literal": "再",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "再",
     "koreanMeaning": "다시 재",
     "meaningsKo": [
       "다시"
@@ -2747,8 +3158,13 @@
         "kana": "ふたたび"
       }
     ],
-    "examples": [],
-    "hint": "물고기를 잡는 틀을 다시(再) 놓는 모양"
+    "examples": [
+      {
+        "jp": "再度挑戦することにした。",
+        "kana": "",
+        "ko": "다시 도전하기로 했다."
+      }
+    ]
   },
   {
     "id": "kanji_405",
@@ -2757,7 +3173,6 @@
     "literal": "堂",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "堂",
     "koreanMeaning": "집 당",
     "meaningsKo": [
       "집"
@@ -2772,8 +3187,13 @@
         "kana": "おか"
       }
     ],
-    "examples": [],
-    "hint": "높은(尚) 흙(土) 토대 위에 지은 큰 집"
+    "examples": [
+      {
+        "jp": "歴史的な堂が観光名所になっている。",
+        "kana": "",
+        "ko": "역사적인 집이 관광 명소가 되어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_406",
@@ -2782,7 +3202,6 @@
     "literal": "党",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "党",
     "koreanMeaning": "무리 당",
     "meaningsKo": [
       "무리"
@@ -2800,8 +3219,13 @@
         "kana": "むら"
       }
     ],
-    "examples": [],
-    "hint": "높은(尚) 뜻을 가진 사람(儿)들의 검은(黒) 무리"
+    "examples": [
+      {
+        "jp": "彼は自分の党を作りたいと思っている。",
+        "kana": "",
+        "ko": "그는 자신의 당을 만들고 싶어 한다."
+      }
+    ]
   },
   {
     "id": "kanji_407",
@@ -2810,7 +3234,6 @@
     "literal": "当",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "当",
     "koreanMeaning": "마땅할 당",
     "meaningsKo": [
       "마땅할"
@@ -2828,8 +3251,13 @@
         "kana": "あてる"
       }
     ],
-    "examples": [],
-    "hint": "높은(尚) 밭(田)은 가치가 마땅함"
+    "examples": [
+      {
+        "jp": "その問題は私たちに当たる。",
+        "kana": "",
+        "ko": "그 문제는 우리에게 해당된다."
+      }
+    ]
   },
   {
     "id": "kanji_408",
@@ -2838,7 +3266,6 @@
     "literal": "常",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "常",
     "koreanMeaning": "항상 상/보통 상",
     "meaningsKo": [
       "항상",
@@ -2857,8 +3284,13 @@
         "kana": "とこ"
       }
     ],
-    "examples": [],
-    "hint": "높은(尚) 곳에 걸어둔 천(巾)처럼 늘 변함없음"
+    "examples": [
+      {
+        "jp": "彼女は常に明るい笑顔を見せる。",
+        "kana": "",
+        "ko": "그녀는 항상 밝은 미소를 보여준다."
+      }
+    ]
   },
   {
     "id": "kanji_409",
@@ -2867,7 +3299,6 @@
     "literal": "賞",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "賞",
     "koreanMeaning": "상 줄 상",
     "meaningsKo": [
       "상 줄"
@@ -2882,8 +3313,13 @@
         "kana": "ほめる"
       }
     ],
-    "examples": [],
-    "hint": "높은(尚) 공을 세운 사람에게 돈(貝)을 줌"
+    "examples": [
+      {
+        "jp": "その映画は賞を受賞した。",
+        "kana": "",
+        "ko": "그 영화는 상을 수상했다."
+      }
+    ]
   },
   {
     "id": "kanji_410",
@@ -2892,7 +3328,6 @@
     "literal": "高",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "高",
     "koreanMeaning": "높을 고",
     "meaningsKo": [
       "높을"
@@ -2907,8 +3342,13 @@
         "kana": "たかい"
       }
     ],
-    "examples": [],
-    "hint": "층이 여러 개인 높은 건물의 모양"
+    "examples": [
+      {
+        "jp": "あの山はとても高い。",
+        "kana": "",
+        "ko": "저 산은 매우 높다."
+      }
+    ]
   },
   {
     "id": "kanji_411",
@@ -2917,7 +3357,6 @@
     "literal": "亭",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "亭",
     "koreanMeaning": "정자 정",
     "meaningsKo": [
       "정자"
@@ -2935,8 +3374,13 @@
         "kana": "ちん"
       }
     ],
-    "examples": [],
-    "hint": "높은(高) 곳에 지어(丁) 사람들이 쉬는 건물"
+    "examples": [
+      {
+        "jp": "公園には美しい亭がある。",
+        "kana": "",
+        "ko": "공원에는 아름다운 정자가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_412",
@@ -2945,7 +3389,6 @@
     "literal": "停",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "停",
     "koreanMeaning": "머무를 정",
     "meaningsKo": [
       "머무를"
@@ -2963,8 +3406,13 @@
         "kana": "とめる"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)이 정자(亭)에 멈추어 섬"
+    "examples": [
+      {
+        "jp": "バスが停まる場所を見つけた。",
+        "kana": "",
+        "ko": "버스가 정차하는 장소를 찾았다."
+      }
+    ]
   },
   {
     "id": "kanji_413",
@@ -2973,7 +3421,6 @@
     "literal": "享",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "享",
     "koreanMeaning": "누릴 향",
     "meaningsKo": [
       "누릴"
@@ -2988,8 +3435,13 @@
         "kana": "うける"
       }
     ],
-    "examples": [],
-    "hint": "높은(高) 사당에서 제사를 지내며 복을 받음"
+    "examples": [
+      {
+        "jp": "多くの人がそのイベントを享受した。",
+        "kana": "",
+        "ko": "많은 사람들이 그 이벤트를 누렸다."
+      }
+    ]
   },
   {
     "id": "kanji_414",
@@ -2998,7 +3450,6 @@
     "literal": "熟",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "熟",
     "koreanMeaning": "익을 숙",
     "meaningsKo": [
       "익을"
@@ -3013,8 +3464,13 @@
         "kana": "うれる"
       }
     ],
-    "examples": [],
-    "hint": "누릴(享) 수 있을 만큼 불(灬)에 음식이 익음"
+    "examples": [
+      {
+        "jp": "この果物は熟して美味しい。",
+        "kana": "",
+        "ko": "이 과일은 익어서 맛있다."
+      }
+    ]
   },
   {
     "id": "kanji_415",
@@ -3023,7 +3479,6 @@
     "literal": "京",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "京",
     "koreanMeaning": "서울 경",
     "meaningsKo": [
       "서울"
@@ -3041,8 +3496,13 @@
         "kana": "みやこ"
       }
     ],
-    "examples": [],
-    "hint": "높은(高) 건물이 많은 수도"
+    "examples": [
+      {
+        "jp": "京都は歴史的な都市だ。",
+        "kana": "",
+        "ko": "교토는 역사적인 도시다."
+      }
+    ]
   },
   {
     "id": "kanji_416",
@@ -3051,7 +3511,6 @@
     "literal": "就",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "就",
     "koreanMeaning": "나아갈 취",
     "meaningsKo": [
       "나아갈"
@@ -3072,8 +3531,13 @@
         "kana": "つける"
       }
     ],
-    "examples": [],
-    "hint": "서울(京)로 나아가 개(犬)처럼 엎드려 벼슬을 받음"
+    "examples": [
+      {
+        "jp": "新しい仕事に就くことができた。",
+        "kana": "",
+        "ko": "새로운 일에 취직할 수 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_417",
@@ -3082,7 +3546,6 @@
     "literal": "景",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "景",
     "koreanMeaning": "볕 경/경치 경",
     "meaningsKo": [
       "볕",
@@ -3094,8 +3557,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "서울(京)의 해(日)가 비치는 풍경"
+    "examples": [
+      {
+        "jp": "この景色は本当に素晴らしい。",
+        "kana": "",
+        "ko": "이 경치는 정말로 멋지다."
+      }
+    ]
   },
   {
     "id": "kanji_418",
@@ -3104,7 +3572,6 @@
     "literal": "橋",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "橋",
     "koreanMeaning": "다리 교",
     "meaningsKo": [
       "다리"
@@ -3119,8 +3586,13 @@
         "kana": "はし"
       }
     ],
-    "examples": [],
-    "hint": "높은(喬) 나무(木)로 만든 건널목"
+    "examples": [
+      {
+        "jp": "川の橋を渡ると景色が変わる。",
+        "kana": "",
+        "ko": "강의 다리를 건너면 경치가 달라진다."
+      }
+    ]
   },
   {
     "id": "kanji_419",
@@ -3129,7 +3601,6 @@
     "literal": "過",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "過",
     "koreanMeaning": "지날 과",
     "meaningsKo": [
       "지날"
@@ -3147,8 +3618,13 @@
         "kana": "すごす"
       }
     ],
-    "examples": [],
-    "hint": "입(口)을 벌리고 있는 해골(冎)을 지나(辶)감"
+    "examples": [
+      {
+        "jp": "時間が過ぎるのは早い。",
+        "kana": "",
+        "ko": "시간이 지나가는 것은 빠르다."
+      }
+    ]
   },
   {
     "id": "kanji_420",
@@ -3157,7 +3633,6 @@
     "literal": "適",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "適",
     "koreanMeaning": "알맞을 적/갈 적",
     "meaningsKo": [
       "알맞을",
@@ -3173,8 +3648,13 @@
         "kana": "かなう"
       }
     ],
-    "examples": [],
-    "hint": "밑동(啇)이 튼튼해야 길(辶)을 가기에 알맞음"
+    "examples": [
+      {
+        "jp": "この服は私に適している。",
+        "kana": "",
+        "ko": "이 옷은 나에게 잘 어울린다."
+      }
+    ]
   },
   {
     "id": "kanji_421",
@@ -3183,7 +3663,6 @@
     "literal": "敵",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "敵",
     "koreanMeaning": "원수 적",
     "meaningsKo": [
       "원수"
@@ -3198,8 +3677,13 @@
         "kana": "かたき"
       }
     ],
-    "examples": [],
-    "hint": "밑동(啇)부터 회초리(攵)로 쳐야 할 상대"
+    "examples": [
+      {
+        "jp": "彼は敵を倒すために戦った。",
+        "kana": "",
+        "ko": "그는 적을 물리치기 위해 싸웠다."
+      }
+    ]
   },
   {
     "id": "kanji_422",
@@ -3208,7 +3692,6 @@
     "literal": "商",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "商",
     "koreanMeaning": "장사할 상",
     "meaningsKo": [
       "장사할"
@@ -3223,8 +3706,13 @@
         "kana": "あきなう"
       }
     ],
-    "examples": [],
-    "hint": "안(内)과 밖(外)을 오가며 물건을 파는 장사꾼"
+    "examples": [
+      {
+        "jp": "彼は商売が上手でたくさんのお金を稼いでいる。",
+        "kana": "",
+        "ko": "그는 장사가 능숙해서 많은 돈을 벌고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_423",
@@ -3233,7 +3721,6 @@
     "literal": "門",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "門",
     "koreanMeaning": "문 문",
     "meaningsKo": [
       "문"
@@ -3248,8 +3735,13 @@
         "kana": "かど"
       }
     ],
-    "examples": [],
-    "hint": "두 개의 문짝이 있는 문의 모양"
+    "examples": [
+      {
+        "jp": "公園の門は毎日開いている。",
+        "kana": "",
+        "ko": "공원의 문은 매일 열려 있다."
+      }
+    ]
   },
   {
     "id": "kanji_424",
@@ -3258,7 +3750,6 @@
     "literal": "問",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "問",
     "koreanMeaning": "물을 문",
     "meaningsKo": [
       "물을"
@@ -3276,8 +3767,13 @@
         "kana": "とい"
       }
     ],
-    "examples": [],
-    "hint": "문(門) 앞에서 입(口)으로 길을 물음"
+    "examples": [
+      {
+        "jp": "彼女は私にその問題を問うた。",
+        "kana": "",
+        "ko": "그녀는 나에게 그 문제를 물었다."
+      }
+    ]
   },
   {
     "id": "kanji_425",
@@ -3286,7 +3782,6 @@
     "literal": "聞",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "聞",
     "koreanMeaning": "들을 문",
     "meaningsKo": [
       "들을"
@@ -3307,8 +3802,13 @@
         "kana": "きこえる"
       }
     ],
-    "examples": [],
-    "hint": "문(門)틈으로 귀(耳)를 대고 엿들음"
+    "examples": [
+      {
+        "jp": "音楽を聞くのが好きだ。",
+        "kana": "",
+        "ko": "음악을 듣는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_426",
@@ -3317,7 +3817,6 @@
     "literal": "関",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "関",
     "koreanMeaning": "빗장 관/관계 관",
     "meaningsKo": [
       "빗장",
@@ -3333,8 +3832,13 @@
         "kana": "せき"
       }
     ],
-    "examples": [],
-    "hint": "문(門)을 실(幺)로 엮어 빗장을 지름"
+    "examples": [
+      {
+        "jp": "この仕事は関係がない。",
+        "kana": "",
+        "ko": "이 일은 관계가 없다."
+      }
+    ]
   },
   {
     "id": "kanji_427",
@@ -3343,7 +3847,6 @@
     "literal": "開",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "開",
     "koreanMeaning": "열 개",
     "meaningsKo": [
       "열"
@@ -3361,8 +3864,13 @@
         "kana": "あく"
       }
     ],
-    "examples": [],
-    "hint": "문(門)의 빗장(一)을 두 손(廾)으로 들어 올림"
+    "examples": [
+      {
+        "jp": "新しい店が開くのは楽しみだ。",
+        "kana": "",
+        "ko": "새로운 가게가 열리는 것이 기대된다."
+      }
+    ]
   },
   {
     "id": "kanji_428",
@@ -3371,7 +3879,6 @@
     "literal": "閉",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "閉",
     "koreanMeaning": "닫을 폐",
     "meaningsKo": [
       "닫을"
@@ -3389,8 +3896,13 @@
         "kana": "しめる"
       }
     ],
-    "examples": [],
-    "hint": "문(門)을 닫고 재주(才)를 숨김"
+    "examples": [
+      {
+        "jp": "ドアを閉じてください。",
+        "kana": "",
+        "ko": "문을 닫아주세요."
+      }
+    ]
   },
   {
     "id": "kanji_429",
@@ -3399,7 +3911,6 @@
     "literal": "間",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "間",
     "koreanMeaning": "사이 간",
     "meaningsKo": [
       "사이"
@@ -3420,8 +3931,13 @@
         "kana": "ま"
       }
     ],
-    "examples": [],
-    "hint": "문(門)틈 사이로 해(日)가 비침"
+    "examples": [
+      {
+        "jp": "部屋と廊下の間にドアがある。",
+        "kana": "",
+        "ko": "방과 복도 사이에 문이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_430",
@@ -3430,7 +3946,6 @@
     "literal": "簡",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "簡",
     "koreanMeaning": "편지 간/간단할 간",
     "meaningsKo": [
       "편지",
@@ -3446,8 +3961,13 @@
         "kana": "えらぶ"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹) 통 사이(間)에 넣는 간단한 편지"
+    "examples": [
+      {
+        "jp": "この問題は簡単だ。",
+        "kana": "",
+        "ko": "이 문제는 간단하다."
+      }
+    ]
   },
   {
     "id": "kanji_431",
@@ -3456,7 +3976,6 @@
     "literal": "豆",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "豆",
     "koreanMeaning": "콩 두",
     "meaningsKo": [
       "콩"
@@ -3474,8 +3993,13 @@
         "kana": "まめ"
       }
     ],
-    "examples": [],
-    "hint": "뚜껑이 있는 제기 그릇의 모양, '콩'이란 의미로 사용됨"
+    "examples": [
+      {
+        "jp": "豆を使ってサラダを作った。",
+        "kana": "",
+        "ko": "콩을 사용해 샐러드를 만들었다."
+      }
+    ]
   },
   {
     "id": "kanji_432",
@@ -3484,7 +4008,6 @@
     "literal": "頭",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "頭",
     "koreanMeaning": "머리 두",
     "meaningsKo": [
       "머리"
@@ -3505,8 +4028,13 @@
         "kana": "かしら"
       }
     ],
-    "examples": [],
-    "hint": "콩(豆)처럼 생긴 사람의 머리(頁)"
+    "examples": [
+      {
+        "jp": "彼は頭がいい。",
+        "kana": "",
+        "ko": "그는 머리가 좋다."
+      }
+    ]
   },
   {
     "id": "kanji_433",
@@ -3515,7 +4043,6 @@
     "literal": "短",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "短",
     "koreanMeaning": "짧을 단",
     "meaningsKo": [
       "짧을"
@@ -3530,8 +4057,13 @@
         "kana": "みじかい"
       }
     ],
-    "examples": [],
-    "hint": "제기(豆)에 담긴 화살(矢)의 길이가 짧음"
+    "examples": [
+      {
+        "jp": "彼の髪は短い。",
+        "kana": "",
+        "ko": "그의 머리카락은 짧다."
+      }
+    ]
   },
   {
     "id": "kanji_434",
@@ -3540,7 +4072,6 @@
     "literal": "豊",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "豊",
     "koreanMeaning": "풍성할 풍",
     "meaningsKo": [
       "풍성할"
@@ -3555,8 +4086,13 @@
         "kana": "ゆたか"
       }
     ],
-    "examples": [],
-    "hint": "제기(豆) 위에 예물(曲)이 산처럼(山) 풍성하게 쌓여 있음"
+    "examples": [
+      {
+        "jp": "豊かな自然がここにある。",
+        "kana": "",
+        "ko": "여기 풍성한 자연이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_435",
@@ -3565,7 +4101,6 @@
     "literal": "礼",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "礼",
     "koreanMeaning": "예도 례",
     "meaningsKo": [
       "예도"
@@ -3583,8 +4118,13 @@
         "kana": "うやまう"
       }
     ],
-    "examples": [],
-    "hint": "신(示)에게 예물(乙)을 바치며 예의를 갖춤"
+    "examples": [
+      {
+        "jp": "彼は礼を尽くして挨拶した。",
+        "kana": "",
+        "ko": "그는 예의를 다해 인사했다."
+      }
+    ]
   },
   {
     "id": "kanji_436",
@@ -3593,7 +4133,6 @@
     "literal": "骨",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "骨",
     "koreanMeaning": "뼈 골",
     "meaningsKo": [
       "뼈"
@@ -3608,8 +4147,13 @@
         "kana": "ほね"
       }
     ],
-    "examples": [],
-    "hint": "살(肉) 아래에 있는 뼈의 단단한 구조"
+    "examples": [
+      {
+        "jp": "彼は骨が折れたので、しばらく休む必要がある。",
+        "kana": "",
+        "ko": "그는 뼈가 부러져서 잠시 쉬어야 한다."
+      }
+    ]
   },
   {
     "id": "kanji_437",
@@ -3618,7 +4162,6 @@
     "literal": "体",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "体",
     "koreanMeaning": "몸 체",
     "meaningsKo": [
       "몸"
@@ -3636,8 +4179,13 @@
         "kana": "からだ"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)의 근본(本)이 되는 것"
+    "examples": [
+      {
+        "jp": "体を鍛えるために、毎日運動をする。",
+        "kana": "",
+        "ko": "몸을 단련하기 위해 매일 운동을 한다."
+      }
+    ]
   },
   {
     "id": "kanji_438",
@@ -3646,7 +4194,6 @@
     "literal": "発",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "発",
     "koreanMeaning": "쏠 발/일어날 발",
     "meaningsKo": [
       "쏠",
@@ -3665,8 +4212,13 @@
         "kana": "たつ"
       }
     ],
-    "examples": [],
-    "hint": "발(癶)을 떼어 활(弓)과 창(殳)을 들고 나아감"
+    "examples": [
+      {
+        "jp": "新しい計画は来週発表される予定だ。",
+        "kana": "",
+        "ko": "새로운 계획은 다음 주에 발표될 예정이다."
+      }
+    ]
   },
   {
     "id": "kanji_439",
@@ -3675,7 +4227,6 @@
     "literal": "登",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "登",
     "koreanMeaning": "오를 등",
     "meaningsKo": [
       "오를"
@@ -3693,8 +4244,13 @@
         "kana": "のぼる"
       }
     ],
-    "examples": [],
-    "hint": "발(癶)로 제기(豆) 모양의 산을 오름"
+    "examples": [
+      {
+        "jp": "彼は山を登るのが好きだ。",
+        "kana": "",
+        "ko": "그는 산에 오르는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_440",
@@ -3703,7 +4259,6 @@
     "literal": "灯",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "灯",
     "koreanMeaning": "등불 등",
     "meaningsKo": [
       "등불"
@@ -3721,8 +4276,13 @@
         "kana": "ともしび"
       }
     ],
-    "examples": [],
-    "hint": "못(丁)에 걸어놓은 불(火)"
+    "examples": [
+      {
+        "jp": "夜になると、街の灯が点く。",
+        "kana": "",
+        "ko": "밤이 되면, 거리의 불빛이 켜진다."
+      }
+    ]
   },
   {
     "id": "kanji_441",
@@ -3731,7 +4291,6 @@
     "literal": "乃",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "乃",
     "koreanMeaning": "곧 내/이에 내",
     "meaningsKo": [
       "곧",
@@ -3750,8 +4309,7 @@
         "kana": "すなわち"
       }
     ],
-    "examples": [],
-    "hint": "활시위를 당기는 모양, '그래서', '~의' 라는 의미로 사용"
+    "examples": []
   },
   {
     "id": "kanji_442",
@@ -3760,7 +4318,6 @@
     "literal": "及",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "及",
     "koreanMeaning": "이를 급/미칠 급",
     "meaningsKo": [
       "이를",
@@ -3779,8 +4336,13 @@
         "kana": "および"
       }
     ],
-    "examples": [],
-    "hint": "사람(人)의 손(又)이 뻗어 어딘가에 미침"
+    "examples": [
+      {
+        "jp": "その問題は私たちに及ぶ影響が大きい。",
+        "kana": "",
+        "ko": "그 문제는 우리에게 미치는 영향이 크다."
+      }
+    ]
   },
   {
     "id": "kanji_443",
@@ -3789,7 +4351,6 @@
     "literal": "級",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "級",
     "koreanMeaning": "등급 급",
     "meaningsKo": [
       "등급"
@@ -3800,8 +4361,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "실(糸)을 차례대로 나누어(及) 등급을 매김"
+    "examples": [
+      {
+        "jp": "彼は日本語の級が上がった。",
+        "kana": "",
+        "ko": "그는 일본어 등급이 올라갔다."
+      }
+    ]
   },
   {
     "id": "kanji_444",
@@ -3810,7 +4376,6 @@
     "literal": "吸",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "吸",
     "koreanMeaning": "마실 흡",
     "meaningsKo": [
       "마실"
@@ -3825,8 +4390,13 @@
         "kana": "すう"
       }
     ],
-    "examples": [],
-    "hint": "입(口)으로 공기를 몸 안까지 미치게(及) 함"
+    "examples": [
+      {
+        "jp": "コーヒーを吸うと、目が覚める。",
+        "kana": "",
+        "ko": "커피를 마시면, 정신이 맑아진다."
+      }
+    ]
   },
   {
     "id": "kanji_445",
@@ -3835,7 +4405,6 @@
     "literal": "長",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "長",
     "koreanMeaning": "길 장",
     "meaningsKo": [
       "길"
@@ -3850,8 +4419,13 @@
         "kana": "ながい"
       }
     ],
-    "examples": [],
-    "hint": "머리카락이 긴 노인의 옆모습"
+    "examples": [
+      {
+        "jp": "彼女は長い髪を持っている。",
+        "kana": "",
+        "ko": "그녀는 긴 머리를 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_446",
@@ -3860,7 +4434,6 @@
     "literal": "張",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "張",
     "koreanMeaning": "베풀 장",
     "meaningsKo": [
       "베풀"
@@ -3875,8 +4448,13 @@
         "kana": "はる"
       }
     ],
-    "examples": [],
-    "hint": "활(弓)의 시위를 길게(長) 늘여 쏨"
+    "examples": [
+      {
+        "jp": "新しいカーテンを張った。",
+        "kana": "",
+        "ko": "새로운 커튼을 달았다."
+      }
+    ]
   },
   {
     "id": "kanji_447",
@@ -3885,7 +4463,6 @@
     "literal": "帳",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "帳",
     "koreanMeaning": "장막 장/장부 장",
     "meaningsKo": [
       "장막",
@@ -3901,8 +4478,13 @@
         "kana": "とばり"
       }
     ],
-    "examples": [],
-    "hint": "천(巾)을 길게(長) 늘여 만든 장막"
+    "examples": [
+      {
+        "jp": "帳簿を確認するのを忘れないでください。",
+        "kana": "",
+        "ko": "장부를 확인하는 것을 잊지 마세요."
+      }
+    ]
   },
   {
     "id": "kanji_448",
@@ -3911,7 +4493,6 @@
     "literal": "老",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "老",
     "koreanMeaning": "늙을 로",
     "meaningsKo": [
       "늙을"
@@ -3926,8 +4507,13 @@
         "kana": "おいる"
       }
     ],
-    "examples": [],
-    "hint": "머리가(毛) 허옇게 된(匕) 노인이 지팡이를 짚고 있는 모양"
+    "examples": [
+      {
+        "jp": "老いることは自然なことだ。",
+        "kana": "",
+        "ko": "늙는 것은 자연스러운 일이다."
+      }
+    ]
   },
   {
     "id": "kanji_449",
@@ -3936,7 +4522,6 @@
     "literal": "孝",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "孝",
     "koreanMeaning": "효도 효",
     "meaningsKo": [
       "효도"
@@ -3951,8 +4536,13 @@
         "kana": "きょう"
       }
     ],
-    "examples": [],
-    "hint": "늙은(老) 부모를 아들(子)이 업고 있는 모양"
+    "examples": [
+      {
+        "jp": "孝行は大切な美徳だ。",
+        "kana": "",
+        "ko": "효도는 중요한 미덕이다."
+      }
+    ]
   },
   {
     "id": "kanji_450",
@@ -3961,7 +4551,6 @@
     "literal": "者",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "者",
     "koreanMeaning": "놈 자",
     "meaningsKo": [
       "놈"
@@ -3976,8 +4565,13 @@
         "kana": "もの"
       }
     ],
-    "examples": [],
-    "hint": "원래는 '삶다'는 뜻이었으나, 사람을 가리키는 말로 사용됨"
+    "examples": [
+      {
+        "jp": "あの者はとても優秀だ。",
+        "kana": "",
+        "ko": "저 사람은 매우 우수하다."
+      }
+    ]
   },
   {
     "id": "kanji_451",
@@ -3986,7 +4580,6 @@
     "literal": "考",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "考",
     "koreanMeaning": "살필 고/생각할 고",
     "meaningsKo": [
       "살필",
@@ -4002,8 +4595,13 @@
         "kana": "かんがえる"
       }
     ],
-    "examples": [],
-    "hint": "늙은(老) 사람처럼 지팡이를 짚고 깊이 생각함"
+    "examples": [
+      {
+        "jp": "問題を考えると、新しいアイデアが浮かぶ。",
+        "kana": "",
+        "ko": "문제를 생각하면 새로운 아이디어가 떠오른다."
+      }
+    ]
   },
   {
     "id": "kanji_452",
@@ -4012,7 +4610,6 @@
     "literal": "教",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "教",
     "koreanMeaning": "가르칠 교",
     "meaningsKo": [
       "가르칠"
@@ -4030,8 +4627,13 @@
         "kana": "おそわる"
       }
     ],
-    "examples": [],
-    "hint": "효도(孝)하는 법을 회초리(攵)로 가르침"
+    "examples": [
+      {
+        "jp": "彼は数学を教えるのが得意だ。",
+        "kana": "",
+        "ko": "그는 수학을 가르치는 데 능숙하다."
+      }
+    ]
   },
   {
     "id": "kanji_453",
@@ -4040,7 +4642,6 @@
     "literal": "諸",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "諸",
     "koreanMeaning": "모든 제/여러 제",
     "meaningsKo": [
       "모든",
@@ -4056,8 +4657,13 @@
         "kana": "もろ"
       }
     ],
-    "examples": [],
-    "hint": "여러 사람(者)에게 하는 말(言)"
+    "examples": [
+      {
+        "jp": "この地域には諸国の料理が集まっている。",
+        "kana": "",
+        "ko": "이 지역에는 여러 나라의 요리가 모여 있다."
+      }
+    ]
   },
   {
     "id": "kanji_454",
@@ -4066,7 +4672,6 @@
     "literal": "都",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "都",
     "koreanMeaning": "도시 도",
     "meaningsKo": [
       "도시"
@@ -4084,8 +4689,13 @@
         "kana": "みやこ"
       }
     ],
-    "examples": [],
-    "hint": "여러 사람(者)이 모여 사는 마을(邑)"
+    "examples": [
+      {
+        "jp": "東京は日本の首都として知られている。",
+        "kana": "",
+        "ko": "도쿄는 일본의 수도로 알려져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_455",
@@ -4094,7 +4704,6 @@
     "literal": "暑",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "暑",
     "koreanMeaning": "더울 서",
     "meaningsKo": [
       "더울"
@@ -4109,8 +4718,13 @@
         "kana": "あつい"
       }
     ],
-    "examples": [],
-    "hint": "여러 사람(者)이 해(日) 아래에서 땀 흘림"
+    "examples": [
+      {
+        "jp": "夏は暑くて海に行きたくなる。",
+        "kana": "",
+        "ko": "여름은 더워서 바다에 가고 싶어진다."
+      }
+    ]
   },
   {
     "id": "kanji_456",
@@ -4119,7 +4733,6 @@
     "literal": "著",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "著",
     "koreanMeaning": "글 지을 저/붙을 착",
     "meaningsKo": [
       "글 지을",
@@ -4141,8 +4754,13 @@
         "kana": "いちじるしい"
       }
     ],
-    "examples": [],
-    "hint": "여러 사람(者)에게 보이기 위해 풀(艹)로 책을 엮음"
+    "examples": [
+      {
+        "jp": "彼の本は多くの人に著されている。",
+        "kana": "",
+        "ko": "그의 책은 많은 사람들에게 저술되어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_457",
@@ -4151,7 +4769,6 @@
     "literal": "王",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "王",
     "koreanMeaning": "임금 왕",
     "meaningsKo": [
       "임금"
@@ -4162,8 +4779,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "하늘(一), 사람(丨), 땅(一)을 잇는 존재"
+    "examples": [
+      {
+        "jp": "この国の王は人々に愛されている。",
+        "kana": "",
+        "ko": "이 나라의 왕은 사람들에게 사랑받고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_458",
@@ -4172,7 +4794,6 @@
     "literal": "主",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "主",
     "koreanMeaning": "주인 주",
     "meaningsKo": [
       "주인"
@@ -4193,8 +4814,13 @@
         "kana": "おも"
       }
     ],
-    "examples": [],
-    "hint": "촛대(王) 위에 불꽃(丶)이 있는 모양, 중심이 되는 것"
+    "examples": [
+      {
+        "jp": "彼の主は優しい人だ。",
+        "kana": "",
+        "ko": "그의 주인은 상냥한 사람이다."
+      }
+    ]
   },
   {
     "id": "kanji_459",
@@ -4203,7 +4829,6 @@
     "literal": "玉",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "玉",
     "koreanMeaning": "구슬 옥",
     "meaningsKo": [
       "구슬"
@@ -4218,8 +4843,13 @@
         "kana": "たま"
       }
     ],
-    "examples": [],
-    "hint": "둥근 구슬 세 개를 끈(丨)으로 꿴 모양, 왕(王)이 가진 보물(丶)"
+    "examples": [
+      {
+        "jp": "その玉は美しい光を放っている。",
+        "kana": "",
+        "ko": "그 구슬은 아름다운 빛을 발산하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_460",
@@ -4228,7 +4858,6 @@
     "literal": "宝",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "宝",
     "koreanMeaning": "보배 보",
     "meaningsKo": [
       "보배"
@@ -4243,8 +4872,13 @@
         "kana": "たから"
       }
     ],
-    "examples": [],
-    "hint": "집(宀) 안에 있는 구슬(玉)과 같은 귀한 것"
+    "examples": [
+      {
+        "jp": "宝を見つけるのは夢だ。",
+        "kana": "",
+        "ko": "보물을 찾는 것은 꿈이다."
+      }
+    ]
   },
   {
     "id": "kanji_461",
@@ -4253,7 +4887,6 @@
     "literal": "班",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "班",
     "koreanMeaning": "나눌 반",
     "meaningsKo": [
       "나눌"
@@ -4264,8 +4897,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "구슬(玉)을 칼(刂)로 둘로 나눔"
+    "examples": [
+      {
+        "jp": "クラスを二つの班に分けた。",
+        "kana": "",
+        "ko": "수업을 두 개의 반으로 나누었다."
+      }
+    ]
   },
   {
     "id": "kanji_462",
@@ -4274,7 +4912,6 @@
     "literal": "全",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "全",
     "koreanMeaning": "온전할 전",
     "meaningsKo": [
       "온전할"
@@ -4289,8 +4926,13 @@
         "kana": "まったく"
       }
     ],
-    "examples": [],
-    "hint": "사람(人)이 갓(入)을 써서(王) 격식을 갖춘 온전한 모습"
+    "examples": [
+      {
+        "jp": "全ての人が平等であるべきだ。",
+        "kana": "",
+        "ko": "모든 사람이 평등해야 한다."
+      }
+    ]
   },
   {
     "id": "kanji_463",
@@ -4299,7 +4941,6 @@
     "literal": "呈",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "呈",
     "koreanMeaning": "보일 정/드릴 정",
     "meaningsKo": [
       "보일",
@@ -4315,8 +4956,13 @@
         "kana": "しめす"
       }
     ],
-    "examples": [],
-    "hint": "입(口)으로 임금(王)에게 아룀"
+    "examples": [
+      {
+        "jp": "結果を呈するためにデータを整理した。",
+        "kana": "",
+        "ko": "결과를 보이기 위해 데이터를 정리했다."
+      }
+    ]
   },
   {
     "id": "kanji_464",
@@ -4325,7 +4971,6 @@
     "literal": "程",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "程",
     "koreanMeaning": "법 정/정도 정",
     "meaningsKo": [
       "법",
@@ -4341,8 +4986,13 @@
         "kana": "ほど"
       }
     ],
-    "examples": [],
-    "hint": "벼(禾)의 등급을 보여주어(呈) 정도를 매김"
+    "examples": [
+      {
+        "jp": "仕事の程は人それぞれ違う。",
+        "kana": "",
+        "ko": "일의 정도는 사람마다 다르다."
+      }
+    ]
   },
   {
     "id": "kanji_465",
@@ -4351,7 +5001,6 @@
     "literal": "聖",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "聖",
     "koreanMeaning": "성스러울 성",
     "meaningsKo": [
       "성스러울"
@@ -4369,8 +5018,13 @@
         "kana": "ひじり"
       }
     ],
-    "examples": [],
-    "hint": "귀(耳)가 밝고 입(口)으로 바른 말을 하는 왕(王)과 같은 존재"
+    "examples": [
+      {
+        "jp": "聖なる場所を訪れるのが好きだ。",
+        "kana": "",
+        "ko": "성스러운 장소를 방문하는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_466",
@@ -4379,7 +5033,6 @@
     "literal": "任",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "任",
     "koreanMeaning": "맡을 임",
     "meaningsKo": [
       "맡을"
@@ -4394,8 +5047,13 @@
         "kana": "まかせる"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)이 선비(士)의 갓(壬)을 쓰고 임무를 맡음"
+    "examples": [
+      {
+        "jp": "彼にプロジェクトの責任を任せた。",
+        "kana": "",
+        "ko": "그에게 프로젝트의 책임을 맡겼다."
+      }
+    ]
   },
   {
     "id": "kanji_467",
@@ -4404,7 +5062,6 @@
     "literal": "賃",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "賃",
     "koreanMeaning": "빌릴 임/품삯 임",
     "meaningsKo": [
       "빌릴",
@@ -4416,8 +5073,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "맡은(任) 일에 대한 대가로 돈(貝)을 받음"
+    "examples": [
+      {
+        "jp": "このアパートの賃は月に八万円だ。",
+        "kana": "",
+        "ko": "이 아파트의 임대료는 한 달에 8만 엔이다."
+      }
+    ]
   },
   {
     "id": "kanji_468",
@@ -4426,7 +5088,6 @@
     "literal": "注",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "注",
     "koreanMeaning": "쏟을 주",
     "meaningsKo": [
       "쏟을"
@@ -4441,8 +5102,13 @@
         "kana": "そそぐ"
       }
     ],
-    "examples": [],
-    "hint": "주인(主)이 물(氵)을 따라줌"
+    "examples": [
+      {
+        "jp": "彼はコップに水を注いだ。",
+        "kana": "",
+        "ko": "그는 컵에 물을 쏟았다."
+      }
+    ]
   },
   {
     "id": "kanji_469",
@@ -4451,7 +5117,6 @@
     "literal": "住",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "住",
     "koreanMeaning": "살 주",
     "meaningsKo": [
       "살"
@@ -4469,8 +5134,13 @@
         "kana": "すまう"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)이 주인(主)이 되어 집에 머무름"
+    "examples": [
+      {
+        "jp": "この町には多くの人が住んでいる。",
+        "kana": "",
+        "ko": "이 마을에는 많은 사람들이 살고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_470",
@@ -4479,7 +5149,6 @@
     "literal": "柱",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "柱",
     "koreanMeaning": "기둥 주",
     "meaningsKo": [
       "기둥"
@@ -4494,8 +5163,13 @@
         "kana": "はしら"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)로 된 집의 주인(主)이 되는 부분"
+    "examples": [
+      {
+        "jp": "新しい家の柱は丈夫だ。",
+        "kana": "",
+        "ko": "새 집의 기둥은 튼튼하다."
+      }
+    ]
   },
   {
     "id": "kanji_471",
@@ -4504,7 +5178,6 @@
     "literal": "往",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "往",
     "koreanMeaning": "갈 왕",
     "meaningsKo": [
       "갈"
@@ -4519,8 +5192,13 @@
         "kana": "いく"
       }
     ],
-    "examples": [],
-    "hint": "주인(主)을 향해 조금씩(彳) 걸어감"
+    "examples": [
+      {
+        "jp": "彼は毎日学校に往復する。",
+        "kana": "",
+        "ko": "그는 매일 학교에 왕복한다."
+      }
+    ]
   },
   {
     "id": "kanji_472",
@@ -4529,7 +5207,6 @@
     "literal": "青",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "青",
     "koreanMeaning": "푸를 청",
     "meaningsKo": [
       "푸를"
@@ -4550,8 +5227,13 @@
         "kana": "あおい"
       }
     ],
-    "examples": [],
-    "hint": "싹(生)이 우물(円)가에서 돋아나는 모습, 푸르다는 뜻"
+    "examples": [
+      {
+        "jp": "空は青い雲でいっぱいだ。",
+        "kana": "",
+        "ko": "하늘은 파란 구름으로 가득 차 있다."
+      }
+    ]
   },
   {
     "id": "kanji_473",
@@ -4560,7 +5242,6 @@
     "literal": "素",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "素",
     "koreanMeaning": "흴 소/요소 소",
     "meaningsKo": [
       "흴",
@@ -4579,8 +5260,13 @@
         "kana": "もと"
       }
     ],
-    "examples": [],
-    "hint": "푸른(青) 실(糸)을 만들기 전의 하얀 본래 모습"
+    "examples": [
+      {
+        "jp": "この料理の素は何ですか？",
+        "kana": "",
+        "ko": "이 요리의 재료는 무엇인가요?"
+      }
+    ]
   },
   {
     "id": "kanji_474",
@@ -4589,7 +5275,6 @@
     "literal": "毒",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "毒",
     "koreanMeaning": "독 독",
     "meaningsKo": [
       "독"
@@ -4600,8 +5285,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "싹(生)이 나면 안되는 어머니(母)와 같은 존재, 즉 해로운 것"
+    "examples": [
+      {
+        "jp": "その果物には毒があるかもしれない。",
+        "kana": "",
+        "ko": "그 과일에는 독이 있을지도 모른다."
+      }
+    ]
   },
   {
     "id": "kanji_475",
@@ -4610,7 +5300,6 @@
     "literal": "清",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "清",
     "koreanMeaning": "맑을 청",
     "meaningsKo": [
       "맑을"
@@ -4631,8 +5320,13 @@
         "kana": "きよめる"
       }
     ],
-    "examples": [],
-    "hint": "푸른(青) 빛깔의 맑은 물(氵)"
+    "examples": [
+      {
+        "jp": "川の水はとても清い。",
+        "kana": "",
+        "ko": "강의 물은 매우 맑다."
+      }
+    ]
   },
   {
     "id": "kanji_476",
@@ -4641,7 +5335,6 @@
     "literal": "晴",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "晴",
     "koreanMeaning": "날 갤 청",
     "meaningsKo": [
       "날 갤"
@@ -4659,8 +5352,13 @@
         "kana": "はらす"
       }
     ],
-    "examples": [],
-    "hint": "해(日)가 떠서 하늘이 푸르게(青) 됨"
+    "examples": [
+      {
+        "jp": "晴れた日には外で遊びたい。",
+        "kana": "",
+        "ko": "맑은 날에는 밖에서 놀고 싶다."
+      }
+    ]
   },
   {
     "id": "kanji_477",
@@ -4669,7 +5367,6 @@
     "literal": "情",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "情",
     "koreanMeaning": "정 정",
     "meaningsKo": [
       "정"
@@ -4687,8 +5384,13 @@
         "kana": "なさけ"
       }
     ],
-    "examples": [],
-    "hint": "푸른(青) 하늘을 볼 때의 마음(忄)"
+    "examples": [
+      {
+        "jp": "彼は情に厚い人だ。",
+        "kana": "",
+        "ko": "그는 정이 많은 사람이다."
+      }
+    ]
   },
   {
     "id": "kanji_478",
@@ -4697,7 +5399,6 @@
     "literal": "責",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "責",
     "koreanMeaning": "꾸짖을 책/책임 책",
     "meaningsKo": [
       "꾸짖을",
@@ -4713,8 +5414,13 @@
         "kana": "せめる"
       }
     ],
-    "examples": [],
-    "hint": "주인(主)의 돈(貝)을 잘못 써서 책망 받음"
+    "examples": [
+      {
+        "jp": "この問題について責任を持ってください。",
+        "kana": "",
+        "ko": "이 문제에 대해 책임을 져 주세요."
+      }
+    ]
   },
   {
     "id": "kanji_479",
@@ -4723,7 +5429,6 @@
     "literal": "積",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "積",
     "koreanMeaning": "쌓을 적",
     "meaningsKo": [
       "쌓을"
@@ -4741,8 +5446,13 @@
         "kana": "つもる"
       }
     ],
-    "examples": [],
-    "hint": "벼(禾)를 책임(責)지고 차곡차곡 쌓음"
+    "examples": [
+      {
+        "jp": "雪が積もって道が見えなくなった。",
+        "kana": "",
+        "ko": "눈이 쌓여서 길이 보이지 않게 되었다."
+      }
+    ]
   },
   {
     "id": "kanji_480",
@@ -4751,7 +5461,6 @@
     "literal": "績",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "績",
     "koreanMeaning": "짤 적",
     "meaningsKo": [
       "짤"
@@ -4762,8 +5471,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "실(糸)을 책임(責)지고 길쌈함"
+    "examples": [
+      {
+        "jp": "彼女の努力が素晴らしい成果を績んだ。",
+        "kana": "",
+        "ko": "그녀의 노력이 멋진 성과를 거두었다."
+      }
+    ]
   },
   {
     "id": "kanji_481",
@@ -4772,7 +5486,6 @@
     "literal": "推",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "推",
     "koreanMeaning": "밀 추",
     "meaningsKo": [
       "밀"
@@ -4787,8 +5500,13 @@
         "kana": "おす"
       }
     ],
-    "examples": [],
-    "hint": "새(隹)를 손(扌)으로 밀어 날려 보냄"
+    "examples": [
+      {
+        "jp": "友達を推しているバンドがある。",
+        "kana": "",
+        "ko": "내 친구가 추천하는 밴드가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_482",
@@ -4797,7 +5515,6 @@
     "literal": "進",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "進",
     "koreanMeaning": "나아갈 진",
     "meaningsKo": [
       "나아갈"
@@ -4812,8 +5529,13 @@
         "kana": "すすむ"
       }
     ],
-    "examples": [],
-    "hint": "새(隹)가 길(辶)을 따라 앞으로 감"
+    "examples": [
+      {
+        "jp": "彼は新しいプロジェクトに進んでいる。",
+        "kana": "",
+        "ko": "그는 새로운 프로젝트에 나아가고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_483",
@@ -4822,7 +5544,6 @@
     "literal": "準",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "準",
     "koreanMeaning": "평평할 준/법도 준",
     "meaningsKo": [
       "평평할",
@@ -4838,8 +5559,13 @@
         "kana": "なぞらえる"
       }
     ],
-    "examples": [],
-    "hint": "열(十) 마리의 새(隹)가 물(氵)가에 나란히 있는 모습, 기준"
+    "examples": [
+      {
+        "jp": "このプランは国際基準に準じている。",
+        "kana": "",
+        "ko": "이 계획은 국제 기준에 맞추어져 있다."
+      }
+    ]
   },
   {
     "id": "kanji_484",
@@ -4848,7 +5574,6 @@
     "literal": "雑",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "雑",
     "koreanMeaning": "섞일 잡",
     "meaningsKo": [
       "섞일"
@@ -4866,8 +5591,13 @@
         "kana": "まじる"
       }
     ],
-    "examples": [],
-    "hint": "아홉(九) 마리의 새(隹)가 나무(木) 위에 모여 섞여 있음"
+    "examples": [
+      {
+        "jp": "市場で雑貨を売っている店が多い。",
+        "kana": "",
+        "ko": "시장에는 잡화를 파는 가게가 많다."
+      }
+    ]
   },
   {
     "id": "kanji_485",
@@ -4876,7 +5606,6 @@
     "literal": "集",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "集",
     "koreanMeaning": "모일 집",
     "meaningsKo": [
       "모일"
@@ -4894,8 +5623,13 @@
         "kana": "あつめる"
       }
     ],
-    "examples": [],
-    "hint": "나무(木) 위에 새(隹)들이 모여 앉아 있음"
+    "examples": [
+      {
+        "jp": "公園に集まってピクニックをした。",
+        "kana": "",
+        "ko": "공원에 모여서 소풍을 즐겼다."
+      }
+    ]
   },
   {
     "id": "kanji_486",
@@ -4904,7 +5638,6 @@
     "literal": "羽",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "羽",
     "koreanMeaning": "날개 우",
     "meaningsKo": [
       "날개"
@@ -4922,8 +5655,13 @@
         "kana": "はね"
       }
     ],
-    "examples": [],
-    "hint": "새의 깃털 두 개가 나란히 있는 모양"
+    "examples": [
+      {
+        "jp": "鳥の羽が地面に落ちていた。",
+        "kana": "",
+        "ko": "새의 날개가 땅에 떨어져 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_487",
@@ -4932,7 +5670,6 @@
     "literal": "習",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "習",
     "koreanMeaning": "익힐 습",
     "meaningsKo": [
       "익힐"
@@ -4947,8 +5684,13 @@
         "kana": "ならう"
       }
     ],
-    "examples": [],
-    "hint": "새(白)가 날개(羽)짓을 반복하여 나는 법을 배움"
+    "examples": [
+      {
+        "jp": "毎日新しい言葉を習うのは楽しい。",
+        "kana": "",
+        "ko": "매일 새로운 단어를 익히는 것은 재미있다."
+      }
+    ]
   },
   {
     "id": "kanji_488",
@@ -4957,7 +5699,6 @@
     "literal": "翌",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "翌",
     "koreanMeaning": "다음날 익",
     "meaningsKo": [
       "다음날"
@@ -4968,8 +5709,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "날개(羽)を 펴고 서(立)서 다음 날을 맞이함"
+    "examples": [
+      {
+        "jp": "翌日、彼に再会することになった。",
+        "kana": "",
+        "ko": "다음 날 그를 다시 만날 일이 생겼다."
+      }
+    ]
   },
   {
     "id": "kanji_489",
@@ -4978,7 +5724,6 @@
     "literal": "曜",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "曜",
     "koreanMeaning": "요일 요",
     "meaningsKo": [
       "요일"
@@ -4993,8 +5738,13 @@
         "kana": "かがやく"
       }
     ],
-    "examples": [],
-    "hint": "새(隹)가 날개(羽)を 펴고 해(日)를 보며 요일을 셈"
+    "examples": [
+      {
+        "jp": "今日は金曜日で、曜日の中で一番好きだ。",
+        "kana": "",
+        "ko": "오늘은 금요일로, 내가 가장 좋아하는 요일이다."
+      }
+    ]
   },
   {
     "id": "kanji_490",
@@ -5003,7 +5753,6 @@
     "literal": "鳥",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "鳥",
     "koreanMeaning": "새 조",
     "meaningsKo": [
       "새"
@@ -5018,8 +5767,13 @@
         "kana": "とり"
       }
     ],
-    "examples": [],
-    "hint": "벼슬과 부리가 있는 새의 옆모습"
+    "examples": [
+      {
+        "jp": "庭に鳥が巣を作っている。",
+        "kana": "",
+        "ko": "정원에 새가 둥지를 만들고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_491",
@@ -5028,7 +5782,6 @@
     "literal": "鳴",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "鳴",
     "koreanMeaning": "울 명",
     "meaningsKo": [
       "울"
@@ -5046,8 +5799,13 @@
         "kana": "なる"
       }
     ],
-    "examples": [],
-    "hint": "입(口)으로 우는 새(鳥)"
+    "examples": [
+      {
+        "jp": "夜に猫が鳴いていた。",
+        "kana": "",
+        "ko": "밤에 고양이가 울고 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_492",
@@ -5056,7 +5814,6 @@
     "literal": "島",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "島",
     "koreanMeaning": "섬 도",
     "meaningsKo": [
       "섬"
@@ -5071,8 +5828,13 @@
         "kana": "しま"
       }
     ],
-    "examples": [],
-    "hint": "산(山) 위에 새(鳥)가 사는 육지"
+    "examples": [
+      {
+        "jp": "沖縄には美しい島がたくさんある。",
+        "kana": "",
+        "ko": "오키나와에는 아름다운 섬이 많다."
+      }
+    ]
   },
   {
     "id": "kanji_493",
@@ -5081,7 +5843,6 @@
     "literal": "雁",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "雁",
     "koreanMeaning": "기러기 안",
     "meaningsKo": [
       "기러기"
@@ -5096,8 +5857,13 @@
         "kana": "かり"
       }
     ],
-    "examples": [],
-    "hint": "언덕(厂) 위를 나는 새(隹)의 한 종류"
+    "examples": [
+      {
+        "jp": "雁が南に飛んでいく時期だ。",
+        "kana": "",
+        "ko": "기러기가 남쪽으로 날아가는 시기다."
+      }
+    ]
   },
   {
     "id": "kanji_494",
@@ -5106,7 +5872,6 @@
     "literal": "応",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "応",
     "koreanMeaning": "응할 응",
     "meaningsKo": [
       "응할"
@@ -5121,8 +5886,13 @@
         "kana": "こたえる"
       }
     ],
-    "examples": [],
-    "hint": "매(雁)를 보고 마음(心)으로 응답함"
+    "examples": [
+      {
+        "jp": "彼の質問に応じて、すぐに答えた。",
+        "kana": "",
+        "ko": "그의 질문에 응답하여, 바로 대답했다."
+      }
+    ]
   },
   {
     "id": "kanji_495",
@@ -5131,7 +5901,6 @@
     "literal": "奮",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "奮",
     "koreanMeaning": "떨칠 분/힘쓸 분",
     "meaningsKo": [
       "떨칠",
@@ -5147,8 +5916,13 @@
         "kana": "ふるう"
       }
     ],
-    "examples": [],
-    "hint": "큰(大) 새(隹)가 밭(田)에서 힘껏 날갯짓함"
+    "examples": [
+      {
+        "jp": "彼女は大会で奮い立って勝った。",
+        "kana": "",
+        "ko": "그녀는 대회에서 힘을 내어 이겼다."
+      }
+    ]
   },
   {
     "id": "kanji_496",
@@ -5157,7 +5931,6 @@
     "literal": "確",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "確",
     "koreanMeaning": "확실할 확",
     "meaningsKo": [
       "확실할"
@@ -5175,8 +5948,13 @@
         "kana": "たしかめる"
       }
     ],
-    "examples": [],
-    "hint": "돌(石)처럼 단단하고 새(隹)처럼 높은 곳에서 봐서 틀림없음"
+    "examples": [
+      {
+        "jp": "その情報は確かなものだ。",
+        "kana": "",
+        "ko": "그 정보는 확실한 것이다."
+      }
+    ]
   },
   {
     "id": "kanji_497",
@@ -5185,7 +5963,6 @@
     "literal": "観",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "観",
     "koreanMeaning": "볼 관",
     "meaningsKo": [
       "볼"
@@ -5200,8 +5977,13 @@
         "kana": "みる"
       }
     ],
-    "examples": [],
-    "hint": "황새(雚)가 무언가를 자세히 보는(見) 모습"
+    "examples": [
+      {
+        "jp": "彼は映画を観るのが好きだ。",
+        "kana": "",
+        "ko": "그는 영화를 보는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_498",
@@ -5210,7 +5992,6 @@
     "literal": "権",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "権",
     "koreanMeaning": "권세 권",
     "meaningsKo": [
       "권세"
@@ -5228,8 +6009,13 @@
         "kana": "おもり"
       }
     ],
-    "examples": [],
-    "hint": "황새(雚)처럼 높은 곳에서 나무(木) 지팡이를 짚은 권력"
+    "examples": [
+      {
+        "jp": "彼女は権力を手に入れた。",
+        "kana": "",
+        "ko": "그녀는 권력을 손에 넣었다."
+      }
+    ]
   },
   {
     "id": "kanji_499",
@@ -5238,7 +6024,6 @@
     "literal": "友",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "友",
     "koreanMeaning": "벗 우",
     "meaningsKo": [
       "벗"
@@ -5253,8 +6038,13 @@
         "kana": "とも"
       }
     ],
-    "examples": [],
-    "hint": "두 개의 손(又)을 서로 맞잡은 모양"
+    "examples": [
+      {
+        "jp": "友達と一緒に旅行に行った。",
+        "kana": "",
+        "ko": "친구와 함께 여행을 갔다."
+      }
+    ]
   },
   {
     "id": "kanji_500",
@@ -5263,7 +6053,6 @@
     "literal": "反",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "反",
     "koreanMeaning": "거꾸로 반/뒤집을 반",
     "meaningsKo": [
       "거꾸로",
@@ -5288,8 +6077,13 @@
         "kana": "そらす"
       }
     ],
-    "examples": [],
-    "hint": "언덕(厂)에서 손(又)으로 무언가를 뒤집음"
+    "examples": [
+      {
+        "jp": "その絵は反対に掛けられていた。",
+        "kana": "",
+        "ko": "그 그림은 거꾸로 걸려 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_501",
@@ -5298,7 +6092,6 @@
     "literal": "坂",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "坂",
     "koreanMeaning": "비탈 판",
     "meaningsKo": [
       "비탈"
@@ -5313,8 +6106,13 @@
         "kana": "さか"
       }
     ],
-    "examples": [],
-    "hint": "흙(土)이 반대로(反) 기울어진 언덕"
+    "examples": [
+      {
+        "jp": "この坂はとても急だ。",
+        "kana": "",
+        "ko": "이 비탈은 매우 가파르다."
+      }
+    ]
   },
   {
     "id": "kanji_502",
@@ -5323,7 +6121,6 @@
     "literal": "板",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "板",
     "koreanMeaning": "널조각 판",
     "meaningsKo": [
       "널조각"
@@ -5341,8 +6138,13 @@
         "kana": "いた"
       }
     ],
-    "examples": [],
-    "hint": "나무(木)를 반대로(反) 잘라 만든 널빤지"
+    "examples": [
+      {
+        "jp": "木の板を使ってテーブルを作った。",
+        "kana": "",
+        "ko": "나무 널조각을 사용해 테이블을 만들었다."
+      }
+    ]
   },
   {
     "id": "kanji_503",
@@ -5351,7 +6153,6 @@
     "literal": "版",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "版",
     "koreanMeaning": "인쇄할 판",
     "meaningsKo": [
       "인쇄할"
@@ -5362,8 +6163,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "널빤지(片)를 반대로(反) 새겨 찍어냄"
+    "examples": [
+      {
+        "jp": "この本の版は新しいものだ。",
+        "kana": "",
+        "ko": "이 책의 판은 새로운 것이다."
+      }
+    ]
   },
   {
     "id": "kanji_504",
@@ -5372,7 +6178,6 @@
     "literal": "阪",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "阪",
     "koreanMeaning": "비탈 판",
     "meaningsKo": [
       "비탈"
@@ -5387,8 +6192,13 @@
         "kana": "さか"
       }
     ],
-    "examples": [],
-    "hint": "언덕(阝)이 반대로(反) 기울어진 비탈"
+    "examples": [
+      {
+        "jp": "阪神電車は便利だ。",
+        "kana": "",
+        "ko": "한신 전철은 편리하다."
+      }
+    ]
   },
   {
     "id": "kanji_505",
@@ -5397,7 +6207,6 @@
     "literal": "返",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "返",
     "koreanMeaning": "돌이킬 반",
     "meaningsKo": [
       "돌이킬"
@@ -5415,8 +6224,13 @@
         "kana": "かえる"
       }
     ],
-    "examples": [],
-    "hint": "반대로(反) 길(辶)을 거슬러 감"
+    "examples": [
+      {
+        "jp": "彼に本を返さなければならない。",
+        "kana": "",
+        "ko": "그에게 책을 돌려줘야 한다."
+      }
+    ]
   },
   {
     "id": "kanji_506",
@@ -5425,7 +6239,6 @@
     "literal": "桑",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "桑",
     "koreanMeaning": "뽕나무 상",
     "meaningsKo": [
       "뽕나무"
@@ -5440,8 +6253,13 @@
         "kana": "くわ"
       }
     ],
-    "examples": [],
-    "hint": "손(又) 세 개로 잎을 따는 나무(木)"
+    "examples": [
+      {
+        "jp": "桑の葉は養蚕に使われる。",
+        "kana": "",
+        "ko": "뽕나무 잎은 양잠에 사용된다."
+      }
+    ]
   },
   {
     "id": "kanji_507",
@@ -5450,7 +6268,6 @@
     "literal": "染",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "染",
     "koreanMeaning": "물들일 염",
     "meaningsKo": [
       "물들일"
@@ -5468,8 +6285,13 @@
         "kana": "しみる"
       }
     ],
-    "examples": [],
-    "hint": "아홉(九) 번 나무(木) 즙을 물(氵)에 풀어 천을 물들임"
+    "examples": [
+      {
+        "jp": "彼女は服を染めるのが得意だ。",
+        "kana": "",
+        "ko": "그녀는 옷을 물들이는 것을 잘한다."
+      }
+    ]
   },
   {
     "id": "kanji_508",
@@ -5478,7 +6300,6 @@
     "literal": "皮",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "皮",
     "koreanMeaning": "가죽 피",
     "meaningsKo": [
       "가죽"
@@ -5493,8 +6314,13 @@
         "kana": "かわ"
       }
     ],
-    "examples": [],
-    "hint": "손(又)으로 짐승의 가죽을 벗겨내는 모양"
+    "examples": [
+      {
+        "jp": "このバッグは本皮でできている。",
+        "kana": "",
+        "ko": "이 가방은 가죽으로 만들어졌다."
+      }
+    ]
   },
   {
     "id": "kanji_509",
@@ -5503,7 +6329,6 @@
     "literal": "波",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "波",
     "koreanMeaning": "물결 파",
     "meaningsKo": [
       "물결"
@@ -5518,8 +6343,13 @@
         "kana": "なみ"
       }
     ],
-    "examples": [],
-    "hint": "가죽(皮)처럼 일렁이는 물(氵)"
+    "examples": [
+      {
+        "jp": "波が高くて泳げなかった。",
+        "kana": "",
+        "ko": "파도가 높아서 수영할 수 없었다."
+      }
+    ]
   },
   {
     "id": "kanji_510",
@@ -5528,7 +6358,6 @@
     "literal": "軽",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "軽",
     "koreanMeaning": "가벼울 경",
     "meaningsKo": [
       "가벼울"
@@ -5546,8 +6375,13 @@
         "kana": "かろやか"
       }
     ],
-    "examples": [],
-    "hint": "수레(車)가 땅을 파며(圣) 가볍게 나아감"
+    "examples": [
+      {
+        "jp": "この荷物は軽いので持ち運びやすい。",
+        "kana": "",
+        "ko": "이 짐은 가벼워서 옮기기 쉽다."
+      }
+    ]
   },
   {
     "id": "kanji_511",
@@ -5556,7 +6390,6 @@
     "literal": "経",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "経",
     "koreanMeaning": "지날 경",
     "meaningsKo": [
       "지날"
@@ -5577,8 +6410,13 @@
         "kana": "たつ"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)이 땅을 파며(圣) 길게 지나감"
+    "examples": [
+      {
+        "jp": "この道を経ると公園に着く。",
+        "kana": "",
+        "ko": "이 길을 지나면 공원에 도착한다."
+      }
+    ]
   },
   {
     "id": "kanji_512",
@@ -5587,7 +6425,6 @@
     "literal": "径",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "径",
     "koreanMeaning": "지름길 경",
     "meaningsKo": [
       "지름길"
@@ -5602,8 +6439,13 @@
         "kana": "こみち"
       }
     ],
-    "examples": [],
-    "hint": "조금 걸어서(彳) 땅을 파며(圣) 만든 작은 길"
+    "examples": [
+      {
+        "jp": "家に帰るために径を使った。",
+        "kana": "",
+        "ko": "집에 돌아가기 위해 지름길을 이용했다."
+      }
+    ]
   },
   {
     "id": "kanji_513",
@@ -5612,7 +6454,6 @@
     "literal": "石",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "石",
     "koreanMeaning": "돌 석",
     "meaningsKo": [
       "돌"
@@ -5633,8 +6474,13 @@
         "kana": "いし"
       }
     ],
-    "examples": [],
-    "hint": "언덕(厂) 아래에 있는 돌멩이(口)의 모양"
+    "examples": [
+      {
+        "jp": "庭に大きな石がある。",
+        "kana": "",
+        "ko": "정원에 큰 돌이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_514",
@@ -5643,7 +6489,6 @@
     "literal": "研",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "研",
     "koreanMeaning": "갈 연/연구할 연",
     "meaningsKo": [
       "갈",
@@ -5659,8 +6504,13 @@
         "kana": "とぐ"
       }
     ],
-    "examples": [],
-    "hint": "돌(石)을 평평하게(开) 갈며 연구함"
+    "examples": [
+      {
+        "jp": "彼は毎日日本語を研げている。",
+        "kana": "",
+        "ko": "그는 매일 일본어를 연습하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_515",
@@ -5669,7 +6519,6 @@
     "literal": "破",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "破",
     "koreanMeaning": "깨질 파",
     "meaningsKo": [
       "깨질"
@@ -5687,8 +6536,13 @@
         "kana": "やぶれる"
       }
     ],
-    "examples": [],
-    "hint": "돌(石) 같은 가죽(皮)이 찢어짐"
+    "examples": [
+      {
+        "jp": "このガラスは簡単に破れる。",
+        "kana": "",
+        "ko": "이 유리는 쉽게 깨진다."
+      }
+    ]
   },
   {
     "id": "kanji_516",
@@ -5697,7 +6551,6 @@
     "literal": "有",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "有",
     "koreanMeaning": "가질 유/있을 유",
     "meaningsKo": [
       "가질",
@@ -5716,8 +6569,13 @@
         "kana": "ある"
       }
     ],
-    "examples": [],
-    "hint": "손(ナ)에 고기(月)를 들고 있는 모양"
+    "examples": [
+      {
+        "jp": "彼は多くの本を有している。",
+        "kana": "",
+        "ko": "그는 많은 책을 소장하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_517",
@@ -5726,7 +6584,6 @@
     "literal": "右",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "右",
     "koreanMeaning": "오른쪽 우",
     "meaningsKo": [
       "오른쪽"
@@ -5744,8 +6601,13 @@
         "kana": "みぎ"
       }
     ],
-    "examples": [],
-    "hint": "손(又)으로 입(口)에 음식을 가져가는, 주로 쓰는 손"
+    "examples": [
+      {
+        "jp": "右に曲がったらすぐに見える。",
+        "kana": "",
+        "ko": "오른쪽으로 돌면 바로 보인다."
+      }
+    ]
   },
   {
     "id": "kanji_518",
@@ -5754,7 +6616,6 @@
     "literal": "左",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "左",
     "koreanMeaning": "왼쪽 좌",
     "meaningsKo": [
       "왼쪽"
@@ -5769,8 +6630,13 @@
         "kana": "ひだり"
       }
     ],
-    "examples": [],
-    "hint": "왼손(ナ)으로 도구(工)를 돕는 손"
+    "examples": [
+      {
+        "jp": "左の道はあまり使われていない。",
+        "kana": "",
+        "ko": "왼쪽 길은 거의 사용되지 않는다."
+      }
+    ]
   },
   {
     "id": "kanji_519",
@@ -5779,7 +6645,6 @@
     "literal": "布",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "布",
     "koreanMeaning": "베 포",
     "meaningsKo": [
       "베"
@@ -5794,8 +6659,13 @@
         "kana": "ぬの"
       }
     ],
-    "examples": [],
-    "hint": "옛날 화폐로도 쓰였던(父) 천(巾)"
+    "examples": [
+      {
+        "jp": "テーブルの上に布が敷いてある。",
+        "kana": "",
+        "ko": "테이블 위에 천이 깔려 있다."
+      }
+    ]
   },
   {
     "id": "kanji_520",
@@ -5804,7 +6674,6 @@
     "literal": "希",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "希",
     "koreanMeaning": "바랄 희",
     "meaningsKo": [
       "바랄"
@@ -5819,8 +6688,13 @@
         "kana": "まれ"
       }
     ],
-    "examples": [],
-    "hint": "엇갈린(爻) 무늬의 드문 천(巾)"
+    "examples": [
+      {
+        "jp": "その機会は希少だ。",
+        "kana": "",
+        "ko": "그 기회는 드물다."
+      }
+    ]
   },
   {
     "id": "kanji_521",
@@ -5829,7 +6703,6 @@
     "literal": "己",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "己",
     "koreanMeaning": "몸 기/자기 기",
     "meaningsKo": [
       "몸",
@@ -5848,8 +6721,13 @@
         "kana": "おのれ"
       }
     ],
-    "examples": [],
-    "hint": "뱀이 몸을 웅크리고 있는 모양, '자기 자신'"
+    "examples": [
+      {
+        "jp": "己の信念を持つことが重要だ。",
+        "kana": "",
+        "ko": "자신의 신념을 가지는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_522",
@@ -5858,7 +6736,6 @@
     "literal": "記",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "記",
     "koreanMeaning": "기록할 기",
     "meaningsKo": [
       "기록할"
@@ -5873,8 +6750,13 @@
         "kana": "しるす"
       }
     ],
-    "examples": [],
-    "hint": "자기(己)가 한 말을(言) 적어 둠"
+    "examples": [
+      {
+        "jp": "日記に昨日の出来事を記した。",
+        "kana": "",
+        "ko": "일기에 어제의 일을 기록했다."
+      }
+    ]
   },
   {
     "id": "kanji_523",
@@ -5883,7 +6765,6 @@
     "literal": "改",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "改",
     "koreanMeaning": "고칠 개",
     "meaningsKo": [
       "고칠"
@@ -5901,8 +6782,13 @@
         "kana": "あらたまる"
       }
     ],
-    "examples": [],
-    "hint": "자기(己)의 잘못을 회초리(攵)로 다스려 바로잡음"
+    "examples": [
+      {
+        "jp": "この問題を改める必要がある。",
+        "kana": "",
+        "ko": "이 문제를 고칠 필요가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_524",
@@ -5911,7 +6797,6 @@
     "literal": "走",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "走",
     "koreanMeaning": "달릴 주",
     "meaningsKo": [
       "달릴"
@@ -5926,8 +6811,13 @@
         "kana": "はしる"
       }
     ],
-    "examples": [],
-    "hint": "흙(土)먼지를 날리며 발(止)로 뛰어감"
+    "examples": [
+      {
+        "jp": "彼は毎朝公園で走っている。",
+        "kana": "",
+        "ko": "그는 매일 아침 공원에서 달리고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_525",
@@ -5936,7 +6826,6 @@
     "literal": "徒",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "徒",
     "koreanMeaning": "걸을 도/무리 도",
     "meaningsKo": [
       "걸을",
@@ -5952,8 +6841,13 @@
         "kana": "いたずら"
       }
     ],
-    "examples": [],
-    "hint": "길(彳)을 함께 달려가는(走) 사람들"
+    "examples": [
+      {
+        "jp": "徒然なるままに考えを巡らせた。",
+        "kana": "",
+        "ko": "무심코 생각을 떠올렸다."
+      }
+    ]
   },
   {
     "id": "kanji_526",
@@ -5962,7 +6856,6 @@
     "literal": "起",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "起",
     "koreanMeaning": "일어날 기",
     "meaningsKo": [
       "일어날"
@@ -5980,8 +6873,13 @@
         "kana": "おこす"
       }
     ],
-    "examples": [],
-    "hint": "달려가다가(走) 자기(己) 몸을 일으켜 세움"
+    "examples": [
+      {
+        "jp": "毎朝、6時に起きる。",
+        "kana": "",
+        "ko": "매일 아침 6시에 일어난다."
+      }
+    ]
   },
   {
     "id": "kanji_527",
@@ -5990,7 +6888,6 @@
     "literal": "卩",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "卩",
     "koreanMeaning": "병부 절",
     "meaningsKo": [
       "병부"
@@ -6001,8 +6898,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사람이 무릎을 꿇고 있는 모양, 다른 한자의 부수로 쓰임"
+    "examples": [
+      {
+        "jp": "この文書には卩が必要だ。",
+        "kana": "",
+        "ko": "이 문서에는 도장이 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_528",
@@ -6011,7 +6913,6 @@
     "literal": "犯",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "犯",
     "koreanMeaning": "범할 범",
     "meaningsKo": [
       "범할"
@@ -6026,8 +6927,13 @@
         "kana": "おかす"
       }
     ],
-    "examples": [],
-    "hint": "개(犭)가 사람(卩)의 영역을 침범함"
+    "examples": [
+      {
+        "jp": "彼は法律を犯してしまった。",
+        "kana": "",
+        "ko": "그는 법을 어겨버렸다."
+      }
+    ]
   },
   {
     "id": "kanji_529",
@@ -6036,7 +6942,6 @@
     "literal": "厄",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "厄",
     "koreanMeaning": "재앙 액",
     "meaningsKo": [
       "재앙"
@@ -6047,8 +6952,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "언덕(厂)에서 사람이 무릎(卩) 꿇고 있는 재난의 모습"
+    "examples": [
+      {
+        "jp": "厄年は注意が必要だ。",
+        "kana": "",
+        "ko": "재앙이 올 수 있는 해는 주의가 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_530",
@@ -6057,7 +6967,6 @@
     "literal": "危",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "危",
     "koreanMeaning": "위험할 위",
     "meaningsKo": [
       "위험할"
@@ -6075,8 +6984,13 @@
         "kana": "あやうい"
       }
     ],
-    "examples": [],
-    "hint": "언덕(厂) 위에서 사람이 무릎(卩) 꿇고 있는 위태로운 모습"
+    "examples": [
+      {
+        "jp": "その場所は危険だから近づかないほうがいい。",
+        "kana": "",
+        "ko": "그 장소는 위험하니 가까이 가지 않는 게 좋다."
+      }
+    ]
   },
   {
     "id": "kanji_531",
@@ -6085,7 +6999,6 @@
     "literal": "令",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "令",
     "koreanMeaning": "명령할 령",
     "meaningsKo": [
       "명령할"
@@ -6096,8 +7009,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사람(人)이 무릎(卩) 꿇고 명령을 받는 모습"
+    "examples": [
+      {
+        "jp": "令和の時代が始まった。",
+        "kana": "",
+        "ko": "레와 시대가 시작되었다."
+      }
+    ]
   },
   {
     "id": "kanji_532",
@@ -6106,7 +7024,6 @@
     "literal": "冷",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "冷",
     "koreanMeaning": "찰 랭",
     "meaningsKo": [
       "찰"
@@ -6124,8 +7041,13 @@
         "kana": "ひえる"
       }
     ],
-    "examples": [],
-    "hint": "얼음(冫)처럼 차가운 명령(令)"
+    "examples": [
+      {
+        "jp": "冷たい水が飲みたい。",
+        "kana": "",
+        "ko": "차가운 물이 마시고 싶다."
+      }
+    ]
   },
   {
     "id": "kanji_533",
@@ -6134,7 +7056,6 @@
     "literal": "領",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "領",
     "koreanMeaning": "거느릴 령",
     "meaningsKo": [
       "거느릴"
@@ -6149,8 +7070,13 @@
         "kana": "えり"
       }
     ],
-    "examples": [],
-    "hint": "명령(令)하여 머리(頁)로 거느리는 영역"
+    "examples": [
+      {
+        "jp": "領域を広げるために努力する。",
+        "kana": "",
+        "ko": "영역을 넓히기 위해 노력한다."
+      }
+    ]
   },
   {
     "id": "kanji_534",
@@ -6159,7 +7085,6 @@
     "literal": "命",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "命",
     "koreanMeaning": "명령할 명/목숨 명",
     "meaningsKo": [
       "명령할",
@@ -6178,8 +7103,13 @@
         "kana": "いのち"
       }
     ],
-    "examples": [],
-    "hint": "입(口)으로 내리는 명령(令), 하늘이 내린 수명"
+    "examples": [
+      {
+        "jp": "命を大切にしなければならない。",
+        "kana": "",
+        "ko": "목숨을 소중히 여겨야 한다."
+      }
+    ]
   },
   {
     "id": "kanji_535",
@@ -6188,7 +7118,6 @@
     "literal": "即",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "即",
     "koreanMeaning": "곧 즉",
     "meaningsKo": [
       "곧"
@@ -6206,8 +7135,13 @@
         "kana": "すなわち"
       }
     ],
-    "examples": [],
-    "hint": "밥그릇(皀) 앞에 무릎(卩) 꿇고 앉아 바로 식사함"
+    "examples": [
+      {
+        "jp": "即答するのは難しい。",
+        "kana": "",
+        "ko": "즉답하는 것은 어렵다."
+      }
+    ]
   },
   {
     "id": "kanji_536",
@@ -6216,7 +7150,6 @@
     "literal": "節",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "節",
     "koreanMeaning": "마디 절/계절 절",
     "meaningsKo": [
       "마디",
@@ -6235,8 +7168,13 @@
         "kana": "ふし"
       }
     ],
-    "examples": [],
-    "hint": "대나무(竹)의 곧은(即) 마디"
+    "examples": [
+      {
+        "jp": "春節には家族が集まる。",
+        "kana": "",
+        "ko": "봄철에는 가족이 모인다."
+      }
+    ]
   },
   {
     "id": "kanji_537",
@@ -6245,7 +7183,6 @@
     "literal": "巴",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "巴",
     "koreanMeaning": "뱀 파",
     "meaningsKo": [
       "뱀"
@@ -6260,8 +7197,13 @@
         "kana": "ともえ"
       }
     ],
-    "examples": [],
-    "hint": "웅크리고 있는 큰 뱀의 모양"
+    "examples": [
+      {
+        "jp": "巴の形をした雲を見た。",
+        "kana": "",
+        "ko": "뱀 모양의 구름을 보았다."
+      }
+    ]
   },
   {
     "id": "kanji_538",
@@ -6270,7 +7212,6 @@
     "literal": "肥",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "肥",
     "koreanMeaning": "살찔 비/거름 비",
     "meaningsKo": [
       "살찔",
@@ -6289,8 +7230,13 @@
         "kana": "こえ"
       }
     ],
-    "examples": [],
-    "hint": "몸(月)이 뱀(巴)처럼 두툼하게 살찜"
+    "examples": [
+      {
+        "jp": "肥料を使って畑を耕す。",
+        "kana": "",
+        "ko": "비료를 사용하여 밭을 갈린다."
+      }
+    ]
   },
   {
     "id": "kanji_539",
@@ -6299,7 +7245,6 @@
     "literal": "色",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "色",
     "koreanMeaning": "빛 색",
     "meaningsKo": [
       "빛"
@@ -6317,8 +7262,13 @@
         "kana": "いろ"
       }
     ],
-    "examples": [],
-    "hint": "사람(人)이 무릎(卩) 꿇고 있는 모습에서 얼굴빛을 의미"
+    "examples": [
+      {
+        "jp": "彼女は鮮やかな色のドレスを着ていた。",
+        "kana": "",
+        "ko": "그녀는 선명한 색의 드레스를 입고 있었다."
+      }
+    ]
   },
   {
     "id": "kanji_540",
@@ -6327,7 +7277,6 @@
     "literal": "絶",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "絶",
     "koreanMeaning": "끊을 절",
     "meaningsKo": [
       "끊을"
@@ -6345,8 +7294,13 @@
         "kana": "たつ"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)과 칼(刀)과 사람(卩)을 합쳐 끊어버림"
+    "examples": [
+      {
+        "jp": "この道は絶対に通れない。",
+        "kana": "",
+        "ko": "이 길은 절대 통과할 수 없다."
+      }
+    ]
   },
   {
     "id": "kanji_541",
@@ -6355,7 +7309,6 @@
     "literal": "巻",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "巻",
     "koreanMeaning": "책 권/말 권",
     "meaningsKo": [
       "책",
@@ -6377,8 +7330,13 @@
         "kana": "まき"
       }
     ],
-    "examples": [],
-    "hint": "두루마리 책을 펼쳐보는 모양"
+    "examples": [
+      {
+        "jp": "この本は三巻に分かれている。",
+        "kana": "",
+        "ko": "이 책은 3권으로 나뉘어 있다."
+      }
+    ]
   },
   {
     "id": "kanji_542",
@@ -6387,7 +7345,6 @@
     "literal": "券",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "券",
     "koreanMeaning": "문서 권",
     "meaningsKo": [
       "문서"
@@ -6398,8 +7355,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "책(巻)의 일부를 칼(刀)로 잘라낸 증표"
+    "examples": [
+      {
+        "jp": "映画の券を友達にあげた。",
+        "kana": "",
+        "ko": "영화 표를 친구에게 주었다."
+      }
+    ]
   },
   {
     "id": "kanji_543",
@@ -6408,7 +7370,6 @@
     "literal": "勝",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "勝",
     "koreanMeaning": "이길 승",
     "meaningsKo": [
       "이길"
@@ -6426,8 +7387,13 @@
         "kana": "まさる"
       }
     ],
-    "examples": [],
-    "hint": "힘(力)을 써서 상대를 이겨냄"
+    "examples": [
+      {
+        "jp": "試合で勝ったチームが優勝した。",
+        "kana": "",
+        "ko": "경기에서 이긴 팀이 우승했다."
+      }
+    ]
   },
   {
     "id": "kanji_544",
@@ -6436,7 +7402,6 @@
     "literal": "丁",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "丁",
     "koreanMeaning": "고무래 정/못 정",
     "meaningsKo": [
       "고무래",
@@ -6455,8 +7420,13 @@
         "kana": "ひのと"
       }
     ],
-    "examples": [],
-    "hint": "못의 머리와 뾰족한 끝 모양"
+    "examples": [
+      {
+        "jp": "丁寧に説明してくれた。",
+        "kana": "",
+        "ko": "정중하게 설명해 주었다."
+      }
+    ]
   },
   {
     "id": "kanji_545",
@@ -6465,7 +7435,6 @@
     "literal": "町",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "町",
     "koreanMeaning": "동네 정",
     "meaningsKo": [
       "동네"
@@ -6480,8 +7449,13 @@
         "kana": "まち"
       }
     ],
-    "examples": [],
-    "hint": "밭(田)과 길이 나 있는 동네(丁)"
+    "examples": [
+      {
+        "jp": "町に新しいカフェができた。",
+        "kana": "",
+        "ko": "동네에 새로운 카페가 생겼다."
+      }
+    ]
   },
   {
     "id": "kanji_546",
@@ -6490,7 +7464,6 @@
     "literal": "打",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "打",
     "koreanMeaning": "칠 타",
     "meaningsKo": [
       "칠"
@@ -6505,8 +7478,13 @@
         "kana": "うつ"
       }
     ],
-    "examples": [],
-    "hint": "손(扌)으로 못(丁)을 때려 박음"
+    "examples": [
+      {
+        "jp": "ボールを打つのが好きだ。",
+        "kana": "",
+        "ko": "공을 치는 것을 좋아한다."
+      }
+    ]
   },
   {
     "id": "kanji_547",
@@ -6515,7 +7493,6 @@
     "literal": "頂",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "頂",
     "koreanMeaning": "정수리 정/꼭대기 정",
     "meaningsKo": [
       "정수리",
@@ -6531,8 +7508,13 @@
         "kana": "いただく"
       }
     ],
-    "examples": [],
-    "hint": "못(丁)처럼 뾰족한 머리(頁)의 꼭대기"
+    "examples": [
+      {
+        "jp": "山の頂に登ったことがある。",
+        "kana": "",
+        "ko": "산 정상에 오른 적이 있다."
+      }
+    ]
   },
   {
     "id": "kanji_548",
@@ -6541,7 +7523,6 @@
     "literal": "可",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "可",
     "koreanMeaning": "옳을 가/허락할 가",
     "meaningsKo": [
       "옳을",
@@ -6557,8 +7538,13 @@
         "kana": "べし"
       }
     ],
-    "examples": [],
-    "hint": "입(口)으로 옳다고 말하는 모양"
+    "examples": [
+      {
+        "jp": "その提案は可と思う。",
+        "kana": "",
+        "ko": "그 제안은 옳다고 생각한다."
+      }
+    ]
   },
   {
     "id": "kanji_549",
@@ -6567,7 +7553,6 @@
     "literal": "歌",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "歌",
     "koreanMeaning": "노래 가",
     "meaningsKo": [
       "노래"
@@ -6585,8 +7570,13 @@
         "kana": "うたう"
       }
     ],
-    "examples": [],
-    "hint": "옳은(可) 말을 하품(欠)하듯 길게 늘여 부름"
+    "examples": [
+      {
+        "jp": "彼女は美しい歌を歌った。",
+        "kana": "",
+        "ko": "그녀는 아름다운 노래를 불렀다."
+      }
+    ]
   },
   {
     "id": "kanji_550",
@@ -6595,7 +7585,6 @@
     "literal": "河",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "河",
     "koreanMeaning": "내 하/강 하",
     "meaningsKo": [
       "내",
@@ -6611,8 +7600,13 @@
         "kana": "かわ"
       }
     ],
-    "examples": [],
-    "hint": "옳은(可) 길로 흘러가는 물(氵)"
+    "examples": [
+      {
+        "jp": "この河で魚を釣るのが楽しい。",
+        "kana": "",
+        "ko": "이 강에서 물고기를 잡는 것이 재밌다."
+      }
+    ]
   },
   {
     "id": "kanji_551",
@@ -6621,7 +7615,6 @@
     "literal": "何",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "何",
     "koreanMeaning": "어찌 하/무엇 하",
     "meaningsKo": [
       "어찌",
@@ -6640,8 +7633,13 @@
         "kana": "なん"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)이 짐을 멘(可) 모습, '무엇'을 의미"
+    "examples": [
+      {
+        "jp": "これは何の意味ですか？",
+        "kana": "",
+        "ko": "이것은 무슨 의미인가요?"
+      }
+    ]
   },
   {
     "id": "kanji_552",
@@ -6650,7 +7648,6 @@
     "literal": "荷",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "荷",
     "koreanMeaning": "멜 하/짐 하",
     "meaningsKo": [
       "멜",
@@ -6666,8 +7663,13 @@
         "kana": "に"
       }
     ],
-    "examples": [],
-    "hint": "사람(亻)이 풀(艹)로 싼 짐을 멘(可) 모습"
+    "examples": [
+      {
+        "jp": "荷物を運ぶのは大変だ。",
+        "kana": "",
+        "ko": "짐을 운반하는 것은 힘들다."
+      }
+    ]
   },
   {
     "id": "kanji_553",
@@ -6676,7 +7678,6 @@
     "literal": "奇",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "奇",
     "koreanMeaning": "기이할 기",
     "meaningsKo": [
       "기이할"
@@ -6691,8 +7692,13 @@
         "kana": "くしき"
       }
     ],
-    "examples": [],
-    "hint": "큰(大) 사람이 옳다(可)고 할 만큼 기묘함"
+    "examples": [
+      {
+        "jp": "奇妙な夢を見た。",
+        "kana": "",
+        "ko": "기이한 꿈을 꾸었다."
+      }
+    ]
   },
   {
     "id": "kanji_554",
@@ -6701,7 +7707,6 @@
     "literal": "寄",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "寄",
     "koreanMeaning": "붙어살 기/부칠 기",
     "meaningsKo": [
       "붙어살",
@@ -6720,8 +7725,13 @@
         "kana": "よせる"
       }
     ],
-    "examples": [],
-    "hint": "기이한(奇) 일들이 일어나는 집(宀)에 의탁함"
+    "examples": [
+      {
+        "jp": "手紙を寄付することが大切だ。",
+        "kana": "",
+        "ko": "편지를 보내는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_555",
@@ -6730,7 +7740,6 @@
     "literal": "司",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "司",
     "koreanMeaning": "맡을 사/벼슬 사",
     "meaningsKo": [
       "맡을",
@@ -6746,8 +7755,13 @@
         "kana": "つかさどる"
       }
     ],
-    "examples": [],
-    "hint": "왕(司)이 입(口)으로 명령을 내리는 벼슬아치"
+    "examples": [
+      {
+        "jp": "彼はプロジェクトを司る役割を担っている。",
+        "kana": "",
+        "ko": "그는 프로젝트를 담당하는 역할을 맡고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_556",
@@ -6756,7 +7770,6 @@
     "literal": "詞",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "詞",
     "koreanMeaning": "말 사/글 사",
     "meaningsKo": [
       "말",
@@ -6772,8 +7785,13 @@
         "kana": "ことば"
       }
     ],
-    "examples": [],
-    "hint": "벼슬아치(司)가 쓰는 격식 있는 말(言)"
+    "examples": [
+      {
+        "jp": "この詞はとても美しい。",
+        "kana": "",
+        "ko": "이 글은 아주 아름답다."
+      }
+    ]
   },
   {
     "id": "kanji_557",
@@ -6782,7 +7800,6 @@
     "literal": "飼",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "飼",
     "koreanMeaning": "기를 사",
     "meaningsKo": [
       "기를"
@@ -6797,8 +7814,13 @@
         "kana": "かう"
       }
     ],
-    "examples": [],
-    "hint": "벼슬아치(司)가 먹이(食)를 주어 짐승을 기름"
+    "examples": [
+      {
+        "jp": "彼は犬を飼っている。",
+        "kana": "",
+        "ko": "그는 개를 기르고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_558",
@@ -6807,7 +7829,6 @@
     "literal": "巾",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "巾",
     "koreanMeaning": "수건 건",
     "meaningsKo": [
       "수건"
@@ -6822,8 +7843,13 @@
         "kana": "ちきり"
       }
     ],
-    "examples": [],
-    "hint": "허리에 차고 있는 천이나 수건의 모양"
+    "examples": [
+      {
+        "jp": "その巾はとても柔らかい。",
+        "kana": "",
+        "ko": "그 수건은 매우 부드럽다."
+      }
+    ]
   },
   {
     "id": "kanji_559",
@@ -6832,7 +7858,6 @@
     "literal": "市",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "市",
     "koreanMeaning": "시장 시/시내 시",
     "meaningsKo": [
       "시장",
@@ -6848,8 +7873,13 @@
         "kana": "いち"
       }
     ],
-    "examples": [],
-    "hint": "사람들이 모여 물건(巾)을 파는 곳"
+    "examples": [
+      {
+        "jp": "毎週末、市に買い物に行く。",
+        "kana": "",
+        "ko": "매주 주말, 시내에 쇼핑하러 간다."
+      }
+    ]
   },
   {
     "id": "kanji_560",
@@ -6858,7 +7888,6 @@
     "literal": "姉",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "姉",
     "koreanMeaning": "윗누이 자",
     "meaningsKo": [
       "윗누이"
@@ -6873,8 +7902,13 @@
         "kana": "あね"
       }
     ],
-    "examples": [],
-    "hint": "시장(市)에 심부름을 가는 여자(女)"
+    "examples": [
+      {
+        "jp": "姉は料理が上手だ。",
+        "kana": "",
+        "ko": "내 누이는 요리를 잘한다."
+      }
+    ]
   },
   {
     "id": "kanji_561",
@@ -6883,7 +7917,6 @@
     "literal": "肺",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "肺",
     "koreanMeaning": "허파 폐",
     "meaningsKo": [
       "허파"
@@ -6894,8 +7927,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "몸(月) 속에서 시장(市)처럼 공기가 드나드는 기관"
+    "examples": [
+      {
+        "jp": "肺は呼吸に必要な器官だ。",
+        "kana": "",
+        "ko": "폐는 호흡에 필요한 기관이다."
+      }
+    ]
   },
   {
     "id": "kanji_562",
@@ -6904,7 +7942,6 @@
     "literal": "亡",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "亡",
     "koreanMeaning": "망할 망/죽을 망",
     "meaningsKo": [
       "망할",
@@ -6923,8 +7960,13 @@
         "kana": "ない"
       }
     ],
-    "examples": [],
-    "hint": "사람이 숨어 보이지 않거나 죽어서 없어짐"
+    "examples": [
+      {
+        "jp": "彼は亡くなった祖父の話をよくする。",
+        "kana": "",
+        "ko": "그는 돌아가신 할아버지에 대한 이야기를 자주 한다."
+      }
+    ]
   },
   {
     "id": "kanji_563",
@@ -6933,7 +7975,6 @@
     "literal": "忘",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "忘",
     "koreanMeaning": "잊을 망",
     "meaningsKo": [
       "잊을"
@@ -6948,8 +7989,13 @@
         "kana": "わすれる"
       }
     ],
-    "examples": [],
-    "hint": "마음(心)속에서 무언가가 사라짐(亡)"
+    "examples": [
+      {
+        "jp": "大事なことを忘れないでください。",
+        "kana": "",
+        "ko": "중요한 일을 잊지 마세요."
+      }
+    ]
   },
   {
     "id": "kanji_564",
@@ -6958,7 +8004,6 @@
     "literal": "望",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "望",
     "koreanMeaning": "바랄 망",
     "meaningsKo": [
       "바랄"
@@ -6976,8 +8021,13 @@
         "kana": "のぞむ"
       }
     ],
-    "examples": [],
-    "hint": "사라진(亡) 달(月)이 다시 차오르기를 서서(壬) 바람"
+    "examples": [
+      {
+        "jp": "彼女は夢を望んでいる。",
+        "kana": "",
+        "ko": "그녀는 꿈을 바라보고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_565",
@@ -6986,7 +8036,6 @@
     "literal": "刻",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "刻",
     "koreanMeaning": "새길 각",
     "meaningsKo": [
       "새길"
@@ -7001,8 +8050,13 @@
         "kana": "きざむ"
       }
     ],
-    "examples": [],
-    "hint": "칼(刂)로 돼지(亥) 가죽에 무늬를 새김"
+    "examples": [
+      {
+        "jp": "この木に名前を刻んだ。",
+        "kana": "",
+        "ko": "이 나무에 이름을 새겼다."
+      }
+    ]
   },
   {
     "id": "kanji_566",
@@ -7011,7 +8065,6 @@
     "literal": "航",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "航",
     "koreanMeaning": "건널 항",
     "meaningsKo": [
       "건널"
@@ -7022,8 +8075,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "배(舟)를 타고 바다를 건넘(亢)"
+    "examples": [
+      {
+        "jp": "船は安全に航行している。",
+        "kana": "",
+        "ko": "배는 안전하게 항해하고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_567",
@@ -7032,7 +8090,6 @@
     "literal": "夜",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "夜",
     "koreanMeaning": "밤 야",
     "meaningsKo": [
       "밤"
@@ -7050,8 +8107,13 @@
         "kana": "よ"
       }
     ],
-    "examples": [],
-    "hint": "달(月)이 뜬 저녁(夕)"
+    "examples": [
+      {
+        "jp": "夜になると星が見える。",
+        "kana": "",
+        "ko": "밤이 되면 별이 보인다."
+      }
+    ]
   },
   {
     "id": "kanji_568",
@@ -7060,7 +8122,6 @@
     "literal": "液",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "液",
     "koreanMeaning": "진액 액",
     "meaningsKo": [
       "진액"
@@ -7071,8 +8132,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "밤(夜)에 식물에서 나오는 물(氵)"
+    "examples": [
+      {
+        "jp": "この液はとても重要だ。",
+        "kana": "",
+        "ko": "이 액체는 매우 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_569",
@@ -7081,7 +8147,6 @@
     "literal": "恋",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "恋",
     "koreanMeaning": "사모할 련",
     "meaningsKo": [
       "사모할"
@@ -7099,8 +8164,13 @@
         "kana": "こい"
       }
     ],
-    "examples": [],
-    "hint": "붉은(亦) 마음(心)"
+    "examples": [
+      {
+        "jp": "彼女は恋に落ちた。",
+        "kana": "",
+        "ko": "그녀는 사랑에 빠졌다."
+      }
+    ]
   },
   {
     "id": "kanji_570",
@@ -7109,7 +8179,6 @@
     "literal": "変",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "変",
     "koreanMeaning": "변할 변",
     "meaningsKo": [
       "변할"
@@ -7127,8 +8196,13 @@
         "kana": "かえる"
       }
     ],
-    "examples": [],
-    "hint": "실(糸)타래가 붉게(亦) 물들며 원래 모습과 달라짐"
+    "examples": [
+      {
+        "jp": "季節が変わると、風景も変わる。",
+        "kana": "",
+        "ko": "계절이 바뀌면 풍경도 변한다."
+      }
+    ]
   },
   {
     "id": "kanji_571",
@@ -7137,7 +8211,6 @@
     "literal": "衣",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "衣",
     "koreanMeaning": "옷 의",
     "meaningsKo": [
       "옷"
@@ -7155,8 +8228,13 @@
         "kana": "ころも"
       }
     ],
-    "examples": [],
-    "hint": "저고리의 모양을 본뜬 글자"
+    "examples": [
+      {
+        "jp": "新しい衣服を買った。",
+        "kana": "",
+        "ko": "새 옷을 샀다."
+      }
+    ]
   },
   {
     "id": "kanji_572",
@@ -7165,7 +8243,6 @@
     "literal": "表",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "表",
     "koreanMeaning": "겉 표",
     "meaningsKo": [
       "겉"
@@ -7183,8 +8260,13 @@
         "kana": "あらわす"
       }
     ],
-    "examples": [],
-    "hint": "옷(衣)의 바깥으로 드러난 털(毛)"
+    "examples": [
+      {
+        "jp": "この服の表はとてもきれいだ。",
+        "kana": "",
+        "ko": "이 옷의 겉은 매우 아름답다."
+      }
+    ]
   },
   {
     "id": "kanji_573",
@@ -7193,7 +8275,6 @@
     "literal": "袁",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "袁",
     "koreanMeaning": "옷 챙길 원",
     "meaningsKo": [
       "옷 챙길"
@@ -7204,8 +8285,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "긴 옷(衣)의 모양을 본뜬 글자"
+    "examples": [
+      {
+        "jp": "袁のデザインはとてもユニークだ。",
+        "kana": "",
+        "ko": "이 옷의 디자인은 매우 독특하다."
+      }
+    ]
   },
   {
     "id": "kanji_574",
@@ -7214,7 +8300,6 @@
     "literal": "遠",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "遠",
     "koreanMeaning": "멀 원",
     "meaningsKo": [
       "멀"
@@ -7232,8 +8317,13 @@
         "kana": "とおい"
       }
     ],
-    "examples": [],
-    "hint": "긴 옷(袁)을 입고 길(辶)을 멀리 감"
+    "examples": [
+      {
+        "jp": "遠くに山が見える。",
+        "kana": "",
+        "ko": "멀리 산이 보인다."
+      }
+    ]
   },
   {
     "id": "kanji_575",
@@ -7242,7 +8332,6 @@
     "literal": "園",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "園",
     "koreanMeaning": "동산 원",
     "meaningsKo": [
       "동산"
@@ -7257,8 +8346,13 @@
         "kana": "その"
       }
     ],
-    "examples": [],
-    "hint": "울타리(囗)로 둘러싸인 먼(袁) 곳의 정원"
+    "examples": [
+      {
+        "jp": "子供たちは園で遊んでいる。",
+        "kana": "",
+        "ko": "아이들은 동산에서 놀고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_576",
@@ -7267,7 +8361,6 @@
     "literal": "制",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "制",
     "koreanMeaning": "제도 제/억제할 제",
     "meaningsKo": [
       "제도",
@@ -7279,8 +8372,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "소(牛)의 뿔이 자라지 못하게 칼(刂)로 자르는 규칙"
+    "examples": [
+      {
+        "jp": "新しい制度を導入する予定だ。",
+        "kana": "",
+        "ko": "새로운 제도를 도입할 예정입니다."
+      }
+    ]
   },
   {
     "id": "kanji_577",
@@ -7289,7 +8387,6 @@
     "literal": "製",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "製",
     "koreanMeaning": "지을 제/만들 제",
     "meaningsKo": [
       "지을",
@@ -7301,8 +8398,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "정해진 제도(制)에 따라 옷(衣)을 만듦"
+    "examples": [
+      {
+        "jp": "この製品は日本で作られた。",
+        "kana": "",
+        "ko": "이 제품은 일본에서 만들어졌다."
+      }
+    ]
   },
   {
     "id": "kanji_578",
@@ -7311,7 +8413,6 @@
     "literal": "屯",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "屯",
     "koreanMeaning": "묻힐 둔/진 칠 둔",
     "meaningsKo": [
       "묻힐",
@@ -7327,8 +8428,7 @@
         "kana": "たむろ"
       }
     ],
-    "examples": [],
-    "hint": "새싹이 땅을 뚫고 나오는 모양"
+    "examples": []
   },
   {
     "id": "kanji_579",
@@ -7337,7 +8437,6 @@
     "literal": "純",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "純",
     "koreanMeaning": "순수할 순",
     "meaningsKo": [
       "순수할"
@@ -7348,8 +8447,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "모여있는(屯) 실(糸)의 순수한 빛깔"
+    "examples": [
+      {
+        "jp": "純な心を持つことが大切だ。",
+        "kana": "",
+        "ko": "순수한 마음을 가지는 것이 중요하다."
+      }
+    ]
   },
   {
     "id": "kanji_580",
@@ -7358,7 +8462,6 @@
     "literal": "逆",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "逆",
     "koreanMeaning": "거스를 역",
     "meaningsKo": [
       "거스를"
@@ -7379,8 +8482,13 @@
         "kana": "さからう"
       }
     ],
-    "examples": [],
-    "hint": "길(辶)을 거슬러 올라감"
+    "examples": [
+      {
+        "jp": "逆の方向に進んでしまった。",
+        "kana": "",
+        "ko": "반대 방향으로 가버렸다."
+      }
+    ]
   },
   {
     "id": "kanji_581",
@@ -7389,7 +8497,6 @@
     "literal": "方",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "方",
     "koreanMeaning": "방향 방/방법 방",
     "meaningsKo": [
       "방향",
@@ -7405,8 +8512,13 @@
         "kana": "かた"
       }
     ],
-    "examples": [],
-    "hint": "밭을 가는 쟁기의 모양, 네모난 방향"
+    "examples": [
+      {
+        "jp": "この方が方法を教えてくれた。",
+        "kana": "",
+        "ko": "이 분이 방법을 가르쳐 주었다."
+      }
+    ]
   },
   {
     "id": "kanji_582",
@@ -7415,7 +8527,6 @@
     "literal": "訪",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "訪",
     "koreanMeaning": "방문할 방",
     "meaningsKo": [
       "방문할"
@@ -7433,8 +8544,13 @@
         "kana": "たずねる"
       }
     ],
-    "examples": [],
-    "hint": "말씀(言)을 전하러 여러 방향(方)으로 찾아감"
+    "examples": [
+      {
+        "jp": "友達が家に訪れた。",
+        "kana": "",
+        "ko": "친구가 집에 방문했다."
+      }
+    ]
   },
   {
     "id": "kanji_583",
@@ -7443,7 +8559,6 @@
     "literal": "防",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "防",
     "koreanMeaning": "둑 방/막을 방",
     "meaningsKo": [
       "둑",
@@ -7459,8 +8574,13 @@
         "kana": "ふせぐ"
       }
     ],
-    "examples": [],
-    "hint": "언덕(阝)을 쌓아 사방(方)에서 오는 것을 막음"
+    "examples": [
+      {
+        "jp": "安全のために防ぐことが必要だ。",
+        "kana": "",
+        "ko": "안전을 위해 막는 것이 필요하다."
+      }
+    ]
   },
   {
     "id": "kanji_584",
@@ -7469,7 +8589,6 @@
     "literal": "放",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "放",
     "koreanMeaning": "놓을 방",
     "meaningsKo": [
       "놓을"
@@ -7487,8 +8606,13 @@
         "kana": "はなつ"
       }
     ],
-    "examples": [],
-    "hint": "사방(方)으로 회초리(攵)를 휘둘러 쫓아냄"
+    "examples": [
+      {
+        "jp": "この花を放すことはできない。",
+        "kana": "",
+        "ko": "이 꽃을 놓을 수는 없다."
+      }
+    ]
   },
   {
     "id": "kanji_585",
@@ -7497,7 +8621,6 @@
     "literal": "激",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "激",
     "koreanMeaning": "격할 격/부딪칠 격",
     "meaningsKo": [
       "격할",
@@ -7513,8 +8636,13 @@
         "kana": "はげしい"
       }
     ],
-    "examples": [],
-    "hint": "흰(白) 물(氵)거품이 사방(方)으로 튈 정도로 세참"
+    "examples": [
+      {
+        "jp": "激しい雨が降り始めた。",
+        "kana": "",
+        "ko": "거센 비가 내리기 시작했다."
+      }
+    ]
   },
   {
     "id": "kanji_586",
@@ -7523,7 +8651,6 @@
     "literal": "旅",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "旅",
     "koreanMeaning": "나그네 려",
     "meaningsKo": [
       "나그네"
@@ -7538,8 +8665,13 @@
         "kana": "たび"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方) 아래 여러 사람(从)이 모여 길을 떠남"
+    "examples": [
+      {
+        "jp": "彼は旅をして、新しい文化を学んだ。",
+        "kana": "",
+        "ko": "그는 여행을 하며 새로운 문화를 배웠다."
+      }
+    ]
   },
   {
     "id": "kanji_587",
@@ -7548,7 +8680,6 @@
     "literal": "族",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "族",
     "koreanMeaning": "겨레 족",
     "meaningsKo": [
       "겨레"
@@ -7559,8 +8690,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "깃발(方) 아래 화살(矢)을 든 사람들이 모인 집단"
+    "examples": [
+      {
+        "jp": "私の家族は韓国の族の一員です。",
+        "kana": "",
+        "ko": "우리 가족은 한국 민족의 일원이다."
+      }
+    ]
   },
   {
     "id": "kanji_588",
@@ -7569,7 +8705,6 @@
     "literal": "旗",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "旗",
     "koreanMeaning": "기 기",
     "meaningsKo": [
       "기"
@@ -7584,8 +8719,13 @@
         "kana": "はた"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方) 아래 그(其) 부대를 나타내는 표시"
+    "examples": [
+      {
+        "jp": "国旗が風になびいている。",
+        "kana": "",
+        "ko": "국기가 바람에 펄럭이고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_589",
@@ -7594,7 +8734,6 @@
     "literal": "遊",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "遊",
     "koreanMeaning": "놀 유/여행할 유",
     "meaningsKo": [
       "놀",
@@ -7613,8 +8752,13 @@
         "kana": "あそぶ"
       }
     ],
-    "examples": [],
-    "hint": "깃발(方) 든 아이(子)와 함께 길(辶)을 떠나 놀러 감"
+    "examples": [
+      {
+        "jp": "子供たちは公園で遊んでいる。",
+        "kana": "",
+        "ko": "아이들은 공원에서 놀고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_590",
@@ -7623,7 +8767,6 @@
     "literal": "言",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "言",
     "koreanMeaning": "말씀 언",
     "meaningsKo": [
       "말씀"
@@ -7644,8 +8787,13 @@
         "kana": "こと"
       }
     ],
-    "examples": [],
-    "hint": "입(口)에서 말이 나오는 모양"
+    "examples": [
+      {
+        "jp": "彼はいつも素直に言う。",
+        "kana": "",
+        "ko": "그는 항상 솔직하게 말한다."
+      }
+    ]
   },
   {
     "id": "kanji_591",
@@ -7654,7 +8802,6 @@
     "literal": "信",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "信",
     "koreanMeaning": "믿을 신",
     "meaningsKo": [
       "믿을"
@@ -7665,8 +8812,13 @@
       }
     ],
     "kunYomi": [],
-    "examples": [],
-    "hint": "사람(亻)의 말(言)은 믿음이 있어야 함"
+    "examples": [
+      {
+        "jp": "彼を信じるのは難しい時もある。",
+        "kana": "",
+        "ko": "그를 믿는 것이 어려운 때도 있다."
+      }
+    ]
   },
   {
     "id": "kanji_592",
@@ -7675,7 +8827,6 @@
     "literal": "語",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "語",
     "koreanMeaning": "말씀 어",
     "meaningsKo": [
       "말씀"
@@ -7690,8 +8841,13 @@
         "kana": "かたる"
       }
     ],
-    "examples": [],
-    "hint": "나(吾)의 말(言)"
+    "examples": [
+      {
+        "jp": "彼女は日本語を語るのが上手だ。",
+        "kana": "",
+        "ko": "그녀는 일본어를 잘 이야기한다."
+      }
+    ]
   },
   {
     "id": "kanji_593",
@@ -7700,7 +8856,6 @@
     "literal": "証",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "証",
     "koreanMeaning": "증명할 증",
     "meaningsKo": [
       "증명할"
@@ -7715,8 +8870,13 @@
         "kana": "あかし"
       }
     ],
-    "examples": [],
-    "hint": "바른(正) 말(言)로 사실임을 밝힘"
+    "examples": [
+      {
+        "jp": "この証は重要な意味を持つ。",
+        "kana": "",
+        "ko": "이 증거는 중요한 의미를 가지고 있다."
+      }
+    ]
   },
   {
     "id": "kanji_594",
@@ -7725,7 +8885,6 @@
     "literal": "舌",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "舌",
     "koreanMeaning": "혀 설",
     "meaningsKo": [
       "혀"
@@ -7740,8 +8899,13 @@
         "kana": "した"
       }
     ],
-    "examples": [],
-    "hint": "입(口) 밖으로 내민 혀의 모양"
+    "examples": [
+      {
+        "jp": "舌をかむことがある。",
+        "kana": "",
+        "ko": "혀를 물 때가 있다."
+      }
+    ]
   },
   {
     "id": "kanji_595",
@@ -7750,7 +8914,6 @@
     "literal": "活",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "活",
     "koreanMeaning": "살 활",
     "meaningsKo": [
       "살"
@@ -7765,8 +8928,13 @@
         "kana": "いきる"
       }
     ],
-    "examples": [],
-    "hint": "혀(舌)에 물(氵)기가 있어 살아있음"
+    "examples": [
+      {
+        "jp": "彼は活き活きとした人だ。",
+        "kana": "",
+        "ko": "그는 활기찬 사람이다."
+      }
+    ]
   },
   {
     "id": "kanji_596",
@@ -7775,7 +8943,6 @@
     "literal": "話",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "話",
     "koreanMeaning": "말씀 화/이야기 화",
     "meaningsKo": [
       "말씀",
@@ -7794,8 +8961,13 @@
         "kana": "はなし"
       }
     ],
-    "examples": [],
-    "hint": "말(言)을 혀(舌)로 함"
+    "examples": [
+      {
+        "jp": "その話は本当かもしれない。",
+        "kana": "",
+        "ko": "그 이야기는 사실일지도 모른다."
+      }
+    ]
   },
   {
     "id": "kanji_597",
@@ -7804,7 +8976,6 @@
     "literal": "辞",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "辞",
     "koreanMeaning": "말씀 사/물러날 사",
     "meaningsKo": [
       "말씀",
@@ -7820,8 +8991,13 @@
         "kana": "やめる"
       }
     ],
-    "examples": [],
-    "hint": "죄인(辛)의 혀(舌)를 잘라 말을 못하게 함, '그만두다'"
+    "examples": [
+      {
+        "jp": "彼は仕事を辞めることに決めた。",
+        "kana": "",
+        "ko": "그는 일을 그만두기로 결정했다."
+      }
+    ]
   },
   {
     "id": "kanji_598",
@@ -7830,7 +9006,6 @@
     "literal": "乱",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "乱",
     "koreanMeaning": "어지러울 란",
     "meaningsKo": [
       "어지러울"
@@ -7845,8 +9020,13 @@
         "kana": "みだれる"
       }
     ],
-    "examples": [],
-    "hint": "실(舌)이 엉켜(乙) 어지러움"
+    "examples": [
+      {
+        "jp": "心が乱れている時もある。",
+        "kana": "",
+        "ko": "마음이 어지러울 때도 있다."
+      }
+    ]
   },
   {
     "id": "kanji_599",
@@ -7855,7 +9035,6 @@
     "literal": "弓",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "弓",
     "koreanMeaning": "활 궁",
     "meaningsKo": [
       "활"
@@ -7870,8 +9049,13 @@
         "kana": "ゆみ"
       }
     ],
-    "examples": [],
-    "hint": "활의 모양을 본뜬 글자"
+    "examples": [
+      {
+        "jp": "弓を引くのは難しい。",
+        "kana": "",
+        "ko": "활을 당기는 것은 어렵다."
+      }
+    ]
   },
   {
     "id": "kanji_600",
@@ -7880,7 +9064,6 @@
     "literal": "引",
     "jlpt": "MID",
     "strokeCount": 0,
-    "koreanHanja": "引",
     "koreanMeaning": "끌 인",
     "meaningsKo": [
       "끌"
@@ -7895,7 +9078,12 @@
         "kana": "ひく"
       }
     ],
-    "examples": [],
-    "hint": "활(弓) 시위를 막대기(丨)로 당김"
+    "examples": [
+      {
+        "jp": "彼は重い荷物を引くのが得意だ。",
+        "kana": "",
+        "ko": "그는 무거운 짐을 끄는 것을 잘한다."
+      }
+    ]
   }
 ]
