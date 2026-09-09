@@ -36,6 +36,11 @@ class KanjiListPage extends ConsumerWidget {
               session: session,
               isDark: ref.watch(studyPrefsProvider).isDark,
             ),
+            floatingActionButton: FloatingActionButton.extended(
+              onPressed: () => context.push('/add'),
+              icon: const Icon(Icons.add),
+              label: Text(l10n.addItem),
+            ),
           );
         }
         final lists = catalog.dropdownLists(

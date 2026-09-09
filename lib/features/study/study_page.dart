@@ -550,7 +550,7 @@ class _AnswerBlock extends StatelessWidget {
     final readingLine = kanji.isWord
         ? '${l10n.cardReading}: ${kanji.displayReading.isEmpty ? '—' : kanji.displayReading}'
         : '${l10n.cardKun}: ${_kun()} / ${l10n.cardOn}: ${_on()}';
-    final memo = kanji.hint.trim();
+    final example = kanji.examples.isEmpty ? null : kanji.examples.first;
 
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -578,17 +578,31 @@ class _AnswerBlock extends StatelessWidget {
                 : const Color(0xFF5C3A45),
           ),
         ),
-        if (memo.isNotEmpty) ...[
-          const SizedBox(height: 6),
-          Text(
-            memo,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 16,
-              height: 1.35,
-              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
+        if (example != null &&
+            (example.jp.isNotEmpty || example.ko.isNotEmpty)) ...[
+          const SizedBox(height: 8),
+          if (example.jp.isNotEmpty)
+            Text(
+              example.jp,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 16,
+                height: 1.35,
+                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.82),
+              ),
             ),
-          ),
+          if (example.ko.isNotEmpty) ...[
+            const SizedBox(height: 2),
+            Text(
+              example.ko,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                height: 1.35,
+                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
+              ),
+            ),
+          ],
         ],
       ],
     );
