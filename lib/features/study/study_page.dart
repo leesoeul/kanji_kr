@@ -41,6 +41,8 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   final Set<int> _revealed = {};
   bool _didJump = false;
 
+  bool _hasShownHint = false;
+
   @override
   void dispose() {
     _pageController.dispose();
@@ -76,6 +78,17 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   /// 학습에 쓸 카드 배열. `/kanji/:id`면 카탈로그 전체에서 해당 id를 찾는다.
   List<Kanji> _deck(CatalogState catalog, StudySession session) {
     if (widget.initialId != null) {
+      final target = catalog.kanjis.cast<Kanji?>().firstWhere(
+            (item) => item?.id == widget.initialId,
+            orElse: () => null,
+          );
+
+      if (target != null && target.listId.isNotEmpty) {
+        final subDeck = catalog.itemsFor(target.listId, kind: session.kind);
+        if (subDeck.isNotEmpty) {
+          return subDeck;
+        }
+      }
       return catalog.kanjis;
     }
     final lists = catalog.dropdownLists(
@@ -139,6 +152,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                   catalog: catalog,
                   session: session,
                   isDark: prefs.isDark,
+                  titleOverride: l10n.homeTitle,
                 );
               }
               final kanjis = _deck(catalog, session);
@@ -283,11 +297,22 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
+                    padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
                     child: Center(
                       child: GestureDetector(
                         behavior: HitTestBehavior.opaque,
                         onTap: () {
+                          if (kanjis.isNotEmpty && !_hasShownHint) {
+                            _hasShownHint = true;
+                            WidgetsBinding.instance.addPostFrameCallback((_) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(l10n.doubleTapHint),
+                                  duration: const Duration(seconds: 3),
+                                ),
+                              );
+                            });
+                          }
                           setState(() {
                             if (_revealed.contains(_index)) {
                               _revealed.remove(_index);
@@ -588,7 +613,8 @@ class _AnswerBlock extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16,
                 height: 1.35,
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.82),
+                color:
+                    Theme.of(context).colorScheme.onSurface.withOpacity(0.82),
               ),
             ),
           if (example.ko.isNotEmpty) ...[
@@ -599,7 +625,8 @@ class _AnswerBlock extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 height: 1.35,
-                color: Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
+                color:
+                    Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
               ),
             ),
           ],

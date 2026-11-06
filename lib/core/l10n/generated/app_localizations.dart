@@ -579,6 +579,12 @@ abstract class AppLocalizations {
   /// **'이제부터 정답을 숨깁니다'**
   String get alwaysShowOff;
 
+  /// No description provided for @doubleTapHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'💡 \"정답\"를 두 번 탭하면 정답이 항상 표시됩니다.'**
+  String get doubleTapHint;
+
   /// No description provided for @aiAutocomplete.
   ///
   /// In ko, this message translates to:

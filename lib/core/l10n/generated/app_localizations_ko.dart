@@ -260,6 +260,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get alwaysShowOff => '이제부터 정답을 숨깁니다';
 
   @override
+  String get doubleTapHint => '💡 \"정답\"를 두 번 탭하면 정답이 항상 표시됩니다.';
+
+  @override
   String get aiAutocomplete => 'AI 자동완성';
 
   @override

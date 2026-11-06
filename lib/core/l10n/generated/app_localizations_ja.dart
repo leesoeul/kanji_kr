@@ -260,6 +260,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get alwaysShowOff => 'これから答えを隠します';
 
   @override
+  String get doubleTapHint => '💡 答えボタンをダブルタップすると、答えが常に表示されます';
+
+  @override
   String get aiAutocomplete => 'AI自動補完';
 
   @override

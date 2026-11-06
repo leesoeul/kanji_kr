@@ -81,6 +81,7 @@
   "noSearchResults": "検索結果がありません",
   "alwaysShowOn": "これから答えを表示します",
   "alwaysShowOff": "これから答えを隠します",
+  "doubleTapHint": "💡 答えボタンをダブルタップすると、答えが常に表示されます",
   "aiAutocomplete": "AI自動補完",
   "aiSuggestions": "AI推薦",
   "aiLoadingSuggestions": "AIが推薦中...",

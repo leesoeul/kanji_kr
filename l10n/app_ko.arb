@@ -113,6 +113,7 @@
   "noSearchResults": "검색 결과가 없습니다",
   "alwaysShowOn": "이제부터 정답을 보여 줍니다",
   "alwaysShowOff": "이제부터 정답을 숨깁니다",
+  "doubleTapHint": "💡 \"정답\"를 두 번 탭하면 정답이 항상 표시됩니다.",
   "aiAutocomplete": "AI 자동완성",
   "aiSuggestions": "AI 추천",
   "aiLoadingSuggestions": "AI가 추천 중...",
