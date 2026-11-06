@@ -691,14 +691,6 @@ class _AiSuggestionsDialogState extends State<_AiSuggestionsDialog> {
     super.dispose();
   }
 
-  void _goTo(int index) {
-    _pageController.animateToPage(
-      index,
-      duration: const Duration(milliseconds: 300),
-      curve: Curves.easeInOut,
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Dialog(
@@ -729,50 +721,45 @@ class _AiSuggestionsDialogState extends State<_AiSuggestionsDialog> {
                 ],
               ),
             ),
-            // 카드 페이지뷰 with 좌우 화살표
+            // 카드 페이지뷰
             Expanded(
+              child: PageView.builder(
+                controller: _pageController,
+                onPageChanged: (index) {
+                  setState(() => _currentIndex = index);
+                },
+                itemCount: widget.suggestions.length,
+                itemBuilder: (context, index) {
+                  final kanji = widget.suggestions[index];
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: _SuggestionCard(
+                      kanji: kanji,
+                      l10n: widget.l10n,
+                    ),
+                  );
+                },
+              ),
+            ),
+            // 페이지 인디케이터 (점)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
               child: Row(
-                children: [
-                  IconButton(
-                    onPressed: _currentIndex == 0
-                        ? null
-                        : () => _goTo(_currentIndex - 1),
-                    icon: const Icon(
-                      Icons.chevron_left,
-                      size: 40,
-                      color: Color(0xFFE85A7B),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(
+                  widget.suggestions.length,
+                  (index) => Container(
+                    width: 8,
+                    height: 8,
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _currentIndex == index
+                          ? const Color(0xFFE85A7B)
+                          : const Color(0xFFE85A7B).withOpacity(0.3),
                     ),
                   ),
-                  Expanded(
-                    child: PageView.builder(
-                      controller: _pageController,
-                      onPageChanged: (index) {
-                        setState(() => _currentIndex = index);
-                      },
-                      itemCount: widget.suggestions.length,
-                      itemBuilder: (context, index) {
-                        final kanji = widget.suggestions[index];
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: _SuggestionCard(
-                            kanji: kanji,
-                            l10n: widget.l10n,
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: _currentIndex >= widget.suggestions.length - 1
-                        ? null
-                        : () => _goTo(_currentIndex + 1),
-                    icon: const Icon(
-                      Icons.chevron_right,
-                      size: 40,
-                      color: Color(0xFFE85A7B),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
             // [이 내용으로 채우기] 버튼
