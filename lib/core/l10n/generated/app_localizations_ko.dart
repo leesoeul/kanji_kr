@@ -123,6 +123,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizModeLiteral => '글자';
 
   @override
+  String get quizModeSelect => '퀴즈 모드를 선택하세요';
+
+  @override
+  String get quizModePickMeaning => '뜻 보고 글자 맞히기';
+
+  @override
+  String get quizModePickLiteral => '글자 보고 뜻 맞히기';
+
+  @override
   String quizProgress(int current, int total) {
     return '$current / $total';
   }

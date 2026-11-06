@@ -123,6 +123,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizModeLiteral => '表記';
 
   @override
+  String get quizModeSelect => 'クイズモードを選択してください';
+
+  @override
+  String get quizModePickMeaning => '意味を見て文字を当てる';
+
+  @override
+  String get quizModePickLiteral => '文字を見て意味を当てる';
+
+  @override
   String quizProgress(int current, int total) {
     return '$current / $total';
   }

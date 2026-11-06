@@ -10,6 +10,7 @@ import '../../shared/models/study_list.dart';
 ///
 /// 한자/동사는 앱 전역 ([studySessionProvider]).
 /// [forQuiz]가 true면 목록 id만 퀴즈 세션에 넣는다.
+/// [titleOverride]가 있으면 상단에 간단한 타이틀 헤더를 표시한다.
 class HomeBrowseBody extends ConsumerWidget {
   const HomeBrowseBody({
     super.key,
@@ -17,6 +18,7 @@ class HomeBrowseBody extends ConsumerWidget {
     required this.session,
     required this.isDark,
     this.forQuiz = false,
+    this.titleOverride,
   });
 
   final CatalogState catalog;
@@ -25,11 +27,20 @@ class HomeBrowseBody extends ConsumerWidget {
 
   /// 퀴즈 탭이면 목록만 퀴즈 세션에 넣는다. 한자/동사는 전역.
   final bool forQuiz;
+  
+  /// 상단에 표시할 타이틀 (예: "홈", "목록", "퀴즈")
+  final String? titleOverride;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (!session.hasKind) {
-      return SafeArea(child: _KindStep(isDark: isDark, forQuiz: forQuiz));
+      return SafeArea(
+        child: _KindStep(
+          isDark: isDark,
+          forQuiz: forQuiz,
+          titleOverride: titleOverride,
+        ),
+      );
     }
     return SafeArea(
       child: _ListStep(
@@ -37,6 +48,7 @@ class HomeBrowseBody extends ConsumerWidget {
         kind: session.kind!,
         isDark: isDark,
         forQuiz: forQuiz,
+        titleOverride: titleOverride,
       ),
     );
   }
@@ -44,10 +56,15 @@ class HomeBrowseBody extends ConsumerWidget {
 
 /// 한자 / 동사 두 장. 고르면 kind만 저장하고 목록 단계로 간다.
 class _KindStep extends ConsumerWidget {
-  const _KindStep({required this.isDark, required this.forQuiz});
+  const _KindStep({
+    required this.isDark,
+    required this.forQuiz,
+    this.titleOverride,
+  });
 
   final bool isDark;
   final bool forQuiz;
+  final String? titleOverride;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -55,7 +72,7 @@ class _KindStep extends ConsumerWidget {
     return Column(
       children: [
         _BrowseHeader(
-          title: l10n.pickKindTitle,
+          title: titleOverride ?? l10n.pickKindTitle,
           isDark: isDark,
           onBack: null,
         ),
@@ -97,12 +114,14 @@ class _ListStep extends ConsumerWidget {
     required this.kind,
     required this.isDark,
     required this.forQuiz,
+    this.titleOverride,
   });
 
   final CatalogState catalog;
   final EntryKind kind;
   final bool isDark;
   final bool forQuiz;
+  final String? titleOverride;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -117,7 +136,8 @@ class _ListStep extends ConsumerWidget {
     return Column(
       children: [
         _BrowseHeader(
-          title: kind == EntryKind.word ? l10n.kindVerb : l10n.kindKanji,
+          title: titleOverride ??
+              (kind == EntryKind.word ? l10n.kindVerb : l10n.kindKanji),
           isDark: isDark,
           onBack: () {
             // 목록·퀴즈에서 뒤로가면 홈과 같이 종류 고르기로. 하단 바는 숨긴다.

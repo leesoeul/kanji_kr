@@ -35,6 +35,7 @@ class KanjiListPage extends ConsumerWidget {
               catalog: catalog,
               session: session,
               isDark: ref.watch(studyPrefsProvider).isDark,
+              titleOverride: l10n.kanjiList,
             ),
             floatingActionButton: FloatingActionButton.extended(
               onPressed: () => context.push('/add'),

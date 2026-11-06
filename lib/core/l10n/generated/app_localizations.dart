@@ -321,6 +321,24 @@ abstract class AppLocalizations {
   /// **'글자'**
   String get quizModeLiteral;
 
+  /// No description provided for @quizModeSelect.
+  ///
+  /// In ko, this message translates to:
+  /// **'퀴즈 모드를 선택하세요'**
+  String get quizModeSelect;
+
+  /// No description provided for @quizModePickMeaning.
+  ///
+  /// In ko, this message translates to:
+  /// **'뜻 보고 글자 맞히기'**
+  String get quizModePickMeaning;
+
+  /// No description provided for @quizModePickLiteral.
+  ///
+  /// In ko, this message translates to:
+  /// **'글자 보고 뜻 맞히기'**
+  String get quizModePickLiteral;
+
   /// No description provided for @quizProgress.
   ///
   /// In ko, this message translates to:

@@ -10,7 +10,7 @@ import '../../features/study/home_pickers.dart';
 import '../../shared/models/kanji.dart';
 import 'quiz_builder.dart';
 
-/// 목록을 고르면 카드가 2장 이상일 때 자동으로 [_begin]한다.
+/// 목록을 고르면 퀴즈 모드 선택 화면이 나타나고, 사용자가 "시작" 버튼을 눌러 퀴즈를 시작한다.
 class QuizPage extends ConsumerStatefulWidget {
   const QuizPage({super.key});
 
@@ -141,6 +141,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
                 session: session,
                 isDark: ref.watch(studyPrefsProvider).isDark,
                 forQuiz: true,
+                titleOverride: l10n.quizTitle,
               );
             }
             final lists = catalog.dropdownLists(
@@ -150,43 +151,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
             );
             final listId = resolveListId(session.listId, lists);
             final items = catalog.itemsFor(listId, kind: session.kind);
-            if (!_playing && _questions.isEmpty && items.length >= 2) {
-              // 목록을 고르자마자 퀴즈를 시작한다. 카드가 2장 미만이면 시작 화면.
-              WidgetsBinding.instance.addPostFrameCallback((_) {
-                if (!mounted || _playing || _questions.isNotEmpty) {
-                  return;
-                }
-                _begin();
-              });
-            }
-            return Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: SegmentedButton<QuizMode>(
-                    segments: [
-                      ButtonSegment(
-                        value: QuizMode.meaning,
-                        label: Text(l10n.quizModeMeaning),
-                      ),
-                      ButtonSegment(
-                        value: QuizMode.literal,
-                        label: Text(l10n.quizModeLiteral),
-                      ),
-                    ],
-                    selected: {_mode},
-                    onSelectionChanged: (next) {
-                      setState(() {
-                        _mode = next.first;
-                        _resetLocal();
-                      });
-                    },
-                  ),
-                ),
-                const SizedBox(height: 12),
-                Expanded(child: _body(context, l10n, items)),
-              ],
-            );
+            return _body(context, l10n, items);
           },
         ),
       ),
@@ -208,27 +173,82 @@ class _QuizPageState extends ConsumerState<QuizPage> {
       );
     }
     if (!_playing) {
-      //퀴즈 시작 화면
+      // 퀴즈 모드 선택 화면
       final canStart = items.length >= 2;
+
+      if (!canStart) {
+        return Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24),
+            child: Text(
+              l10n.quizEmpty,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+          ),
+        );
+      }
+
       return Center(
         child: Padding(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.symmetric(horizontal: 32),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                canStart
-                    ? (_mode == QuizMode.meaning
-                        ? l10n.quizPickMeaning
-                        : l10n.quizPickLiteral)
-                    : l10n.quizEmpty,
+                l10n.quizModeSelect,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleLarge,
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
               ),
-              const SizedBox(height: 16),
-              FilledButton(
-                onPressed: canStart ? _begin : null,
-                child: Text(l10n.quizStart),
+              const SizedBox(height: 48),
+              SizedBox(
+                width: double.infinity,
+                height: 80,
+                child: FilledButton(
+                  onPressed: () {
+                    setState(() => _mode = QuizMode.literal);
+                    _begin();
+                  },
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: Text(
+                    l10n.quizModePickLiteral,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                height: 80,
+                child: FilledButton(
+                  onPressed: () {
+                    setState(() => _mode = QuizMode.meaning);
+                    _begin();
+                  },
+                  style: FilledButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  child: Text(
+                    l10n.quizModePickMeaning,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
@@ -282,28 +302,37 @@ class _QuizPageState extends ConsumerState<QuizPage> {
             ),
             const SizedBox(height: 8),
           ],
-          if (answered) ...[
-            Text(
-              _picked == question.correctIndex
-                  ? l10n.quizCorrect
-                  : l10n.quizWrong,
-              style: TextStyle(
-                color: _picked == question.correctIndex
-                    ? const Color(0xFF2E7D32)
-                    : AppTheme.meaningPink,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            const SizedBox(height: 8),
-            FilledButton(
-              onPressed: _next,
-              child: Text(
-                _index >= _questions.length - 1
-                    ? l10n.quizSeeResult
-                    : l10n.quizNext,
-              ),
-            ),
-          ],
+          SizedBox(
+            height: 24,
+            child: answered
+                ? Text(
+                    _picked == question.correctIndex
+                        ? l10n.quizCorrect
+                        : l10n.quizWrong,
+                    style: TextStyle(
+                      color: _picked == question.correctIndex
+                          ? const Color(0xFF2E7D32)
+                          : AppTheme.meaningPink,
+                      fontWeight: FontWeight.w700,
+                      // fontSize: 20,
+                    ),
+                  )
+                : const SizedBox.shrink(),
+          ),
+          const SizedBox(height: 8),
+          SizedBox(
+            height: 40,
+            child: answered
+                ? FilledButton(
+                    onPressed: _next,
+                    child: Text(
+                      _index >= _questions.length - 1
+                          ? l10n.quizSeeResult
+                          : l10n.quizNext,
+                    ),
+                  )
+                : const SizedBox.shrink(),
+          ),
         ],
       ),
     );
@@ -336,12 +365,14 @@ class _QuizPrompt extends StatelessWidget {
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.displayLarge?.copyWith(
                 color: const Color(0xFF5C3A45),
-                fontWeight: FontWeight.w500,
-                fontSize: mode == QuizMode.meaning ? 72 : 36,
+                fontWeight: mode == QuizMode.meaning
+                    ? FontWeight.w600
+                    : FontWeight.bold,
+                fontSize: mode == QuizMode.meaning ? 72 : 40,
               ),
         ),
         if (readings.isNotEmpty) ...[
-          const SizedBox(height: 12),
+          const SizedBox(height: 20),
           Text(
             readings,
             textAlign: TextAlign.center,
@@ -366,7 +397,7 @@ class _QuizPrompt extends StatelessWidget {
     final kun = kanji.kunYomi.map((item) => item.kana).join('・');
     final on =
         kanji.onYomi.map((item) => katakanaToHiragana(item.kana)).join('・');
-    return '${l10n.cardKun}: ${kun.isEmpty ? '—' : kun} / ${l10n.cardOn}: ${on.isEmpty ? '—' : on}';
+    return '${l10n.cardKun}: ${kun.isEmpty ? '—' : kun}\n${l10n.cardOn}: ${on.isEmpty ? '—' : on}';
   }
 }
 
@@ -410,7 +441,8 @@ class _ChoiceTile extends StatelessWidget {
               label,
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 22,
                   ),
             ),
           ),

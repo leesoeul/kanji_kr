@@ -49,6 +49,9 @@
   "quizPickLiteral": "글자를 고르세요",
   "quizModeMeaning": "뜻",
   "quizModeLiteral": "글자",
+  "quizModeSelect": "퀴즈 모드를 선택하세요",
+  "quizModePickMeaning": "뜻 보고 글자 맞히기",
+  "quizModePickLiteral": "글자 보고 뜻 맞히기",
   "quizProgress": "{current} / {total}",
   "@quizProgress": {
     "placeholders": {
