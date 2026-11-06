@@ -1,6 +1,5 @@
 # Python >=3.10,<3.14
-# CrewAI 1.15 → pydantic 2.11.x. FastAPI 0.141은 이 범위와 맞음.
 fastapi==0.141.1
 uvicorn[standard]==0.52.4
-crewai==1.15.20
+openai==1.109.1
 python-dotenv==1.2.2

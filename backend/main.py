@@ -3,11 +3,12 @@ import traceback
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
+
+# 환경변수 로드 (다른 모듈 import 전에 먼저 실행)
+load_dotenv()
+
 from schemas import SuggestionRequest, SuggestionResponse
 from flow import generate_suggestions
-
-# 환경변수 로드
-load_dotenv()
 
 # FastAPI 앱
 app = FastAPI(

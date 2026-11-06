@@ -1,6 +1,6 @@
 # Kanji KR AI Backend
 
-FastAPI + Crew AI 기반 한자/단어 자동완성 백엔드
+FastAPI + OpenAI 직접 호출 기반 한자/단어 자동완성 백엔드
 
 ## 설치
 
@@ -52,4 +52,4 @@ curl -X POST http://localhost:8000/api/suggestions \
 
 - `main.py` - FastAPI 애플리케이션 및 라우터
 - `schemas.py` - Pydantic 데이터 모델
-- `flow.py` - Crew AI Flow 로직 (Agent, Task, 프롬프트)
+- `flow.py` - OpenAI 호출 및 응답 변환
