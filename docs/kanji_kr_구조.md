@@ -57,11 +57,9 @@ lib/
     quiz/                객관식
     kanji_list/          목록 탭
     kanji_add/           추가·수정
-    favorites/
     settings/
     kanji_detail/        실제로는 카탈로그 repository (이름만 detail)
-    srs/                 UI에 안 연결됨 (죽은 코드)
-  shared/models/         Kanji, StudyList, Reading, ReviewCard
+  shared/models/         Kanji, StudyList, Reading
   shared/widgets/
 
 assets/data/
@@ -237,8 +235,7 @@ assets/data/
 
 1. `providers.dart` — 카탈로그 / 세션 / 설정을 파일로 쪼개기
 2. 이름 — `Kanji`가 단어까지 담당, `kanji_detail`은 실제론 카탈로그
-3. SRS — `srs_controller`, `ReviewCard`는 UI에 없음. 쓰거나 지우기
-4. `study_page.dart` (~600줄) — `kanji_game` mixin 분리와 비슷한 두께. 급하지 않음
+3. `study_page.dart` — 플래시카드 화면이 길다. 급하지 않음
 
 기능이 더 붙기 전에 **이름 정리**는 가치 있다. 아키텍처 교체는 이르다.
 
