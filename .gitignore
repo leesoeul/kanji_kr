@@ -2,6 +2,12 @@
 .env
 backend/.env
 
+# 사전 빌드용 원본 덤프 (scripts/build_dictionary_db.py가 다시 받는다)
+scripts/.dict_cache/
+
+# Firebase CLI가 로컬에 남기는 캐시. firebase.json / .firebaserc는 설정이라 둔다.
+.firebase/
+
 # Miscellaneous
 *.class
 *.log
@@ -9,9 +15,11 @@ backend/.env
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
