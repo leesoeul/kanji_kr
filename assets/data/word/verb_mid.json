@@ -4,7 +4,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "伝える",
-    "reading": "つ伝える",
+    "reading": "つたえる",
     "jlpt": "MID",
     "koreanMeaning": "전하다, 알리다",
     "meaningsKo": [
@@ -394,7 +394,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "整える",
-    "reading": "と整える",
+    "reading": "ととのえる",
     "jlpt": "MID",
     "koreanMeaning": "정돈하다, 가다듬다",
     "meaningsKo": [
@@ -463,7 +463,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "備える",
-    "reading": "そ나える",
+    "reading": "そなえる",
     "jlpt": "MID",
     "koreanMeaning": "준비하다, 갖추다",
     "meaningsKo": [
@@ -602,7 +602,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "話し掛ける",
-    "reading": "ห나しかける",
+    "reading": "はなしかける",
     "jlpt": "MID",
     "koreanMeaning": "말을 걸다",
     "meaningsKo": [
@@ -1278,7 +1278,7 @@
     "id": "verb_279",
     "kind": "word",
     "listId": "verb_mid",
-    "literal": "味わ우",
+    "literal": "味わう",
     "reading": "あじわう",
     "jlpt": "MID",
     "koreanMeaning": "맛보다, 음미하다",
@@ -1511,7 +1511,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "茹でる",
-    "reading": "ゆдеる",
+    "reading": "ゆでる",
     "jlpt": "MID",
     "koreanMeaning": "데치다, 삶다",
     "meaningsKo": [
@@ -1908,7 +1908,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "避ける",
-    "reading": "よける / さける",
+    "reading": "さける",
     "jlpt": "MID",
     "koreanMeaning": "피하다",
     "meaningsKo": [
@@ -1953,7 +1953,7 @@
     "kind": "word",
     "listId": "verb_mid",
     "literal": "潜る",
-    "reading": "くぐる / もぐる",
+    "reading": "もぐる",
     "jlpt": "MID",
     "koreanMeaning": "빠져나가다, 잠수하다",
     "meaningsKo": [
@@ -2346,7 +2346,7 @@
     "id": "verb_338",
     "kind": "word",
     "listId": "verb_mid",
-    "literal": "변하다",
+    "literal": "変える",
     "reading": "かえる",
     "jlpt": "MID",
     "koreanMeaning": "바꾸다",
