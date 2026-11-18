@@ -6,7 +6,7 @@ import '../../shared/models/study_list.dart';
 /// 선택한 목록 id로 카드를 걸러 낸다.
 ///
 /// - [ListIds.favorites]: 하트 친 카드
-/// - [ListIds.user]: `isUserAdded`인 카드 (직접 추가)
+/// - [ListIds.user]: `listId`가 내가 추가인 카드
 /// - 그 외: `item.listId == listId` (시드 목록)
 ///
 /// [kind]가 있으면 한자/단어로 한 번 더 거른다. 홈 2단 선택에서 쓴다.
@@ -30,7 +30,7 @@ List<Kanji> itemsForList({
     case ListIds.user:
       items = [
         for (final item in all)
-          if (item.isUserAdded) item,
+          if (item.listId == ListIds.user) item,
       ];
       break;
     default:
@@ -103,17 +103,31 @@ List<StudyList> composeListsForKind({
   required String userTitle,
   required String favoritesTitle,
   required List<StudyList> builtin,
+  List<UserDeck> userDecks = const [],
+  String userListTitle = '',
+  bool showUserList = true,
 }) {
+  final mineTitle = userListTitle.isEmpty ? userTitle : userListTitle;
   return [
     for (final list in builtin)
       if (list.kind == kind) list,
-    StudyList(
-      id: ListIds.user,
-      kind: kind,
-      titleKo: userTitle,
-      titleJa: userTitle,
-      isVirtual: true,
-    ),
+    for (final deck in userDecks)
+      if (deck.kind == kind)
+        StudyList(
+          id: deck.id,
+          kind: deck.kind,
+          titleKo: deck.title,
+          titleJa: deck.title,
+          isVirtual: true,
+        ),
+    if (showUserList)
+      StudyList(
+        id: ListIds.user,
+        kind: kind,
+        titleKo: mineTitle,
+        titleJa: mineTitle,
+        isVirtual: true,
+      ),
     StudyList(
       id: ListIds.favorites,
       kind: kind,

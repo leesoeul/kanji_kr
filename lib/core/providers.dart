@@ -40,11 +40,17 @@ class CatalogState {
     required this.kanjis,
     required this.favoriteIds,
     required this.builtinLists,
+    this.userDecks = const [],
+    this.userListTitle = '',
+    this.userListHidden = false,
   });
 
   final List<Kanji> kanjis;
   final Set<String> favoriteIds;
   final List<StudyList> builtinLists;
+  final List<UserDeck> userDecks;
+  final String userListTitle;
+  final bool userListHidden;
 
   Kanji? byId(String id) {
     for (final kanji in kanjis) {
@@ -84,6 +90,9 @@ class CatalogState {
         userTitle: userTitle,
         favoritesTitle: favoritesTitle,
         builtin: builtinLists,
+        userDecks: userDecks,
+        userListTitle: userListTitle,
+        showUserList: !userListHidden,
       );
     }
     return const [];
@@ -106,23 +115,105 @@ class CatalogController extends AsyncNotifier<CatalogState> {
   @override
   Future<CatalogState> build() async {
     final repo = ref.read(kanjiRepositoryProvider);
-    final kanjis = await repo.all();
+    return _snapshot(await repo.all());
+  }
+
+  CatalogState _snapshot(List<Kanji> kanjis) {
+    final repo = ref.read(kanjiRepositoryProvider);
+    final data = ref.read(userStoreProvider).load();
     return CatalogState(
       kanjis: kanjis,
       favoriteIds: repo.favoriteIds,
       builtinLists: repo.builtinLists,
+      userDecks: data.userDecks,
+      userListTitle: data.userListTitle,
+      userListHidden: data.userListHidden,
     );
   }
 
   Future<void> _reload() async {
     final repo = ref.read(kanjiRepositoryProvider);
-    state = AsyncData(
-      CatalogState(
-        kanjis: await repo.all(),
-        favoriteIds: repo.favoriteIds,
-        builtinLists: repo.builtinLists,
-      ),
+    state = AsyncData(_snapshot(await repo.all()));
+  }
+
+  /// 새 목록 id. 이름이 비면 null.
+  Future<String?> createUserDeck(EntryKind kind, String title) async {
+    final trimmed = title.trim();
+    if (trimmed.isEmpty) {
+      return null;
+    }
+    final store = ref.read(userStoreProvider);
+    final decks = store.load().userDecks;
+    final id = 'user_${DateTime.now().millisecondsSinceEpoch}';
+    await store.patch(
+      userDecks: [
+        ...decks,
+        UserDeck(id: id, kind: kind, title: trimmed),
+      ],
     );
+    await _reload();
+    return id;
+  }
+
+  Future<void> renameUserList(String id, String title) async {
+    final trimmed = title.trim();
+    if (trimmed.isEmpty || !canEditList(id)) {
+      return;
+    }
+    final store = ref.read(userStoreProvider);
+    if (id == ListIds.user) {
+      await store.patch(userListTitle: trimmed);
+    } else {
+      final decks = [
+        for (final deck in store.load().userDecks)
+          if (deck.id == id)
+            UserDeck(id: deck.id, kind: deck.kind, title: trimmed)
+          else
+            deck,
+      ];
+      await store.patch(userDecks: decks);
+    }
+    await _reload();
+  }
+
+  /// 목록 안 사용자 카드 수. 내가 추가는 한자·단어를 같이 담아 종류를 가리지 않는다.
+  int userCardCount(String id) {
+    final current = state.valueOrNull;
+    if (current == null) {
+      return 0;
+    }
+    return current.kanjis
+        .where((kanji) => kanji.listId == id && kanji.isUserAdded)
+        .length;
+  }
+
+  /// 목록과 안의 사용자 카드를 함께 지운다.
+  /// 내가 추가는 숨기고 바꿔 둔 이름도 처음으로 돌린다. 다시 켜지지 않는다.
+  Future<void> deleteUserList(String id) async {
+    if (!canEditList(id)) {
+      return;
+    }
+    final current = state.valueOrNull;
+    if (current == null) {
+      return;
+    }
+    final repo = ref.read(kanjiRepositoryProvider);
+    final store = ref.read(userStoreProvider);
+    await repo.deleteUserKanjis([
+      for (final kanji in current.kanjis)
+        if (kanji.listId == id && kanji.isUserAdded) kanji.id,
+    ]);
+    final data = store.load();
+    final isMine = id == ListIds.user;
+    await store.patch(
+      userDecks: [
+        for (final deck in data.userDecks)
+          if (deck.id != id) deck,
+      ],
+      userListHidden: isMine ? true : null,
+      userListTitle: isMine ? '' : null,
+    );
+    await _reload();
   }
 
   Future<void> toggleFavorite(String id) async {
@@ -222,10 +313,8 @@ class StudySessionNotifier extends Notifier<StudySession> {
   @override
   StudySession build() {
     final data = ref.read(userStoreProvider).load();
-    final listId = data.selectedListId;
-    var kind = parseEntryKind(data.selectedKind);
-    kind ??= inferKindFromListId(listId);
-    return StudySession(kind: kind, listId: listId);
+    // 목록은 라우트로 연다. 다시 켜면 종류만 복원하고 카드는 열지 않는다.
+    return StudySession(kind: parseEntryKind(data.selectedKind));
   }
 
   /// 1단계 화면

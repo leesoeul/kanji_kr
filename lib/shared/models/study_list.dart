@@ -37,6 +37,38 @@ class ListIds {
   static const user = 'user';
 }
 
+/// 사용자가 만든 목록. 시드·즐겨찾기와 달리 이름 변경과 삭제가 된다.
+class UserDeck {
+  const UserDeck({
+    required this.id,
+    required this.kind,
+    required this.title,
+  });
+
+  final String id;
+  final EntryKind kind;
+  final String title;
+
+  factory UserDeck.fromJson(Map<String, dynamic> json) {
+    return UserDeck(
+      id: json['id'] as String? ?? '',
+      kind: EntryKind.fromName(json['kind'] as String?),
+      title: json['title'] as String? ?? '',
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'kind': kind.jsonName,
+        'title': title,
+      };
+}
+
+/// 내가 추가와 사용자가 만든 목록만 고칠 수 있다.
+bool canEditList(String id) {
+  return id == ListIds.user || id.startsWith('user_');
+}
+
 /// 학습 목록 한 줄. 시드·가상 필터가 같은 모델을 쓴다.
 ///
 /// [asset]이 있으면 번들 JSON 경로. 가상 목록은 null.

@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import '../../core/database/app_database.dart';
 import '../../core/storage/user_store.dart';
 import '../../shared/models/kanji.dart';
-import '../../shared/models/review_card.dart';
 import '../../shared/models/study_list.dart';
 
 /// 시드 JSON + 로컬 수정을 합쳐 카탈로그를 만든다.
@@ -63,11 +62,22 @@ class KanjiRepository {
       }
     }
     final user = _store.load();
-    for (final kanji in user.userKanjis) {
+    // 시드 개정 전 저장본은 시드를 고친 사본이 새 읽기를 덮어 쓴다.
+    // 직접 추가한 카드만 남기고, 시드 카드는 번들 JSON을 다시 쓴다.
+    final overlays = user.seedRevision < kSeedRevision
+        ? user.userKanjis.where((item) => item.isUserAdded).toList()
+        : user.userKanjis;
+    for (final kanji in overlays) {
       _db.upsertKanji(kanji);
       _persistedIds.add(kanji.id);
     }
     _db.setFavorites(user.favoriteIds);
+    if (user.seedRevision < kSeedRevision) {
+      await _store.patch(
+        userKanjis: overlays,
+        seedRevision: kSeedRevision,
+      );
+    }
     _ready = true;
   }
 
@@ -108,7 +118,13 @@ class KanjiRepository {
 
   Future<String?> addUserKanji(Kanji kanji) async {
     await ensureReady();
-    if (_db.containsLiteral(kanji.literal, kind: kanji.kind)) {
+    // id가 겹치면 다른 목록의 카드를 덮어쓰게 되므로 함께 막는다.
+    if (_db.kanjiById(kanji.id) != null ||
+        _db.containsLiteral(
+          kanji.literal,
+          kind: kanji.kind,
+          listId: kanji.listId,
+        )) {
       // UI에서 l10n.alreadyExists로 바꿔 보여 준다.
       return 'alreadyExists';
     }
@@ -124,6 +140,7 @@ class KanjiRepository {
       kanji.literal,
       exceptId: kanji.id,
       kind: kanji.kind,
+      listId: kanji.listId,
     )) {
       return 'alreadyExists';
     }
@@ -134,19 +151,24 @@ class KanjiRepository {
   }
 
   Future<void> deleteUserKanji(String id) async {
-    await ensureReady();
-    final kanji = _db.kanjiById(id);
-    // 시드 한자는 삭제하지 않는다. 수정만 persist.
-    if (kanji == null || !kanji.isUserAdded) {
-      return;
-    }
-    _db.deleteKanji(id);
-    _persistedIds.remove(id);
-    await _persist();
+    await deleteUserKanjis([id]);
   }
 
-  Future<List<ReviewCard>> dueToday() async {
+  /// 여러 장을 지울 때 저장은 한 번만 한다. 시드 카드는 건너뛴다.
+  Future<void> deleteUserKanjis(Iterable<String> ids) async {
     await ensureReady();
-    return _db.dueReviews();
+    var changed = false;
+    for (final id in ids) {
+      final kanji = _db.kanjiById(id);
+      if (kanji == null || !kanji.isUserAdded) {
+        continue;
+      }
+      _db.deleteKanji(id);
+      _persistedIds.remove(id);
+      changed = true;
+    }
+    if (changed) {
+      await _persist();
+    }
   }
 }
