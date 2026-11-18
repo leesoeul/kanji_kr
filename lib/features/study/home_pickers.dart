@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/models/study_list.dart';
+import '../../shared/widgets/list_name_dialog.dart';
+import 'kanji_search_sheet.dart';
+
+/// 목록을 고른 뒤 여는 페이지. 탭 안에 쌓지 않고 push한다.
+enum ListOpenTarget { study, deck, quiz }
 
 /// 홈·목록·퀴즈에서 한자/동사 → 목록 순으로 고른다. 고르기 전에는 카드를 열지 않는다.
 ///
 /// 한자/동사는 앱 전역 ([studySessionProvider]).
-/// [forQuiz]가 true면 목록 id만 퀴즈 세션에 넣는다.
+/// 목록을 고르면 [openAs]에 따라 카드·리스트·퀴즈 페이지를 push한다.
 /// [titleOverride]가 있으면 상단에 간단한 타이틀 헤더를 표시한다.
 class HomeBrowseBody extends ConsumerWidget {
   const HomeBrowseBody({
@@ -17,7 +23,7 @@ class HomeBrowseBody extends ConsumerWidget {
     required this.catalog,
     required this.session,
     required this.isDark,
-    this.forQuiz = false,
+    this.openAs = ListOpenTarget.study,
     this.titleOverride,
   });
 
@@ -25,9 +31,9 @@ class HomeBrowseBody extends ConsumerWidget {
   final StudySession session;
   final bool isDark;
 
-  /// 퀴즈 탭이면 목록만 퀴즈 세션에 넣는다. 한자/동사는 전역.
-  final bool forQuiz;
-  
+  /// 목록 선택 시 열 페이지.
+  final ListOpenTarget openAs;
+
   /// 상단에 표시할 타이틀 (예: "홈", "목록", "퀴즈")
   final String? titleOverride;
 
@@ -37,7 +43,6 @@ class HomeBrowseBody extends ConsumerWidget {
       return SafeArea(
         child: _KindStep(
           isDark: isDark,
-          forQuiz: forQuiz,
           titleOverride: titleOverride,
         ),
       );
@@ -47,7 +52,7 @@ class HomeBrowseBody extends ConsumerWidget {
         catalog: catalog,
         kind: session.kind!,
         isDark: isDark,
-        forQuiz: forQuiz,
+        openAs: openAs,
         titleOverride: titleOverride,
       ),
     );
@@ -58,12 +63,10 @@ class HomeBrowseBody extends ConsumerWidget {
 class _KindStep extends ConsumerWidget {
   const _KindStep({
     required this.isDark,
-    required this.forQuiz,
     this.titleOverride,
   });
 
   final bool isDark;
-  final bool forQuiz;
   final String? titleOverride;
 
   @override
@@ -89,7 +92,7 @@ class _KindStep extends ConsumerWidget {
                 ),
                 const SizedBox(height: 16),
                 _KindCard(
-                  title: l10n.kindVerb,
+                  title: l10n.kindWord,
                   icon: Icons.menu_book_outlined,
                   onTap: () => _selectKind(ref, EntryKind.word),
                 ),
@@ -113,14 +116,14 @@ class _ListStep extends ConsumerWidget {
     required this.catalog,
     required this.kind,
     required this.isDark,
-    required this.forQuiz,
+    required this.openAs,
     this.titleOverride,
   });
 
   final CatalogState catalog;
   final EntryKind kind;
   final bool isDark;
-  final bool forQuiz;
+  final ListOpenTarget openAs;
   final String? titleOverride;
 
   @override
@@ -137,7 +140,7 @@ class _ListStep extends ConsumerWidget {
       children: [
         _BrowseHeader(
           title: titleOverride ??
-              (kind == EntryKind.word ? l10n.kindVerb : l10n.kindKanji),
+              (kind == EntryKind.word ? l10n.kindWord : l10n.kindKanji),
           isDark: isDark,
           onBack: () {
             // 목록·퀴즈에서 뒤로가면 홈과 같이 종류 고르기로. 하단 바는 숨긴다.
@@ -145,33 +148,60 @@ class _ListStep extends ConsumerWidget {
           },
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(24, 0, 24, 8),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              l10n.pickListTitle,
-              style: Theme.of(context).textTheme.bodyLarge,
+          padding: const EdgeInsets.fromLTRB(24, 0, 8, 0),
+          child: SizedBox(
+            height: 48,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l10n.pickListTitle,
+                    style: Theme.of(context).textTheme.bodyLarge,
+                  ),
+                ),
+                if (openAs == ListOpenTarget.deck)
+                  IconButton(
+                    tooltip: l10n.newList,
+                    onPressed: () => _createList(context, ref),
+                    icon: const Icon(Icons.create_new_folder_outlined),
+                  )
+                else
+                  const SizedBox(width: 48),
+              ],
             ),
           ),
         ),
         Expanded(
           child: ListView.separated(
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+            padding: EdgeInsets.fromLTRB(
+              16,
+              0,
+              16,
+              openAs == ListOpenTarget.deck ? 96 : 24,
+            ),
             itemCount: lists.length,
             separatorBuilder: (context, index) => const SizedBox(height: 10),
             itemBuilder: (context, index) {
               final list = lists[index];
               final count = catalog.itemsFor(list.id, kind: kind).length;
+              final editable =
+                  openAs == ListOpenTarget.deck && canEditList(list.id);
               return _ListCard(
                 title: list.titleFor(language),
                 count: count,
                 onTap: () {
-                  if (forQuiz) {
-                    ref.read(quizSessionProvider.notifier).selectList(list.id);
-                  } else {
-                    ref.read(studySessionProvider.notifier).selectList(list.id);
-                  }
+                  final id = Uri.encodeComponent(list.id);
+                  final path = switch (openAs) {
+                    ListOpenTarget.study => '/study/$id',
+                    ListOpenTarget.deck => '/deck/$id',
+                    ListOpenTarget.quiz => '/quiz/$id',
+                  };
+                  context.push(path);
                 },
+                onRename: editable
+                    ? () => _renameList(context, ref, list)
+                    : null,
+                onDelete: editable ? () => _deleteList(context, ref, list) : null,
               );
             },
           ),
@@ -216,6 +246,7 @@ class _BrowseHeader extends ConsumerWidget {
                   ),
             ),
           ),
+          const KanjiSearchButton(),
           IconButton(
             onPressed: () => ref.read(studyPrefsProvider.notifier).toggleDark(),
             icon: Icon(
@@ -243,9 +274,7 @@ class _KindCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).brightness == Brightness.dark
-          ? Theme.of(context).colorScheme.surfaceContainerHighest
-          : AppTheme.creamCard,
+      color: AppTheme.cardColor(context),
       borderRadius: BorderRadius.circular(28),
       child: InkWell(
         onTap: onTap,
@@ -280,19 +309,21 @@ class _ListCard extends StatelessWidget {
     required this.title,
     required this.count,
     required this.onTap,
+    this.onRename,
+    this.onDelete,
   });
 
   final String title;
   final int count;
   final VoidCallback onTap;
+  final VoidCallback? onRename;
+  final VoidCallback? onDelete;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Material(
-      color: Theme.of(context).brightness == Brightness.dark
-          ? Theme.of(context).colorScheme.surfaceContainerHighest
-          : AppTheme.creamCard,
+      color: AppTheme.cardColor(context),
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onTap,
@@ -319,7 +350,22 @@ class _ListCard extends StatelessWidget {
                     ),
               ),
               const SizedBox(width: 4),
-              const Icon(Icons.chevron_right, color: AppTheme.sakura),
+              if (onRename != null && onDelete != null)
+                IconButton(
+                  tooltip: l10n.renameList,
+                  visualDensity: VisualDensity.compact,
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+                  onPressed: () => _showListActions(
+                    context,
+                    title: title,
+                    onRename: onRename!,
+                    onDelete: onDelete!,
+                  ),
+                  icon: const Icon(Icons.more_horiz, color: AppTheme.sakura),
+                )
+              else
+                const Icon(Icons.chevron_right, color: AppTheme.sakura),
             ],
           ),
         ),
@@ -327,3 +373,203 @@ class _ListCard extends StatelessWidget {
     );
   }
 }
+
+Future<void> _createList(BuildContext context, WidgetRef ref) async {
+  final l10n = AppLocalizations.of(context);
+  final kind = ref.read(studySessionProvider).kind;
+  if (kind == null) {
+    return;
+  }
+  final name = await askListName(context, title: l10n.newList);
+  if (name == null) {
+    return;
+  }
+  await ref.read(catalogControllerProvider.notifier).createUserDeck(kind, name);
+}
+
+Future<void> _renameList(
+  BuildContext context,
+  WidgetRef ref,
+  StudyList list,
+) async {
+  final l10n = AppLocalizations.of(context);
+  final name = await askListName(
+    context,
+    title: l10n.renameList,
+    initial: list.titleFor(Localizations.localeOf(context).languageCode),
+  );
+  if (name == null) {
+    return;
+  }
+  await ref.read(catalogControllerProvider.notifier).renameUserList(list.id, name);
+}
+
+Future<void> _showListActions(
+  BuildContext context, {
+  required String title,
+  required VoidCallback onRename,
+  required VoidCallback onDelete,
+}) {
+  final l10n = AppLocalizations.of(context);
+  final isDark = Theme.of(context).brightness == Brightness.dark;
+  return showModalBottomSheet<void>(
+    context: context,
+    useRootNavigator: true,
+    showDragHandle: true,
+    backgroundColor: isDark
+        ? Theme.of(context).colorScheme.surfaceContainerHigh
+        : Colors.white,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+    ),
+    builder: (sheetContext) {
+      return SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                title,
+                textAlign: TextAlign.center,
+                style: Theme.of(sheetContext).textTheme.titleLarge,
+              ),
+              const SizedBox(height: 16),
+              FilledButton.icon(
+                style: FilledButton.styleFrom(
+                  backgroundColor: isDark
+                      ? AppTheme.sakura.withValues(alpha: 0.22)
+                      : AppTheme.progressPill,
+                  foregroundColor:
+                      isDark ? AppTheme.sakura : AppTheme.meaningPink,
+                  minimumSize: const Size.fromHeight(52),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pop(sheetContext);
+                  onRename();
+                },
+                icon: const Icon(Icons.edit_outlined),
+                label: Text(l10n.renameList),
+              ),
+              TextButton.icon(
+                style: TextButton.styleFrom(
+                  foregroundColor: AppTheme.meaningPink,
+                  minimumSize: const Size.fromHeight(48),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.pop(sheetContext);
+                  onDelete();
+                },
+                icon: const Icon(Icons.delete_outline),
+                label: Text(l10n.deleteList),
+              ),
+            ],
+          ),
+        ),
+      );
+    },
+  );
+}
+
+Future<void> _deleteList(
+  BuildContext context,
+  WidgetRef ref,
+  StudyList list,
+) async {
+  final controller = ref.read(catalogControllerProvider.notifier);
+  final confirmed = await showDialog<bool>(
+    context: context,
+    builder: (context) => _DeleteListDialog(
+      name: list.titleFor(Localizations.localeOf(context).languageCode),
+      count: controller.userCardCount(list.id),
+    ),
+  );
+  if (confirmed != true) {
+    return;
+  }
+  await controller.deleteUserList(list.id);
+}
+
+/// 한 줄을 넘치면 글자를 줄여 칸 안에 맞춘다.
+class _ShrinkText extends StatelessWidget {
+  const _ShrinkText(this.text, {required this.style});
+
+  final String text;
+  final TextStyle? style;
+
+  @override
+  Widget build(BuildContext context) {
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      alignment: Alignment.centerLeft,
+      child: Text(text, maxLines: 1, style: style),
+    );
+  }
+}
+
+/// 목록과 안의 단어를 함께 지울지 묻는다. 삭제면 true.
+class _DeleteListDialog extends StatelessWidget {
+  const _DeleteListDialog({required this.name, required this.count});
+
+  final String name;
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final quiet = Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.45);
+    return AlertDialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+      title: _ShrinkText(
+        l10n.deleteListTitle(name),
+        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontWeight: FontWeight.w700,
+            ),
+      ),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (count > 0) ...[
+            _ShrinkText(
+              l10n.deleteListBody(count),
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: 16),
+          ] else
+            const SizedBox(height: 4),
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: AppTheme.meaningPink,
+              foregroundColor: Colors.white,
+              minimumSize: const Size.fromHeight(48),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+              ),
+            ),
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(l10n.delete),
+          ),
+          TextButton(
+            style: TextButton.styleFrom(foregroundColor: quiet),
+            onPressed: () => Navigator.pop(context),
+            child: Text(l10n.cancel),
+          ),
+        ],
+      ),
+    );
+  }
+}
+

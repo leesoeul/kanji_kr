@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/favorites/favorites_page.dart';
 import '../../features/kanji_add/kanji_add_page.dart';
 import '../../features/kanji_list/kanji_list_page.dart';
 import '../../features/quiz/quiz_page.dart';
+import '../../features/search/search_page.dart';
 import '../../features/settings/settings_page.dart';
 import '../../features/study/study_page.dart';
+import '../../shared/models/study_list.dart';
 import '../l10n/generated/app_localizations.dart';
 import '../providers.dart';
 
 /// 하단 4탭은 [StatefulShellRoute]로 상태를 유지하고,
 /// 추가/수정/설정·특정 카드는 탭 위에 올린다 (셸 밖 라우트).
 ///
-/// 탭 인덱스: 0 홈, 1 목록, 2 퀴즈, 3 즐겨찾기.
+/// 탭 인덱스: 0 홈, 1 목록, 2 퀴즈, 3 검색. 즐겨찾기는 목록 탭 안의 목록이다.
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     initialLocation: '/',
@@ -51,12 +52,33 @@ final routerProvider = Provider<GoRouter>((ref) {
           StatefulShellBranch(
             routes: [
               GoRoute(
-                path: '/favorites',
-                builder: (context, state) => const FavoritesPage(),
+                path: '/search',
+                builder: (context, state) => const SearchPage(),
               ),
             ],
           ),
         ],
+      ),
+      GoRoute(
+        path: '/study/:listId',
+        builder: (context, state) {
+          return StudyPage(
+            listId: state.pathParameters['listId']!,
+            showBack: true,
+          );
+        },
+      ),
+      GoRoute(
+        path: '/deck/:listId',
+        builder: (context, state) {
+          return KanjiListPage(listId: state.pathParameters['listId']!);
+        },
+      ),
+      GoRoute(
+        path: '/quiz/:listId',
+        builder: (context, state) {
+          return QuizPage(listId: state.pathParameters['listId']!);
+        },
       ),
       // 목록·즐겨찾기에서 특정 카드로 바로 들어갈 때.
       GoRoute(
@@ -65,13 +87,23 @@ final routerProvider = Provider<GoRouter>((ref) {
           final id = state.pathParameters['id']!;
           return StudyPage(
             initialId: id,
+            listId: state.uri.queryParameters['list'],
             showBack: true,
+            revealAnswer: state.uri.queryParameters['reveal'] == '1',
           );
         },
       ),
       GoRoute(
         path: '/add',
-        builder: (context, state) => const KanjiAddPage(),
+        builder: (context, state) {
+          final query = state.uri.queryParameters;
+          final kind = query['kind'];
+          return KanjiAddPage(
+            listId: query['list'],
+            initialQuery: query['q'],
+            initialKind: kind == null ? null : EntryKind.fromName(kind),
+          );
+        },
       ),
       GoRoute(
         path: '/edit/:id',
@@ -89,11 +121,10 @@ final routerProvider = Provider<GoRouter>((ref) {
   );
 });
 
-/// 홈 / 목록 / 퀴즈 / 즐겨찾기 탭 셸.
+/// 홈 / 목록 / 퀴즈 / 검색 탭 셸.
 ///
 /// 한자/동사를 고르기 전에는 하단 바를 숨긴다. 탭으로 종류를 우회하지 못하게.
-/// 목록을 고른 뒤에는 바를 남겨 퀴즈 탭으로 갈 수 있게 한다.
-/// 홈 카드·퀴즈 진행 중에도 바를 숨긴다.
+/// 카드·리스트·퀴즈는 셸 밖 페이지라 하단 바를 덮는다.
 class AppShell extends ConsumerWidget {
   const AppShell({super.key, required this.navigationShell});
 
@@ -103,12 +134,9 @@ class AppShell extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final study = ref.watch(studySessionProvider);
-    final quiz = ref.watch(quizSessionProvider);
     final index = navigationShell.currentIndex;
     // 종류를 아직 안 골랐으면 어느 탭이든 하단 바를 숨긴다.
-    final hideNav = !study.hasKind ||
-        (index == 0 && study.hasDeck) ||
-        (index == 2 && quiz.hasDeck);
+    final hideNav = !study.hasKind;
 
     return Scaffold(
       body: navigationShell,
@@ -116,22 +144,7 @@ class AppShell extends ConsumerWidget {
           ? null
           : NavigationBar(
               selectedIndex: index,
-              onDestinationSelected: (next) {
-                if (next == 0) {
-                  // 홈은 목록 고르기부터. 목록 탭에서 고른 덱을 카드로 이어 주지 않는다.
-                  ref.read(studySessionProvider.notifier).clearList();
-                }
-                if (next == 2) {
-                  final quiz = ref.read(quizSessionProvider);
-                  final studyKind = ref.read(studySessionProvider).kind;
-                  if (!quiz.hasKind && studyKind != null) {
-                    ref
-                        .read(quizSessionProvider.notifier)
-                        .selectKind(studyKind);
-                  }
-                }
-                navigationShell.goBranch(next);
-              },
+              onDestinationSelected: navigationShell.goBranch,
               destinations: [
                 NavigationDestination(
                   icon: const Icon(Icons.home_outlined),
@@ -149,9 +162,9 @@ class AppShell extends ConsumerWidget {
                   label: l10n.quizTitle,
                 ),
                 NavigationDestination(
-                  icon: const Icon(Icons.favorite_border),
-                  selectedIcon: const Icon(Icons.favorite),
-                  label: l10n.favorites,
+                  icon: const Icon(Icons.search),
+                  selectedIcon: const Icon(Icons.manage_search),
+                  label: l10n.searchTab,
                 ),
               ],
             ),

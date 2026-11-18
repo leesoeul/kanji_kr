@@ -1,9 +1,44 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/generated/app_localizations.dart';
+import '../../core/providers.dart';
 import '../../shared/models/kanji.dart';
 
-/// 한자·뜻·읽기로 현재 덱 안 카드를 찾아, 학습 인덱스로 점프한다.
+/// 카탈로그 전체에서 찾아 `/kanji/:id`로 연다. 정답은 펼친 채로 보여 준다.
+Future<void> openGlobalKanjiSearch(BuildContext context, WidgetRef ref) async {
+  final catalog = ref.read(catalogControllerProvider).valueOrNull;
+  if (catalog == null || !context.mounted) {
+    return;
+  }
+  final selected = await showKanjiSearchSheet(
+    context: context,
+    kanjis: catalog.kanjis,
+    l10n: AppLocalizations.of(context),
+  );
+  if (selected == null || !context.mounted) {
+    return;
+  }
+  context.push('/kanji/${Uri.encodeComponent(selected.id)}?reveal=1');
+}
+
+/// 헤더 오른쪽에 고정하는 글로벌 검색 버튼.
+class KanjiSearchButton extends ConsumerWidget {
+  const KanjiSearchButton({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ready = ref.watch(catalogControllerProvider).hasValue;
+    return IconButton(
+      tooltip: AppLocalizations.of(context).searchKanji,
+      onPressed: ready ? () => openGlobalKanjiSearch(context, ref) : null,
+      icon: const Icon(Icons.search, color: Color(0xFFE85A7B)),
+    );
+  }
+}
+
+/// 한자·뜻·읽기로 카드를 찾는다. 고른 카드를 시트가 닫히며 돌려준다.
 Future<Kanji?> showKanjiSearchSheet({
   required BuildContext context,
   required List<Kanji> kanjis,

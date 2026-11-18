@@ -1,4 +1,8 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
 
 /// The translations for Japanese (`ja`).
 class AppLocalizationsJa extends AppLocalizations {
@@ -64,10 +68,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get kindWord => '単語';
 
   @override
-  String get kindVerb => '動詞';
-
-  @override
-  String get pickKindTitle => '漢字 / 動詞';
+  String get pickKindTitle => '漢字 / 単語';
 
   @override
   String get pickListTitle => '一覧を選んでください';
@@ -91,6 +92,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizSeeResult => '結果を見る';
 
   @override
+  String get quizHint => 'ヒント';
+
+  @override
   String get quizResult => '結果';
 
   @override
@@ -102,13 +106,40 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizRetry => 'もう一度';
 
   @override
+  String get quizDontKnow => 'わからない';
+
+  @override
+  String get quizNextArrow => '次へ >';
+
+  @override
+  String get quizCorrectLabel => '正解数';
+
+  @override
+  String get quizWrongList => '間違えた問題';
+
+  @override
+  String get quizAllCorrect => '全問正解です';
+
+  @override
+  String quizRetryWrong(int count) {
+    return '間違えた問題だけやり直す（$count問）';
+  }
+
+  @override
+  String quizNextSet(int count) {
+    return '次のクイズへ（次の$count問）';
+  }
+
+  @override
   String get quizCorrect => '正解';
 
   @override
   String get quizWrong => '不正解';
 
   @override
-  String get quizEmpty => 'この一覧ではクイズを作れません';
+  String quizEmpty(int count) {
+    return 'クイズには$count枚以上のカードが必要です';
+  }
 
   @override
   String get quizPickMeaning => '意味を選んでください';
@@ -141,6 +172,28 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get addWord => '単語を追加';
+
+  @override
+  String get newList => '新しい一覧を作る';
+
+  @override
+  String get renameList => '名前を変更';
+
+  @override
+  String get deleteList => '一覧を削除';
+
+  @override
+  String get listNameLabel => '一覧の名前';
+
+  @override
+  String deleteListTitle(String name) {
+    return '「$name」を削除しますか？';
+  }
+
+  @override
+  String deleteListBody(int count) {
+    return '一覧の中の単語$count個も削除されます。';
+  }
 
   @override
   String get emptyList => 'この一覧は空です';
@@ -233,9 +286,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get saved => '保存しました';
 
   @override
-  String get studyTitle => '漢字を覚えよう！';
-
-  @override
   String get showAnswer => '答え';
 
   @override
@@ -282,4 +332,36 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get resetFormConfirm => '入力した内容をすべて削除しますか？';
+
+  @override
+  String get searchTab => '検索';
+
+  @override
+  String get dictionaryHint => '漢字・ひらがな・ローマ字・韓国語の意味';
+
+  @override
+  String get filterAll => 'すべて';
+
+  @override
+  String get filterKanji => '漢字';
+
+  @override
+  String get filterWord => '単語';
+
+  @override
+  String get addToMyList => '追加';
+
+  @override
+  String get pickTargetList => 'どの一覧に入れますか？';
+
+  @override
+  String addedToList(String name) {
+    return '「$name」に追加しました';
+  }
+
+  @override
+  String get aiFindAndAdd => '見つかりませんか？AIで探して追加する';
+
+  @override
+  String get dictionaryEmptyQuery => '探したい単語を入力してください';
 }

@@ -1,4 +1,8 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
 
 /// The translations for Korean (`ko`).
 class AppLocalizationsKo extends AppLocalizations {
@@ -64,10 +68,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get kindWord => '단어';
 
   @override
-  String get kindVerb => '동사';
-
-  @override
-  String get pickKindTitle => '한자 / 동사';
+  String get pickKindTitle => '한자 / 단어';
 
   @override
   String get pickListTitle => '목록을 고르세요';
@@ -91,6 +92,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizSeeResult => '결과 보기';
 
   @override
+  String get quizHint => '힌트';
+
+  @override
   String get quizResult => '결과';
 
   @override
@@ -102,13 +106,40 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizRetry => '다시 풀기';
 
   @override
+  String get quizDontKnow => '잘 모르겠어요';
+
+  @override
+  String get quizNextArrow => '다음 >';
+
+  @override
+  String get quizCorrectLabel => '맞힌 개수';
+
+  @override
+  String get quizWrongList => '틀린 문제';
+
+  @override
+  String get quizAllCorrect => '모두 맞혔어요';
+
+  @override
+  String quizRetryWrong(int count) {
+    return '틀린 문제만 다시 풀기 ($count문제)';
+  }
+
+  @override
+  String quizNextSet(int count) {
+    return '다음 퀴즈로 넘어가기 (다음 $count문제)';
+  }
+
+  @override
   String get quizCorrect => '정답';
 
   @override
   String get quizWrong => '오답';
 
   @override
-  String get quizEmpty => '이 목록에 퀴즈를 낼 카드가 부족합니다';
+  String quizEmpty(int count) {
+    return '퀴즈를 풀려면 목록에 카드가 $count장 이상 있어야 해요';
+  }
 
   @override
   String get quizPickMeaning => '뜻을 고르세요';
@@ -141,6 +172,28 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get addWord => '단어 추가';
+
+  @override
+  String get newList => '새 목록 만들기';
+
+  @override
+  String get renameList => '이름 변경';
+
+  @override
+  String get deleteList => '목록 삭제';
+
+  @override
+  String get listNameLabel => '목록 이름';
+
+  @override
+  String deleteListTitle(String name) {
+    return '\'$name\' 목록을 삭제할까요?';
+  }
+
+  @override
+  String deleteListBody(int count) {
+    return '목록 안의 단어 $count개도 함께 삭제됩니다.';
+  }
 
   @override
   String get emptyList => '이 목록이 비어 있습니다';
@@ -233,9 +286,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get saved => '저장했습니다';
 
   @override
-  String get studyTitle => '漢字을 覚えよう！';
-
-  @override
   String get showAnswer => '정답';
 
   @override
@@ -282,4 +332,36 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get resetFormConfirm => '입력한 내용을 모두 지울까요?';
+
+  @override
+  String get searchTab => '검색';
+
+  @override
+  String get dictionaryHint => '한자, 히라가나, 로마자, 한국어 뜻';
+
+  @override
+  String get filterAll => '전체';
+
+  @override
+  String get filterKanji => '한자';
+
+  @override
+  String get filterWord => '단어';
+
+  @override
+  String get addToMyList => '추가';
+
+  @override
+  String get pickTargetList => '어느 목록에 넣을까요?';
+
+  @override
+  String addedToList(String name) {
+    return '\'$name\'에 추가했어요';
+  }
+
+  @override
+  String get aiFindAndAdd => '원하는 단어가 없나요? AI로 찾아서 추가하기';
+
+  @override
+  String get dictionaryEmptyQuery => '찾고 싶은 단어를 입력해 보세요';
 }

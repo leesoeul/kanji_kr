@@ -8,6 +8,8 @@ import 'package:intl/intl.dart' as intl;
 import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
 
+// ignore_for_file: type=lint
+
 /// Callers can lookup localized strings with an instance of AppLocalizations
 /// returned by `AppLocalizations.of(context)`.
 ///
@@ -60,7 +62,8 @@ import 'app_localizations_ko.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -68,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -80,7 +84,8 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
     delegate,
     GlobalMaterialLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate,
@@ -207,16 +212,10 @@ abstract class AppLocalizations {
   /// **'단어'**
   String get kindWord;
 
-  /// No description provided for @kindVerb.
-  ///
-  /// In ko, this message translates to:
-  /// **'동사'**
-  String get kindVerb;
-
   /// No description provided for @pickKindTitle.
   ///
   /// In ko, this message translates to:
-  /// **'한자 / 동사'**
+  /// **'한자 / 단어'**
   String get pickKindTitle;
 
   /// No description provided for @pickListTitle.
@@ -261,6 +260,12 @@ abstract class AppLocalizations {
   /// **'결과 보기'**
   String get quizSeeResult;
 
+  /// No description provided for @quizHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'힌트'**
+  String get quizHint;
+
   /// No description provided for @quizResult.
   ///
   /// In ko, this message translates to:
@@ -279,6 +284,48 @@ abstract class AppLocalizations {
   /// **'다시 풀기'**
   String get quizRetry;
 
+  /// No description provided for @quizDontKnow.
+  ///
+  /// In ko, this message translates to:
+  /// **'잘 모르겠어요'**
+  String get quizDontKnow;
+
+  /// No description provided for @quizNextArrow.
+  ///
+  /// In ko, this message translates to:
+  /// **'다음 >'**
+  String get quizNextArrow;
+
+  /// No description provided for @quizCorrectLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'맞힌 개수'**
+  String get quizCorrectLabel;
+
+  /// No description provided for @quizWrongList.
+  ///
+  /// In ko, this message translates to:
+  /// **'틀린 문제'**
+  String get quizWrongList;
+
+  /// No description provided for @quizAllCorrect.
+  ///
+  /// In ko, this message translates to:
+  /// **'모두 맞혔어요'**
+  String get quizAllCorrect;
+
+  /// No description provided for @quizRetryWrong.
+  ///
+  /// In ko, this message translates to:
+  /// **'틀린 문제만 다시 풀기 ({count}문제)'**
+  String quizRetryWrong(int count);
+
+  /// No description provided for @quizNextSet.
+  ///
+  /// In ko, this message translates to:
+  /// **'다음 퀴즈로 넘어가기 (다음 {count}문제)'**
+  String quizNextSet(int count);
+
   /// No description provided for @quizCorrect.
   ///
   /// In ko, this message translates to:
@@ -294,8 +341,8 @@ abstract class AppLocalizations {
   /// No description provided for @quizEmpty.
   ///
   /// In ko, this message translates to:
-  /// **'이 목록에 퀴즈를 낼 카드가 부족합니다'**
-  String get quizEmpty;
+  /// **'퀴즈를 풀려면 목록에 카드가 {count}장 이상 있어야 해요'**
+  String quizEmpty(int count);
 
   /// No description provided for @quizPickMeaning.
   ///
@@ -356,6 +403,42 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'단어 추가'**
   String get addWord;
+
+  /// No description provided for @newList.
+  ///
+  /// In ko, this message translates to:
+  /// **'새 목록 만들기'**
+  String get newList;
+
+  /// No description provided for @renameList.
+  ///
+  /// In ko, this message translates to:
+  /// **'이름 변경'**
+  String get renameList;
+
+  /// No description provided for @deleteList.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록 삭제'**
+  String get deleteList;
+
+  /// No description provided for @listNameLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록 이름'**
+  String get listNameLabel;
+
+  /// No description provided for @deleteListTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'\'{name}\' 목록을 삭제할까요?'**
+  String deleteListTitle(String name);
+
+  /// No description provided for @deleteListBody.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록 안의 단어 {count}개도 함께 삭제됩니다.'**
+  String deleteListBody(int count);
 
   /// No description provided for @emptyList.
   ///
@@ -525,12 +608,6 @@ abstract class AppLocalizations {
   /// **'저장했습니다'**
   String get saved;
 
-  /// No description provided for @studyTitle.
-  ///
-  /// In ko, this message translates to:
-  /// **'漢字을 覚えよう！'**
-  String get studyTitle;
-
   /// No description provided for @showAnswer.
   ///
   /// In ko, this message translates to:
@@ -626,9 +703,70 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'입력한 내용을 모두 지울까요?'**
   String get resetFormConfirm;
+
+  /// No description provided for @searchTab.
+  ///
+  /// In ko, this message translates to:
+  /// **'검색'**
+  String get searchTab;
+
+  /// No description provided for @dictionaryHint.
+  ///
+  /// In ko, this message translates to:
+  /// **'한자, 히라가나, 로마자, 한국어 뜻'**
+  String get dictionaryHint;
+
+  /// No description provided for @filterAll.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체'**
+  String get filterAll;
+
+  /// No description provided for @filterKanji.
+  ///
+  /// In ko, this message translates to:
+  /// **'한자'**
+  String get filterKanji;
+
+  /// No description provided for @filterWord.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어'**
+  String get filterWord;
+
+  /// No description provided for @addToMyList.
+  ///
+  /// In ko, this message translates to:
+  /// **'추가'**
+  String get addToMyList;
+
+  /// No description provided for @pickTargetList.
+  ///
+  /// In ko, this message translates to:
+  /// **'어느 목록에 넣을까요?'**
+  String get pickTargetList;
+
+  /// No description provided for @addedToList.
+  ///
+  /// In ko, this message translates to:
+  /// **'\'{name}\'에 추가했어요'**
+  String addedToList(String name);
+
+  /// No description provided for @aiFindAndAdd.
+  ///
+  /// In ko, this message translates to:
+  /// **'원하는 단어가 없나요? AI로 찾아서 추가하기'**
+  String get aiFindAndAdd;
+
+  /// No description provided for @dictionaryEmptyQuery.
+  ///
+  /// In ko, this message translates to:
+  /// **'찾고 싶은 단어를 입력해 보세요'**
+  String get dictionaryEmptyQuery;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -637,25 +775,25 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['ja', 'ko'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['ja', 'ko'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'ja': return AppLocalizationsJa();
-    case 'ko': return AppLocalizationsKo();
+    case 'ja':
+      return AppLocalizationsJa();
+    case 'ko':
+      return AppLocalizationsKo();
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

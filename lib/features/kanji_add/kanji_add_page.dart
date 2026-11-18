@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,15 +10,29 @@ import '../../core/services/ai_service.dart';
 import '../../shared/models/kanji.dart';
 import '../../shared/models/reading.dart';
 import '../../shared/models/study_list.dart';
+import '../../shared/widgets/list_pick_sheet.dart';
 
 /// `/add`와 `/edit/:id`를 같은 폼으로 처리한다.
 ///
 /// 추가는 한자/단어 세그먼트를 고를 수 있고, 홈에서 동사를 보고 있었으면 단어로 시작한다.
 /// 시드 카드는 수정만 되고 삭제(휴지통)는 사용자 추가분만.
 class KanjiAddPage extends ConsumerStatefulWidget {
-  const KanjiAddPage({super.key, this.kanjiId});
+  const KanjiAddPage({
+    super.key,
+    this.kanjiId,
+    this.listId,
+    this.initialQuery,
+    this.initialKind,
+  });
 
   final String? kanjiId;
+
+  /// 덱 안에서 열었을 때 카드가 들어갈 목록. 없으면 내가 추가.
+  final String? listId;
+
+  /// 검색 탭에서 넘어온 검색어. 한글이면 뜻 칸, 아니면 글자 칸에 채운다.
+  final String? initialQuery;
+  final EntryKind? initialKind;
 
   @override
   ConsumerState<KanjiAddPage> createState() => _KanjiAddPageState();
@@ -96,8 +111,15 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
       return;
     }
     final session = ref.read(studySessionProvider);
-    if (session.kind == EntryKind.word) {
+    final kind = widget.initialKind ?? session.kind;
+    if (kind == EntryKind.word) {
       _kind = EntryKind.word;
+    }
+    final query = widget.initialQuery?.trim() ?? '';
+    if (query.isNotEmpty) {
+      final target =
+          RegExp(r'[가-힣ㄱ-ㅎㅏ-ㅣ]').hasMatch(query) ? _meaning : _literal;
+      target.text = query;
     }
     _kindInited = true;
   }
@@ -196,7 +218,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
                     ? IconButton(
                         icon: const Icon(Icons.auto_awesome),
                         tooltip: l10n.aiAutocomplete,
-                        onPressed: () => _openAiSuggestions(l10n),
+                        onPressed: () => _openAiSuggestions(l10n, _literal.text),
                       )
                     : null,
               ),
@@ -221,7 +243,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
                     ? IconButton(
                         icon: const Icon(Icons.auto_awesome),
                         tooltip: l10n.aiAutocomplete,
-                        onPressed: () => _openAiSuggestions(l10n),
+                        onPressed: () => _openAiSuggestions(l10n, _meaning.text),
                       )
                     : null,
               ),
@@ -243,7 +265,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
                       ? IconButton(
                           icon: const Icon(Icons.auto_awesome),
                           tooltip: l10n.aiAutocomplete,
-                          onPressed: () => _openAiSuggestions(l10n),
+                          onPressed: () => _openAiSuggestions(l10n, _reading.text),
                         )
                       : null,
                 ),
@@ -297,6 +319,20 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     if (!_formKey.currentState!.validate()) {
       return;
     }
+    // 새 카드는 검색 탭과 같은 바텀시트로 넣을 목록을 고른다.
+    (String, String)? target;
+    if (!_isEditing) {
+      target = await showListPickSheet(
+        context,
+        ref,
+        kind: _kind,
+        literal: _literal.text.trim(),
+        preferredId: widget.listId,
+      );
+      if (target == null || !mounted) {
+        return;
+      }
+    }
     setState(() => _saving = true);
     final literal = _literal.text.trim();
     final meaning = _meaning.text.trim();
@@ -332,8 +368,12 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         reading: reading,
       );
     } else {
+      final listId = target!.$1;
       kanji = Kanji(
-        id: Kanji.userIdFor(literal, kind: _kind),
+        // 내가 추가는 기존 id 규칙을 그대로 쓴다. 다른 목록은 목록 id를 넣어 같은 글자도 따로 둔다.
+        id: listId == ListIds.user
+            ? Kanji.userIdFor(literal, kind: _kind)
+            : '${_isWord ? 'user_word' : 'user_kanji'}_${listId}_$literal',
         literal: literal,
         jlpt: 'USER',
         strokeCount: 0,
@@ -343,7 +383,7 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         kunYomi: readingsKun,
         examples: examples,
         kind: _kind,
-        listId: ListIds.user,
+        listId: listId,
         reading: reading,
         isUserAdded: true,
       );
@@ -363,7 +403,11 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
       return;
     }
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(_isEditing ? l10n.saved : l10n.added)),
+      SnackBar(
+        content: Text(
+          target == null ? l10n.saved : l10n.addedToList(target.$2),
+        ),
+      ),
     );
     context.pop();
   }
@@ -448,17 +492,14 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         .toList();
   }
 
-  /// AI 자동완성 다이얼로그를 연다. (Crew AI 백엔드 호출)
-  Future<void> _openAiSuggestions(AppLocalizations l10n) async {
+  /// AI 자동완성 다이얼로그를 연다. 누른 칸의 글만 보낸다.
+  Future<void> _openAiSuggestions(AppLocalizations l10n, String source) async {
     // 키보드 닫기
     FocusScope.of(context).unfocus();
 
-    // 입력된 텍스트 가져오기
-    final inputText = _literal.text.isNotEmpty
-        ? _literal.text
-        : (_meaning.text.isNotEmpty ? _meaning.text : _reading.text);
+    final inputText = source.trim();
 
-    if (inputText.trim().isEmpty) {
+    if (inputText.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('입력된 텍스트가 없습니다')),
       );
@@ -492,12 +533,12 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
       // 실제 AI API 호출
       final aiService = AiService();
       suggestions = await aiService.getSuggestions(
-        text: inputText.trim(),
+        text: inputText,
         kind: _kind,
       );
     } catch (e) {
       // 에러 발생 시 더미 데이터로 폴백
-      print('AI API 호출 실패, 더미 데이터 사용: $e');
+      debugPrint('AI API 호출 실패, 더미 데이터 사용: $e');
       suggestions = _generateDummySuggestions();
     }
 
@@ -724,6 +765,10 @@ class _AiSuggestionsDialogState extends State<_AiSuggestionsDialog> {
             // 카드 페이지뷰
             Expanded(
               child: PageView.builder(
+                // 웹 기본값은 마우스 드래그를 막는다.
+                scrollBehavior: const MaterialScrollBehavior().copyWith(
+                  dragDevices: PointerDeviceKind.values.toSet(),
+                ),
                 controller: _pageController,
                 onPageChanged: (index) {
                   setState(() => _currentIndex = index);
@@ -748,15 +793,26 @@ class _AiSuggestionsDialogState extends State<_AiSuggestionsDialog> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(
                   widget.suggestions.length,
-                  (index) => Container(
-                    width: 8,
-                    height: 8,
-                    margin: const EdgeInsets.symmetric(horizontal: 4),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: _currentIndex == index
-                          ? const Color(0xFFE85A7B)
-                          : const Color(0xFFE85A7B).withOpacity(0.3),
+                  // 점 자체는 작아서 누르는 영역을 넓게 둔다.
+                  (index) => GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: () => _pageController.animateToPage(
+                      index,
+                      duration: const Duration(milliseconds: 250),
+                      curve: Curves.easeOut,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8),
+                      child: Container(
+                        width: 8,
+                        height: 8,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: _currentIndex == index
+                              ? const Color(0xFFE85A7B)
+                              : const Color(0xFFE85A7B).withValues(alpha: 0.3),
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -819,14 +875,20 @@ class _SuggestionCard extends StatelessWidget {
             ),
             child: Container(
               height: 180,
+              width: double.infinity,
               alignment: Alignment.center,
-              child: Text(
-                kanji.literal,
-                style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                      color: const Color(0xFF5C3A45),
-                      fontWeight: FontWeight.w500,
-                      fontSize: kanji.isWord ? 56 : 72,
-                    ),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  kanji.literal,
+                  maxLines: 1,
+                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                        color: const Color(0xFF5C3A45),
+                        fontWeight: FontWeight.w500,
+                        fontSize: kanji.isWord ? 56 : 72,
+                      ),
+                ),
               ),
             ),
           ),
@@ -874,7 +936,7 @@ class _SuggestionCard extends StatelessWidget {
                           color: Theme.of(context)
                               .colorScheme
                               .onSurface
-                              .withOpacity(0.6),
+                              .withValues(alpha: 0.6),
                         ),
                   ),
                   const SizedBox(height: 4),
@@ -889,7 +951,7 @@ class _SuggestionCard extends StatelessWidget {
                       color: Theme.of(context)
                           .colorScheme
                           .onSurface
-                          .withOpacity(0.7),
+                          .withValues(alpha: 0.7),
                     ),
                   ),
                 ],
@@ -925,7 +987,7 @@ class _InfoRow extends StatelessWidget {
             '$label:',
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color:
-                      Theme.of(context).colorScheme.onSurface.withOpacity(0.6),
+                      Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
                   fontWeight: FontWeight.w600,
                 ),
           ),

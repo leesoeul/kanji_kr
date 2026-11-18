@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 /// 사쿠라 핑크 테마. 라이트는 블러시 배경, 다크는 seed에서 만든 ColorScheme.
 ///
@@ -12,6 +13,27 @@ class AppTheme {
   static const Color sakura = Color(0xFFF48FB1);
   static const Color creamCard = Color(0xFFFFFBFC);
   static const Color _seed = Color(0xFFF48FB1);
+
+  /// 라이트는 크림 카드, 다크는 표면색. 카드 배경이 갈리는 화면이 같이 쓴다.
+  static Color cardColor(BuildContext context) {
+    final theme = Theme.of(context);
+    return theme.brightness == Brightness.dark
+        ? theme.colorScheme.surfaceContainerHighest
+        : creamCard;
+  }
+
+  /// 크림 카드 + 핑크 테두리. 모서리만 화면마다 다르다.
+  static BoxDecoration softCard(
+    BuildContext context, {
+    double radius = 28,
+    double borderWidth = 2,
+  }) {
+    return BoxDecoration(
+      color: cardColor(context),
+      borderRadius: BorderRadius.circular(radius),
+      border: Border.all(color: cardBorder, width: borderWidth),
+    );
+  }
 
   static ThemeData get light {
     final scheme = ColorScheme.fromSeed(
@@ -47,9 +69,13 @@ class AppTheme {
         foregroundColor: scheme.onSurface,
         elevation: 0,
       ),
+      fontFamily: GoogleFonts.kleeOne().fontFamily,
+      fontFamilyFallback: [
+        GoogleFonts.gowunDodum().fontFamily!,
+      ],
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: scaffold,
-        indicatorColor: progressPill.withOpacity(0.9),
+        indicatorColor: progressPill.withValues(alpha: 0.9),
         labelTextStyle: WidgetStateProperty.all(
           TextStyle(
             fontSize: 12,

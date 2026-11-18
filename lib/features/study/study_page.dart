@@ -8,26 +8,34 @@ import '../../core/providers.dart';
 import '../../core/study_filter.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/models/kanji.dart';
+import '../../shared/models/study_list.dart';
 import 'home_pickers.dart';
 import 'kanji_search_sheet.dart';
 
 /// 홈 플래시카드.
 ///
-/// [StudySession]이 비어 있으면 [HomeBrowseBody] (한자/동사 → 목록).
-/// 덱이 있으면 PageView로 카드를 넘긴다.
-/// 정답은 카드를 탭하는 게 아니라 아래 분홍 버튼으로만 연다.
-/// 더블탭은 "정답 항상 표시" 전역 설정.
+/// [listId]가 없으면 [HomeBrowseBody] (한자/동사 → 목록).
+/// [listId]가 있으면 그 목록의 카드를 새 페이지로 보여 준다.
+/// 정답은 아래 분홍 버튼으로만 연다. 한 번 탭은 지금 카드만, 넘기면 닫힌다.
+/// 더블탭은 "정답 항상 표시". 켜져 있으면 넘겨도 답이 열린다.
 ///
 /// [initialId]가 있으면 `/kanji/:id`로 들어온 것. 해당 장으로 점프하고 뒤로가기가 pop이다.
 class StudyPage extends ConsumerStatefulWidget {
   const StudyPage({
     super.key,
+    this.listId,
     this.initialId,
     this.showBack = false,
+    this.revealAnswer = false,
   });
 
+  /// `/study/:listId`로 연 목록. 없으면 탭의 고르기 화면이다.
+  final String? listId;
   final String? initialId;
   final bool showBack;
+
+  /// 검색으로 들어온 카드는 정답을 펼친 채로 연다.
+  final bool revealAnswer;
 
   @override
   ConsumerState<StudyPage> createState() => _StudyPageState();
@@ -37,9 +45,14 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   final _pageController = PageController();
   int _index = 0;
 
-  /// 이 세션에서 정답을 연 카드 인덱스. 항상표시 ON이면 쓰지 않는다.
-  final Set<int> _revealed = {};
+  /// 지금 카드의 정답만 열었는지. 넘기면 닫힌다. 항상 보기가 켜져 있으면 넘긴 카드는 다시 연다.
+  bool _showCurrentAnswer = false;
+  bool _didSyncAnswer = false;
+
+  /// 검색·진입으로 연 카드는 넘김 직후에도 답을 연다.
+  bool _revealAfterJump = false;
   bool _didJump = false;
+  int _shuffleNonce = 0;
 
   bool _hasShownHint = false;
 
@@ -67,7 +80,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   /// 덱을 바꾸면 첫 장으로. PageController는 프레임 뒤에 jump.
   void _resetDeck() {
     _index = 0;
-    _revealed.clear();
+    _showCurrentAnswer = ref.read(studyPrefsProvider).alwaysShowAnswer;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_pageController.hasClients) {
         _pageController.jumpToPage(0);
@@ -75,32 +88,33 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     });
   }
 
-  /// 학습에 쓸 카드 배열. `/kanji/:id`면 카탈로그 전체에서 해당 id를 찾는다.
-  List<Kanji> _deck(CatalogState catalog, StudySession session) {
-    if (widget.initialId != null) {
-      final target = catalog.kanjis.cast<Kanji?>().firstWhere(
-            (item) => item?.id == widget.initialId,
-            orElse: () => null,
-          );
+  /// 덱과 제목이 같이 쓰는 (목록 id, 종류).
+  /// `/kanji/:id`는 `?list=`가 없으면 그 카드가 속한 목록을 연다. 검색 탭·헤더 검색이 그렇다.
+  (String, EntryKind?) _source(CatalogState catalog, StudySession session) {
+    if (widget.initialId == null) {
+      return (widget.listId ?? session.listId, session.kind);
+    }
+    final target = catalog.kanjis.cast<Kanji?>().firstWhere(
+          (item) => item?.id == widget.initialId,
+          orElse: () => null,
+        );
+    if (target == null) {
+      return (widget.listId ?? '', session.kind);
+    }
+    return (widget.listId ?? target.listId, target.kind);
+  }
 
-      if (target != null && target.listId.isNotEmpty) {
-        final subDeck = catalog.itemsFor(target.listId, kind: session.kind);
-        if (subDeck.isNotEmpty) {
-          return subDeck;
-        }
+  /// 학습에 쓸 카드 배열. `/kanji/:id`면 그 카드가 든 목록, 못 찾으면 카탈로그 전체.
+  List<Kanji> _deck(CatalogState catalog, StudySession session) {
+    final (listId, kind) = _source(catalog, session);
+    if (widget.initialId != null) {
+      final subDeck = catalog.itemsFor(listId, kind: kind);
+      if (subDeck.any((item) => item.id == widget.initialId)) {
+        return subDeck;
       }
       return catalog.kanjis;
     }
-    final lists = catalog.dropdownLists(
-      userTitle: '',
-      favoritesTitle: '',
-      kind: session.kind,
-    );
-    final listId = resolveListId(session.listId, lists);
-    return withShuffle(
-      catalog.itemsFor(listId, kind: session.kind),
-      session.shuffleNonce,
-    );
+    return withShuffle(catalog.itemsFor(listId, kind: kind), _shuffleNonce);
   }
 
   @override
@@ -128,16 +142,15 @@ class _StudyPageState extends ConsumerState<StudyPage> {
       });
     });
 
-    // 시스템 뒤로가기: 카드 → 목록 고르기 → 종류 고르기. `/kanji/:id`만 진짜 pop.
+    final pushed = widget.showBack || widget.listId != null;
+    // 고르기 화면의 시스템 뒤로가기만 종류 선택으로. 카드 페이지는 pop.
     return PopScope(
-      canPop: widget.showBack || (!session.hasKind && widget.initialId == null),
-      onPopInvoked: (didPop) {
-        if (didPop) {
+      canPop: pushed || !session.hasKind,
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop || pushed) {
           return;
         }
-        if (session.hasDeck) {
-          ref.read(studySessionProvider.notifier).clearList();
-        } else if (session.hasKind) {
+        if (session.hasKind) {
           ref.read(studySessionProvider.notifier).clearKind();
         }
       },
@@ -147,28 +160,30 @@ class _StudyPageState extends ConsumerState<StudyPage> {
             loading: () => const Center(child: CircularProgressIndicator()),
             error: (error, _) => Center(child: Text('$error')),
             data: (catalog) {
-              if (widget.initialId == null && !session.hasDeck) {
+              if (widget.initialId == null && widget.listId == null) {
                 return HomeBrowseBody(
                   catalog: catalog,
                   session: session,
                   isDark: prefs.isDark,
+                  openAs: ListOpenTarget.study,
                   titleOverride: l10n.homeTitle,
                 );
               }
               final kanjis = _deck(catalog, session);
+              final (sourceListId, sourceKind) = _source(catalog, session);
               final lists = catalog.dropdownLists(
                 userTitle: l10n.listUser,
                 favoritesTitle: l10n.favorites,
-                kind: session.kind,
+                kind: sourceKind,
               );
-              final listId = resolveListId(session.listId, lists);
+              final listId = resolveListId(sourceListId, lists);
               final currentList = catalog.listById(listId, dropdown: lists);
               final language = Localizations.localeOf(context).languageCode;
-              final listTitle =
-                  currentList?.titleFor(language) ?? l10n.studyTitle;
-              final onHeaderBack = widget.showBack
-                  ? () => context.pop()
-                  : () => ref.read(studySessionProvider.notifier).clearList();
+              final listTitle = currentList?.titleFor(language) ??
+                  (sourceKind == EntryKind.word
+                      ? l10n.kindWord
+                      : l10n.kindKanji);
+              void onHeaderBack() => context.pop();
               if (kanjis.isEmpty) {
                 //단어장이 비어있다
                 return Column(
@@ -190,6 +205,10 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                   ],
                 );
               }
+              if (!_didSyncAnswer) {
+                _didSyncAnswer = true;
+                _showCurrentAnswer = prefs.alwaysShowAnswer;
+              }
               if (!_didJump && widget.initialId != null) {
                 // `/kanji/:id`로 들어왔을 때 해당 장으로 점프. 한 번만.
                 final found =
@@ -197,6 +216,10 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                 if (found >= 0) {
                   _index = found;
                   _didJump = true;
+                  if (widget.revealAnswer) {
+                    _showCurrentAnswer = true;
+                    _revealAfterJump = true;
+                  }
                   WidgetsBinding.instance.addPostFrameCallback((_) {
                     if (_pageController.hasClients) {
                       _pageController.jumpToPage(found);
@@ -205,9 +228,6 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                 }
               }
               final safeIndex = _index.clamp(0, kanjis.length - 1);
-              final kanji = kanjis[safeIndex];
-              final showAnswer =
-                  prefs.alwaysShowAnswer || _revealed.contains(_index);
 
               return Column(
                 children: [
@@ -223,7 +243,10 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                         ref.read(studyPrefsProvider.notifier).toggleDark(),
                     onSearch: () => _openSearch(kanjis, l10n),
                     onShuffle: () {
-                      ref.read(studySessionProvider.notifier).shuffle();
+                      setState(() {
+                        _shuffleNonce = DateTime.now().millisecondsSinceEpoch;
+                      });
+                      _resetDeck();
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(l10n.shuffled),
@@ -233,123 +256,195 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                     },
                   ),
                   Expanded(
-                    flex: 5,
-                    child: Row(
+                    child: Stack(
                       children: [
-                        IconButton(
-                          onPressed: safeIndex == 0
-                              ? null
-                              : () => _jumpTo(safeIndex - 1, kanjis.length),
-                          icon: const Icon(
-                            Icons.chevron_left,
-                            size: 40,
-                            color: AppTheme.sakura,
-                          ),
-                        ),
-                        Expanded(
+                        NotificationListener<ScrollNotification>(
+                          onNotification: (notification) {
+                            // 카드 넘김만 본다. 예문 칸의 세로 스크롤은 답을 닫지 않는다.
+                            if (notification is ScrollUpdateNotification &&
+                                notification.metrics.axis == Axis.horizontal &&
+                                _showCurrentAnswer &&
+                                !_revealAfterJump &&
+                                !ref.read(studyPrefsProvider).alwaysShowAnswer) {
+                              setState(() => _showCurrentAnswer = false);
+                            }
+                            return false;
+                          },
                           child: PageView.builder(
-                            controller: _pageController,
-                            itemCount: kanjis.length,
-                            onPageChanged: (value) {
-                              setState(() => _index = value);
-                            },
-                            itemBuilder: (context, index) {
-                              return Padding(
-                                padding: const EdgeInsets.fromLTRB(4, 24, 4, 8),
-                                child: _KanjiFlashCard(
-                                  kanji: kanjis[index],
-                                  starred: catalog.isFavorite(kanjis[index].id),
-                                  onStar: () => ref
-                                      .read(
-                                        catalogControllerProvider.notifier,
-                                      )
-                                      .toggleFavorite(kanjis[index].id),
+                          controller: _pageController,
+                          itemCount: kanjis.length,
+                          onPageChanged: (value) {
+                            setState(() {
+                              _index = value;
+                              _showCurrentAnswer = _revealAfterJump ||
+                                  ref.read(studyPrefsProvider).alwaysShowAnswer;
+                              _revealAfterJump = false;
+                            });
+                          },
+                          itemBuilder: (context, index) {
+                            final pageKanji = kanjis[index];
+                            final showAnswer = prefs.alwaysShowAnswer ||
+                                _showCurrentAnswer;
+                            return Column(
+                              children: [
+                                Expanded(
+                                  flex: 5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                      52,
+                                      24,
+                                      52,
+                                      8,
+                                    ),
+                                    child: _KanjiFlashCard(
+                                      kanji: pageKanji,
+                                      starred: catalog.isFavorite(pageKanji.id),
+                                      onStar: () => ref
+                                          .read(
+                                            catalogControllerProvider.notifier,
+                                          )
+                                          .toggleFavorite(pageKanji.id),
+                                    ),
+                                  ),
                                 ),
-                              );
-                            },
-                          ),
+                                SizedBox(
+                                  height: 148,
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                      24,
+                                      20,
+                                      24,
+                                      0,
+                                    ),
+                                    child: showAnswer
+                                        ? SingleChildScrollView(
+                                            child: _AnswerBlock(
+                                              kanji: pageKanji,
+                                              l10n: l10n,
+                                            ),
+                                          )
+                                        : const SizedBox.shrink(),
+                                  ),
+                                ),
+                                _showAnswerButton(l10n),
+                                const Spacer(flex: 2),
+                              ],
+                            );
+                          },
                         ),
-                        IconButton(
-                          onPressed: safeIndex >= kanjis.length - 1
-                              ? null
-                              : () => _jumpTo(safeIndex + 1, kanjis.length),
-                          icon: const Icon(
-                            Icons.chevron_right,
-                            size: 40,
-                            color: AppTheme.sakura,
+                        ),
+                        Positioned.fill(
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 5,
+                                child: Row(
+                                  children: [
+                                    IconButton(
+                                      onPressed: safeIndex == 0
+                                          ? null
+                                          : () => _jumpTo(
+                                                safeIndex - 1,
+                                                kanjis.length,
+                                              ),
+                                      icon: const Icon(
+                                        Icons.chevron_left,
+                                        size: 40,
+                                        color: AppTheme.sakura,
+                                      ),
+                                    ),
+                                    const Spacer(),
+                                    IconButton(
+                                      onPressed: safeIndex >= kanjis.length - 1
+                                          ? null
+                                          : () => _jumpTo(
+                                                safeIndex + 1,
+                                                kanjis.length,
+                                              ),
+                                      icon: const Icon(
+                                        Icons.chevron_right,
+                                        size: 40,
+                                        color: AppTheme.sakura,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const ExcludeSemantics(
+                                child: IgnorePointer(
+                                  child: Opacity(
+                                    opacity: 0,
+                                    child: SizedBox(height: 148),
+                                  ),
+                                ),
+                              ),
+                              ExcludeSemantics(
+                                child: IgnorePointer(
+                                  child: Opacity(
+                                    opacity: 0,
+                                    child: _showAnswerButton(l10n),
+                                  ),
+                                ),
+                              ),
+                              const Spacer(flex: 2),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: 148,
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 20, 24, 0),
-                      child: showAnswer
-                          ? SingleChildScrollView(
-                              child: _AnswerBlock(
-                                kanji: kanji,
-                                l10n: l10n,
-                              ),
-                            )
-                          : const SizedBox.shrink(),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
-                    child: Center(
-                      child: GestureDetector(
-                        behavior: HitTestBehavior.opaque,
-                        onTap: () {
-                          if (kanjis.isNotEmpty && !_hasShownHint) {
-                            _hasShownHint = true;
-                            WidgetsBinding.instance.addPostFrameCallback((_) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(l10n.doubleTapHint),
-                                  duration: const Duration(seconds: 3),
-                                ),
-                              );
-                            });
-                          }
-                          setState(() {
-                            if (_revealed.contains(_index)) {
-                              _revealed.remove(_index);
-                            } else {
-                              _revealed.add(_index);
-                            }
-                          });
-                        },
-                        // 더블탭은 전역 "항상 표시".
-                        onDoubleTap: () => _toggleAlwaysShow(l10n),
-                        child: Container(
-                          constraints: const BoxConstraints(minWidth: 200),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 48,
-                            vertical: 14,
-                          ),
-                          decoration: BoxDecoration(
-                            color: AppTheme.answerPill,
-                            borderRadius: BorderRadius.circular(28),
-                          ),
-                          child: Text(
-                            l10n.showAnswer,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              color: Color(0xFF7A3048),
-                              fontWeight: FontWeight.w700,
-                              fontSize: 20,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Spacer(flex: 2),
                 ],
               );
             },
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _showAnswerButton(AppLocalizations l10n) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
+      child: Center(
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {
+            if (!_hasShownHint) {
+              _hasShownHint = true;
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (!mounted) {
+                  return;
+                }
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(l10n.doubleTapHint),
+                    duration: const Duration(seconds: 3),
+                  ),
+                );
+              });
+            }
+            setState(() => _showCurrentAnswer = !_showCurrentAnswer);
+          },
+          onDoubleTap: () => _toggleAlwaysShow(l10n),
+          child: Container(
+            constraints: const BoxConstraints(minWidth: 200),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 48,
+              vertical: 14,
+            ),
+            decoration: BoxDecoration(
+              color: AppTheme.answerPill,
+              borderRadius: BorderRadius.circular(28),
+            ),
+            child: Text(
+              l10n.showAnswer,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Color(0xFF7A3048),
+                fontWeight: FontWeight.w700,
+                fontSize: 20,
+              ),
+            ),
           ),
         ),
       ),
@@ -362,12 +457,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
       return;
     }
     final on = ref.read(studyPrefsProvider).alwaysShowAnswer;
-    setState(() {
-      if (on) {
-        // 항상 표시로 바뀌면 카드별 공개 상태는 의미가 없어진다.
-        _revealed.clear();
-      }
-    });
+    setState(() => _showCurrentAnswer = on);
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(on ? l10n.alwaysShowOn : l10n.alwaysShowOff),
@@ -387,6 +477,8 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     }
     final index = kanjis.indexWhere((item) => item.id == selected.id);
     if (index >= 0) {
+      _revealAfterJump = true;
+      setState(() => _showCurrentAnswer = true);
       _jumpTo(index, kanjis.length);
     }
   }
@@ -517,13 +609,7 @@ class _KanjiFlashCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Theme.of(context).brightness == Brightness.dark
-            ? Theme.of(context).colorScheme.surfaceContainerHighest
-            : AppTheme.creamCard,
-        borderRadius: BorderRadius.circular(32),
-        border: Border.all(color: AppTheme.cardBorder, width: 2),
-      ),
+      decoration: AppTheme.softCard(context, radius: 32),
       child: Stack(
         children: [
           Center(
@@ -614,7 +700,7 @@ class _AnswerBlock extends StatelessWidget {
                 fontSize: 16,
                 height: 1.35,
                 color:
-                    Theme.of(context).colorScheme.onSurface.withOpacity(0.82),
+                    Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.82),
               ),
             ),
           if (example.ko.isNotEmpty) ...[
@@ -626,7 +712,7 @@ class _AnswerBlock extends StatelessWidget {
                 fontSize: 14,
                 height: 1.35,
                 color:
-                    Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
+                    Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.72),
               ),
             ),
           ],

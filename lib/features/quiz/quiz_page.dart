@@ -12,7 +12,10 @@ import 'quiz_builder.dart';
 
 /// 목록을 고르면 퀴즈 모드 선택 화면이 나타나고, 사용자가 "시작" 버튼을 눌러 퀴즈를 시작한다.
 class QuizPage extends ConsumerStatefulWidget {
-  const QuizPage({super.key});
+  const QuizPage({super.key, this.listId});
+
+  /// `/quiz/:listId`. 없으면 탭의 목록 고르기 화면이다.
+  final String? listId;
 
   @override
   ConsumerState<QuizPage> createState() => _QuizPageState();
@@ -20,18 +23,28 @@ class QuizPage extends ConsumerStatefulWidget {
 
 class _QuizPageState extends ConsumerState<QuizPage> {
   QuizMode _mode = QuizMode.meaning;
-  List<QuizQuestion> _questions = const [];
+
+  /// 목록 전체에서 만든 문항. 화면에는 [_setStart]부터 20개씩만 낸다.
+  List<QuizQuestion> _allQuestions = const [];
+
+  /// 오답 보기를 뽑을 목록. 틀린 문제만 다시 풀 때도 쓴다.
+  List<Kanji> _pool = const [];
+  int _setStart = 0;
   int _index = 0;
+
+  /// 고른 보기. 아직 안 골랐으면 null, "잘 모르겠어요"는 -1.
   int? _picked;
   int _correctCount = 0;
+  List<QuizQuestion> _wrongAnswers = const [];
   bool _playing = false;
+  bool _showReading = false;
 
-  void _resetLocal() {
-    _playing = false;
-    _questions = const [];
-    _picked = null;
-    _index = 0;
-    _correctCount = 0;
+  List<QuizQuestion> get _questions {
+    final end = _setStart + kQuizSetSize;
+    return _allQuestions.sublist(
+      _setStart,
+      end < _allQuestions.length ? end : _allQuestions.length,
+    );
   }
 
   void _begin() {
@@ -40,43 +53,109 @@ class _QuizPageState extends ConsumerState<QuizPage> {
       return;
     }
     final l10n = AppLocalizations.of(context);
-    final session = ref.read(quizSessionProvider);
+    final kind = ref.read(studySessionProvider).kind;
     final lists = catalog.dropdownLists(
       userTitle: l10n.listUser,
       favoritesTitle: l10n.favorites,
-      kind: session.kind,
+      kind: kind,
     );
-    final listId = resolveListId(session.listId, lists);
-    final questions = buildQuiz(
-      items: catalog.itemsFor(listId, kind: session.kind),
-      mode: _mode,
-    );
+    final listId = resolveListId(widget.listId ?? '', lists);
+    final pool = catalog.itemsFor(listId, kind: kind);
+    final questions = buildQuiz(items: pool, mode: _mode);
+    if (questions.isEmpty) {
+      // 카드는 4장 이상이어도 뜻이 겹치면 서로 다른 보기 4개를 못 만든다.
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.quizEmpty(kQuizChoiceCount))),
+      );
+    }
     setState(() {
-      _questions = questions;
-      _index = 0;
-      _picked = null;
-      _correctCount = 0;
+      _pool = pool;
+      _allQuestions = questions;
+      _setStart = 0;
+      _startSet();
       _playing = questions.isNotEmpty;
     });
   }
 
-  void _leaveQuiz() {
-    setState(_resetLocal);
-    ref.read(quizSessionProvider.notifier).clearList();
+  /// 틀린 문제만 다시 만든다. 오답 보기는 원래 목록에서 뽑는다.
+  void _retryWrong() {
+    final questions = buildQuiz(
+      items: _pool,
+      prompts: [for (final wrong in _wrongAnswers) wrong.prompt],
+      mode: _mode,
+    );
+    if (questions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            AppLocalizations.of(context).quizEmpty(kQuizChoiceCount),
+          ),
+        ),
+      );
+      return;
+    }
+    setState(() {
+      _allQuestions = questions;
+      _setStart = 0;
+      _startSet();
+      _playing = true;
+    });
   }
 
-  /// 보기 하나를 고른다. 이미 골랐으면 무시. 맞으면 [_correctCount]를 올린다.
-  void _pick(int choice) {
+  void _nextSet() {
+    setState(() {
+      _setStart += kQuizSetSize;
+      _startSet();
+      _playing = true;
+    });
+  }
+
+  void _startSet() {
+    _index = 0;
+    _picked = null;
+    _correctCount = 0;
+    _wrongAnswers = [];
+    _showReading = false;
+  }
+
+  /// [choice]가 null이면 "잘 모르겠어요". 이미 답했으면 무시한다.
+  void _answer(int? choice) {
     if (_picked != null) {
       return;
     }
     final question = _questions[_index];
+    final correct = choice != null && choice == question.correctIndex;
     setState(() {
-      _picked = choice;
-      if (choice == question.correctIndex) {
+      _picked = choice ?? -1;
+      if (correct) {
         _correctCount += 1;
+      } else {
+        _wrongAnswers = [..._wrongAnswers, question];
       }
     });
+  }
+
+  Widget _choiceRow(QuizQuestion question, int row, bool answered) {
+    return Row(
+      children: [
+        for (final column in [0, 1]) ...[
+          if (column == 1) const SizedBox(width: 10),
+          Expanded(
+            child: _ChoiceCard(
+              label: question.choices[row * 2 + column],
+              kanji: question.choiceKanji[row * 2 + column],
+              revealed: answered,
+              correct:
+                  answered && row * 2 + column == question.correctIndex,
+              wrong: answered &&
+                  _picked == row * 2 + column &&
+                  row * 2 + column != question.correctIndex,
+              onTap: () => _answer(row * 2 + column),
+            ),
+          ),
+        ],
+      ],
+    );
   }
 
   void _next() {
@@ -87,47 +166,30 @@ class _QuizPageState extends ConsumerState<QuizPage> {
     setState(() {
       _index += 1;
       _picked = null;
+      _showReading = false;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final session = ref.watch(quizSessionProvider);
+    final session = ref.watch(studySessionProvider);
     final asyncCatalog = ref.watch(catalogControllerProvider);
-
-    // 목록을 비우면 (뒤로가기) 로컬 퀴즈 상태도 리셋.
-    ref.listen<StudySession>(quizSessionProvider, (prev, next) {
-      if (next.hasDeck) {
-        return;
-      }
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) {
-          return;
-        }
-        setState(_resetLocal);
-      });
-    });
+    final playingDeck = widget.listId != null;
 
     return PopScope(
-      canPop: !session.hasKind,
-      onPopInvoked: (didPop) {
-        if (didPop) {
+      canPop: playingDeck || !session.hasKind,
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop || playingDeck) {
           return;
         }
-        if (session.hasDeck) {
-          _leaveQuiz();
-        } else if (session.hasKind) {
+        if (session.hasKind) {
           ref.read(studySessionProvider.notifier).clearKind();
         }
       },
       child: Scaffold(
-        appBar: session.hasDeck
+        appBar: playingDeck
             ? AppBar(
-                leading: IconButton(
-                  icon: const Icon(Icons.arrow_back),
-                  onPressed: _leaveQuiz,
-                ),
                 title: Text(l10n.quizTitle),
               )
             : null,
@@ -135,12 +197,12 @@ class _QuizPageState extends ConsumerState<QuizPage> {
           loading: () => const Center(child: CircularProgressIndicator()),
           error: (error, _) => Center(child: Text('$error')),
           data: (catalog) {
-            if (!session.hasDeck) {
+            if (!playingDeck) {
               return HomeBrowseBody(
                 catalog: catalog,
                 session: session,
                 isDark: ref.watch(studyPrefsProvider).isDark,
-                forQuiz: true,
+                openAs: ListOpenTarget.quiz,
                 titleOverride: l10n.quizTitle,
               );
             }
@@ -149,7 +211,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
               favoritesTitle: l10n.favorites,
               kind: session.kind,
             );
-            final listId = resolveListId(session.listId, lists);
+            final listId = resolveListId(widget.listId!, lists);
             final items = catalog.itemsFor(listId, kind: session.kind);
             return _body(context, l10n, items);
           },
@@ -164,24 +226,29 @@ class _QuizPageState extends ConsumerState<QuizPage> {
     List<Kanji> items,
   ) {
     if (_questions.isNotEmpty && !_playing) {
-      //결과 화면
+      final remaining = _allQuestions.length - (_setStart + kQuizSetSize);
       return _ResultView(
         l10n: l10n,
         correct: _correctCount,
         total: _questions.length,
-        onRetry: _begin,
+        wrongs: _wrongAnswers,
+        nextSetCount: remaining <= 0
+            ? 0
+            : (remaining < kQuizSetSize ? remaining : kQuizSetSize),
+        onRetryWrong: _retryWrong,
+        onNextSet: _nextSet,
       );
     }
     if (!_playing) {
       // 퀴즈 모드 선택 화면
-      final canStart = items.length >= 2;
+      final canStart = items.length >= kQuizChoiceCount;
 
       if (!canStart) {
         return Center(
           child: Padding(
             padding: const EdgeInsets.all(24),
             child: Text(
-              l10n.quizEmpty,
+              l10n.quizEmpty(kQuizChoiceCount),
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.titleLarge,
             ),
@@ -269,68 +336,64 @@ class _QuizPageState extends ConsumerState<QuizPage> {
           ),
           const SizedBox(height: 12),
           Expanded(
+            flex: 2,
             child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? Theme.of(context).colorScheme.surfaceContainerHighest
-                    : AppTheme.creamCard,
-                borderRadius: BorderRadius.circular(28),
-                border: Border.all(color: AppTheme.cardBorder, width: 2),
-              ),
-              child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: FittedBox(
-                    child: _QuizPrompt(
-                      kanji: question.prompt,
-                      mode: question.mode,
-                      l10n: l10n,
-                    ),
-                  ),
-                ),
+              decoration: AppTheme.softCard(context),
+              child: _QuizPrompt(
+                kanji: question.prompt,
+                mode: question.mode,
+                l10n: l10n,
+                showReading: _showReading,
+                onToggleReading: () {
+                  setState(() => _showReading = !_showReading);
+                },
               ),
             ),
           ),
           const SizedBox(height: 16),
-          for (var i = 0; i < question.choices.length; i++) ...[
-            _ChoiceTile(
-              label: question.choices[i],
-              selected: _picked == i,
-              correct: answered && i == question.correctIndex,
-              wrong: answered && _picked == i && i != question.correctIndex,
-              onTap: () => _pick(i),
+          Expanded(
+            flex: 3,
+            child: Column(
+              children: [
+                for (final row in [0, 1]) ...[
+                  if (row == 1) const SizedBox(height: 10),
+                  Expanded(child: _choiceRow(question, row, answered)),
+                ],
+              ],
             ),
-            const SizedBox(height: 8),
-          ],
-          SizedBox(
-            height: 24,
-            child: answered
-                ? Text(
-                    _picked == question.correctIndex
-                        ? l10n.quizCorrect
-                        : l10n.quizWrong,
-                    style: TextStyle(
-                      color: _picked == question.correctIndex
-                          ? const Color(0xFF2E7D32)
-                          : AppTheme.meaningPink,
-                      fontWeight: FontWeight.w700,
-                      // fontSize: 20,
-                    ),
-                  )
-                : const SizedBox.shrink(),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
           SizedBox(
-            height: 40,
+            width: double.infinity,
+            height: 48,
+            child: OutlinedButton(
+              onPressed: answered ? null : () => _answer(null),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: AppTheme.meaningPink,
+                side: BorderSide(
+                  color: answered
+                      ? AppTheme.cardBorder
+                      : AppTheme.meaningPink,
+                  width: 1.5,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+              child: Text(
+                l10n.quizDontKnow,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          SizedBox(
+            height: 52,
             child: answered
-                ? FilledButton(
-                    onPressed: _next,
-                    child: Text(
-                      _index >= _questions.length - 1
-                          ? l10n.quizSeeResult
-                          : l10n.quizNext,
-                    ),
-                  )
+                ? _NextGaugeButton(label: l10n.quizNextArrow, onAdvance: _next)
                 : const SizedBox.shrink(),
           ),
         ],
@@ -339,17 +402,21 @@ class _QuizPageState extends ConsumerState<QuizPage> {
   }
 }
 
-/// 문제 칸. 뜻 고르기·글자 고르기 모두 훈독·음독(또는 단어 읽기)을 같이 보여 준다.
+/// 문제 칸. 훈독·음독(또는 단어 읽기)은 오른쪽 위 힌트를 열었을 때만 보인다.
 class _QuizPrompt extends StatelessWidget {
   const _QuizPrompt({
     required this.kanji,
     required this.mode,
     required this.l10n,
+    required this.showReading,
+    required this.onToggleReading,
   });
 
   final Kanji kanji;
   final QuizMode mode;
   final AppLocalizations l10n;
+  final bool showReading;
+  final VoidCallback onToggleReading;
 
   @override
   Widget build(BuildContext context) {
@@ -357,31 +424,64 @@ class _QuizPrompt extends StatelessWidget {
         mode == QuizMode.meaning ? kanji.literal : kanji.displayMeaning;
     final readings = _readingLine();
 
-    return Column(
-      mainAxisSize: MainAxisSize.min,
+    return Stack(
       children: [
-        Text(
-          main,
-          textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.displayLarge?.copyWith(
-                color: const Color(0xFF5C3A45),
-                fontWeight: mode == QuizMode.meaning
-                    ? FontWeight.w600
-                    : FontWeight.bold,
-                fontSize: mode == QuizMode.meaning ? 72 : 40,
-              ),
-        ),
-        if (readings.isNotEmpty) ...[
-          const SizedBox(height: 20),
-          Text(
-            readings,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  color: const Color(0xFF5C3A45),
-                  fontWeight: FontWeight.w600,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 56),
+          child: Column(
+            children: [
+              const Spacer(),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  main,
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                        color: const Color(0xFF5C3A45),
+                        fontWeight: mode == QuizMode.meaning
+                            ? FontWeight.w600
+                            : FontWeight.bold,
+                        fontSize: mode == QuizMode.meaning ? 72 : 40,
+                      ),
                 ),
+              ),
+              Expanded(
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: showReading && readings.isNotEmpty
+                      ? Padding(
+                          padding: const EdgeInsets.only(top: 16),
+                          child: Text(
+                            readings,
+                            textAlign: TextAlign.center,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(
+                                  color: const Color(0xFF5C3A45),
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        )
+                      : const SizedBox.shrink(),
+                ),
+              ),
+            ],
           ),
-        ],
+        ),
+        if (readings.isNotEmpty)
+          Positioned(
+            top: 4,
+            right: 4,
+            child: IconButton(
+              tooltip: l10n.quizHint,
+              onPressed: onToggleReading,
+              icon: Icon(
+                showReading ? Icons.lightbulb : Icons.lightbulb_outline,
+                color: AppTheme.sakura,
+              ),
+            ),
+          ),
       ],
     );
   }
@@ -401,50 +501,124 @@ class _QuizPrompt extends StatelessWidget {
   }
 }
 
-/// 객관식 보기. 채점 후 정답은 초록, 오답은 분홍.
-class _ChoiceTile extends StatelessWidget {
-  const _ChoiceTile({
+/// 2×2 보기 카드. 정답은 초록, 내가 고른 오답은 분홍으로 제자리에서 표시한다.
+class _ChoiceCard extends StatelessWidget {
+  const _ChoiceCard({
     required this.label,
-    required this.selected,
+    required this.kanji,
+    required this.revealed,
     required this.correct,
     required this.wrong,
     required this.onTap,
   });
 
   final String label;
-  final bool selected;
+  final Kanji kanji;
+  final bool revealed;
   final bool correct;
   final bool wrong;
   final VoidCallback onTap;
 
+  String get _reading => kanji.displayKunOn.trim();
+
+  /// 표제어가 이미 한국어 뜻이면 같은 줄을 또 쓰지 않는다.
+  String get _meaning {
+    final meaning = kanji.displayMeaning.trim();
+    return meaning == label ? '' : meaning;
+  }
+
   @override
   Widget build(BuildContext context) {
-    Color? color;
-    if (correct) {
-      color = const Color(0xFFC8E6C9);
-    } else if (wrong) {
-      color = const Color(0xFFFFCDD2);
-    } else if (selected) {
-      color = AppTheme.progressPill;
-    }
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final color = correct
+        ? const Color(0xFFE5F6E8)
+        : wrong
+            ? const Color(0xFFFDE8EC)
+            : (isDark
+                ? Theme.of(context).colorScheme.surfaceContainerHighest
+                : Colors.white);
+    final border = correct
+        ? const Color(0xFF43A047)
+        : wrong
+            ? const Color(0xFFE53935)
+            : AppTheme.cardBorder;
     return Material(
-      color: color ?? Theme.of(context).colorScheme.surfaceContainerHighest,
+      color: color,
       borderRadius: BorderRadius.circular(16),
+      clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(16),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          child: SizedBox(
-            width: double.infinity,
-            child: Text(
-              label,
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 22,
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: border, width: correct || wrong ? 2 : 1.5),
+          ),
+          child: Stack(
+            children: [
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      label,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w700,
+                            color: correct || wrong || !isDark
+                                ? const Color(0xFF5C3A45)
+                                : null,
+                          ),
+                    ),
+                    if (revealed && _reading.isNotEmpty) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        _reading,
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: (isDark ? Colors.white : const Color(0xFF5C3A45))
+                              .withValues(alpha: 0.7),
+                        ),
+                      ),
+                    ],
+                    if (revealed && _meaning.isNotEmpty) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        _meaning,
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700,
+                          color: AppTheme.meaningPink.withValues(alpha: 0.9),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              if (correct || wrong)
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Icon(
+                    correct ? Icons.check_circle : Icons.cancel,
+                    size: 20,
+                    color: correct
+                        ? const Color(0xFF2E7D32)
+                        : const Color(0xFFE53935),
                   ),
-            ),
+                ),
+            ],
           ),
         ),
       ),
@@ -452,28 +626,117 @@ class _ChoiceTile extends StatelessWidget {
   }
 }
 
-/// 마지막 문항 다음. 점수와 다시 풀기.
+/// 답 고른 뒤 나타나는 다음 버튼. 1.2초 동안 색이 차오르면 스스로 넘어간다.
+class _NextGaugeButton extends StatefulWidget {
+  const _NextGaugeButton({required this.label, required this.onAdvance});
+
+  final String label;
+  final VoidCallback onAdvance;
+
+  @override
+  State<_NextGaugeButton> createState() => _NextGaugeButtonState();
+}
+
+class _NextGaugeButtonState extends State<_NextGaugeButton>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 2000),
+  );
+  bool _advanced = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller.forward().whenComplete(_advance);
+  }
+
+  /// 게이지가 다 차거나 버튼을 누르면 한 번만 넘어간다.
+  void _advance() {
+    if (_advanced || !mounted) {
+      return;
+    }
+    _advanced = true;
+    _controller.stop();
+    widget.onAdvance();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppTheme.progressPill,
+      borderRadius: BorderRadius.circular(16),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: _advance,
+        child: Stack(
+          children: [
+            AnimatedBuilder(
+              animation: _controller,
+              builder: (context, _) => Align(
+                alignment: Alignment.centerLeft,
+                child: FractionallySizedBox(
+                  widthFactor: _controller.value,
+                  heightFactor: 1,
+                  child: const ColoredBox(color: AppTheme.meaningPink),
+                ),
+              ),
+            ),
+            Center(
+              child: Text(
+                widget.label,
+                style: const TextStyle(
+                  color: Color(0xFF7A3048),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// 세트 결과. 점수, 틀린 문제, 다시 풀기와 다음 세트.
 class _ResultView extends StatelessWidget {
   const _ResultView({
     required this.l10n,
     required this.correct,
     required this.total,
-    required this.onRetry,
+    required this.wrongs,
+    required this.nextSetCount,
+    required this.onRetryWrong,
+    required this.onNextSet,
   });
 
   final AppLocalizations l10n;
   final int correct;
   final int total;
-  final VoidCallback onRetry;
+  final List<QuizQuestion> wrongs;
+  final int nextSetCount;
+  final VoidCallback onRetryWrong;
+  final VoidCallback onNextSet;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         children: [
           Text(l10n.quizResult, style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: 8),
+          const SizedBox(height: 4),
+          Text(
+            l10n.quizCorrectLabel,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
           Text(
             l10n.quizScore(correct, total),
             style: Theme.of(context).textTheme.displaySmall?.copyWith(
@@ -481,11 +744,106 @@ class _ResultView extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                 ),
           ),
-          const SizedBox(height: 20),
-          FilledButton(
-            onPressed: onRetry,
-            child: Text(l10n.quizRetry),
+          const SizedBox(height: 16),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              l10n.quizWrongList,
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.w700,
+                  ),
+            ),
           ),
+          const SizedBox(height: 8),
+          Expanded(
+            child: wrongs.isEmpty
+                ? Center(child: Text(l10n.quizAllCorrect))
+                : ListView.separated(
+                    itemCount: wrongs.length,
+                    separatorBuilder: (context, index) =>
+                        const SizedBox(height: 8),
+                    itemBuilder: (context, index) {
+                      final kanji = wrongs[index].prompt;
+                      return Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 12,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppTheme.progressPill,
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        child: Row(
+                          children: [
+                            Text(
+                              kanji.literal,
+                              style: const TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                kanji.displayMeaning,
+                                style: const TextStyle(
+                                  color: AppTheme.meaningPink,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
+          ),
+          const SizedBox(height: 12),
+          if (wrongs.isNotEmpty)
+            SizedBox(
+              width: double.infinity,
+              height: 52,
+              child: FilledButton(
+                style: FilledButton.styleFrom(
+                  backgroundColor: AppTheme.meaningPink,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                onPressed: onRetryWrong,
+                child: Text(
+                  l10n.quizRetryWrong(wrongs.length),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+          if (nextSetCount > 0) ...[
+            const SizedBox(height: 10),
+            SizedBox(
+              width: double.infinity,
+              height: 52,
+              child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: AppTheme.meaningPink,
+                  side: const BorderSide(color: AppTheme.meaningPink, width: 1.5),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                onPressed: onNextSet,
+                child: Text(
+                  l10n.quizNextSet(nextSetCount),
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
+import 'package:kanji_kr/core/database/app_database.dart';
 import 'package:kanji_kr/core/kana.dart';
 import 'package:kanji_kr/core/storage/user_data.dart';
 import 'package:kanji_kr/core/study_filter.dart';
@@ -53,7 +54,13 @@ void main() {
     expect(kanji.meaningsKo, contains('강할'));
     expect(kanji.displayMeaning, '강할 강');
     expect(kanji.onYomi.map((item) => item.kana), contains('きょう'));
-    expect(kanji.kunYomi.map((item) => item.kana), contains('つよい'));
+    expect(kanji.kunYomi.map((item) => item.kana), ['つよい', 'つよめる', 'しいる']);
+    final tama = Kanji.fromJson(
+      list.cast<Map<String, dynamic>>().firstWhere(
+        (item) => item['literal'] == '弾',
+      ),
+    );
+    expect(tama.kunYomi.map((item) => item.kana), ['ひく', 'はずむ', 'たま']);
     final last = Kanji.fromJson(list.last as Map<String, dynamic>);
     expect(last.id, 'kanji_900');
     expect(last.listId, 'kanji_adv');
@@ -134,6 +141,12 @@ void main() {
     expect(restored.userKanjis.single.listId, ListIds.user);
     expect(restored.alwaysShowAnswer, isFalse);
     expect(restored.selectedListId, 'verb_beg');
+    expect(restored.seedRevision, kSeedRevision);
+    expect(
+      UserData.fromJson({'favoriteIds': <String>[], 'userKanjis': []})
+          .seedRevision,
+      0,
+    );
   });
 
   test('음독 가타카나를 히라가나로 바꾼다', () {
@@ -227,6 +240,36 @@ void main() {
     );
     expect(lists.map((item) => item.id), contains('kanji_beg'));
     expect(lists.map((item) => item.id), isNot(contains('verb_beg')));
+    final withMine = composeListsForKind(
+      kind: EntryKind.word,
+      userTitle: '내가 추가',
+      favoritesTitle: '즐겨찾기',
+      builtin: const [
+        StudyList(
+          id: 'verb_beg',
+          kind: EntryKind.word,
+          titleKo: '초급 동사',
+          titleJa: '初級動詞',
+        ),
+      ],
+      userDecks: const [
+        UserDeck(id: 'user_1', kind: EntryKind.word, title: '복습'),
+      ],
+      userListTitle: '내 단어',
+    );
+    expect(
+      withMine.map((item) => item.id),
+      ['verb_beg', 'user_1', ListIds.user, ListIds.favorites],
+    );
+    expect(withMine[2].titleKo, '내 단어');
+    final hidden = composeListsForKind(
+      kind: EntryKind.word,
+      userTitle: '내가 추가',
+      favoritesTitle: '즐겨찾기',
+      builtin: const [],
+      showUserList: false,
+    );
+    expect(hidden.map((item) => item.id), [ListIds.favorites]);
   });
 
   test('퀴즈는 정답이 보기 안에 있다', () {
@@ -246,19 +289,74 @@ void main() {
         'literal': '人',
         'meaningsKo': ['사람'],
       }),
+      Kanji.fromJson({
+        'id': 'd',
+        'literal': '木',
+        'meaningsKo': ['나무'],
+      }),
     ];
     final questions = buildQuiz(
       items: items,
       mode: QuizMode.meaning,
       random: Random(1),
     );
-    expect(questions, isNotEmpty);
+    expect(questions, hasLength(items.length));
+    expect(
+      buildQuiz(items: items.take(3).toList(), mode: QuizMode.meaning),
+      isEmpty,
+    );
     for (final question in questions) {
+      expect(question.choices, hasLength(kQuizChoiceCount));
       expect(question.choices, contains(question.prompt.displayMeaning));
       expect(
         question.choices[question.correctIndex],
         question.prompt.displayMeaning,
       );
     }
+    final retry = buildQuiz(
+      items: items,
+      prompts: [items.first],
+      mode: QuizMode.meaning,
+      random: Random(1),
+    );
+    expect(retry, hasLength(1));
+    expect(retry.single.choices, hasLength(kQuizChoiceCount));
+  });
+
+  test('사전 DB는 시드 1,500장을 담고 버전이 앱과 같다', () {
+    final file = File('assets/db/dictionary.db');
+    expect(file.existsSync(), isTrue);
+    final count = Process.runSync(
+      'sqlite3',
+      [
+        file.path,
+        "SELECT count(*) FROM entries WHERE source = 'seed';"
+            "SELECT count(*) > 10000 FROM entries;"
+            'PRAGMA user_version;',
+      ],
+    );
+    expect(count.exitCode, 0);
+    expect((count.stdout as String).trim().split('\n'), ['1500', '1', '4']);
+  });
+
+  test('같은 글자도 다른 목록이면 중복으로 보지 않는다', () {
+    final db = AppDatabase()
+      ..upsertKanji(
+        Kanji.fromJson({
+          'id': 'verb_6',
+          'literal': '食べる',
+          'kind': 'word',
+          'listId': 'verb_beg',
+        }),
+      );
+    expect(db.containsLiteral('食べる', kind: EntryKind.word), isTrue);
+    expect(
+      db.containsLiteral('食べる', kind: EntryKind.word, listId: ListIds.user),
+      isFalse,
+    );
+    expect(
+      db.containsLiteral('食べる', kind: EntryKind.word, listId: 'verb_beg'),
+      isTrue,
+    );
   });
 }
