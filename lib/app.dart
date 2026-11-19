@@ -19,7 +19,7 @@ class KanjiKrApp extends ConsumerWidget {
     final prefs = ref.watch(studyPrefsProvider);
 
     return MaterialApp.router(
-      title: '한자 학습',
+      title: '하루 탄고',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,

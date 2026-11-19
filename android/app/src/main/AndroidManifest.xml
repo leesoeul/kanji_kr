@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="한자 학습"
+        android:label="하루 탄고"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
