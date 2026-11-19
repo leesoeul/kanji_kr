@@ -328,22 +328,30 @@ class _ListCard extends StatelessWidget {
                     ),
               ),
               const SizedBox(width: 4),
-              if (onRename != null && onDelete != null)
-                IconButton(
-                  tooltip: l10n.renameList,
-                  visualDensity: VisualDensity.compact,
-                  padding: EdgeInsets.zero,
-                  constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-                  onPressed: () => _showListActions(
-                    context,
-                    title: title,
-                    onRename: onRename!,
-                    onDelete: onDelete!,
-                  ),
-                  icon: const Icon(Icons.more_horiz, color: AppTheme.sakura),
-                )
-              else
-                const Icon(Icons.chevron_right, color: AppTheme.sakura),
+              SizedBox(
+                width: 32,
+                height: 32,
+                child: onRename != null && onDelete != null
+                    ? IconButton(
+                        tooltip: l10n.renameList,
+                        style: IconButton.styleFrom(
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          minimumSize: const Size(32, 32),
+                          padding: EdgeInsets.zero,
+                          visualDensity: VisualDensity.compact,
+                        ),
+                        onPressed: () => _showListActions(
+                          context,
+                          title: title,
+                          onRename: onRename!,
+                          onDelete: onDelete!,
+                        ),
+                        icon: const Icon(Icons.more_horiz, color: AppTheme.sakura),
+                      )
+                    : const Center(
+                        child: Icon(Icons.chevron_right, color: AppTheme.sakura),
+                      ),
+              ),
             ],
           ),
         ),
