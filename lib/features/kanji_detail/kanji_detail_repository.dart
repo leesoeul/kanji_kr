@@ -33,6 +33,12 @@ class KanjiRepository {
 
   List<StudyList> get builtinLists => List.unmodifiable(_builtinLists);
 
+  /// [main]에서 시드를 미리 읽었으면 true. 홈 첫 프레임이 로딩을 기다리지 않는다.
+  bool get isReady => _ready;
+
+  /// [isReady]일 때만 쓴다. 아직 시드를 안 읽었으면 [all]을 쓴다.
+  List<Kanji> loadedKanjis() => _db.allKanjis();
+
   Future<void> ensureReady() async {
     if (_ready) {
       return;

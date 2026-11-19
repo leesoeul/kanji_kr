@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../features/kanji_detail/kanji_detail_repository.dart';
@@ -113,7 +115,16 @@ class CatalogState {
 /// 쓰기 뒤에는 항상 [_reload]로 스냅샷을 다시 만든다.
 class CatalogController extends AsyncNotifier<CatalogState> {
   @override
-  Future<CatalogState> build() async {
+  FutureOr<CatalogState> build() {
+    final repo = ref.read(kanjiRepositoryProvider);
+    // 시드를 runApp 전에 읽어 두면 Future를 만들지 않아 로딩 프레임이 없다.
+    if (repo.isReady) {
+      return _snapshot(repo.loadedKanjis());
+    }
+    return _load();
+  }
+
+  Future<CatalogState> _load() async {
     final repo = ref.read(kanjiRepositoryProvider);
     return _snapshot(await repo.all());
   }

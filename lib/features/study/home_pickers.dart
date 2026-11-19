@@ -40,12 +40,7 @@ class HomeBrowseBody extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (!session.hasKind) {
-      return SafeArea(
-        child: _KindStep(
-          isDark: isDark,
-          titleOverride: titleOverride,
-        ),
-      );
+      return const SafeArea(child: _KindStep());
     }
     return SafeArea(
       child: _ListStep(
@@ -61,46 +56,29 @@ class HomeBrowseBody extends ConsumerWidget {
 
 /// 한자 / 동사 두 장. 고르면 kind만 저장하고 목록 단계로 간다.
 class _KindStep extends ConsumerWidget {
-  const _KindStep({
-    required this.isDark,
-    this.titleOverride,
-  });
-
-  final bool isDark;
-  final String? titleOverride;
+  const _KindStep();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    return Column(
-      children: [
-        _BrowseHeader(
-          title: titleOverride ?? l10n.pickKindTitle,
-          isDark: isDark,
-          onBack: null,
-        ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                _KindCard(
-                  title: l10n.kindKanji,
-                  icon: Icons.font_download_outlined,
-                  onTap: () => _selectKind(ref, EntryKind.kanji),
-                ),
-                const SizedBox(height: 16),
-                _KindCard(
-                  title: l10n.kindWord,
-                  icon: Icons.menu_book_outlined,
-                  onTap: () => _selectKind(ref, EntryKind.word),
-                ),
-              ],
-            ),
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _KindCard(
+            title: l10n.kindKanji,
+            icon: Icons.font_download_outlined,
+            onTap: () => _selectKind(ref, EntryKind.kanji),
           ),
-        ),
-      ],
+          const SizedBox(height: 16),
+          _KindCard(
+            title: l10n.kindWord,
+            icon: Icons.menu_book_outlined,
+            onTap: () => _selectKind(ref, EntryKind.word),
+          ),
+        ],
+      ),
     );
   }
 
