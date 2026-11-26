@@ -7,6 +7,7 @@ import '../../core/providers.dart';
 import '../../core/study_filter.dart';
 import '../../features/study/home_pickers.dart';
 import '../../shared/models/kanji.dart';
+import '../../shared/models/study_list.dart';
 
 /// 시드+사용자 카드 목록 탭.
 ///
@@ -53,7 +54,7 @@ class KanjiListPage extends ConsumerWidget {
           );
         }
         final lists = catalog.dropdownLists(
-          userTitle: l10n.listUser,
+          userTitle: defaultUserListTitle(l10n, session.kind),
           favoritesTitle: l10n.favorites,
           kind: session.kind,
         );
@@ -76,6 +77,7 @@ class KanjiListPage extends ConsumerWidget {
             ),
             body: _DeckListBody(
               listId: resolvedId,
+              kind: session.kind,
               items: items,
               isFavorite: catalog.isFavorite,
               onToggleFavorite: (id) => ref
@@ -92,12 +94,14 @@ class KanjiListPage extends ConsumerWidget {
 class _DeckListBody extends StatefulWidget {
   const _DeckListBody({
     required this.listId,
+    required this.kind,
     required this.items,
     required this.isFavorite,
     required this.onToggleFavorite,
   });
 
   final String listId;
+  final EntryKind? kind;
   final List<Kanji> items;
   final bool Function(String id) isFavorite;
   final ValueChanged<String> onToggleFavorite;
@@ -141,7 +145,13 @@ class _DeckListBodyState extends State<_DeckListBody> {
           child: shown.isEmpty
               ? Center(
                   child: Text(
-                    widget.items.isEmpty ? l10n.emptyList : l10n.noSearchResults,
+                    widget.items.isEmpty
+                        ? emptyListMessage(
+                            l10n,
+                            listId: widget.listId,
+                            kind: widget.kind,
+                          )
+                        : l10n.noSearchResults,
                   ),
                 )
               : ListView.separated(

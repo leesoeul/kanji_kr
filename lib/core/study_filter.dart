@@ -2,6 +2,7 @@ import 'dart:math';
 
 import '../../shared/models/kanji.dart';
 import '../../shared/models/study_list.dart';
+import 'l10n/generated/app_localizations.dart';
 
 /// 선택한 목록 id로 카드를 걸러 낸다.
 ///
@@ -95,6 +96,27 @@ List<Kanji> withShuffle(List<Kanji> items, int nonce) {
     return items;
   }
   return [...items]..shuffle(Random(nonce));
+}
+
+/// 빈 목록 안내. 즐겨찾기는 "즐겨찾은 한자/단어가 없습니다".
+String emptyListMessage(
+  AppLocalizations l10n, {
+  required String listId,
+  required EntryKind? kind,
+}) {
+  if (listId == ListIds.favorites) {
+    return l10n.emptyFavorites(
+      kind == EntryKind.word ? l10n.kindWord : l10n.kindKanji,
+    );
+  }
+  return l10n.emptyList;
+}
+
+/// 직접 추가 목록의 기본 이름. 한자면 "추가한 한자", 단어면 "추가한 단어".
+String defaultUserListTitle(AppLocalizations l10n, EntryKind? kind) {
+  return l10n.listUser(
+    kind == EntryKind.word ? l10n.kindWord : l10n.kindKanji,
+  );
 }
 
 /// 한자 또는 동사만. 2단 선택에서 종류를 이미 골랐기 때문.

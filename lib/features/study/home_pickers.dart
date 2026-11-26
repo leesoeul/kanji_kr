@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
+import '../../core/study_filter.dart';
 import '../../core/theme/app_theme.dart';
 import '../../shared/models/study_list.dart';
 import '../../shared/widgets/list_name_dialog.dart';
@@ -108,8 +109,14 @@ class _ListStep extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final language = Localizations.localeOf(context).languageCode;
+    final subtitle = switch (openAs) {
+      ListOpenTarget.study => l10n.pickPracticeList,
+      ListOpenTarget.deck => l10n.pickManageList,
+      ListOpenTarget.quiz => l10n.pickListTitle,
+    };
+    final practice = openAs == ListOpenTarget.study;
     final lists = catalog.dropdownLists(
-      userTitle: l10n.listUser,
+      userTitle: defaultUserListTitle(l10n, kind),
       favoritesTitle: l10n.favorites,
       kind: kind,
     );
@@ -126,27 +133,44 @@ class _ListStep extends ConsumerWidget {
           },
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(24, 0, 8, 0),
-          child: SizedBox(
-            height: 48,
-            child: Row(
-              children: [
-                Expanded(
+          padding: const EdgeInsets.fromLTRB(24, 4, 16, 8),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerLeft,
                   child: Text(
-                    l10n.pickListTitle,
-                    style: Theme.of(context).textTheme.bodyLarge,
+                    subtitle,
+                    maxLines: 1,
+                    softWrap: false,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          fontSize: 15,
+                        ),
                   ),
                 ),
-                if (openAs == ListOpenTarget.deck)
-                  IconButton(
-                    tooltip: l10n.newList,
+              ),
+              if (openAs == ListOpenTarget.deck)
+                TextButton.icon(
                     onPressed: () => _createList(context, ref),
-                    icon: const Icon(Icons.create_new_folder_outlined),
-                  )
-                else
-                  const SizedBox(width: 48),
-              ],
-            ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppTheme.meaningPink,
+                      padding: EdgeInsets.zero,
+                      minimumSize: Size.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      visualDensity: VisualDensity.compact,
+                    ),
+                    icon: const Icon(Icons.add, size: 16),
+                    label: Text(
+                      l10n.addList,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+            ],
           ),
         ),
         Expanded(
@@ -168,6 +192,12 @@ class _ListStep extends ConsumerWidget {
                 title: list.titleFor(language),
                 count: count,
                 onTap: () {
+                  if (practice && count == 0) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(content: Text(l10n.emptyPracticeList)),
+                    );
+                    return;
+                  }
                   final id = Uri.encodeComponent(list.id);
                   final path = switch (openAs) {
                     ListOpenTarget.study => '/study/$id',

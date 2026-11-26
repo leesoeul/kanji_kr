@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
+import '../../core/study_filter.dart';
 import '../../core/theme/app_theme.dart';
 import '../models/study_list.dart';
 import 'list_name_dialog.dart';
@@ -28,7 +29,9 @@ Future<(String, String)?> showListPickSheet(
   }
   final l10n = AppLocalizations.of(context);
   final userTitle =
-      catalog.userListTitle.isEmpty ? l10n.listUser : catalog.userListTitle;
+      catalog.userListTitle.isEmpty
+          ? defaultUserListTitle(l10n, kind)
+          : catalog.userListTitle;
   final targets = <(String, String)>[
     for (final deck in catalog.userDecks)
       if (deck.kind == kind) (deck.id, deck.title),

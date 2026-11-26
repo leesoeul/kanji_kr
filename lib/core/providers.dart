@@ -259,14 +259,12 @@ final catalogControllerProvider =
   CatalogController.new,
 );
 
-/// 정답 항상 표시 / 다크 모드. 둘 다 로컬 JSON에 남긴다.
+/// 다크 모드만 로컬 JSON에 남긴다. 정답 고정은 학습 화면을 나가는 순간 사라진다.
 class StudyPrefs {
   const StudyPrefs({
-    required this.alwaysShowAnswer,
     required this.isDark,
   });
 
-  final bool alwaysShowAnswer;
   final bool isDark;
 }
 
@@ -275,25 +273,13 @@ class StudyPrefsNotifier extends Notifier<StudyPrefs> {
   @override
   StudyPrefs build() {
     final data = ref.read(userStoreProvider).load();
-    return StudyPrefs(
-      alwaysShowAnswer: data.alwaysShowAnswer,
-      isDark: data.isDark,
-    );
-  }
-
-  Future<void> toggleAlwaysShowAnswer() async {
-    final next = !state.alwaysShowAnswer;
-    await ref.read(userStoreProvider).patch(alwaysShowAnswer: next);
-    state = StudyPrefs(alwaysShowAnswer: next, isDark: state.isDark);
+    return StudyPrefs(isDark: data.isDark);
   }
 
   Future<void> toggleDark() async {
     final next = !state.isDark;
     await ref.read(userStoreProvider).patch(isDark: next);
-    state = StudyPrefs(
-      alwaysShowAnswer: state.alwaysShowAnswer,
-      isDark: next,
-    );
+    state = StudyPrefs(isDark: next);
   }
 }
 

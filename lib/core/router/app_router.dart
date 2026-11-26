@@ -147,8 +147,8 @@ class AppShell extends ConsumerWidget {
               onDestinationSelected: navigationShell.goBranch,
               destinations: [
                 NavigationDestination(
-                  icon: const Icon(Icons.home_outlined),
-                  selectedIcon: const Icon(Icons.home),
+                  icon: const Icon(Icons.style_outlined),
+                  selectedIcon: const Icon(Icons.style),
                   label: l10n.homeTitle,
                 ),
                 NavigationDestination(

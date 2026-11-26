@@ -55,7 +55,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
     final l10n = AppLocalizations.of(context);
     final kind = ref.read(studySessionProvider).kind;
     final lists = catalog.dropdownLists(
-      userTitle: l10n.listUser,
+      userTitle: defaultUserListTitle(l10n, kind),
       favoritesTitle: l10n.favorites,
       kind: kind,
     );
@@ -207,7 +207,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
               );
             }
             final lists = catalog.dropdownLists(
-              userTitle: l10n.listUser,
+              userTitle: defaultUserListTitle(l10n, session.kind),
               favoritesTitle: l10n.favorites,
               kind: session.kind,
             );
@@ -217,6 +217,15 @@ class _QuizPageState extends ConsumerState<QuizPage> {
           },
         ),
       ),
+    );
+  }
+
+  String _guide(AppLocalizations l10n, QuizQuestion question) {
+    if (question.mode == QuizMode.meaning) {
+      return l10n.quizGuideMeaning;
+    }
+    return l10n.quizGuideLiteral(
+      question.prompt.isWord ? l10n.kindWord : l10n.kindKanji,
     );
   }
 
@@ -275,7 +284,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
                 height: 80,
                 child: FilledButton(
                   onPressed: () {
-                    setState(() => _mode = QuizMode.literal);
+                    setState(() => _mode = QuizMode.meaning);
                     _begin();
                   },
                   style: FilledButton.styleFrom(
@@ -299,7 +308,7 @@ class _QuizPageState extends ConsumerState<QuizPage> {
                 height: 80,
                 child: FilledButton(
                   onPressed: () {
-                    setState(() => _mode = QuizMode.meaning);
+                    setState(() => _mode = QuizMode.literal);
                     _begin();
                   },
                   style: FilledButton.styleFrom(
@@ -331,6 +340,14 @@ class _QuizPageState extends ConsumerState<QuizPage> {
           Text(
             l10n.quizProgress(_index + 1, _questions.length),
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.w600,
+                ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            _guide(l10n, question),
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: const Color(0xFF5C3A45),
                   fontWeight: FontWeight.w600,
                 ),
           ),

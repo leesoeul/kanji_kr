@@ -17,7 +17,7 @@ import 'kanji_search_sheet.dart';
 /// [listId]가 없으면 [HomeBrowseBody] (한자/동사 → 목록).
 /// [listId]가 있으면 그 목록의 카드를 새 페이지로 보여 준다.
 /// 정답은 아래 분홍 버튼으로만 연다. 한 번 탭은 지금 카드만, 넘기면 닫힌다.
-/// 더블탭은 "정답 항상 표시". 켜져 있으면 넘겨도 답이 열린다.
+/// 더블탭은 "정답 항상 표시". 고정 중에는 버튼이 자물쇠와 "정답 고정"이고, 한 번 탭하면 고정이 풀리며 답이 숨는다.
 ///
 /// [initialId]가 있으면 `/kanji/:id`로 들어온 것. 해당 장으로 점프하고 뒤로가기가 pop이다.
 class StudyPage extends ConsumerStatefulWidget {
@@ -45,12 +45,17 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   final _pageController = PageController();
   int _index = 0;
 
-  /// 지금 카드의 정답만 열었는지. 넘기면 닫힌다. 항상 보기가 켜져 있으면 넘긴 카드는 다시 연다.
+  /// 지금 카드의 정답만 열었는지. 넘기면 닫힌다. 고정이 켜져 있으면 넘긴 카드도 연다.
   bool _showCurrentAnswer = false;
-  bool _didSyncAnswer = false;
+
+  /// 이 화면에서만 유지되는 정답 고정. 저장하지 않는다.
+  bool _alwaysShow = false;
 
   /// 검색·진입으로 연 카드는 넘김 직후에도 답을 연다.
   bool _revealAfterJump = false;
+
+  /// 검색으로 연 카드만 답을 연다. 저장된 정답 고정은 건드리지 않는다.
+  bool _searchReveal = false;
   bool _didJump = false;
   int _shuffleNonce = 0;
 
@@ -80,7 +85,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
   /// 덱을 바꾸면 첫 장으로. PageController는 프레임 뒤에 jump.
   void _resetDeck() {
     _index = 0;
-    _showCurrentAnswer = ref.read(studyPrefsProvider).alwaysShowAnswer;
+    _showCurrentAnswer = _alwaysShow;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_pageController.hasClients) {
         _pageController.jumpToPage(0);
@@ -172,7 +177,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
               final kanjis = _deck(catalog, session);
               final (sourceListId, sourceKind) = _source(catalog, session);
               final lists = catalog.dropdownLists(
-                userTitle: l10n.listUser,
+                userTitle: defaultUserListTitle(l10n, sourceKind),
                 favoritesTitle: l10n.favorites,
                 kind: sourceKind,
               );
@@ -201,13 +206,19 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                       onSearch: null,
                       onShuffle: null,
                     ),
-                    Expanded(child: Center(child: Text(l10n.emptyList))),
+                    Expanded(
+                      child: Center(
+                        child: Text(
+                          emptyListMessage(
+                            l10n,
+                            listId: listId,
+                            kind: sourceKind,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 );
-              }
-              if (!_didSyncAnswer) {
-                _didSyncAnswer = true;
-                _showCurrentAnswer = prefs.alwaysShowAnswer;
               }
               if (!_didJump && widget.initialId != null) {
                 // `/kanji/:id`로 들어왔을 때 해당 장으로 점프. 한 번만.
@@ -219,6 +230,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                   if (widget.revealAnswer) {
                     _showCurrentAnswer = true;
                     _revealAfterJump = true;
+                    _searchReveal = true;
                   }
                   WidgetsBinding.instance.addPostFrameCallback((_) {
                     if (_pageController.hasClients) {
@@ -228,6 +240,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                 }
               }
               final safeIndex = _index.clamp(0, kanjis.length - 1);
+              final answerLocked = !_searchReveal && _alwaysShow;
 
               return Column(
                 children: [
@@ -265,7 +278,8 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                                 notification.metrics.axis == Axis.horizontal &&
                                 _showCurrentAnswer &&
                                 !_revealAfterJump &&
-                                !ref.read(studyPrefsProvider).alwaysShowAnswer) {
+                                !_searchReveal &&
+                                !_alwaysShow) {
                               setState(() => _showCurrentAnswer = false);
                             }
                             return false;
@@ -276,15 +290,25 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                           onPageChanged: (value) {
                             setState(() {
                               _index = value;
-                              _showCurrentAnswer = _revealAfterJump ||
-                                  ref.read(studyPrefsProvider).alwaysShowAnswer;
+                              if (_revealAfterJump) {
+                                _showCurrentAnswer = true;
+                                _searchReveal = true;
+                                _alwaysShow = false;
+                              } else if (_searchReveal) {
+                                _searchReveal = false;
+                                _alwaysShow = false;
+                                _showCurrentAnswer = false;
+                              } else {
+                                _showCurrentAnswer = _alwaysShow;
+                              }
                               _revealAfterJump = false;
                             });
                           },
                           itemBuilder: (context, index) {
                             final pageKanji = kanjis[index];
-                            final showAnswer = prefs.alwaysShowAnswer ||
-                                _showCurrentAnswer;
+                            final showAnswer = _searchReveal
+                                ? _showCurrentAnswer
+                                : _alwaysShow || _showCurrentAnswer;
                             return Column(
                               children: [
                                 Expanded(
@@ -326,7 +350,7 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                                         : const SizedBox.shrink(),
                                   ),
                                 ),
-                                _showAnswerButton(l10n),
+                                _showAnswerButton(l10n, locked: answerLocked),
                                 const Spacer(flex: 2),
                               ],
                             );
@@ -382,7 +406,10 @@ class _StudyPageState extends ConsumerState<StudyPage> {
                                 child: IgnorePointer(
                                   child: Opacity(
                                     opacity: 0,
-                                    child: _showAnswerButton(l10n),
+                                    child: _showAnswerButton(
+                                      l10n,
+                                      locked: answerLocked,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -402,13 +429,17 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     );
   }
 
-  Widget _showAnswerButton(AppLocalizations l10n) {
+  Widget _showAnswerButton(AppLocalizations l10n, {required bool locked}) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(24, 20, 24, 8),
       child: Center(
         child: GestureDetector(
           behavior: HitTestBehavior.opaque,
           onTap: () {
+            if (!_searchReveal && _alwaysShow) {
+              _toggleAlwaysShow(l10n);
+              return;
+            }
             if (!_hasShownHint) {
               _hasShownHint = true;
               WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -433,31 +464,55 @@ class _StudyPageState extends ConsumerState<StudyPage> {
               vertical: 14,
             ),
             decoration: BoxDecoration(
-              color: AppTheme.answerPill,
+              color: locked ? const Color(0xFFFFF0F3) : AppTheme.answerPill,
               borderRadius: BorderRadius.circular(28),
+              border: locked
+                  ? Border.all(color: AppTheme.meaningPink, width: 1.5)
+                  : null,
             ),
-            child: Text(
-              l10n.showAnswer,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Color(0xFF7A3048),
-                fontWeight: FontWeight.w700,
-                fontSize: 20,
-              ),
-            ),
+            child: locked
+                ? Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(
+                        Icons.lock_rounded,
+                        size: 18,
+                        color: AppTheme.meaningPink,
+                      ),
+                      const SizedBox(width: 6),
+                      Text(
+                        l10n.showAnswerLocked,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: AppTheme.meaningPink,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  )
+                : Text(
+                    l10n.showAnswer,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: Color(0xFF7A3048),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 20,
+                    ),
+                  ),
           ),
         ),
       ),
     );
   }
 
-  Future<void> _toggleAlwaysShow(AppLocalizations l10n) async {
-    await ref.read(studyPrefsProvider.notifier).toggleAlwaysShowAnswer();
-    if (!mounted) {
-      return;
-    }
-    final on = ref.read(studyPrefsProvider).alwaysShowAnswer;
-    setState(() => _showCurrentAnswer = on);
+  void _toggleAlwaysShow(AppLocalizations l10n) {
+    final on = !_alwaysShow;
+    setState(() {
+      _searchReveal = false;
+      _alwaysShow = on;
+      _showCurrentAnswer = on;
+    });
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(on ? l10n.alwaysShowOn : l10n.alwaysShowOff),
@@ -478,7 +533,11 @@ class _StudyPageState extends ConsumerState<StudyPage> {
     final index = kanjis.indexWhere((item) => item.id == selected.id);
     if (index >= 0) {
       _revealAfterJump = true;
-      setState(() => _showCurrentAnswer = true);
+      setState(() {
+        _searchReveal = true;
+        _alwaysShow = false;
+        _showCurrentAnswer = true;
+      });
       _jumpTo(index, kanjis.length);
     }
   }

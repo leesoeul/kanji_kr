@@ -46,6 +46,7 @@ Future<Kanji?> showKanjiSearchSheet({
 }) {
   return showModalBottomSheet<Kanji>(
     context: context,
+    useRootNavigator: true,
     isScrollControlled: true,
     showDragHandle: true,
     builder: (context) {
@@ -76,55 +77,50 @@ class _KanjiSearchSheetState extends State<_KanjiSearchSheet> {
     final results = widget.kanjis
         .where((kanji) => kanji.matchesQuery(_query))
         .toList(growable: false);
-    final bottom = MediaQuery.viewInsetsOf(context).bottom;
-
-    return Padding(
-      padding: EdgeInsets.only(bottom: bottom),
-      child: SizedBox(
-        height: MediaQuery.sizeOf(context).height * 0.75,
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
-              child: TextField(
-                autofocus: true,
-                decoration: InputDecoration(
-                  prefixIcon: const Icon(Icons.search),
-                  hintText: widget.l10n.searchHint,
-                  border: const OutlineInputBorder(),
-                ),
-                onChanged: (value) => setState(() => _query = value),
+    return SizedBox(
+      height: MediaQuery.sizeOf(context).height * 0.75,
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+            child: TextField(
+              autofocus: true,
+              decoration: InputDecoration(
+                prefixIcon: const Icon(Icons.search),
+                hintText: widget.l10n.searchHint,
+                border: const OutlineInputBorder(),
               ),
+              onChanged: (value) => setState(() => _query = value),
             ),
-            Expanded(
-              child: results.isEmpty
-                  ? Center(child: Text(widget.l10n.noSearchResults))
-                  : ListView.separated(
-                      itemCount: results.length,
-                      separatorBuilder: (context, index) =>
-                          const Divider(height: 1),
-                      itemBuilder: (context, index) {
-                        final kanji = results[index];
-                        return ListTile(
-                          leading: Text(
-                            kanji.literal,
-                            style: Theme.of(context).textTheme.headlineMedium,
-                          ),
-                          title: Text(kanji.displayMeaning),
-                          subtitle: Text(
-                            kanji.isWord
-                                ? kanji.displayReading
-                                : (kanji.displayKunOn.isEmpty
-                                    ? kanji.koreanMeaning
-                                    : kanji.displayKunOn),
-                          ),
-                          onTap: () => Navigator.pop(context, kanji),
-                        );
-                      },
-                    ),
-            ),
-          ],
-        ),
+          ),
+          Expanded(
+            child: results.isEmpty
+                ? Center(child: Text(widget.l10n.noSearchResults))
+                : ListView.separated(
+                    itemCount: results.length,
+                    separatorBuilder: (context, index) =>
+                        const Divider(height: 1),
+                    itemBuilder: (context, index) {
+                      final kanji = results[index];
+                      return ListTile(
+                        leading: Text(
+                          kanji.literal,
+                          style: Theme.of(context).textTheme.headlineMedium,
+                        ),
+                        title: Text(kanji.displayMeaning),
+                        subtitle: Text(
+                          kanji.isWord
+                              ? kanji.displayReading
+                              : (kanji.displayKunOn.isEmpty
+                                  ? kanji.koreanMeaning
+                                  : kanji.displayKunOn),
+                        ),
+                        onTap: () => Navigator.pop(context, kanji),
+                      );
+                    },
+                  ),
+          ),
+        ],
       ),
     );
   }
