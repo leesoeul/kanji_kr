@@ -1,7 +1,7 @@
 {
   "@@locale": "ko",
   "appTitle": "하루 탄고",
-  "homeTitle": "홈",
+  "homeTitle": "플래시카드",
   "todayReview": "오늘 복습",
   "reviewCount": "{count}장",
   "@reviewCount": {
@@ -19,13 +19,22 @@
   "settings": "설정",
   "quizComingSoon": "퀴즈는 곧 제공됩니다",
   "quizTitle": "퀴즈",
-  "listUser": "내가 추가",
+  "listUser": "추가한 {kind}",
+  "@listUser": {
+    "placeholders": {
+      "kind": { "type": "String" }
+    }
+  },
   "shuffle": "랜덤",
   "shuffled": "순서를 섞었습니다",
   "kindKanji": "한자",
   "kindWord": "단어",
   "pickKindTitle": "한자 / 단어",
   "pickListTitle": "목록을 고르세요",
+  "pickPracticeList": "연습할 목록을 고르세요",
+  "pickManageList": "단어를 한눈에 보고 관리하세요",
+  "practiceLabel": "연습",
+  "emptyPracticeList": "아직 등록된 단어가 없습니다",
   "readingLabel": "읽기",
   "readingHint": "예: やまのぼり",
   "surfaceLabel": "표기",
@@ -69,6 +78,13 @@
   },
   "quizPickMeaning": "뜻을 고르세요",
   "quizPickLiteral": "글자를 고르세요",
+  "quizGuideMeaning": "알맞은 뜻을 고르세요",
+  "quizGuideLiteral": "알맞은 {kind}를 고르세요",
+  "@quizGuideLiteral": {
+    "placeholders": {
+      "kind": { "type": "String" }
+    }
+  },
   "quizModeMeaning": "뜻",
   "quizModeLiteral": "글자",
   "quizModeSelect": "퀴즈 모드를 선택하세요",
@@ -83,6 +99,7 @@
   },
   "addItem": "추가",
   "addWord": "단어 추가",
+  "addList": "목록 추가",
   "newList": "새 목록 만들기",
   "renameList": "이름 변경",
   "deleteList": "목록 삭제",
@@ -100,6 +117,12 @@
     }
   },
   "emptyList": "이 목록이 비어 있습니다",
+  "emptyFavorites": "즐겨찾은 {kind}가 없습니다",
+  "@emptyFavorites": {
+    "placeholders": {
+      "kind": { "type": "String" }
+    }
+  },
   "cardReading": "읽기",
   "jlptLevel": "JLPT {level}",
   "@jlptLevel": {
@@ -143,6 +166,7 @@
   "added": "추가했습니다",
   "saved": "저장했습니다",
   "showAnswer": "정답",
+  "showAnswerLocked": "정답 고정",
   "cardKun": "훈독",
   "cardOn": "음독",
   "searchKanji": "검색",
@@ -154,6 +178,8 @@
   "aiAutocomplete": "AI 자동완성",
   "aiSuggestions": "AI 추천",
   "aiLoadingSuggestions": "AI가 추천 중...",
+  "aiConnectionError": "연결할 수 없습니다. 네트워크를 확인해 주세요.",
+  "aiRetry": "다시 시도",
   "fillWithThis": "이 내용으로 채우기",
   "requiredFieldMark": "*",
   "resetForm": "초기화",

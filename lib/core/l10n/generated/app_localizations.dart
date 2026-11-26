@@ -107,7 +107,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeTitle.
   ///
   /// In ko, this message translates to:
-  /// **'홈'**
+  /// **'플래시카드'**
   String get homeTitle;
 
   /// No description provided for @todayReview.
@@ -185,8 +185,8 @@ abstract class AppLocalizations {
   /// No description provided for @listUser.
   ///
   /// In ko, this message translates to:
-  /// **'내가 추가'**
-  String get listUser;
+  /// **'추가한 {kind}'**
+  String listUser(String kind);
 
   /// No description provided for @shuffle.
   ///
@@ -223,6 +223,30 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'목록을 고르세요'**
   String get pickListTitle;
+
+  /// No description provided for @pickPracticeList.
+  ///
+  /// In ko, this message translates to:
+  /// **'연습할 목록을 고르세요'**
+  String get pickPracticeList;
+
+  /// No description provided for @pickManageList.
+  ///
+  /// In ko, this message translates to:
+  /// **'단어를 한눈에 보고 관리하세요'**
+  String get pickManageList;
+
+  /// No description provided for @practiceLabel.
+  ///
+  /// In ko, this message translates to:
+  /// **'연습'**
+  String get practiceLabel;
+
+  /// No description provided for @emptyPracticeList.
+  ///
+  /// In ko, this message translates to:
+  /// **'아직 등록된 단어가 없습니다'**
+  String get emptyPracticeList;
 
   /// No description provided for @readingLabel.
   ///
@@ -356,6 +380,18 @@ abstract class AppLocalizations {
   /// **'글자를 고르세요'**
   String get quizPickLiteral;
 
+  /// No description provided for @quizGuideMeaning.
+  ///
+  /// In ko, this message translates to:
+  /// **'알맞은 뜻을 고르세요'**
+  String get quizGuideMeaning;
+
+  /// No description provided for @quizGuideLiteral.
+  ///
+  /// In ko, this message translates to:
+  /// **'알맞은 {kind}를 고르세요'**
+  String quizGuideLiteral(String kind);
+
   /// No description provided for @quizModeMeaning.
   ///
   /// In ko, this message translates to:
@@ -404,6 +440,12 @@ abstract class AppLocalizations {
   /// **'단어 추가'**
   String get addWord;
 
+  /// No description provided for @addList.
+  ///
+  /// In ko, this message translates to:
+  /// **'목록 추가'**
+  String get addList;
+
   /// No description provided for @newList.
   ///
   /// In ko, this message translates to:
@@ -445,6 +487,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'이 목록이 비어 있습니다'**
   String get emptyList;
+
+  /// No description provided for @emptyFavorites.
+  ///
+  /// In ko, this message translates to:
+  /// **'즐겨찾은 {kind}가 없습니다'**
+  String emptyFavorites(String kind);
 
   /// No description provided for @cardReading.
   ///
@@ -614,6 +662,12 @@ abstract class AppLocalizations {
   /// **'정답'**
   String get showAnswer;
 
+  /// No description provided for @showAnswerLocked.
+  ///
+  /// In ko, this message translates to:
+  /// **'정답 고정'**
+  String get showAnswerLocked;
+
   /// No description provided for @cardKun.
   ///
   /// In ko, this message translates to:
@@ -679,6 +733,18 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'AI가 추천 중...'**
   String get aiLoadingSuggestions;
+
+  /// No description provided for @aiConnectionError.
+  ///
+  /// In ko, this message translates to:
+  /// **'연결할 수 없습니다. 네트워크를 확인해 주세요.'**
+  String get aiConnectionError;
+
+  /// No description provided for @aiRetry.
+  ///
+  /// In ko, this message translates to:
+  /// **'다시 시도'**
+  String get aiRetry;
 
   /// No description provided for @fillWithThis.
   ///

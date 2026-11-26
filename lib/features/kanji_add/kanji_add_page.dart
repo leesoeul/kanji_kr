@@ -7,6 +7,7 @@ import '../../core/kana.dart';
 import '../../core/l10n/generated/app_localizations.dart';
 import '../../core/providers.dart';
 import '../../core/services/ai_service.dart';
+import '../../core/services/dictionary_db_service.dart';
 import '../../shared/models/kanji.dart';
 import '../../shared/models/reading.dart';
 import '../../shared/models/study_list.dart';
@@ -537,9 +538,27 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
         kind: _kind,
       );
     } catch (e) {
-      // 에러 발생 시 더미 데이터로 폴백
-      debugPrint('AI API 호출 실패, 더미 데이터 사용: $e');
-      suggestions = _generateDummySuggestions();
+      debugPrint('AI API 호출 실패: $e');
+      if (!mounted) {
+        return;
+      }
+      Navigator.of(context).pop();
+      if (!mounted) {
+        return;
+      }
+      final retry = await showDialog<bool>(
+        context: context,
+        builder: (context) => _AiConnectionDialog(l10n: l10n),
+      );
+      if (retry == true && mounted) {
+        await _openAiSuggestions(l10n, source);
+      }
+      return;
+    }
+
+    suggestions = await _overlayDictionary(suggestions);
+    if (!_isWord) {
+      suggestions = suggestions.where(_isSingleKanji).toList();
     }
 
     if (!mounted) {
@@ -548,6 +567,13 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
 
     // 로딩 다이얼로그 닫기
     Navigator.of(context).pop();
+
+    if (suggestions.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('추천된 한자가 없습니다')),
+      );
+      return;
+    }
 
     // AI 추천 카드 다이얼로그 열기
     if (!mounted) {
@@ -564,116 +590,33 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
     );
   }
 
-  /// 더미 추천 데이터 생성 (나중에 Crew AI로 교체 예정)
-  List<Kanji> _generateDummySuggestions() {
-    if (_isWord) {
-      // 단어 더미 데이터
-      return [
-        const Kanji(
-          id: 'dummy_1',
-          literal: '山登り',
-          jlpt: 'N3',
-          strokeCount: 0,
-          koreanMeaning: '등산',
-          meaningsKo: ['등산', '산타기'],
-          onYomi: [],
-          kunYomi: [],
-          examples: [
-            KanjiExample(jp: '週末に山登りに行きます', kana: '', ko: '주말에 등산을 갑니다')
-          ],
-          kind: EntryKind.word,
-          listId: 'ai_suggestion',
-          reading: 'やまのぼり',
-          isUserAdded: false,
-        ),
-        const Kanji(
-          id: 'dummy_2',
-          literal: '富士山',
-          jlpt: 'N4',
-          strokeCount: 0,
-          koreanMeaning: '후지산',
-          meaningsKo: ['후지산'],
-          onYomi: [],
-          kunYomi: [],
-          examples: [
-            KanjiExample(
-                jp: '富士山は日本で一番高い山です', kana: '', ko: '후지산은 일본에서 가장 높은 산입니다')
-          ],
-          kind: EntryKind.word,
-          listId: 'ai_suggestion',
-          reading: 'ふじさん',
-          isUserAdded: false,
-        ),
-        const Kanji(
-          id: 'dummy_3',
-          literal: '山道',
-          jlpt: 'N3',
-          strokeCount: 0,
-          koreanMeaning: '산길',
-          meaningsKo: ['산길', '산중의 길'],
-          onYomi: [],
-          kunYomi: [],
-          examples: [
-            KanjiExample(jp: '山道を歩いていると鹿に会った', kana: '', ko: '산길을 걷다가 사슴을 만났다')
-          ],
-          kind: EntryKind.word,
-          listId: 'ai_suggestion',
-          reading: 'やまみち',
-          isUserAdded: false,
-        ),
-      ];
-    } else {
-      // 한자 더미 데이터
-      return [
-        const Kanji(
-          id: 'dummy_1',
-          literal: '山',
-          jlpt: 'N5',
-          strokeCount: 3,
-          koreanMeaning: '산',
-          meaningsKo: ['산', '높은 산'],
-          onYomi: [Reading(kana: 'サン'), Reading(kana: 'セン')],
-          kunYomi: [Reading(kana: 'やま')],
-          examples: [KanjiExample(jp: '山に登る', kana: 'やまにのぼる', ko: '산에 오르다')],
-          kind: EntryKind.kanji,
-          listId: 'ai_suggestion',
-          reading: '',
-          isUserAdded: false,
-        ),
-        const Kanji(
-          id: 'dummy_2',
-          literal: '川',
-          jlpt: 'N5',
-          strokeCount: 3,
-          koreanMeaning: '내, 강',
-          meaningsKo: ['내', '강', '하천'],
-          onYomi: [Reading(kana: 'セン')],
-          kunYomi: [Reading(kana: 'かわ')],
-          examples: [KanjiExample(jp: '川で泳ぐ', kana: 'かわでおよぐ', ko: '강에서 수영하다')],
-          kind: EntryKind.kanji,
-          listId: 'ai_suggestion',
-          reading: '',
-          isUserAdded: false,
-        ),
-        const Kanji(
-          id: 'dummy_3',
-          literal: '森',
-          jlpt: 'N4',
-          strokeCount: 12,
-          koreanMeaning: '숲',
-          meaningsKo: ['숲', '수풀'],
-          onYomi: [Reading(kana: 'シン')],
-          kunYomi: [Reading(kana: 'もり')],
-          examples: [
-            KanjiExample(jp: '森を散歩する', kana: 'もりをさんぽする', ko: '숲을 산책하다')
-          ],
-          kind: EntryKind.kanji,
-          listId: 'ai_suggestion',
-          reading: '',
-          isUserAdded: false,
-        ),
-      ];
+  /// 한자 추천은 한 글자만 남긴다. 空腹 같은 단어는 뺀다.
+  bool _isSingleKanji(Kanji suggestion) {
+    final runes = suggestion.literal.trim().runes.toList();
+    if (runes.length != 1) {
+      return false;
     }
+    final code = runes.first;
+    return (code >= 0x3400 && code <= 0x4DBF) ||
+        (code >= 0x4E00 && code <= 0x9FFF) ||
+        (code >= 0xF900 && code <= 0xFAFF);
+  }
+
+  /// 사전에 있는 글자는 뜻·읽기·획수를 사전 값으로 바꾼다. 예문은 그대로 둔다.
+  Future<List<Kanji>> _overlayDictionary(List<Kanji> suggestions) async {
+    final DictionaryDbService db;
+    try {
+      db = await ref.read(dictionaryDbProvider.future);
+    } catch (e) {
+      debugPrint('사전 DB를 열지 못해 추천 원문을 사용: $e');
+      return suggestions;
+    }
+    final merged = <Kanji>[];
+    for (final suggestion in suggestions) {
+      final entry = await db.entryForLiteral(suggestion.literal, suggestion.kind);
+      merged.add(entry?.overlaySuggestion(suggestion) ?? suggestion);
+    }
+    return merged;
   }
 
   /// 선택한 추천 카드로 폼을 채운다.
@@ -697,6 +640,52 @@ class _KanjiAddPageState extends ConsumerState<KanjiAddPage> {
 
     // 다이얼로그 닫기
     Navigator.of(context).pop();
+  }
+}
+
+/// 추천 요청이 네트워크에서 실패했을 때. 다시 시도하면 같은 입력으로 재요청한다.
+class _AiConnectionDialog extends StatelessWidget {
+  const _AiConnectionDialog({required this.l10n});
+
+  final AppLocalizations l10n;
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.wifi_off, color: Color(0xFFE85A7B), size: 36),
+            const SizedBox(height: 16),
+            Text(
+              l10n.aiConnectionError,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyLarge,
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton(
+                onPressed: () => Navigator.of(context).pop(true),
+                style: FilledButton.styleFrom(
+                  backgroundColor: const Color(0xFFE85A7B),
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                child: Text(
+                  l10n.aiRetry,
+                  style: const TextStyle(fontWeight: FontWeight.w700),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 

@@ -12,7 +12,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get appTitle => '하루 탄고';
 
   @override
-  String get homeTitle => '홈';
+  String get homeTitle => '플래시카드';
 
   @override
   String get todayReview => '오늘 복습';
@@ -53,7 +53,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizTitle => '퀴즈';
 
   @override
-  String get listUser => '내가 추가';
+  String listUser(String kind) {
+    return '추가한 $kind';
+  }
 
   @override
   String get shuffle => '랜덤';
@@ -72,6 +74,18 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get pickListTitle => '목록을 고르세요';
+
+  @override
+  String get pickPracticeList => '연습할 목록을 고르세요';
+
+  @override
+  String get pickManageList => '단어를 한눈에 보고 관리하세요';
+
+  @override
+  String get practiceLabel => '연습';
+
+  @override
+  String get emptyPracticeList => '아직 등록된 단어가 없습니다';
 
   @override
   String get readingLabel => '읽기';
@@ -148,6 +162,14 @@ class AppLocalizationsKo extends AppLocalizations {
   String get quizPickLiteral => '글자를 고르세요';
 
   @override
+  String get quizGuideMeaning => '알맞은 뜻을 고르세요';
+
+  @override
+  String quizGuideLiteral(String kind) {
+    return '알맞은 $kind를 고르세요';
+  }
+
+  @override
   String get quizModeMeaning => '뜻';
 
   @override
@@ -174,6 +196,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get addWord => '단어 추가';
 
   @override
+  String get addList => '목록 추가';
+
+  @override
   String get newList => '새 목록 만들기';
 
   @override
@@ -197,6 +222,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get emptyList => '이 목록이 비어 있습니다';
+
+  @override
+  String emptyFavorites(String kind) {
+    return '즐겨찾은 $kind가 없습니다';
+  }
 
   @override
   String get cardReading => '읽기';
@@ -289,6 +319,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get showAnswer => '정답';
 
   @override
+  String get showAnswerLocked => '정답 고정';
+
+  @override
   String get cardKun => '훈독';
 
   @override
@@ -320,6 +353,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get aiLoadingSuggestions => 'AI가 추천 중...';
+
+  @override
+  String get aiConnectionError => '연결할 수 없습니다. 네트워크를 확인해 주세요.';
+
+  @override
+  String get aiRetry => '다시 시도';
 
   @override
   String get fillWithThis => '이 내용으로 채우기';

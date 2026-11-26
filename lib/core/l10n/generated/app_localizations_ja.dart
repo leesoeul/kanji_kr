@@ -12,7 +12,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get appTitle => '漢字学習';
 
   @override
-  String get homeTitle => 'ホーム';
+  String get homeTitle => 'フラッシュカード';
 
   @override
   String get todayReview => '今日の復習';
@@ -53,7 +53,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizTitle => 'クイズ';
 
   @override
-  String get listUser => '追加したカード';
+  String listUser(String kind) {
+    return '追加した$kind';
+  }
 
   @override
   String get shuffle => 'ランダム';
@@ -72,6 +74,18 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get pickListTitle => '一覧を選んでください';
+
+  @override
+  String get pickPracticeList => '練習する一覧を選んでください';
+
+  @override
+  String get pickManageList => '単語を一覧で管理できます';
+
+  @override
+  String get practiceLabel => '練習';
+
+  @override
+  String get emptyPracticeList => 'まだ登録された単語がありません';
 
   @override
   String get readingLabel => '読み';
@@ -148,6 +162,14 @@ class AppLocalizationsJa extends AppLocalizations {
   String get quizPickLiteral => '表記を選んでください';
 
   @override
+  String get quizGuideMeaning => '合う意味を選んでください';
+
+  @override
+  String quizGuideLiteral(String kind) {
+    return '合う$kindを選んでください';
+  }
+
+  @override
   String get quizModeMeaning => '意味';
 
   @override
@@ -174,6 +196,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get addWord => '単語を追加';
 
   @override
+  String get addList => '一覧を追加';
+
+  @override
   String get newList => '新しい一覧を作る';
 
   @override
@@ -197,6 +222,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get emptyList => 'この一覧は空です';
+
+  @override
+  String emptyFavorites(String kind) {
+    return 'お気に入りの$kindがありません';
+  }
 
   @override
   String get cardReading => '読み';
@@ -289,6 +319,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get showAnswer => '答え';
 
   @override
+  String get showAnswerLocked => '答えを固定';
+
+  @override
   String get cardKun => '訓読み';
 
   @override
@@ -320,6 +353,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get aiLoadingSuggestions => 'AIが推薦中...';
+
+  @override
+  String get aiConnectionError => '接続できません。ネットワークを確認してください。';
+
+  @override
+  String get aiRetry => '再試行';
 
   @override
   String get fillWithThis => 'この内容で埋める';

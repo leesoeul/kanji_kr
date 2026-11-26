@@ -107,6 +107,25 @@ class DictionaryEntry {
       isUserAdded: true,
     );
   }
+
+  /// AI 추천 카드의 뜻·읽기를 사전 값으로 바꾼다. 예문과 id는 추천 결과를 유지한다.
+  /// 사전에 비어 있는 항목은 추천 값을 남긴다.
+  Kanji overlaySuggestion(Kanji suggestion) {
+    final meaning = isWord ? meaningKo : meaningKo.replaceAll(' · ', '/');
+    final dictOn = onYomi.map((kana) => Reading(kana: kana)).toList();
+    final dictKun = kunYomi.map((kana) => Reading(kana: kana)).toList();
+    return suggestion.copyWith(
+      koreanMeaning: meaning.isNotEmpty ? meaning : suggestion.koreanMeaning,
+      meaningsKo: meanings.isNotEmpty
+          ? meanings
+          : (meaning.isNotEmpty ? [meaning] : suggestion.meaningsKo),
+      onYomi: dictOn.isNotEmpty ? dictOn : suggestion.onYomi,
+      kunYomi: dictKun.isNotEmpty ? dictKun : suggestion.kunYomi,
+      jlpt: jlpt.isNotEmpty ? jlpt : suggestion.jlpt,
+      strokeCount: strokeCount > 0 ? strokeCount : suggestion.strokeCount,
+      reading: isWord && reading.isNotEmpty ? reading : suggestion.reading,
+    );
+  }
 }
 
 /// 앱에 내장한 사전 DB. 읽기 전용으로 열어 검색만 한다.
@@ -166,6 +185,28 @@ class DictionaryDbService {
     } on Object {
       return false;
     }
+  }
+
+  /// 표제어가 정확히 같은 항목. 시드 행을 외부 사전보다 먼저 고른다.
+  Future<DictionaryEntry?> entryForLiteral(
+    String literal,
+    EntryKind kind,
+  ) async {
+    final text = literal.trim();
+    if (text.isEmpty || kind == EntryKind.mixed) {
+      return null;
+    }
+    final rows = await _db.query(
+      'entries',
+      where: 'literal = ? AND kind = ?',
+      whereArgs: [text, kind.jsonName],
+      orderBy: "source != 'seed', id",
+      limit: 1,
+    );
+    if (rows.isEmpty) {
+      return null;
+    }
+    return DictionaryEntry.fromRow(rows.first);
   }
 
   /// 한자·히라가나·한국어 뜻 부분 일치. 로마자는 히라가나로 바꿔 함께 찾는다.
