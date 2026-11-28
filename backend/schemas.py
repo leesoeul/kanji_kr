@@ -19,17 +19,14 @@ class ReadingModel(BaseModel):
 
 class ExampleModel(BaseModel):
     jp: str
-    kana: str
     ko: str
 
 
 class LlmItem(BaseModel):
-    """모델이 채우는 필드만. id/kind는 서버에서 붙인다."""
+    """모델이 채우는 필드만. kind는 서버에서 붙인다."""
 
     literal: str
     koreanMeaning: str
-    jlpt: str = "N5"
-    strokeCount: int = 0
     reading: str = ""
     onYomi: List[ReadingModel] = Field(default_factory=list)
     kunYomi: List[ReadingModel] = Field(default_factory=list)
@@ -41,19 +38,13 @@ class LlmPayload(BaseModel):
 
 
 class KanjiResponse(BaseModel):
-    id: str
     literal: str
-    jlpt: str
-    strokeCount: int
     koreanMeaning: str
-    meaningsKo: List[str]
     onYomi: List[ReadingModel]
     kunYomi: List[ReadingModel]
     examples: List[ExampleModel]
     kind: str
-    listId: str = "ai_suggestion"
     reading: str
-    isUserAdded: bool = False
 
 
 class SuggestionResponse(BaseModel):

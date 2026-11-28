@@ -9,52 +9,39 @@ client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"), timeout=30.0)
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 KANJI_SYSTEM = """당신은 일본어 한자 학습 콘텐츠 작성자입니다.
-사용자 입력(한국어 뜻, 훈음, 또는 일본어 한자/읽기)과 의미가 가장 정확히 일치하는 일본 한자(신자체) 3개를 추천하세요.
+사용자 입력(한국어 뜻, 훈음, 일본어 한자/읽기)에 가장 알맞은 일본 상용한자(신자체) 3개를 서로 중복되지 않게 추천하세요.
 
 규칙:
-- literal은 한 글자 한자만. 空腹, 食欲처럼 두 글자 이상인 단어는 넣지 마세요.
-- 한국어 뜻이 입력되면 그 뜻을 직접 나타내는 한자를 1순위로 고르세요. (입력 단어를 그대로 복사하지 말고 해당 한자의 정확한 한국 한자사전 훈음을 적으세요.)
-- koreanMeaning: 반드시 해당 item의 한자 자체의 고유 한국 한자사전 "훈 음"을 적으세요. (예: 高→"높을 고", 峰→"봉우리 봉", 頂→"정수리 정"). 3개 항목에 동일한 koreanMeaning을 반복 출력하지 마세요.
-- onYomi, kunYomi: 히라가나만. 가타카나 금지. 일본어 사전에 등재된 대표 음읽기와 훈읽기를 반드시 채우세요.  (상용한자 표 외 읽기라도 실제로 쓰이는 읽기가 있으면 포함하고, 정말로 아예 존재하지 않는 경우에만 빈 배열 []을 쓰세요.)
-- examples: 각 한자마다 1개. jp는 8~18자의 자연스러운 일본어 문장. kana는 문장 전체 히라가나. ko는 한국어 번역.
-- jlpt는 N1~N5, strokeCount는 획수.
-- items 배열에 한자 객체 3개만 넣으세요.
+- kind: "kanji"로 고정.
+- literal: 한 글자 한자만 (2글자 이상 단어 금지).
+- koreanMeaning: 입력을 그대로 복사하지 말고, 해당 한자 고유의 한국 한자사전 '훈 음'을 적으세요 (예: 高→"높을 고", 峰→"봉우리 봉").
+- reading: 빈 문자열 "".
+- onYomi, kunYomi: 히라가나만 (가타카나 금지). 일상에서 자주 쓰이는 핵심 대표 읽기만 각각 최대 2~3개 이내로 적고, 거의 쓰이지 않는 쪽은 빈 배열 []로 두세요.
+- examples: 각 1개. jp는 8~18자의 자연스러운 일본어 문장, ko는 한국어 번역.
 """
 
 WORD_SYSTEM = """당신은 일본어 단어 학습 콘텐츠 작성자입니다.
-사용자 입력에 가장 알맞은 일본어 단어 3개를 추천하세요.
-단어는 명사·동사·い형용사·な형용사·부사 등 품사를 가리지 않습니다.
+사용자 입력에 가장 알맞은 일본어 단어 3개를 서로 중복되지 않게 추천하세요.
 
-입력 유형별 선택 기준:
-1. 입력이 한국어 뜻인 경우 (예: "산", "욕하다", "예쁘다", "천천히"):
-   - 그 한국어 뜻의 **직접적인 일본어 번역어**를 가장 먼저 고르고, 입력과 같은 품사를 우선하세요.
-     (예: "산" → 山, 山岳, 峰 / "욕하다" → 罵る, 貶す, 悪口を言う / "예쁘다" → 綺麗, 可愛い, 美しい)
-   - 뜻이 뭉뚱그려지는 기초어(言う, する, いい, もの 등)로 억지 대체하지 마세요.
-2. 입력이 일본어 단어인 경우 (예: "食べる", "静か"):
-   - 입력된 단어 자체를 첫 번째로 넣고, 나머지는 밀접한 유의어·반의어·관련어를 고르세요.
-3. 입력이 히라가나·가타카나·로마자 읽기인 경우 (예: "やま", "yama"):
-   - 그 읽기를 가진 대표 단어를 고르세요. 동음이의어가 있으면 서로 다른 단어로 채우세요.
+입력별 선택 기준:
+1. 한국어 뜻 입력 (예: "산", "욕하다"): 직접적인 번역어를 1순위로 고르고 입력과 같은 품사를 우선하세요 (예: "욕하다" → 罵る, 貶す, 悪口を言う). 言う, する, いい 같은 기초어로 억지 대체하지 마세요.
+2. 일본어 단어 입력 (예: "食べる"): 입력 단어를 첫 번째로 넣고, 나머지는 유의어·반의어·관련어로 채우세요.
+3. 읽기(히라가나·가타카나·로마자) 입력: 해당 읽기의 대표 단어를 고르세요.
 
 규칙:
-- literal: 사전에 실리는 표제어 형태. 동사·형용사는 기본형(사전형), な형용사는 な 없이(静か), 명사는 그대로.
-  단일 단어로 뜻이 안 살면 '悪口を言う' 같은 짧은 관용구도 허용.
-- reading: literal 전체의 요미가나. 히라가나만 사용 (가타카나 금지, 외래어도 히라가나로).
-- koreanMeaning: 품사에 맞는 자연스러운 한국어 뜻. 동사는 "~하다", 형용사는 "~하다/~다", 명사는 명사형. 여러 뜻은 쉼표로 연결.
-- examples: 각 단어마다 1개. jp는 8~18자의 일상 단문(활용 가능). kana는 문장 전체 히라가나. ko는 한국어.
-- jlpt는 N1~N5. onYomi, kunYomi는 빈 배열, strokeCount는 0.
-- 세 항목은 서로 중복되지 않아야 하며, items 배열에 3개만 넣으세요.
+- kind: "word"로 고정.
+- literal: 사전 표제어 형태 (동사·형용사는 기본형, な형용사는 な 제외, 짧은 관용구 허용).
+- reading: literal 전체의 요미가나. 히라가나만 사용 (가타카나·외래어 표기 금지).
+- koreanMeaning: 품사에 맞는 한국어 뜻. 가장 핵심적인 뜻 최대 2개까지만 쉼표로 연결 (전체 15자 이내).
+- onYomi, kunYomi: 각각 빈 배열 [].
+- examples: 각 1개. jp는 8~18자의 일상 단문, ko는 한국어 번역.
 """
 
 
-def _to_response(item: LlmItem, index: int, entry_type: EntryType) -> KanjiResponse:
-    meaning = item.koreanMeaning.strip()
+def _to_response(item: LlmItem, entry_type: EntryType) -> KanjiResponse:
     return KanjiResponse(
-        id=f"ai_suggestion_{index + 1}",
         literal=item.literal,
-        jlpt=item.jlpt or "N5",
-        strokeCount=item.strokeCount if entry_type == EntryType.kanji else 0,
-        koreanMeaning=meaning,
-        meaningsKo=[meaning] if meaning else [],
+        koreanMeaning=item.koreanMeaning.strip(),
         onYomi=item.onYomi if entry_type == EntryType.kanji else [],
         kunYomi=item.kunYomi if entry_type == EntryType.kanji else [],
         examples=item.examples[:1],
@@ -87,6 +74,6 @@ async def generate_suggestions(text: str, entry_type: EntryType) -> List[KanjiRe
         raise ValueError("모델이 추천을 만들지 못했습니다")
 
     return [
-        _to_response(item, i, entry_type)
-        for i, item in enumerate(payload.items[:3])
+        _to_response(item, entry_type)
+        for item in payload.items[:3]
     ]
